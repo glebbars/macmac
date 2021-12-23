@@ -1,0 +1,72 @@
+[
+      {
+        "name": "Nike NSW Swoosh",
+        "price": "50$",
+        "url": "./img/r2-i1.webp",
+        "code": "1000",
+        "color": "white"
+      },
+      {
+        "name": "Isabel Marant top",
+        "price": "420$",
+        "url": "./img/r2-i2.jpg",
+        "code": "2000",
+        "color": "black"
+      },
+      {
+        "name": "Ambush hoodie",
+        "price": "550$",
+        "url": "./img/r2-i3.jpg",
+        "code": "3000",
+        "color": "blue"
+      },
+      {
+        "name": "Rixo dress",
+        "price": "347$",
+        "url": "./img/r2-i4.webp",
+        "code": "4000",
+        "color": "brown"
+      },
+      {
+        "name": "Nike Uptempo",
+        "price": "200$",
+        "url": "./img/r2-i5.jpg",
+        "code": "5000",
+        "color": "white"
+      },
+      {
+        "name": "Nike DNA jacket",
+        "price": "87$",
+        "url": "./img/r2-i6.jpg",
+        "code": "6000",
+        "color": "green"
+      },
+      {
+        "name": "Diesel jeans",
+        "price": "150$",
+        "url": "./img/r2-i7.webp",
+        "code": "7000",
+        "color": "gray"
+      },
+      {
+        "name": "Diesel Turtleneck",
+        "price": "150$",
+        "url": "./img/r2-i8.webp",
+        "code": "8000",
+        "color": "gray"
+      },
+      { 
+        "name": "Givenchy bag",
+        "price": "1750$",
+        "url": "./img/r2-i9.jpg",
+        "code": "9000",
+        "color": "black"
+      },
+      { 
+        "name": "Martine Rose",
+        "price": "482$",
+        "url": "./img/r2-i10.webp",
+        "code": "10000",
+        "color": "darkgreen"
+      }
+  ]

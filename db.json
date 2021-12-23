@@ -1,0 +1,102 @@
+{
+  "posts": [
+    {
+      "name": "Nike NSW Swoosh",
+      "price": "50$",
+      "url": "./clients/src/img/r2-i1.webp",
+      "id": "1000",
+      "color": "white"
+    },
+    {
+      "name": "Isabel Marant top",
+      "price": "420$",
+      "url": "./clients/src/img/r2-i2.jpg",
+      "id": "2000",
+      "color": "black"
+    },
+    {
+      "name": "Ambush hoodie",
+      "price": "550$",
+      "url": "./clients/src/img/r2-i3.jpg",
+      "id": "3000",
+      "color": "blue"
+    },
+    {
+      "name": "Rixo dress",
+      "price": "347$",
+      "url": "./clients/src/img/r2-i4.webp",
+      "id": "4000",
+      "color": "brown"
+    },
+    {
+      "name": "Nike Uptempo",
+      "price": "200$",
+      "url": "./clients/src/img/r2-i5.jpg",
+      "id": "5000",
+      "color": "white"
+    },
+    {
+      "name": "Nike DNA jacket",
+      "price": "87$",
+      "url": "./clients/src/img/r2-i6.jpg",
+      "id": "6000",
+      "color": "green"
+    },
+    {
+      "name": "Diesel jeans",
+      "price": "150$",
+      "url": "./clients/src/img/r2-i7.webp",
+      "id": "7000",
+      "color": "gray"
+    },
+    {
+      "name": "Diesel Turtleneck",
+      "price": "150$",
+      "url": "./clients/src/img/r2-i8.webp",
+      "id": "8000",
+      "color": "gray"
+    },
+    {
+      "name": "Givenchy bag",
+      "price": "1750$",
+      "url": "./clients/src/img/r2-i9.jpg",
+      "id": "9000",
+      "color": "black"
+    },
+    {
+      "name": "Martine Rose",
+      "price": "482$",
+      "url": "./clients/src/img/r2-i10.webp",
+      "id": "10000",
+      "color": "darkgreen"
+    },
+    {
+      "name": "My Item",
+      "price": "122.1$",
+      "url": "./clients/src/img/r2-i1.webp",
+      "color": "purple",
+      "id": "kJGl2If"
+    },
+    {
+      "name": "I",
+      "price": "420$",
+      "url": "./clients/src/img/r2-i2.jpg",
+      "color": "black",
+      "id": "cPtfN2y"
+    },
+    {
+      "name": "AI",
+      "price": "20$",
+      "url": "./clients/src/img/r2-i2.jpg",
+      "color": "yellow",
+      "id": "zSlnEag"
+    },
+    {
+      "name": "test",
+      "price": "1320$",
+      "url": "./clients/src/img/r2-i2.jpg",
+      "color": "orange",
+      "id": "094zjXn"
+    }
+  ]
+}
