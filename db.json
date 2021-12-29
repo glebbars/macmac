@@ -1,25 +1,11 @@
 {
   "posts": [
     {
-      "name": "Nike NSW Swoosh",
-      "price": "50$",
+      "name": " NSW Swoosh",
+      "price": "1250$",
       "url": "./clients/src/img/r2-i1.webp",
       "id": "1000",
-      "color": "white"
-    },
-    {
-      "name": "Isabel Marant top",
-      "price": "420$",
-      "url": "./clients/src/img/r2-i2.jpg",
-      "id": "2000",
-      "color": "black"
-    },
-    {
-      "name": "Ambush hoodie",
-      "price": "550$",
-      "url": "./clients/src/img/r2-i3.jpg",
-      "id": "3000",
-      "color": "blue"
+      "color": "blacky"
     },
     {
       "name": "Rixo dress",
@@ -34,34 +20,6 @@
       "url": "./clients/src/img/r2-i5.jpg",
       "id": "5000",
       "color": "white"
-    },
-    {
-      "name": "Nike DNA jacket",
-      "price": "87$",
-      "url": "./clients/src/img/r2-i6.jpg",
-      "id": "6000",
-      "color": "green"
-    },
-    {
-      "name": "Diesel jeans",
-      "price": "150$",
-      "url": "./clients/src/img/r2-i7.webp",
-      "id": "7000",
-      "color": "gray"
-    },
-    {
-      "name": "Diesel Turtleneck",
-      "price": "150$",
-      "url": "./clients/src/img/r2-i8.webp",
-      "id": "8000",
-      "color": "gray"
-    },
-    {
-      "name": "Givenchy bag",
-      "price": "1750$",
-      "url": "./clients/src/img/r2-i9.jpg",
-      "id": "9000",
-      "color": "black"
     },
     {
       "name": "Martine Rose",
@@ -79,24 +37,36 @@
     },
     {
       "name": "I",
-      "price": "420$",
+      "price": "4220$",
       "url": "./clients/src/img/r2-i2.jpg",
-      "color": "black",
+      "color": "22black",
       "id": "cPtfN2y"
     },
     {
       "name": "AI",
       "price": "20$",
       "url": "./clients/src/img/r2-i2.jpg",
-      "color": "yellow",
+      "color": "3yellow",
       "id": "zSlnEag"
     },
     {
-      "name": "test",
-      "price": "1320$",
-      "url": "./clients/src/img/r2-i2.jpg",
-      "color": "orange",
-      "id": "094zjXn"
+      "name": "new item",
+      "body": "body of new item\nit is still body\nbody",
+      "price": "99$",
+      "color": "my colour",
+      "id": "KFhCwsq"
+    },
+    {
+      "name": "34",
+      "price": "3",
+      "color": "2",
+      "id": "DUyu3Tz"
+    },
+    {
+      "name": "last",
+      "price": "999",
+      "color": "last",
+      "id": "-vSbVG9"
     }
   ]
 }
