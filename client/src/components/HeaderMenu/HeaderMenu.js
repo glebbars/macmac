@@ -31,6 +31,15 @@ const HeaderMenu = () => {
       >
         Bag
       </NavLink>
+      <NavLink
+        exact
+        data-item="Admin"
+        className="header-menu__link"
+        to="/admin"
+        activeClassName="header-menu__link_selected"
+      >
+        Admin
+      </NavLink>
     </div>
   );
 };

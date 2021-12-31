@@ -1,106 +1,70 @@
 {
   "posts": [
     {
-      "name": "iPhone 12 Pro Max EA Sports sd",
-      "price": "4220$",
-      "url": "./clients/src/img/r2-i2.jpg",
-      "color": "22black",
-      "id": "cPtfN2y",
+      "price": "3",
+      "name": "3",
+      "color": "3",
       "pictures": [
         {
           "rawFile": {
-            "path": "images-2.jpg"
+            "path": "download-4.jpg"
           },
-          "src": "blob:http://localhost:3000/47095bf4-df12-4963-8760-3b85d22a6abd",
-          "title": "images-2.jpg"
-        },
+          "src": "blob:http://localhost:3000/a1dadc72-6d9c-496d-ad8e-a4f889ff52b1",
+          "title": "download-4.jpg"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "name": "4",
+      "price": "4",
+      "pictures": [
         {
           "rawFile": {
-            "path": "images-3.jpg"
+            "path": "images-1.jpg"
           },
-          "src": "blob:http://localhost:3000/995c798b-91a2-4c70-92ad-a9d5f974b8a5",
-          "title": "images-3.jpg"
+          "src": "blob:http://localhost:3000/5572f25f-90b8-4e57-b2b8-7ce2faa1a964",
+          "title": "images-1.jpg"
+        }
+      ],
+      "color": "4",
+      "id": 2
+    },
+    {
+      "name": "1",
+      "color": "1",
+      "price": "1",
+      "pictures": [
+        {
+          "rawFile": {
+            "path": "images-4.jpg"
+          },
+          "src": "blob:http://localhost:3000/65f2e711-6ad3-45c7-8490-b0e037d8a937",
+          "title": "images-4.jpg"
         },
         {
           "rawFile": {
             "path": "images-5.jpg"
           },
-          "src": "blob:http://localhost:3000/31d64d11-4793-4c1f-b8b2-cdeda3b34dc6",
+          "src": "blob:http://localhost:3000/1fa5b097-2b92-4e85-9cdf-97c4fa707a46",
           "title": "images-5.jpg"
         },
         {
           "rawFile": {
             "path": "images.jpg"
           },
-          "src": "blob:http://localhost:3000/414060c6-55dc-45d4-bf1e-41ffc4f23535",
+          "src": "blob:http://localhost:3000/728e975e-8593-434b-85f1-cba44a669bc0",
           "title": "images.jpg"
-        }
-      ]
-    },
-    {
-      "name": "e",
-      "price": "r",
-      "color": "r",
-      "pictures": [
-        {
-          "rawFile": {
-            "path": "download-1.png"
-          },
-          "src": "blob:http://localhost:3000/4000e200-df6e-4776-8c9f-1f78728b84e8",
-          "title": "download-1.png"
         },
         {
           "rawFile": {
-            "path": "download-2.jpg"
+            "path": "shutterstock_554314555_copy.jpg"
           },
-          "src": "blob:http://localhost:3000/b0800a8b-d44d-46ea-9d0a-100b95418945",
-          "title": "download-2.jpg"
-        },
-        {
-          "rawFile": {
-            "path": "images-1.jpg"
-          },
-          "src": "blob:http://localhost:3000/56a74ded-8214-480c-b58e-3fceb2cf33da",
-          "title": "images-1.jpg"
+          "src": "blob:http://localhost:3000/85bed9fd-ddba-456d-869c-cbd58add4273",
+          "title": "shutterstock_554314555_copy.jpg"
         }
       ],
-      "id": "UkM3NNt"
-    },
-    {
-      "name": "my",
-      "price": "1",
-      "color": "1",
-      "pictures": [
-        {
-          "rawFile": {
-            "path": "download-1.png"
-          },
-          "src": "blob:http://localhost:3000/afb727ac-b615-4306-be8e-c79303e7616a",
-          "title": "download-1.png"
-        },
-        {
-          "rawFile": {
-            "path": "download-2.jpg"
-          },
-          "src": "blob:http://localhost:3000/7db8be88-7285-4d79-a111-efc853dd7ee5",
-          "title": "download-2.jpg"
-        },
-        {
-          "rawFile": {
-            "path": "download-3.jpg"
-          },
-          "src": "blob:http://localhost:3000/8bd109c4-e2b7-4953-9d59-b98968dc3a0f",
-          "title": "download-3.jpg"
-        },
-        {
-          "rawFile": {
-            "path": "download-4.jpg"
-          },
-          "src": "blob:http://localhost:3000/be5f6089-d103-43e5-ad10-e18b4ced8944",
-          "title": "download-4.jpg"
-        }
-      ],
-      "id": "_-D-ZCK"
+      "id": 3
     }
   ]
 }

@@ -18,6 +18,7 @@ export const validatePostForm = (values) => {
   return errors
 };
 
+
 const PostCreate = (props) =>{
   return (
     <Create {...props} title='Create a Post'>
