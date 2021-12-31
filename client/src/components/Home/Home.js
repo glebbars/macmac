@@ -4,9 +4,7 @@ import Button from "../Button/Button";
 import Card from "../Card/Card";
 
 const Home = ({ 
-  cardsArr, 
-  setOpenedFirstModal, 
-  modal, 
+  cardsArr,
   setClothId 
 }) => {
   const [favorites, setFavorites] = useState(
@@ -25,42 +23,30 @@ const Home = ({
     }
   };
 
-  const listItems = cardsArr.map((cloth) => (
-    <div className="card" key={cloth.id}>
-      <Card
-        toggleFavorites={toggleFavorites}
-        cloth={cloth}
-        filledStar={favorites.includes(cloth.id)}
-        cardCross={false}
-        openModal={() => {
-          setOpenedFirstModal(true);
-        }}
-      />
-      <Button
-        text="Add to cart"
-        modalHandler={(clothId) => {
-          setOpenedFirstModal(true);
-          setClothId(clothId);
-        }}
-        clothId={cloth.id}
-        bg="black"
-      />
-    </div>
-  ));
-
   return (
     <div className="cards-container">
-      {listItems}
-      {modal}
+      {cardsArr.map((cloth) => (
+        <div className="card" key={cloth.id}>
+          <Card
+            toggleFavorites={toggleFavorites}
+            cloth={cloth}
+            filledStar={favorites.includes(cloth.id)}
+            cardCross={false}
+          />
+          <Button
+            text="Add to cart"
+            clothId={cloth.id}
+            bg="black"
+          />
+        </div>
+      ))}
     </div>
   );
 };
 
 Home.propTypes = {
   cardsArr: PropTypes.array.isRequired,
-  setOpenedFirstModal: PropTypes.func.isRequired,
-  modal: PropTypes.node.isRequired,
-  setClothId: PropTypes.func.isRequired,
+  // setClothId: PropTypes.func.isRequired,
 };
 
 export default Home;

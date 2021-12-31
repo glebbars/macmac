@@ -1,25 +1,34 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import Card from "../Card/Card";
-import Modal from "../Modal/Modal";
 
 const Bag = ({
   cardsArr,
-  addToTheBag,
-  openedFirstModal,
-  setOpenedFirstModal,
   clothId,
-  setClothId,
-  addedToTheBag,
+  setClothId
 }) => {
   const [favorites, setFavorites] = useState(
     JSON.parse(localStorage.getItem("favorites")) || []
+  );
+
+  const [addedToTheBag, setAddedToTheBag] = useState(
+    JSON.parse(localStorage.getItem("addedToTheBag")) || []
   );
   
 
   useEffect(() => {
     localStorage.setItem("favorites", JSON.stringify(favorites));
+    localStorage.setItem("addedToTheBag", JSON.stringify(addedToTheBag));
   });
+
+  const addToTheBag = (cardId) => {
+    console.log(cardId);
+    if (addedToTheBag.includes(cardId)) {
+      setAddedToTheBag([...addedToTheBag]);
+    } else {
+      setAddedToTheBag([...addedToTheBag, cardId]);
+    }
+  };
 
   const toggleFavorites = (cardId) => {
     if (favorites.includes(cardId)) {
@@ -55,9 +64,6 @@ const Bag = ({
         cloth={cloth}
         filledStar={favorites.includes(cloth.id)}
         cardCross={true}
-        openModal={() => {
-          setOpenedFirstModal(true);
-        }}
         setClothId={setClothId}
       />
     </div>
@@ -66,40 +72,6 @@ const Bag = ({
   return (
     <div className="cards-container">
       {listItems}
-      {openedFirstModal && (
-        <Modal
-          header="Want to remove this item?"
-          closeButton={true}
-          text="This modal is made for confirming the remove of chosen item from your shopping bag. In order to remove this item press 'Ok', otherwise 'Cancel'"
-          actions={
-            <>
-              <button
-                onClick={() => setOpenedFirstModal(false)}
-                style={{ backgroundColor: "white" }}
-                className="modal__main-part-btn"
-              >
-                Cancel
-              </button>
-              <button
-                onClick={(e) => {
-                  setOpenedFirstModal(false);
-                  removeFromTheBag(clothId);
-                }}
-                style={{ backgroundColor: "white" }}
-                className="modal__main-part-btn"
-              >
-                Ok
-              </button>
-            </>
-          }
-          opened={openedFirstModal}
-          mainBg="white"
-          headerBg="white"
-          closeModal={() => {
-            setOpenedFirstModal(false);
-          }}
-        />
-      )}{" "}
     </div>
   );
 };
@@ -108,8 +80,6 @@ Bag.propTypes = {
   addedToTheBag: PropTypes.array.isRequired,
   cardsArr: PropTypes.array.isRequired,
   // toggleBag: PropTypes.func.isRequired,
-  setOpenedFirstModal: PropTypes.func.isRequired,
-  openedFirstModal: PropTypes.bool.isRequired,
   clothId: PropTypes.string.isRequired,
 };
 

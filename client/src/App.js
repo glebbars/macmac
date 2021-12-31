@@ -8,15 +8,18 @@ import PostCreate from './components/PostCreate/PostCreate'
 import PostEdit from './components/PostEdit/PostEdit'
 import AuthProvider from "./components/AuthProvider/AuthProvider";
 import AdminLoginPage from './components/AdminLoginPage/AdminLoginPage'
+import AppRoutes from "./routes/AppRoutes";
 
 function App() {
   return (
-    <Admin authProvider={AuthProvider} loginPage={AdminLoginPage} dataProvider={jsonServerProvider('http://localhost:3000')}>
+    <>
+    <HeaderMenu />
+      <AppRoutes/>
+    {/* <Admin authProvider={AuthProvider} loginPage={AdminLoginPage} dataProvider={jsonServerProvider('http://localhost:3000')}>
         <Resource name="posts" list={PostList} create={PostCreate} edit={PostEdit}/>
     </Admin>
-     
-      // {/* <HeaderMenu />
-      // <GetData /> */}
+      */}
+    </>
       
   );
 }

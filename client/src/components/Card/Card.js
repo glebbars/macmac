@@ -27,7 +27,8 @@ const Card = ({
           className="modal__cross modal__cross_card"
         ></div>
       )}
-      <img className="card__img" src={cloth.url} alt="12321" />
+      {console.log(cloth.pictures[0].rawFile.path)}
+      <img className="card__img" src={cloth.pictures[0].src.slice(12)} alt="12321" />
       <h2 className="card__name">{cloth.name}</h2>
       <span className="card__color">{cloth.color}</span>
       <span className="card__price">{cloth.price}</span>

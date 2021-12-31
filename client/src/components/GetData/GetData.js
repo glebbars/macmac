@@ -5,7 +5,7 @@ const GetData = () => {
   const [clothesList, setClothesList] = useState([]);
 
   useEffect(() => {
-    fetch("/clothesArr.json")
+    fetch("/db.json")
       .then((response) => {
         return response.json();
       })

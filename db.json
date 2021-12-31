@@ -1,72 +1,106 @@
 {
   "posts": [
     {
-      "name": " NSW Swoosh",
-      "price": "1250$",
-      "url": "./clients/src/img/r2-i1.webp",
-      "id": "1000",
-      "color": "blacky"
-    },
-    {
-      "name": "Rixo dress",
-      "price": "347$",
-      "url": "./clients/src/img/r2-i4.webp",
-      "id": "4000",
-      "color": "brown"
-    },
-    {
-      "name": "Nike Uptempo",
-      "price": "200$",
-      "url": "./clients/src/img/r2-i5.jpg",
-      "id": "5000",
-      "color": "white"
-    },
-    {
-      "name": "Martine Rose",
-      "price": "482$",
-      "url": "./clients/src/img/r2-i10.webp",
-      "id": "10000",
-      "color": "darkgreen"
-    },
-    {
-      "name": "My Item",
-      "price": "122.1$",
-      "url": "./clients/src/img/r2-i1.webp",
-      "color": "purple",
-      "id": "kJGl2If"
-    },
-    {
-      "name": "I",
+      "name": "iPhone 12 Pro Max EA Sports sd",
       "price": "4220$",
       "url": "./clients/src/img/r2-i2.jpg",
       "color": "22black",
-      "id": "cPtfN2y"
+      "id": "cPtfN2y",
+      "pictures": [
+        {
+          "rawFile": {
+            "path": "images-2.jpg"
+          },
+          "src": "blob:http://localhost:3000/47095bf4-df12-4963-8760-3b85d22a6abd",
+          "title": "images-2.jpg"
+        },
+        {
+          "rawFile": {
+            "path": "images-3.jpg"
+          },
+          "src": "blob:http://localhost:3000/995c798b-91a2-4c70-92ad-a9d5f974b8a5",
+          "title": "images-3.jpg"
+        },
+        {
+          "rawFile": {
+            "path": "images-5.jpg"
+          },
+          "src": "blob:http://localhost:3000/31d64d11-4793-4c1f-b8b2-cdeda3b34dc6",
+          "title": "images-5.jpg"
+        },
+        {
+          "rawFile": {
+            "path": "images.jpg"
+          },
+          "src": "blob:http://localhost:3000/414060c6-55dc-45d4-bf1e-41ffc4f23535",
+          "title": "images.jpg"
+        }
+      ]
     },
     {
-      "name": "AI",
-      "price": "20$",
-      "url": "./clients/src/img/r2-i2.jpg",
-      "color": "3yellow",
-      "id": "zSlnEag"
+      "name": "e",
+      "price": "r",
+      "color": "r",
+      "pictures": [
+        {
+          "rawFile": {
+            "path": "download-1.png"
+          },
+          "src": "blob:http://localhost:3000/4000e200-df6e-4776-8c9f-1f78728b84e8",
+          "title": "download-1.png"
+        },
+        {
+          "rawFile": {
+            "path": "download-2.jpg"
+          },
+          "src": "blob:http://localhost:3000/b0800a8b-d44d-46ea-9d0a-100b95418945",
+          "title": "download-2.jpg"
+        },
+        {
+          "rawFile": {
+            "path": "images-1.jpg"
+          },
+          "src": "blob:http://localhost:3000/56a74ded-8214-480c-b58e-3fceb2cf33da",
+          "title": "images-1.jpg"
+        }
+      ],
+      "id": "UkM3NNt"
     },
     {
-      "name": "new item",
-      "body": "body of new item\nit is still body\nbody",
-      "price": "99$",
-      "color": "my colour",
-      "id": "KFhCwsq"
-    },
-    {
-      "name": "34",
-      "price": "3",
-      "color": "2",
-      "id": "DUyu3Tz"
-    },
-    {
-      "name": "last",
-      "price": "999",
-      "color": "last",
-      "id": "-vSbVG9"
+      "name": "my",
+      "price": "1",
+      "color": "1",
+      "pictures": [
+        {
+          "rawFile": {
+            "path": "download-1.png"
+          },
+          "src": "blob:http://localhost:3000/afb727ac-b615-4306-be8e-c79303e7616a",
+          "title": "download-1.png"
+        },
+        {
+          "rawFile": {
+            "path": "download-2.jpg"
+          },
+          "src": "blob:http://localhost:3000/7db8be88-7285-4d79-a111-efc853dd7ee5",
+          "title": "download-2.jpg"
+        },
+        {
+          "rawFile": {
+            "path": "download-3.jpg"
+          },
+          "src": "blob:http://localhost:3000/8bd109c4-e2b7-4953-9d59-b98968dc3a0f",
+          "title": "download-3.jpg"
+        },
+        {
+          "rawFile": {
+            "path": "download-4.jpg"
+          },
+          "src": "blob:http://localhost:3000/be5f6089-d103-43e5-ad10-e18b4ced8944",
+          "title": "download-4.jpg"
+        }
+      ],
+      "id": "_-D-ZCK"
     }
   ]
 }
