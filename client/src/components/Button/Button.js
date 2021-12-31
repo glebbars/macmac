@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Button = ({ text, modalHandler, bg, clothId }) => {
+const Button = ({ text, bg, clothId }) => {
   return (
     <button
       onClick={() => {
-        modalHandler(clothId);
+        // modalHandler(clothId);
       }}
       className="btn"
       style={{ backgroundColor: bg }}
@@ -17,9 +17,8 @@ const Button = ({ text, modalHandler, bg, clothId }) => {
 
 Button.propTypes = {
   text: PropTypes.string.isRequired,
-  modalHandler: PropTypes.func.isRequired,
   bg: PropTypes.string,
-  clothId: PropTypes.string.isRequired
+  clothId: PropTypes.number.isRequired
 };
 
 Button.defaultProps = {

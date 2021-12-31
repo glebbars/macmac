@@ -34,9 +34,9 @@ const Card = ({
         ></div>
       )}
       {console.log(cloth, cloth.pictures[0].rawFile.path)}
-      <img className="card__img" src={cloth.pictures[0].src} alt="12321" />
+      {/* <img className="card__img" src={cloth.pictures[0].src} alt="12321" />
       <FilenameField />
-      <ImageField source="pictures" src="rawFile.path" title="desc" />
+      <ImageField source="pictures" src="rawFile.path" title="desc" /> */}
       <h2 className="card__name">{cloth.name}</h2>
       <span className="card__color">{cloth.color}</span>
       <span className="card__price">{cloth.price}</span>
