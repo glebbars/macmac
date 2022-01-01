@@ -14,7 +14,7 @@ const AdminPannel = () =>{
     <>
     <HeaderMenu/>
     {/* <Admin  dataProvider={jsonServerProvider('https://my-json-server.typicode.com/glebbars/admin-pannel-db')}> */}
-    <Admin dataProvider={jsonServerProvider('http://localhost:3000')}>
+    <Admin dataProvider={jsonServerProvider('https://my-test-admin.herokuapp.com/api')}>
         <Resource name="posts" list={PostList} create={PostCreate} edit={PostEdit}/>
     </Admin>
     </>
