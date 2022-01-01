@@ -11,6 +11,7 @@ const AdminPannel = () =>{
   // authProvider={AuthProvider} loginPage={AdminLoginPage}
   return(
     <Admin  dataProvider={jsonServerProvider('https://my-json-server.typicode.com/glebbars/admin-pannel-db')}>
+    {/* <Admin dataProvider={jsonServerProvider('http://localhost:3000')}> */}
     <Resource name="posts" list={PostList} create={PostCreate} edit={PostEdit}/>
 </Admin>
 

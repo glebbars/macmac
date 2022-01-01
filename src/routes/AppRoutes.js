@@ -11,6 +11,7 @@ const AppRoutes = () => {
 
   useEffect(() => {
     fetch("https://my-json-server.typicode.com/glebbars/admin-pannel-db/posts")
+    // fetch("http://localhost:5000/posts")
       .then((response) => {
         return response.json();
       })
