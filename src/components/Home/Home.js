@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import Button from "../Button/Button";
 import Card from "../Card/Card";
-import {L} from 'react-router-dom'
 
 const Home = ({ 
   cardsArr,

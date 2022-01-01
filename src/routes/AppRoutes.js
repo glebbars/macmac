@@ -10,7 +10,7 @@ const AppRoutes = () => {
   const [cardsArr, setCardsArr] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/posts")
+    fetch("https://my-json-server.typicode.com/glebbars/admin-pannel-db/posts")
       .then((response) => {
         return response.json();
       })
