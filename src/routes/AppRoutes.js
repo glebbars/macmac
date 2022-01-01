@@ -3,7 +3,7 @@ import { Route } from "react-router-dom";
 import Home from "../components/Home/Home";
 import Favourites from "../components/Favourites/Favourites";
 import Bag from "../components/Bag/Bag";
-import AdminPannel from "../components/AdminPannel/AdminPannel";
+import AdminPannel from "../admin/AdminPannel/AdminPannel";
 import HeaderMenu from "../components/HeaderMenu/HeaderMenu";
 
 const AppRoutes = () => {
@@ -11,8 +11,8 @@ const AppRoutes = () => {
   const [cardsArr, setCardsArr] = useState([]);
 
   useEffect(() => {
-    // fetch("https://my-json-server.typicode.com/glebbars/admin-pannel-db/posts")
-    fetch("https://my-test-admin.herokuapp.com/api/posts")
+    fetch("http://localhost:5000/posts")
+    // fetch("https://my-test-admin.herokuapp.com/api/posts")
       .then((response) => {
         return response.json();
       })

@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "start_url": "/",
-  "proxy": "https://my-test-admin.herokuapp.com/api",
+  "proxy": "http://localhost:5000",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.5",
     "@testing-library/react": "^11.1.0",
@@ -23,12 +23,11 @@
   },
   "scripts": {
     "start": "node server.js",
-    "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "json-server --watch db.json --port 5000"
-
+    "server": "json-server --watch db.json --port 5000",
+    "dev": "concurrently \"npm run server\" \"react-scripts start\""
   },
   "eslintConfig": {
     "extends": [

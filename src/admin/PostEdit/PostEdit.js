@@ -1,6 +1,7 @@
 import React from "react";
 import {Edit, SimpleForm, TextInput, ImageInput, ImageField} from 'react-admin'
 import {validatePostForm} from '../PostCreate/PostCreate'
+
 const PostEdit = (props) =>{
   return (
     <Edit {...props} title='Edit Post'>
