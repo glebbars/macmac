@@ -19,28 +19,21 @@ const Card = ({
   setClothId,
 }) => {
   return (
-    <>
-      <Star
-        cloth={cloth}
-        toggleFavorites={toggleFavorites}
-        filledStar={filledStar}
-      />
-      {cardCross && (
-        <div
-          onClick={() => {
-            setClothId(cloth.id);
-          }}
-          className="modal__cross modal__cross_card"
-        ></div>
-      )}
-      {console.log(cloth, cloth.pictures[0].rawFile.path)}
-      {/* <img className="card__img" src={cloth.pictures[0].src} alt="12321" />
-      <FilenameField />
-      <ImageField source="pictures" src="rawFile.path" title="desc" /> */}
-      <h2 className="card__name">{cloth.name}</h2>
-      <span className="card__color">{cloth.color}</span>
-      <span className="card__price">{cloth.price}</span>
-    </>
+      <div>
+        {cloth && (
+        <div>
+          <Star
+            cloth={cloth}
+            toggleFavorites={toggleFavorites}
+            filledStar={filledStar}
+          />
+          {cardCross && <div onClick={() => setClothId(cloth.id)} className="modal__cross modal__cross_card"></div>}
+          <h2 className="card__name">{cloth.name}</h2>
+          <span className="card__color">{cloth.color}</span>
+          <span className="card__price">{cloth.price}</span>
+        </div>
+        )}
+    </div>
   );
 };
 
