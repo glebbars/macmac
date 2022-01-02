@@ -2,18 +2,23 @@ import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import Button from "../Button/Button";
 import Card from "../Card/Card";
-
+import axios from 'axios'
 const Home = ({ 
   cardsArr,
   setClothId 
 }) => {
+  const [uploadedImages, setUploadedImages] = useState([])
+  const [uploadedImgUrl, setUploadedImgUrl] = useState([])
+
   const [favorites, setFavorites] = useState(
     JSON.parse(localStorage.getItem("favorites")) || []
   );
 
+  const customArr = []
+
   useEffect(() => {
     localStorage.setItem("favorites", JSON.stringify(favorites));
-  });
+  }, []);
 
   const toggleFavorites = (cardId) => {
     if (favorites.includes(cardId)) {
@@ -23,9 +28,30 @@ const Home = ({
     }
   };
 
+  const uploadImages = async () => {
+    const attachments = await Promise.all(
+      Array.from(uploadedImages).map( file => {
+        const data = new FormData();
+        data.append('file', file);
+        data.append('upload_preset', "njebqo0r")
+        return axios.post("https://api.cloudinary.com/v1_1/dlt6mfxib/image/upload", data)
+        .then(res => {
+          return {
+            url: res.data.secure_url,
+            id: res.data.asset_id
+          }
+        })
+      })
+    )
+    setUploadedImgUrl(attachments)
+  }
+
   return (
     <div className="cards-container">
-      {cardsArr.map((cloth) => (
+      <input type="file" multiple onChange={(e) => setUploadedImages(e.target.files)}/>
+      <button onClick={uploadImages}>Upload Image</button>
+      {uploadedImgUrl.map(img => <img key={img.id} src={img.url} alt=""/>)}
+      {/* {cardsArr.map((cloth) => (
         <div className="card" key={cloth.id}>
           <Card
             toggleFavorites={toggleFavorites}
@@ -39,7 +65,7 @@ const Home = ({
             bg="black"
           />
         </div>
-      ))}
+      ))} */}
     </div>
   );
 };
