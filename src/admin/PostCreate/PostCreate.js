@@ -1,5 +1,6 @@
 import React from "react";
 import {Create, SimpleForm, TextInput, ImageInput, ImageField} from 'react-admin'
+import axios from 'axios'
 
 export const validatePostForm = (values) => {
   const errors = {};
@@ -20,8 +21,37 @@ export const validatePostForm = (values) => {
 
 
 const PostCreate = (props) =>{
+
+  const onTransform = async (values) => {
+    const images = await uploadImages(values.pictures)
+    const newImgs = values.pictures = images
+    return {
+      ...values,
+      newImgs
+    }
+  };
+
+  const uploadImages = async (items) => {
+    const attachments = await Promise.all(
+      Array.from(items).map( item => {
+        const data = new FormData();
+        data.append('file', item.rawFile);
+        data.append('upload_preset', "njebqo0r")
+        return axios.post("https://api.cloudinary.com/v1_1/dlt6mfxib/image/upload", data)
+        .then(res => {
+          return {
+            url: res.data.secure_url,
+            id: res.data.asset_id
+          }
+        })
+      })
+    )
+    return attachments
+  }
+  
+
   return (
-    <Create {...props} title='Create a Post'>
+    <Create {...props} transform={onTransform} title='Create a Post'>
     <SimpleForm validate={validatePostForm}> 
       <TextInput resettable source="name"/>
       <TextInput resettable source="price"/>

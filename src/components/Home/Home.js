@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import Button from "../Button/Button";
 import Card from "../Card/Card";
 import axios from 'axios'
+
 const Home = ({ 
   cardsArr,
   setClothId 
@@ -13,8 +14,6 @@ const Home = ({
   const [favorites, setFavorites] = useState(
     JSON.parse(localStorage.getItem("favorites")) || []
   );
-
-  const customArr = []
 
   useEffect(() => {
     localStorage.setItem("favorites", JSON.stringify(favorites));
@@ -33,14 +32,15 @@ const Home = ({
       Array.from(uploadedImages).map( file => {
         const data = new FormData();
         data.append('file', file);
-        data.append('upload_preset', "njebqo0r")
-        return axios.post("https://api.cloudinary.com/v1_1/dlt6mfxib/image/upload", data)
-        .then(res => {
-          return {
-            url: res.data.secure_url,
-            id: res.data.asset_id
-          }
-        })
+        console.log(file)
+        // data.append('upload_preset', "njebqo0r")
+        // return axios.post("https://api.cloudinary.com/v1_1/dlt6mfxib/image/upload", data)
+        // .then(res => {
+        //   return {
+        //     url: res.data.secure_url,
+        //     id: res.data.asset_id
+        //   }
+        // })
       })
     )
     setUploadedImgUrl(attachments)
