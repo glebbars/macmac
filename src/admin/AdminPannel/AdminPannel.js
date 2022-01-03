@@ -1,5 +1,5 @@
 import React from 'react'
-import { Admin, Resource, fetchUtils } from 'react-admin';
+import { Admin, Resource } from 'react-admin';
 import jsonServerProvider from 'ra-data-json-server';
 import PostList from '../PostList/PostList'
 import PostCreate from '../PostCreate/PostCreate'

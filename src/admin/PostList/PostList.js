@@ -5,7 +5,7 @@ const PostPagination = props => <Pagination rowsPerPageOptions={[5, 10, 25, 50, 
 
 const PostList = (props) =>{
   return (
-    <List {...props} pagination={<PostPagination />}>
+    <List title='Products' {...props} pagination={<PostPagination />}>
       <Datagrid>
         <TextField source="id"/>
         <TextField source="name"/>

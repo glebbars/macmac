@@ -42,8 +42,7 @@ const Card = ({
           <ImageInput source="preview">
             <PreviewImage source="src" />
           </ImageInput> */}
-       <ImageField source="src" title="title" />
-       <ImageField source="picture.url" title="picture.title" />
+          <img className="card__img" src={cloth.pictures[0].url} alt="Loading..." />
           <h2 className="card__name">{cloth.name}</h2>
           <span className="card__color">{cloth.color}</span>
           <span className="card__price">{cloth.price}</span>

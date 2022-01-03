@@ -18,7 +18,7 @@ const Button = ({ text, bg, clothId }) => {
 Button.propTypes = {
   text: PropTypes.string.isRequired,
   bg: PropTypes.string,
-  clothId: PropTypes.string.isRequired
+  clothId: PropTypes.number.isRequired
 };
 
 Button.defaultProps = {

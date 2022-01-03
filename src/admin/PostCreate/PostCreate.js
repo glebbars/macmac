@@ -4,6 +4,7 @@ import axios from 'axios'
 
 export const validatePostForm = (values) => {
   const errors = {};
+
   if (!values.name) {
       errors.name = 'The firstName is required';
   }
@@ -13,45 +14,40 @@ export const validatePostForm = (values) => {
   else if (!values.color) {
       errors.color = 'The color is required';
   } 
-  else if (!values.pictures === 0) {
-      errors.color = 'Please upload pictures';
+  else if (!values.pictures || values.pictures.length === 0) {
+      errors.pictures = 'Please upload pictures';
   } 
   return errors
 };
 
+export const onTransform = async (values) => {
+  const newFilesArr = values.pictures.filter(item => item.rawFile)
+  const images = await uploadImages(newFilesArr)
+  values.pictures = [...values.pictures.filter(item => !item.rawFile), ...images]
+  return values
+};
+
+const uploadImages = async (items) => {
+  const attachments = await Promise.all(
+    Array.from(items).map( item => {
+      const data = new FormData();
+      data.append('file', item.rawFile);
+      data.append('upload_preset', "njebqo0r")
+      return axios.post("https://api.cloudinary.com/v1_1/dlt6mfxib/image/upload", data)
+      .then(res => {
+        return {
+          url: res.data.secure_url,
+          id: res.data.asset_id
+        }
+      })
+    })
+  )
+  return attachments
+}
 
 const PostCreate = (props) =>{
-
-  const onTransform = async (values) => {
-    const images = await uploadImages(values.pictures)
-    const newImgs = values.pictures = images
-    return {
-      ...values,
-      newImgs
-    }
-  };
-
-  const uploadImages = async (items) => {
-    const attachments = await Promise.all(
-      Array.from(items).map( item => {
-        const data = new FormData();
-        data.append('file', item.rawFile);
-        data.append('upload_preset', "njebqo0r")
-        return axios.post("https://api.cloudinary.com/v1_1/dlt6mfxib/image/upload", data)
-        .then(res => {
-          return {
-            url: res.data.secure_url,
-            id: res.data.asset_id
-          }
-        })
-      })
-    )
-    return attachments
-  }
-  
-
   return (
-    <Create {...props} transform={onTransform} title='Create a Post'>
+    <Create {...props} transform={onTransform} title='Create a Product'>
     <SimpleForm validate={validatePostForm}> 
       <TextInput resettable source="name"/>
       <TextInput resettable source="price"/>
