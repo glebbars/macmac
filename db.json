@@ -19,6 +19,42 @@
         }
       ],
       "id": 1
+    },
+    {
+      "color": "e",
+      "price": "e",
+      "name": "e",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1641239766/uploaded_images/asxtezl9tbycu0m0lhkv.jpg",
+          "id": "9fce229f2354d785b17983588fa6be47"
+        },
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1641239782/uploaded_images/bjr8ixoh4tvdoywkpqeq.png",
+          "id": "28fcbbbaaf59d16427795762122883c0"
+        },
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1641239782/uploaded_images/e3vmr4ec5keixr0amgmj.jpg",
+          "id": "88a06f9658b4c661c63e250cb03004f7"
+        },
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1641239782/uploaded_images/m4nrw1aujmihnnsj4kjh.jpg",
+          "id": "ac2b9170c287a3984b15d9bc03561704"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "price": "3",
+      "name": "4",
+      "color": "4",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1641254304/uploaded_images/uv1kxbw3gb5a6rsvurmk.jpg",
+          "id": "c9076ecc1cabacbc146cdbd943baa6fc"
+        }
+      ],
+      "id": 5
     }
   ]
 }

@@ -1,17 +1,11 @@
 import React from "react";
 import {Edit, SimpleForm, TextInput, ImageInput, ImageField,SaveButton, Toolbar} from 'react-admin'
-import {validatePostForm, onTransform} from '../PostCreate/PostCreate'
-
-const PostCreateToolbar = props => (
-  <Toolbar {...props}>
-      <SaveButton transform={data => console.log(data)}/>
-  </Toolbar>
-);
+import {validatePostForm} from '../PostCreate/PostCreate'
 
 const PostEdit = (props) =>{
 
   return (
-    <Edit {...props} transform={onTransform} title='Edit a Product'>
+    <Edit {...props} title='Edit a Product'>
     <SimpleForm validate={validatePostForm}> 
       <TextInput disabled source="id"/>
       <TextInput resettable source="name"/>
