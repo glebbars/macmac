@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import {Create, SimpleForm, TextInput, ImageInput, ImageField} from 'react-admin'
 import axios from 'axios'
-import Compressor from 'compressorjs';
 import Resizer from "react-image-file-resizer";
 
 export const validatePostForm = (values) => {
@@ -26,27 +25,19 @@ export const validatePostForm = (values) => {
 export const onTransform = async (values) => {
   console.log(values.pictures[0].rawFile)
     const newFilesArr = values.pictures.filter(item => item.rawFile)
-    const images = await resizeFile(values.pictures[0].rawFile)
-    const compressedImgs = await uploadImage(images)
-    values.pictures = [compressedImgs]
+    console.log(newFilesArr)
+    const compressedImgs = await compressImages(newFilesArr)
+    const uploadedImgs = await uploadImage(compressedImgs)
+    values.pictures = [...values.pictures.filter(item => !item.rawFile), ...uploadedImgs]
     return values  
 };
-
-// const compressImages = async (filesArr) => {
-//   const compressedPhotos = await Promise.all(
-//     filesArr.map(async file => await resizeFile(file))
-//   )
-//   return uploadImage(compressedPhotos)
-// };
-
   
 const compressImages = async (filesArr) => {
     const compressedPhotos = await Promise.all(
-      filesArr.map(async file => await resizeFile(file))
+      filesArr.map(async file => await resizeFile(file.rawFile))
     )
-  console.log(compressedPhotos)
-
-  return uploadImage(compressedPhotos)
+    console.log(compressedPhotos)
+  return compressedPhotos
 };
 
 const resizeFile = (file) => new Promise ((resolve) => {
@@ -83,18 +74,25 @@ const resizeFile = (file) => new Promise ((resolve) => {
 // }
 
 
-const uploadImage = async (item) => {
-  const data = new FormData();
-  data.append('file', item);
-  data.append('upload_preset', "njebqo0r")
-  return axios.post("https://api.cloudinary.com/v1_1/dlt6mfxib/image/upload", data)
-  .then(res => {
-    console.log(res)
-    return {
-      url: res.data.secure_url,
-      id: res.data.asset_id
-    }
-  }).catch(err => console.log(err))
+const uploadImage = async (compressedImgs) => {
+  const attachments = await Promise.all(
+    compressedImgs.map(img => {
+      const data = new FormData();
+      data.append('file', img);
+      data.append('upload_preset', "njebqo0r")
+      return axios.post("https://api.cloudinary.com/v1_1/dlt6mfxib/image/upload", data)
+      .then(res => {
+        console.log(res)
+        return {
+          url: res.data.secure_url,
+          id: res.data.asset_id
+        }
+      }).catch(err => console.log(err))
+
+    })
+  )
+  console.log(attachments)
+      return attachments
 }
 
 

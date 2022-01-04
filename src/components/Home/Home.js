@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import Button from "../Button/Button";
 import Card from "../Card/Card";
+import readXlsxFile from 'read-excel-file'
+import axios from 'axios'
 
 const Home = ({ 
   cardsArr,
@@ -12,9 +14,17 @@ const Home = ({
     JSON.parse(localStorage.getItem("favorites")) || []
   );
 
+  const [usdExchangeRate, setUsdExchangeRate] = useState('')
+
   useEffect(() => {
     localStorage.setItem("favorites", JSON.stringify(favorites));
+
+    axios.get('https://api.privatbank.ua/p24api/pubinfo?exchange&json&coursid=11').then(res => {
+      res.data.find(obj => obj.ccy === 'USD' && obj.base_ccy === 'UAH' ? setUsdExchangeRate(+obj.sale) : null
+    )})
+
   }, []);
+
 
   const toggleFavorites = (cardId) => {
     if (favorites.includes(cardId)) {
@@ -27,7 +37,19 @@ const Home = ({
 
   return (
     <div className="cards-container">
-      {cardsArr.map((cloth) => (
+      <input type="file" onChange={(e) => readXlsxFile(e.target.files[0], {sheet: 'iPhone 13'}).then((rows) => {
+        rows.forEach(row => {
+          if(row[1]){
+            const newPrices = {
+              'name': row[0],
+              'price': row[1] * usdExchangeRate + " UAH"
+            }
+            console.log(newPrices)
+          }
+        })
+      })}/>
+      
+      {/* {cardsArr.map((cloth) => (
         <div className="card" key={cloth.id}>
           <Card
             toggleFavorites={toggleFavorites}
@@ -41,7 +63,7 @@ const Home = ({
             bg="black"
           />
         </div>
-      ))}
+      ))} */}
     </div>
   );
 };

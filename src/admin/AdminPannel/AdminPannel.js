@@ -6,19 +6,13 @@ import PostCreate from '../PostCreate/PostCreate'
 import PostEdit from '../PostEdit/PostEdit'
 import AuthProvider from "../AuthProvider/AuthProvider";
 import AdminLoginPage from '../AdminLoginPage/AdminLoginPage'
-import HeaderMenu from '../../components/HeaderMenu/HeaderMenu'
 
 const AdminPannel = () =>{
-  // authProvider={AuthProvider} loginPage={AdminLoginPage}
   return(
-    <>
-    <HeaderMenu/>
-    {/* <Admin dataProvider={jsonServerProvider('https://my-test-admin.herokuapp.com/api')}> */}
-    <Admin dataProvider={jsonServerProvider('http://localhost:3000')}>
+    // <Admin dataProvider={jsonServerProvider('https://my-test-admin.herokuapp.com/api')}>
+    <Admin authProvider={AuthProvider} loginPage={AdminLoginPage} dataProvider={jsonServerProvider('http://localhost:3000')}>
         <Resource name="posts" list={PostList} create={PostCreate} edit={PostEdit}/>
     </Admin>
-    </>
-
   )
 }
 
