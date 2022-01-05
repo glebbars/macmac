@@ -22,55 +22,27 @@
     }
   ],
   "prices": [
-    {
-      "iPhone 13": {
-        "iPhone 13 128gb Blue": 26098.9035,
-        "iPhone 13 128gb Pink": 26648.3541,
-        "iPhone 13 128gb Midnight": 26510.991449999998,
-        "iPhone 13 128gb Starlight": 26648.3541,
-        "iPhone 13 256gb Blue": 28571.4312,
-        "iPhone 13 256gb Red": 28296.705899999997,
-        "iPhone 13 512gb Blue": 29670.3324,
-        "iPhone 13 512gb Pink": 29945.057699999998,
-        "iPhone 13 512gb Red": 30082.42035,
-        "iPhone 13 512gb Midnight": 29670.3324,
-        "iPhone 13 Mini 128gb Pink": 23626.375799999998,
-        "iPhone 13 Mini 128gb Red": 23901.1011,
-        "iPhone 13 Mini 256gb Blue": 25137.36495,
-        "iPhone 13 Mini 256gb Pink": 24450.5517,
-        "iPhone 13 Mini 256gb Red": 25137.36495,
-        "iPhone 13 Pro 128gb Gold": 34340.6625,
-        "iPhone 13 Pro 128gb Silver": 34340.6625,
-        "iPhone 13 Pro 128gb Graphite": 34203.299849999996,
-        "iPhone 13 Pro 128gb Sierra Blue": 34203.299849999996,
-        "iPhone 13 Pro 256gb Gold": 37225.27815,
-        "iPhone 13 Pro 256gb Silver": 37225.27815,
-        "iPhone 13 Pro 256gb Graphite": 37225.27815,
-        "iPhone 13 Pro 256gb Sierra Blue": 37225.27815,
-        "iPhone 13 Pro 512gb Graphite": 43956.047999999995,
-        "iPhone 13 Pro 512gb Sierra Blue": 43956.047999999995,
-        "iPhone 13 Pro 1Tb Gold": 48901.1034,
-        "iPhone 13 Pro 1Tb Silver": 48901.1034,
-        "iPhone 13 Pro 1Tb Graphite": 49175.8287,
-        "iPhone 13 Pro 1Tb Sierra Blue": 49175.8287,
-        "iPhone 13 Pro Max 128gb Gold": 37225.27815,
-        "iPhone 13 Pro Max 128gb Silver": 37637.3661,
-        "iPhone 13 Pro Max 128gb Graphite": 37362.6408,
-        "iPhone 13 Pro Max 128gb Sierra Blue": 37637.3661,
-        "iPhone 13 Pro Max 256gb Gold": 40384.619099999996,
-        "iPhone 13 Pro Max 256gb Silver": 40384.619099999996,
-        "iPhone 13 Pro Max 256gb Graphite": 40384.619099999996,
-        "iPhone 13 Pro Max 256gb Sierra Blue": 40659.3444,
-        "iPhone 13 Pro Max 512gb Gold": 49038.466049999995,
-        "iPhone 13 Pro Max 512gb Silver": 49175.8287,
-        "iPhone 13 Pro Max 512gb Graphite": 48901.1034,
-        "iPhone 13 Pro Max 512gb Sierra Blue": 49038.466049999995,
-        "iPhone 13 Pro Max 1Tb Gold": 54395.6094,
-        "iPhone 13 Pro Max 1Tb Silver": 54395.6094,
-        "iPhone 13 Pro Max 1Tb Graphite": 54258.24675,
-        "iPhone 13 Pro Max 1Tb Sierra Blue": 54670.3347
-      },
-      "id": 1
-    }
+    [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {}
+    ],
+    [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {}
+    ]
   ]
 }

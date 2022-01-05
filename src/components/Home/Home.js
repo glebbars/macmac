@@ -37,19 +37,32 @@ const Home = ({
 
   return (
     <div className="cards-container">
-      <input type="file" onChange={(e) => {
-        const totalArr = {}
-        readXlsxFile(e.target.files[0], {sheet: 'iPhone 13'}).then((rows) => {
-        const pricesArr = {}
-        rows.forEach(row => {
-          if(row[1]){
-            pricesArr[row[0]] = row[1] * usdExchangeRate
-          }
-        })
-        totalArr['iPhone 13'] = pricesArr
+      <input type="file" onChange={e => {
         
+        readXlsxFile(e.target.files[0], { getSheets: true }).then( sheets => {
+          const totalPicesArr = {}
+          const result = sheets.map(sheet => {
+            const pricesArrPerSheet = {}
+            readXlsxFile(e.target.files[0], { sheet: sheet.name }).then( rows => {
+              rows.map(row => {
+                if(row[0] && row[1] && typeof row[1] === 'number'){
+                   pricesArrPerSheet[row[0]] = row[1] * usdExchangeRate
+                }
+              })
+              
+            }).then( data => {
+              if(Object.keys(pricesArrPerSheet).length >= 1) {
+                 totalPicesArr[sheet.name] = pricesArrPerSheet
+                 console.log(totalPicesArr)
+                 return totalPicesArr
+              }
+            }).then(data => console.log(data))
+            return totalPicesArr
+          })
+          // axios.post('http://localhost:5000/prices/', result).then(res => console.log(res))
+          return result
+        }).then(data => console.log(data, data[0]))
         // axios.post('http://localhost:5000/prices/', totalArr).then(res => console.log(res))
-      })
 
       }}/>
       
