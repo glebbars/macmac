@@ -37,17 +37,21 @@ const Home = ({
 
   return (
     <div className="cards-container">
-      <input type="file" onChange={(e) => readXlsxFile(e.target.files[0], {sheet: 'iPhone 13'}).then((rows) => {
+      <input type="file" onChange={(e) => {
+        const totalArr = {}
+        readXlsxFile(e.target.files[0], {sheet: 'iPhone 13'}).then((rows) => {
+        const pricesArr = {}
         rows.forEach(row => {
           if(row[1]){
-            const newPrices = {
-              'name': row[0],
-              'price': row[1] * usdExchangeRate + " UAH"
-            }
-            console.log(newPrices)
+            pricesArr[row[0]] = row[1] * usdExchangeRate
           }
         })
-      })}/>
+        totalArr['iPhone 13'] = pricesArr
+        
+        // axios.post('http://localhost:5000/prices/', totalArr).then(res => console.log(res))
+      })
+
+      }}/>
       
       {/* {cardsArr.map((cloth) => (
         <div className="card" key={cloth.id}>
