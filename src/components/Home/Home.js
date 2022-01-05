@@ -39,31 +39,28 @@ const Home = ({
     <div className="cards-container">
       <input type="file" onChange={e => {
         
-        readXlsxFile(e.target.files[0], { getSheets: true }).then( sheets => {
-          const totalPicesArr = {}
-          const result = sheets.map(sheet => {
-            const pricesArrPerSheet = {}
-            readXlsxFile(e.target.files[0], { sheet: sheet.name }).then( rows => {
-              rows.map(row => {
-                if(row[0] && row[1] && typeof row[1] === 'number'){
-                   pricesArrPerSheet[row[0]] = row[1] * usdExchangeRate
-                }
+        
+        readXlsxFile(e.target.files[0], { getSheets: true }).then(async sheets => {
+          const allPricesObj = {}
+          await Promise.all( 
+            sheets.map(async sheet => {
+              await readXlsxFile(e.target.files[0], { sheet: sheet.name }).then( rows => {
+                rows.map(row => {
+                  if(row[0] && row[1] && typeof row[1] === 'number'){
+                    console.log(row[0])
+                    allPricesObj[row[0]] = row[1] * usdExchangeRate
+                  }
+                })
               })
-              
-            }).then( data => {
-              if(Object.keys(pricesArrPerSheet).length >= 1) {
-                 totalPicesArr[sheet.name] = pricesArrPerSheet
-                 console.log(totalPicesArr)
-                 return totalPicesArr
-              }
-            }).then(data => console.log(data))
-            return totalPicesArr
-          })
-          // axios.post('http://localhost:5000/prices/', result).then(res => console.log(res))
-          return result
-        }).then(data => console.log(data, data[0]))
-        // axios.post('http://localhost:5000/prices/', totalArr).then(res => console.log(res))
+            })
+          )
+          return allPricesObj
+        }).then(pricesToDB => axios.patch('http://localhost:5000/prices/1', pricesToDB)
+        .then(res => console.log(res)
+        ))
 
+
+        // axios.post('http://localhost:5000/prices/', totalArr).then(res => console.log(res))
       }}/>
       
       {/* {cardsArr.map((cloth) => (
