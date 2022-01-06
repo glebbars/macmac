@@ -1,5 +1,5 @@
 import React from "react";
-import {List, Datagrid, TextField, EditButton, DeleteButton, Pagination} from 'react-admin'
+import {List, Datagrid, TextField, Pagination} from 'react-admin'
 
 const PostPagination = props => <Pagination rowsPerPageOptions={[5, 10, 25, 50, 100]} {...props} />;
 

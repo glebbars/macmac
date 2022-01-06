@@ -226,6 +226,9 @@
     position: relative;
     background-color: #fafafa;
     display: flex;
+    border-radius: 8px;
+    margin: 0 0 0 auto;
+
 
 
   &__input{
@@ -237,11 +240,10 @@
     height: 1px;
   }
   &__text{
-    background-color: #2196f3;
+    background-color: white;
     border-radius: 8px;
-    // width: fit-content;
     padding: 5px 10px;
-    color: white;
+    color: #2196f3;
     font-size: 14px;
   }
 
