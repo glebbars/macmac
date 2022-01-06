@@ -21,6 +21,15 @@
       "id": 1
     }
   ],
+  "orders": [
+    {
+      "firstName": "er",
+      "lastName": "er",
+      "email": "er@gmail.com",
+      "phone": "+380967623124",
+      "id": 1
+    }
+  ],
   "prices": [
     {
       "iPhone 12 Pro Max 128gb Blue уценка": 30110.497900000002,

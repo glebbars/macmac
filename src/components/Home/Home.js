@@ -4,7 +4,7 @@ import Button from "../Button/Button";
 import Card from "../Card/Card";
 import readXlsxFile from 'read-excel-file'
 import axios from 'axios'
-
+import OrderForm from "../OrderForm/OrderForm";
 const Home = ({ 
   cardsArr,
   setClothId 
@@ -37,9 +37,8 @@ const Home = ({
 
   return (
     <div className="cards-container">
-      <input type="file" onChange={e => {
-        
-        
+      <OrderForm/>
+      {/* <input type="file" onChange={e => {
         readXlsxFile(e.target.files[0], { getSheets: true }).then(async sheets => {
           const allPricesObj = {}
           await Promise.all( 
@@ -58,10 +57,7 @@ const Home = ({
         }).then(pricesToDB => axios.patch('http://localhost:5000/prices/1', pricesToDB)
         .then(res => console.log(res)
         ))
-
-
-        // axios.post('http://localhost:5000/prices/', totalArr).then(res => console.log(res))
-      }}/>
+      }}/> */}
       
       {/* {cardsArr.map((cloth) => (
         <div className="card" key={cloth.id}>
