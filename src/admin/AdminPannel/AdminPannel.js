@@ -7,11 +7,14 @@ import PostCreate from '../PostCreate/PostCreate'
 import PostEdit from '../PostEdit/PostEdit'
 import AuthProvider from "../AuthProvider/AuthProvider";
 import AdminLoginPage from '../AdminLoginPage/AdminLoginPage'
+import UploadPrices from '../UploadPrices/UploadPrices'
+import CustomLayout from '../CustomLayout/CustomLayout'
 
 const AdminPannel = () =>{
   return(
     // <Admin dataProvider={jsonServerProvider('https://my-test-admin.herokuapp.com/api')}>
-    <Admin authProvider={AuthProvider} loginPage={AdminLoginPage} dataProvider={jsonServerProvider('http://localhost:3000')}>
+    <Admin layout={CustomLayout} authProvider={AuthProvider} loginPage={AdminLoginPage} dataProvider={jsonServerProvider('http://localhost:3000')}>
+      <UploadPrices />
         <Resource name="posts" list={PostList} create={PostCreate} edit={PostEdit}/>
         <Resource name="orders" list={OrderList}/>
     </Admin>

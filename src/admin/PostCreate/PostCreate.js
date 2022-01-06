@@ -53,27 +53,6 @@ const resizeFile = (file) => new Promise ((resolve) => {
   );
 });
   
-// const uploadImage = async (compressedImgArr) => {
-//   console.log(compressedImgArr)
-//   const attachments = await Promise.all(
-//     compressedImgArr.map(item => {
-//       const data = new FormData();
-//       console.log(compressedImgArr, item);
-//       data.append('upload_preset', "njebqo0r")
-//       return axios.post("https://api.cloudinary.com/v1_1/dlt6mfxib/image/upload", data)
-//       .then(res => {
-//         console.log(res)
-//         return {
-//           url: res.data.secure_url,
-//           id: res.data.asset_id
-//         }
-//       })
-//     }))
-//     console.log(attachments)
-//     return attachments
-// }
-
-
 const uploadImage = async (compressedImgs) => {
   const attachments = await Promise.all(
     compressedImgs.map(img => {
@@ -91,10 +70,8 @@ const uploadImage = async (compressedImgs) => {
 
     })
   )
-  console.log(attachments)
-      return attachments
+  return attachments
 }
-
 
 const PostCreate = (props) =>{
   return (
