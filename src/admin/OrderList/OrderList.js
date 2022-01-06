@@ -15,5 +15,4 @@ const OrderList = (props) =>{
     </List>
   )
 }
-
 export default OrderList
