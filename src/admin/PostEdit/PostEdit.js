@@ -4,8 +4,9 @@ import { validatePostForm, onTransform, initialChoices, getModelChoices, getCapa
 import axios from 'axios'
 
 const PostEdit = (props) =>{
-  const [finalProduct, setFinalProduct] = useState({})
+  // const [finalProduct, setFinalProduct] = useState({})
 
+  // const [createdProduct, setCreatedProduct] = useState({})
   const [choices, setChoices] = useState({
     model: [],
     capacity: [],
@@ -17,7 +18,13 @@ const PostEdit = (props) =>{
   }
 
   useEffect(() => {
-    axios.get(`http://localhost:5000/posts/${props.id}`).then(res => setFinalProduct(res.data))
+    axios.get(`http://localhost:5000/posts/${props.id}`).then(res => {
+      // setCreatedProduct(res.data)
+      setChoices({
+        model: getModelChoices(res.data.category)
+      })
+    })
+
   }, [])
 
   return (
@@ -26,25 +33,24 @@ const PostEdit = (props) =>{
        <TextInput disabled source='id' /> 
     <SelectInput onChange={e => {
       // modifyFinalProduct(e.target.value); 
+      // console.log(choices.model)
+
+      // setCreatedProduct({...createdProduct, category: e.target.value})
       setChoices({...choices, model: getModelChoices(e.target.value)}) 
     }} 
     source="category" choices={initialChoices} />
 
-    <FormDataConsumer>
-      {({ formData }) => 
-        <SelectInput 
+     <SelectInput 
+          value={'11'}
           source="model"
-          choices={getModelChoices(formData.category)}
+          choices={choices.model}
           onChange={e => { 
-            console.log(e.target.value, formData.model)
             // modifyFinalProduct(e.target.value); 
-            setChoices({...choices, capacity: getCapacityChoices(e.target.value)})
+            // setChoices({...choices, capacity: getCapacityChoices(e.target.value)})
           }} 
         />
-      }
-    </FormDataConsumer>
 
-    <FormDataConsumer>
+    {/* <FormDataConsumer>
       {({ formData }) => 
         <SelectInput 
           source="capacity"
@@ -67,7 +73,7 @@ const PostEdit = (props) =>{
           }} 
         />
       }
-    </FormDataConsumer>
+    </FormDataConsumer> */}
 
     <ImageInput multiple source="pictures" label="Product pictures" accept="image/*"  placeholder={<p>Upload or Drop your images here</p>}>
        <ImageField source="src" title="title" />
