@@ -1,93 +1,58 @@
-import React from "react";
-import {Create, SimpleForm, TextInput, ImageInput, ImageField} from 'react-admin'
-import axios from 'axios'
-import Resizer from "react-image-file-resizer";
-
-export const validatePostForm = (values) => {
-  const errors = {};
-
-  if (!values.name) {
-      errors.name = 'The firstName is required';
-  }
-  else if (!values.price) {
-      errors.price = 'The price is required';
-  } 
-  else if (!values.color) {
-      errors.color = 'The color is required';
-  } 
-  else if (!values.pictures || values.pictures.length === 0) {
-      errors.pictures = 'Please upload pictures';
-  } 
-  return errors
-};
-
-
-export const onTransform = async (values) => {
-  console.log(values.pictures[0].rawFile)
-    const newFilesArr = values.pictures.filter(item => item.rawFile)
-    console.log(newFilesArr)
-    const compressedImgs = await compressImages(newFilesArr)
-    const uploadedImgs = await uploadImage(compressedImgs)
-    values.pictures = [...values.pictures.filter(item => !item.rawFile), ...uploadedImgs]
-    return values  
-};
-  
-const compressImages = async (filesArr) => {
-    const compressedPhotos = await Promise.all(
-      filesArr.map(async file => await resizeFile(file.rawFile))
-    )
-    console.log(compressedPhotos)
-  return compressedPhotos
-};
-
-const resizeFile = (file) => new Promise ((resolve) => {
-  Resizer.imageFileResizer(
-    file,
-    1500,
-    1500,
-    "JPEG",
-    100,
-    0,
-    (uri) => resolve(uri),
-    "file"
-  );
-});
-  
-const uploadImage = async (compressedImgs) => {
-  const attachments = await Promise.all(
-    compressedImgs.map(img => {
-      const data = new FormData();
-      data.append('file', img);
-      data.append('upload_preset', "njebqo0r")
-      return axios.post("https://api.cloudinary.com/v1_1/dlt6mfxib/image/upload", data)
-      .then(res => {
-        console.log(res)
-        return {
-          url: res.data.secure_url,
-          id: res.data.asset_id
-        }
-      }).catch(err => console.log(err))
-
-    })
-  )
-  return attachments
-}
+import React, { useState } from "react";
+import {Create, SimpleForm, TextInput, ImageInput, ImageField, SelectInput} from 'react-admin'
+import { validatePostForm, onTransform,initialChoices, getModelChoices, getCapacityChoices, getColorChoices } from "../AdditionalFunctions/AdditionalFunctions";
 
 const PostCreate = (props) =>{
+  // const [finalProduct, setFinalProduct] = useState({})
+
+  const [choices, setChoices] = useState({
+    model: [],
+    capacity: [],
+    color: []
+  })
+
+  const modifyFinalProduct = (value) => {
+    // setFinalProduct(`${finalProduct}` + value)
+  }
+
   return (
-    <>
     <Create {...props} transform={onTransform} title='Create a Product'>
     <SimpleForm validate={validatePostForm}> 
-      <TextInput resettable source="name"/>
-      <TextInput resettable source="price"/>
-      <TextInput resettable source="color"/>
+    <SelectInput onChange={e => {
+      // modifyFinalProduct(e.target.value); 
+      setChoices({...choices, model: getModelChoices(e.target.value)}) 
+    }} 
+    source="category" choices={initialChoices} />
+
+    {choices.model.length > 0 && (
+       <SelectInput onChange={e => { 
+          // modifyFinalProduct(e.target.value); 
+          setChoices({...choices, capacity: getCapacityChoices(e.target.value)})
+        }} 
+          source="model" choices={choices.model} 
+        />
+      )
+    }
+
+    {choices.capacity.length > 0 && (
+        <SelectInput onChange={e => {
+          // modifyFinalProduct(e.target.value); 
+          setChoices({...choices, color: getColorChoices(e.target.value)})
+        }} 
+        source="capacity" choices={choices.capacity} 
+        />
+      )
+    }
+    
+    {choices.color.length > 0 && ( 
+      <SelectInput onChange={e => modifyFinalProduct(e.target.value)} source="color" choices={choices.color} />
+    )}
+
       <ImageInput multiple source="pictures" label="Product pictures" accept="image/*" placeholder={<p>Upload or Drop your images here</p>}>
        <ImageField source="src" title="title" />
       </ImageInput>
     </SimpleForm>
     </Create>
-    </>
-
   )
 }
 
