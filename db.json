@@ -41,6 +41,173 @@
         }
       ],
       "id": 2
+    },
+    {
+      "category": "iphone",
+      "model": "12 Pro",
+      "capacity": "512GB",
+      "color": "Black",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1641562066/uploaded_images/gggtfhs9oinnleyi3jwa.jpg",
+          "id": "0a69e03599d2051850bdbae3100ca984"
+        },
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1641562067/uploaded_images/rw9mew3aasktkweusijs.jpg",
+          "id": "931d0c62fad95a25dcdd8d7b3e26378e"
+        }
+      ],
+      "id": 3
+    },
+    {
+      "category": "iphone",
+      "model": "12 Mini",
+      "capacity": "128GB",
+      "color": "White",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1641562420/uploaded_images/wogap2me7t9usneyayum.jpg",
+          "id": "e12c33db051abfc1f5869b003883ef39"
+        }
+      ],
+      "id": 4
+    },
+    {
+      "category": "ipad",
+      "model": "11 2021",
+      "capacity": "64GB",
+      "color": "Green",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1641562545/uploaded_images/auyqkpf87410tiqlbs5i.jpg",
+          "id": "cc89ac59aa7af1d8a0bce04a0a1a41d3"
+        }
+      ],
+      "id": 5
+    },
+    {
+      "category": "ipad",
+      "model": "mini 6",
+      "capacity": "1TB",
+      "color": "Yellow",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1641562604/uploaded_images/rqs0atym2heu0dvyiwcq.jpg",
+          "id": "66d1dad77093a60d9fc603a8cd996c66"
+        }
+      ],
+      "id": 6
+    },
+    {
+      "category": "ipad",
+      "model": "11 2021",
+      "capacity": "64GB",
+      "color": "Black",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1641562762/uploaded_images/dtfeokkgcgog3p9dljul.jpg",
+          "id": "1938162f9a99a9a5428d781c2fd2bc7d"
+        }
+      ],
+      "id": 7
+    },
+    {
+      "category": "iphone",
+      "model": "13",
+      "capacity": "256GB",
+      "color": "Yellow",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1641563258/uploaded_images/ewtzpqkobjf5gjfta49y.jpg",
+          "id": "05e4e184419e769ff0212b29656b3b26"
+        }
+      ],
+      "id": 8
+    },
+    {
+      "category": "ipad",
+      "model": "11 2021",
+      "capacity": "512GB",
+      "color": "Yellow",
+      "id": 9
+    },
+    {
+      "category": "iphone",
+      "model": "13",
+      "capacity": "256GB",
+      "color": "Black",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1641563738/uploaded_images/phlcopiungoabyf3lxar.jpg",
+          "id": "addd6255b8b6e63dea439fac236d7a93"
+        }
+      ],
+      "id": 10
+    },
+    {
+      "category": "iphone",
+      "model": "12",
+      "capacity": "128GB",
+      "color": "White",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1641564296/uploaded_images/vta2ov8iexrewsuh0wnl.jpg",
+          "id": "08f597f0284dc941a9c7a0bb6d3f8718"
+        }
+      ],
+      "id": 11
+    },
+    {
+      "category": "ipad",
+      "model": "10.2 2021",
+      "capacity": "128GB",
+      "color": "White",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1641564336/uploaded_images/asc2orwpxipvhhpnopxu.jpg",
+          "id": "d4b6b7e765fa92c095fe0c4fcd3c1676"
+        }
+      ],
+      "id": 12
+    },
+    {
+      "category": "ipad",
+      "model": "Air 4",
+      "capacity": "256GB",
+      "color": "Black",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1641564944/uploaded_images/fvdtbaj0jthzqyjsoqim.jpg",
+          "id": "ba1ddfc24a31d468567f9f0563f6c08b"
+        }
+      ],
+      "id": 13
+    },
+    {
+      "category": "ipad",
+      "model": "10.2 2021",
+      "capacity": "128GB",
+      "color": "White",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1641565546/uploaded_images/ohtsk8nww4eeehjfoyfb.jpg",
+          "id": "76d5858e07d4618b3f3381d1a984a11e"
+        }
+      ],
+      "id": 14
+    },
+    {
+      "category": "ipad",
+      "model": "10.2 2021",
+      "capacity": "512GB",
+      "color": "White",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1641566203/uploaded_images/hczbfo1scpq2olgsjht2.jpg",
+          "id": "a1b8b9ea0418f52b0d89ab8e515305d7"
+        }
+      ],
+      "id": 15
     }
   ],
   "orders": [

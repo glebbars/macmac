@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import {Edit, SimpleForm, TextInput, ImageInput, ImageField, SelectInput} from 'react-admin'
+import React, { useEffect, useState } from "react";
+import {Edit, SimpleForm, TextInput, ImageInput, ImageField, SelectInput, FormDataConsumer} from 'react-admin'
 import { validatePostForm, onTransform, initialChoices, getModelChoices, getCapacityChoices, getColorChoices } from "../AdditionalFunctions/AdditionalFunctions";
-
+import axios from 'axios'
 
 const PostEdit = (props) =>{
-   // const [finalProduct, setFinalProduct] = useState({})
+  const [finalProduct, setFinalProduct] = useState({})
 
-   const [choices, setChoices] = useState({
+  const [choices, setChoices] = useState({
     model: [],
     capacity: [],
     color: []
@@ -16,40 +16,60 @@ const PostEdit = (props) =>{
     // setFinalProduct(`${finalProduct}` + value)
   }
 
+  useEffect(() => {
+    axios.get(`http://localhost:5000/posts/${props.id}`).then(res => setFinalProduct(res.data))
+  }, [])
+
   return (
     <Edit {...props} title='Edit a Product'>
-     <SimpleForm validate={validatePostForm}> 
+     <SimpleForm validate={validatePostForm}>
+       <TextInput disabled source='id' /> 
     <SelectInput onChange={e => {
       // modifyFinalProduct(e.target.value); 
       setChoices({...choices, model: getModelChoices(e.target.value)}) 
     }} 
     source="category" choices={initialChoices} />
 
-    {choices.model.length > 0 && (
-       <SelectInput onChange={e => { 
-          // modifyFinalProduct(e.target.value); 
-          setChoices({...choices, capacity: getCapacityChoices(e.target.value)})
-        }} 
-          source="model" choices={choices.model} 
+    <FormDataConsumer>
+      {({ formData }) => 
+        <SelectInput 
+          source="model"
+          choices={getModelChoices(formData.category)}
+          onChange={e => { 
+            console.log(e.target.value, formData.model)
+            // modifyFinalProduct(e.target.value); 
+            setChoices({...choices, capacity: getCapacityChoices(e.target.value)})
+          }} 
         />
-      )
-    }
+      }
+    </FormDataConsumer>
 
-    {choices.capacity.length > 0 && (
-        <SelectInput onChange={e => {
-          // modifyFinalProduct(e.target.value); 
-          setChoices({...choices, color: getColorChoices(e.target.value)})
-        }} 
-        source="capacity" choices={choices.capacity} 
+    <FormDataConsumer>
+      {({ formData }) => 
+        <SelectInput 
+          source="capacity"
+          choices={getCapacityChoices(formData.model)}
+          onChange={e => { 
+            // modifyFinalProduct(e.target.value); 
+            setChoices({...choices, color: getColorChoices(e.target.value)})
+          }} 
         />
-      )
-    }
-    
-    {choices.color.length > 0 && ( 
-      <SelectInput onChange={e => modifyFinalProduct(e.target.value)} source="color" choices={choices.color} />
-    )}
+      }
+    </FormDataConsumer>
 
-      <ImageInput multiple source="pictures" label="Product pictures" accept="image/*" placeholder={<p>Upload or Drop your images here</p>}>
+    <FormDataConsumer>
+      {({ formData }) => 
+        <SelectInput 
+          source="color"
+          choices={getColorChoices(formData.capacity)}
+          onChange={e => { 
+            // modifyFinalProduct(e.target.value); 
+          }} 
+        />
+      }
+    </FormDataConsumer>
+
+    <ImageInput multiple source="pictures" label="Product pictures" accept="image/*"  placeholder={<p>Upload or Drop your images here</p>}>
        <ImageField source="src" title="title" />
       </ImageInput>
     </SimpleForm>

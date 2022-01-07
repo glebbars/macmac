@@ -4,21 +4,21 @@ import axios from "axios";
 export const validatePostForm = (values) => {
   const errors = {};
 
-  if (!values.category) {
-      errors.name = 'The firstName is required';
-  }
-  else if (!values.model) {
-      errors.price = 'The price is required';
-  } 
-  else if (!values.capacity) {
-      errors.price = 'The price is required';
-  } 
-  else if (!values.color) {
-      errors.color = 'The color is required';
-  } 
-  else if (!values.pictures || values.pictures.length === 0) {
-      errors.pictures = 'Please upload pictures';
-  } 
+  // if (!values.category) {
+  //     errors.name = 'The firstName is required';
+  // }
+  // else if (!values.model) {
+  //     errors.price = 'The price is required';
+  // } 
+  // else if (!values.capacity) {
+  //     errors.price = 'The price is required';
+  // } 
+  // else if (!values.color) {
+  //     errors.color = 'The color is required';
+  // } 
+  // else if (!values.pictures || values.pictures.length === 0) {
+  //     errors.pictures = 'Please upload pictures';
+  // } 
   return errors
 };
 
@@ -108,27 +108,31 @@ const iphoneModelChoices = [
 
 const ipadModelChoices = [
   { id: '10.2 2021', name: '10.2 2021' },
-  { id: '11 2021', name: '12.9 2021' },
+  { id: '11 2021', name: '11 2021' },
+  { id: '12.9 2021', name: '12.9 2021' },
   { id: 'mini 6', name: 'mini 6' },
   { id: 'Air 4', name: 'Air 4' }
 ]
 
 export const getCapacityChoices = (value) => {
-  return capacityOptions
-  // switch(value){
-  //   case '11':
-  //     return iphoneModelChoices
-  //   break;
-  //   case '12':
-  //     return ipadModelChoices
-  //   break;
-  // }
+  switch(value){
+    case '10.2 2021':
+      return capacityOptionsss
+    break;
+    case '12':
+      return capacityOptions
+    break;
+  }
 }
 
 const capacityOptions = [
   { id: '64GB', name: '64GB' },
   { id: '128GB', name: '128GB' },
   { id: '256GB', name: '256GB' },
+  { id: '512GB', name: '512GB' },
+  { id: '1TB', name: '1TB' },
+]
+const capacityOptionsss = [
   { id: '512GB', name: '512GB' },
   { id: '1TB', name: '1TB' },
 ]
