@@ -14,30 +14,37 @@ const PostEdit = (props) =>{
     })
   }, [])
 
-  if(createdProduct.length){
-    return Loading...
-  }
-
   return (
-    <Edit {...props} title='Edit a Product'>
-      {createdProduct.length > 0 && (
+    <Edit {...props} transform={onTransform} title='Edit a Product'>
         <SimpleForm validate={validatePostForm}>
           <TextInput disabled source='id' /> 
         <SelectInput onChange={e => setCreatedProduct({...createdProduct, category: e.target.value})} 
         source="category" choices={initialChoices} />
 
         <SelectInput 
-        // optionValue={getModelChoices(createdProduct.category)[0]}
-              source="model"
-              choices={getModelChoices(createdProduct.category)}
-              onChange={e => setCreatedProduct({...createdProduct, model: e.target.value})} 
-            />
+          source="model"
+          choices={getModelChoices(createdProduct.category)}
+          onChange={e => setCreatedProduct({...createdProduct, model: e.target.value})} 
+        />
+
+        <SelectInput 
+          source="capacity"
+          choices={getCapacityChoices(createdProduct.model)}
+          onChange={e => setCreatedProduct({...createdProduct, capacity: e.target.value})} 
+       
+       />
+
+        <SelectInput 
+          source="color"
+          choices={getColorChoices(createdProduct.capacity)}
+          onChange={e => setCreatedProduct({...createdProduct, color: e.target.value})} 
+        
+        />
 
         <ImageInput multiple source="pictures" label="Product pictures" accept="image/*"  placeholder={<p>Upload or Drop your images here</p>}>
-          <ImageField source="src" title="title" />
+          <ImageField source="url" title="title" />
           </ImageInput>
         </SimpleForm>
-      )}
     </Edit>
 
   )

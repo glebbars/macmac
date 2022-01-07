@@ -6,49 +6,35 @@ import { validatePostForm, onTransform,initialChoices, getModelChoices, getCapac
 const PostCreate = (props) =>{
   // const [finalProduct, setFinalProduct] = useState({})
 
-  const [choices, setChoices] = useState({
-    model: [],
-    capacity: [],
-    color: []
-  })
-
-  const modifyFinalProduct = (value) => {
-    // setFinalProduct(`${finalProduct}` + value)
-  }
+  const [createdProduct, setCreatedProduct] = useState({})
 
   return (
     <Create {...props} transform={onTransform} title='Create a Product'>
     <SimpleForm validate={validatePostForm}> 
-    <SelectInput onChange={e => {
-      // modifyFinalProduct(e.target.value); 
-      setChoices({...choices, model: getModelChoices(e.target.value)}) 
-    }} 
+    <SelectInput onChange={e => setCreatedProduct({...createdProduct, category: e.target.value})} 
     source="category" choices={initialChoices} />
 
-    {choices.model.length > 0 && (
-       <SelectInput onChange={e => { 
-          // modifyFinalProduct(e.target.value); 
-          setChoices({...choices, capacity: getCapacityChoices(e.target.value)})
-        }} 
-          source="model" choices={choices.model} 
+    {createdProduct.category && (
+       <SelectInput onChange={e => setCreatedProduct({...createdProduct, model: e.target.value})} 
+          source="model" choices={getModelChoices(createdProduct.category)}
         />
       )
     }
 
-    {choices.capacity.length > 0 && (
-        <SelectInput onChange={e => {
-          // modifyFinalProduct(e.target.value); 
-          setChoices({...choices, color: getColorChoices(e.target.value)})
-        }} 
-        source="capacity" choices={choices.capacity} 
+    {createdProduct.model && (
+        <SelectInput choices={getCapacityChoices(createdProduct.model)}
+        onChange={e => setCreatedProduct({...createdProduct, capacity: e.target.value})} 
+        source="capacity" 
         />
       )
     }
     
-    {choices.color.length > 0 && ( 
-      <SelectInput onChange={e => modifyFinalProduct(e.target.value)} source="color" choices={choices.color} />
+    {createdProduct.capacity && ( 
+      <SelectInput 
+      choices={getColorChoices(createdProduct.capacity)}
+      onChange={e => setCreatedProduct({...createdProduct, color: e.target.value})} 
+      source="color"  />
     )}
-
       <ImageInput multiple source="pictures" label="Product pictures" accept="image/*" placeholder={<p>Upload or Drop your images here</p>}>
        <ImageField source="src" title="title" />
       </ImageInput>

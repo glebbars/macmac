@@ -20,7 +20,8 @@ const UploadPrices = () => {
               rows.forEach(row => {
                 if(row[0] && row[1] && typeof row[1] === 'number'){
                   const formattedPrice = Math.round(Math.ceil(row[1] * usdExchangeRate)/5)*5
-                  allPricesObj[row[0]] = formattedPrice
+                  const formattedNames = row[0].toLowerCase()
+                  allPricesObj[formattedNames] = formattedPrice
                 }
               })
               return allPricesObj

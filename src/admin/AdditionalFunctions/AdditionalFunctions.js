@@ -3,35 +3,54 @@ import axios from "axios";
 
 export const validatePostForm = (values) => {
   const errors = {};
-
-  // if (!values.category) {
-  //     errors.name = 'The firstName is required';
-  // }
-  // else if (!values.model) {
-  //     errors.price = 'The price is required';
-  // } 
-  // else if (!values.capacity) {
-  //     errors.price = 'The price is required';
-  // } 
-  // else if (!values.color) {
-  //     errors.color = 'The color is required';
-  // } 
-  // else if (!values.pictures || values.pictures.length === 0) {
-  //     errors.pictures = 'Please upload pictures';
-  // } 
+  if (!values.category) {
+      errors.name = 'The firstName is required';
+  }
+  else if (!values.model) {
+      errors.price = 'The price is required';
+  } 
+  else if (!values.capacity) {
+      errors.price = 'The price is required';
+  } 
+  else if (!values.color) {
+      errors.color = 'The color is required';
+  } 
+  else if (!values.pictures || values.pictures.length === 0) {
+      errors.pictures = 'Please upload pictures';
+  } 
   return errors
 };
 
 
 export const onTransform = async (values) => {
   console.log(values)
-    const newFilesArr = values.pictures.filter(item => item.rawFile)
-    console.log(newFilesArr)
-    const compressedImgs = await compressImages(newFilesArr)
-    const uploadedImgs = await uploadImage(compressedImgs)
-    values.pictures = [...values.pictures.filter(item => !item.rawFile), ...uploadedImgs]
-    return values  
+
+  const newFilesArr = values.pictures.filter(item => item.rawFile)
+  const price = await getPriceOfProduct(values)
+  values.price = price
+
+  const compressedImgs = await compressImages(newFilesArr)
+  const uploadedImgs = await uploadImage(compressedImgs)
+  values.pictures = [...values.pictures.filter(item => !item.rawFile), ...uploadedImgs]
+
+  return values  
 };
+
+const getPriceOfProduct = (allValues) =>  {
+
+  const filterredValuesArr = Object.fromEntries(
+    Object.entries(allValues).filter(([key, value]) => typeof value === 'string')
+  )
+
+  return axios.get('http://localhost:5000/prices/1').then(res => res.data)
+  .then(pricesObj => {
+    return Object.fromEntries(
+      Object.entries(pricesObj)
+        .filter(([key, value]) => key.includes(filterredValuesArr.category) && key.includes(filterredValuesArr.model) && key.includes(filterredValuesArr.capacity) && key.includes(filterredValuesArr.color)
+      )
+    )
+  }).then(data => Object.values(data)[0])
+}
   
 const compressImages = async (filesArr) => {
     const compressedPhotos = await Promise.all(
@@ -98,12 +117,12 @@ export const getModelChoices = (value) => {
 const iphoneModelChoices = [
   { id: '11', name: '11' },
   { id: '12', name: '12' },
-  { id: '12 Mini', name: '12 Mini' },
-  { id: '12 Pro', name: '12 Pro' },
+  { id: '12 mini', name: '12 Mini' },
+  { id: '12 pro', name: '12 Pro' },
   { id: '13', name: '13' },
-  { id: '13 Mini', name: '13 Mini' },
-  { id: '13 Pro', name: '13 Mini' },
-  { id: '13 Pro Max', name: '13 Pro Max' },
+  { id: '13 mini', name: '13 Mini' },
+  { id: '13 pro', name: '13 Mini' },
+  { id: '13 pro max', name: '13 Pro Max' },
 ]
 
 const ipadModelChoices = [
@@ -111,30 +130,28 @@ const ipadModelChoices = [
   { id: '11 2021', name: '11 2021' },
   { id: '12.9 2021', name: '12.9 2021' },
   { id: 'mini 6', name: 'mini 6' },
-  { id: 'Air 4', name: 'Air 4' }
+  { id: 'air 4', name: 'Air 4' }
 ]
 
 export const getCapacityChoices = (value) => {
-  switch(value){
-    case '10.2 2021':
-      return capacityOptionsss
-    break;
-    case '12':
-      return capacityOptions
-    break;
-  }
+  return capacityOptions
+
+  // switch(value){
+  //   case '10.2 2021':
+  //     return capacityOptionsss
+  //   break;
+  //   case '12':
+  //     return capacityOptions
+  //   break;
+  // }
 }
 
 const capacityOptions = [
-  { id: '64GB', name: '64GB' },
-  { id: '128GB', name: '128GB' },
-  { id: '256GB', name: '256GB' },
-  { id: '512GB', name: '512GB' },
-  { id: '1TB', name: '1TB' },
-]
-const capacityOptionsss = [
-  { id: '512GB', name: '512GB' },
-  { id: '1TB', name: '1TB' },
+  { id: '64gb', name: '64GB' },
+  { id: '128gb', name: '128GB' },
+  { id: '256gb', name: '256GB' },
+  { id: '512gb', name: '512GB' },
+  { id: '1tb', name: '1TB' },
 ]
 
 export const getColorChoices = (value) => {
@@ -152,11 +169,11 @@ export const getColorChoices = (value) => {
 
 const colorOptions =  [
   // iphone 11
-  { id: 'Purple', name: 'Purple' },
-  { id: 'Green', name: 'Green' },
-  { id: 'White', name: 'White' },
-  { id: 'Black', name: 'Black' },
-  { id: 'Yellow', name: 'Yellow' },
+  { id: 'purple', name: 'Purple' },
+  { id: 'green', name: 'Green' },
+  { id: 'white', name: 'White' },
+  { id: 'black', name: 'Black' },
+  { id: 'yellow', name: 'Yellow' },
   //iphone 11 pro
   // { id: 'Silver', name: 'Silver' },
   // { id: 'Space Grey', name: 'Space Grey' },
