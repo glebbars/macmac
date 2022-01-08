@@ -9,15 +9,12 @@ const Favourites = ({
   setClothId,
 }) => {
 
-  const [favorites, setFavorites] = useState(JSON.parse(localStorage.getItem("favorites")) || []);
+  const [favorites, setFavorites] = useState(
+    JSON.parse(localStorage.getItem("favorites")) || []
+  );
 
   useEffect(() => {
-    const updatesFavorites = JSON.parse(localStorage.getItem("favorites")) || []
-    if(updatesFavorites !== favorites){
-       localStorage.setItem("favorites", JSON.stringify(updatesFavorites));
-    }else{
-      console.log('*')
-    }
+    localStorage.setItem("favorites", JSON.stringify(favorites));
   }, [favorites]);
 
   const filterredArr = cardsArr.filter(cloth => {
