@@ -12,20 +12,14 @@ const Favourites = ({
   const [favorites, setFavorites] = useState(JSON.parse(localStorage.getItem("favorites")) || []);
 
   useEffect(() => {
-    function checkUserData() {
-      const item = localStorage.getItem('favorites')
-  
-      if (item) {
-        setFavorites(item)
-      }
+    const updatesFavorites = JSON.parse(localStorage.getItem("favorites")) || []
+    if(updatesFavorites !== favorites){
+       localStorage.setItem("favorites", JSON.stringify(updatesFavorites));
+    }else{
+      console.log('*')
     }
-  
-    window.addEventListener('storage', checkUserData)
-  
-    return () => {
-      window.removeEventListener('storage', checkUserData)
-    }
-  }, [])
+  }, [favorites]);
+
   const filterredArr = cardsArr.filter(cloth => {
     if(favorites.includes(cloth.id)){
       return cloth
