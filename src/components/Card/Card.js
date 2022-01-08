@@ -7,7 +7,6 @@ const Card = ({
   toggleFavorites,
   filledStar,
   cardCross,
-  toggleBag,
   setClothId,
 }) => {
   return (

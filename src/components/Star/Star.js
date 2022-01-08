@@ -4,9 +4,7 @@ import PropTypes from "prop-types";
 const Star = ({ cloth, toggleFavorites, filledStar }) => {
   return (
     <div
-      onClick={(e) => {
-        toggleFavorites(cloth.id);
-      }}
+      onClick={(e) => toggleFavorites(cloth.id)}
       className="card__star-container"
     >
       <svg

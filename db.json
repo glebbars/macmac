@@ -25,6 +25,20 @@
       ],
       "price": 19890,
       "id": 1
+    },
+    {
+      "category": "iphone",
+      "model": "13 pro max",
+      "capacity": "512gb",
+      "color": "purple",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1641644913/uploaded_images/nzcprvseezc56fguftab.jpg",
+          "id": "39ff683c0be94114a3508592759a8fbf"
+        }
+      ],
+      "id": 2,
+      "price": ""
     }
   ],
   "orders": [

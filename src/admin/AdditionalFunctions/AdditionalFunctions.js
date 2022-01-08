@@ -49,7 +49,7 @@ const getPriceOfProduct = (allValues) =>  {
         .filter(([key, value]) => key.includes(filterredValuesArr.category) && key.includes(filterredValuesArr.model) && key.includes(filterredValuesArr.capacity) && key.includes(filterredValuesArr.color)
       )
     )
-  }).then(data => Object.values(data)[0])
+  }).then(data => data.length > 0 ? Object.values(data)[0] : '')
 }
   
 const compressImages = async (filesArr) => {
