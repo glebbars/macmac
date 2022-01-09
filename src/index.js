@@ -3,16 +3,11 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from "react-router-dom";
-import createAdminStore from './admin/createAdminStore/createAdminStore';
-import { Provider } from 'react-redux';
-import store from './redux/'
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-    <Provider store={store}>
       <App />
-    </Provider>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")

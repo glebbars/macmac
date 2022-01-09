@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {Create, SimpleForm, TextInput, ImageInput, ImageField, SelectInput} from 'react-admin'
+import {Create, SimpleForm, ImageInput, ImageField, SelectInput} from 'react-admin'
 import { validatePostForm, onTransform,initialChoices, getModelChoices, getCapacityChoices, getColorChoices } from "../AdditionalFunctions/AdditionalFunctions";
 
 

@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from "react";
-import {Edit, SimpleForm, TextInput, ImageInput, ImageField, SelectInput, FormDataConsumer, Loading} from 'react-admin'
+import {Edit, SimpleForm, TextInput, ImageInput, ImageField, SelectInput} from 'react-admin'
 import { validatePostForm, onTransform, initialChoices, getModelChoices, getCapacityChoices, getColorChoices } from "../AdditionalFunctions/AdditionalFunctions";
-import axios from 'axios'
+import { useDispatch } from "react-redux";
+import {getProduct} from '../../redux/actions/data'
 
 const PostEdit = (props) =>{
 
   const [createdProduct, setCreatedProduct] = useState({})
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    axios.get(`http://localhost:5000/posts/${props.id}`).then(res => {
-      setCreatedProduct(res.data)
+    dispatch(getProduct(props.id))
       console.log(createdProduct)
-    })
   }, [])
 
   return (

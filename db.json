@@ -39,6 +39,24 @@
       ],
       "id": 2,
       "price": ""
+    },
+    {
+      "category": "iphone",
+      "model": "12",
+      "capacity": "128gb",
+      "color": "black",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1641679584/uploaded_images/ep5s0dbzc8akkwtxdqx5.jpg",
+          "id": "097481f3d31463fb1873b2da2c5278db"
+        },
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1641679584/uploaded_images/hd1ltyqw4bxs5dini0vr.jpg",
+          "id": "c675a2040eb99a526e04f9c0dc675452"
+        }
+      ],
+      "price": "",
+      "id": 3
     }
   ],
   "orders": [

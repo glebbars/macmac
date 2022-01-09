@@ -1,21 +1,18 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
-import Button from "../Button/Button";
-import Card from "../Card/Card";
 import ProductsList from '../ProductsList/ProductsList'
+import { useSelector } from "react-redux";
 
-const Favourites = ({
-  cardsArr,
-  setClothId,
-}) => {
+const Favourites = () => {
 
-  const [favorites, setFavorites] = useState(
-    JSON.parse(localStorage.getItem("favorites")) || []
-  );
+  const cardsArr = useSelector((store) => store.app.cardsArr);
+  const favorites = useSelector((store) => store.app.favorites);
+  const addedToBag = useSelector((store) => store.app.addedToBag);
 
   useEffect(() => {
+    localStorage.setItem("addedToBag", JSON.stringify(addedToBag));
     localStorage.setItem("favorites", JSON.stringify(favorites));
-  }, [favorites]);
+  }, []);
 
   const filterredArr = cardsArr.filter(cloth => {
     if(favorites.includes(cloth.id)){
@@ -24,12 +21,12 @@ const Favourites = ({
   })
 
   return (
-    <ProductsList cardsArr={filterredArr}/>
+    <ProductsList ableToBeRemoved={false} cardsArr={filterredArr}/>
   );
 };
 
 Favourites.propTypes = {
-  cardsArr: PropTypes.array.isRequired,
+  // cardsArr: PropTypes.array.isRequired,
 };
 
 export default Favourites;

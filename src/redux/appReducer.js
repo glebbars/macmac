@@ -1,56 +1,46 @@
 import {
-  REQUEST_CLOTHES_SUCCESS,
-  REQUEST_CLOTHES_FAILURE,
-  CLOSE_MODAL,
-  OPEN_MODAL,
+  REQUEST_PRODUCT_BY_ID_SUCCESS,
+  REQUEST_PRODUCT_BY_ID_FAILURE,
+  REQUEST_ALL_PRODUCTS_SUCCESS,
+  REQUEST_ALL_PRODUCTS_FAILURE,
   REMOVE_FROM_FAVOURITES,
   ADD_TO_FAVOURITES,
   REMOVE_FROM_BAG,
   ADD_TO_BAG,
-  SEND_CUSTOMER_DATA,
-  CLEAR_CUSTOMER_BAG,
 } from "./actions/types";
-import { combineReducers } from "redux";
+
 
 const initialStore = {
   cardsArr: [],
-  openedModal: false,
   // favorites: [],
   // addedToBag: [],
   favorites: JSON.parse(localStorage.getItem("favorites")) || [],
   addedToBag: JSON.parse(localStorage.getItem("addedToBag")) || [],
-  customerData: {
-    name: "",
-    surname: "",
-    age: "",
-    adress: "",
-    phone: "",
-    email: "",
-  },
 };
 
-const reducer = (store = initialStore, action) => {
+const appReducer = (store = initialStore, action) => {
   switch (action.type) {
-    case REQUEST_CLOTHES_SUCCESS:
+    case REQUEST_PRODUCT_BY_ID_SUCCESS:
       return {
         ...store,
-        cardsArr: [...action.payload],
+        cardsArr: [action.payload],
         error: null,
       };
-    case REQUEST_CLOTHES_FAILURE:
+    case REQUEST_PRODUCT_BY_ID_FAILURE:
       return {
         ...store,
         error: action.payload,
       };
-    case OPEN_MODAL:
+    case REQUEST_ALL_PRODUCTS_SUCCESS:
       return {
         ...store,
-        openedModal: true,
+        cardsArr: action.payload,
+        error: null,
       };
-    case CLOSE_MODAL:
+    case REQUEST_ALL_PRODUCTS_FAILURE:
       return {
         ...store,
-        openedModal: false,
+        error: action.payload,
       };
     case REMOVE_FROM_FAVOURITES:
       return {
@@ -72,24 +62,10 @@ const reducer = (store = initialStore, action) => {
         ...store,
         addedToBag: [...action.payload],
       };
-    case SEND_CUSTOMER_DATA:
-      return {
-        ...store,
-        customerData: action.payload,
-      };
-    case CLEAR_CUSTOMER_BAG:
-      return {
-        ...store,
-        addedToBag: [...action.payload],
-      };
 
     default:
       return store;
   }
 };
 
-const reducers = combineReducers({
-  app: reducer,
-});
-
-export default reducer;
+export default appReducer

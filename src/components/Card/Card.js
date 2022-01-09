@@ -7,7 +7,7 @@ const Card = ({
   toggleFavorites,
   filledStar,
   cardCross,
-  setClothId,
+  removeFromTheBag
 }) => {
   return (
       <div>
@@ -18,7 +18,7 @@ const Card = ({
             toggleFavorites={toggleFavorites}
             filledStar={filledStar}
           />
-          {cardCross && <div onClick={() => setClothId(cloth.id)} className="modal__cross modal__cross_card"></div>}
+          {cardCross && <div onClick={removeFromTheBag} className="modal__cross modal__cross_card"></div>}
           <img className="card__img" src={cloth.pictures[0].url} alt="Loading..." />
           <h2 className="card__name">{cloth.name}</h2>
           <span className="card__color">{cloth.color}</span>
@@ -27,13 +27,6 @@ const Card = ({
         )}
     </div>
   );
-};
-
-Card.propTypes = {
-  cloth: PropTypes.object.isRequired,
-  toggleFavorites: PropTypes.func.isRequired,
-  filledStar: PropTypes.bool.isRequired,
-  cardCross: PropTypes.bool.isRequired,
 };
 
 export default Card;

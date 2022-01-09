@@ -11,9 +11,9 @@ const AdminLoginPage = ({ theme }) => {
     const submit = e => {
         e.preventDefault();
         if(email === 'admin' && password === 'admin'){
-          login({ email, password }).catch(() =>
-          setError('Invalid email or password')
-          );
+          login({ email, password }).catch(() => {
+            setError('Invalid email or password')
+          })
         } else{
           setError('Invalid email or password')
         }

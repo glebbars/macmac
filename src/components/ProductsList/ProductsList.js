@@ -3,27 +3,49 @@ import PropTypes from "prop-types";
 import Button from "../Button/Button";
 import Card from "../Card/Card";
 import OrderForm from "../OrderForm/OrderForm";
+import { useDispatch, useSelector } from "react-redux";
+import {ADD_TO_FAVOURITES, REMOVE_FROM_FAVOURITES, ADD_TO_BAG, REMOVE_FROM_BAG} from '../../redux/actions/types'
 
 const ProductsList = ({ 
   cardsArr,
-  setClothId 
+  ableToBeRemoved
 }) => {
 
-  const [favorites, setFavorites] = useState(
-    JSON.parse(localStorage.getItem("favorites")) || []
-  );
+  const dispatch = useDispatch()
 
-  useEffect(() => {
-    localStorage.setItem("favorites", JSON.stringify(favorites));
-  }, [favorites]);
-
+  const favorites = useSelector((store) => store.app.favorites);
+  const addedToBag = useSelector((store) => store.app.addedToBag);
 
   const toggleFavorites = (cardId) => {
     if (favorites.includes(cardId)) {
-      setFavorites(favorites.filter((id) => id !== cardId));
+      dispatch({
+        type: REMOVE_FROM_FAVOURITES,
+        payload: favorites.filter((id) => id !== cardId),
+      });
     } else {
-      setFavorites([cardId, ...favorites]);
+      dispatch({
+        type: ADD_TO_FAVOURITES,
+        payload: [cardId, ...favorites],
+      });
     }
+  };
+
+
+  const removeFromTheBag = (cardId) => {
+    console.log('==')
+    const cardIndex = addedToBag.indexOf(cardId);
+    addedToBag.splice(cardIndex, 1)
+    dispatch({
+      type: REMOVE_FROM_BAG,
+      payload: addedToBag.filter((id) => id !== cardId),
+    })
+  };
+
+  const addToTheBag = (cardId) => {
+    dispatch({
+      type: ADD_TO_BAG,
+      payload: [cardId, ...addedToBag],
+    });
   };
 
 
@@ -35,12 +57,12 @@ const ProductsList = ({
             toggleFavorites={toggleFavorites}
             cloth={cloth}
             filledStar={favorites.includes(cloth.id)}
-            cardCross={false}
+            cardCross={ableToBeRemoved}
+            removeFromTheBag={() => removeFromTheBag(cloth.id)}
           />
           <Button
+            addToTheBag={() => addToTheBag(cloth.id)}
             text="Add to cart"
-            clothId={cloth.id}
-            bg="black"
           />
         </div>
       ))}
