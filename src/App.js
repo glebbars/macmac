@@ -8,7 +8,7 @@ import { Provider } from 'react-redux';
 import jsonServerProvider from 'ra-data-json-server';
 
 
-const dataProvider = jsonServerProvider('http://localhost:3000')
+const dataProvider = jsonServerProvider('http://localhost:3000/')
 // const dataProvider = restProvider('http://path.to.my.api/');
 const history = createHashHistory();
 const authProvider = () => Promise.resolve();
@@ -16,8 +16,8 @@ const authProvider = () => Promise.resolve();
 
 const App = () => {
   return (
-    <Provider store={createAdminStore({authProvider, dataProvider,history})}>
-      <AppRoutes/> 
+    <Provider store={createAdminStore({authProvider, dataProvider, history})}>
+      <AppRoutes authProvider={authProvider} dataProvider={dataProvider} history={history}/> 
     </Provider>
   );
 }

@@ -66,6 +66,13 @@
       "email": "er@gmail.com",
       "phone": "+380967623124",
       "id": 1
+    },
+    {
+      "firstName": "gleb",
+      "lastName": "barskiy",
+      "email": "glebars2004@gmail.com",
+      "phone": "+380676282524",
+      "id": 2
     }
   ],
   "prices": [
