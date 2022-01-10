@@ -62,6 +62,14 @@ const OrderForm = () => {
           {errors["phone"] && (
             <p className="error-message">Invalid Phone</p>
           )}
+      <label htmlFor="phone">Order</label>
+
+        <input
+        type="text"
+        {...register("order", {
+          required: "this is required",
+        })}
+      />
       <input type="submit" />
     </form>
   );

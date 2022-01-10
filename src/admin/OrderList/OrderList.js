@@ -11,6 +11,7 @@ const OrderList = (props) =>{
         <TextField source="lastName" />
         <TextField source="phone" />
         <TextField source="email" />
+        <TextField source="order" />
       </Datagrid>
     </List>
   )
