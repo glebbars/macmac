@@ -67,6 +67,14 @@
       "order": "iPhone 11 Pro max green",
       "phone": "+380676282524",
       "id": 1
+    },
+    {
+      "firstName": "gregoriy",
+      "lastName": "gregoriy",
+      "email": "grigoriy@gmail.com",
+      "order": "Mac pro 13 256gb",
+      "phone": "+380676543156",
+      "id": 2
     }
   ],
   "prices": [

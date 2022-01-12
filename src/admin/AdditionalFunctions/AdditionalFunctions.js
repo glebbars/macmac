@@ -100,6 +100,7 @@ export const initialChoices = [
   { id: 'watch', name: 'Apple watch' },
   { id: 'airpods', name: 'AirPods' },
   { id: 'accessories', name: 'Accessories' },
+  { id: 'dyson', name: 'dyson' },
   ]
 
 

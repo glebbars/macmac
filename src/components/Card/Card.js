@@ -18,7 +18,7 @@ const Card = ({
             toggleFavorites={toggleFavorites}
             filledStar={filledStar}
           />
-          {cardCross && <div onClick={removeFromTheBag} className="modal__cross modal__cross_card"></div>}
+          {cardCross && <div onClick={removeFromTheBag} className="card__cross"></div>}
           <img className="card__img" src={cloth.pictures[0].url} alt="Loading..." />
           <h2 className="card__name">{cloth.name}</h2>
           <span className="card__color">{cloth.color}</span>

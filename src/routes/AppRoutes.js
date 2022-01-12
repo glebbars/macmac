@@ -1,5 +1,5 @@
-import React, {useEffect, useState } from "react";
-import { Route, useLocation } from "react-router-dom";
+import React, {useEffect, useStatem } from "react";
+import { Route, useLocation, Switch } from "react-router-dom";
 import Home from "../components/Home/Home";
 import Favourites from "../components/Favourites/Favourites";
 import Bag from "../components/Bag/Bag";
@@ -22,29 +22,31 @@ const AppRoutes = ({authProvider, dataProvider, history}) => {
 
 
   return (
-    <>
+    <div className="container">
       <HeaderMenu/>
-        <Route
-          path="/favourites"
-          exact
-          component={Favourites}
-        />
-        <Route
-          path="/bag"
-          exact
-          component={Bag}
-        />
-        <Route
-          path="/admin"
-          exact
-          render={() => <AdminPannel dataProvider={dataProvider} authProvider={authProvider}  history={history} />}
-        />
-        <Route
-          path="/"
-          exact
-          component={Home}
-        />
-    </>
+        <Switch>
+          <Route
+            path="/favourites"
+            exact
+            component={Favourites}
+          />
+          <Route
+            path="/bag"
+            exact
+            component={Bag}
+          />
+          <Route
+            path="/admin"
+            exact
+            render={() => <AdminPannel dataProvider={dataProvider} authProvider={authProvider}  history={history} />}
+          />
+          <Route
+            path="/"
+            exact
+            component={Home}
+          />
+        </Switch>
+    </div>
     );
 };
 
