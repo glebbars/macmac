@@ -18,7 +18,8 @@ const Home = () => {
   }, []);
 
   return (
-    <OrderForm/>
+    // <OrderForm/>
+    <div>1212</div>
     // <ProductsList ableToBeRemoved={false} cardsArr={cardsArr}/>
   );
 };

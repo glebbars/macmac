@@ -2,53 +2,212 @@
 @import "./mixins";
 @import "./variables";
 
-.container{
+body{
   font-family: "Object Sans", sans-serif;
   color: #000000;
+  font-size: 16px;
+  line-height: 26px;
   min-height: 100vh;
+  background-color: #E5E5E5;
+  position: relative;
 }
 
-.header-menu {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background: gainsboro;
-  padding: 20px 0;
+.container{
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 8px 0 0 0;
+}
 
-  &__link {
-    text-decoration: none;
-    color: #8f8f8f;
-    font-size: 20px;
-    font-weight: 500;
-    transition: all 0.5s ease-in-out;
-    position: relative;
-    text-transform: uppercase;
+.header {
+  @include flex-centre;
+  justify-content: space-between;
+  margin: 0 15px 15px;
+  background-color: white;
+  height: 64px;
+  border-radius: 8px;
+  padding: 0 30px;
 
-    &::before {
-      content: attr(data-item);
-      transition: 0.5s;
-      color: #404040;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      width: 0;
-      overflow: hidden;
+
+  &__logo {
+    order: 1;
+
+    @media (max-width: 1300px) {
+      order: 2
+    }
+  }
+
+  &__menu {
+    order: 2;
+    // filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    &__burger-toggle{
+      display: none;
     }
 
-    &:hover {
-      &::before {
+    @media (max-width: 1300px) {
+      order: 1;
+      // position: relative;
+
+      &__nav{
+        // background-color: red;
+        
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        list-style: none;
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
-        transition: all 0.5s ease-in-out;
+        height: 100%;
+        z-index: 1;
+
+        &_active{
+          display: flex;
+        }
+      }
+
+
+      &__burger-toggle{
+        position: relative;
+        display: inline-block;
+        width: 45px;
+        height: 45px;
+        background-color: transparent;
+        border: 0;
+        overflow: hidden;
+        cursor: pointer;
+
+
+        &__line {
+          position: absolute;
+          width: 25px;
+          height: 2px;
+          background-color: #343A40;
+          left: 50%;
+          top: 63%;
+          border-radius: 6px;
+          transition: all 0.2s ease;
+          transform: translateX(-50%) translateY(-50%);
+
+          &:first-child {
+            transform: translateX(-50%) translateY(calc(-50% - 10px));
+          }
+        }      
+      }
+
+    }
+
+
+
+    &__link{
+      font-weight: 600;
+      margin-left: 32px;
+      text-decoration: none;
+      color: #343A40;
+
+
+      &_selected{
+        color: #FA530D;
+
+      }
+
+      &_all{
+        position: relative;
+        margin: 0 25px 0 30px;
+
+        &::after{
+          content: "";
+          position: absolute;
+          left: 105px;
+          top: 4px;
+          display: block;
+          width: 6px;
+          height: 6px;
+          border-top: 2px solid #ADB5BD;
+          border-left: 2px solid #ADB5BD;
+          transform: rotate(225deg);
+          border-radius: 1px;
+        }
+
+        &_selected{
+          &:after{
+            top: 5.5px;
+            transform: rotate(135deg);
+            border-color: #FA530D;
+          }
+        }
+      }
+
+      &_bag{
+        margin-right: 15px;
+      }
+
+      &_bag,
+      &_favorite{
+        position: relative;
+
+        &::before{
+          content: '';
+          width: 21px;
+          height: 21px;
+          position: absolute;
+          left: -25px;    
+          background-size: 22px;
+          background-repeat: no-repeat;
+        }
+      }
+
+      &_bag::before{
+        background-image: url('../img/shopping-bag.svg');
+      }
+      &_favorite::before{
+        background-size: 18px;
+        top: 3px;
+        background-image: url('../img/favorites.svg');
       }
     }
 
-    &_selected {
-      color: black;
+    &__favorite-bag-container{
+      @include flex-centre;
+
     }
+        
   }
+
+  &__favorite-bag-container{
+    order: 4
+  }
+
+  &__search{
+    order: 3;
+    height: 40px;
+    width: 360px;
+    border-radius: 8px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    background: #F4F5F7;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin: 0 15px;
+
+    &__input{
+      border: 0;
+      outline: none;
+      background-color: transparent;
+      font-size: 14px;
+      width: 100%;
+      margin-left: 15px;
+
+      &::placeholder{
+        color: #6C757D
+      }
+    }
+
+  }
+
+
 }
 
 
@@ -57,7 +216,7 @@
 //   flex-wrap: wrap;
 //   margin: auto;
 // }
-
+//
 // .card {
 //   margin: 20px;
 //   display: inline-block;
@@ -67,22 +226,22 @@
 //   padding: 10px 25px;
 //   box-sizing: border-box;
 //   position: relative;
-
+//
 //   &__star-container {
 //     display: flex;
 //     position: absolute;
 //     top: 3px;
 //     right: 3px;
 //   }
-
+//
 //   &__star {
 //     display: none;
-
+//
 //     &_active {
 //       fill: black;
 //     }
 //   }
-
+//
 //   &__img {
 //     width: 100%;
 //     display: block;
@@ -90,7 +249,7 @@
 //     height: 150px;
 //     object-fit: cover;
 //   }
-
+//
 //   &__name {
 //     font-size: 20px;
 //     margin: 10px 0;
