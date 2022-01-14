@@ -20,53 +20,98 @@ const HeaderMenu = () => {
           <span className="header__menu__burger-toggle__line"></span>
         </button>
 
-        <nav className={`header__menu__nav ${'header__menu__nav' + activeClass}`}>
-          <NavLink
-            exact
-            to="/"
-            className="header__menu__link header__menu__link_all"
-            activeClassName="header__menu__link_selected header__menu__link_all_selected"
-          >
-            Все товары
-          </NavLink>
-          <NavLink
-            exact
-            to="/"
-            className="header__menu__link"
-            activeClassName="header__menu__link_selected"
-          >
-            iPhone
-          </NavLink>
-          <NavLink
-            exact
-            to="/"
-            className="header__menu__link"
-            activeClassName="header__menu__link_selected"
-          >
-            AirPods
-          </NavLink>
-          <NavLink
-            exact
-            to="/"
-            className="header__menu__link"
-            activeClassName="header__menu__link_selected"
-          >
-            iPad
-          </NavLink>
-          <NavLink
-            exact
-            to="/"
-            className="header__menu__link"
-            activeClassName="header__menu__link_selected"
-          >
-            iMac
-          </NavLink>
+        <div className={`header__menu__burger-container ${'header__menu__burger-container' + activeClass}`}>
+            <nav className="header__menu__nav">
+              <h4 className="header__menu__link header__menu__link_additional header__menu__link_additional_header">Apple</h4>
+              <NavLink
+                exact
+                to="/"
+                className="header__menu__link header__menu__link_all"
+                activeClassName="header__menu__link_selected header__menu__link_all_selected"
+              >
+                Все товары
+              </NavLink>
+              <NavLink
+                exact
+                to="/"
+                className="header__menu__link header__menu__link_mr-t"
+                activeClassName="header__menu__link_selected"
+              >
+                iPhone
+              </NavLink>
+              <NavLink
+                exact
+                to="/"
+                className="header__menu__link"
+                activeClassName="header__menu__link_selected"
+              >
+                AirPods
+              </NavLink>
+              <NavLink
+                exact
+                to="/"
+                className="header__menu__link"
+                activeClassName="header__menu__link_selected"
+              >
+                iPad
+              </NavLink>
+              <NavLink
+                exact
+                to="/"
+                className="header__menu__link"
+                activeClassName="header__menu__link_selected"
+              >
+                iMac
+              </NavLink>
+              <NavLink
+                exact
+                to="/"
+                className="header__menu__link header__menu__link_additional"
+                activeClassName="header__menu__link_selected"
+              >
+                Macbook
+              </NavLink>
+              <NavLink
+                exact
+                to="/"
+                className="header__menu__link header__menu__link_additional"
+                activeClassName="header__menu__link_selected"
+              >
+                Watch
+              </NavLink>
 
-        </nav>
+               <NavLink
+                exact
+                to="/"
+                className="header__menu__link header__menu__link_additional header__menu__link_additional_header"
+                activeClassName="header__menu__link_selected"
+              >
+                Аксессуары
+              </NavLink>
+              <NavLink
+                exact
+                to="/"
+                className="header__menu__link header__menu__link_additional header__menu__link_additional_header"
+                activeClassName="header__menu__link_selected"
+              >
+                Топ продаж
+              </NavLink>
 
+              <NavLink
+                exact
+                to="/"
+                className="header__menu__link header__menu__link_all header__menu__link_additional header__menu__link_additional_header"
+                activeClassName="header__menu__link_selected header__menu__link_all_selected"
+              >
+                Все товары
+              </NavLink>
+            </nav>
+          <div onClick={() => setOpenedBurger(false)}  className="header__menu__burger-cross"></div>
+        </div>
         
       </div>
       <Search />
+
       <div className="header__favorite-bag-container">
         <NavLink
           exact
