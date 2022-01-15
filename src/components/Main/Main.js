@@ -5,8 +5,9 @@ import Card from "../Card/Card";
 import OrderForm from "../OrderForm/OrderForm";
 import ProductsList from '../ProductsList/ProductsList'
 import { useSelector } from "react-redux";
+import CustomSlider from '../CustomSlider/CustomSlider'
 
-const Home = () => {
+const Main = () => {
 
   const cardsArr = useSelector(store => store.app.cardsArr)
   const favorites = useSelector(store => store.app.cardsArr)
@@ -18,14 +19,14 @@ const Home = () => {
   }, []);
 
   return (
+
+    <CustomSlider/>
+
+
     // <OrderForm/>
-    <div>1212</div>
     // <ProductsList ableToBeRemoved={false} cardsArr={cardsArr}/>
   );
 };
 
-Home.propTypes = {
-// setClothId: PropTypes.func.isRequired,
-};
 
-export default Home;
+export default Main;

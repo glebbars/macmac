@@ -1,6 +1,6 @@
 import React, {useEffect, useStatem } from "react";
 import { Route, useLocation, Switch } from "react-router-dom";
-import Home from "../components/Home/Home";
+import Main from "../components/Main/Main";
 import Favourites from "../components/Favourites/Favourites";
 import Bag from "../components/Bag/Bag";
 import AdminPannel from "../admin/AdminPannel/AdminPannel";
@@ -43,7 +43,7 @@ const AppRoutes = ({authProvider, dataProvider, history}) => {
           <Route
             path="/"
             exact
-            component={Home}
+            component={Main}
           />
         </Switch>
     </div>
