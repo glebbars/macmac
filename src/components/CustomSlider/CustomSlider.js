@@ -2,10 +2,9 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import purplePhone from '../../img/purple-iphone.png';
 import purpleLine from '../../img/purple-line.svg'
 import appleLogo from '../../img/apple-icon.png'
-import appleLogoo from '../../img/apple-icon24.png'
+import purplePhone from '../../img/purple-iphone.svg';
 
 function SampleNextArrow(props) {
   const {onClick } = props;
@@ -38,7 +37,7 @@ const settings = {
   prevArrow: <SamplePrevArrow />,
   appendDots: dots => (
     <div style={{bottom: 0}} >
-      <ul className="slider__dots-list"> {dots} </ul>
+      <ul id='slider-dots-list' className="slider__dots-list"> {dots} </ul>
     </div>
   ),
   customPaging: index => (
@@ -50,7 +49,7 @@ const settings = {
 const sliderData = [
   {
     title: "iPhone 12",
-    text: "Теперь в фиолетовом",
+    text: ["Теперь", "в фиолетовом"],
     price: "от 23 897",
     btnText: "Узнать больше",
     productImg: purplePhone,
@@ -58,7 +57,7 @@ const sliderData = [
   },
   {
     title: "iPhone 12",
-    text: "Теперь в фиолетовом",
+    text: ["Теперь", "в фиолетовом"],
     price: "от 23 897",
     btnText: "Узнать больше",
     productImg: purplePhone,
@@ -66,7 +65,7 @@ const sliderData = [
   },
   {
     title: "iPhone 12",
-    text: "Теперь в фиолетовом",
+    text: ["Теперь", "в фиолетовом"],
     price: "от 23 897",
     btnText: "Узнать больше",
     productImg: purplePhone,
@@ -74,7 +73,7 @@ const sliderData = [
   },
   {
     title: "iPhone 12",
-    text: "Теперь в фиолетовом",
+    text: ["Теперь", "в фиолетовом"],
     price: "от 23 897",
     btnText: "Узнать больше",
     productImg: purplePhone,
@@ -90,11 +89,16 @@ const CustomSlider = () => {
             <div key={slide.title}>
               <div style={{backgroundImage: `url(${slide.lineImg})`}} className="slider__slide">
                 <div className="slider__slide__text-container">
-                  <img src={appleLogo} alt="" />
-                  <img src={appleLogoo} alt="" />
-                  <h4 className="slider__slide__title">{slide.title}</h4>
-                  <h4 className="slider__slide__text">{slide.text}</h4>
-                  <h5 className="slider__slide__price">{slide.price}</h5>
+                  <div className="slider__slide__title-icon-container">
+                    <img className="slider__slide__icon" src={appleLogo} alt="" />
+                    <span className="slider__slide__title">{slide.title}</span>
+                  </div>
+                  <span className="slider__slide__text">
+                    {slide.text[0]}
+                    <br/>
+                    {slide.text[1]}
+                  </span>
+                  <span className="slider__slide__price">{slide.price}&#x20b4;</span>
                   <button className="slider__slide__button">{slide.btnText}</button>
                 </div>
                 <img src={slide.productImg} alt="img" className="slider__slide__img"/>
