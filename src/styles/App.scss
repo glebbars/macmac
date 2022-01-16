@@ -333,8 +333,88 @@ body{
 }
 
 .slider{
+  margin: 0 15px;
+
+  &__dots-list{
+    margin: 0 auto;
+    display: flex;
+    width: 300px;
+    justify-content: space-between; 
+    padding: 0;
+
+
+    & .slick-active .slider__dot{
+      background: white;
+    }
+  }
+
+  &__arrow{
+    content: "";
+    right: 130px;
+    z-index: 2;
+    top: 40%;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 44px;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+
+
+    &::after{
+      content: "";
+      position: absolute;
+      top: 25px;
+      left: 24px;
+      display: block;
+      width: 7px;
+      height: 7px;
+      border-top: 2.5px solid white;
+      border-left: 2.5px solid white;
+      transform: rotate(135deg);
+      border-radius: 1.5px;
+      right: 50%;
+    }
+
+    &::before{
+      content: "";
+      position: absolute;
+      top: 28.5px;
+      left: 21.5px;
+      display: block;
+      width: 11px;
+      height: 2px;
+      background-color: white;
+      border-radius: 6px;
+    }
+
+    &_left{
+      left: 130px;
+
+      &::after{
+        transform: rotate(315deg);
+      }
+
+      &::before{
+        left: 22.5px;
+      }
+    }
+  }
+
+  &__dot{
+    width: 65px;
+    height: 3px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    bottom: 0;
+  }
 
   &__slide{
+    @include flex-centre;
+    padding: 15px 0;
+    border-radius: 8px;
+    background-color: #EFE5FE;;
+    background-repeat: no-repeat;
+    background-position: center calc(50% + 30px);
 
 
     &__text-container{
@@ -364,7 +444,9 @@ body{
     }
 
   }
+
 }
+
 
 
 // .cards-container {
