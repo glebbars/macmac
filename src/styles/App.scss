@@ -42,7 +42,7 @@ body{
   }
 
   &__menu {
-   @include flex-centre;
+   @include flex-center;
     order: 2;
     // filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
@@ -429,7 +429,7 @@ body{
   }
 
   &__slide{
-    @include flex-centre;
+    @include flex-center;
     padding: 40px 20px;
     border-radius: 8px;
     background-color: #EFE5FE;;
@@ -451,7 +451,7 @@ body{
     }
 
     &__text-container{
-      @include flex-centre;
+      @include flex-center;
       flex-direction: column;
 
       @media (max-width: 540px) {
@@ -460,7 +460,7 @@ body{
     }
 
     &__title-icon-container{
-      @include flex-centre;
+      @include flex-center;
       align-items: baseline;
     }
 
@@ -593,10 +593,64 @@ body{
   }
 }
 
+.main{
+  &__banners-container{
+    @include flex-center;
+    margin: 80px 20px;
+    flex-wrap: wrap
+  }
+
+  &__banner{
+    @include flex-center;
+    justify-content: space-between;
+    flex-direction: column;
+    background: #F8F7F9;
+    border-radius: 5px;
+    width: 200px;
+    height: 215px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0 35px 20px 0;
+
+    @media (max-width: 768px) {
+      margin: 0 12px 12px 0;
+      width: 155px;
+      height: 175px;
+    }
+
+
+    &:last-child{
+      margin-right: 0
+    }
+
+    &__img{
+      max-width: 90%;
+      max-height: 90%;
+      margin: auto;
+
+    }
+
+    &__title{
+      color: #343A40;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+      text-align: center;
+      letter-spacing: 0.005em;
+      margin-top: 10px;
+      
+      @media (max-width: 768px) {
+        font-size: 15px;
+      }
+    }
+  }
+
+}
+
 
 
 // .cards-container {
-//   @include flex-centre;
+//   @include flex-center;
 //   flex-wrap: wrap;
 //   margin: auto;
 // }
@@ -656,7 +710,7 @@ body{
 //   }
 
 //   &__price-and-btn-wrapper {
-//     @include flex-centre;
+//     @include flex-center;
 //     margin-top: 10px;
 //   }
 
