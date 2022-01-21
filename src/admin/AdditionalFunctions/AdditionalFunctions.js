@@ -117,9 +117,11 @@ export const getModelChoices = (value) => {
 
 const iphoneModelChoices = [
   { id: '11', name: '11' },
+  { id: 'se 2020', name: 'SE 2020' },
   { id: '12', name: '12' },
-  { id: '12 mini', name: '12 Mini' },
+  // { id: '12 mini', name: '12 Mini' },
   { id: '12 pro', name: '12 Pro' },
+  { id: '12 pro max', name: '12 Pro Max' },
   { id: '13', name: '13' },
   { id: '13 mini', name: '13 Mini' },
   { id: '13 pro', name: '13 Mini' },
@@ -135,16 +137,30 @@ const ipadModelChoices = [
 ]
 
 export const getCapacityChoices = (value) => {
-  return capacityOptions
+  switch(value){
+    case '11':
+    case "se 2020":
+    case "12":
+      return [capacityOptions[0], capacityOptions[1]]
+    break;
 
-  // switch(value){
-  //   case '10.2 2021':
-  //     return capacityOptionsss
-  //   break;
-  //   case '12':
-  //     return capacityOptions
-  //   break;
-  // }
+    case '12 pro':
+    case "12 pro max":
+    case "13 mini":
+      return [capacityOptions[2], capacityOptions[3]]
+    break;
+
+    case "13": 
+      return [capacityOptions[1], capacityOptions[2], capacityOptions[3]]
+    break;
+
+    case "13 pro":
+    case "13 pro max":
+      return [capacityOptions[1], capacityOptions[2], capacityOptions[3], capacityOptions[4]]
+    break;  
+
+
+  }
 }
 
 const capacityOptions = [
