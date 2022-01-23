@@ -30,7 +30,7 @@
       "category": "iphone",
       "model": "13 pro max",
       "capacity": "512gb",
-      "color": "purple",
+      "color": "sierra blue",
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1641644913/uploaded_images/nzcprvseezc56fguftab.jpg",
@@ -38,7 +38,51 @@
         }
       ],
       "id": 2,
-      "price": ""
+      "price": "3"
+    },
+    {
+      "category": "iphone",
+      "model": "12",
+      "capacity": "64gb",
+      "color": "black",
+      "price": "67",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1642936599/uploaded_images/eyu7wqkgyc3vhmuc9ply.jpg",
+          "id": "5848ab5c9a4254561174ec9ab5aebe25"
+        },
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1642936599/uploaded_images/qgpbv9dkdqzjvcgjsgnz.jpg",
+          "id": "11b02fcc9c2aa374a93ea01e4ffd22a5"
+        },
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1642936599/uploaded_images/nspucvgv6fondyylq8q6.jpg",
+          "id": "1a1e4ebfc740e712bb0d67e837b6386c"
+        }
+      ],
+      "id": 3
+    },
+    {
+      "category": "iphone",
+      "model": "12 pro max",
+      "capacity": "512gb",
+      "color": "gold",
+      "price": 39885,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1642936776/uploaded_images/pbnkki4ejgerd75oxrza.jpg",
+          "id": "7cc88c6851305bfb2446cd8ed6d5f467"
+        },
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1642936776/uploaded_images/xgr4dublzormfhxkqa77.jpg",
+          "id": "65c08e39672678f7292f5c1c09a34d66"
+        },
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1642936776/uploaded_images/yiniopprkncvclzucidt.jpg",
+          "id": "4a5d249e565a9d851bb650dc84670108"
+        }
+      ],
+      "id": 4
     }
   ],
   "orders": [

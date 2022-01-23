@@ -25,15 +25,15 @@ const UploadPrices = () => {
 
   const cardsArr = useSelector(store => store.app.cardsArr);
 
-  // useEffect(() => {
-  //   axios.get('https://api.privatbank.ua/p24api/pubinfo?exchange&json&coursid=11')
-  //   .then(res => {
-  //   res.data.find(obj => obj.ccy === 'USD' && obj.base_ccy === 'UAH' ? setUsdExchangeRate(+obj.sale) : null)
-  // })
-  // }, [])
+  useEffect(() => {
+    axios.get('https://api.privatbank.ua/p24api/pubinfo?exchange&json&coursid=11')
+    .then(res => {
+    res.data.find(obj => obj.ccy === 'USD' && obj.base_ccy === 'UAH' ? setUsdExchangeRate(+obj.sale) : null)
+  })
+  }, [])
 
   if(cardsArr.length > 0){
-    cardsArr.forEach(obj => getPriceOfProductFromDB(obj).then(res => console.log(res)))    
+    cardsArr.map(obj => getPriceOfProductFromDB(obj).then(data => console.log(data)))
   }
   
   // const updateProductsPrices = () => {

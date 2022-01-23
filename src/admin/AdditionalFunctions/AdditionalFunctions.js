@@ -50,9 +50,7 @@ export const getPriceOfProductFromDB = (allValues) =>  {
         .filter(([key, value]) => key.includes(filterredValuesArr.category) && key.includes(filterredValuesArr.model) && key.includes(filterredValuesArr.capacity) && key.includes(filterredValuesArr.color)
       )
     )
-  }).then(data => { 
-    console.log(data, Object.values(data)[0])
-    return data.length > 0 ? Object.values(data)[0] : allValues.price})
+  }).then(data => Object.values(data)[0] ? Object.values(data)[0] : allValues.price)
 }
   
 const compressImages = async (filesArr) => {
@@ -207,20 +205,20 @@ export const getColorChoices = (value) => {
 
 const colorOptions =  {
   'silver': { id: 'silver', name: 'Silver' },
-  'space grey': { id: 'space Grey', name: 'Space Grey' },
+  'space grey': { id: 'space grey', name: 'Space Grey' },
   'yellow': { id: 'yellow', name: 'Yellow' },
   'gold': { id: 'gold', name: 'Gold' },
-  'midnight green': { id: 'midnight Green', name: 'Midnight Green' },
+  'midnight green': { id: 'midnight green', name: 'Midnight Green' },
   'black': { id: 'black', name: 'Black' },
   'blue': { id: 'blue', name: 'Blue' },
-  'green': { id: 'green', name: 'Green' },
-  'product red': { id: 'product Red', name: 'Product Red' },
+  'green': { id: 'green', name: 'green' },
+  'product red': { id: 'product red', name: 'Product Red' },
   'purple': { id: 'purple', name: 'Purple' },
   'white': { id: 'white', name: 'White' },
-  'pacific blue': { id: 'pacific Blue', name: 'Pacific Blue' },
+  'pacific blue': { id: 'pacific blue', name: 'Pacific Blue' },
   'graphite': { id: 'graphite', name: 'Graphite' },
   'pink': { id: 'pink', name: 'Pink' },
   'midnight': { id: 'midnight', name: 'Midnight' },
   'starlight': { id: 'starlight', name: 'Starlight' },
-  'sierra blue': { id: 'sierra Blue', name: 'Sierra Blue' },
+  'sierra blue': { id: 'sierra blue', name: 'Sierra Blue' },
 }
