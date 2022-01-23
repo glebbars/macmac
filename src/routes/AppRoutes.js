@@ -1,4 +1,4 @@
-import React, {useEffect, useStatem } from "react";
+import React, {useEffect } from "react";
 import { Route, useLocation, Switch } from "react-router-dom";
 import Main from "../components/Main/Main";
 import Favourites from "../components/Favourites/Favourites";

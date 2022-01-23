@@ -26,7 +26,7 @@ export const onTransform = async (values) => {
   console.log(values)
 
   const newFilesArr = values.pictures.filter(item => item.rawFile)
-  const price = await getPriceOfProduct(values)
+  const price = await getPriceOfProductFromDB(values)
   values.price = price
 
   const compressedImgs = await compressImages(newFilesArr)
@@ -36,7 +36,8 @@ export const onTransform = async (values) => {
   return values  
 };
 
-const getPriceOfProduct = (allValues) =>  {
+export const getPriceOfProductFromDB = (allValues) =>  {
+  console.log(allValues)
 
   const filterredValuesArr = Object.fromEntries(
     Object.entries(allValues).filter(([key, value]) => typeof value === 'string')
@@ -49,7 +50,9 @@ const getPriceOfProduct = (allValues) =>  {
         .filter(([key, value]) => key.includes(filterredValuesArr.category) && key.includes(filterredValuesArr.model) && key.includes(filterredValuesArr.capacity) && key.includes(filterredValuesArr.color)
       )
     )
-  }).then(data => data.length > 0 ? Object.values(data)[0] : allValues.price)
+  }).then(data => { 
+    console.log(data, Object.values(data)[0])
+    return data.length > 0 ? Object.values(data)[0] : allValues.price})
 }
   
 const compressImages = async (filesArr) => {
