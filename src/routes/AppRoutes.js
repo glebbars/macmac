@@ -15,6 +15,7 @@ const AppRoutes = ({authProvider, dataProvider, history}) => {
   // const location = useLocation()
 
   useEffect(() => {
+    console.log('*')
     // if(!location.pathname.includes('admin')){
       dispatch(getAllProducts());
     // }

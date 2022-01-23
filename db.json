@@ -1,66 +1,8 @@
 {
   "posts": [
     {
-      "category": "iphone",
-      "model": "11",
-      "capacity": "128gb",
-      "color": "black",
-      "pictures": [
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1641598578/uploaded_images/q1qwycyhvutol2nokx6a.jpg",
-          "id": "9d02751c4c92bd0ac90c4e3d1e27ebe9"
-        },
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1641598600/uploaded_images/irzxrvfhvfy5coubnq65.jpg",
-          "id": "bb804b6624e15a0d37a8907d7cc0c181"
-        },
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1641598601/uploaded_images/yxreblmtk26r8hu5set4.jpg",
-          "id": "7804d6efaba2e32b62ff3e240899d1e3"
-        },
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1641598601/uploaded_images/o9kcuxv41tfrpqvnwqgj.jpg",
-          "id": "ee09fe3a35b3441955f15a3776fb7a3a"
-        }
-      ],
-      "price": "198",
+      "price": "1983",
       "id": 1
-    },
-    {
-      "category": "iphone",
-      "model": "13 pro max",
-      "capacity": "512gb",
-      "color": "sierra blue",
-      "pictures": [
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1641644913/uploaded_images/nzcprvseezc56fguftab.jpg",
-          "id": "39ff683c0be94114a3508592759a8fbf"
-        }
-      ],
-      "id": 2,
-      "price": "3"
-    },
-    {
-      "category": "iphone",
-      "model": "12",
-      "capacity": "64gb",
-      "color": "black",
-      "price": "67",
-      "pictures": [
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1642936599/uploaded_images/eyu7wqkgyc3vhmuc9ply.jpg",
-          "id": "5848ab5c9a4254561174ec9ab5aebe25"
-        },
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1642936599/uploaded_images/qgpbv9dkdqzjvcgjsgnz.jpg",
-          "id": "11b02fcc9c2aa374a93ea01e4ffd22a5"
-        },
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1642936599/uploaded_images/nspucvgv6fondyylq8q6.jpg",
-          "id": "1a1e4ebfc740e712bb0d67e837b6386c"
-        }
-      ],
-      "id": 3
     },
     {
       "category": "iphone",
@@ -83,6 +25,32 @@
         }
       ],
       "id": 4
+    },
+    {
+      "category": "iphone",
+      "model": "11",
+      "capacity": "128gb",
+      "color": "black",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1641598578/uploaded_images/q1qwycyhvutol2nokx6a.jpg",
+          "id": "9d02751c4c92bd0ac90c4e3d1e27ebe9"
+        },
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1641598600/uploaded_images/irzxrvfhvfy5coubnq65.jpg",
+          "id": "bb804b6624e15a0d37a8907d7cc0c181"
+        },
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1641598601/uploaded_images/yxreblmtk26r8hu5set4.jpg",
+          "id": "7804d6efaba2e32b62ff3e240899d1e3"
+        },
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1641598601/uploaded_images/o9kcuxv41tfrpqvnwqgj.jpg",
+          "id": "ee09fe3a35b3441955f15a3776fb7a3a"
+        }
+      ],
+      "price": "19833",
+      "id": 3
     }
   ],
   "orders": [
