@@ -12,6 +12,7 @@ const PostList = (props) =>{
         <TextField source="model"/>
         <TextField source="capacity" />
         <TextField source="color" />
+        <TextField source="price" />
         <EditButton basePath="/posts"/>
         <DeleteButton basePath="/posts"/>
       </Datagrid>

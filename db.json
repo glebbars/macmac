@@ -57,6 +57,76 @@
       ],
       "price": "",
       "id": 3
+    },
+    {
+      "category": "iphone",
+      "model": "13 pro max",
+      "capacity": "256gb",
+      "color": "silver",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1642897132/uploaded_images/krys5spj713anenkcxgy.jpg",
+          "id": "07825b1e916b9041860d77475cea4d6b"
+        },
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1642897132/uploaded_images/hknninpkvekaqzfzz49e.jpg",
+          "id": "c206709dd78bdbff666661fd538a2ef6"
+        },
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1642897132/uploaded_images/jxyl93ti2ijbetaoi7iu.jpg",
+          "id": "5fb347b3b4fea4d4d9bdbd5abe2dcf64"
+        }
+      ],
+      "price": "",
+      "id": 4
+    },
+    {
+      "category": "iphone",
+      "model": "13 pro max",
+      "capacity": "1tb",
+      "color": "sierra Blue",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1642897909/uploaded_images/ycpvszbuykbh8sqysh8m.jpg",
+          "id": "d8b0aed8b07d91029113722c5d976230"
+        },
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1642897909/uploaded_images/hphetttlsxmnsjhuokwi.jpg",
+          "id": "d6ce8d06d95f817fa7f072a5f25f0c80"
+        },
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1642897909/uploaded_images/lc5guo85uky1jovfpq88.jpg",
+          "id": "7711ef5041c11e5bf7c1a057859fb0ec"
+        }
+      ],
+      "price": "",
+      "id": 5
+    },
+    {
+      "category": "iphone",
+      "model": "12 pro",
+      "capacity": "512gb",
+      "color": "pacific Blue",
+      "price": "45",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1642898074/uploaded_images/ed5cmvvol8rxmjuyu932.jpg",
+          "id": "7818b0895726db4927ac84ec64a34d26"
+        },
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1642898074/uploaded_images/s46l0h5m5yj0hojjtdbt.jpg",
+          "id": "fa256b0c06c054d7625d29ae393f5914"
+        },
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1642898074/uploaded_images/lus0fbrri4lu9uj1ckwl.jpg",
+          "id": "8a65440cd3f0fa5e1815c657898869a4"
+        },
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1642898074/uploaded_images/rayl4ygecwah7e7rncxg.jpg",
+          "id": "639c5d736335765aa490d0c0a9c4a740"
+        }
+      ],
+      "id": 6
     }
   ],
   "orders": [

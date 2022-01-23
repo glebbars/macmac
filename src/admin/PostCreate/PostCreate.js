@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {Create, SimpleForm, ImageInput, ImageField, SelectInput} from 'react-admin'
+import {Create, SimpleForm, ImageInput, ImageField, SelectInput, TextInput} from 'react-admin'
 import { validatePostForm, onTransform,initialChoices, getModelChoices, getCapacityChoices, getColorChoices } from "../AdditionalFunctions/AdditionalFunctions";
 
 
@@ -7,6 +7,8 @@ const PostCreate = (props) =>{
   // const [finalProduct, setFinalProduct] = useState({})
 
   const [createdProduct, setCreatedProduct] = useState({})
+
+  console.log(createdProduct)
 
   return (
     <Create {...props} transform={onTransform} title='Create a Product'>
@@ -31,11 +33,13 @@ const PostCreate = (props) =>{
     
     {createdProduct.capacity && ( 
       <SelectInput 
-      choices={getColorChoices(createdProduct.capacity)}
+      choices={getColorChoices(createdProduct.model)}
       onChange={e => setCreatedProduct({...createdProduct, color: e.target.value})} 
       source="color"  />
-    )}
-      <ImageInput multiple source="pictures" label="Product pictures" accept="image/*" placeholder={<p>Upload or Drop your images here</p>}>
+      )}
+    {createdProduct.color && 
+      <TextInput helperText="Это необязательное поле" source="price"/> }
+      <ImageInput multiple source="pictures" label="" accept="image/*" placeholder={<p>Upload or Drop your images here</p>}>
        <ImageField source="src" title="title" />
       </ImageInput>
     </SimpleForm>

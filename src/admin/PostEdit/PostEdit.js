@@ -1,17 +1,15 @@
 import React, { useEffect, useState } from "react";
 import {Edit, SimpleForm, TextInput, ImageInput, ImageField, SelectInput} from 'react-admin'
 import { validatePostForm, onTransform, initialChoices, getModelChoices, getCapacityChoices, getColorChoices } from "../AdditionalFunctions/AdditionalFunctions";
-import { useDispatch } from "react-redux";
-import {getProduct} from '../../redux/actions/data'
+import axios from 'axios'
 
 const PostEdit = (props) =>{
 
   const [createdProduct, setCreatedProduct] = useState({})
-  const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(getProduct(props.id))
-      console.log(createdProduct)
+    axios.get(`http://localhost:5000/posts/${props.id}`)
+      .then(res=> setCreatedProduct(res.data))
   }, [])
 
   return (
@@ -36,14 +34,17 @@ const PostEdit = (props) =>{
 
         <SelectInput 
           source="color"
-          choices={getColorChoices(createdProduct.capacity)}
+          choices={getColorChoices(createdProduct.model)}
           onChange={e => setCreatedProduct({...createdProduct, color: e.target.value})} 
         
         />
+      <TextInput helperText="Это необязательное поле" source="price"/> 
 
-        <ImageInput multiple source="pictures" label="Product pictures" accept="image/*"  placeholder={<p>Upload or Drop your images here</p>}>
+
+        <ImageInput multiple source="pictures" label="" accept="image/*"  placeholder={<p>Upload or Drop your images here</p>}>
           <ImageField source="url" title="title" />
           </ImageInput>
+
         </SimpleForm>
     </Edit>
 
