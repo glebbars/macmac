@@ -5,8 +5,6 @@ import readXlsxFile from 'read-excel-file'
 import { useSelector } from "react-redux";
 import {getPriceOfProductFromDB} from '../AdditionalFunctions/AdditionalFunctions'
 
-
-
 const UploadPrices = () => {
 
   const refresh = useRefresh()
