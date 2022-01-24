@@ -37,7 +37,6 @@ export const onTransform = async (values) => {
 };
 
 export const getPriceOfProductFromDB = (allValues) =>  {
-  console.log(allValues)
 
   const filterredValuesArr = Object.fromEntries(
     Object.entries(allValues).filter(([key, value]) => typeof value === 'string')

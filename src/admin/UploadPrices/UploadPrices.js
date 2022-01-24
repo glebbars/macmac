@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import {useRefresh} from 'react-admin'
 import axios from 'axios'
 import readXlsxFile from 'read-excel-file'
 import { useSelector } from "react-redux";
@@ -7,8 +8,13 @@ import {getPriceOfProductFromDB} from '../AdditionalFunctions/AdditionalFunction
 
 
 const UploadPrices = () => {
-  const [usdExchangeRate, setUsdExchangeRate] = useState('')
+
+  const refresh = useRefresh()
+
   const cardsArr = useSelector(store => store.app.cardsArr);
+
+  const [usdExchangeRate, setUsdExchangeRate] = useState('')
+
 
   useEffect(() => {
     console.log('=')
@@ -30,21 +36,23 @@ const UploadPrices = () => {
       }
     })
     return allPricesObj
-  }).then(data => axios.patch('http://localhost:5000/prices/1', data)).then(res => console.log(res))
+  })
+  .then(data => axios.patch('http://localhost:5000/prices/1', data))
+  .then(res => updateProductsPrices())
   }
   
   const updateProductsPrices = () => {
     if(cardsArr.length > 0){
       cardsArr.map(obj => getPriceOfProductFromDB(obj)
-        .then(data => axios.patch(`http://localhost:5000/posts${obj.id}`, {price: data}) )
-        .then(res => console.log(res))
+        .then(data => axios.patch(`http://localhost:5000/posts/${obj.id}`, {price: data}) )
+        .then(res => refresh())
       )
     }
   }
 
   return (
     <label className="admin-upload-file">
-      <div onClick={updateProductsPrices}>21</div>
+      {/* <div onClick={updateProductsPrices}>21</div> */}
       <input className="admin-upload-file__input" type="file" onChange={e => updateObjPricesWithExcel(e, usdExchangeRate)}/>
         <span className="admin-upload-file__text">Upload prices</span>
     </label>
