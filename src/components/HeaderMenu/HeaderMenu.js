@@ -1,5 +1,5 @@
 import React, {useState, usestate} from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import logo from '../../img/logo.svg'
 import Search from '../Search/Search'
 import favorites from '../../img/favorites.svg'
@@ -13,7 +13,9 @@ const HeaderMenu = () => {
 
   return (
     <div className="header">
-      <img className="header__logo" src={logo} alt="Logo" />
+      <Link className="header__logo" to='/'>
+        <img className="header__logo__img"  src={logo} alt="Logo" />
+      </Link>
       <div className="header__menu">
         <button onClick={() => setOpenedBurger(true)} className="header__menu__burger-toggle">
           <span className="header__menu__burger-toggle__line"></span>
@@ -24,7 +26,7 @@ const HeaderMenu = () => {
             <nav className="header__menu__nav">
               <h4 className="header__menu__link header__menu__link_additional header__menu__link_additional_header">Apple</h4>
               <NavLink
-                exact
+                // exact
                 to="/category/all-products"
                 className="header__menu__link header__menu__link_all"
                 activeClassName="header__menu__link_selected header__menu__link_all_selected"
@@ -33,7 +35,7 @@ const HeaderMenu = () => {
               </NavLink>
               <NavLink
                 exact
-                to="/iphone"
+                to="/category/iphone"
                 className="header__menu__link header__menu__link_mr-t"
                 activeClassName="header__menu__link_selected"
               >
@@ -41,7 +43,7 @@ const HeaderMenu = () => {
               </NavLink>
               <NavLink
                 exact
-                to="/"
+                to="/category/airpods"
                 className="header__menu__link"
                 activeClassName="header__menu__link_selected"
               >
@@ -49,7 +51,7 @@ const HeaderMenu = () => {
               </NavLink>
               <NavLink
                 exact
-                to="/"
+                to="/category/ipad"
                 className="header__menu__link"
                 activeClassName="header__menu__link_selected"
               >
@@ -57,7 +59,7 @@ const HeaderMenu = () => {
               </NavLink>
               <NavLink
                 exact
-                to="/"
+                to="/category/imac"
                 className="header__menu__link"
                 activeClassName="header__menu__link_selected"
               >
@@ -65,7 +67,7 @@ const HeaderMenu = () => {
               </NavLink>
               <NavLink
                 exact
-                to="/"
+                to="/category/macbook"
                 className="header__menu__link header__menu__link_additional"
                 activeClassName="header__menu__link_selected"
               >
@@ -73,7 +75,7 @@ const HeaderMenu = () => {
               </NavLink>
               <NavLink
                 exact
-                to="/watch"
+                to="/category/watch"
                 className="header__menu__link header__menu__link_additional"
                 activeClassName="header__menu__link_selected"
               >
@@ -82,7 +84,7 @@ const HeaderMenu = () => {
 
                <NavLink
                 exact
-                to="/mac"
+                to="/category/accessories"
                 className="header__menu__link header__menu__link_additional header__menu__link_additional_header"
                 activeClassName="header__menu__link_selected"
               >
@@ -90,7 +92,7 @@ const HeaderMenu = () => {
               </NavLink>
               <NavLink
                 exact
-                to="/"
+                to="top-heated"
                 className="header__menu__link header__menu__link_additional header__menu__link_additional_header"
                 activeClassName="header__menu__link_selected"
               >

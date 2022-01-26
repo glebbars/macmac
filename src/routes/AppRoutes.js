@@ -32,8 +32,7 @@ const AppRoutes = ({authProvider, dataProvider, history}) => {
           <Route path="/favourites" exact component={Favourites}/>
           <Route path="/bag" exact component={Bag}/>
           <Route path="/admin" exact render={() => <AdminPannel dataProvider={dataProvider} authProvider={authProvider}  history={history} />}/>
-          <Route path={["/watch", "/iphone", "/mac", "/tv", "/airpods", "/all-products"]} exact component={ProductsList}/>
-          <Route path={`${path}/:categoryName`} component={ProductsList}/>
+          <Route path="/category/:categoryName" component={ProductsList}/>
           <Route path="/" exact component={Main}/>
         </Switch>
     </div>
