@@ -28,28 +28,26 @@ const Main = () => {
     <div className="main">
       <CustomSlider/>
       <div className="main__banners-container">
-        <Link to="favorites">
-          <div className="main__banner">
-            <img src={watchImg} alt="" className="main__banner__img"/>
-            <span className="main__banner__title">Watch</span>
-          </div>
+        <Link className="main__banner" to="watch">
+          <img src={watchImg} alt="" className="main__banner__img"/>
+          <span className="main__banner__title">Watch</span>
         </Link>
-        <div className="main__banner">
+        <Link className="main__banner" to="iphone">
           <img src={phoneImg} alt="" className="main__banner__img"/>
           <span className="main__banner__title">iPhone</span>
-        </div>
-        <div className="main__banner">
+        </Link>
+        <Link className="main__banner" to="mac">
           <img src={macImg} alt="" className="main__banner__img"/>
           <span className="main__banner__title">Mac</span>
-        </div>
-        <div className="main__banner">
+        </Link>
+        <Link className="main__banner" to="tv">
           <img src={tvImg} alt="" className="main__banner__img"/>
           <span className="main__banner__title">TV</span>
-        </div>
-        <div className="main__banner">
+        </Link>
+        <Link className="main__banner" to="airpods">
           <img src={podsImg} alt="" className="main__banner__img"/>
           <span className="main__banner__title">AirPods</span>
-        </div>
+        </Link>
       </div>
     </div>
 

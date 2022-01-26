@@ -51,7 +51,8 @@ const ProductsList = ({
 
   return (
     <div className="cards-container">
-      {cardsArr.map((cloth) => (
+      12
+      {/* {cardsArr.map((cloth) => (
         <div className="card" key={cloth.id}>
           <Card
             toggleFavorites={toggleFavorites}
@@ -65,7 +66,7 @@ const ProductsList = ({
             text="Add to cart"
           />
         </div>
-      ))}
+      ))} */}
     </div>
   );
 };

@@ -600,6 +600,8 @@ body{
     flex-wrap: wrap
   }
 
+
+
   &__banner{
     @include flex-center;
     justify-content: space-between;
@@ -611,6 +613,7 @@ body{
     box-sizing: border-box;
     padding: 10px;
     margin: 0 35px 20px 0;
+    text-decoration: none;
 
     @media (max-width: 768px) {
       margin: 0 12px 12px 0;
@@ -619,7 +622,7 @@ body{
     }
 
 
-    &:last-child{
+    &:last-of-type{
       margin-right: 0
     }
 

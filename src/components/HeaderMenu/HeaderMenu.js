@@ -25,7 +25,7 @@ const HeaderMenu = () => {
               <h4 className="header__menu__link header__menu__link_additional header__menu__link_additional_header">Apple</h4>
               <NavLink
                 exact
-                to="/"
+                to="/category/all-products"
                 className="header__menu__link header__menu__link_all"
                 activeClassName="header__menu__link_selected header__menu__link_all_selected"
               >
@@ -33,7 +33,7 @@ const HeaderMenu = () => {
               </NavLink>
               <NavLink
                 exact
-                to="/"
+                to="/iphone"
                 className="header__menu__link header__menu__link_mr-t"
                 activeClassName="header__menu__link_selected"
               >
@@ -73,7 +73,7 @@ const HeaderMenu = () => {
               </NavLink>
               <NavLink
                 exact
-                to="/"
+                to="/watch"
                 className="header__menu__link header__menu__link_additional"
                 activeClassName="header__menu__link_selected"
               >
@@ -82,7 +82,7 @@ const HeaderMenu = () => {
 
                <NavLink
                 exact
-                to="/"
+                to="/mac"
                 className="header__menu__link header__menu__link_additional header__menu__link_additional_header"
                 activeClassName="header__menu__link_selected"
               >
@@ -99,7 +99,7 @@ const HeaderMenu = () => {
 
               <NavLink
                 exact
-                to="/"
+                to="/all-products"
                 className="header__menu__link header__menu__link_all header__menu__link_additional header__menu__link_additional_header"
                 activeClassName="header__menu__link_selected header__menu__link_all_selected"
               >
