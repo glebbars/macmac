@@ -12,16 +12,16 @@ body{
   position: relative;
 }
 
-.container{
-  max-width: 1440px;
-  margin: 0 auto;
-  position: relative;
-}
+// .container{
+//   max-width: 1440px;
+//   margin: 0 auto;
+//   position: relative;
+// }
 
 .header {
   position: absolute;
   width: 100%;
-  max-width: calc(100% - 20px);
+  max-width: 1440px;
   margin: 10px auto 0;
   right: 0;
   left: 0;
@@ -31,10 +31,12 @@ body{
   &__container{
     @include flex-space;
     height: 65px;
-    margin: auto;
+    margin: auto 10px;
     background-color: white;
     border-radius: 8px;
     padding: 0 30px;
+    max-width: calc(100% - 20px);
+
   
     @media (max-width: 1300px) {
       padding: 0 20px;
@@ -618,8 +620,15 @@ body{
   }
 }
 
-.main{
+.main,
+.not-found{
   padding-top: 85px;
+}
+
+.main{
+
+  max-width: 1440px;
+  margin: 0 auto;
 
   &__banners-container{
     @include flex-center;
@@ -678,14 +687,27 @@ body{
 }
 
 .not-found{
+  height: 100vh;
   background: #FFEEE7;
 
+  
   &__container{
     @include flex-center;
     position: relative;
     flex-direction: column;
     max-width: 768px;
     margin: 0 auto;
+    z-index: 0;
+
+    &::after{
+      content: "404";
+      position: absolute;
+      color: #FFE2D7;
+      font-size: 256px;
+      margin: auto;
+      z-index: -1;
+      font-weight: bolder;
+    }
   }
 
   &__numbers{

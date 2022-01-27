@@ -31,7 +31,7 @@ const AppRoutes = ({authProvider, dataProvider, history}) => {
 
 
   return (
-    <div className="container">
+    <div>
       <HeaderMenu/>
         <Switch>
           <Route path="/favourites" exact component={Favourites}/>
