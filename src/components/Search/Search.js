@@ -1,6 +1,7 @@
 import React from 'react'
 import search from "../../img/search.svg"
-const Search = () =>{
+
+const Search = (className?) =>{
 
   return(
     <div className='header__search'>

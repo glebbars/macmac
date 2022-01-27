@@ -51,7 +51,7 @@ const ProductsList = ({
 
   return (
     <div className="cards-container">
-      12
+      product list
       {/* {cardsArr.map((cloth) => (
         <div className="card" key={cloth.id}>
           <Card
