@@ -1,12 +1,12 @@
 import React from 'react'
 import search from "../../img/search.svg"
 
-const Search = (className?) =>{
+const Search = ({className, placeholder}) =>{
 
   return(
-    <div className='header__search'>
+    <div className={`header__search ${className}`}>
       <img src={search} alt="search" />
-      <input type="search" className='header__search__input' placeholder='Категория, название товара, артикул'/>
+      <input type="search" className='header__search__input'placeholder={placeholder}/>
     </div>
   )
 }

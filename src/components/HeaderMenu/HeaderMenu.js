@@ -113,7 +113,7 @@ const HeaderMenu = () => {
           </div>
           
         </div>
-        <Search />
+        <Search placeholder='Категория, название товара, артикул'/>
 
         <div className="header__favorite-bag-container">
           <NavLink
