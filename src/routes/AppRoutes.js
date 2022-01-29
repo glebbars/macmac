@@ -1,4 +1,4 @@
-import React, {useEffect } from "react";
+import React, {useEffect, Fragment } from "react";
 import { Route, useLocation, Switch, useRouteMatch, useHistory } from "react-router-dom";
 import { getAllProducts } from "../redux/actions/data";
 import { useDispatch } from "react-redux";
@@ -19,11 +19,15 @@ const AppRoutes = ({authProvider, dataProvider, history}) => {
 
   const historry = useHistory()
 
+  const location = useLocation()
+
   console.log('history', historry)
+  console.log('location', location)
 
   // const location = useLocation()
 
   useEffect(() => {
+    window.scrollTo(0, 0)
     console.log('*')
     // if(!location.pathname.includes('admin')){
       dispatch(getAllProducts());
@@ -33,21 +37,19 @@ const AppRoutes = ({authProvider, dataProvider, history}) => {
 
   return (
     <div>
+      <HeaderMenu/>
       <Switch>
-        <Route path="*" exact component={NotFound}/>
-        <HeaderMenu/>
-          <Switch>
-            <Route path="/favourites" exact component={Favourites}/>
-            <Route path="/bag" exact component={Bag}/>
-            <Route path="/admin" exact render={() => <AdminPannel dataProvider={dataProvider} authProvider={authProvider}  history={history} />}/>
-            <Route path="/category/:categoryName" exact component={ProductsList}/>
-            <Route path="/" exact component={Main}/>
-            <Route path="*" exact component={NotFound}/>
-          </Switch>
-          <Footer />
-        </Switch>
+        <Route path="/" exact render={() => withFooter(Main)}/>
+        <Route path="/category/:categoryName" exact render={() => withFooter(ProductsList)}/>
+        <Route path="/favourites" exact component={Favourites}/>
+        <Route path="/bag" exact component={Bag}/>
+        <Route path="/admin" exact render={() => <AdminPannel dataProvider={dataProvider} authProvider={authProvider}  history={history} />}/>
+        <Route component={NotFound}/>
+      </Switch>
     </div>
     );
 };
+
+const withFooter = (Component) => <><Component /> <Footer/></>
 
 export default AppRoutes;
