@@ -118,7 +118,7 @@ const HeaderMenu = () => {
         <div className="header__favorite-bag-container">
           <NavLink
             exact
-            to="/"
+            to="/bag"
             className="header__menu__link header__menu__link_bag"
             activeClassName="header__menu__link_selected"
           >
@@ -126,7 +126,7 @@ const HeaderMenu = () => {
           </NavLink>
           <NavLink
             exact
-            to="/"
+            to="/favourites"
             className="header__menu__link header__menu__link_favorite"
             activeClassName="header__menu__link_selected"
           >

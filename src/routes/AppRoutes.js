@@ -39,10 +39,10 @@ const AppRoutes = ({authProvider, dataProvider, history}) => {
     <div>
       <HeaderMenu/>
       <Switch>
-        <Route path="/" exact render={() => withFooter(Main)}/>
-        <Route path="/category/:categoryName" exact render={() => withFooter(ProductsList)}/>
-        <Route path="/favourites" exact component={Favourites}/>
-        <Route path="/bag" exact component={Bag}/>
+        <Route path="/" exact render={() => includeFooter(Main)}/>
+        <Route path="/category/:categoryName" exact render={() => includeFooter(ProductsList)}/>
+        <Route path="/favourites" exact render={() => includeFooter(Favourites)}/>
+        <Route path="/bag" exact render={() => includeFooter(Bag)}/>
         <Route path="/admin" exact render={() => <AdminPannel dataProvider={dataProvider} authProvider={authProvider}  history={history} />}/>
         <Route component={NotFound}/>
       </Switch>
@@ -50,6 +50,6 @@ const AppRoutes = ({authProvider, dataProvider, history}) => {
     );
 };
 
-const withFooter = (Component) => <><Component /> <Footer/></>
+const includeFooter = (Component) => <><Component /> <Footer/></>
 
 export default AppRoutes;
