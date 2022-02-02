@@ -4,7 +4,15 @@
   align-items: center;
 }
 
-@mixin flex-space {
-  @include flex-center();
+@mixin flex-space-center {
+  display: flex;
+  align-items: center;
   justify-content: space-between;
+}
+
+@mixin flex-column-left {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }

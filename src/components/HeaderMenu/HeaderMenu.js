@@ -93,7 +93,7 @@ const HeaderMenu = () => {
                 </NavLink>
                 <NavLink
                   exact
-                  to="top-heated"
+                  to="/top-heated"
                   className="header__menu__link header__menu__link_additional header__menu__link_additional_header"
                   activeClassName="header__menu__link_selected"
                 >
