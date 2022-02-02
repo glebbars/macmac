@@ -28,7 +28,6 @@ const Main = () => {
     <div className="main">
 
       <CustomSlider/>
-<Link to="34">und</Link>
 
       <div className="main__banners-container">
         <Link className="main__banner" to="/category/watch">
@@ -51,6 +50,14 @@ const Main = () => {
           <img src={podsImg} alt="" className="main__banner__img"/>
           <span className="main__banner__title">AirPods</span>
         </Link>
+      </div>
+
+      <div className="main__poster">
+        <div className="main__poster__container">
+          <h3 className="main__poster__header">Только оригинальная техника Apple</h3>
+          <p className="main__poster__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+          <Link className="main__poster__button" to="/all-products">Все товары Apple</Link>
+        </div>
       </div>
     </div>
 
