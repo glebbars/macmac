@@ -32,7 +32,7 @@ const AppRoutes = ({authProvider, dataProvider, history}) => {
     // if(!location.pathname.includes('admin')){
       dispatch(getAllProducts());
     // }
-  }, []);
+  }, [location]);
 
 
   return (
