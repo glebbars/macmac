@@ -121,9 +121,9 @@ const Footer = () => {
         <div className='footer__contact'>
         <h6 className='footer__header footer__header_contact'>Связаться с нами</h6>
         <div className='footer__contact__table'>
-          <span className='footer__text footer__text_center'>+38(097)954-98-03</span>
+          <a href='tel:+380676282524' className='footer__text footer__text_center'>+38(097)954-98-03</a>
           <span className='footer__text footer__text_center'>+38(063)493-66-19</span>
-          <span className='footer__text footer__text_center'>macmac.brand@gmail.com</span>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=macmac.brand@gmail.com" target="_blank"className='footer__text footer__text_center'>macmac.brand@gmail.com</a>
           <div className='footer__contact__schedule'>
             <span className='footer__text footer__contact__schedule__text footer__text_center'>Пн.-Пт.: 9:00-18:00</span>
             <span className='footer__text footer__contact__schedule__text footer__text_center'>Сб.-Вс.: Выходной</span>
