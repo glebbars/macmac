@@ -11,7 +11,7 @@ import phoneImg from "../../img/phone-banner.png"
 import macImg from "../../img/mac-banner.png"
 import tvImg from "../../img/tv-banner.png"
 import podsImg from "../../img/pods-banner.png"
-
+import MainPoster from "../MainPoster/MainPoster";
 
 const Main = () => {
 
@@ -51,14 +51,9 @@ const Main = () => {
           <span className="main__banner__title">AirPods</span>
         </Link>
       </div>
+      <MainPoster header="Только оригинальная техника Apple" text="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident" btnText="Все товары Apple"  modificator="_original-only"/>
 
-      <div className="main__poster">
-        <div className="main__poster__container">
-          <h3 className="main__poster__header">Только оригинальная техника Apple</h3>
-          <p className="main__poster__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
-          <Link className="main__poster__button" to="/all-products">Все товары Apple</Link>
-        </div>
-      </div>
+      <MainPoster header="Огромное разнообразие аксессуаров" text="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident" btnText="Все аксессуары" modificator="_accessories"/>
     </div>
 
 
