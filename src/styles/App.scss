@@ -700,17 +700,21 @@ body{
     border-radius: 12px;
     background-size: auto 100%;
 
-    @media (max-width: 1024px) {
-      padding: 60px 0px 70px 50px;
+    @media (max-width: 768px) {
+      padding: 50px 0px 60px 40px;
     }
 
-    @media (max-width: 768px) {
-      padding: 170px 10px 100px;
+    @media (max-width: 480px){
+      padding: 160px 20px 75px 
     }
 
     &__container{
       @include flex-column-left;
       width: 380px;
+
+      @media (max-width: 480px){
+        width: auto;
+      }
     }
 
     &__header{
@@ -721,6 +725,12 @@ body{
       letter-spacing: 0.0025em;
       margin: 0;
       color: white;
+
+      @media (max-width: 480px){
+        font-size: 26px;
+        line-height: 32px
+      }
+  
     }
 
     &__text{
@@ -739,11 +749,16 @@ body{
       font-weight: 500;
       font-size: 16px;
       letter-spacing: 0.0155em;
-      padding: 12px 30px;
+      padding: 12px 50px;
       background: rgba(255, 255, 255, 0.15);
       border-radius: 8px;
       color: white;
       text-decoration: none;
+
+      @media (max-width: 480px){
+        padding: 8px 38px;
+        font-size: 15px;
+      }
     }
 
 
