@@ -698,6 +698,15 @@ body{
     box-sizing: border-box;
     margin: 0 auto;
     border-radius: 12px;
+    background-size: auto 100%;
+
+    @media (max-width: 1024px) {
+      padding: 60px 0px 70px 50px;
+    }
+
+    @media (max-width: 768px) {
+      padding: 170px 10px 100px;
+    }
 
     &__container{
       @include flex-column-left;
