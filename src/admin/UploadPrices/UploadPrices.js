@@ -15,7 +15,6 @@ const UploadPrices = () => {
 
 
   useEffect(() => {
-    console.log('=')
     axios.get('https://api.privatbank.ua/p24api/pubinfo?exchange&json&coursid=11')
     .then(res => {
       res.data.find(obj => obj.ccy === 'USD' && obj.base_ccy === 'UAH' ? setUsdExchangeRate(+obj.sale) : null)

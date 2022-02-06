@@ -23,7 +23,6 @@ export const validatePostForm = (values) => {
 
 
 export const onTransform = async (values) => {
-  console.log(values)
 
   const newFilesArr = values.pictures.filter(item => item.rawFile)
   const price = await getPriceOfProductFromDB(values)
@@ -56,7 +55,6 @@ const compressImages = async (filesArr) => {
     const compressedPhotos = await Promise.all(
       filesArr.map(async file => await resizeFile(file.rawFile))
     )
-    console.log(compressedPhotos)
   return compressedPhotos
 };
 
@@ -81,12 +79,11 @@ const uploadImage = async (compressedImgs) => {
       data.append('upload_preset', "njebqo0r")
       return axios.post("https://api.cloudinary.com/v1_1/dlt6mfxib/image/upload", data)
       .then(res => {
-        console.log(res)
         return {
           url: res.data.secure_url,
           id: res.data.asset_id
         }
-      }).catch(err => console.log(err))
+      }).catch(err => err)
 
     })
   )

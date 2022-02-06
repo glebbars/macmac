@@ -3,8 +3,7 @@ import monoColoredLogo from '../../img/monocolor.png'
 import blackLine from '../../img/black-line.png'
 import instagramIcon from '../../img/instagram.png'
 import facebookIcon from '../../img/facebook.png'
-import { NavLink } from "react-router-dom";
-
+import { NavLink, Link } from "react-router-dom";
 
 const Footer = () => {
 
@@ -40,6 +39,9 @@ const Footer = () => {
           >
           Гарантия
           </NavLink>
+
+          <Link to='/admin#/login' className='footer__link'>Become an admin</Link>
+
          </div>
 
         </div>

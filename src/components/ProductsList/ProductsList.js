@@ -32,7 +32,6 @@ const ProductsList = ({
 
 
   const removeFromTheBag = (cardId) => {
-    console.log('==')
     const cardIndex = addedToBag.indexOf(cardId);
     addedToBag.splice(cardIndex, 1)
     dispatch({

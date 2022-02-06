@@ -8,8 +8,6 @@ const PostCreate = (props) =>{
 
   const [createdProduct, setCreatedProduct] = useState({})
 
-  console.log(createdProduct)
-
   return (
     <Create {...props} transform={onTransform} title='Create a Product'>
     <SimpleForm validate={validatePostForm}> 

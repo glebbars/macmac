@@ -10,7 +10,7 @@ import HeaderMenu from "../components/HeaderMenu/HeaderMenu";
 import ProductsList from "../components/ProductsList/ProductsList";
 import NotFound from "../components/NotFound/NotFound";
 import Footer from '../components/Footer/Footer'
-
+import { Authenticated } from 'react-admin'
 
 const AppRoutes = ({authProvider, dataProvider, history}) => {
   const dispatch = useDispatch();
@@ -21,14 +21,11 @@ const AppRoutes = ({authProvider, dataProvider, history}) => {
 
   const location = useLocation()
 
-  console.log('history', historry)
-  console.log('location', location)
 
   // const location = useLocation()
 
   useEffect(() => {
     window.scrollTo(0, 0)
-    console.log('*')
     // if(!location.pathname.includes('admin')){
       dispatch(getAllProducts());
     // }
@@ -37,7 +34,7 @@ const AppRoutes = ({authProvider, dataProvider, history}) => {
 
   return (
     <div>
-      <HeaderMenu/>
+      {!location.pathname.includes('admin') && <HeaderMenu/>}
       <Switch>
         <Route path="/" exact render={() => includeFooter(Main)}/>
         <Route path="/category/:categoryName" exact render={() => includeFooter(ProductsList)}/>
@@ -50,6 +47,6 @@ const AppRoutes = ({authProvider, dataProvider, history}) => {
     );
 };
 
-const includeFooter = (Component) => <><Component /> <Footer/></>
+const includeFooter = (Component) => <><Component /> <Footer /> </>
 
 export default AppRoutes;

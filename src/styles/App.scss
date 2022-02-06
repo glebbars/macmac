@@ -719,6 +719,7 @@ body{
 
     &__container{
       @include flex-column-left;
+      justify-content: center;
       max-width: 405px;
       min-height: 420px;
 
