@@ -48,10 +48,10 @@ const UploadPrices = () => {
   }
 
   return (
-    <label className="admin-upload-file">
+    <label className="admin__upload-file">
       {/* <div onClick={updateProductsPrices}>21</div> */}
-      <input className="admin-upload-file__input" type="file" onChange={e => updateObjPricesWithExcel(e, usdExchangeRate)}/>
-        <span className="admin-upload-file__text">Upload prices</span>
+      <input className="admin__upload-file__input" type="file" onChange={e => updateObjPricesWithExcel(e, usdExchangeRate)}/>
+        <span className="admin__upload-file__text">Upload prices</span>
     </label>
   )
 }

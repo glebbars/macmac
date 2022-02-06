@@ -12,7 +12,7 @@ import CustomLogOutBtn from '../CustomLogOutBtn/CustomLogOutBtn';
 const AdminPannel = ({history, authProvider, dataProvider}) =>{
   return(
     // <Admin dataProvider={jsonServerProvider('https://my-test-admin.herokuapp.com/api')}>
-    <Admin history={history} layout={CustomLayout} loginPage={AdminLoginPage} authProvider={AuthProvider}  dataProvider={dataProvider}>
+    <Admin history={history} logoutButton={CustomLogOutBtn} layout={CustomLayout} authProvider={AuthProvider}  dataProvider={dataProvider}>
         <Resource name="posts" list={PostList} create={PostCreate} edit={PostEdit}/>
         <Resource name="orders" list={OrderList}/>
     </Admin>

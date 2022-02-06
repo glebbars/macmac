@@ -1,17 +1,14 @@
 import * as React from 'react';
 import { forwardRef } from 'react';
-import { userLogout,useLogout, useRedirect } from 'react-admin';
-import { connect } from 'react-redux';
-import {Link, useHistory} from 'react-router-dom'
+import {Link,  } from 'react-router-dom';
+
 
 const CustomLogOutBtn = forwardRef((props, ref) => {
-  const history = useHistory()
 
-  const logout = useLogout();
-  const handleClick = () => logout('/create')
+  console.log(props)
 
   return (
-      <div onClick={() => {handleClick(); history.push('/')}}>Logouttt</div>
+      <div className='admin__logout-btn' onClick={() => {localStorage.removeItem('username'); window.location.replace('/')}}>Logout</div>
   );
 });
 
