@@ -11,7 +11,7 @@ const NotFound = () =>{
         <h1 className='not-found__header'>Упс... Что-то пошло не так</h1>
         <p className='not-found__text'>Страницы, которую вы искали, уже не существует</p>
         <div onClick={history.goBack} className='not-found__back'>Вернуться назад</div>
-        <Search className='not-found__search' placeholder='Или выполните поиск по товарам'/>
+        <Search className='header__search not-found__search' placeholder='Или выполните поиск по товарам'/>
       </div>
     </div>
   )

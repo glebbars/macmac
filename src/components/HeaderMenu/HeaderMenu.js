@@ -1,7 +1,7 @@
 import React, {useState, usestate} from "react";
 import { NavLink, Link } from "react-router-dom";
 import logo from '../../img/logo.svg'
-import Search from '../Search/Search'
+import HeaderSearch from '../HeaderSearch/HeaderSearch'
 import favorites from '../../img/favorites.svg'
 import bag from '../../img/shopping-bag.svg'
 
@@ -113,7 +113,7 @@ const HeaderMenu = () => {
           </div>
           
         </div>
-        <Search placeholder='Категория, название товара, артикул'/>
+        <HeaderSearch/>
 
         <div className="header__favorite-bag-container">
           <NavLink
