@@ -40,7 +40,7 @@ const Footer = () => {
           Гарантия
           </NavLink>
 
-          <Link to='/admin#/login' className='footer__link'>Become an admin</Link>
+          <Link to='/admin' className='footer__link footer__link_admin'>Become an admin</Link>
 
          </div>
 
@@ -98,11 +98,11 @@ const Footer = () => {
                   Watch
                 </NavLink>
                 <NavLink
-                  to="/category/tv"
+                  to="/category/apple-tv"
                   className='footer__link'
                   activeClassName='footer__link_selected'
                 >
-                  TV
+                  Apple TV
                 </NavLink>
                 <NavLink
                   to="/category/accessories"

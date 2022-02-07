@@ -102,7 +102,7 @@ const HeaderMenu = () => {
 
                 <NavLink
                   exact
-                  to="/all-products"
+                  to="/category/all-products"
                   className="header__menu__link header__menu__link_all header__menu__link_additional header__menu__link_additional_header"
                   activeClassName="header__menu__link_selected header__menu__link_all_selected"
                 >

@@ -54,6 +54,8 @@ const Main = () => {
       <MainPoster header="Только оригинальная техника Apple" text="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident" btnText="Все товары Apple"  modificator="_original-only" link="/category/all-products"/>
 
       <MainPoster header="Огромное разнообразие аксессуаров Apple" text="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident" btnText="Все аксессуары" modificator="_accessories" link="/category/accessories"/>
+
+      <MainPoster header="Телевизоры Sony с технологией SmartTV" text="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident" btnText="Все телевизоры Sony" modificator="_sony-tv" link="/category/sony-tv"/>
     </div>
 
 

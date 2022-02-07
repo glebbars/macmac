@@ -1,5 +1,5 @@
 import React, {useEffect, Fragment } from "react";
-import { Route, useLocation, Switch, useRouteMatch, useHistory } from "react-router-dom";
+import { Route, useLocation, Switch } from "react-router-dom";
 import { getAllProducts } from "../redux/actions/data";
 import { useDispatch } from "react-redux";
 import Main from "../components/Main/Main";
@@ -10,25 +10,18 @@ import HeaderMenu from "../components/HeaderMenu/HeaderMenu";
 import ProductsList from "../components/ProductsList/ProductsList";
 import NotFound from "../components/NotFound/NotFound";
 import Footer from '../components/Footer/Footer'
-import { Authenticated } from 'react-admin'
 
 const AppRoutes = ({authProvider, dataProvider, history}) => {
   const dispatch = useDispatch();
 
-  let { path, url } = useRouteMatch();
-
-  const historry = useHistory()
-
   const location = useLocation()
-
-
   // const location = useLocation()
 
   useEffect(() => {
     window.scrollTo(0, 0)
-    // if(!location.pathname.includes('admin')){
+    if(!location.pathname.includes('admin')){
       dispatch(getAllProducts());
-    // }
+    }
   }, [location]);
 
 

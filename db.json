@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "price": "1983",
-      "id": 1
-    },
-    {
       "category": "iphone",
       "model": "12 pro max",
       "capacity": "512gb",

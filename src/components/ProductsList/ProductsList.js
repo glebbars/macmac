@@ -5,16 +5,68 @@ import Card from "../Card/Card";
 import OrderForm from "../OrderForm/OrderForm";
 import { useDispatch, useSelector } from "react-redux";
 import {ADD_TO_FAVOURITES, REMOVE_FROM_FAVOURITES, ADD_TO_BAG, REMOVE_FROM_BAG} from '../../redux/actions/types'
+import lightpurpleLine from '../../img/lightpurple-line.svg'
+import orangeLine from '../../img/orange-line.svg'
+import greenLine from '../../img/green-line.svg'
+import blueLine from '../../img/blue-line.svg'
+import {useLocation} from 'react-router-dom'
+
+const bgImgObj = [
+  {
+    lineImg: lightpurpleLine,
+    bgColor: '#f2e0f5'
+  },
+  // {
+  //   lineImg: orangeLine,
+  //   bgColor: '#F8E5D6'
+  // },
+  {
+    lineImg: greenLine,
+    bgColor: '#DBECCE'
+  },
+  {
+    lineImg: blueLine,
+    bgColor: '#E2F1F4'
+  },
+]
+
+const routesNames = {
+  "all-products": "Все товары",
+  "iphone": 'iPhone',
+  "imac": 'iMac',
+  "airpods": 'AirPods',
+  "ipad": 'iPad',
+  "macbook": 'Macbook',
+  "watch": 'Apple Watch',
+  "accessories": 'Аксессуары',
+  "apple-tv": 'Apple TV',
+  "sony-tv": 'Sony TV',
+}
 
 const ProductsList = ({ 
-  cardsArr,
   ableToBeRemoved
 }) => {
 
   const dispatch = useDispatch()
 
+  const location = useLocation()
+
+  const cardsArr = useSelector((store) => store.app.cardsArr);
+
   const favorites = useSelector((store) => store.app.favorites);
   const addedToBag = useSelector((store) => store.app.addedToBag);
+
+  const [styledBgObj, setStyledBgObj] = useState({})
+
+  useEffect(() => {
+   const randomIndex = Math.floor(Math.random() * 3);
+   const stylesObj = {
+     backgroundColor: bgImgObj[randomIndex].bgColor,
+     backgroundImage: `url(${(bgImgObj[randomIndex].lineImg)})`,
+   }
+
+   setStyledBgObj(stylesObj)
+  }, [location])
 
   const toggleFavorites = (cardId) => {
     if (favorites.includes(cardId)) {
@@ -49,9 +101,12 @@ const ProductsList = ({
 
 
   return (
-    <div className="cards-container">
-      product list
-      {/* {cardsArr.map((cloth) => (
+    <div className="products">
+      <div style={styledBgObj} className="products__background">
+       <h1 className="products__header">{routesNames[location.pathname.split('/category/')[1]]}</h1>
+      </div>
+      <div>other styff</div>
+      {cardsArr.map((cloth) => (
         <div className="card" key={cloth.id}>
           <Card
             toggleFavorites={toggleFavorites}
@@ -65,7 +120,7 @@ const ProductsList = ({
             text="Add to cart"
           />
         </div>
-      ))} */}
+      ))}
     </div>
   );
 };
