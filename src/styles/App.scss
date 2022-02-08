@@ -43,6 +43,10 @@ body{
       justify-content: flex-start;
     }
 
+    @media (max-width: 768px) {
+      height: 56px;
+    }
+
 
     
   }
@@ -322,18 +326,9 @@ body{
     }
   }
 
-  &__search{
+  &__search-screen-wrapper{
     order: 3;
-    height: 40px;
     width: 360px;
-    border-radius: 8px;
-    padding: 0 15px;
-    display: flex;
-    align-items: center;
-    background: #F4F5F7;
-    border-radius: 8px;
-    box-sizing: border-box;
-    margin: 0 5px 0 30px;
 
     @media (max-width: 1300px) {
       width: 100%;
@@ -341,9 +336,103 @@ body{
     }
 
     @media (max-width: 768px) {
+      width: auto;
+      margin-left: auto;
+
+      &_mobile{
+        margin: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+      }
+    }
+
+    &_active{
+      margin: 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      background: rgba(0, 0, 0, 0.4);
+    }
+    
+
+  }
+
+
+  &__search-container{
+
+    &_active{
+      margin: 10px auto 0;
+      padding: 8px;
+      max-width: 900px;
+      background: white;
+      border-radius: 12px;
+      width: calc(100% - 36px);
+
+      
+    }
+    @media (max-width: 768px) {
+      &_mobile{
+        margin: 10px auto 0;
+        padding: 8px;
+        max-width: 900px;
+        background: white;
+        border-radius: 12px;
+        width: calc(100% - 36px);
+      }
+    }
+
+    &_active{
+      // width: calc(100% - 30px);
+      height: 500px;
+      margin: 10px auto 0;
+    }
+
+  }
+
+  &__search{
+    // order: 3;
+    height: 40px;
+    // width: 360px;
+    border-radius: 8px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    background: #F4F5F7;
+    border-radius: 8px;
+    box-sizing: border-box;
+    // margin: 0 5px 0 30px;
+
+    // @media (max-width: 1300px) {
+    //   width: 100%;
+    //   margin: 0 20px 0 30px;
+    // }
+
+    @media (max-width: 768px) {
       background: transparent;
       width: 10px;
-      margin-left: auto;
+
+      &_active{
+        width: 100%;
+      }
+
+      @media (max-width: 768px) {
+        &_mobile{
+          width: 100%;
+         padding: 0 0 0 5px;
+        }
+      }
+
+
+      &_active{
+        background: #F4F5F7;
+      }
     }
 
     &__input{
@@ -355,7 +444,11 @@ body{
       margin-left: 15px;
 
       &::placeholder{
-        color: #6C757D
+        color: #6C757D;
+      }
+
+      @media (max-width: 768px) {
+        margin-left: 5px;
       }
     }
 
