@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Star = ({ cloth, toggleFavorites, filledStar }) => {
+const Star = ({ product, toggleFavorites, filledStar }) => {
   return (
     <div
-      onClick={(e) => toggleFavorites(cloth.id)}
+      onClick={(e) => toggleFavorites(product.id)}
       className="card__star-container"
     >
       <svg
@@ -21,12 +21,6 @@ const Star = ({ cloth, toggleFavorites, filledStar }) => {
       </svg>
     </div>
   );
-};
-
-Star.propTypes = {
-  cloth: PropTypes.object.isRequired,
-  toggleFavorites: PropTypes.func.isRequired,
-  filledStar: PropTypes.bool.isRequired,
 };
 
 export default Star;

@@ -15,9 +15,9 @@ const Bag = () => {
   }, []);
 
 
-  const filterredArr = cardsArr.filter(cloth => {
-    if(addedToBag.includes(cloth.id)){
-      return cloth
+  const filterredArr = cardsArr.filter(product => {
+    if(addedToBag.includes(product.id)){
+      return product
     }
   })
 

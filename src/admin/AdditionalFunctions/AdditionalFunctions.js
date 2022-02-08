@@ -26,7 +26,7 @@ export const onTransform = async (values) => {
 
   const newFilesArr = values.pictures.filter(item => item.rawFile)
   const price = await getPriceOfProductFromDB(values)
-  values.price = price
+  values.price = +price
 
   const compressedImgs = await compressImages(newFilesArr)
   const uploadedImgs = await uploadImage(compressedImgs)
@@ -63,7 +63,7 @@ const resizeFile = (file) => new Promise ((resolve) => {
     file,
     1500,
     1500,
-    "JPEG",
+    "PNG",
     100,
     0,
     (uri) => resolve(uri),

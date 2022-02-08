@@ -105,22 +105,29 @@ const ProductsList = ({
       <div style={styledBgObj} className="products__background">
        <h1 className="products__header">{routesNames[location.pathname.split('/category/')[1]]}</h1>
       </div>
-      <div>other styff</div>
-      {cardsArr.map((cloth) => (
-        <div className="card" key={cloth.id}>
-          <Card
-            toggleFavorites={toggleFavorites}
-            cloth={cloth}
-            filledStar={favorites.includes(cloth.id)}
-            cardCross={ableToBeRemoved}
-            removeFromTheBag={() => removeFromTheBag(cloth.id)}
-          />
-          <Button
-            addToTheBag={() => addToTheBag(cloth.id)}
-            text="Add to cart"
-          />
+      <div className="products__section">
+        <div className="products__filters-section">
+          <h1>criterias</h1>
+          <h1>criterias</h1>
+          <h1>criterias</h1>
+          <h1>criterias</h1>
         </div>
-      ))}
+        <div className="products__list">
+          {cardsArr.map(product => (
+            // <div className="card" key={product.id}>
+              <Card
+               key={product.id}
+                toggleFavorites={toggleFavorites}
+                product={product}
+                filledStar={favorites.includes(product.id)}
+                cardCross={ableToBeRemoved}
+                removeFromTheBag={() => removeFromTheBag(product.id)}
+              />
+            // </div>
+          ))}
+        </div>
+
+      </div>
     </div>
   );
 };

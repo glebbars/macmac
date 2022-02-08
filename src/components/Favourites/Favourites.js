@@ -14,9 +14,9 @@ const Favourites = () => {
     localStorage.setItem("favorites", JSON.stringify(favorites));
   }, []);
 
-  const filterredArr = cardsArr.filter(cloth => {
-    if(favorites.includes(cloth.id)){
-      return cloth
+  const filterredArr = cardsArr.filter(product => {
+    if(favorites.includes(product.id)){
+      return product
     }
   })
 

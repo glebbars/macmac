@@ -3,28 +3,28 @@ import PropTypes from "prop-types";
 import Star from "../Star/Star";
 
 const Card = ({
-  cloth,
+  product,
   toggleFavorites,
   filledStar,
   cardCross,
   removeFromTheBag
 }) => {
   return (
-      <div>
-        {cloth && (
-        <div>
-          <Star
-            cloth={cloth}
+      <div className="card__container">
+        {/* {product && ( */}
+        <div className="card__img-container">
+          <img className="card__img" src={product.pictures[0].url} alt="Loading..." />
+        </div>
+        <span className="card__text">{product.category} {product.model} {product.color} {product.capacity}</span>
+        <span className="card__price">{product.price.toLocaleString()}.00 &#x20b4;</span>
+
+          {/* <Star
+            product={product}
             toggleFavorites={toggleFavorites}
             filledStar={filledStar}
           />
-          {cardCross && <div onClick={removeFromTheBag} className="card__cross"></div>}
-          <img className="card__img" src={cloth.pictures[0].url} alt="Loading..." />
-          <h2 className="card__name">{cloth.name}</h2>
-          <span className="card__color">{cloth.color}</span>
-          <span className="card__price">{cloth.price}</span>
-        </div>
-        )}
+          {cardCross && <div onClick={removeFromTheBag} className="card__cross"></div>} */}
+        {/* )} */}
     </div>
   );
 };

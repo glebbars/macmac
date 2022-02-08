@@ -2,101 +2,59 @@
   "posts": [
     {
       "category": "iphone",
-      "model": "12 pro max",
-      "capacity": "512gb",
-      "color": "gold",
-      "price": 42615,
+      "model": "11",
+      "capacity": "64gb",
+      "color": "black",
+      "price": 17615,
       "pictures": [
         {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1642936776/uploaded_images/pbnkki4ejgerd75oxrza.jpg",
-          "id": "7cc88c6851305bfb2446cd8ed6d5f467"
-        },
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1642936776/uploaded_images/xgr4dublzormfhxkqa77.jpg",
-          "id": "65c08e39672678f7292f5c1c09a34d66"
-        },
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1642936776/uploaded_images/yiniopprkncvclzucidt.jpg",
-          "id": "4a5d249e565a9d851bb650dc84670108"
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644359226/uploaded_images/elka5nvom7sxvpkynqzq.png",
+          "id": "5cc19dafc23a89516e6ab8ce6969aa0b"
         }
       ],
-      "id": 4
+      "id": 1
     },
     {
       "category": "iphone",
-      "model": "11",
+      "model": "se 2020",
       "capacity": "128gb",
       "color": "black",
       "pictures": [
         {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1641598578/uploaded_images/q1qwycyhvutol2nokx6a.jpg",
-          "id": "9d02751c4c92bd0ac90c4e3d1e27ebe9"
-        },
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1641598600/uploaded_images/irzxrvfhvfy5coubnq65.jpg",
-          "id": "bb804b6624e15a0d37a8907d7cc0c181"
-        },
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1641598601/uploaded_images/yxreblmtk26r8hu5set4.jpg",
-          "id": "7804d6efaba2e32b62ff3e240899d1e3"
-        },
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1641598601/uploaded_images/o9kcuxv41tfrpqvnwqgj.jpg",
-          "id": "ee09fe3a35b3441955f15a3776fb7a3a"
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644359238/uploaded_images/lnkihpgghfp1bhggti9b.png",
+          "id": "1189b4cbec68eb721788fca0f715074b"
         }
       ],
-      "price": 21305,
+      "price": 13355,
+      "id": 2
+    },
+    {
+      "category": "iphone",
+      "model": "13 pro",
+      "capacity": "1tb",
+      "color": "gold",
+      "price": 67500,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644359248/uploaded_images/hyi8npb1vwufpkx3a5et.png",
+          "id": "dd8ca7f016cb4b4b831e921c1113832b"
+        }
+      ],
       "id": 3
     },
     {
       "category": "iphone",
-      "model": "13 mini",
-      "capacity": "256gb",
-      "color": "pink",
-      "price": 34660,
-      "pictures": [
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1643066150/uploaded_images/ihfzjmltpqomjofu9qtp.jpg",
-          "id": "7dd55d3c5b05c13b6079696a6b50dc87"
-        },
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1643066150/uploaded_images/qfnrixvuedc86cep1kif.jpg",
-          "id": "44cb9693a7fd74c6365df84924f94284"
-        }
-      ],
-      "id": 5
-    },
-    {
-      "category": "iphone",
-      "model": "13 mini",
-      "capacity": "256gb",
-      "color": "pink",
-      "price": 34660,
-      "pictures": [
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1643982288/uploaded_images/dj9hn9zz3nsgjbeqklul.jpg",
-          "id": "117d1371ae0f0f693dadd6d74e41b17b"
-        },
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1643982288/uploaded_images/qq0f8npw654qjrumsf65.jpg",
-          "id": "6fe84420643c7fa5eb57e7b097dacac9"
-        }
-      ],
-      "id": 6
-    },
-    {
-      "category": "iphone",
-      "model": "13",
-      "capacity": "512gb",
+      "model": "se 2020",
+      "capacity": "128gb",
       "color": "product red",
-      "price": "90000",
+      "price": 3456,
       "pictures": [
         {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1643982406/uploaded_images/a6xzvplbqtixxljeb2lv.jpg",
-          "id": "f1a24197aa3b579b3f87eb931931d525"
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644359373/uploaded_images/ltpdxjraszsyxyupxt8o.png",
+          "id": "98a9134d0af0cc2b8a78c8b4a1952dd0"
         }
       ],
-      "id": 7
+      "id": 4
     }
   ],
   "orders": [
