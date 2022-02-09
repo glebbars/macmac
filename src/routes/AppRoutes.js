@@ -19,10 +19,14 @@ const AppRoutes = ({authProvider, dataProvider, history}) => {
 
   useEffect(() => {
     window.scrollTo(0, 0)
-    if(!location.pathname.includes('admin')){
-      dispatch(getAllProducts());
-    }
+    // if(!location.pathname.includes('admin')){
+      // dispatch(getAllProducts());
+    // }
   }, [location]);
+
+  useEffect(() => {
+    dispatch(getAllProducts());
+  }, [])
 
 
   return (
