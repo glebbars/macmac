@@ -4,6 +4,41 @@ import logo from '../../img/logo.svg'
 import HeaderSearch from '../HeaderSearch/HeaderSearch'
 import favorites from '../../img/favorites.svg'
 import bag from '../../img/shopping-bag.svg'
+import CategoryDropDown from "../CategoryDropDown/CategoryDropDown";
+
+
+const categoryOptions = [
+  {
+    link: "/category/iphone",
+    text: 'iPhone',
+    class: 'header__menu__link header__menu__link_mr-t',
+  },
+  {
+    link: '/category/airpods',
+    text: 'AirPods',
+    class: 'header__menu__link',
+  },
+  {
+    link: '/category/ipad',
+    text: 'iPad',
+    class: 'header__menu__link',
+  },
+  {
+    link: '/category/imac',
+    text: 'iMac',
+    class: 'header__menu__link',
+  },
+  {
+    link: '/category/macbook',
+    text: 'Macbook',
+    class: 'header__menu__link header__menu__link_additional',
+  },
+  {
+    link: '/category/watch',
+    text: 'Watch',
+    class: 'header__menu__link header__menu__link_additional',
+  },
+]
 
 const HeaderMenu = () => {
 
@@ -25,32 +60,33 @@ const HeaderMenu = () => {
 
           <div className={`header__menu__burger-container ${'header__menu__burger-container' + activeClass}`}>
               <nav className="header__menu__nav">
-                <h4 className="header__menu__link header__menu__link_additional header__menu__link_additional_header">Apple</h4>
                 <NavLink
                   // exact
                   to="/category/all-products"
                   className="header__menu__link header__menu__link_all"
-                  activeClassName="header__menu__link_selected header__menu__link_all_selected"
+                  activeClassName="link_selected header__menu__link_all_selected"
                 >
                   Все товары
                 </NavLink>
-                <NavLink
+                <CategoryDropDown options={categoryOptions} brand='Apple' headerClass='header__menu__link header__menu__link_additional header__menu__link_additional_header' listClass='drop-down__list_header'/>
+                {/* <h4 className="header__menu__link header__menu__link_additional header__menu__link_additional_header">Apple</h4> */}
+                {/* <NavLink
                   exact
                   to="/category/iphone"
                   className="header__menu__link header__menu__link_mr-t"
                   activeClassName="header__menu__link_selected"
                 >
                   iPhone
-                </NavLink>
-                <NavLink
+                </NavLink> */}
+                {/* <NavLink
                   exact
                   to="/category/airpods"
                   className="header__menu__link"
                   activeClassName="header__menu__link_selected"
                 >
                   AirPods
-                </NavLink>
-                <NavLink
+                </NavLink> */}
+                {/* <NavLink
                   exact
                   to="/category/ipad"
                   className="header__menu__link"
@@ -81,13 +117,13 @@ const HeaderMenu = () => {
                   activeClassName="header__menu__link_selected"
                 >
                   Watch
-                </NavLink>
+                </NavLink> */}
 
                 <NavLink
                   exact
                   to="/category/accessories"
                   className="header__menu__link header__menu__link_additional header__menu__link_additional_header"
-                  activeClassName="header__menu__link_selected"
+                  activeClassName="link_selected"
                 >
                   Аксессуары
                 </NavLink>
@@ -95,7 +131,7 @@ const HeaderMenu = () => {
                   exact
                   to="/top-heated"
                   className="header__menu__link header__menu__link_additional header__menu__link_additional_header"
-                  activeClassName="header__menu__link_selected"
+                  activeClassName="link_selected"
                 >
                   Топ продаж
                 </NavLink>
@@ -104,7 +140,7 @@ const HeaderMenu = () => {
                   exact
                   to="/category/all-products"
                   className="header__menu__link header__menu__link_all header__menu__link_additional header__menu__link_additional_header"
-                  activeClassName="header__menu__link_selected header__menu__link_all_selected"
+                  activeClassName="link_selected header__menu__link_all_selected"
                 >
                   Все товары
                 </NavLink>
@@ -120,7 +156,7 @@ const HeaderMenu = () => {
             exact
             to="/bag"
             className="header__menu__link header__menu__link_bag"
-            activeClassName="header__menu__link_selected"
+            activeClassName="link_selected"
           >
             Корзина
           </NavLink>
@@ -128,7 +164,7 @@ const HeaderMenu = () => {
             exact
             to="/favourites"
             className="header__menu__link header__menu__link_favorite"
-            activeClassName="header__menu__link_selected"
+            activeClassName="link_selected"
           >
             Избранное
           </NavLink>

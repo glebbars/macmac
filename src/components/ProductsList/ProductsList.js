@@ -110,7 +110,7 @@ const ProductsList = ({
         <div className="products__filters-section">
           <h1 className="products__filters-section__header">{location.pathname.split('/category/')[1] === 'all-products' ? 'Категория' : 'Фильтры'}</h1>
           <h4 className="products__filters-section__subheader">{routesNames[location.pathname.split('/category/')[1]]}</h4>
-          <CategoryDropDown brand='Apple' options={['iPhone', 'Mac', 'iPad', 'AirPods', 'Watch']}/>
+          {/* <CategoryDropDown brand='Apple' options={['iPhone', 'Mac', 'iPad', 'AirPods', 'Watch']}/> */}
         </div>
         <div className="products__list">
           {cardsArr.map(product => (

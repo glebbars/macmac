@@ -28,14 +28,14 @@ const Footer = () => {
          <NavLink
             to="/delivery-payment"
             className='footer__link'
-            activeClassName='footer__link_selected'
+            activeClassName='link_selected'
           >
             Доставка и оплата
           </NavLink>
          <NavLink
             to="/garanty"
             className='footer__link'
-            activeClassName='footer__link_selected'
+            activeClassName='link_selected'
           >
           Гарантия
           </NavLink>
@@ -51,56 +51,56 @@ const Footer = () => {
                 <NavLink
                   to="/category/all-products"
                   className='footer__link'
-                  activeClassName='footer__link_selected'
+                  activeClassName='link_selected'
                 >
                   Все товары
                 </NavLink>
                 <NavLink
                   to="/category/iphone"
                   className='footer__link'
-                  activeClassName='footer__link_selected'
+                  activeClassName='link_selected'
                 >
                   iPhone
                 </NavLink>
                 <NavLink
                   to="/category/imac"
                   className='footer__link'
-                  activeClassName='footer__link_selected'
+                  activeClassName='link_selected'
                 >
                   Mac
                 </NavLink>
                 <NavLink
                   to="/category/ipad"
                   className='footer__link'
-                  activeClassName='footer__link_selected'
+                  activeClassName='link_selected'
                 >
                   iPad
                 </NavLink>
                 <NavLink
                   to="/category/airpods"
                   className='footer__link'
-                  activeClassName='footer__link_selected'
+                  activeClassName='link_selected'
                 >
                   AirPods
                 </NavLink>
                 <NavLink
                   to="/category/macbook"
                   className='footer__link'
-                  activeClassName='footer__link_selected'
+                  activeClassName='link_selected'
                 >
                   Macbook
                 </NavLink>
                 <NavLink
                   to="/category/watch"
                   className='footer__link'
-                  activeClassName='footer__link_selected'
+                  activeClassName='link_selected'
                 >
                   Watch
                 </NavLink>
                 <NavLink
                   to="/category/apple-tv"
                   className='footer__link'
-                  activeClassName='footer__link_selected'
+                  activeClassName='link_selected'
                 >
                   Apple TV
                 </NavLink>
@@ -114,7 +114,7 @@ const Footer = () => {
                 <NavLink
                   to="/top-heated"
                   className='footer__link'
-                  activeClassName='footer__link_selected'
+                  activeClassName='link_selected'
                 >
                 Топ продаж
                 </NavLink>
