@@ -7,7 +7,7 @@ import bag from '../../img/shopping-bag.svg'
 import CategoryDropDown from "../CategoryDropDown/CategoryDropDown";
 
 
-const categoryOptions = [
+const categoryHeaderOptions = [
   {
     link: "/category/iphone",
     text: 'iPhone',
@@ -68,56 +68,7 @@ const HeaderMenu = () => {
                 >
                   Все товары
                 </NavLink>
-                <CategoryDropDown options={categoryOptions} brand='Apple' headerClass='header__menu__link header__menu__link_additional header__menu__link_additional_header' listClass='drop-down__list_header'/>
-                {/* <h4 className="header__menu__link header__menu__link_additional header__menu__link_additional_header">Apple</h4> */}
-                {/* <NavLink
-                  exact
-                  to="/category/iphone"
-                  className="header__menu__link header__menu__link_mr-t"
-                  activeClassName="header__menu__link_selected"
-                >
-                  iPhone
-                </NavLink> */}
-                {/* <NavLink
-                  exact
-                  to="/category/airpods"
-                  className="header__menu__link"
-                  activeClassName="header__menu__link_selected"
-                >
-                  AirPods
-                </NavLink> */}
-                {/* <NavLink
-                  exact
-                  to="/category/ipad"
-                  className="header__menu__link"
-                  activeClassName="header__menu__link_selected"
-                >
-                  iPad
-                </NavLink>
-                <NavLink
-                  exact
-                  to="/category/imac"
-                  className="header__menu__link"
-                  activeClassName="header__menu__link_selected"
-                >
-                  iMac
-                </NavLink>
-                <NavLink
-                  exact
-                  to="/category/macbook"
-                  className="header__menu__link header__menu__link_additional"
-                  activeClassName="header__menu__link_selected"
-                >
-                  Macbook
-                </NavLink>
-                <NavLink
-                  exact
-                  to="/category/watch"
-                  className="header__menu__link header__menu__link_additional"
-                  activeClassName="header__menu__link_selected"
-                >
-                  Watch
-                </NavLink> */}
+                <CategoryDropDown options={categoryHeaderOptions} brand='Apple' headerClass='header__menu__link header__menu__link_additional header__menu__link_additional_header' listClass='drop-down__list_header drop-down__list_active'/>
 
                 <NavLink
                   exact

@@ -11,16 +11,13 @@ import greenLine from '../../img/green-line.svg'
 import blueLine from '../../img/blue-line.svg'
 import {useLocation} from 'react-router-dom'
 import CategoryDropDown from '../CategoryDropDown/CategoryDropDown'
+import {NavLink} from 'react-router-dom'
 
 const bgImgObj = [
   {
     lineImg: lightpurpleLine,
     bgColor: '#f2e0f5'
   },
-  // {
-  //   lineImg: orangeLine,
-  //   bgColor: '#F8E5D6'
-  // },
   {
     lineImg: greenLine,
     bgColor: '#DBECCE'
@@ -28,6 +25,39 @@ const bgImgObj = [
   {
     lineImg: blueLine,
     bgColor: '#E2F1F4'
+  },
+]
+
+const categoryProductsOptions = [
+  {
+    link: "/category/iphone",
+    text: 'iPhone',
+    class: "products__filters-section__category-text"
+  },
+  {
+    link: '/category/airpods',
+    text: 'AirPods',
+    class: "products__filters-section__category-text"
+  },
+  {
+    link: '/category/ipad',
+    text: 'iPad',
+    class: "products__filters-section__category-text"
+  },
+  {
+    link: '/category/imac',
+    text: 'iMac',
+    class: "products__filters-section__category-text"
+  },
+  {
+    link: '/category/macbook',
+    text: 'Macbook',
+    class: "products__filters-section__category-text"
+  },
+  {
+    link: '/category/watch',
+    text: 'Watch',
+    class: "products__filters-section__category-text"
   },
 ]
 
@@ -47,16 +77,11 @@ const routesNames = {
 const ProductsList = ({ 
   ableToBeRemoved
 }) => {
-
   const dispatch = useDispatch()
-
   const location = useLocation()
-
   const cardsArr = useSelector((store) => store.app.cardsArr);
-
   const favorites = useSelector((store) => store.app.favorites);
   const addedToBag = useSelector((store) => store.app.addedToBag);
-
   const [styledBgObj, setStyledBgObj] = useState({})
 
   useEffect(() => {
@@ -109,12 +134,11 @@ const ProductsList = ({
       <div className="products__section">
         <div className="products__filters-section">
           <h1 className="products__filters-section__header">{location.pathname.split('/category/')[1] === 'all-products' ? 'Категория' : 'Фильтры'}</h1>
-          <h4 className="products__filters-section__subheader">{routesNames[location.pathname.split('/category/')[1]]}</h4>
-          {/* <CategoryDropDown brand='Apple' options={['iPhone', 'Mac', 'iPad', 'AirPods', 'Watch']}/> */}
+          { location.pathname.split('/category/')[1] === 'all-products' && <p className="products__filters-section__subheader">Все товары</p> }
+          <CategoryDropDown options={categoryProductsOptions} brand='Apple' headerClass='products__filters-section__category-header' listClass='drop-down__list_products'/>
         </div>
         <div className="products__list">
           {cardsArr.map(product => (
-            // <div className="card" key={product.id}>
               <Card
                key={product.id}
                 toggleFavorites={toggleFavorites}
@@ -123,7 +147,6 @@ const ProductsList = ({
                 cardCross={ableToBeRemoved}
                 removeFromTheBag={() => removeFromTheBag(product.id)}
               />
-            // </div>
           ))}
         </div>
 
