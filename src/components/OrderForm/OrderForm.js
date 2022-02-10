@@ -8,7 +8,7 @@ const OrderForm = () => {
   const { handleSubmit, formState: { errors }, register, control } = useForm()
 
   const onSubmit = (data) => {
-    axios.post('http://localhost:5000/orders', data).then(res => console.log(res))
+    axios.post('https://my-test-admin.herokuapp.com/api/orders', data).then(res => console.log(res))
   }
 
   return (

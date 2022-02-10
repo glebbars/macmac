@@ -34,14 +34,14 @@ const UploadPrices = () => {
     })
     return allPricesObj
   })
-  .then(data => axios.patch('http://localhost:5000/prices/1', data))
+  .then(data => axios.patch('https://my-test-admin.herokuapp.com/api/prices/1', data))
   .then(res => updateProductsPrices())
   }
   
   const updateProductsPrices = () => {
     if(cardsArr.length > 0){
       cardsArr.map(obj => getPriceOfProductFromDB(obj)
-        .then(data => axios.patch(`http://localhost:5000/posts/${obj.id}`, {price: data}) )
+        .then(data => axios.patch(`https://my-test-admin.herokuapp.com/api/posts/${obj.id}`, {price: data}) )
         .then(res => refresh())
       )
     }

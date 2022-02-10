@@ -41,7 +41,7 @@ export const getPriceOfProductFromDB = (allValues) =>  {
     Object.entries(allValues).filter(([key, value]) => typeof value === 'string')
   )
 
-  return axios.get('http://localhost:5000/prices/1').then(res => res.data)
+  return axios.get('https://my-test-admin.herokuapp.com/api/prices/1').then(res => res.data)
   .then(pricesObj => {
     return Object.fromEntries(
       Object.entries(pricesObj)

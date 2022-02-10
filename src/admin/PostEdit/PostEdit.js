@@ -8,7 +8,7 @@ const PostEdit = (props) =>{
   const [createdProduct, setCreatedProduct] = useState({})
 
   useEffect(() => {
-    axios.get(`http://localhost:5000/posts/${props.id}`)
+    axios.get(`https://my-test-admin.herokuapp.com/api/${props.id}`)
       .then(res=> setCreatedProduct(res.data))
   }, [])
 
