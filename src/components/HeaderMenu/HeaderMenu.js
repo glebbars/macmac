@@ -1,9 +1,7 @@
-import React, {useState, usestate} from "react";
+import React, {useState} from "react";
 import { NavLink, Link } from "react-router-dom";
 import logo from '../../img/logo.svg'
 import HeaderSearch from '../HeaderSearch/HeaderSearch'
-import favorites from '../../img/favorites.svg'
-import bag from '../../img/shopping-bag.svg'
 import CustomDropDown from "../CustomDropDown/CustomDropDown";
 
 

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import {Create, SimpleForm, ImageInput, ImageField, SelectInput, TextInput} from 'react-admin'
-import { validatePostForm, onTransform,initialChoices, getModelChoices, getCapacityChoices, getColorChoices } from "../AdditionalFunctions/AdditionalFunctions";
+import { validatePostForm, onTransform,initialChoices, getModelChoices, getCapacityChoices, getColorChoices } from "../additionalFunctions/additionalFunctions";
 
 
 const PostCreate = (props) =>{

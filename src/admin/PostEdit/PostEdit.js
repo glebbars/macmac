@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import {Edit, SimpleForm, TextInput, ImageInput, ImageField, SelectInput} from 'react-admin'
-import { validatePostForm, onTransform, initialChoices, getModelChoices, getCapacityChoices, getColorChoices } from "../AdditionalFunctions/AdditionalFunctions";
+import { validatePostForm, onTransform, initialChoices, getModelChoices, getCapacityChoices, getColorChoices } from "../additionalFunctions/additionalFunctions";
 import axios from 'axios'
 
 const PostEdit = (props) =>{

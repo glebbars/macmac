@@ -1,9 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import Button from "../Button/Button";
-import Card from "../Card/Card";
-import OrderForm from "../OrderForm/OrderForm";
-import ProductsList from '../ProductsList/ProductsList'
 import { useSelector } from "react-redux";
 import CustomSlider from '../CustomSlider/CustomSlider'
 import watchImg from "../../img/watch-banner.png"
@@ -15,7 +11,6 @@ import MainPoster from "../MainPoster/MainPoster";
 
 const Main = () => {
 
-  const cardsArr = useSelector(store => store.app.cardsArr)
   const favorites = useSelector(store => store.app.cardsArr)
   const addedToBag = useSelector((store) => store.app.addedToBag);
 

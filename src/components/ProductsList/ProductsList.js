@@ -1,78 +1,10 @@
 import React, { useEffect, useState } from "react";
-import PropTypes from "prop-types";
-import Button from "../Button/Button";
 import Card from "../Card/Card";
-import OrderForm from "../OrderForm/OrderForm";
 import { useDispatch, useSelector } from "react-redux";
 import {ADD_TO_FAVOURITES, REMOVE_FROM_FAVOURITES, ADD_TO_BAG, REMOVE_FROM_BAG} from '../../redux/actions/types'
-import lightpurpleLine from '../../img/lightpurple-line.svg'
-import orangeLine from '../../img/orange-line.svg'
-import greenLine from '../../img/green-line.svg'
-import blueLine from '../../img/blue-line.svg'
 import {useLocation} from 'react-router-dom'
-import CustomDropDown from '../CustomDropDown/CustomDropDown'
-import {NavLink} from 'react-router-dom'
-
-const bgImgObj = [
-  {
-    lineImg: lightpurpleLine,
-    bgColor: '#f2e0f5'
-  },
-  {
-    lineImg: greenLine,
-    bgColor: '#DBECCE'
-  },
-  {
-    lineImg: blueLine,
-    bgColor: '#E2F1F4'
-  },
-]
-
-const categoryProductsOptions = [
-  {
-    link: "/category/iphone",
-    text: 'iPhone',
-    class: "products__filters-section__category-text"
-  },
-  {
-    link: '/category/airpods',
-    text: 'AirPods',
-    class: "products__filters-section__category-text"
-  },
-  {
-    link: '/category/ipad',
-    text: 'iPad',
-    class: "products__filters-section__category-text"
-  },
-  {
-    link: '/category/imac',
-    text: 'iMac',
-    class: "products__filters-section__category-text"
-  },
-  {
-    link: '/category/macbook',
-    text: 'Macbook',
-    class: "products__filters-section__category-text"
-  },
-  {
-    link: '/category/watch',
-    text: 'Watch',
-    class: "products__filters-section__category-text"
-  },
-]
-
-const routesNames = {
-  "all-products": "Все товары",
-  "iphone": 'iPhone',
-  "imac": 'iMac',
-  "airpods": 'AirPods',
-  "ipad": 'iPad',
-  "macbook": 'Macbook',
-  "watch": 'Apple Watch',
-  "accessories": 'Аксессуары',
-  "apple-tv": 'Apple TV',
-  "sony-tv": 'Sony TV',
-}
+import ProductsSideBar from "../ProductsSideBar/ProductsSideBar";
+import {routesNames, bgImgObj} from '../additionalObjects/additionalObjects'
 
 const ProductsList = ({ 
   ableToBeRemoved
@@ -132,20 +64,19 @@ const ProductsList = ({
        <h1 className="products__header">{routesNames[location.pathname.split('/category/')[1]]}</h1>
       </div>
       <div className="products__section">
-        <div className="products__filters-section">
-          <h1 className="products__filters-section__header">{location.pathname.split('/category/')[1] === 'all-products' ? 'Категория' : 'Фильтры'}</h1>
-          { location.pathname.split('/category/')[1] === 'all-products' && <p className="products__filters-section__subheader">Все товары</p> }
-          <CustomDropDown links initiallyActive options={categoryProductsOptions} brand='Apple' headerClass='products__filters-section__category-header' listClass='drop-down__list_products'/>
-        </div>
+
+        <ProductsSideBar />
+
         <div className="products__list">
           {cardsArr.map(product => (
               <Card
-               key={product.id}
+                key={product.id}
                 toggleFavorites={toggleFavorites}
                 product={product}
                 filledStar={favorites.includes(product.id)}
                 cardCross={ableToBeRemoved}
                 removeFromTheBag={() => removeFromTheBag(product.id)}
+                addToTheBag={() => addToTheBag(product.id)}
               />
           ))}
         </div>
