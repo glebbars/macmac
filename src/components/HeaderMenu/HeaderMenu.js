@@ -66,7 +66,7 @@ const HeaderMenu = () => {
                 >
                   Все товары
                 </NavLink>
-                <CustomDropDown links initiallyActive options={categoryHeaderOptions} brand='Apple' headerClass='header__menu__link header__menu__link_additional_header' listClass='drop-down__list_header drop-down__list'/>
+                <CustomDropDown links initiallyActive options={categoryHeaderOptions} header='Apple' headerClass='header__menu__link header__menu__link_additional_header' listClass='drop-down__list_header drop-down__list'/>
 
                 <NavLink
                   exact

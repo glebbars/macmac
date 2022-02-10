@@ -32,8 +32,8 @@ body{
     &::after{
       content: "";
       position: absolute;
-      left: 55px;
-      top: 6.5px;
+      right: -17.5px;
+      top: 7px;
       display: block;
       width: 5px;
       height: 5px;
@@ -66,13 +66,7 @@ body{
       }
     }
 
-    // &_products{
-    //   display: none;
-    // }
   }
-
-
-
 }
 
 
@@ -326,7 +320,7 @@ body{
   
               &::after{
                 left: 65px;
-                top: 7px
+                top: 8.5px
               }
             }
   
@@ -1436,18 +1430,29 @@ body{
 
     &__category-header{
       font-weight: 500;
+      display: inline-block;
       font-size: 16px;
       letter-spacing: 0.0155em;
       color: #343A40;
       margin: 0;
     }
 
-    &__category-text{
+    &__category-text,
+    &__filter-text{
       font-size: 14px;
       letter-spacing: 0.0155em;
       color: #343A40;
       margin: 15px 0 0 15px;
       text-decoration: none;
+    }
+
+    &__filter{
+      margin: 15px 0 0 15px;
+
+      &__checkbox{
+        
+      }
+  
     }
   }
 
