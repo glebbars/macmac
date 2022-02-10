@@ -10,7 +10,7 @@ import orangeLine from '../../img/orange-line.svg'
 import greenLine from '../../img/green-line.svg'
 import blueLine from '../../img/blue-line.svg'
 import {useLocation} from 'react-router-dom'
-import CategoryDropDown from '../CategoryDropDown/CategoryDropDown'
+import CustomDropDown from '../CustomDropDown/CustomDropDown'
 import {NavLink} from 'react-router-dom'
 
 const bgImgObj = [
@@ -135,7 +135,7 @@ const ProductsList = ({
         <div className="products__filters-section">
           <h1 className="products__filters-section__header">{location.pathname.split('/category/')[1] === 'all-products' ? 'Категория' : 'Фильтры'}</h1>
           { location.pathname.split('/category/')[1] === 'all-products' && <p className="products__filters-section__subheader">Все товары</p> }
-          <CategoryDropDown options={categoryProductsOptions} brand='Apple' headerClass='products__filters-section__category-header' listClass='drop-down__list_products'/>
+          <CustomDropDown links initiallyActive options={categoryProductsOptions} brand='Apple' headerClass='products__filters-section__category-header' listClass='drop-down__list_products'/>
         </div>
         <div className="products__list">
           {cardsArr.map(product => (

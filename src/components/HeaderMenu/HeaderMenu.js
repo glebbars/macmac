@@ -4,7 +4,7 @@ import logo from '../../img/logo.svg'
 import HeaderSearch from '../HeaderSearch/HeaderSearch'
 import favorites from '../../img/favorites.svg'
 import bag from '../../img/shopping-bag.svg'
-import CategoryDropDown from "../CategoryDropDown/CategoryDropDown";
+import CustomDropDown from "../CustomDropDown/CustomDropDown";
 
 
 const categoryHeaderOptions = [
@@ -68,7 +68,7 @@ const HeaderMenu = () => {
                 >
                   Все товары
                 </NavLink>
-                <CategoryDropDown options={categoryHeaderOptions} brand='Apple' headerClass='header__menu__link header__menu__link_additional header__menu__link_additional_header' listClass='drop-down__list_header drop-down__list_active'/>
+                <CustomDropDown links initiallyActive options={categoryHeaderOptions} brand='Apple' headerClass='header__menu__link header__menu__link_additional_header' listClass='drop-down__list_header drop-down__list'/>
 
                 <NavLink
                   exact
