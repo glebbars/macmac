@@ -1,5 +1,5 @@
 import React, {useEffect, Fragment } from "react";
-import { Route, useLocation, Switch } from "react-router-dom";
+import { Route, useLocation, Switch, Redirect } from "react-router-dom";
 import { getAllProducts } from "../redux/actions/data";
 import { useDispatch } from "react-redux";
 import Main from "../components/Main/Main";
@@ -34,11 +34,12 @@ const AppRoutes = ({authProvider, dataProvider, history}) => {
       {!location.pathname.includes('admin') && <HeaderMenu/>}
       <Switch>
         <Route path="/" exact render={() => includeFooter(Main)}/>
+        <Route path="/admin" exact render={() => <AdminPannel dataProvider={dataProvider} authProvider={authProvider}  history={history} />}/>
         <Route path="/category/:categoryName" exact render={() => includeFooter(ProductsList)}/>
         <Route path="/favourites" exact render={() => includeFooter(Favourites)}/>
         <Route path="/bag" exact render={() => includeFooter(Bag)}/>
-        <Route path="/admin" exact render={() => <AdminPannel dataProvider={dataProvider} authProvider={authProvider}  history={history} />}/>
         <Route component={NotFound}/>
+        <Redirect from="*" to="/" />
       </Switch>
     </div>
     );

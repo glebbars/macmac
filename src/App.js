@@ -6,12 +6,11 @@ import createAdminStore from './redux'
 import { Provider } from 'react-redux';
 import jsonServerProvider from 'ra-data-json-server';
 
-const dataProvider = jsonServerProvider('https://my-test-admin.herokuapp.com/api')
+const dataProvider = jsonServerProvider("https://my-test-admin.herokuapp.com/api")
 // const dataProvider = restProvider('http://path.to.my.api/');
 const history = createHashHistory();
 
 const authProvider = () => Promise.resolve() 
-
 export const App = () => {
   return (
     <Provider store={createAdminStore({authProvider, dataProvider, history})}>

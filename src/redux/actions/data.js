@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const getAllProducts = (id) => {
   return (dispatch) => {
-    axios.get('https://my-test-admin.herokuapp.com/api/posts')
+    axios.get("https://my-test-admin.herokuapp.com/api/posts",)
       .then(response => dispatch(getAllProductsSuccessCase(response.data)))
       .catch((err) => {
         dispatch(getAllProductsFailureCase(err));

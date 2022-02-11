@@ -3,7 +3,7 @@ import {useRefresh} from 'react-admin'
 import axios from 'axios'
 import readXlsxFile from 'read-excel-file'
 import { useSelector } from "react-redux";
-import {getPriceOfProductFromDB} from '../additionalFunctions/additionalFunctions'
+import {getPriceOfProductFromDB} from '../AdditionalFunctions/AdditionalFunctions'
 
 const UploadPrices = () => {
 
