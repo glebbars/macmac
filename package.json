@@ -6,7 +6,7 @@
     "node": "14.x",
     "npm": "6.14.15"
   },
-  "proxy": "https://my-test-admin.herokuapp.com/api",
+  "homepage": "https://my-test-admin.herokuapp.com",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.5",
     "@testing-library/react": "^11.1.0",
