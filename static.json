@@ -1,12 +1,6 @@
-{
-  "root": "build/",
+{ "root": "build/",
+  "clean_urls": false,
   "routes": {
     "/**": "index.html"
-  },
-  "https_only": true,
-  "proxies": {
-    "/api/": {
-      "origin": "https://my-test-admin.herokuapp.com/api"
-    }
   }
 }
