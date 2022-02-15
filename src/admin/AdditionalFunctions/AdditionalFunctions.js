@@ -103,12 +103,9 @@ export const initialChoices = [
 
 export const getModelChoices = (value) => {
   switch(value){
-    case 'iphone':
-      return iphoneModelChoices
-    break;
-    case 'ipad':
-      return ipadModelChoices
-    break;
+    case 'iphone': return iphoneModelChoices
+    case 'ipad': return ipadModelChoices
+    default: return ''
   }
 }
 
@@ -139,23 +136,20 @@ export const getCapacityChoices = (value) => {
     case "se 2020":
     case "12":
       return [capacityOptions["64"], capacityOptions["128"]]
-    break;
 
     case '12 pro':
     case "12 pro max":
     case "13 mini":
       return [capacityOptions["256"], capacityOptions["512"]]
-    break;
 
     case "13": 
       return [capacityOptions["128"], capacityOptions["256"], capacityOptions["512"]]
-    break;
 
     case "13 pro":
     case "13 pro max":
       return [capacityOptions["128"], capacityOptions["256"], capacityOptions["512"], capacityOptions["1"]]
-    break;  
-
+      
+    default: return ''
 
   }
 }
@@ -172,30 +166,26 @@ export const getColorChoices = (value) => {
   switch(value){
     case '11':
       return [colorOptions["black"], colorOptions['product red'], colorOptions["white"],colorOptions["green"],colorOptions["purple"], colorOptions["yellow"]]
-    break;
 
     case "se 2020":
       return [colorOptions["black"], colorOptions['product red'], colorOptions["white"]]
-    break;
 
     case '12':
       return [colorOptions["black"], colorOptions['blue'], colorOptions["white"],colorOptions["green"],colorOptions["purple"], colorOptions["yellow"]]
-    break;
 
     case '12 pro':
     case "12 pro max":
       return [colorOptions["pacific blue"], colorOptions['graphite'], colorOptions["gold"],colorOptions["silver"]]
-    break;
 
     case "13 mini":
     case "13": 
       return [colorOptions["pink"], colorOptions['product red'], colorOptions["starlight"],colorOptions["midnight"], colorOptions["blue"],]
-    break;
 
     case "13 pro":
     case "13 pro max":
       return [colorOptions["sierra blue"], colorOptions['graphite'], colorOptions["gold"],colorOptions["silver"]]
-    break;  
+
+    default: return ''
   }
 }
 

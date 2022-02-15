@@ -540,6 +540,14 @@ body{
       &_touched{
         background: white;
         width: 100%;
+
+        img{
+          margin-bottom: 2px;
+        }
+
+        input{
+          background: #F4F5F7;
+        }
       }
 
       &_searching{
@@ -562,14 +570,6 @@ body{
 
       @media (max-width: 768px) {
         margin-left: 8px;
-      }
-    }
-
-    &__icon{
-      &_touched{
-        @media (max-width: 768px) {
-          margin-bottom: 2px;
-        }
       }
     }
 

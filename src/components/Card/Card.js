@@ -1,6 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
-import Star from "../Star/Star";
+// import Star from "../Star/Star";
 
 const Card = ({
   product,
