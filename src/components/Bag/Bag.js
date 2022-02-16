@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 
 const Bag = () => {
 
-  const cardsArr = useSelector((store) => store.app.cardsArr);
+  const productsArr = useSelector((store) => store.app.productsArr);
   const favorites = useSelector((store) => store.app.favorites);
   const addedToBag = useSelector((store) => store.app.addedToBag);
 
@@ -14,17 +14,13 @@ const Bag = () => {
   }, []);
 
 
-  const filterredArr = cardsArr.filter(product => {
+  const filterredArr = productsArr.filter(product => {
     if(addedToBag.includes(product.id)){
       return product
     }
   })
 
-  return (
-    <div className="cards-container">
-      <ProductsList ableToBeRemoved={true} cardsArr={filterredArr}/>
-    </div>
-  );
+  return <ProductsList ableToBeRemoved={true} productsArr={filterredArr}/>
 };
 
 export default Bag;

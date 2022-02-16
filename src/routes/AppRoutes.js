@@ -18,7 +18,9 @@ const AppRoutes = ({authProvider, dataProvider, history}) => {
   // const location = useLocation()
 
   useEffect(() => {
-    window.scrollTo(0, 0)
+    if(!location.pathname.includes('/category')){
+      window.scrollTo(0, 0)
+    }
     // if(!location.pathname.includes('admin')){
       // dispatch(getAllProducts());
     // }

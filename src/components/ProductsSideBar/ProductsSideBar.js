@@ -1,9 +1,9 @@
 import React from "react";
 import {useLocation} from 'react-router-dom'
 import CustomDropDown from '../CustomDropDown/CustomDropDown'
-import {categoryProductsOptions} from '../additionalObjects/additionalObjects'
+import {categoryProductsOptions, modelIphoneOptions} from '../additionalObjects/additionalObjects'
 
-const ProductsSideBar = () => {
+const ProductsSideBar = ({addFilter}) => {
 
   const location = useLocation()
 
@@ -17,7 +17,7 @@ const ProductsSideBar = () => {
     { categoryRouteName === 'all-products'  ? 
       <CustomDropDown links initiallyActive options={categoryProductsOptions} header='Apple' headerClass='products__sidebar__category-header' listClass='drop-down__list_products'/> :
       <>
-       <CustomDropDown checkboxes initiallyActive options={categoryProductsOptions} header='Модель' headerClass='products__sidebar__category-header' listClass='drop-down__list_products'/> 
+       <CustomDropDown addFilter={addFilter} checkboxes initiallyActive options={modelIphoneOptions} header='Модель' headerClass='products__sidebar__category-header' listClass='drop-down__list_products'/> 
       </> 
 
     }

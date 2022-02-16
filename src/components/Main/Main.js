@@ -11,7 +11,7 @@ import MainPoster from "../MainPoster/MainPoster";
 
 const Main = () => {
 
-  const favorites = useSelector(store => store.app.cardsArr)
+  const favorites = useSelector(store => store.app.productsArr)
   const addedToBag = useSelector((store) => store.app.addedToBag);
 
   useEffect(() => {
@@ -52,11 +52,6 @@ const Main = () => {
 
       <MainPoster header="Телевизоры Sony с технологией SmartTV" text="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident" btnText="Все телевизоры Sony" modificator="_sony-tv" link="/category/sony-tv"/>
     </div>
-
-
-
-    // <OrderForm/>
-    // <ProductsList ableToBeRemoved={false} cardsArr={cardsArr}/>
   );
 };
 

@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 
 const Favourites = () => {
 
-  const cardsArr = useSelector((store) => store.app.cardsArr);
+  const productsArr = useSelector((store) => store.app.productsArr);
   const favorites = useSelector((store) => store.app.favorites);
   const addedToBag = useSelector((store) => store.app.addedToBag);
 
@@ -13,19 +13,15 @@ const Favourites = () => {
     localStorage.setItem("favorites", JSON.stringify(favorites));
   }, []);
 
-  const filterredArr = cardsArr.filter(product => {
+  const filterredArr = productsArr.filter(product => {
     if(favorites.includes(product.id)){
       return product
     }
   })
 
   return (
-    <ProductsList ableToBeRemoved={false} cardsArr={filterredArr}/>
+    <ProductsList ableToBeRemoved={false} productsArr={filterredArr}/>
   );
-};
-
-Favourites.propTypes = {
-  // cardsArr: PropTypes.array.isRequired,
 };
 
 export default Favourites;

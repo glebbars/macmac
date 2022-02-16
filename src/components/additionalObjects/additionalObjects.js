@@ -62,3 +62,24 @@ export const categoryProductsOptions = [
     class: "products__sidebar__category-text"
   },
 ]
+
+export const modelIphoneOptions = [
+  {
+    text: 'iPhone 12',
+  },
+  {
+    text: 'iPhone 12 Pro',
+  },
+  {
+    text: 'iPhone 12 Pro Max',
+  },
+  {
+    text: 'iPhone 11',
+  },
+  {
+    text: 'iPhone 11 Pro',
+  },
+  {
+    text: 'iPhone 11 Pro Max',
+  }
+]

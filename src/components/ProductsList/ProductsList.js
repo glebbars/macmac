@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Card from "../Card/Card";
+import Product from "../Product/Product";
 import { useDispatch, useSelector } from "react-redux";
 import {ADD_TO_FAVOURITES, REMOVE_FROM_FAVOURITES, ADD_TO_BAG, REMOVE_FROM_BAG} from '../../redux/actions/types'
 import {useLocation} from 'react-router-dom'
@@ -11,7 +11,7 @@ const ProductsList = ({
 }) => {
   const dispatch = useDispatch()
   const location = useLocation()
-  const cardsArr = useSelector((store) => store.app.cardsArr);
+  const productsArr = useSelector((store) => store.app.productsArr);
   const favorites = useSelector((store) => store.app.favorites);
   const addedToBag = useSelector((store) => store.app.addedToBag);
   const [styledBgObj, setStyledBgObj] = useState({})
@@ -26,36 +26,44 @@ const ProductsList = ({
    setStyledBgObj(stylesObj)
   }, [location])
 
-  const toggleFavorites = (cardId) => {
-    if (favorites.includes(cardId)) {
+  const toggleFavorites = (productId) => {
+    if (favorites.includes(productId)) {
       dispatch({
         type: REMOVE_FROM_FAVOURITES,
-        payload: favorites.filter((id) => id !== cardId),
+        payload: favorites.filter((id) => id !== productId),
       });
     } else {
       dispatch({
         type: ADD_TO_FAVOURITES,
-        payload: [cardId, ...favorites],
+        payload: [productId, ...favorites],
       });
     }
   };
 
 
-  const removeFromTheBag = (cardId) => {
-    const cardIndex = addedToBag.indexOf(cardId);
-    addedToBag.splice(cardIndex, 1)
+  const removeFromTheBag = (productId) => {
+    const productIndex = addedToBag.indexOf(productId);
+    addedToBag.splice(productIndex, 1)
     dispatch({
       type: REMOVE_FROM_BAG,
-      payload: addedToBag.filter((id) => id !== cardId),
+      payload: addedToBag.filter((id) => id !== productId),
     })
   };
 
-  const addToTheBag = (cardId) => {
+  const addToTheBag = (productId) => {
     dispatch({
       type: ADD_TO_BAG,
-      payload: [cardId, ...addedToBag],
+      payload: [productId, ...addedToBag],
     });
   };
+
+  const filteredProductsArrArr = filterText => {
+    const filArr = productsArr.filter(product => {
+      const productFullName = `${product.category} ${product.model} ${product.color} ${product.capacity}`
+      console.log(productFullName,'--', filterText, '--', productFullName.includes(filterText))
+    })
+    console.log(filArr)
+  }
 
 
   return (
@@ -65,16 +73,16 @@ const ProductsList = ({
       </div>
       <div className="products__section">
 
-        <ProductsSideBar />
+        <ProductsSideBar addFilter={filteredProductsArrArr}/>
 
         <div className="products__list">
-          {cardsArr.map(product => (
-              <Card
+          {productsArr.map(product => (
+              <Product
                 key={product.id}
                 toggleFavorites={toggleFavorites}
                 product={product}
                 filledStar={favorites.includes(product.id)}
-                cardCross={ableToBeRemoved}
+                productCross={ableToBeRemoved}
                 removeFromTheBag={() => removeFromTheBag(product.id)}
                 addToTheBag={() => addToTheBag(product.id)}
               />

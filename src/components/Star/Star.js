@@ -4,7 +4,7 @@ const Star = ({ product, toggleFavorites, filledStar }) => {
   return (
     <div
       onClick={(e) => toggleFavorites(product.id)}
-      className="card__star-container"
+      className="product__star-container"
     >
       <svg
         fill={filledStar ? "black" : "none"}

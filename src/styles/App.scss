@@ -1487,7 +1487,7 @@ body{
     }
 
     &__category-text,
-    &__filter-text{
+    &__filter__text{
       font-size: 14px;
       letter-spacing: 0.0155em;
       color: #343A40;
@@ -1496,12 +1496,52 @@ body{
     }
 
     &__filter{
-      margin: 15px 0 0 15px;
+      margin: 15px 0 0 0;
 
       &__checkbox{
-        
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
       }
-  
+
+      
+      &__text{
+        position: relative;
+        margin-left: 0;
+
+        &::before{
+          content: '';
+          display: inline-block;
+          width: 18px;
+          height: 18px;
+          border: 1px solid #DEE2E6;
+          margin-right: 12px;
+          border-radius: 4px;
+          background-color: white;
+          vertical-align: text-bottom;
+          box-sizing: border-box;
+        }
+      }
+
+      &__text::after{
+        content: '';
+        position: absolute;
+        left: 4px;
+        top: 2px;
+        width: 10px;
+        height: 10px;
+        border-radius: 2px;
+      }
+
+      &__checkbox:checked+&__text::before{
+        border: 2px solid #FA530D;
+      }
+      &__checkbox:checked+&__text::after{
+        background-color: #FA530D;
+      }
+
     }
   }
 
@@ -1516,7 +1556,7 @@ body{
 }
 
 
-.card{
+.product{
 
   &__container{
     @include flex-column-left;

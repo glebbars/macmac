@@ -41,7 +41,7 @@ export const getPriceOfProductFromDB = (allValues) =>  {
     Object.entries(allValues).filter(([key, value]) => typeof value === 'string')
   )
 
-  return axios.get('https://my-test-admin.herokuapp.com/api/prices/1').then(res => res.data)
+  return axios.get('http://localhost:5000/prices/1').then(res => res.data)
   .then(pricesObj => {
     return Object.fromEntries(
       Object.entries(pricesObj)
@@ -98,14 +98,14 @@ export const initialChoices = [
   { id: 'airpods', name: 'AirPods' },
   { id: 'accessories', name: 'Accessories' },
   { id: 'dyson', name: 'dyson' },
-  ]
+]
 
 
 export const getModelChoices = (value) => {
   switch(value){
     case 'iphone': return iphoneModelChoices
     case 'ipad': return ipadModelChoices
-    default: return ''
+    default: return []
   }
 }
 
@@ -149,7 +149,7 @@ export const getCapacityChoices = (value) => {
     case "13 pro max":
       return [capacityOptions["128"], capacityOptions["256"], capacityOptions["512"], capacityOptions["1"]]
       
-    default: return ''
+    default: return []
 
   }
 }
@@ -185,7 +185,7 @@ export const getColorChoices = (value) => {
     case "13 pro max":
       return [colorOptions["sierra blue"], colorOptions['graphite'], colorOptions["gold"],colorOptions["silver"]]
 
-    default: return ''
+    default: return []
   }
 }
 

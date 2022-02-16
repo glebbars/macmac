@@ -9,7 +9,7 @@ import {
 
 
 const initialStore = {
-  cardsArr: [],
+  productsArr: [],
   // favorites: [],
   // addedToBag: [],
   favorites: JSON.parse(localStorage.getItem("favorites")) || [],
@@ -21,7 +21,7 @@ const appReducer = (store = initialStore, action) => {
     case REQUEST_ALL_PRODUCTS_SUCCESS:
       return {
         ...store,
-        cardsArr: action.payload,
+        productsArr: action.payload,
         error: null,
       };
     case REQUEST_ALL_PRODUCTS_FAILURE:
