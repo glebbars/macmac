@@ -1,17 +1,20 @@
 import React, {useState} from "react";
 import {NavLink} from 'react-router-dom'
-import { useDispatch, useSelector } from "react-redux";
 
-const CustomDropDown = ({links, checkboxes, initiallyActive, header, options, headerClass, listClass, addFilter}) => {
+const CustomDropDown = ({links, checkboxes, initiallyActive, header, options, headerClass, listClass, filteredProductsArr, setFilteredProductsArr}) => {
 
   const [clickedBtn, setClickedBtn] = useState(initiallyActive)
 
-  const productsArr = useSelector((store) => store.app.productsArr);
+  const filterProducts = filterText => {
+    const filteredArr = filteredProductsArr.filter(product => {
+      const productFullName = `${product.category} ${product.model} ${product.color} ${product.capacity}`
+      console.log(  productFullName.includes(filterText.toLowerCase()))
+       return productFullName.includes(filterText.toLowerCase())
+    })
 
-
-  const filterProducts = (text) => {
-    addFilter(text.toLowerCase())
+    setFilteredProductsArr(filteredArr)
   }
+
 
   return(
     <>

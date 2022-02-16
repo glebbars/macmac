@@ -7,7 +7,7 @@ import Favourites from "../components/Favourites/Favourites";
 import Bag from "../components/Bag/Bag";
 import AdminPannel from "../admin/AdminPannel/AdminPannel";
 import HeaderMenu from "../components/HeaderMenu/HeaderMenu";
-import ProductsList from "../components/ProductsList/ProductsList";
+import ProductsPage from "../components/ProductsPage/ProductsPage";
 import NotFound from "../components/NotFound/NotFound";
 import Footer from '../components/Footer/Footer'
 
@@ -37,7 +37,7 @@ const AppRoutes = ({authProvider, dataProvider, history}) => {
       <Switch>
         <Route path="/" exact render={() => includeFooter(Main)}/>
         <Route path="/admin" exact render={() => <AdminPannel dataProvider={dataProvider} authProvider={authProvider}  history={history} />}/>
-        <Route path="/category/:categoryName" exact render={() => includeFooter(ProductsList)}/>
+        <Route path="/category/:categoryName" exact render={() => includeFooter(ProductsPage)}/>
         <Route path="/favourites" exact render={() => includeFooter(Favourites)}/>
         <Route path="/bag" exact render={() => includeFooter(Bag)}/>
         <Route component={NotFound}/>
