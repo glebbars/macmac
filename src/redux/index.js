@@ -10,6 +10,7 @@ import {
 
 import AppReducer from './appReducer'
 import thunk from "redux-thunk";
+import { initialStore } from './appReducer';
 export default ({
     authProvider,
     dataProvider,
@@ -44,7 +45,7 @@ export default ({
 
     const store = createStore(
         resettableAppReducer,
-        { /* set your initial state here */ },
+        initialStore,
         composeEnhancers(
             applyMiddleware(
                 sagaMiddleware,

@@ -1,19 +1,36 @@
 import React, {useState} from "react";
 import {NavLink} from 'react-router-dom'
+import { useDispatch, useSelector } from "react-redux";
+import {
+  ADD_PRODUCTS_LIST_FILTER,
+  REMOVE_PRODUCTS_LIST_FILTER
+} from '../../redux/actions/types'
 
-const CustomDropDown = ({links, checkboxes, initiallyActive, header, options, headerClass, listClass, filteredProductsArr, setFilteredProductsArr}) => {
+const CustomDropDown = ({links, checkboxes, initiallyActive, header, options, headerClass, listClass}) => {
 
   const [clickedBtn, setClickedBtn] = useState(initiallyActive)
 
-  const filterProducts = filterText => {
-    const filteredArr = filteredProductsArr.filter(product => {
-      const productFullName = `${product.category} ${product.model} ${product.color} ${product.capacity}`
-      console.log(  productFullName.includes(filterText.toLowerCase()))
-       return productFullName.includes(filterText.toLowerCase())
-    })
+  const productsListFilters = useSelector((store) => store.app.productsListFilters);
 
-    setFilteredProductsArr(filteredArr)
-  }
+
+  const dispatch = useDispatch()
+  console.log('%%%')
+
+  const toggleFilters = (newFilter) => {
+    console.log(newFilter, productsListFilters)
+    if (productsListFilters.includes(newFilter)) {
+      dispatch({
+        type: 'REMOVE_PRODUCTS_LIST_FILTER',
+        payload: productsListFilters.filter((filter) => filter !== newFilter),
+      });
+    } else {
+      dispatch({
+        type: 'ADD_PRODUCTS_LIST_FILTER',
+        payload: [newFilter.toLowerCase(), ...productsListFilters],
+      });
+    }
+  };
+
 
 
   return(
@@ -23,8 +40,8 @@ const CustomDropDown = ({links, checkboxes, initiallyActive, header, options, he
         {options.map((option, index) => {
           return links ? 
           <NavLink key={index} activeClassName="link_selected" className={option.class} to={option.link}>{option.text}</NavLink> : 
-          <label onClick={() => filterProducts(option.text)} key={index}className="products__sidebar__filter">
-              <input className="products__sidebar__filter__checkbox" type="checkbox" />
+          <label key={index}className="products__sidebar__filter">
+              <input onClick={() => toggleFilters(option.text)} className="products__sidebar__filter__checkbox" type="checkbox" />
               <span className="products__sidebar__filter__text">{option.text}</span>
           </label>
         })

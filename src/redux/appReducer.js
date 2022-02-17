@@ -5,18 +5,24 @@ import {
   ADD_TO_FAVOURITES,
   REMOVE_FROM_BAG,
   ADD_TO_BAG,
+  ADD_PRODUCTS_LIST_FILTER,
+  REMOVE_PRODUCTS_LIST_FILTER
 } from "./actions/types";
 
 
-const initialStore = {
-  productsArr: [],
-  // favorites: [],
-  // addedToBag: [],
-  favorites: JSON.parse(localStorage.getItem("favorites")) || [],
-  addedToBag: JSON.parse(localStorage.getItem("addedToBag")) || [],
-};
+export const initialStore = {
+    app: {
+    productsArr: [],
+    mycustom: [],
+    productsListFilters: [],
+    // favorites: [],
+    // addedToBag: [],
+    favorites: JSON.parse(localStorage.getItem("favorites")) || [],
+    addedToBag: JSON.parse(localStorage.getItem("addedToBag")) || [],
+  }
+}
 
-const appReducer = (store = initialStore, action) => {
+const appReducer = (store = initialStore.app, action) => {
   switch (action.type) {
     case REQUEST_ALL_PRODUCTS_SUCCESS:
       return {
@@ -30,24 +36,26 @@ const appReducer = (store = initialStore, action) => {
         error: action.payload,
       };
     case REMOVE_FROM_FAVOURITES:
-      return {
-        ...store,
-        favorites: [...action.payload],
-      };
     case ADD_TO_FAVOURITES:
       return {
         ...store,
         favorites: [...action.payload],
       };
     case REMOVE_FROM_BAG:
-      return {
-        ...store,
-        addedToBag: [...action.payload],
-      };
     case ADD_TO_BAG:
       return {
         ...store,
         addedToBag: [...action.payload],
+      };
+    case ADD_PRODUCTS_LIST_FILTER:
+      return {
+        ...store,
+        productsListFilters: [...action.payload],
+      };
+    case REMOVE_PRODUCTS_LIST_FILTER:
+      return {
+        ...store,
+        productsListFilters: [...action.payload],
       };
 
     default:

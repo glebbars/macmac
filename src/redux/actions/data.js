@@ -1,7 +1,7 @@
 import { REQUEST_ALL_PRODUCTS_SUCCESS, REQUEST_ALL_PRODUCTS_FAILURE } from "./types";
 import axios from "axios";
 
-export const getAllProducts = (id) => {
+export const getAllProducts = () => {
   return (dispatch) => {
     axios.get("http://localhost:5000/posts",)
       .then(response => dispatch(getAllProductsSuccessCase(response.data)))
@@ -12,12 +12,12 @@ export const getAllProducts = (id) => {
 };
 
 const getAllProductsSuccessCase = (allProducts) => ({
-  type: REQUEST_ALL_PRODUCTS_SUCCESS,
+  type: 'REQUEST_ALL_PRODUCTS_SUCCESS',
   payload: allProducts,
 });
 
 const getAllProductsFailureCase = (error) => ({
-  type: REQUEST_ALL_PRODUCTS_FAILURE,
+  type: 'REQUEST_ALL_PRODUCTS_FAILURE',
   payload: {
     ...error,
   },

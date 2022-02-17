@@ -10,6 +10,7 @@ import HeaderMenu from "../components/HeaderMenu/HeaderMenu";
 import ProductsPage from "../components/ProductsPage/ProductsPage";
 import NotFound from "../components/NotFound/NotFound";
 import Footer from '../components/Footer/Footer'
+import {categoryProductsOptions, modelIphoneOptions} from '../components/additionalObjects/additionalObjects'
 
 const AppRoutes = ({authProvider, dataProvider, history}) => {
   const dispatch = useDispatch();
@@ -28,7 +29,7 @@ const AppRoutes = ({authProvider, dataProvider, history}) => {
 
   useEffect(() => {
     dispatch(getAllProducts());
-  }, [])
+  }, [dispatch])
 
 
   return (
