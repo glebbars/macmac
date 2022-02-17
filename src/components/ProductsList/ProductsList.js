@@ -51,8 +51,6 @@ const ProductsList = () => {
     }
   })
 
-  console.log(filteredProductsArr)
-
 
   return (
     <div className="products__list">

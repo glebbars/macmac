@@ -17,11 +17,10 @@ const CustomDropDown = ({links, checkboxes, initiallyActive, header, options, he
   console.log('%%%')
 
   const toggleFilters = (newFilter) => {
-    console.log(newFilter, productsListFilters)
-    if (productsListFilters.includes(newFilter)) {
+    if (productsListFilters.includes(newFilter.toLowerCase())) {
       dispatch({
         type: 'REMOVE_PRODUCTS_LIST_FILTER',
-        payload: productsListFilters.filter((filter) => filter !== newFilter),
+        payload: productsListFilters.filter((filter) => filter !== newFilter.toLowerCase()),
       });
     } else {
       dispatch({
@@ -29,6 +28,7 @@ const CustomDropDown = ({links, checkboxes, initiallyActive, header, options, he
         payload: [newFilter.toLowerCase(), ...productsListFilters],
       });
     }
+    console.log(newFilter, productsListFilters)
   };
 
 

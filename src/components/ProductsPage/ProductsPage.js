@@ -2,6 +2,8 @@ import React from "react";
 import ProductsSideBar from "../ProductsSideBar/ProductsSideBar";
 import ProductsList from "../ProductsList/ProductsList";
 import ProductsPageHeader from "../ProductsPageHeader/ProductsPageHeader";
+import ProductsSort from "../ProductsSort/ProductsSort";
+
 
 const ProductsPage = () => {
 
@@ -11,7 +13,10 @@ const ProductsPage = () => {
       <ProductsPageHeader />
       <div className="products__section">
         <ProductsSideBar />
-        <ProductsList />
+        <div>
+          <ProductsSort />
+          <ProductsList />
+        </div>
       </div>
     </div>
   );

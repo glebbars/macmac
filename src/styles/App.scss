@@ -1553,6 +1553,47 @@ body{
     grid-row-gap: 40px;
     // justify-content: center;
   }
+
+  &__sort{
+    margin-bottom: 50px;
+
+    &__header,
+    &__text{
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+    &__header{
+      color: #6C757D;
+    }
+
+    &__text{
+      margin-left: 8px;
+      color: #343A40;
+      position: relative;
+
+      &::after{
+        content: "";
+        position: absolute;
+        right: -20px;
+        top: 4px;
+        display: block;
+        width: 6px;
+        height: 6px;
+        border-top: 2px solid #ADB5BD;
+        border-left: 2px solid #ADB5BD;
+        transform: rotate(225deg);
+        border-radius: 1px;
+      }
+    }
+
+    &__select{
+
+    }
+
+  }
+
+
 }
 
 
