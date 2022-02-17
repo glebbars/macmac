@@ -11,7 +11,6 @@ import {
 
 
 export const initialStore = {
-    app: {
     productsArr: [],
     mycustom: [],
     productsListFilters: [],
@@ -19,10 +18,9 @@ export const initialStore = {
     // addedToBag: [],
     favorites: JSON.parse(localStorage.getItem("favorites")) || [],
     addedToBag: JSON.parse(localStorage.getItem("addedToBag")) || [],
-  }
 }
 
-const appReducer = (store = initialStore.app, action) => {
+const appReducer = (store = initialStore, action) => {
   switch (action.type) {
     case REQUEST_ALL_PRODUCTS_SUCCESS:
       return {

@@ -8,7 +8,7 @@ import {
     USER_LOGOUT,
 } from 'react-admin';
 
-import AppReducer from './appReducer'
+import appReducer from './appReducer'
 import thunk from "redux-thunk";
 import { initialStore } from './appReducer';
 export default ({
@@ -19,7 +19,7 @@ export default ({
     const reducer = combineReducers({
         admin: adminReducer,
         router: connectRouter(history),
-        app: AppReducer
+        app: appReducer
         // add your own reducers here
     });
     const resettableAppReducer = (state, action) =>
@@ -45,7 +45,7 @@ export default ({
 
     const store = createStore(
         resettableAppReducer,
-        initialStore,
+        {app: initialStore},
         composeEnhancers(
             applyMiddleware(
                 sagaMiddleware,
