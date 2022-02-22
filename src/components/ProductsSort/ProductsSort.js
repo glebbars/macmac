@@ -4,6 +4,7 @@ import { useState } from 'react'
 const ProductsSort = () => {
   const [sortName, setSortName] = useState('Убыванию цены')
 
+  
   return(
     <div className='products__sort'>
       <span className='products__sort__header'>Сортировать по:</span>
