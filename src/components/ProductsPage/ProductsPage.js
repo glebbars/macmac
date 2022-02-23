@@ -13,7 +13,7 @@ const ProductsPage = () => {
       <ProductsPageHeader />
       <div className="products__section">
         <ProductsSideBar />
-        <div>
+        <div className="products__section_sort-list">
           <ProductsSort />
           <ProductsList />
         </div>
