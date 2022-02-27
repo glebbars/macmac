@@ -10,9 +10,8 @@ const OrderForm = () => {
   const onSubmit = (data) => {
     axios.post('http://localhost:5000/orders', data).then(res => {
 
-      // const dataToBot = `<strong>New order:</strong> %0A<b>Email: ${res.data.email}</b> %0A<i>Имя: ${res.data.firstName}</i> %0A<code>Фамилия: ${res.data.lastName}</code> %0A<a href=+'${res.data.phone}'>Телефон: ${res.data.phone}</a> %0A<pre>Заказ: ${res.data.order}</pre>`
+      const dataToBot = `<strong>Заказ: ${res.data.order}</strong>  %0AИмя: ${res.data.firstName} %0AФамилия: ${res.data.lastName} %0AEmail: ${res.data.email} %0A%0A<a href=+'${res.data.phone}'>Телефон: ${res.data.phone}</a>`
 
-      const dataToBot = `<a href="tel:555-666-7777">555-666-7777</a>`
 
       if(res.data.id > 0){
         axios.post(`https://api.telegram.org/bot5001793522:AAGlAAbTMuMUUx-TqP_uWJfBf22nHw44Fys/sendMessage?chat_id=634614891&text=${dataToBot}&parse_mode=html`)
