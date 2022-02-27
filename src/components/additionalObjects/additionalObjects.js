@@ -83,3 +83,14 @@ export const modelIphoneOptions = [
     text: 'iPhone 11 Pro Max',
   }
 ]
+
+export const initialCrumbs = [
+  {
+    name: 'MacMac',
+    link: '/'
+  },
+  {
+    name: 'Все товары',
+    link: '/category/all-products'
+  }
+]

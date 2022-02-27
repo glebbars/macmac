@@ -14,7 +14,6 @@ const CustomDropDown = ({links, checkboxes, initiallyActive, header, options, he
 
 
   const dispatch = useDispatch()
-  console.log('%%%')
 
   const toggleFilters = (newFilter) => {
     if (productsListFilters.includes(newFilter.toLowerCase())) {

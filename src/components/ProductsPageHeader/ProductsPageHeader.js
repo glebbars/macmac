@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import {useLocation} from 'react-router-dom'
 import {categoryProductsOptions, modelIphoneOptions} from '../additionalObjects/additionalObjects'
 import {routesNames, bgImgObj} from '../additionalObjects/additionalObjects'
+import ProductsPageBreadcrumbs from '../ProductsPageBreadcrumbs/ProductsPageBreadcrumbs'
 
 const ProductsPageHeader = () => {
 
@@ -15,15 +16,17 @@ const ProductsPageHeader = () => {
      backgroundColor: bgImgObj[randomIndex].bgColor,
      backgroundImage: `url(${(bgImgObj[randomIndex].lineImg)})`,
    }
-
    setStyledBgObj(stylesObj)
   }, [location])
 
 
   return (
-    <div style={styledBgObj} className="products__background">
-       <h1 className="products__header">{routesNames[location.pathname.split('/category/')[1]]}</h1>
+    <div style={styledBgObj} className="products__header__background">
+      <div className="products__header__wrapper">
+          <ProductsPageBreadcrumbs />
+        <h1 className="products__header__text">{routesNames[location.pathname.split('/category/')[1]]}</h1>
       </div>
+    </div>
   );
 };
 

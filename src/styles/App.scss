@@ -1414,39 +1414,89 @@ body{
 }
 
 .products{
-  &__background{
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 150px 10px 20px;
-    height: 270px;
-    box-sizing: border-box;
-
-    @media (max-width: 768px) {
-      height: 240px;
-      padding-top: 145px;
-
-    }
-    @media (max-width: 480px) {
-      height: 220px;
-      padding-top: 135px;
-
-    }
-  }
-
-
+  
+  
   &__header{
-    margin: 0 auto;
-    text-align: center;
-    font-weight: 600;
-    font-size: 35px;
-    letter-spacing: 0.0025em;
-    color: #343A40;
-
-    @media (max-width: 768px) {
-      font-size: 32px;
+    &__background{
+      background-position: center;
+      background-repeat: no-repeat;
     }
-    @media (max-width: 480px) {
-      font-size: 26px;
+
+    &__wrapper{
+      padding: 150px 10px 20px;
+      height: 270px;
+      box-sizing: border-box;
+      max-width: 1440px;
+      margin: 0 auto;
+      position: relative;
+
+      @media (max-width: 768px) {
+        height: 240px;
+        padding-top: 145px;
+      }
+      @media (max-width: 480px) {
+        height: 220px;
+        padding-top: 135px;
+  
+      }
+    }
+
+    &__text{
+      margin: 0 auto;
+      text-align: center;
+      font-weight: 600;
+      font-size: 35px;
+      letter-spacing: 0.0025em;
+      color: #343A40;
+  
+      @media (max-width: 768px) {
+        font-size: 32px;
+      }
+      @media (max-width: 480px) {
+        font-size: 26px;
+      }
+    }
+
+    &__crumbs{
+
+        &__wrapper{
+        position: absolute;
+        top: 110px;
+        left: 120px;
+        font-size: 14px;
+        letter-spacing: 0.0025em;
+        color: #343A40;
+      }
+
+      &__link{
+        font-size: 14px;
+        letter-spacing: 0.0025em;
+        color: #343A40;
+        margin-right: 40px;
+        position: relative;
+        text-decoration: none;
+
+        &::after{
+          content: '';
+          position: absolute;
+          right: -20px;
+          height: 15px;
+          width: 1.5px;
+          transform: rotate(20deg);
+          background: #ADB5BD;
+          border-radius: 1px;
+        }
+
+        &:last-child{
+          &::after{
+            display: none;
+          }
+        }
+
+        &:hover{
+          text-decoration: underline;
+        }
+      }
     }
   }
 
@@ -1664,7 +1714,6 @@ body{
   }
 
   
-
   &__img{
     margin: auto;
     object-fit: contain;

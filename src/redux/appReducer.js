@@ -6,7 +6,8 @@ import {
   REMOVE_FROM_BAG,
   ADD_TO_BAG,
   ADD_PRODUCTS_LIST_FILTER,
-  REMOVE_PRODUCTS_LIST_FILTER
+  REMOVE_PRODUCTS_LIST_FILTER,
+  UPDATE_SORT_TYPE
 } from "./actions/types";
 
 
@@ -14,6 +15,7 @@ export const initialStore = {
     productsArr: [],
     mycustom: [],
     productsListFilters: [],
+    sortType: 'popularity',
     // favorites: [],
     // addedToBag: [],
     favorites: JSON.parse(localStorage.getItem("favorites")) || [],
@@ -45,6 +47,11 @@ const appReducer = (store = initialStore, action) => {
         ...store,
         addedToBag: [...action.payload],
       };
+    case UPDATE_SORT_TYPE:  
+      return{
+        ...store,
+        sortType: action.payload
+     }; 
     case ADD_PRODUCTS_LIST_FILTER:
       return {
         ...store,

@@ -3,12 +3,14 @@ import Product from "../Product/Product";
 import { useDispatch, useSelector } from "react-redux";
 import {ADD_TO_FAVOURITES, REMOVE_FROM_FAVOURITES, ADD_TO_BAG, REMOVE_FROM_BAG} from '../../redux/actions/types'
 import {categoryProductsOptions, modelIphoneOptions} from '../additionalObjects/additionalObjects'
+
 const ProductsList = () => {
   const dispatch = useDispatch()
   const favorites = useSelector((store) => store.app.favorites);
   const addedToBag = useSelector((store) => store.app.addedToBag);
   const productsArr = useSelector((store) => store.app.productsArr);
   const productsListFilters = useSelector((store) => store.app.productsListFilters);
+  const sortType = useSelector(store => store.app.sortType)
 
   const toggleFavorites = (productId) => {
     if (favorites.includes(productId)) {
@@ -51,10 +53,21 @@ const ProductsList = () => {
     }
   })
 
+  console.log('sortType', sortType)
+
+  const sortedProductsArr = filteredProductsArr.sort((a, b) => {
+    switch (sortType){
+      case '': return;
+      case 'popularity': return;
+      case 'price-decrease': return b.price - a.price;
+      case 'price-increase': return a.price - b.price;
+    }
+  })
+
 
   return (
     <div className="products__list">
-      {filteredProductsArr.map(product => (
+      {sortedProductsArr.map(product => (
         <Product
           key={product.id}
           toggleFavorites={toggleFavorites}

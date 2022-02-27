@@ -1,13 +1,19 @@
 import Raact from 'react'
 import { useState } from 'react'
+import { useDispatch, useSelector } from "react-redux";
 
 const ProductsSort = () => {
   const [openedMenu, setOpenedMenu] = useState(false)
-  const [sortName, setSortName] = useState('Убыванию цены')
+  const [sortName, setSortName] = useState('Популярности')
+  const dispatch = useDispatch()
 
   const handleChange = (value, name) => {
     setOpenedMenu(false)
     setSortName(name)
+    dispatch({
+      type: 'UPDATE_SORT_TYPE',
+      payload: value
+    })
   }
 
   return(
