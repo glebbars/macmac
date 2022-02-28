@@ -5,6 +5,7 @@ import ProductsPageHeader from "../ProductsPageHeader/ProductsPageHeader";
 import ProductsSort from "../ProductsSort/ProductsSort";
 
 const ProductsPage = () => {
+  
   return (
     <div className="products">
       <ProductsPageHeader />

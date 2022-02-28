@@ -1,11 +1,15 @@
-import React from "react";
+import React, {useState, useMemo} from "react";
 import Product from "../Product/Product";
 import { useDispatch, useSelector } from "react-redux";
 import {ADD_TO_FAVOURITES, REMOVE_FROM_FAVOURITES, ADD_TO_BAG, REMOVE_FROM_BAG} from '../../redux/actions/types'
-import {categoryProductsOptions, modelIphoneOptions} from '../additionalObjects/additionalObjects'
+import {categoryProductsOptions, modelIphoneOptions} from '../additionalObjects/additionalObjects';
+import ProductsPagination from '../ProductsPagination/ProductsPagination'
+
+let pageSize = 3;
 
 const ProductsList = () => {
   const dispatch = useDispatch()
+  const [currentPage, setCurrentPage] = useState(1);
   const favorites = useSelector((store) => store.app.favorites);
   const addedToBag = useSelector((store) => store.app.addedToBag);
   const productsArr = useSelector((store) => store.app.productsArr);
@@ -64,21 +68,36 @@ const ProductsList = () => {
     }
   })
 
+  const currentTableData = useMemo(() => {
+    const firstPageIndex = (currentPage - 1) * pageSize;
+    const lastPageIndex = firstPageIndex + pageSize;
+    return sortedProductsArr.slice(firstPageIndex, lastPageIndex);
+  }, [currentPage]);
+
 
   return (
+    <>
+      <ProductsPagination
+        className="pagination-bar"
+        currentPage={currentPage}
+        totalCount={sortedProductsArr.length}
+        pageSize={pageSize}
+        onPageChange={page => setCurrentPage(page)}
+      />
     <div className="products__list">
-      {sortedProductsArr.map(product => (
+      {currentTableData.map(product => (
         <Product
-          key={product.id}
-          toggleFavorites={toggleFavorites}
-          product={product}
-          filledStar={favorites.includes(product.id)}
-          //  productCross={ableToBeRemoved}
-          removeFromTheBag={() => removeFromTheBag(product.id)}
-          addToTheBag={() => addToTheBag(product.id)}
+        key={product.id}
+        toggleFavorites={toggleFavorites}
+        product={product}
+        filledStar={favorites.includes(product.id)}
+        //  productCross={ableToBeRemoved}
+        removeFromTheBag={() => removeFromTheBag(product.id)}
+        addToTheBag={() => addToTheBag(product.id)}
         />
-      ))}    
+        ))} 
     </div>
+    </>
   );
 };
 
