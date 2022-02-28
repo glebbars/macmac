@@ -26,8 +26,6 @@ const ProductsList = () => {
     }
   })
 
-  console.log('sortType', sortType)
-
   const sortedProductsArr = filteredProductsArr.sort((a, b) => {
     switch (sortType){
       case '': return;
@@ -44,20 +42,17 @@ const ProductsList = () => {
       return sortedProductsArr.slice(firstPageIndex, lastPageIndex);
   }, [currentPage, sortedProductsArr]);
 
-  console.log(currentTableData)
-
 
   return (
     <>
-      <ProductsPagination
+      {/* <ProductsPagination
         className="pagination-bar"
         currentPage={currentPage}
         totalCount={sortedProductsArr.length}
         pageSize={4}
         onPageChange={page => setCurrentPage(page)}
-      />
-
-      {currentTableData && <List productsArr={currentTableData}/> }
+      /> */}
+      {/* {currentTableData && <List productsArr={currentTableData}/> } */}
     </>
   );
 };

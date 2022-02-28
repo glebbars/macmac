@@ -41,8 +41,10 @@ const List = ({productsArr}) => {
   };
 
   return (
-    <div className="products__list">
-      {productsArr.map(product => (
+    <>
+     {productsArr.length > 0 ? 
+     <div className="products__list">
+       {productsArr.map(product => (
         <Product
           key={product.id}
           toggleFavorites={toggleFavorites}
@@ -52,9 +54,10 @@ const List = ({productsArr}) => {
           removeFromTheBag={() => removeFromTheBag(product.id)}
           addToTheBag={() => addToTheBag(product.id)}
           />
-      ))} 
-  </div>
-
+        ))}
+      </div> : 
+      'К сожалению этого товара нет в данный момент'}
+    </>
   )
 }
 
