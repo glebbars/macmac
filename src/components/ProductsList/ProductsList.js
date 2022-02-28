@@ -1,4 +1,4 @@
-import React, {useState, useMemo} from "react";
+import React, {useState, useMemo, useEffect} from "react";
 import {categoryProductsOptions, modelIphoneOptions} from '../additionalObjects/additionalObjects';
 import ProductsPagination from '../ProductsPagination/ProductsPagination';
 import List from '../List/List'
@@ -12,6 +12,10 @@ const ProductsList = () => {
   const productsListFilters = useSelector((store) => store.app.productsListFilters);
   const sortType = useSelector(store => store.app.sortType)
 
+
+  useEffect(() => {
+    setCurrentPage(1)
+  }, [productsListFilters])
 
   const filteredProductsArr = productsArr.filter(product => {
     const fullProductName = `${product.category} ${product.model} ${product.capacity} ${product.color}`
@@ -34,13 +38,11 @@ const ProductsList = () => {
   })
 
   const currentTableData = useMemo(() => {
-    if(productsArr.length > 0){
       const firstPageIndex = (currentPage - 1) * 4;
       const lastPageIndex = firstPageIndex + 4;
       console.log(firstPageIndex, lastPageIndex, productsArr.slice(firstPageIndex, lastPageIndex))
-      return productsArr.slice(firstPageIndex, lastPageIndex);
-    }
-  }, [currentPage, productsArr]);
+      return sortedProductsArr.slice(firstPageIndex, lastPageIndex);
+  }, [currentPage, sortedProductsArr]);
 
   console.log(currentTableData)
 
@@ -50,10 +52,10 @@ const ProductsList = () => {
       <ProductsPagination
         className="pagination-bar"
         currentPage={currentPage}
-        totalCount={productsArr.length}
+        totalCount={sortedProductsArr.length}
         pageSize={4}
         onPageChange={page => setCurrentPage(page)}
-        />
+      />
 
       {currentTableData && <List productsArr={currentTableData}/> }
     </>
