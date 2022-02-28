@@ -19,7 +19,6 @@ const ProductsPagination = props => {
     pageSize
   });
 
-  // If there are less than 2 times in pagination range we shall not render the component
   if (currentPage === 0 || paginationRange.length < 2) {
     return null;
   }
@@ -37,7 +36,6 @@ const ProductsPagination = props => {
     <ul
       className={classnames('pagination-container', { [className]: className })}
     >
-       {/* Left navigation arrow */}
       <li
         className={classnames('pagination-item', {
           disabled: currentPage === 1
@@ -46,16 +44,13 @@ const ProductsPagination = props => {
       >
         <div className="arrow left" />
       </li>
-      {paginationRange.map(pageNumber => {
-         
-        // If the pageItem is a DOT, render the DOTS unicode character
+      {paginationRange.map((pageNumber, index) => {
         if (pageNumber === DOTS) {
-          return <li className="pagination-item dots">&#8230;</li>;
+          return <li key={index} className="pagination-item dots">&#8230;</li>;
         }
-		
-        // Render our Page Pills
+
         return (
-          <li
+          <li key={index}
             className={classnames('pagination-item', {
               selected: pageNumber === currentPage
             })}
@@ -65,7 +60,6 @@ const ProductsPagination = props => {
           </li>
         );
       })}
-      {/*  Right Navigation arrow */}
       <li
         className={classnames('pagination-item', {
           disabled: currentPage === lastPage
