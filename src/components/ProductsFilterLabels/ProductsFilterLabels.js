@@ -9,18 +9,25 @@ const ProductsFilterLabels = () => {
 
   console.log(productsListFilters)
 
-  const removeFilter = (text) => {
-    dispatch({
-      type: 'REMOVE_PRODUCTS_LIST_FILTER',
-      payload: productsListFilters.filter((filter) => filter.text !== text),
-    })
+  const removeFilter = (filterName, text) => {
+    if(filterName === 'Категория'){
+      dispatch({
+        type: 'REMOVE_PRODUCTS_LIST_FILTER',
+        payload: [],
+      })
+    } else{
+      dispatch({
+        type: 'REMOVE_PRODUCTS_LIST_FILTER',
+        payload: productsListFilters.filter((filter) => filter.text !== text),
+      })
+    }
   }
 
 
   return(
     <div className='products__sort__labels-wrapper'>
       {productsListFilters.map((filterLabel, index) => 
-        <div onClick={() => removeFilter(filterLabel.text)} key={index} className='products__sort__label'>
+        <div onClick={() => removeFilter(filterLabel.filterName, filterLabel.text)} key={index} className='products__sort__label'>
           {filterLabel.filterName}:
           <span className='products__sort__label__value'>{filterLabel.text}</span>
         </div>

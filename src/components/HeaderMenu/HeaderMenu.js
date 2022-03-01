@@ -3,46 +3,23 @@ import { NavLink, Link } from "react-router-dom";
 import logo from '../../img/logo.svg'
 import HeaderSearch from '../HeaderSearch/HeaderSearch'
 import CustomDropDown from "../CustomDropDown/CustomDropDown";
-
-
-const categoryHeaderOptions = [
-  {
-    link: "/category/iphone",
-    text: 'iPhone',
-    class: 'header__menu__link header__menu__link_mr-t',
-  },
-  {
-    link: '/category/airpods',
-    text: 'AirPods',
-    class: 'header__menu__link',
-  },
-  {
-    link: '/category/ipad',
-    text: 'iPad',
-    class: 'header__menu__link',
-  },
-  {
-    link: '/category/imac',
-    text: 'iMac',
-    class: 'header__menu__link',
-  },
-  {
-    link: '/category/macbook',
-    text: 'Macbook',
-    class: 'header__menu__link header__menu__link_additional',
-  },
-  {
-    link: '/category/watch',
-    text: 'Watch',
-    class: 'header__menu__link header__menu__link_additional',
-  },
-]
+import {categoryHeaderOptions} from '../additionalObjects/additionalObjects'
+import { useDispatch } from "react-redux";
 
 const HeaderMenu = () => {
 
   const [openedBurger, setOpenedBurger] = useState(false)
 
+  const dispatch = useDispatch()
+
   const activeClass = openedBurger ? '_active' : ''
+
+  const handleAllProductsFilter = () => {
+    dispatch({
+      type: 'REMOVE_PRODUCTS_LIST_FILTER',
+      payload: [],
+    });
+  }
 
   return (
     <div className="header">
@@ -60,6 +37,7 @@ const HeaderMenu = () => {
               <nav className="header__menu__nav">
                 <NavLink
                   // exact
+                  onClick={handleAllProductsFilter}
                   to="/category/all-products"
                   className="header__menu__link header__menu__link_all"
                   activeClassName="link_selected header__menu__link_all_selected"
@@ -90,6 +68,7 @@ const HeaderMenu = () => {
                   to="/category/all-products"
                   className="header__menu__link header__menu__link_all header__menu__link_additional header__menu__link_additional_header"
                   activeClassName="link_selected header__menu__link_all_selected"
+                  onClick={handleAllProductsFilter}
                 >
                   Все товары
                 </NavLink>

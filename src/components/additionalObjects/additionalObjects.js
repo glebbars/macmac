@@ -30,6 +30,45 @@ export const bgImgObj = [
   },
 ]
 
+export const categoryHeaderOptions = [
+  {
+    link: "/category/iphone",
+    text: 'iPhone',
+    class: 'header__menu__link header__menu__link_mr-t',
+    filterName: 'Категория'
+  },
+  {
+    link: '/category/airpods',
+    text: 'AirPods',
+    class: 'header__menu__link',
+    filterName: 'Категория'
+  },
+  {
+    link: '/category/ipad',
+    text: 'iPad',
+    class: 'header__menu__link',
+    filterName: 'Категория'
+  },
+  {
+    link: '/category/imac',
+    text: 'iMac',
+    class: 'header__menu__link',
+    filterName: 'Категория'
+  },
+  {
+    link: '/category/macbook',
+    text: 'Macbook',
+    class: 'header__menu__link header__menu__link_additional',
+    filterName: 'Категория'
+  },
+  {
+    link: '/category/watch',
+    text: 'Watch',
+    class: 'header__menu__link header__menu__link_additional',
+    filterName: 'Категория'
+  },
+]
+
 export const categoryProductsOptions = [
   {
     filterName: 'Категория',
