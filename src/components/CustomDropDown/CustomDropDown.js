@@ -2,8 +2,7 @@ import React, {useState} from "react";
 import {NavLink, useLocation} from 'react-router-dom'
 import { useDispatch, useSelector } from "react-redux";
 import {
-  ADD_PRODUCTS_LIST_FILTER,
-  REMOVE_PRODUCTS_LIST_FILTER
+  ADD_PRODUCTS_LIST_FILTER
 } from '../../redux/actions/types'
 import { useEffect } from "react";
 
@@ -35,28 +34,15 @@ const CustomDropDown = ({links, checkboxes, initiallyActive, header, options, he
   };
 
   const addProductsFilter = (text, filterName) => {
-    if(filterName === 'Категория'){
-      dispatch({
-        type: 'ADD_PRODUCTS_LIST_FILTER',
-        payload: [ 
-          {
-            text: text,
-            filterName: filterName
-          }
-        ],
-      });
-    } else{
-      dispatch({
-        type: 'ADD_PRODUCTS_LIST_FILTER',
-        payload: [ ...productsListFilters, 
-          {
-            text: text,
-            filterName: filterName
-          }
-        ],
-      });
-    }
-
+    dispatch({
+      type: 'ADD_PRODUCTS_LIST_FILTER',
+      payload: [ ...productsListFilters, 
+        {
+          text: text,
+          filterName: filterName
+        }
+      ],
+    });
   }
 
 
@@ -66,7 +52,7 @@ const CustomDropDown = ({links, checkboxes, initiallyActive, header, options, he
       <div className={`drop-down__list ${listClass}  ${clickedBtn ? 'drop-down__list_active' : ''}`}>
         {options.map((option, index) => 
         links ? 
-          <NavLink onClick={() => toggleFilters( option.filterName, option.text)}  key={index} activeClassName="link_selected" className={option.class} to={option.link}>{option.text}</NavLink> 
+          <NavLink  key={index} activeClassName="link_selected" className={option.class} to={option.link}>{option.text}</NavLink> 
         : 
         <label key={index}className="products__sidebar__filter">
             <input checked={productsListFilters.some(filter => filter.text === option.text)} onChange={() => toggleFilters(option.filterName, option.text)} className="products__sidebar__filter__checkbox" type="checkbox" />

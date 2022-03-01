@@ -2,11 +2,26 @@ import React from "react";
 import {useLocation} from 'react-router-dom'
 import CustomDropDown from '../CustomDropDown/CustomDropDown'
 import {categoryProductsOptions, modelIphoneOptions} from '../additionalObjects/additionalObjects'
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 
 
 const ProductsSideBar = () => {
   const location = useLocation()
   const categoryRouteName = location.pathname.split('/category/')[1]
+  const productsListFilters = useSelector((store) => store.app.productsListFilters);
+
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    if(productsListFilters.length > 0){
+      dispatch({
+        type: 'REMOVE_PRODUCTS_LIST_FILTER',
+        payload: [],
+      });
+    }
+
+  }, [location])
 
   return(
     <div className="products__sidebar">

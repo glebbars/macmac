@@ -10,17 +10,10 @@ const ProductsFilterLabels = () => {
   console.log(productsListFilters)
 
   const removeFilter = (filterName, text) => {
-    if(filterName === 'Категория'){
-      dispatch({
-        type: 'REMOVE_PRODUCTS_LIST_FILTER',
-        payload: [],
-      })
-    } else{
-      dispatch({
-        type: 'REMOVE_PRODUCTS_LIST_FILTER',
-        payload: productsListFilters.filter((filter) => filter.text !== text),
-      })
-    }
+    dispatch({
+      type: 'REMOVE_PRODUCTS_LIST_FILTER',
+      payload: productsListFilters.filter((filter) => filter.text !== text),
+    })
   }
 
 

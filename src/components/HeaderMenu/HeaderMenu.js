@@ -14,12 +14,6 @@ const HeaderMenu = () => {
 
   const activeClass = openedBurger ? '_active' : ''
 
-  const handleAllProductsFilter = () => {
-    dispatch({
-      type: 'REMOVE_PRODUCTS_LIST_FILTER',
-      payload: [],
-    });
-  }
 
   return (
     <div className="header">
@@ -37,7 +31,6 @@ const HeaderMenu = () => {
               <nav className="header__menu__nav">
                 <NavLink
                   // exact
-                  onClick={handleAllProductsFilter}
                   to="/category/all-products"
                   className="header__menu__link header__menu__link_all"
                   activeClassName="link_selected header__menu__link_all_selected"
@@ -68,7 +61,6 @@ const HeaderMenu = () => {
                   to="/category/all-products"
                   className="header__menu__link header__menu__link_all header__menu__link_additional header__menu__link_additional_header"
                   activeClassName="link_selected header__menu__link_all_selected"
-                  onClick={handleAllProductsFilter}
                 >
                   Все товары
                 </NavLink>
