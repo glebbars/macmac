@@ -119,6 +119,98 @@ export const modelIphoneOptions = [
   },
   {
     filterName: 'Модель',
+    text: 'iPhone 11 Pro',
+  },
+  {
+    filterName: 'Модель',
+    text: 'iPhone 11 Pro',
+  },
+  {
+    filterName: 'Модель',
+    text: 'iPhone 11 Pro',
+  },
+  {
+    filterName: 'Модель',
+    text: 'iPhone 11 Pro',
+  },
+  {
+    filterName: 'Модель',
+    text: 'iPhone 11 Pro',
+  },
+  {
+    filterName: 'Модель',
+    text: 'iPhone 11 Pro',
+  },
+  {
+    filterName: 'Модель',
+    text: 'iPhone 11 Pro',
+  },
+  {
+    filterName: 'Модель',
+    text: 'iPhone 11 Pro',
+  },
+  {
+    filterName: 'Модель',
+    text: 'iPhone 11 Pro',
+  },
+  {
+    filterName: 'Модель',
+    text: 'iPhone 11 Pro',
+  },
+  {
+    filterName: 'Модель',
+    text: 'iPhone 11 Pro',
+  },
+  {
+    filterName: 'Модель',
+    text: 'iPhone 11 Pro',
+  },
+  {
+    filterName: 'Модель',
+    text: 'iPhone 11 Pro',
+  },
+  {
+    filterName: 'Модель',
+    text: 'iPhone 11 Pro',
+  },
+  {
+    filterName: 'Модель',
+    text: 'iPhone 11 Pro',
+  },
+  {
+    filterName: 'Модель',
+    text: 'iPhone 11 Pro',
+  },
+  {
+    filterName: 'Модель',
+    text: 'iPhone 11 Pro',
+  },
+  {
+    filterName: 'Модель',
+    text: 'iPhone 11 Pro',
+  },
+  {
+    filterName: 'Модель',
+    text: 'iPhone 11 Pro',
+  },
+  {
+    filterName: 'Модель',
+    text: 'iPhone 11 Pro',
+  },
+  {
+    filterName: 'Модель',
+    text: 'iPhone 11 Pro',
+  },
+  {
+    filterName: 'Модель',
+    text: 'iPhone 11 Pro',
+  },
+  {
+    filterName: 'Модель',
+    text: 'iPhone 11 Pro',
+  },
+  {
+    filterName: 'Модель',
     text: 'iPhone 11 Pro Max',
   }
 ]

@@ -34,34 +34,36 @@ const ProductsPagination = props => {
   let lastPage = paginationRange[paginationRange.length - 1];
   return (
     <ul
-      className={classnames('pagination-container', { [className]: className })}
+      className={classnames('pagination', { [className]: className })}
     >
       <li
-        className={classnames('pagination-item', {
+        className={classnames('pagination__item', {
           disabled: currentPage === 1
         })}
         onClick={onPrevious}
       >
         <div className="arrow left" />
       </li>
-      {paginationRange.map((pageNumber, index) => {
-        if (pageNumber === DOTS) {
-          return <li key={index} className="pagination-item dots">&#8230;</li>;
-        }
+      <div className='pagination__content-wrapper'>
+        {paginationRange.map((pageNumber, index) => {
+          if (pageNumber === DOTS) {
+            return <li key={index} className="pagination__item dots">&#8230;</li>;
+          }
 
-        return (
-          <li key={index}
-            className={classnames('pagination-item', {
-              selected: pageNumber === currentPage
-            })}
-            onClick={() => onPageChange(pageNumber)}
-          >
-            {pageNumber}
-          </li>
-        );
-      })}
+          return (
+            <li key={index}
+              className={classnames('pagination__item', {
+                selected: pageNumber === currentPage
+              })}
+              onClick={() => onPageChange(pageNumber)}
+            >
+              {pageNumber}
+            </li>
+          );
+        })}
+      </div>
       <li
-        className={classnames('pagination-item', {
+        className={classnames('pagination__item', {
           disabled: currentPage === lastPage
         })}
         onClick={onNext}
