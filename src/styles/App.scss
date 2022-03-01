@@ -1738,19 +1738,17 @@ body{
     }
 
     &__labels-wrapper{
-      margin-bottom: 20px;
-
-      
+      margin-bottom: 10px;
     }
 
     &__label{
       font-size: 14px;
       color: #343A40;
-      margin-left: 50px;
+      margin: 0 50px 10px 0;
       display: inline-block;
 
-      &:nth-of-type(1){
-        margin-left: 0;
+      &:nth-last-of-type(1){
+        margin-right: 0;
       }
 
       &__value{
