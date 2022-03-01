@@ -4,10 +4,20 @@
 
 @font-face {
   font-family: "Object Sans";
-  src: url(../fonts/ObjectSans-Regular.ttf) format('truetype') font-weight-regular,
+  font-style: normal;
+  font-weight: normal;
+  src:  url(../fonts/ObjectSans-Regular.ttf) format("truetype");
 }
+
+@font-face{
+  font-family: "Object Sans";
+  font-style: normal;
+  font-weight: 500;
+  src:  url(../fonts/Objectivity-Medium.otf) format("truetype");
+}
+
 body{
-  font-family: Object Sans, sans-serif;
+  font-family: "Object Sans", sans-serif;
   // font-family: Object Sans;
   color: #000000;
   font-size: 16px;
@@ -271,7 +281,7 @@ body{
             content: "";
             position: absolute;
             left: 105px;
-            top: 4px;
+            top: 2.5px;
             display: block;
             width: 6px;
             height: 6px;
@@ -284,7 +294,7 @@ body{
 
           &_selected{
             &:after{
-              top: 5.5px;
+              top: 4px;
               transform: rotate(135deg);
               border-color: #FA530D;
 
@@ -312,10 +322,13 @@ body{
           }
 
           &::after{
-            left: 65px;
+            left: 70px;
             top: 7px;
+            width: 6px;
+            height: 6px;
           }
-            @media (max-width: 1300px) {
+
+          @media (max-width: 1300px) {
               display: inline-block; 
               margin-left: 0;
               font-size: 18px;
@@ -323,22 +336,43 @@ body{
               font-weight: 700;
   
               &::after{
-                left: 56px;
+                left: 66px;
                 top: 8px;
               }
 
-              &_active{
-                &::after{
-                  top: 6.5px;
-                  left: 58px;
-                }
+            &_active{
+              &::after{
+                top: 6.5px;
+                left: 68px;
               }
             }
+          }
+
+          @media (max-width: 480px){
+            &::after{
+              width: 5px;
+              height: 5px;
+              top: 6px;
+              left: 60px;
+            }
+            &_active{
+              &::after{
+                left: 62px;
+              }
+            }
+          }
+
+          // @media (max-width: 480px){
+          //   width: 5px;
+          //   height: 5px;
+          // }
+
+
   
-            @media (max-width: 480px) {
+          @media (max-width: 480px) {
               margin-top: 25px; 
               font-size: 16px;
-              font-weight: 600;
+              font-weight: 600
             }
           }
       }
@@ -1414,8 +1448,6 @@ body{
 }
 
 .products{
-  
-  
   &__header{
     &__background{
       background-position: center;
@@ -1625,7 +1657,7 @@ body{
 
   &__sort{
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 
     &__header,
     &__text{
@@ -1651,7 +1683,7 @@ body{
         content: "";
         position: absolute;
         right: -20px;
-        top: 4px;
+        top: 3px;
         display: block;
         width: 6px;
         height: 6px;
@@ -1702,6 +1734,47 @@ body{
           display: none
         }
       }
+    }
+
+    &__labels-wrapper{
+      margin-bottom: 20px;
+
+      
+    }
+
+    &__label{
+      font-size: 14px;
+      color: #343A40;
+      margin-left: 50px;
+      display: inline-block;
+
+      &:nth-of-type(1){
+        margin-left: 0;
+      }
+
+      &__value{
+        margin-left: 15px;
+        position: relative;
+        font-weight: 500;
+
+        &::after,
+        &::before{
+          position: absolute;
+          content: '';
+          top: 1px;
+          right: -18px;
+          height: 11px;
+          width: 1.5px;
+          background-color: #ADB5BD;
+          transform: rotate(45deg);
+          border-radius: 1px;
+        }
+
+        &::after{
+          transform: rotate(-45deg);
+        }
+      }
+
     }
 
   }

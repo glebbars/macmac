@@ -45,6 +45,7 @@ const ProductsList = () => {
 
   return (
     <>
+    {currentTableData && <List productsArr={currentTableData}/> }
       {/* <ProductsPagination
         className="pagination-bar"
         currentPage={currentPage}
@@ -52,7 +53,6 @@ const ProductsList = () => {
         pageSize={4}
         onPageChange={page => setCurrentPage(page)}
       /> */}
-      {/* {currentTableData && <List productsArr={currentTableData}/> } */}
     </>
   );
 };

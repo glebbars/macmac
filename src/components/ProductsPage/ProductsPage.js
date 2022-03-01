@@ -3,7 +3,7 @@ import ProductsSideBar from "../ProductsSideBar/ProductsSideBar";
 import ProductsList from "../ProductsList/ProductsList";
 import ProductsPageHeader from "../ProductsPageHeader/ProductsPageHeader";
 import ProductsSort from "../ProductsSort/ProductsSort";
-
+import ProductsFilterLabels from '../ProductsFilterLabels/ProductsFilterLabels'
 const ProductsPage = () => {
   
   return (
@@ -13,6 +13,7 @@ const ProductsPage = () => {
         <ProductsSideBar />
         <div className="products__section_sort-list">
           <ProductsSort />
+          <ProductsFilterLabels />
           <ProductsList />
         </div>
       </div>

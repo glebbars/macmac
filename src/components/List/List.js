@@ -58,7 +58,7 @@ const List = ({productsArr}) => {
       </div> : 
       'К сожалению этого товара нет в данный момент'}
     </>
-  )
+  ) 
 }
 
 export default List
