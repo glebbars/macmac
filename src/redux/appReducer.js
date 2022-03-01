@@ -13,7 +13,6 @@ import {
 
 export const initialStore = {
     productsArr: [],
-    mycustom: [],
     productsListFilters: [],
     sortType: 'popularity',
     // favorites: [],
@@ -53,10 +52,6 @@ const appReducer = (store = initialStore, action) => {
         sortType: action.payload
      }; 
     case ADD_PRODUCTS_LIST_FILTER:
-      return {
-        ...store,
-        productsListFilters: [...action.payload],
-      };
     case REMOVE_PRODUCTS_LIST_FILTER:
       return {
         ...store,

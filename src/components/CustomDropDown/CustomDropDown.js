@@ -15,20 +15,32 @@ const CustomDropDown = ({links, checkboxes, initiallyActive, header, options, he
 
   const dispatch = useDispatch()
 
-  const toggleFilters = (newFilter) => {
-    if (productsListFilters.includes(newFilter.toLowerCase())) {
-      dispatch({
-        type: 'REMOVE_PRODUCTS_LIST_FILTER',
-        payload: productsListFilters.filter((filter) => filter !== newFilter.toLowerCase()),
-      });
-    } else {
-      dispatch({
-        type: 'ADD_PRODUCTS_LIST_FILTER',
-        payload: [newFilter.toLowerCase(), ...productsListFilters],
-      });
+  const toggleFilters = (filterName, text) => {
+    if(productsListFilters.length > 0) { 
+      productsListFilters.some(filter => {
+        if (filter.text === text) {
+          return dispatch({
+            type: 'REMOVE_PRODUCTS_LIST_FILTER',
+            payload: productsListFilters.filter((filter) => filter.text !== text),
+          });
+        } else {
+          addProductsFilter(text, filterName)
+        }
+      })
+    } else{
+      addProductsFilter(text, filterName)
     }
-    console.log(newFilter, productsListFilters)
   };
+
+  const addProductsFilter = (text, filterName) => {
+    dispatch({
+      type: 'ADD_PRODUCTS_LIST_FILTER',
+      payload: [{
+        text: text,
+        filterName: filterName
+      }, ...productsListFilters],
+    });
+  }
 
 
 
@@ -40,7 +52,7 @@ const CustomDropDown = ({links, checkboxes, initiallyActive, header, options, he
           return links ? 
           <NavLink key={index} activeClassName="link_selected" className={option.class} to={option.link}>{option.text}</NavLink> : 
           <label key={index}className="products__sidebar__filter">
-              <input onClick={() => toggleFilters(option.text)} className="products__sidebar__filter__checkbox" type="checkbox" />
+              <input checked={productsListFilters.some(filter => filter.text === option.text)} onChange={() => toggleFilters(option.filterName, option.text)} className="products__sidebar__filter__checkbox" type="checkbox" />
               <span className="products__sidebar__filter__text">{option.text}</span>
           </label>
         })

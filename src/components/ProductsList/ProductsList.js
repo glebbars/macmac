@@ -12,15 +12,16 @@ const ProductsList = () => {
   const productsListFilters = useSelector((store) => store.app.productsListFilters);
   const sortType = useSelector(store => store.app.sortType)
 
-
+  
   useEffect(() => {
     setCurrentPage(1)
+    console.log(productsListFilters)
   }, [productsListFilters])
-
+  
   const filteredProductsArr = productsArr.filter(product => {
     const fullProductName = `${product.category} ${product.model} ${product.capacity} ${product.color}`
     if(productsListFilters.length > 0){
-      return productsListFilters.some(filter => fullProductName.includes(filter))
+      return productsListFilters.some(filter => fullProductName.includes(filter.text.toLowerCase()))
     } else{
       return product
     }
@@ -36,13 +37,14 @@ const ProductsList = () => {
   })
 
   const currentTableData = useMemo(() => {
-      const firstPageIndex = (currentPage - 1) * 4;
-      const lastPageIndex = firstPageIndex + 4;
-      console.log(firstPageIndex, lastPageIndex, productsArr.slice(firstPageIndex, lastPageIndex))
-      return sortedProductsArr.slice(firstPageIndex, lastPageIndex);
+    
+    const firstPageIndex = (currentPage - 1) * 34;
+    const lastPageIndex = firstPageIndex + 34;
+    
+    return sortedProductsArr.slice(firstPageIndex, lastPageIndex);
   }, [currentPage, sortedProductsArr]);
-
-
+  
+  
   return (
     <>
     {currentTableData && <List productsArr={currentTableData}/> }

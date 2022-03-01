@@ -1,21 +1,30 @@
 import React from 'react'
+import { useDispatch, useSelector } from "react-redux";
 
 const ProductsFilterLabels = () => {
+  const productsListFilters = useSelector((store) => store.app.productsListFilters);
+
+  const dispatch = useDispatch()
+
+
+  console.log(productsListFilters)
+
+  const removeFilter = (text) => {
+    dispatch({
+      type: 'REMOVE_PRODUCTS_LIST_FILTER',
+      payload: productsListFilters.filter((filter) => filter.text !== text),
+    })
+  }
+
 
   return(
     <div className='products__sort__labels-wrapper'>
-      <div className='products__sort__label'>
-        Категория:
-        <span className='products__sort__label__value'>iPhone</span>
-      </div>
-      <div className='products__sort__label'>
-        Объём памяти:
-        <span className='products__sort__label__value'>64Gb</span>
-      </div>
-      <div className='products__sort__label'>
-      Категория
-        <span className='products__sort__label__value'>Категория</span>
-      </div>
+      {productsListFilters.map((filterLabel, index) => 
+        <div onClick={() => removeFilter(filterLabel.text)} key={index} className='products__sort__label'>
+          {filterLabel.filterName}:
+          <span className='products__sort__label__value'>{filterLabel.text}</span>
+        </div>
+      )}
     </div>
   )
 }
