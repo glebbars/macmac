@@ -1544,28 +1544,38 @@ body{
   &__section{
     display: flex;
     padding: 50px 40px 80px;
-    max-width: 1440px;
+    max-width: 1430px;
     margin: 0 auto;
     box-sizing: border-box;
+    justify-content: space-between;
     
+    // @media(max-width: 1300px){
+    //   padding: 50px 22.5px 80px;
+    // }
 
-    @media(max-width: 1300px){
-      padding: 50px 22.5px 80px;
+    @media(max-width: 1364px){
+      max-width: 1125px;
     }
-
 
     &_sort-list{
       width: 100%;
+      @media(min-width: 1365px){
+        width: 1080px;
+      }
+
+      @media(max-width: 1364px){
+        width: 752px;
+      }
     }
   }
 
   &__sidebar{
-    width: 25%;
-    margin-right: 120px;
+    width: 160px;
+    margin-right: 45px;
 
-    @media(max-width: 1300px){
-      margin-right: 80px;
-    }
+    // @media(max-width: 1300px){
+    //   margin-right: 80px;
+    // }
 
     @media(max-width: 1024px){
       position: absolute;
@@ -1619,6 +1629,10 @@ body{
 
     &__filter{
       margin: 15px 0 0 0;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
 
       &__checkbox{
         position: absolute;
@@ -1671,13 +1685,17 @@ body{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, 255px);
-    grid-column-gap: 30px;
-    grid-row-gap: 40px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
 
-    @media(max-width: 1300px){
-      grid-template-columns: repeat(auto-fit, 220px);
+    @media(max-width: 1364px){
+      grid-template-columns: repeat(auto-fit, 234px);
     }
-    // justify-content: center;
+
+    @media (max-width: 1024px) {
+      grid-column-gap: 30px;
+      grid-row-gap: 40px;      
+    }
   }
 
   &__sort{
@@ -1817,15 +1835,14 @@ body{
     flex-direction: column;
     flex-wrap: wrap;
     align-items: flex-start;
-    width: 255px;
+    width: 100%;
     margin: 0 0 16px;
     height: 225px;
     background: #E9ECEF;
     border-radius: 8px; 
 
-    @media(max-width: 1300px){
-      width: 220px;
-      height: 200px;
+    @media(max-width: 1364px){
+      height: 215px;
     }
   }
 
