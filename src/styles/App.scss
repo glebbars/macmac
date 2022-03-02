@@ -22,7 +22,7 @@ body{
   color: #000000;
   font-size: 16px;
   // line-height: 26px;
-  // min-height: 100vh;
+  min-height: 100vh;
   background-color: #F8F9FA;
   position: relative;
 }
@@ -42,7 +42,7 @@ body{
     &::after{
       content: "";
       position: absolute;
-      right: -17.5px;
+      right: 82.5px;
       top: 6px;
       display: block;
       width: 5px;
@@ -51,6 +51,7 @@ body{
       border-left: 2px solid #ADB5BD;
       transform: rotate(135deg);
       border-radius: 1.5px;
+      transition: all 0.4s ease-in-out;
     }
 
     &_active{
@@ -63,11 +64,19 @@ body{
   }
 
   &__list{
-    @include flex-column-left;
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    max-height: 0;
+    transition: opacity 0.6s ease-in-out, visibility 0.6s ease-in-out, max-height 0.4s ease-in-out;
 
     &_active{
-      display: flex;
+      visibility: visible;
+      opacity: 1;
+      max-height: 1000px;
     }
 
     &_header{
@@ -135,6 +144,10 @@ body{
     order: 2;
     // filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
+    &__nav{
+      display: flex;
+    }
+
     &__burger-toggle{
       display: none;
     }
@@ -143,8 +156,28 @@ body{
     @media (max-width: 1300px) {
       order: 1;
 
+      &__burger-container{
+        @include flex-space-center ;
+        visibility: hidden;
+        list-style: none;
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        width: 0;
+        height: 100vh;
+        max-width: 540px;
+        z-index: 1;
+        opacity: 0;
+        transition: all .3s ease-in-out;
+        
+        &_active{
+          width: 100%;
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+
       &__nav{
-        display: flex;
         flex-direction: column;
         background-color: white;
         width: 100%;
@@ -152,24 +185,6 @@ body{
         padding: 0 15px;
       }
 
-      &__burger-container{
-        @include flex-space-center ;
-        display: none;
-        list-style: none;
-        position: absolute;
-        top: -10px;
-        left: -10px;
-        width: 100%;
-        height: 100%;
-        max-width: 540px;
-        z-index: 1;
-        
-        &_active{
-          display: flex;
-          height: 100vh;
-        }
-
-      }
       
       &__burger-cross{
         width: 50px;
@@ -177,7 +192,6 @@ body{
         position: relative;
         right: 0;
         background: rgba(0, 0, 0, 0.4);
-        border-radius: 0 0 8px;
 
         @media (max-width: 768px) {
           border-radius: 0;
@@ -195,6 +209,7 @@ body{
           right: 7px;
           border-radius: 8px;
           transform: rotate(45deg) translateY(-50%);
+          transition: all 0.4s ease-in-out;
         }
         &::before{
           transform: rotate(135deg) translateY(-50%);
@@ -284,6 +299,7 @@ body{
             border-left: 2px solid #ADB5BD;
             transform: rotate(225deg);
             border-radius: 1px;
+            transition: all 0.4s ease-in-out;
           }
           }
 
@@ -814,7 +830,7 @@ body{
       box-sizing: border-box;
       border-radius: 8px;
       background-color: #EFE5FE;
-      padding: 10px 35px;
+      padding: 10px 30px;
 
       @media (max-width: 480px) {
         width: 120px;
@@ -1548,6 +1564,7 @@ body{
     margin: 0 auto;
     box-sizing: border-box;
     justify-content: space-between;
+    min-height: 350px;
     
     // @media(max-width: 1300px){
     //   padding: 50px 22.5px 80px;
@@ -1611,7 +1628,7 @@ body{
 
     &__category-header{
       font-weight: 500;
-      display: inline-block;
+      display: block;
       font-size: 16px;
       letter-spacing: 0.0155em;
       color: #343A40;
@@ -1734,6 +1751,7 @@ body{
         border-left: 2px solid #ADB5BD;
         transform: rotate(225deg);
         border-radius: 1px;
+        transition: all 0.4s ease-in-out;
       }
 
       &_active{
@@ -1745,7 +1763,9 @@ body{
     }
 
     &__select{
-      display: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
       position: absolute;
       right: 0;
       top: 35px;
@@ -1756,9 +1776,15 @@ body{
       width: 180px;
       box-sizing: border-box;
       z-index: 1;
-
+      transition: all 0.4s ease-in-out;
+      max-height: 0;
+      visibility: hidden;
+      opacity: 0;
+      
       &_active{
-        @include flex-column-left;
+        max-height: 300px;
+        visibility: visible;
+        opacity: 1;
       }
 
       &__label{
