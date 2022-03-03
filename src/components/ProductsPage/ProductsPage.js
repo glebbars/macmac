@@ -10,16 +10,13 @@ import { useState } from "react";
 const ProductsPage = () => {
   const [activeSideBar, setActiveSideBar] = useState(false)
 
-  const toggleSideBar = () => setActiveSideBar(!activeSideBar)
-  
-  
   return (
     <div className="products">
       <ProductsPageHeader />
       <div className="products__section">
         <ProductsSideBar activeSideBar={activeSideBar}/>
         <div className="products__section_sort-list">
-          <ProductsFiltersMobileBtn toggleSideBar={toggleSideBar}/>
+          <ProductsFiltersMobileBtn toggleSideBar={() => setActiveSideBar(!activeSideBar)}/>
           <ProductsSort />
           <ProductsFilterLabels />
           <ProductsList />

@@ -1,18 +1,16 @@
 import React from "react";
 import {useLocation} from 'react-router-dom'
-import CustomDropDown from '../CustomDropDown/CustomDropDown'
+import {CustomDropDownLinks, CustomDropDownCheckboxes} from '../CustomDropDown/CustomDropDown'
 import {categoryProductsOptions, modelIphoneOptions} from '../additionalObjects/additionalObjects'
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 const ProductsSideBar = ({activeSideBar}) => {
   const location = useLocation()
-  const categoryRouteName = location.pathname.split('/category/')[1]
-  const productsListFilters = useSelector((store) => store.app.productsListFilters);
-
   const dispatch = useDispatch()
-
-  console.log(activeSideBar)
+  const productsListFilters = useSelector((store) => store.app.productsListFilters);
+  
+  const categoryRouteName = location.pathname.split('/category/')[1]
 
   useEffect(() => {
     if(productsListFilters.length > 0){
@@ -25,16 +23,14 @@ const ProductsSideBar = ({activeSideBar}) => {
   }, [location])
 
   return(
-    <div className={`products__sidebar`}>
+    <div className={`products__sidebar ${activeSideBar ? 'products__sidebar_active' : ''}`}>
     <h1 className="products__sidebar__header">{categoryRouteName === 'all-products' ? 'Категория' : 'Фильтры'}</h1>
     { categoryRouteName === 'all-products' && <p className="products__sidebar__subheader">Все товары</p> }
 
-    {/* { categoryRouteName === 'all-products'  ? 
-      <CustomDropDown links options={categoryProductsOptions} header='Apple' headerClass='products__sidebar__category-header' listClass='drop-down__list_products'/> :
-      <>
-       <CustomDropDown checkboxes options={modelIphoneOptions} header='Модель' headerClass='products__sidebar__category-header' listClass='drop-down__list_products'/> 
-      </> 
-    } */}
+    { categoryRouteName === 'all-products' ? 
+      <CustomDropDownLinks links options={categoryProductsOptions} header='Apple' headerClass='products__sidebar__category-header' listClass=''/> :
+      <CustomDropDownCheckboxes checkboxes options={modelIphoneOptions} header='Модель' headerClass='products__sidebar__category-header products__sidebar__category-header_checkboxes' listClass='products__sidebar__category-list'/> 
+    }
   </div>
   )
 
