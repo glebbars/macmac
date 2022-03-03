@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import { NavLink, Link } from "react-router-dom";
 import logo from '../../img/logo.svg'
 import HeaderSearch from '../HeaderSearch/HeaderSearch'
-import CustomDropDown from "../CustomDropDown/CustomDropDown";
+import {CustomDropDownLinks} from "../CustomDropDown/CustomDropDown";
 import {categoryHeaderOptions} from '../additionalObjects/additionalObjects'
 import { useDispatch } from "react-redux";
 
@@ -37,7 +37,7 @@ const HeaderMenu = () => {
                 >
                   Все товары
                 </NavLink>
-                <CustomDropDown links initiallyActive options={categoryHeaderOptions} header='Apple' headerClass='header__menu__link header__menu__link_additional_header' listClass='drop-down__list_header drop-down__list'/>
+                <CustomDropDownLinks links initiallyActive options={categoryHeaderOptions} header='Apple' headerClass='header__menu__link header__menu__link_additional_header' listClass='drop-down__list_header drop-down__list'/>
 
                 <NavLink
                   exact

@@ -52,13 +52,45 @@ body{
       transform: rotate(135deg);
       border-radius: 1.5px;
       transition: all 0.4s ease-in-out;
+
+      @media (max-width: 1024px){
+        right: 0;
+        top: 5px;
+        width: 10px;
+        height: 10px;
+        border-top: 2.5px solid #ADB5BD;
+        border-left: 2.5px solid #ADB5BD;
+      }
     }
 
     &_active{
       &::after{
         transform: rotate(225deg);
         top: 5px;
-        border-color: #343A40
+        border-color: #343A40;
+
+        @media (max-width: 1024px){
+          border-top: 2px solid #ADB5BD;
+          border-left: 2px solid #ADB5BD;
+          transform: rotate(135deg);
+          top: 6px;
+        }
+      }
+    }
+
+    @media (max-width: 1024px){
+      font-size: 18px;
+
+      &::before{
+        content: '';
+        width: 14px;
+        height: 2.5px;
+        background: #ADB5BD;
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        right: 0px;
+        border-radius: 1.5px;
       }
     }
   }
@@ -82,6 +114,25 @@ body{
     &_header{
       @media (min-width: 1301px){
         display: inline-block;
+      }
+    }
+
+    @media (max-width: 1024px){
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: white;
+      height: 100vh;
+      width: 0;
+      transition: all 0.4s ease-in-out;
+      visibility: visible;
+      opacity: 1;
+
+      &_active{
+       width: 100%;
+      //  visibility: visible;
+      //  opacity: 1;
+ 
       }
     }
 
@@ -1583,6 +1634,10 @@ body{
       @media(max-width: 1364px){
         width: 752px;
       }
+
+      @media(max-width: 1024px){
+        width: 100%;
+      }
     }
   }
 
@@ -1595,6 +1650,8 @@ body{
     // }
 
     @media(max-width: 1024px){
+      visibility: hidden;
+      opacity: 1;
       position: absolute;
       background-color: white;
       top: 0;
@@ -1603,8 +1660,15 @@ body{
       padding: 30px 25px;
       height: 100vh;
       max-width: 250px;
-      width: 100%;
+      width: 0;
       overflow-y: scroll;
+      transition: all 0.4s ease-in-out;
+    }
+
+    &_active{
+      width: 100%;
+      visibility: visible;
+      opacity: 1;
     }
 
     @media (max-width: 768px) {
@@ -1624,6 +1688,10 @@ body{
       text-decoration: none;
       margin: 0 0 25px;
       color: #FA530D;
+
+      @media (max-width: 1024px){
+        font-size: 18px; 
+      }
     }
 
     &__category-header{
@@ -1633,6 +1701,10 @@ body{
       letter-spacing: 0.0155em;
       color: #343A40;
       margin: 0;
+
+      @media (max-width: 1024px) {
+        font-size: 18px; 
+      }
     }
 
     &__category-text,
@@ -1845,6 +1917,28 @@ body{
 
     }
 
+  }
+
+  &__filters-mobile-btn{
+    display: none;
+
+    @media (max-width: 1024px) {
+      display: inline-flex;
+      align-items: center;
+    }
+
+    &__img{
+      margin-right: 6px;
+      width: 22px;
+    }
+
+    &__text{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.0155em;
+    color: #343A40;
+    }
   }
 
 }

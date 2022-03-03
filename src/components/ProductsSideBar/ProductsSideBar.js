@@ -5,13 +5,14 @@ import {categoryProductsOptions, modelIphoneOptions} from '../additionalObjects/
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
-
-const ProductsSideBar = () => {
+const ProductsSideBar = ({activeSideBar}) => {
   const location = useLocation()
   const categoryRouteName = location.pathname.split('/category/')[1]
   const productsListFilters = useSelector((store) => store.app.productsListFilters);
 
   const dispatch = useDispatch()
+
+  console.log(activeSideBar)
 
   useEffect(() => {
     if(productsListFilters.length > 0){
@@ -24,16 +25,16 @@ const ProductsSideBar = () => {
   }, [location])
 
   return(
-    <div className="products__sidebar">
+    <div className={`products__sidebar`}>
     <h1 className="products__sidebar__header">{categoryRouteName === 'all-products' ? 'Категория' : 'Фильтры'}</h1>
     { categoryRouteName === 'all-products' && <p className="products__sidebar__subheader">Все товары</p> }
 
-    { categoryRouteName === 'all-products'  ? 
-      <CustomDropDown links initiallyActive options={categoryProductsOptions} header='Apple' headerClass='products__sidebar__category-header' listClass='drop-down__list_products'/> :
+    {/* { categoryRouteName === 'all-products'  ? 
+      <CustomDropDown links options={categoryProductsOptions} header='Apple' headerClass='products__sidebar__category-header' listClass='drop-down__list_products'/> :
       <>
-       <CustomDropDown checkboxes initiallyActive options={modelIphoneOptions} header='Модель' headerClass='products__sidebar__category-header' listClass='drop-down__list_products'/> 
+       <CustomDropDown checkboxes options={modelIphoneOptions} header='Модель' headerClass='products__sidebar__category-header' listClass='drop-down__list_products'/> 
       </> 
-    }
+    } */}
   </div>
   )
 
