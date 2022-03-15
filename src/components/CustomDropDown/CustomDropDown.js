@@ -64,7 +64,6 @@ export const CustomDropDownCheckboxes = ({ initiallyActive, header, options, hea
 
   return(
     <>
-      <div className="products__sidebar__arrow-back"></div>
       <h4 
         onClick={() => setClickedBtn(!clickedBtn)} 
         className={`drop-down__header ${clickedBtn ? 'drop-down__header_active' : ''}  ${headerClass}`}
@@ -72,7 +71,10 @@ export const CustomDropDownCheckboxes = ({ initiallyActive, header, options, hea
         {header}
       </h4>
 
-      <div className={`drop-down__list ${listClass}  ${clickedBtn ? `drop-down__list_active ${listClass}_active` : ''}`}>
+      <div className={`drop-down__list ${listClass} ${clickedBtn ? `drop-down__list_active ${listClass}_active` : ''}`}>
+        <div className="products__sidebar__arrow-back"></div>
+        <h4 className="products__sidebar__header">{header}</h4>
+
         {options.map((option, index) => 
         <label key={index}className="products__sidebar__filter">
           <input 

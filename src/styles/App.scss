@@ -13,12 +13,12 @@
   font-family: "Object Sans";
   font-style: normal;
   font-weight: 500;
-  src:  url(../fonts/Objectivity-Medium.otf) format("truetype");
+  src:  url(../fonts/MPLUS1p-Medium.ttf) format("truetype");
 }
 
 body{
+  // font-family: 'M PLUS 1p', sans-serif;
   font-family: "Object Sans", sans-serif;
-  // font-family: Object Sans;
   color: #000000;
   font-size: 16px;
   // line-height: 26px;
@@ -251,7 +251,7 @@ body{
 
 
     &__link{
-      font-weight: 600;
+      font-weight: 500;
       margin-left: 32px;
       text-decoration: none;
       color: #343A40;
@@ -385,7 +385,7 @@ body{
           @media (max-width: 480px) {
               margin-top: 25px; 
               font-size: 16px;
-              font-weight: 600
+              font-weight: 500
             }
           }
       }
@@ -1487,7 +1487,7 @@ body{
 
     &__text{
       text-align: center;
-      font-weight: 600;
+      font-weight: 500;
       font-size: 35px;
       letter-spacing: 0.0025em;
       color: #343A40;
@@ -1646,7 +1646,7 @@ body{
     }
 
     &__subheader{
-      font-weight: 600;
+      font-weight: 500;
       font-size: 16px;
       letter-spacing: 0.0155em;
       text-decoration: none;
@@ -1780,6 +1780,11 @@ body{
          visibility: visible;
          opacity: 1;
         }
+      }
+
+      @media (max-width: 375px) {
+        padding: 25px;
+        
       }
     }
 
