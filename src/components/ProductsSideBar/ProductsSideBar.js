@@ -5,7 +5,7 @@ import {categoryProductsOptions, modelIphoneOptions} from '../additionalObjects/
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
-const ProductsSideBar = ({activeSideBar}) => {
+const ProductsSideBar = ({activeSideBar, closeSideBar}) => {
   const location = useLocation()
   const dispatch = useDispatch()
   const productsListFilters = useSelector((store) => store.app.productsListFilters);
@@ -24,13 +24,14 @@ const ProductsSideBar = ({activeSideBar}) => {
 
   return(
     <div className={`products__sidebar ${activeSideBar ? 'products__sidebar_active' : ''}`}>
-    <h1 className="products__sidebar__header">{categoryRouteName === 'all-products' ? 'Категория' : 'Фильтры'}</h1>
-    { categoryRouteName === 'all-products' && <p className="products__sidebar__subheader">Все товары</p> }
+      <h1 className="products__sidebar__header">{categoryRouteName === 'all-products' ? 'Категория' : 'Фильтры'}</h1>
+      { categoryRouteName === 'all-products' && <p className="products__sidebar__subheader">Все товары</p> }
 
-    { categoryRouteName === 'all-products' ? 
-      <CustomDropDownLinks links options={categoryProductsOptions} header='Apple' headerClass='products__sidebar__category-header' listClass=''/> :
-      <CustomDropDownCheckboxes checkboxes options={modelIphoneOptions} header='Модель' headerClass='products__sidebar__category-header products__sidebar__category-header_checkboxes' listClass='products__sidebar__category-list'/> 
-    }
+      { categoryRouteName === 'all-products' ? 
+        <CustomDropDownLinks links options={categoryProductsOptions} header='Apple' headerClass='products__sidebar__category-header' listClass=''/> :
+        <CustomDropDownCheckboxes checkboxes options={modelIphoneOptions} header='Модель' headerClass='products__sidebar__category-header products__sidebar__category-header_checkboxes' listClass='products__sidebar__category-list'/> 
+      }
+      <div onClick={closeSideBar} className="products__sidebar__closing-cross"></div>
   </div>
   )
 
