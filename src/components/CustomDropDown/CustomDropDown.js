@@ -72,8 +72,8 @@ export const CustomDropDownCheckboxes = ({ initiallyActive, header, options, hea
       </h4>
 
       <div className={`drop-down__list ${listClass} ${clickedBtn ? `drop-down__list_active ${listClass}_active` : ''}`}>
-        <div className="products__sidebar__arrow-back"></div>
-        <h4 className="products__sidebar__header">{header}</h4>
+        <div className="products__sidebar__arrow-back" onClick={() => setClickedBtn(false)}></div>
+        <h4 className="products__sidebar__header products__sidebar__header__modal">{header}</h4>
 
         {options.map((option, index) => 
         <label key={index}className="products__sidebar__filter">
