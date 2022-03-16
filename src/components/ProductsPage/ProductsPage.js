@@ -21,9 +21,11 @@ const ProductsPage = () => {
       <ProductsPageHeader />
       <div className="products__section">
         <ProductsSideBar closeSideBar={() => setActiveSideBar(false)} activeSideBar={activeSideBar}/>
-        <div className="products__section_sort-list">
-          <ProductsFiltersMobileBtn toggleSideBar={() => setActiveSideBar(!activeSideBar)}/>
-          <ProductsSort />
+        <div className="products__section__main-content">
+          <div className="products__section__main-content__header">
+            <ProductsFiltersMobileBtn toggleSideBar={() => setActiveSideBar(!activeSideBar)}/>
+            <ProductsSort />
+          </div>
           <ProductsFilterLabels />
           <ProductsList />
         </div>

@@ -1,6 +1,7 @@
 import Raact from 'react'
 import { useState } from 'react'
 import { useDispatch, useSelector } from "react-redux";
+import sortIcon from '../../img/sort-icon.svg'
 
 const ProductsSort = () => {
   const [openedMenu, setOpenedMenu] = useState(false)
@@ -17,10 +18,11 @@ const ProductsSort = () => {
   }
 
   return(
-    <div className='products__sort'>
+    <div onClick={() => setOpenedMenu(!openedMenu)} className='products__sort'>
+      <img src={sortIcon} alt="" className='products__sort__mobile-btn__img'/>
       <span className='products__sort__header'>Сортировать по:</span>
       <div className='products__sort__content-wrapper'>
-        <span onClick={() => setOpenedMenu(!openedMenu)} className={`products__sort__text ${openedMenu ? 'products__sort__text_active' : ''}`}>{sortName}</span>
+        <span className={`products__sort__text ${openedMenu ? 'products__sort__text_active' : ''}`}>{sortName}</span>
         <div className={`products__sort__select ${openedMenu ? 'products__sort__select_active' : ''}`}>
           <label className='products__sort__select__label'>
             <input onClick={() => handleChange('popularity', 'Популярности')} type="radio" name='sortName'/>
