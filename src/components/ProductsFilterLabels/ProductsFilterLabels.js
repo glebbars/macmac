@@ -3,11 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 
 const ProductsFilterLabels = () => {
   const productsListFilters = useSelector((store) => store.app.productsListFilters);
-
   const dispatch = useDispatch()
-
-
-  console.log(productsListFilters)
 
   const removeFilter = (filterName, text) => {
     dispatch({
@@ -15,7 +11,6 @@ const ProductsFilterLabels = () => {
       payload: productsListFilters.filter((filter) => filter.text !== text),
     })
   }
-
 
   return(
     <div className='products__sort__labels-wrapper'>
@@ -29,4 +24,4 @@ const ProductsFilterLabels = () => {
   )
 }
 
-export default ProductsFilterLabels
+export default React.memo(ProductsFilterLabels)

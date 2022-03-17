@@ -6,8 +6,14 @@ import {
 } from '../../redux/actions/types'
 import { useEffect } from "react";
 
-export const CustomDropDownLinks = ({initiallyActive, header, options, headerClass, listClass}) => {
-  const [clickedBtn, setClickedBtn] = useState(false)
+export const CustomDropDownLinks = ({ header, options, headerClass, listClass}) => {
+  const [clickedBtn, setClickedBtn] = useState(true)
+
+  useEffect(() => {
+    if(window.innerWidth <= 375){
+      setClickedBtn(false)
+    }
+  }, [])
   
   return(
     <>
@@ -29,9 +35,14 @@ export const CustomDropDownLinks = ({initiallyActive, header, options, headerCla
 
 export const CustomDropDownCheckboxes = ({ initiallyActive, header, options, headerClass, listClass}) => {
   const [clickedBtn, setClickedBtn] = useState(initiallyActive)
-
   const productsListFilters = useSelector((store) => store.app.productsListFilters);
   const dispatch = useDispatch()
+  
+  useEffect(() => {
+    if(window.innerWidth <= 375){
+      setClickedBtn(false)
+    }
+  }, [])
 
   const toggleFilters = (filterName, text) => {
     if(productsListFilters.length > 0) { 

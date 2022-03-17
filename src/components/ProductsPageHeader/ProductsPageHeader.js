@@ -10,6 +10,8 @@ const ProductsPageHeader = () => {
   const location = useLocation()
   const [styledBgObj, setStyledBgObj] = useState({})
 
+  console.log('render')
+
   useEffect(() => {
    const randomIndex = Math.floor(Math.random() * 3);
    const stylesObj = {
@@ -30,4 +32,4 @@ const ProductsPageHeader = () => {
   );
 };
 
-export default ProductsPageHeader;
+export default React.memo(ProductsPageHeader);

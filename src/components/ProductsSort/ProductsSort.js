@@ -1,4 +1,4 @@
-import Raact from 'react'
+import React from 'react'
 import { useState } from 'react'
 import { useDispatch, useSelector } from "react-redux";
 import sortIcon from '../../img/sort-icon.svg'
@@ -42,4 +42,4 @@ const ProductsSort = () => {
   )
 }
 
-export default ProductsSort
+export default React.memo(ProductsSort)

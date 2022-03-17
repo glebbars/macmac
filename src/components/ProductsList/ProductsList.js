@@ -4,16 +4,15 @@ import ProductsPagination from '../ProductsPagination/ProductsPagination';
 import List from '../List/List'
 import { useSelector } from "react-redux";
 
-
 const ProductsList = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const productsArr = useSelector((store) => store.app.productsArr);
   const productsListFilters = useSelector((store) => store.app.productsListFilters);
   const sortType = useSelector(store => store.app.sortType)
-  
+
+  console.log('888')
   useEffect(() => {
     setCurrentPage(1)
-    console.log(productsListFilters)
   }, [productsListFilters])
 
   const filteredByCategoryArr = productsArr.filter(product => {
@@ -64,4 +63,4 @@ const ProductsList = () => {
   );
 };
 
-export default ProductsList;
+export default React.memo(ProductsList);

@@ -8,7 +8,6 @@ import ProductsFiltersMobileBtn from '../ProductsFiltersMobileBtn/ProductsFilter
 import { useState } from "react";
 import {useLocation} from 'react-router-dom'
 import ProductsListHeader from '../ProductsListHeader/ProductsListHeader'
-import ProductsPagination from '../ProductsPagination/ProductsPagination'
 
 const ProductsPage = () => {
   const [activeSideBar, setActiveSideBar] = useState(false)
