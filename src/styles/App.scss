@@ -43,7 +43,7 @@ body{
       content: "";
       position: absolute;
       right: -17.5px;
-      top: 6px;
+      top: 7.5px;
       display: block;
       width: 5px;
       height: 5px;
@@ -61,7 +61,7 @@ body{
     &_active{
       &::after{
         transform: rotate(225deg);
-        top: 5px;
+        top: 6.5px;
         border-color: #343A40;
 
         @media (max-width: 1024px) {
@@ -1615,30 +1615,36 @@ body{
       padding: 30px 25px 50px;            
     }
 
-    &__main-content{
+  }
+  
+  &__main{
+    width: 100%;
+    @media(min-width: 1365px){
+      width: 1080px;
+    }
+
+    @media(max-width: 1364px){
+      width: 752px;
+    }
+
+    @media(max-width: 1024px){
       width: 100%;
-      @media(min-width: 1365px){
-        width: 1080px;
-      }
+    }
 
-      @media(max-width: 1364px){
-        width: 752px;
-      }
+    &__header{
+      // margin: 0 25px 35px 0;
+      margin-bottom: 20px;
 
-      @media(max-width: 1024px){
-        width: 100%;
+      @media (max-width: 540px) {
+        margin-right: 0;
       }
-
-      &__header{
-        margin: 0 25px 35px 0;
+      
+      &__content{
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
         flex-wrap: wrap;
-
-        @media (max-width: 540px) {
-          margin-right: 0;
-        }
+        margin-bottom: 40px;
       }
     }
   }
@@ -2018,7 +2024,7 @@ body{
         content: "";
         position: absolute;
         right: -20px;
-        top: 3px;
+        top: 2.5px;
         display: block;
         width: 6px;
         height: 6px;
@@ -2125,9 +2131,13 @@ body{
     }
 
     &__mobile-btn{
-
       &__img{
+        display: none;
         margin-right: 10px;
+
+        @media (max-width: 1024px) {
+          display: inline-block;
+        }
       }
     }
 
@@ -2157,7 +2167,6 @@ body{
   }
 
 }
-
 
 .product{
 
@@ -2241,60 +2250,153 @@ body{
 }
 
 .pagination {
-  display: flex;
+  @include flex-space-center;
   list-style-type: none;
+  padding: 0 30px;
+  margin-top: 80px;
+
+  @media (max-width: 768px) {
+    margin-top: 70px
+  };
+
+  @media (max-width: 540px) {
+    margin-top: 60px
+  }
+
+  @media (max-width: 375px) {
+    margin-top: 50px
+  }
 
   &__content-wrapper{
     display: flex;
+
+    & .pagination__item:first-child{
+      margin-right: 48px;
+
+      @media (max-width: 768px) {
+        margin-right: 35px
+      };
+
+      @media (max-width: 480px) {
+        margin-right: 25px;
+      };
+    }
+
   }
 
   &__item {
-    padding: 0 12px;
-    height: 32px;
-    text-align: center;
-    margin: auto 4px;
     color: #343A40;
-    display: flex;
-    box-sizing: border-box;
-    align-items: center;
-    letter-spacing: 0.01071em;
-    border-radius: 16px;
-    line-height: 1.43;
+    margin-right: 48px;
     font-size: 16px;
-    min-width: 32px;
+    letter-spacing: 0.0155em;
+    font-weight: 500;
 
-    &.dots:hover {
-      background-color: transparent;
-      cursor: default;
+    @media (max-width: 768px) {
+      margin-right: 35px;
+      font-size: 14px;
+    };
+
+    @media (max-width: 480px) {
+      margin-right: 25px;
+    };
+
+    &:first-child,
+    &:last-child{
+      margin-right: 0;
     }
+
+    &__dots{
+      height: 12px;
+      margin-top: auto;
+      &:hover{
+        background-color: transparent;
+        cursor: default;
+      }
+    }
+
     &:hover {
       color: #FA530D;
-      cursor: pointer;
+      cursor: pointer
     }
 
     &.selected {
       color: #FA530D;
     }
 
-    .arrow {
-      &::before {
-        position: relative;
-        /* top: 3pt; Uncomment this to lower the icons as requested in comments*/
-        content: '';
-        /* By using an em scale, the arrows will size with the font */
-        display: inline-block;
-        width: 0.4em;
-        height: 0.4em;
-        border-right: 0.12em solid rgba(0, 0, 0, 0.87);
-        border-top: 0.12em solid rgba(0, 0, 0, 0.87);
+    &__arrow {
+      position: relative;
+
+      @media (max-width: 600px) {
+        font-size: 0;
       }
 
-      &.left {
-        transform: rotate(-135deg) translate(-50%);
+      &::after{
+        content: "";
+        position: absolute;
+        top: 6px;
+        left: -25px;
+        display: block;
+        width: 9px;
+        height: 9px;
+        border-top: 2.5px solid #ADB5BD;
+        border-left: 2.5px solid #ADB5BD;
+        transform: rotate(315deg);
+        border-radius: 1.5px;
+
+        @media (max-width: 600px) {
+          top: initial;
+          bottom: 0;
+        }
+
+        @media (max-width: 480px) {
+          width: 7.5px;
+          height: 7.5px;
+          bottom: 0.75px;
+        };
+      }
+  
+      &::before{
+        content: "";
+        position: absolute;
+        top: 10.5px;
+        left: -25px;
+        display: block;
+        width: 12px;
+        height: 2.5px;
+        background-color: #ADB5BD;
+        border-radius: 6px;
+
+        @media (max-width: 600px) {
+          top: initial;
+          bottom: 4.5px;
+        }
+
+        @media (max-width: 480px) {
+          bottom: 4.25px;
+        };
       }
 
-      &.right {
-        transform: rotate(45deg);
+      &_right{
+
+        &::after {
+          transform: rotate(135deg);
+          right: -25px;
+          left: initial;
+        }
+
+        &::before{
+          left: initial;
+          right: -25px;
+        }
+      }
+
+      &:hover{
+        &::after{
+          border-color: #FA530D;
+        }
+        &::before{
+          background-color: #FA530D;
+        }
       }
     }
 

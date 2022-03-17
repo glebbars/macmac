@@ -7,6 +7,8 @@ import ProductsFilterLabels from '../ProductsFilterLabels/ProductsFilterLabels'
 import ProductsFiltersMobileBtn from '../ProductsFiltersMobileBtn/ProductsFiltersMobileBtn'
 import { useState } from "react";
 import {useLocation} from 'react-router-dom'
+import ProductsListHeader from '../ProductsListHeader/ProductsListHeader'
+import ProductsPagination from '../ProductsPagination/ProductsPagination'
 
 const ProductsPage = () => {
   const [activeSideBar, setActiveSideBar] = useState(false)
@@ -21,12 +23,8 @@ const ProductsPage = () => {
       <ProductsPageHeader />
       <div className="products__section">
         <ProductsSideBar closeSideBar={() => setActiveSideBar(false)} activeSideBar={activeSideBar}/>
-        <div className="products__section__main-content">
-          <div className="products__section__main-content__header">
-            <ProductsFiltersMobileBtn toggleSideBar={() => setActiveSideBar(!activeSideBar)}/>
-            <ProductsSort />
-          </div>
-          <ProductsFilterLabels />
+        <div className="products__main">
+          <ProductsListHeader toggleSideBar={() => setActiveSideBar(!activeSideBar)}/>
           <ProductsList />
         </div>
         {activeSideBar && <div onClick={() => setActiveSideBar(false)} className="products__sidebar__closing-popup"></div>}

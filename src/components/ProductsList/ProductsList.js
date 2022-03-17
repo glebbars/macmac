@@ -44,22 +44,22 @@ const ProductsList = () => {
   })
 
   const currentTableData = useMemo(() => {
-    const firstPageIndex = (currentPage - 1) * 34;
-    const lastPageIndex = firstPageIndex + 34;
+    const firstPageIndex = (currentPage - 1) * 4;
+    const lastPageIndex = firstPageIndex + 4;
     return sortedProductsArr.slice(firstPageIndex, lastPageIndex);
   }, [currentPage, sortedProductsArr]);
   
   
   return (
     <>
+      {currentTableData && <List productsArr={currentTableData}/> }
       <ProductsPagination
         className="pagination-bar"
         currentPage={currentPage}
         totalCount={sortedProductsArr.length}
-        pageSize={34}
+        pageSize={4}
         onPageChange={page => setCurrentPage(page)}
       />
-    {currentTableData && <List productsArr={currentTableData}/> }
     </>
   );
 };

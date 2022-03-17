@@ -19,6 +19,8 @@ const ProductsPagination = props => {
     pageSize
   });
 
+  console.log(paginationRange)
+
   if (currentPage === 0 || paginationRange.length < 2) {
     return null;
   }
@@ -42,12 +44,12 @@ const ProductsPagination = props => {
         })}
         onClick={onPrevious}
       >
-        <div className="arrow left" />
+        <span className='pagination__item__arrow'>Предыдущая</span>
       </li>
       <div className='pagination__content-wrapper'>
         {paginationRange.map((pageNumber, index) => {
           if (pageNumber === DOTS) {
-            return <li key={index} className="pagination__item dots">&#8230;</li>;
+            return <li key={index} className="pagination__item pagination__item__dots">&#8230;</li>;
           }
 
           return (
@@ -68,7 +70,7 @@ const ProductsPagination = props => {
         })}
         onClick={onNext}
       >
-        <div className="arrow right" />
+        <span className='pagination__item__arrow pagination__item__arrow_right'>Следующая</span>
       </li>
     </ul>
   );
