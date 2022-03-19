@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import ProductsList from '../ProductsList/ProductsList'
+import List from '../List/List'
 import { useSelector } from "react-redux";
 
 const Bag = () => {
@@ -20,7 +20,7 @@ const Bag = () => {
     }
   })
 
-  return <ProductsList ableToBeRemoved={true} productsArr={filterredArr}/>
+  return <List ableToBeRemoved={true} productsArr={filterredArr}/>
 };
 
 export default Bag;

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import ProductsList from '../ProductsList/ProductsList'
 import { useSelector } from "react-redux";
+import List from '../List/List'
 
 const Favourites = () => {
 
@@ -20,7 +20,7 @@ const Favourites = () => {
   })
 
   return (
-    <ProductsList ableToBeRemoved={false} productsArr={filterredArr}/>
+    <List ableToBeRemoved={false} productsArr={filterredArr}/>
   );
 };
 

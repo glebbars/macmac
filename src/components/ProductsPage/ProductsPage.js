@@ -6,10 +6,12 @@ import ProductsSort from "../ProductsSort/ProductsSort";
 import ProductsFilterLabels from '../ProductsFilterLabels/ProductsFilterLabels'
 import ProductsFiltersMobileBtn from '../ProductsFiltersMobileBtn/ProductsFiltersMobileBtn'
 import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import {useLocation} from 'react-router-dom'
 import ProductsListHeader from '../ProductsListHeader/ProductsListHeader'
 
 const ProductsPage = () => {
+  const sortedProductsLength = useSelector((store) => store.app.sortedProductsLength);
   const [activeSideBar, setActiveSideBar] = useState(false)
   const location = useLocation()
 
@@ -23,8 +25,8 @@ const ProductsPage = () => {
       <div className="products__section">
         <ProductsSideBar closeSideBar={() => setActiveSideBar(false)} activeSideBar={activeSideBar}/>
         <div className="products__main">
-          <ProductsListHeader toggleSideBar={() => setActiveSideBar(!activeSideBar)}/>
-          <ProductsList />
+           <ProductsListHeader sortedProductsLength={sortedProductsLength} toggleSideBar={() => setActiveSideBar(!activeSideBar)}/>
+          <ProductsList location={location}/>
         </div>
         {activeSideBar && <div onClick={() => setActiveSideBar(false)} className="products__sidebar__closing-popup"></div>}
       </div>

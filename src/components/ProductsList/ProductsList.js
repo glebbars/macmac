@@ -1,20 +1,21 @@
-import React, {useState, useMemo, useEffect} from "react";
+import React, {useState, useMemo, useEffect, useCallback} from "react";
 import {categoryProductsOptions, modelIphoneOptions} from '../additionalObjects/additionalObjects';
 import ProductsPagination from '../ProductsPagination/ProductsPagination';
 import List from '../List/List'
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 
 const ProductsList = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const productsArr = useSelector((store) => store.app.productsArr);
   const productsListFilters = useSelector((store) => store.app.productsListFilters);
   const sortType = useSelector(store => store.app.sortType)
-
-  console.log('888')
+  const pageSize = useSelector(store => store.app.pageSize)
+  const dispatch = useDispatch()
+  
   useEffect(() => {
     setCurrentPage(1)
   }, [productsListFilters])
-
+  
   const filteredByCategoryArr = productsArr.filter(product => {
     const currentPathName = window.location.pathname
     if(currentPathName.includes('/category/') && !currentPathName.includes('/all-products')){
@@ -32,7 +33,7 @@ const ProductsList = () => {
       return product
     }
   })
-
+  
   const sortedProductsArr = filteredProductsArr.sort((a, b) => {
     switch (sortType){
       case '': return;
@@ -41,13 +42,24 @@ const ProductsList = () => {
       case 'price-increase': return a.price - b.price;
     }
   })
+  
+  useEffect(() => {
+    dispatch({
+      type: 'UPDATE_SORTED_PRODUCTS_LENGTH',
+      payload: sortedProductsArr.length
+    })
 
+  }, [filteredProductsArr])
+
+  
+  
   const currentTableData = useMemo(() => {
-    const firstPageIndex = (currentPage - 1) * 4;
-    const lastPageIndex = firstPageIndex + 4;
+    const firstPageIndex = (currentPage - 1) * pageSize;
+    const lastPageIndex = firstPageIndex + pageSize;
     return sortedProductsArr.slice(firstPageIndex, lastPageIndex);
   }, [currentPage, sortedProductsArr]);
   
+  console.log(currentTableData)
   
   return (
     <>
@@ -56,7 +68,7 @@ const ProductsList = () => {
         className="pagination-bar"
         currentPage={currentPage}
         totalCount={sortedProductsArr.length}
-        pageSize={4}
+        pageSize={pageSize}
         onPageChange={page => setCurrentPage(page)}
       />
     </>

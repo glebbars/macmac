@@ -6,11 +6,8 @@ import {routesNames, bgImgObj} from '../additionalObjects/additionalObjects'
 import ProductsPageBreadcrumbs from '../ProductsPageBreadcrumbs/ProductsPageBreadcrumbs'
 
 const ProductsPageHeader = () => {
-
-  const location = useLocation()
   const [styledBgObj, setStyledBgObj] = useState({})
-
-  console.log('render')
+  const location = useLocation()
 
   useEffect(() => {
    const randomIndex = Math.floor(Math.random() * 3);
