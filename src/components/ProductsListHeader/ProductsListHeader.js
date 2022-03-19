@@ -4,20 +4,18 @@ import ProductsFilterLabels from '../ProductsFilterLabels/ProductsFilterLabels'
 import ProductsFiltersMobileBtn from '../ProductsFiltersMobileBtn/ProductsFiltersMobileBtn'
 import ProductsPageSize from '../ProductsPageSize/ProductsPageSize'
 import ProductsPageSizeLength from '../ProductsPageSizeLength/ProductsPageSizeLength';
+import { useSelector } from "react-redux";
+
 const ProductsListHeader = ({sortedProductsLength, toggleSideBar}) => {
+  const productsListFilters = useSelector((store) => store.app.productsListFilters);
 
   return (
     <div className="products__main__header">
-      <div className='products__main__header__content'>
-      {sortedProductsLength > 0 && 
-        <div className='products__page-size'>
-          <ProductsPageSizeLength sortedProductsLength={sortedProductsLength}/>
-          <ProductsPageSize sortedProductsLength={sortedProductsLength}/>
-        </div>}
-        <ProductsFiltersMobileBtn toggleSideBar={toggleSideBar}/>
+      {sortedProductsLength > 0 && <ProductsPageSizeLength sortedProductsLength={sortedProductsLength}/>}
+      {sortedProductsLength > 0 && <ProductsPageSize sortedProductsLength={sortedProductsLength}/> }
+      <ProductsFiltersMobileBtn toggleSideBar={toggleSideBar}/>
       {sortedProductsLength > 0 && <ProductsSort />}
-      </div>
-      <ProductsFilterLabels />
+      {productsListFilters.length > 0 && <ProductsFilterLabels />}
     </div>
   )
 }
