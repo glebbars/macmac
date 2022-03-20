@@ -11,10 +11,11 @@ const ProductsList = () => {
   const sortType = useSelector(store => store.app.sortType)
   const pageSize = useSelector(store => store.app.pageSize)
   const dispatch = useDispatch()
-  
+
   useEffect(() => {
     setCurrentPage(1)
-  }, [productsListFilters])
+    window.scrollTo(0, 0)
+  }, [productsListFilters, pageSize, sortType])
   
   const filteredByCategoryArr = productsArr.filter(product => {
     const currentPathName = window.location.pathname
@@ -38,19 +39,19 @@ const ProductsList = () => {
     switch (sortType){
       case '': return;
       case 'popularity': return;
+      case 'novelty': return;
       case 'price-decrease': return b.price - a.price;
       case 'price-increase': return a.price - b.price;
     }
   })
-  
+
   useEffect(() => {
     dispatch({
       type: 'UPDATE_SORTED_PRODUCTS_LENGTH',
       payload: sortedProductsArr.length
     })
-
-  }, [filteredProductsArr])
-
+  }, [productsArr, productsListFilters])
+  
   
   
   const currentTableData = useMemo(() => {
@@ -61,6 +62,10 @@ const ProductsList = () => {
 
   const onPageChange = (page) => {
     setCurrentPage(page)
+    dispatch({
+      type: 'UPDATE_PAGE_NUM',
+      payload: page
+    })
     window.scrollTo(0, 0)
   }
   

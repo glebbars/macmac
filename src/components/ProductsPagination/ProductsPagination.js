@@ -1,6 +1,7 @@
 import React from 'react';
 import classnames from 'classnames';
 import { useProductsPagination, DOTS } from '../useProductsPagination/useProductsPagination';
+import { useDispatch } from 'react-redux';
 
 const ProductsPagination = props => {
   const {
@@ -11,6 +12,8 @@ const ProductsPagination = props => {
     pageSize,
     className
   } = props;
+
+  const dispatch = useDispatch()
 
   const paginationRange = useProductsPagination({
     currentPage,
@@ -25,11 +28,19 @@ const ProductsPagination = props => {
 
   const onNext = () => {
     onPageChange(currentPage + 1);
+    dispatch({
+      type: 'UPDATE_PAGE_NUM',
+      payload: currentPage + 1
+    })
     window.scrollTo(0, 0)
   };
 
   const onPrevious = () => {
     onPageChange(currentPage - 1);
+    dispatch({
+      type: 'UPDATE_PAGE_NUM',
+      payload: currentPage - 1
+    })
     window.scrollTo(0, 0)
   };
 

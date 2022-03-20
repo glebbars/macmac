@@ -1,5 +1,5 @@
-import React, {useState} from "react";
-import { NavLink, Link } from "react-router-dom";
+import React, {useEffect, useState} from "react";
+import { NavLink, Link, useLocation } from "react-router-dom";
 import logo from '../../img/logo.svg'
 import HeaderSearch from '../HeaderSearch/HeaderSearch'
 import {CustomDropDownLinks} from "../CustomDropDown/CustomDropDown";
@@ -12,7 +12,13 @@ const HeaderMenu = () => {
 
   const dispatch = useDispatch()
 
+  const location = useLocation()
+
   const activeClass = openedBurger ? '_active' : ''
+
+  useEffect(() =>{
+    setOpenedBurger(false)
+  }, [location])
 
 
   return (

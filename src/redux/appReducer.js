@@ -9,20 +9,22 @@ import {
   REMOVE_PRODUCTS_LIST_FILTER,
   UPDATE_SORT_TYPE,
   UPDATE_PAGE_SIZE,
-  UPDATE_SORTED_PRODUCTS_LENGTH
+  UPDATE_SORTED_PRODUCTS_LENGTH,
+  UPDATE_PAGE_NUM
 } from "./actions/types";
 
 
 export const initialStore = {
-    productsArr: [],
-    productsListFilters: [],
-    sortType: 'popularity',
-    pageSize: 24,
-    sortedProductsLength: 0,
+  sortType: 'popularity',
+  pageSize: 24,
+  sortedProductsLength: 0,
+  productsArr: [],
+  productsListFilters: [],
+  pageNum: 1,
     // favorites: [],
     // addedToBag: [],
-    favorites: JSON.parse(localStorage.getItem("favorites")) || [],
-    addedToBag: JSON.parse(localStorage.getItem("addedToBag")) || [],
+  favorites: JSON.parse(localStorage.getItem("favorites")) || [],
+  addedToBag: JSON.parse(localStorage.getItem("addedToBag")) || [],
 }
 
 const appReducer = (store = initialStore, action) => {
@@ -65,12 +67,17 @@ const appReducer = (store = initialStore, action) => {
         ...store,
         sortedProductsLength: action.payload
       }
+    case UPDATE_PAGE_NUM: 
+      return{
+        ...store,
+        pageNum: action.payload
+      }  
     case ADD_PRODUCTS_LIST_FILTER:
     case REMOVE_PRODUCTS_LIST_FILTER:
       return {
         ...store,
         productsListFilters: [...action.payload],
-      };
+      }; 
 
     default:
       return store;
