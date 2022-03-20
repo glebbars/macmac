@@ -8,16 +8,30 @@ const ProductsSort = () => {
   const [openedMenu, setOpenedMenu] = useState(false)
   const [sortName, setSortName] = useState('Новизне')
   const dispatch = useDispatch()
+  const [completedOnMob, setCompletedonMob] = useState(false)
 
-  const handleChange = (value, name) => {
-    if(window.innerWidth > 480){
-      setOpenedMenu(false)
-    }
+  
+  const handleDefaultComplition = (value, name) => {
+    setOpenedMenu(false)
     setSortName(name)
     dispatch({
       type: 'UPDATE_SORT_TYPE',
       payload: value
     })
+  }
+  
+  const handleMobileComplition = (value, name) => {
+    if(completedOnMob){
+      handleDefaultComplition(value, name)
+    }
+  }
+
+  const handleChange = (value, name) => {
+    if(window.innerWidth > 480){
+      handleDefaultComplition(value, name)
+    } else{
+      handleMobileComplition(value, name)
+    }
   }
 
   return(
