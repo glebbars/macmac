@@ -1,7 +1,7 @@
 {
   "posts": [
     {
-      "category": "iphone",
+      "category": "1 iphone",
       "model": "11",
       "capacity": "64gb",
       "color": "black",
@@ -15,7 +15,7 @@
       "id": 1
     },
     {
-      "category": "iphone",
+      "category": "2 iphone",
       "model": "se 2020",
       "capacity": "128gb",
       "color": "black",
@@ -29,7 +29,7 @@
       "id": 2
     },
     {
-      "category": "iphone",
+      "category": "3 iphone",
       "model": "13 pro",
       "capacity": "1tb",
       "color": "gold",
@@ -43,7 +43,7 @@
       "id": 3
     },
     {
-      "category": "iphone",
+      "category": "4 iphone",
       "model": "se 2020",
       "capacity": "128gb",
       "color": "product red",
@@ -57,7 +57,7 @@
       "id": 4
     },
     {
-      "category": "iphone",
+      "category": "5 iphone",
       "model": "13 mini",
       "capacity": "256gb",
       "color": "pink",
@@ -71,7 +71,7 @@
       "id": 5
     },
     {
-      "category": "iphone",
+      "category": "6 iphone",
       "model": "12 pro max",
       "capacity": "512gb",
       "color": "pacific blue",
@@ -85,7 +85,7 @@
       "id": 6
     },
     {
-      "category": "iphone",
+      "category": "7 iphone",
       "model": "11",
       "capacity": "64gb",
       "color": "black",
@@ -103,7 +103,7 @@
       "id": 7
     },
     {
-      "category": "ipad",
+      "category": "8 ipad",
       "model": "5",
       "capacity": "256gb",
       "color": "graphit",
@@ -117,7 +117,7 @@
       "id": 8
     },
     {
-      "category": "iphone",
+      "category": "9 iphone",
       "model": "11",
       "capacity": "64gb",
       "color": "black",
@@ -131,7 +131,7 @@
       "id": 9
     },
     {
-      "category": "iphone",
+      "category": "10 iphone",
       "model": "se 2020",
       "capacity": "128gb",
       "color": "black",
@@ -145,7 +145,7 @@
       "id": 10
     },
     {
-      "category": "iphone",
+      "category": "11 iphone",
       "model": "13 pro",
       "capacity": "1tb",
       "color": "gold",
@@ -159,7 +159,7 @@
       "id": 11
     },
     {
-      "category": "iphone",
+      "category": "12 iphone",
       "model": "se 2020",
       "capacity": "128gb",
       "color": "product red",
@@ -173,7 +173,7 @@
       "id": 12
     },
     {
-      "category": "iphone",
+      "category": "13 iphone",
       "model": "13 mini",
       "capacity": "256gb",
       "color": "pink",
@@ -187,7 +187,7 @@
       "id": 13
     },
     {
-      "category": "iphone",
+      "category": "14 iphone",
       "model": "12 pro max",
       "capacity": "512gb",
       "color": "pacific blue",
@@ -201,7 +201,7 @@
       "id": 14
     },
     {
-      "category": "iphone",
+      "category": "15 iphone",
       "model": "11",
       "capacity": "64gb",
       "color": "black",
@@ -219,7 +219,7 @@
       "id": 15
     },
     {
-      "category": "iphone",
+      "category": "16 iphone",
       "model": "12 pro max",
       "capacity": "256gb",
       "color": "pacific blue",
@@ -233,7 +233,7 @@
       "id": 16
     },
     {
-      "category": "iphone",
+      "category": "17 iphone",
       "model": "11",
       "capacity": "64gb",
       "color": "black",
@@ -247,7 +247,7 @@
       "id": 17
     },
     {
-      "category": "iphone",
+      "category": "18 iphone",
       "model": "se 2020",
       "capacity": "128gb",
       "color": "black",
@@ -261,7 +261,7 @@
       "id": 18
     },
     {
-      "category": "iphone",
+      "category": "19 iphone",
       "model": "13 pro",
       "capacity": "1tb",
       "color": "gold",
@@ -275,7 +275,7 @@
       "id": 19
     },
     {
-      "category": "iphone",
+      "category": "20 iphone",
       "model": "se 2020",
       "capacity": "128gb",
       "color": "product red",
@@ -289,7 +289,7 @@
       "id": 20
     },
     {
-      "category": "iphone",
+      "category": "21 iphone",
       "model": "13 mini",
       "capacity": "256gb",
       "color": "pink",
@@ -303,7 +303,7 @@
       "id": 21
     },
     {
-      "category": "iphone",
+      "category": "22 iphone",
       "model": "12 pro max",
       "capacity": "512gb",
       "color": "pacific blue",
@@ -317,7 +317,7 @@
       "id": 22
     },
     {
-      "category": "iphone",
+      "category": "23 iphone",
       "model": "11",
       "capacity": "64gb",
       "color": "black",
@@ -335,7 +335,7 @@
       "id": 23
     },
     {
-      "category": "iphone",
+      "category": "24 iphone",
       "model": "12 pro max",
       "capacity": "256gb",
       "color": "pacific blue",
@@ -349,7 +349,7 @@
       "id": 24
     },
     {
-      "category": "iphone",
+      "category": "25 iphone",
       "model": "11",
       "capacity": "64gb",
       "color": "black",
@@ -363,7 +363,7 @@
       "id": 25
     },
     {
-      "category": "iphone",
+      "category": "26 iphone",
       "model": "se 2020",
       "capacity": "128gb",
       "color": "black",
@@ -377,7 +377,7 @@
       "id": 26
     },
     {
-      "category": "iphone",
+      "category": "27 iphone",
       "model": "13 pro",
       "capacity": "1tb",
       "color": "gold",
@@ -391,7 +391,7 @@
       "id": 27
     },
     {
-      "category": "iphone",
+      "category": "28 iphone",
       "model": "se 2020",
       "capacity": "128gb",
       "color": "product red",
@@ -405,7 +405,7 @@
       "id": 28
     },
     {
-      "category": "iphone",
+      "category": "29 iphone",
       "model": "13 mini",
       "capacity": "256gb",
       "color": "pink",
@@ -419,7 +419,7 @@
       "id": 29
     },
     {
-      "category": "iphone",
+      "category": "30 iphone",
       "model": "12 pro max",
       "capacity": "512gb",
       "color": "pacific blue",
@@ -433,7 +433,7 @@
       "id": 30
     },
     {
-      "category": "iphone",
+      "category": "31 iphone",
       "model": "11",
       "capacity": "64gb",
       "color": "black",
@@ -451,7 +451,7 @@
       "id": 31
     },
     {
-      "category": "iphone",
+      "category": "32 iphone",
       "model": "12 pro max",
       "capacity": "256gb",
       "color": "pacific blue",

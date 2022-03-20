@@ -58,8 +58,11 @@ const ProductsList = () => {
     const lastPageIndex = firstPageIndex + pageSize;
     return sortedProductsArr.slice(firstPageIndex, lastPageIndex);
   }, [currentPage, sortedProductsArr]);
-  
-  console.log(currentTableData)
+
+  const onPageChange = (page) => {
+    setCurrentPage(page)
+    window.scrollTo(0, 0)
+  }
   
   return (
     <>
@@ -69,7 +72,7 @@ const ProductsList = () => {
         currentPage={currentPage}
         totalCount={sortedProductsArr.length}
         pageSize={pageSize}
-        onPageChange={page => setCurrentPage(page)}
+        onPageChange={page => onPageChange(page)}
       />
     </>
   );

@@ -25,10 +25,12 @@ const ProductsPagination = props => {
 
   const onNext = () => {
     onPageChange(currentPage + 1);
+    window.scrollTo(0, 0)
   };
 
   const onPrevious = () => {
     onPageChange(currentPage - 1);
+    window.scrollTo(0, 0)
   };
 
   let lastPage = paginationRange[paginationRange.length - 1];
