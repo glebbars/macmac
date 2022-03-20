@@ -2267,11 +2267,6 @@ body{
   }
 
 
-
-
-
-
-
   &__depict{
     margin: 0 22.5px 0 0;
 
@@ -2320,6 +2315,54 @@ body{
         grid-area: 3/1/4/3;
         font-size: 14px;
         margin-top: 10px;
+      }
+    }
+  }
+
+  &__edit-complition{
+    display: none;
+    padding: 20px 24px 30px;
+    background: #F8F9FA;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    @media(max-width: 480px){
+      display: block;
+    }
+
+    &__text{
+      text-align: center;
+      display: block;
+      font-size: 14px;
+      letter-spacing: 0.005em;
+      color: #343A40;
+    }
+
+    &__btns-wrapper{
+      @include flex-space-center;
+      margin: 25px auto 0;
+      max-width: 330px;
+    }
+
+    &__btn{
+      color: white;
+      background: #FA530D;
+      text-align: center;
+      padding: 12px 24px;
+      width: 156px;
+      border-radius: 8px;
+      box-sizing: border-box;
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: 0.0025em;
+      margin: 0 0 0 2px;
+
+      &_cancel{
+        background: #FFEEE7;
+        color: #FA530D;
+        margin: 0 2px 0 0; 
       }
     }
   }

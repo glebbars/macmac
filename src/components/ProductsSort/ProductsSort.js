@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { useDispatch } from "react-redux";
 import sortIcon from '../../img/sort-icon.svg'
+import ProductsEditComplition from '../ProductsEditComplition/ProductsEditComplition'
 
 const ProductsSort = () => {
   const [openedMenu, setOpenedMenu] = useState(false)
@@ -48,6 +49,7 @@ const ProductsSort = () => {
              Увеличению цены
           </label>
           <div onClick={() => setOpenedMenu(false)} className="products__sidebar__closing-cross"></div>
+          <ProductsEditComplition />
         </div>
       </div>
     </div>
