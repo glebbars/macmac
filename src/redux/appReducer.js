@@ -15,12 +15,12 @@ import {
 
 
 export const initialStore = {
-  sortType: 'popularity',
+  sortType: 'novelty',
   pageSize: 24,
   sortedProductsLength: 0,
-  productsArr: [],
   productsListFilters: [],
   pageNum: 1,
+  productsArr: [],
     // favorites: [],
     // addedToBag: [],
   favorites: JSON.parse(localStorage.getItem("favorites")) || [],

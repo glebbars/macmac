@@ -11,7 +11,6 @@ import {useLocation} from 'react-router-dom'
 import ProductsListHeader from '../ProductsListHeader/ProductsListHeader'
 
 const ProductsPage = () => {
-  const sortedProductsLength = useSelector((store) => store.app.sortedProductsLength);
   const [activeSideBar, setActiveSideBar] = useState(false)
   const location = useLocation()
 
@@ -25,7 +24,7 @@ const ProductsPage = () => {
       <div className="products__section">
         <ProductsSideBar closeSideBar={() => setActiveSideBar(false)} activeSideBar={activeSideBar}/>
         <div className="products__main">
-           <ProductsListHeader sortedProductsLength={sortedProductsLength} toggleSideBar={() => setActiveSideBar(!activeSideBar)}/>
+           <ProductsListHeader toggleSideBar={() => setActiveSideBar(!activeSideBar)}/>
           <ProductsList location={location}/>
         </div>
         {activeSideBar && <div onClick={() => setActiveSideBar(false)} className="products__sidebar__closing-popup"></div>}

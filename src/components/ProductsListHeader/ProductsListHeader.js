@@ -6,8 +6,9 @@ import ProductsPageSize from '../ProductsPageSize/ProductsPageSize'
 import ProductsPageSizeLength from '../ProductsPageSizeLength/ProductsPageSizeLength';
 import { useSelector } from "react-redux";
 
-const ProductsListHeader = ({sortedProductsLength, toggleSideBar}) => {
+const ProductsListHeader = ({toggleSideBar}) => {
   const productsListFilters = useSelector((store) => store.app.productsListFilters);
+  const sortedProductsLength = useSelector((store) => store.app.sortedProductsLength);
 
   return (
     <div className="products__main__header">

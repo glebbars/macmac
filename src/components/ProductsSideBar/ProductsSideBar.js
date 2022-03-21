@@ -19,7 +19,6 @@ const ProductsSideBar = ({activeSideBar, closeSideBar}) => {
         payload: [],
       });
     }
-
   }, [location])
 
   return(
@@ -28,8 +27,8 @@ const ProductsSideBar = ({activeSideBar, closeSideBar}) => {
       { categoryRouteName === 'all-products' && <p className="products__sidebar__subheader">Все товары</p> }
 
       { categoryRouteName === 'all-products' ? 
-        <CustomDropDownLinks links options={categoryProductsOptions} header='Apple' headerClass='products__sidebar__category-header' listClass=''/> :
-        <CustomDropDownCheckboxes initiallyActive checkboxes options={modelIphoneOptions} header='Модель' headerClass='products__sidebar__category-header products__sidebar__category-header_checkboxes' listClass='products__sidebar__category-list'/> 
+        <CustomDropDownLinks options={categoryProductsOptions} header='Apple' headerClass='products__sidebar__category-header' listClass=''/> :
+        <CustomDropDownCheckboxes activeSideBar={activeSideBar} closeSideBar={closeSideBar} initiallyActive options={modelIphoneOptions} header='Модель' headerClass='products__sidebar__category-header products__sidebar__category-header_checkboxes' listClass='products__sidebar__category-list'/> 
       }
       <div onClick={closeSideBar} className="products__sidebar__closing-cross"></div>
   </div>
