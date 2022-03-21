@@ -8,10 +8,9 @@ const ProductsSort = () => {
   const [openedMenu, setOpenedMenu] = useState(false)
   const [sortName, setSortName] = useState('Новизне')
   const dispatch = useDispatch()
-  const [completedOnMob, setCompletedonMob] = useState(false)
 
   
-  const handleDefaultComplition = (value, name) => {
+  const handleComplete = (value, name) => {
     setOpenedMenu(false)
     setSortName(name)
     dispatch({
@@ -20,17 +19,10 @@ const ProductsSort = () => {
     })
   }
   
-  const handleMobileComplition = (value, name) => {
-    if(completedOnMob){
-      handleDefaultComplition(value, name)
-    }
-  }
 
   const handleChange = (value, name) => {
     if(window.innerWidth > 480){
-      handleDefaultComplition(value, name)
-    } else{
-      handleMobileComplition(value, name)
+      handleComplete(value, name)
     }
   }
 
@@ -63,7 +55,7 @@ const ProductsSort = () => {
              Увеличению цены
           </label>
           <div onClick={() => setOpenedMenu(false)} className="products__sidebar__closing-cross"></div>
-          <ProductsEditComplition />
+          <ProductsEditComplition handleComplete={handleComplete} handleClose={() => setOpenedMenu(false)}/>
         </div>
       </div>
     </div>
