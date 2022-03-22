@@ -7,6 +7,7 @@ const ProductsPageSizeLength = ({sortedProductsLength}) => {
   const [currentArrLength, setCurrentArrLength] = useState('1-24')
 
   useEffect(() => {
+    console.log('()')
     if(sortedProductsLength > pageSize){
       if(pageNum*24 > sortedProductsLength){
         setCurrentArrLength(`${((pageNum-1) *24) + 1}-${sortedProductsLength}`)
@@ -16,7 +17,7 @@ const ProductsPageSizeLength = ({sortedProductsLength}) => {
     } else{
       setCurrentArrLength(`1-${sortedProductsLength}`)
     }
-  }, [pageSize, pageNum])
+  }, [sortedProductsLength, pageSize, pageNum])
 
   const versionOfResultWord = String(sortedProductsLength).slice(-1) === '1' ? 'результата' : 'результатов'
 

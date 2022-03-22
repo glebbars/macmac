@@ -14,7 +14,7 @@ const ProductsList = () => {
 
   useEffect(() => {
     if(currentPage !==1) {
-      setCurrentPage(1)
+      onPageChange(1)
     }
     // window.scrollTo(0, 0)
   }, [productsListFilters, pageSize, sortType])
