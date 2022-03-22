@@ -10,17 +10,19 @@ const sortTypes = {
   'price-increase': 'Увеличению цены',
 }
 
-const ProductsSort = () => {
+const ProductsSort = ({sortedProductsLength}) => {
   const [openedMenu, setOpenedMenu] = useState(false)
   const [sortTypeObj, setSortTypeObj] = useState({
     name:'Новизне',
     value: 'novelty'
   })
   const sortType = useSelector((store) => store.app.sortType);
+
   const dispatch = useDispatch()
 
+
   useEffect(() => {
-    console.log(sortType, sortTypeObj)
+    // console.log(sortType, sortTypeObj)
     if(sortTypeObj.value !== sortType){
       setSortTypeObj({
         name: sortTypes[sortType],
@@ -85,7 +87,7 @@ const ProductsSort = () => {
              Увеличению цены
           </label>
           <div onClick={() => setOpenedMenu(false)} className="products__sidebar__closing-cross"></div>
-          <ProductsEditComplition handleComplete={() => handleComplete(sortTypeObj.value, sortTypeObj.name)} handleClose={removeSortType}/>
+          <ProductsEditComplition actionContent={['sort', sortedProductsLength ]}  handleComplete={() => handleComplete(sortTypeObj.value, sortTypeObj.name)} handleClose={removeSortType}/>
         </div>
       </div>
     </div>

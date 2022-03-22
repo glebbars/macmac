@@ -15,7 +15,7 @@ const ProductsListHeader = ({toggleSideBar}) => {
       {sortedProductsLength > 0 && <ProductsPageSizeLength sortedProductsLength={sortedProductsLength}/>}
       {sortedProductsLength > 0 && <ProductsPageSize sortedProductsLength={sortedProductsLength}/> }
       <ProductsFiltersMobileBtn toggleSideBar={toggleSideBar}/>
-      {sortedProductsLength > 0 && <ProductsSort />}
+      {sortedProductsLength > 0 && <ProductsSort sortedProductsLength={sortedProductsLength}/>}
       {productsListFilters.length > 0 && <ProductsFilterLabels />}
     </div>
   )

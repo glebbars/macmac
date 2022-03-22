@@ -11,7 +11,7 @@ export const CustomDropDownLinks = ({ header, options, headerClass, listClass}) 
   const [clickedBtn, setClickedBtn] = useState(true)
 
   useEffect(() => {
-    if(window.innerWidth <= 375){
+    if(window.innerWidth <= 480){
       setClickedBtn(false)
     }
   }, [])
@@ -40,8 +40,7 @@ export const CustomDropDownCheckboxes = ({ activeSideBar, closeSideBar, initiall
   const dispatch = useDispatch()
   const [filtersTextArr, setFiltersTextArr] = useState([])
 
-  console.log('render')
-
+  // console.log('render')
 
   useEffect(() => {
     if(window.innerWidth <= 480 && clickedBtn){
@@ -50,15 +49,16 @@ export const CustomDropDownCheckboxes = ({ activeSideBar, closeSideBar, initiall
   }, [activeSideBar])
 
   useEffect(() => {
-    // if(window.innerWidth > 480){
-      updateFiltersTextArr()
-    // }
+    updateFiltersTextArr()
   }, [productsListFilters, activeSideBar])
 
 
   const updateFiltersTextArr = () => {
     const filteredProductsListArr = productsListFilters.map(el => el.text)
-    setFiltersTextArr(filteredProductsListArr)
+    if(filteredProductsListArr.length !== filtersTextArr.length){
+      console.log(filteredProductsListArr, filtersTextArr)
+      setFiltersTextArr(filteredProductsListArr)
+    }
   }
 
 
@@ -156,6 +156,7 @@ export const CustomDropDownCheckboxes = ({ activeSideBar, closeSideBar, initiall
           </label>
         )}
         <ProductsEditComplition 
+          actionContent={['filter', filtersTextArr ]}
           handleComplete={() => handleCompleteMob(filtersTextArr)} 
           handleClose={removeAllFilters}
         />

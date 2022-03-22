@@ -50,8 +50,7 @@ const ProductsList = () => {
       type: 'UPDATE_SORTED_PRODUCTS_LENGTH',
       payload: sortedProductsArr.length
     })
-  }, [productsArr, productsListFilters])
-  
+  }, [productsArr, sortedProductsArr])
   
   
   const currentTableData = useMemo(() => {
