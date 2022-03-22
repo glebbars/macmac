@@ -23,15 +23,15 @@ const ProductsPageSize = ({sortedProductsLength}) => {
       <span onClick={() => setOpenedMenu(!openedMenu)} className={`products__sort__text ${openedMenu ? 'products__sort__text_active' : ''}`}>{pageSize}</span>
       <div className={`products__sort__select  ${openedMenu ? 'products__sort__select_active' : ''}`}>
         <label className='products__sort__select__label'>
-          <input onClick={() => handleChange(24, '24 результатов')} type="radio" name='sortName'/>
+          <input className='products__sort__select__input' onClick={() => handleChange(24, '24 результатов')} type="radio" name='sortName'/>
           24 результатов
         </label>
         <label className='products__sort__select__label'>
-          <input onClick={() => handleChange(48, '48 результатов')} type="radio" name='sortName'/>
+          <input className='products__sort__select__input' onClick={() => handleChange(48, '48 результатов')} type="radio" name='sortName'/>
           48 результатов
         </label>
         <label className='products__sort__select__label'>
-          <input onClick={() => handleChange(64, '64 результатов')}  type="radio" name='sortName'/>
+          <input className='products__sort__select__input' onClick={() => handleChange(64, '64 результатов')}  type="radio" name='sortName'/>
           64 результатов
         </label>
       </div>

@@ -38,41 +38,14 @@ export const CustomDropDownCheckboxes = ({ activeSideBar, closeSideBar, initiall
   const [clickedBtn, setClickedBtn] = useState(initiallyActive)
   const productsListFilters = useSelector((store) => store.app.productsListFilters);
   const dispatch = useDispatch()
-  const [filtersTextArr, setFiltersTextArr] = useState([])
 
-  // console.log('render')
+  console.log('render')
 
   useEffect(() => {
     if(window.innerWidth <= 480 && clickedBtn){
       setClickedBtn(false)
     }
   }, [activeSideBar])
-
-  useEffect(() => {
-    updateFiltersTextArr()
-  }, [productsListFilters, activeSideBar])
-
-
-  const updateFiltersTextArr = () => {
-    const filteredProductsListArr = productsListFilters.map(el => el.text)
-    if(filteredProductsListArr.length !== filtersTextArr.length){
-      console.log(filteredProductsListArr, filtersTextArr)
-      setFiltersTextArr(filteredProductsListArr)
-    }
-  }
-
-
-  const toggleFilters = (filterName, text) => {
-    if(window.innerWidth > 480){
-      handleComplete(filterName, text)
-    } else{
-      if(!filtersTextArr.includes(text)){
-        setFiltersTextArr([...filtersTextArr, text])
-      } else{
-        setFiltersTextArr(filtersTextArr.filter(el => el !== text))
-      }
-    }
-  };
 
   const addProductsFilter = (text, filterName) => {
     dispatch({
@@ -104,23 +77,6 @@ export const CustomDropDownCheckboxes = ({ activeSideBar, closeSideBar, initiall
     }
   }
 
-  const handleCompleteMob = (filtersTextArr) => {
-    const filterObjectsArr = filtersTextArr.map(text => {
-      const filterObj = {
-        text: text,
-        filterName: options.find(el => el.text === text).filterName
-      }
-      return filterObj
-    })
-
-    dispatch({
-      type: 'ADD_PRODUCTS_LIST_FILTER',
-      payload: filterObjectsArr
-    });
-    
-    closeSideBar()
-  }
-
   const removeAllFilters = () => {
     dispatch({
       type: 'REMOVE_PRODUCTS_LIST_FILTER',
@@ -140,15 +96,14 @@ export const CustomDropDownCheckboxes = ({ activeSideBar, closeSideBar, initiall
       <div className={`drop-down__list ${listClass} ${clickedBtn ? `drop-down__list_active ${listClass}_active` : ''}`}>
         <div className="products__sidebar__arrow-back" onClick={() => { 
           setClickedBtn(false)
-          updateFiltersTextArr()
         }}></div>
         <h4 className="products__sidebar__header products__sidebar__header__modal">{header}</h4>
 
         {options.map((option, index) => 
           <label key={index}className="products__sidebar__filter">
             <input 
-              checked={filtersTextArr.includes(option.text)} 
-              onChange={() => toggleFilters(option.filterName, option.text)} 
+              checked={productsListFilters.some(el => el.text === option.text)} 
+              onChange={() => handleComplete(option.filterName, option.text)} 
               className="products__sidebar__filter__checkbox"   
               type="checkbox" 
             />
@@ -156,8 +111,8 @@ export const CustomDropDownCheckboxes = ({ activeSideBar, closeSideBar, initiall
           </label>
         )}
         <ProductsEditComplition 
-          actionContent={['filter', filtersTextArr ]}
-          handleComplete={() => handleCompleteMob(filtersTextArr)} 
+          // actionContent={['filter', filtersTextArr ]}
+          handleComplete={closeSideBar} 
           handleClose={removeAllFilters}
         />
       </div>

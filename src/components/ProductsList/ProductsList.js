@@ -13,8 +13,10 @@ const ProductsList = () => {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    setCurrentPage(1)
-    window.scrollTo(0, 0)
+    if(currentPage !==1) {
+      setCurrentPage(1)
+    }
+    // window.scrollTo(0, 0)
   }, [productsListFilters, pageSize, sortType])
   
   const filteredByCategoryArr = productsArr.filter(product => {
