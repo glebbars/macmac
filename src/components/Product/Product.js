@@ -19,9 +19,8 @@ const Product = () => {
       {/* <ProductsPageBreadcrumbs /> */}
       <div className='product__content'>
         <ProductSlider />
-        <ProductMain productDataObj={productDataObj}/>
+         {productDataObj.category && <ProductMain productDataObj={productDataObj}/>}
       </div>
-
     </div>
   )
 }

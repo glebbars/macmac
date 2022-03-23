@@ -2749,5 +2749,90 @@ body{
         }
       }
     }
+
+    &__price{
+      font-weight: 500;
+      font-size: 35px;
+      letter-spacing: 0.0025em;
+      color: #343A40;
+      margin: 30px 0;
+    }
+
+    &__line{
+      content: '';
+      height: 1px;
+      width: 100%;
+      background: #E9ECEF;
+      border-radius: 5px;
+      margin-bottom: 25px;
+    }
+
+    &__color,
+    &__capacity{
+      display: flex;
+
+      &__text{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.0025em;
+        color: #6C757D;
+      }
+
+      &__option{
+        border-radius: 8px;
+        border: 1px solid #DEE2E6;
+
+        &_active{
+          border: 2px solid #FA530D;
+          color: #FA530D;
+          font-weight: 500;
+        }
+      }
+    }
+
+    &__capacity{
+      &__option{
+        width: 82px;
+        height: 40px;
+        box-sizing: border-box;
+        padding: 3px;
+        font-weight: 400;
+        font-size: 14px;
+        text-align: center;
+        letter-spacing: 0.0025em;
+        color: #343A40;
+        background-color: white;
+        margin-right: 12px;
+        padding: 10px 0;
+
+        &:first-of-type{
+          margin-left: 32px;
+        }
+
+        &:last-of-type{
+          margin-right: 0;
+        }
+      }
+    }
+
+    &__color{
+      margin-bottom: 16px;
+      &__option{
+        font-size: 0;
+        margin-right: 15px;
+        width: 30px;
+        height: 30px;
+        box-sizing: border-box;
+
+        &:first-of-type{
+          margin-left: 50px;
+        }
+
+        &:last-of-type{
+          margin-right: 0;
+        }
+      }
+    }
   }
 }
