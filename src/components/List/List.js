@@ -1,6 +1,6 @@
 import react from 'react'
 import { useDispatch, useSelector } from "react-redux";
-import Product from "../Product/Product";
+import ProductCard from "../ProductCard/ProductCard";
 
 
 const List = ({productsArr}) => {
@@ -45,7 +45,7 @@ const List = ({productsArr}) => {
      {productsArr.length > 0 ? 
      <div className="products__list">
        {productsArr.map(product => (
-        <Product
+        <ProductCard
           key={product.id}
           toggleFavorites={toggleFavorites}
           product={product}

@@ -45,7 +45,7 @@ export const getPriceOfProductFromDB = (allValues) =>  {
   .then(pricesObj => {
     return Object.fromEntries(
       Object.entries(pricesObj)
-        .filter(([key, value]) => key.includes(filterredValuesArr.category) && key.includes(filterredValuesArr.model) && key.includes(filterredValuesArr.capacity) && key.includes(filterredValuesArr.color)
+        .filter(([key, value]) => key.includes(filterredValuesArr.category.toLowerCase()) && key.includes(filterredValuesArr.model.toLowerCase()) && key.includes(filterredValuesArr.capacity.toLowerCase()) && key.includes(filterredValuesArr.color.toLowerCase())
       )
     )
   }).then(data => Object.values(data)[0] ? Object.values(data)[0] : allValues.price)
@@ -91,62 +91,62 @@ const uploadImage = async (compressedImgs) => {
 }
 
 export const initialChoices = [
-  { id: 'iphone', name: 'iPhone' },
-  { id: 'ipad', name: 'iPad' },
-  { id: 'mac', name: 'Mac' },
-  { id: 'watch', name: 'Apple watch' },
-  { id: 'airpods', name: 'AirPods' },
-  { id: 'accessories', name: 'Accessories' },
-  { id: 'dyson', name: 'dyson' },
+  { id: 'iPhone', name: 'iPhone' },
+  { id: 'iPad', name: 'iPad' },
+  { id: 'Mac', name: 'Mac' },
+  { id: 'Apple watch', name: 'Apple watch' },
+  { id: 'AirPods', name: 'AirPods' },
+  { id: 'Accessories', name: 'Accessories' },
+  { id: 'Dyson', name: 'Dyson' },
 ]
 
 
 export const getModelChoices = (value) => {
   switch(value){
-    case 'iphone': return iphoneModelChoices
-    case 'ipad': return ipadModelChoices
+    case 'iPhone': return iphoneModelChoices
+    case 'iPad': return ipadModelChoices
     default: return []
   }
 }
 
 const iphoneModelChoices = [
   { id: '11', name: '11' },
-  { id: 'se 2020', name: 'SE 2020' },
+  { id: 'SE 2020', name: 'SE 2020' },
   { id: '12', name: '12' },
   // { id: '12 mini', name: '12 Mini' },
-  { id: '12 pro', name: '12 Pro' },
-  { id: '12 pro max', name: '12 Pro Max' },
+  { id: '12 Pro', name: '12 Pro' },
+  { id: '12 Pro Max', name: '12 Pro Max' },
   { id: '13', name: '13' },
-  { id: '13 mini', name: '13 Mini' },
-  { id: '13 pro', name: '13 Pro' },
-  { id: '13 pro max', name: '13 Pro Max' },
+  { id: '13 Mini', name: '13 Mini' },
+  { id: '13 Pro', name: '13 Pro' },
+  { id: '13 Pro Max', name: '13 Pro Max' },
 ]
 
 const ipadModelChoices = [
   { id: '10.2 2021', name: '10.2 2021' },
   { id: '11 2021', name: '11 2021' },
   { id: '12.9 2021', name: '12.9 2021' },
-  { id: 'mini 6', name: 'mini 6' },
-  { id: 'air 4', name: 'Air 4' }
+  { id: 'Mini 6', name: 'Mini 6' },
+  { id: 'Air 4', name: 'Air 4' }
 ]
 
 export const getCapacityChoices = (value) => {
   switch(value){
     case '11':
-    case "se 2020":
+    case "SE 2020":
     case "12":
       return [capacityOptions["64"], capacityOptions["128"]]
 
-    case '12 pro':
-    case "12 pro max":
-    case "13 mini":
+    case '12 Pro':
+    case "12 Pro Max":
+    case "13 Mini":
       return [capacityOptions["256"], capacityOptions["512"]]
 
     case "13": 
       return [capacityOptions["128"], capacityOptions["256"], capacityOptions["512"]]
 
-    case "13 pro":
-    case "13 pro max":
+    case "13 Pro":
+    case "13 Pro Max":
       return [capacityOptions["128"], capacityOptions["256"], capacityOptions["512"], capacityOptions["1"]]
       
     default: return []
@@ -155,11 +155,11 @@ export const getCapacityChoices = (value) => {
 }
 
 const capacityOptions = {
-  "64":  { id: '64gb', name: '64GB' },
-  "128":{ id: '128gb', name: '128GB' },
-  "256": { id: '256gb', name: '256GB' },
-  "512":{ id: '512gb', name: '512GB' },
-  "1": { id: '1tb', name: '1TB' },
+  "64":  { id: '64Gb', name: '64Gb' },
+  "128":{ id: '128Gb', name: '128Gb' },
+  "256": { id: '256Gb', name: '256Gb' },
+  "512":{ id: '512Gb', name: '512Gb' },
+  "1": { id: '1Tb', name: '1Tb' },
 }
 
 export const getColorChoices = (value) => {
@@ -167,22 +167,22 @@ export const getColorChoices = (value) => {
     case '11':
       return [colorOptions["black"], colorOptions['product red'], colorOptions["white"],colorOptions["green"],colorOptions["purple"], colorOptions["yellow"]]
 
-    case "se 2020":
+    case "SE 2020":
       return [colorOptions["black"], colorOptions['product red'], colorOptions["white"]]
 
     case '12':
       return [colorOptions["black"], colorOptions['blue'], colorOptions["white"],colorOptions["green"],colorOptions["purple"], colorOptions["yellow"]]
 
-    case '12 pro':
-    case "12 pro max":
+    case '12 Pro':
+    case "12 Pro Max":
       return [colorOptions["pacific blue"], colorOptions['graphite'], colorOptions["gold"],colorOptions["silver"]]
 
-    case "13 mini":
+    case "13 Mini":
     case "13": 
       return [colorOptions["pink"], colorOptions['product red'], colorOptions["starlight"],colorOptions["midnight"], colorOptions["blue"],]
 
-    case "13 pro":
-    case "13 pro max":
+    case "13 Pro":
+    case "13 Pro Max":
       return [colorOptions["sierra blue"], colorOptions['graphite'], colorOptions["gold"],colorOptions["silver"]]
 
     default: return []
@@ -190,21 +190,21 @@ export const getColorChoices = (value) => {
 }
 
 const colorOptions =  {
-  'silver': { id: 'silver', name: 'Silver' },
-  'space grey': { id: 'space grey', name: 'Space Grey' },
-  'yellow': { id: 'yellow', name: 'Yellow' },
-  'gold': { id: 'gold', name: 'Gold' },
-  'midnight green': { id: 'midnight green', name: 'Midnight Green' },
-  'black': { id: 'black', name: 'Black' },
-  'blue': { id: 'blue', name: 'Blue' },
-  'green': { id: 'green', name: 'green' },
-  'product red': { id: 'product red', name: 'Product Red' },
-  'purple': { id: 'purple', name: 'Purple' },
-  'white': { id: 'white', name: 'White' },
-  'pacific blue': { id: 'pacific blue', name: 'Pacific Blue' },
-  'graphite': { id: 'graphite', name: 'Graphite' },
-  'pink': { id: 'pink', name: 'Pink' },
-  'midnight': { id: 'midnight', name: 'Midnight' },
-  'starlight': { id: 'starlight', name: 'Starlight' },
-  'sierra blue': { id: 'sierra blue', name: 'Sierra Blue' },
+  'silver': { id: 'Silver', name: 'Silver' },
+  'space grey': { id: 'Space Grey', name: 'Space Grey' },
+  'yellow': { id: 'Yellow', name: 'Yellow' },
+  'gold': { id: 'Gold', name: 'Gold' },
+  'midnight green': { id: 'Midnight Green', name: 'Midnight Green' },
+  'black': { id: 'Black', name: 'Black' },
+  'blue': { id: 'Blue', name: 'Blue' },
+  'green': { id: 'Green', name: 'green' },
+  'product red': { id: 'Product Red', name: 'Product Red' },
+  'purple': { id: 'Purple', name: 'Purple' },
+  'white': { id: 'White', name: 'White' },
+  'pacific blue': { id: 'Pacific Blue', name: 'Pacific Blue' },
+  'graphite': { id: 'Graphite', name: 'Graphite' },
+  'pink': { id: 'Pink', name: 'Pink' },
+  'midnight': { id: 'Midnight', name: 'Midnight' },
+  'starlight': { id: 'Starlight', name: 'Starlight' },
+  'sierra blue': { id: 'Sierra Blue', name: 'Sierra Blue' },
 }

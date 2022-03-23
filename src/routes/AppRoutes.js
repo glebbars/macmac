@@ -11,6 +11,7 @@ import ProductsPage from "../components/ProductsPage/ProductsPage";
 import NotFound from "../components/NotFound/NotFound";
 import Footer from '../components/Footer/Footer'
 import {categoryProductsOptions, modelIphoneOptions} from '../components/additionalObjects/additionalObjects'
+import Product from '../components/Product/Product'
 
 const AppRoutes = ({authProvider, dataProvider, history}) => {
   const dispatch = useDispatch();
@@ -37,6 +38,7 @@ const AppRoutes = ({authProvider, dataProvider, history}) => {
         <Route path="/" exact render={() => includeFooter(Main)}/>
         <Route path="/admin" exact render={() => <AdminPannel dataProvider={dataProvider} authProvider={authProvider}  history={history} />}/>
         <Route path="/category/:categoryName" exact render={() => includeFooter(ProductsPage)}/>
+        <Route path="/category/:categoryName/:id" exact render={() => includeFooter(Product)}/>
         <Route path="/favourites" exact render={() => includeFooter(Favourites)}/>
         <Route path="/bag" exact render={() => includeFooter(Bag)}/>
         <Route component={NotFound}/>

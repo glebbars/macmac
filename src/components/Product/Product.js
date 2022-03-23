@@ -1,31 +1,29 @@
-import React from "react";
-// import Star from "../Star/Star";
+import axios from 'axios';
+import React, { useEffect, useState } from 'react'
+import {useParams} from "react-router-dom";
+import ProductMain from '../ProductMain/ProductMain'
+import ProductSlider from '../ProductSlider/ProductSlider'
+import ProductsPageBreadcrumbs from '../ProductsPageBreadcrumbs/ProductsPageBreadcrumbs';
 
-const Product = ({
-  product,
-  toggleFavorites,
-  filledStar,
-  productCross,
-  removeFromTheBag
-}) => {
-  return (
-      <div className="product__container">
-        {/* {product && ( */}
-        <div className="product__img-container">
-          <img className="product__img" src={product.pictures[0].url} alt="Loading..." />
-        </div>
-        <span className="product__text">{product.category} {product.model} {product.color} {product.capacity}</span>
-        <span className="product__price">{product.price.toLocaleString()}.00 &#x20b4;</span>
+const Product = () => {
+  const {id} = useParams()
 
-          {/* <Star
-            product={product}
-            toggleFavorites={toggleFavorites}
-            filledStar={filledStar}
-          />
-          {productCross && <div onClick={removeFromTheBag} className="product__cross"></div>} */}
-        {/* )} */}
+  const [productDataObj, setProductDataObj] = useState([])
+
+  useEffect(() => {
+    axios.get(`http://localhost:5000/posts/${id}`).then(res => setProductDataObj(res.data))
+  }, [id])
+
+  return(
+    <div className='product'>
+      {/* <ProductsPageBreadcrumbs /> */}
+      <div className='product__content'>
+        <ProductSlider />
+        <ProductMain productDataObj={productDataObj}/>
+      </div>
+
     </div>
-  );
-};
+  )
+}
 
-export default Product;
+export default Product
