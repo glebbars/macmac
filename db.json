@@ -423,7 +423,24 @@
       "id": 33
     }
   ],
-  "orders": [],
+  "orders": [
+    {
+      "firstName": "gleb",
+      "lastName": "bars",
+      "email": "glebars2004@gmail.com",
+      "order": "iPhone 11 Pro max green",
+      "phone": "+380676282524",
+      "id": 1
+    },
+    {
+      "firstName": "Ирина",
+      "lastName": "Барс",
+      "email": "irina@gmail.com",
+      "order": "iPhone 11 Pro max green",
+      "phone": "+380676304612",
+      "id": 2
+    }
+  ],
   "prices": [
     {
       "id": 1,

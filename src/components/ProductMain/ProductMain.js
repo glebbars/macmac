@@ -1,11 +1,13 @@
 import React from "react";
 import tick from '../../img/tick.svg'
-import {getCapacityChoices, getColorChoices} from '../../admin/AdditionalFunctions/AdditionalFunctions'
+import ProductMainToggle from '../ProductMainToggle/ProductMainToggle'
+import ProductMainPurchase from '../ProductMainPurchase/ProductMainPurchase'
+import { PopupboxManager, PopupboxContainer } from 'react-popupbox';
+import garanty from '../../img/shield.svg'
+import arrows from '../../img/arrows.png'
 
 const ProductMain = ({productDataObj}) => {
-  const colorChoices = getColorChoices(productDataObj.model)
-  const capacityChoices = getCapacityChoices(productDataObj.model)
-
+ 
   return(
     <div className="product__main">
       <div className="product__main__header">
@@ -19,22 +21,19 @@ const ProductMain = ({productDataObj}) => {
       </div>
       <div className="product__main__price">{productDataObj.price.toLocaleString()}.00 &#x20b4;</div> 
       <div className="product__main__line"></div>
-      {colorChoices.length > 0 && 
-        <div className="product__main__color">
-          <span className="product__main__color__text">Цвет</span>
-          {colorChoices.map(colorObj => 
-            <div className={`product__main__color__option ${productDataObj.color === colorObj.name ? "product__main__color__option_active" : ""}`} style={{background: colorObj.name.toLocaleLowerCase()}}>{colorObj.name}</div> 
-          )}
+      <ProductMainToggle productDataObj={productDataObj}/>
+      <ProductMainPurchase />
+      <PopupboxContainer />
+      <div className="product__main__info">
+        <div className="product__main__info__label">
+          <img src={garanty} alt="" className="product__main__info__label__img"/>
+          <span className="product__main__info__label__text">Гарантия 12 месяцев </span>
         </div>
-      }
-      {capacityChoices.length > 0 && 
-        <div className="product__main__capacity">
-          <span className="product__main__capacity__text">Память</span>
-          {capacityChoices.map(capacityObj => 
-            <div className={`product__main__capacity__option ${productDataObj.capacity === capacityObj.name ? "product__main__capacity__option_active" : ""}`}>{capacityObj.name}</div> 
-          )}
+        <div className="product__main__info__label">
+          <img src={arrows} alt="" className="product__main__info__label__img"/>
+          <span className="product__main__info__label__text">Обмен / возврат 14дней </span>
         </div>
-      }  
+      </div>
     </div>
   )
 }
