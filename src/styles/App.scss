@@ -2699,8 +2699,23 @@ body{
     display: grid;
     grid-template-columns: 500px auto;
     grid-column-gap: 30px;
-    margin-top: 50px;
+    margin: 50px 15px 0;
 
+    @media(max-width: 1300px){
+      grid-template-columns: 480px auto;
+    }
+
+    @media(max-width: 1024px){
+      margin: 40px 15px 0;
+      grid-template-columns: 450px auto;
+      grid-column-gap: 20px;
+    }
+
+    @media(max-width: 950px){
+      grid-template-columns: 400px auto;
+      grid-column-gap: 15px;
+      margin: 40px 10px 0;
+    }
   }
 
   &__main{
@@ -2708,6 +2723,15 @@ body{
     padding: 30px 30px 40px 50px;
     background: #FFFFFF;
     border-radius: 8px;
+
+    @media(max-width: 1300px){
+      padding: 30px 35px 40px;
+    }
+
+    @media(max-width: 1024px){
+      padding: 30px 30px 40px;
+    }
+
 
     &__header{
       display: grid;
@@ -2861,6 +2885,10 @@ body{
         text-align: center;
         margin-right: 12px;
 
+        @media(max-width: 1024px){
+          width: 125px; 
+        }
+
         &__img{
           margin-right: 10px;
           vertical-align: text-bottom;
@@ -2871,6 +2899,10 @@ body{
           font-size: 16px;
           letter-spacing: 0.0155em;
           color: #FFFFFF;
+
+          @media(max-width: 1024px){
+            font-size: 15px;
+          }
         }
       }
 
@@ -2883,12 +2915,19 @@ body{
         box-sizing: border-box;
         text-align: center;
 
+        @media(max-width: 1024px){
+          width: 200px; 
+        }
 
         &__text{
           font-weight: 500;
           font-size: 16px;
           letter-spacing: 0.0155em;
           color: #FA530D;
+
+          @media(max-width: 1024px){
+            font-size: 15px;
+          }
         }
       }
     }
@@ -2953,6 +2992,18 @@ body{
       border-radius: 8px;
       height: 505px;
       background: #E9ECEF;
+
+      @media(max-width: 1300px){
+        height: 485px;
+      }
+
+      @media(max-width: 1024px){
+        height: 450px;
+      }
+
+      @media(max-width: 950px){
+        height: 420px;
+      }
 
       &__img{
         height: 75%;
