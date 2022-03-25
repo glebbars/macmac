@@ -421,6 +421,28 @@
         }
       ],
       "id": 33
+    },
+    {
+      "category": "iPhone",
+      "model": "12",
+      "capacity": "128Gb",
+      "color": "White",
+      "price": 13470,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648226262/uploaded_images/ue7rvjyaosk82hwpubdl.png",
+          "id": "a2490c9cc7631e4c11f3946882f6866c"
+        },
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648226262/uploaded_images/yssk8bh11m10polyjyzj.png",
+          "id": "91961db00ac104d1a2cfedeadfead8d3"
+        },
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648226262/uploaded_images/u3qplpgrvxqtbbf8iyvu.png",
+          "id": "27c665afd9f35365583b1a7247a883af"
+        }
+      ],
+      "id": 34
     }
   ],
   "orders": [
@@ -430,6 +452,7 @@
       "email": "glebars2004@gmail.com",
       "order": "iPhone 11 Pro max green",
       "phone": "+380676282524",
+      "price": 17000,
       "id": 1
     },
     {
@@ -438,7 +461,35 @@
       "email": "irina@gmail.com",
       "order": "iPhone 11 Pro max green",
       "phone": "+380676304612",
+      "price": 1000,
       "id": 2
+    },
+    {
+      "firstName": "test 1",
+      "lastName": "",
+      "email": "",
+      "phone": "+380671221223",
+      "order": "iPhone 12 128Gb White",
+      "price": 13470,
+      "id": 3
+    },
+    {
+      "firstName": "2",
+      "lastName": "bbb",
+      "email": "gleb@gmail.com",
+      "phone": "+380967899890",
+      "order": "iPhone 12 128Gb White",
+      "price": 13470,
+      "id": 4
+    },
+    {
+      "firstName": "r",
+      "lastName": "",
+      "email": "",
+      "phone": "+380676786778",
+      "order": "iPhone 11 64Gb Black",
+      "price": 17765,
+      "id": 5
     }
   ],
   "prices": [

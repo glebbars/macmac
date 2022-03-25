@@ -3,9 +3,15 @@ import OrderForm from '../OrderForm/OrderForm'
 import { PopupboxManager, PopupboxContainer } from 'react-popupbox';
 import "react-popupbox/dist/react-popupbox.css"
 
-export const openPopupboxOneClick = () => {
-  console.log("openpopup");
-  const content = <OrderForm closePopUp={PopupboxManager.close} />
+export const openPopupboxOneClick = (productDataObj) => {
+  const fullProductName = `${productDataObj.category} ${productDataObj.model} ${productDataObj.capacity} ${productDataObj.color}`
+
+  const productDataToBot = {
+    order: fullProductName,
+    price: productDataObj.price
+  }
+
+  const content = <OrderForm closePopUp={PopupboxManager.close} productDataToBot={productDataToBot}/>
 
   PopupboxManager.open({
     content,

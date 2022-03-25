@@ -18,8 +18,8 @@ const Product = () => {
     <div className='product'>
       {/* <ProductsPageBreadcrumbs /> */}
       <div className='product__content'>
-        <ProductSlider />
-         {productDataObj.category && <ProductMain productDataObj={productDataObj}/>}
+        {productDataObj.pictures && <ProductSlider productImgs={productDataObj.pictures } /> }
+        {productDataObj.category && <ProductMain productDataObj={productDataObj}/>}
       </div>
     </div>
   )
