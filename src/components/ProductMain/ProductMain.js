@@ -90,12 +90,12 @@ const ProductMain = ({productDataObj}) => {
         <div className="product__main__info__delivery">
           <h3 className="product__main__info__header">Способы доставки</h3>
           <div className="product__main__info__label">
-            <img src={orangeNovaPoshta} alt="" className="product__main__info__label__img"/>
-            <span className="product__main__info__label__text">Нова Пошта (100% предоплата)</span>
-          </div>
-          <div className="product__main__info__label">
             <img src={orangeTruck} alt="" className="product__main__info__label__img"/>
             <span className="product__main__info__label__text">Самовывоз из магазина</span>
+          </div>
+          <div className="product__main__info__label">
+            <img src={orangeNovaPoshta} alt="" className="product__main__info__label__img"/>
+            <span className="product__main__info__label__text">Нова Пошта (100% предоплата)</span>
           </div>
         </div>
 
@@ -103,13 +103,14 @@ const ProductMain = ({productDataObj}) => {
         <div className="product__main__info__paying-ways">
           <h3 className="product__main__info__header">Способы оплаты</h3>
 
-          <div className="product__main__info__label">
-            <img src={orangeCash} alt="" className="product__main__info__label__img"/>
-            <span className="product__main__info__label__text">Наличными при получении</span>
-          </div>
+          
           <div className="product__main__info__label">
             <img src={orangeCreditCard} alt="" className="product__main__info__label__img"/>
             <span className="product__main__info__label__text">Опалата картой +3%</span>
+          </div>
+          <div className="product__main__info__label">
+            <img src={orangeCash} alt="" className="product__main__info__label__img"/>
+            <span className="product__main__info__label__text">Наличными при получении</span>
           </div>
           <div className="product__main__info__label">
             <img src={orangeBankAccount} alt="" className="product__main__info__label__img"/>
