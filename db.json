@@ -426,7 +426,7 @@
       "category": "iPhone",
       "model": "12",
       "capacity": "128Gb",
-      "color": "White",
+      "color": "Black",
       "price": 13470,
       "pictures": [
         {
@@ -443,6 +443,34 @@
         }
       ],
       "id": 34
+    },
+    {
+      "category": "iPhone",
+      "model": "13 Pro Max",
+      "capacity": "512Gb",
+      "color": "Alpine Green",
+      "price": 78600,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648322916/uploaded_images/eaux4jb7akm7zftlmjxz.png",
+          "id": "94ce3d96d800277b6d434fc128912eef"
+        }
+      ],
+      "id": 35
+    },
+    {
+      "category": "iPhone",
+      "model": "12",
+      "capacity": "64Gb",
+      "color": "Mind",
+      "price": 28900,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648322943/uploaded_images/v2todi0mntqkj72yqddv.png",
+          "id": "b8ad580448e2f179e862abf71b3d7a4e"
+        }
+      ],
+      "id": 36
     }
   ],
   "orders": [

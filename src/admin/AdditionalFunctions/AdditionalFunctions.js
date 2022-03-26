@@ -165,13 +165,13 @@ const capacityOptions = {
 export const getColorChoices = (value) => {
   switch(value){
     case '11':
-      return [colorOptions["black"], colorOptions['product red'], colorOptions["white"],colorOptions["green"],colorOptions["purple"], colorOptions["yellow"]]
+      return [colorOptions["black"], colorOptions['product red'], colorOptions["white"],colorOptions["mind"],colorOptions["purple"], colorOptions["yellow"]]
 
     case "SE 2020":
       return [colorOptions["black"], colorOptions['product red'], colorOptions["white"]]
 
     case '12':
-      return [colorOptions["black"], colorOptions['blue'], colorOptions["white"],colorOptions["green"],colorOptions["purple"], colorOptions["yellow"]]
+      return [colorOptions["black"], colorOptions['blue'], colorOptions["white"],colorOptions["mind"],colorOptions["purple"], colorOptions["yellow"]]
 
     case '12 Pro':
     case "12 Pro Max":
@@ -179,32 +179,102 @@ export const getColorChoices = (value) => {
 
     case "13 Mini":
     case "13": 
-      return [colorOptions["pink"], colorOptions['product red'], colorOptions["starlight"],colorOptions["midnight"], colorOptions["blue"],]
+      return [colorOptions["pink"], colorOptions['product red'], colorOptions["starlight"],colorOptions["midnight"], colorOptions["blue"], colorOptions["green"]]
 
     case "13 Pro":
     case "13 Pro Max":
-      return [colorOptions["sierra blue"], colorOptions['graphite'], colorOptions["gold"],colorOptions["silver"]]
+      return [colorOptions["sierra blue"], colorOptions['graphite'], colorOptions["gold"],colorOptions["silver"], colorOptions["alpine green"]]
 
     default: return []
   }
 }
 
+// DONE: 11; se 2020; 12; 12 pro/pro-max; 13 pro/pro-max
+
 const colorOptions =  {
-  'silver': { id: 'Silver', name: 'Silver' },
-  'space grey': { id: 'Space Grey', name: 'Space Grey' },
-  'yellow': { id: 'Yellow', name: 'Yellow' },
-  'gold': { id: 'Gold', name: 'Gold' },
-  'midnight green': { id: 'Midnight Green', name: 'Midnight Green' },
+  // 11 and se 2020
   'black': { id: 'Black', name: 'Black' },
-  'blue': { id: 'Blue', name: 'Blue' },
-  'green': { id: 'Green', name: 'Green' },
   'product red': { id: 'Product Red', name: 'Product Red' },
-  'purple': { id: 'Purple', name: 'Purple' },
+  'yellow': { id: 'Yellow', name: 'Yellow' },
   'white': { id: 'White', name: 'White' },
+  'mind': { id: 'Mind', name: 'Mind' },
+  'purple': { id: 'Purple', name: 'Purple' },
+  // 11 and se 2020
+
+
+  // 12
+  'blue': { id: 'Blue', name: 'Blue' },
+  // black
+  // white
+  // green
+  // purple
+  // yellow
+  // 12
+  
+
+  // 12 pro and 12 pro max
+  'silver': { id: 'Silver', name: 'Silver' },
+  'gold': { id: 'Gold', name: 'Gold' },
   'pacific blue': { id: 'Pacific Blue', name: 'Pacific Blue' },
   'graphite': { id: 'Graphite', name: 'Graphite' },
+  // 12 pro and 12 pro max
+  
+  
+  // 13 - 13 mini
   'pink': { id: 'Pink', name: 'Pink' },
   'midnight': { id: 'Midnight', name: 'Midnight' },
   'starlight': { id: 'Starlight', name: 'Starlight' },
+  'green': { id: 'Green', name: 'Green' },
+  // blue 
+  // product red
+  // 13 - 13 mini
+  
+  
+  // 13 pro and 13 pro max
+  // gold 
+  // silver 
+  // graphite
+  'alpine green': { id: 'Alpine Green', name: 'Alpine Green' },
   'sierra blue': { id: 'Sierra Blue', name: 'Sierra Blue' },
+  // 13 pro and 13 pro max
+
+}
+
+export const colorForToggle = {
+  // 11 and se 2020
+  "Black": "rgb(31, 32, 33)",
+  "White": "rgb(246, 243, 241)",
+  "Yellow": "rgb(251, 230, 143)",
+  "Product Red": "rgb(170, 39, 52)",
+  "Purple": "rgb(190, 184, 230)",
+  "Mind": "rgb(184, 223, 206)",
+  // 11 and se 2020
+
+
+  // 12
+  "Blue": "rgb(80, 119, 142)",
+  // 12
+
+
+  // 12 pro/pro-max
+  "Silver": "rgb(242, 243, 239)",
+  "Gold": "rgb(247, 234, 214)",
+  "Pacific Blue": "rgb(44, 65, 75)",
+  "Graphite": "rgb(96, 96, 93)",
+  // 12 pro/pro-max
+  
+
+  // 13/13 mini 
+  "Pink": "rgb(247, 227, 222)",
+  "Midnight": "rgb(67, 71, 76)",
+  "Green": "rgb(71, 84, 68)",
+  "Starlight": "rgb(250, 247, 245)",
+  // 13/13 mini 
+
+
+  // 13 pro/pro-max
+  "Sierra Blue": "rgb(179, 198, 217)",
+  "Alpine Green": "rgb(90, 104, 88)"
+  // 13 pro/pro-max1
+  
 }

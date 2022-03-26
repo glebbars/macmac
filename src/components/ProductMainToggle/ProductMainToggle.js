@@ -1,5 +1,5 @@
 import React from 'react'
-import {getCapacityChoices, getColorChoices} from '../../admin/AdditionalFunctions/AdditionalFunctions'
+import {getCapacityChoices, getColorChoices, colorForToggle} from '../../admin/AdditionalFunctions/AdditionalFunctions'
 import OrderForm from '../OrderForm/OrderForm'
 
 const ProductMainToggle = ({productDataObj}) => {
@@ -16,7 +16,7 @@ const ProductMainToggle = ({productDataObj}) => {
               key={index}
               className={`product__main__color__option ${productDataObj.color === colorObj.name ? "product__main__color__option_active" : ""}`} 
             >
-              <div className='product__main__color__option__value' style={{background: colorObj.name.toLocaleLowerCase()}}></div>
+              <div className='product__main__color__option__value' style={{background: colorForToggle[colorObj.name]}}></div>
             </div> 
           )}
         </div>

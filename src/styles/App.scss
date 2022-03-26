@@ -3007,6 +3007,8 @@ body{
 
       &__img{
         height: 75%;
+        max-width: 80%;
+        object-fit: contain;
         margin: auto;  
       }  
     }
