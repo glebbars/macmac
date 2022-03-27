@@ -14,12 +14,17 @@ const Product = () => {
     axios.get(`http://localhost:5000/posts/${id}`).then(res => setProductDataObj(res.data))
   }, [id])
 
+  const modelCrumb = {
+    name: `${productDataObj.category} ${productDataObj.model} ${productDataObj.capacity} ${productDataObj.color}`,
+    link: window.location.pathname
+  }
+
   return(
     <div className='product'>
-      {/* <ProductsPageBreadcrumbs /> */}
+      {productDataObj.category && <ProductsPageBreadcrumbs modelCurmb={modelCrumb}/> }
       <div className='product__content'>
         {productDataObj.pictures && <ProductSlider productImgs={productDataObj.pictures } /> }
-        {productDataObj.category && <ProductMain productDataObj={productDataObj}/>}
+        {productDataObj.category && <ProductMain setProductDataObj={setProductDataObj} productDataObj={productDataObj}/>}
       </div>
     </div>
   )

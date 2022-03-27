@@ -165,13 +165,13 @@ const capacityOptions = {
 export const getColorChoices = (value) => {
   switch(value){
     case '11':
-      return [colorOptions["black"], colorOptions['product red'], colorOptions["white"],colorOptions["mind"],colorOptions["purple"], colorOptions["yellow"]]
+      return [colorOptions["black"], colorOptions["white"],  colorOptions["purple"], colorOptions['product red'], colorOptions["yellow"], colorOptions["mind"]]
 
     case "SE 2020":
-      return [colorOptions["black"], colorOptions['product red'], colorOptions["white"]]
+      return [colorOptions["black"], colorOptions["white"], colorOptions['product red']]
 
     case '12':
-      return [colorOptions["black"], colorOptions['blue'], colorOptions["white"],colorOptions["mind"],colorOptions["purple"], colorOptions["yellow"]]
+      return [colorOptions["black"],  colorOptions["white"],  colorOptions['product red'], colorOptions["mind"], colorOptions['blue'],colorOptions["purple"]]
 
     case '12 Pro':
     case "12 Pro Max":
@@ -179,7 +179,7 @@ export const getColorChoices = (value) => {
 
     case "13 Mini":
     case "13": 
-      return [colorOptions["pink"], colorOptions['product red'], colorOptions["starlight"],colorOptions["midnight"], colorOptions["blue"], colorOptions["green"]]
+      return [colorOptions["midnight"], colorOptions["starlight"], colorOptions['product red'],colorOptions["blue"], colorOptions["pink"], colorOptions["green"]]
 
     case "13 Pro":
     case "13 Pro Max":
@@ -259,8 +259,8 @@ export const colorForToggle = {
   // 12 pro/pro-max
   "Silver": "rgb(242, 243, 239)",
   "Gold": "rgb(247, 234, 214)",
-  "Pacific Blue": "rgb(44, 65, 75)",
-  "Graphite": "rgb(96, 96, 93)",
+  "Pacific Blue": "rgb(81, 95, 115)",
+  "Graphite": "rgb(60, 59, 52)",
   // 12 pro/pro-max
   
 

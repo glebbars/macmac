@@ -2,20 +2,6 @@
   "posts": [
     {
       "category": "iPhone",
-      "model": "11",
-      "capacity": "64Gb",
-      "color": "Black",
-      "price": 17765,
-      "pictures": [
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644359226/uploaded_images/elka5nvom7sxvpkynqzq.png",
-          "id": "5cc19dafc23a89516e6ab8ce6969aa0b"
-        }
-      ],
-      "id": 1
-    },
-    {
-      "category": "iPhone",
       "model": "SE 2020",
       "capacity": "128Gb",
       "color": "Black",
@@ -142,24 +128,6 @@
     },
     {
       "category": "iPhone",
-      "model": "11",
-      "capacity": "64Gb",
-      "color": "Black",
-      "price": 17765,
-      "pictures": [
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644970898/uploaded_images/vzpg3rgarcm49ctehmro.png",
-          "id": "162d2d36da4497d93367feb7c940ab88"
-        },
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644970898/uploaded_images/egjyjrxayn3fqywvajwp.png",
-          "id": "1a8b1b3cca025f24c853531ed1a34531"
-        }
-      ],
-      "id": 15
-    },
-    {
-      "category": "iPhone",
       "model": "12 Pro Max",
       "capacity": "256Gb",
       "color": "Pacific Blue",
@@ -171,20 +139,6 @@
         }
       ],
       "id": 16
-    },
-    {
-      "category": "iPhone",
-      "model": "11",
-      "capacity": "64Gb",
-      "color": "Black",
-      "price": 17765,
-      "pictures": [
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644359226/uploaded_images/elka5nvom7sxvpkynqzq.png",
-          "id": "5cc19dafc23a89516e6ab8ce6969aa0b"
-        }
-      ],
-      "id": 17
     },
     {
       "category": "iPhone",
@@ -258,24 +212,6 @@
     },
     {
       "category": "iPhone",
-      "model": "11",
-      "capacity": "64Gb",
-      "color": "Black",
-      "price": 17765,
-      "pictures": [
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644970898/uploaded_images/vzpg3rgarcm49ctehmro.png",
-          "id": "162d2d36da4497d93367feb7c940ab88"
-        },
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644970898/uploaded_images/egjyjrxayn3fqywvajwp.png",
-          "id": "1a8b1b3cca025f24c853531ed1a34531"
-        }
-      ],
-      "id": 23
-    },
-    {
-      "category": "iPhone",
       "model": "12 Pro Max",
       "capacity": "256Gb",
       "color": "Pacific Blue",
@@ -287,20 +223,6 @@
         }
       ],
       "id": 24
-    },
-    {
-      "category": "iPhone",
-      "model": "11",
-      "capacity": "64Gb",
-      "color": "Black",
-      "price": 17765,
-      "pictures": [
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644359226/uploaded_images/elka5nvom7sxvpkynqzq.png",
-          "id": "5cc19dafc23a89516e6ab8ce6969aa0b"
-        }
-      ],
-      "id": 25
     },
     {
       "category": "iPhone",
@@ -371,24 +293,6 @@
         }
       ],
       "id": 30
-    },
-    {
-      "category": "iPhone",
-      "model": "11",
-      "capacity": "64Gb",
-      "color": "Black",
-      "price": 17765,
-      "pictures": [
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644970898/uploaded_images/vzpg3rgarcm49ctehmro.png",
-          "id": "162d2d36da4497d93367feb7c940ab88"
-        },
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644970898/uploaded_images/egjyjrxayn3fqywvajwp.png",
-          "id": "1a8b1b3cca025f24c853531ed1a34531"
-        }
-      ],
-      "id": 31
     },
     {
       "category": "iPhone",
@@ -471,6 +375,152 @@
         }
       ],
       "id": 36
+    },
+    {
+      "category": "iPhone",
+      "model": "11",
+      "capacity": "64Gb",
+      "color": "Black",
+      "price": 15765,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648400253/uploaded_images/kiqgt1og0lsheweld4kb.png",
+          "id": "70630b923131b2b923b47af891af28e8"
+        },
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648400252/uploaded_images/nvdn7wjlrqoqftrd6no7.png",
+          "id": "4538add42f60962b952f08514e039ee5"
+        }
+      ],
+      "id": 37
+    },
+    {
+      "category": "iPhone",
+      "model": "11",
+      "capacity": "64Gb",
+      "color": "White",
+      "price": 18765,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648401027/uploaded_images/jgtjapvppsgudub2kleq.png",
+          "id": "8a6717cdf25230d3c2a3215ce0ecee74"
+        },
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648401027/uploaded_images/kp7ln2gehrdwovwshrmw.png",
+          "id": "70357b5d15f9a7c0ad95a6695d92435c"
+        }
+      ],
+      "id": 38
+    },
+    {
+      "category": "iPhone",
+      "model": "11",
+      "capacity": "64Gb",
+      "color": "Purple",
+      "price": 20765,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648400338/uploaded_images/it5nnust4yzjnk0ctbh6.png",
+          "id": "53d51bda812a2df813b1f2571d6e70cd"
+        },
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648400975/uploaded_images/fciemcxe1nmsq9akworr.png",
+          "id": "9f05110ba137d4daa1b8464745620124"
+        }
+      ],
+      "id": 39
+    },
+    {
+      "category": "iPhone",
+      "model": "11",
+      "capacity": "64Gb",
+      "color": "Yellow",
+      "price": 21765,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648400428/uploaded_images/ao2gxvqhmgtpzhad9u0g.png",
+          "id": "9308f52bf62b12af71aa91a39c3ad917"
+        },
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648400746/uploaded_images/mgpixph1xhvbaybek3rs.png",
+          "id": "fc1167ad70d9a43c35529fed061eece8"
+        }
+      ],
+      "id": 40
+    },
+    {
+      "category": "iPhone",
+      "model": "11",
+      "capacity": "64Gb",
+      "color": "Mind",
+      "price": 19000,
+      "label": "Хит продаж",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648400991/uploaded_images/sopqekhfvkf7xsbllizg.png",
+          "id": "15cea52f175a4d27b1dd6b704532a889"
+        },
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648400991/uploaded_images/zawr3ydy8zs7xuaccbie.png",
+          "id": "d57e7876cd97ed6fdbd4cde479e1ee9f"
+        }
+      ],
+      "id": 41
+    },
+    {
+      "category": "iPhone",
+      "model": "11",
+      "capacity": "64Gb",
+      "color": "Product Red",
+      "price": 22765,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648400612/uploaded_images/lzijmmu5gthat4oi4fef.png",
+          "id": "c0b3eab2220c5f8a6f0f3518020b184d"
+        },
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648400612/uploaded_images/whlbgazpdhl5rkzwy66k.png",
+          "id": "c78f14c54cf3e02e28db1f25aec60acf"
+        }
+      ],
+      "id": 42
+    },
+    {
+      "category": "iPhone",
+      "model": "11",
+      "capacity": "128Gb",
+      "color": "Black",
+      "price": 20630,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648401625/uploaded_images/j0hag0en84vbupktepcb.png",
+          "id": "ed067b076beea151ecedd1c0910acff1"
+        },
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648401625/uploaded_images/xpormurpicizknfirjlv.png",
+          "id": "7f37f50aa86176cab063c556dee9cc3d"
+        }
+      ],
+      "id": 43
+    },
+    {
+      "category": "iPhone",
+      "model": "11",
+      "capacity": "128Gb",
+      "color": "White",
+      "price": 20410,
+      "label": "Хит продаж",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648401661/uploaded_images/w0b95njcvnlasctmo1b6.png",
+          "id": "17e304663770c342086da230056fc6d3"
+        },
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648401661/uploaded_images/oqowjwxogb6e7lnirgn1.png",
+          "id": "b244a4a443a13aee13a318f51b4d52e6"
+        }
+      ],
+      "id": 44
     }
   ],
   "orders": [
@@ -531,10 +581,11 @@
       "iphone se 2020 128gb black   slim box": 13470,
       "iphone se 2020 128gb white   slim box": 13470,
       "iphone 11 64gb black  slim box": 17765,
-      "iphone 11 64gb white  slim box": 17765,
-      "iphone 11 64gb green  slim box": 17765,
-      "iphone 11 64gb purple  slim box": 17765,
-      "iphone 11 64gb yellow  slim box": 17765,
+      "iphone 11 64gb white  slim box": 18765,
+      "iphone 11 64gb green  slim box": 19765,
+      "iphone 11 64gb purple  slim box": 20765,
+      "iphone 11 64gb yellow  slim box": 21765,
+      "iphone 11 64gb product red  slim box": 22765,
       "iphone 11 128gb black  slim box": 21490,
       "iphone 11 128gb white  slim box": 20630,
       "iphone 11 128gb green  slim box": 20630,

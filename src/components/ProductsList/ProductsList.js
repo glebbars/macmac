@@ -30,8 +30,8 @@ const ProductsList = () => {
   
   const filteredProductsArr = filteredByCategoryArr.filter(product => {
     if(productsListFilters.length > 0){
-      const fullProductName = `${product.category.toLowerCase()} ${product.model.toLowerCase()} ${product.capacity.toLowerCase()} ${product.color.toLowerCase()}`
-      return productsListFilters.some(filter => fullProductName.includes(filter.text.toLowerCase()))
+      const fullModelName = `${product.category.toLowerCase()} ${product.model.toLowerCase()}`
+      return productsListFilters.some(filter => filter.text.toLowerCase() === fullModelName )
     } else{
       return product
     }
