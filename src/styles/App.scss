@@ -2809,6 +2809,7 @@ body{
       }
 
       &__option{
+        @include flex-center;
         border-radius: 8px;
         border: 1px solid #DEE2E6;
 
@@ -2825,15 +2826,11 @@ body{
         width: 82px;
         height: 40px;
         box-sizing: border-box;
-        padding: 3px;
         font-weight: 400;
         font-size: 14px;
-        text-align: center;
-        letter-spacing: 0.0025em;
         color: #343A40;
         background-color: white;
         margin-right: 12px;
-        padding: 12px 0;
 
         &:first-of-type{
           margin-left: 32px;
@@ -2866,8 +2863,8 @@ body{
           width: 90%;
           height: 90%;
           box-sizing: border-box;
-          border-radius: 6px;
-          margin: 1px;
+          border-radius: 5px;
+          // margin: 1px;
         }
       }
     }

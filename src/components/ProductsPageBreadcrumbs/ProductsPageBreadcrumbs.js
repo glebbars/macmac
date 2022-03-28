@@ -1,40 +1,29 @@
 import react, {useEffect, useState} from 'react'
-import { useLocation, Link } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import {routesNames, initialCrumbs} from '../additionalObjects/additionalObjects'
 
 
 const ProductsPageBreadcrumbs = ({modelCurmb}) => {
   const [crumbsNames, setCrumbsNames] = useState(initialCrumbs)
-  const currentLocation = window.location.pathname
-
-  console.log("*")
+  const {categoryName, id} = useParams()
 
   useEffect(() => {
-    const categoryName = currentLocation.split('/category/')[1]
-
     if(categoryName !== 'all-products'){
-      const newCrumbObj = {
+      const categoryCrumb = {
         name: routesNames[categoryName],
-        link: currentLocation
+        link: `/category/${categoryName}`
       }
-      setCrumbsNames([...initialCrumbs, newCrumbObj ])
 
-      if(modelCurmb){
-        return setCrumbsNames([...crumbsNames, modelCurmb])
+      if(id){
+        setCrumbsNames([...initialCrumbs, categoryCrumb, modelCurmb ])
+      } else{
+        setCrumbsNames([...initialCrumbs, categoryCrumb ])
       }
+      
     } else{
      return setCrumbsNames(initialCrumbs)
     }
-  }, [currentLocation])
-
-  useEffect(() => {
-    console.log(modelCurmb)
-    if(modelCurmb){
-      const crumbs = crumbsNames
-      crumbs[2] = modelCurmb
-      console.log(crumbs)
-    }
-  }, [modelCurmb])
+  }, [categoryName, modelCurmb])
 
   return(
     <div className='products__header__crumbs__wrapper' style={{left: `${modelCurmb ? '15px' : '120px'}`}}>
