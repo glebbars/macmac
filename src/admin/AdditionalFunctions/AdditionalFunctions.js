@@ -132,7 +132,7 @@ const ipadModelChoices = [
 
 export const getCapacityChoices = (value) => {
   switch(value){
-    case '11':
+    // case '11':
     case "SE 2020":
     case "12":
       return [capacityOptions["64"], capacityOptions["128"]]
@@ -145,9 +145,10 @@ export const getCapacityChoices = (value) => {
     case "13": 
       return [capacityOptions["128"], capacityOptions["256"], capacityOptions["512"]]
 
+    case '11':
     case "13 Pro":
     case "13 Pro Max":
-      return [capacityOptions["128"], capacityOptions["256"], capacityOptions["512"], capacityOptions["1"]]
+      return [capacityOptions["64"], capacityOptions["128"], capacityOptions["256"], capacityOptions["512"], capacityOptions["1"]]
       
     default: return []
 

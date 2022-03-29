@@ -26,7 +26,7 @@ const ProductsPageBreadcrumbs = ({modelCurmb}) => {
   }, [categoryName, modelCurmb])
 
   return(
-    <div className='products__header__crumbs__wrapper' style={{left: `${modelCurmb ? '15px' : '120px'}`}}>
+    <div className={`${modelCurmb ? "product__crumbs" : "products__header__crumbs__wrapper" }`}>
       {crumbsNames.map((crumb, index) => <Link className='products__header__crumbs__link' to={`${crumb.link}`} key={index}>{crumb.name}</Link>)}
     </div>
   )

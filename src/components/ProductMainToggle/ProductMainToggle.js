@@ -35,29 +35,33 @@ const ProductMainToggle = ({productDataObj, setProductDataObj}) => {
       {colorChoices.length > 0 && 
         <div className="product__main__color">
           <span className="product__main__color__text">Цвет</span>
-          {colorChoices.map((colorObj, index) => 
-            <div 
-              onClick={() => toggleColor(colorObj.name)}
-              key={index}
-              className={`product__main__color__option ${productDataObj.color === colorObj.name ? "product__main__color__option_active" : ""}`} 
-            >
-              <div className='product__main__color__option__value' style={{background: colorForToggle[colorObj.name]}}></div>
-            </div> 
-          )}
+          <div className='product__main__color__options-wrapper'>
+            {colorChoices.map((colorObj, index) => 
+              <div 
+                onClick={() => toggleColor(colorObj.name)}
+                key={index}
+                className={`product__main__color__option ${productDataObj.color === colorObj.name ? "product__main__color__option_active" : ""}`} 
+              >
+                <div className='product__main__color__option__value' style={{background: colorForToggle[colorObj.name]}}></div>
+              </div> 
+            )}
+          </div>
         </div>
       }
       {capacityChoices.length > 0 && 
         <div className="product__main__capacity">
           <span className="product__main__capacity__text">Память</span>
-          {capacityChoices.map((capacityObj, index) => 
-            <div 
-              onClick={() => toggleCapacity(capacityObj.name)}
-              key={index}
-              className={`product__main__capacity__option ${productDataObj.capacity === capacityObj.name ? "product__main__capacity__option_active" : ""}`}
-            >
-              {capacityObj.name}
-            </div> 
-          )}
+          <div className='product__main__capacity__options-wrapper'>
+            {capacityChoices.map((capacityObj, index) => 
+              <div 
+                onClick={() => toggleCapacity(capacityObj.name)}
+                key={index}
+                className={`product__main__capacity__option ${productDataObj.capacity === capacityObj.name ? "product__main__capacity__option_active" : ""}`}
+              >
+                {capacityObj.name}
+              </div> 
+            )}
+          </div>
         </div>
       }  
     </div>
