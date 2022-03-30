@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import FavoritesIcon from "../FavoritesIcon/FavoritesIcon";
 
 
 function SampleNextArrow(props) {
@@ -25,7 +26,7 @@ function SamplePrevArrow(props) {
 }
 
 
-const ProductSlider = ({productImgs}) => {
+const ProductSlider = ({productImgs, productId}) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -48,6 +49,7 @@ const ProductSlider = ({productImgs}) => {
 
   return (
     <div className={`product__slider ${productImgs.length > 1 ? "product__slider_mr-b" : ""}`}>
+      <FavoritesIcon productId={productId}/>
       <Slider {...settings}>
         {productImgs.map(img => 
           <div key={img.id}>

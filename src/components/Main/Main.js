@@ -16,8 +16,11 @@ const Main = () => {
 
   useEffect(() => {
     localStorage.setItem("favorites", JSON.stringify(favorites));
-    localStorage.setItem("addedToBag", JSON.stringify(addedToBag));
-  }, []);
+  }, [favorites]);
+
+  useEffect(() => {
+    localStorage.setItem("favorites", JSON.stringify(addedToBag));
+  }, [favorites]);
 
   return (
     <div className="main">

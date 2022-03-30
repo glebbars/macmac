@@ -2405,10 +2405,11 @@ body{
 
   &__container{
     @include flex-column-left;
-    text-decoration: none;
+    position: relative;
   }
 
   &__img-container{
+    text-decoration: none;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -2701,6 +2702,18 @@ body{
 
   @media(max-width: 480px){
     padding: 70px 0 0;
+  }
+
+  &__favorite-icon{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 1;
+    
+    @media(max-width: 480px){
+      right: 12px;
+      top: 12px;
+    }  
   }
 
   &__crumbs{
@@ -3210,6 +3223,7 @@ body{
   }
 
   &__slider{
+    position: relative;
 
     @media(max-width: 800px){
       margin-bottom: 35px;
