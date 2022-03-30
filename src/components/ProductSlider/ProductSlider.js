@@ -47,7 +47,7 @@ const ProductSlider = ({productImgs}) => {
   };
 
   return (
-    <div className="product__slider">
+    <div className={`product__slider ${productImgs.length > 1 ? "product__slider_mr-b" : ""}`}>
       <Slider {...settings}>
         {productImgs.map(img => 
           <div key={img.id}>
