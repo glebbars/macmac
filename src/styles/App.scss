@@ -2797,6 +2797,7 @@ body{
 
     @media(max-width: 480px){
       margin-top: 95px;
+      padding: 25px 16px 35px;
     }
 
     @media(max-width: 375px){
@@ -2811,6 +2812,12 @@ body{
       width: 100%;
       grid-row-gap: 8px;
       grid-column-gap: 15px;
+
+      @media(max-width: 480px){
+        @include flex-column-left;
+        grid-row-gap: 0;
+        grid-column-gap: 0;
+      }
 
       &__label{
         padding: 7.5px 0px;
@@ -2833,6 +2840,11 @@ body{
           height: 24px;;
           font-size: 10px;
         }
+
+        @media(max-width: 480px){
+          order: 1;
+          margin: 0 0 15px 0;
+        }
       }
 
       &__text{
@@ -2846,6 +2858,13 @@ body{
         @media(max-width: 1024px){
           font-size: 20px;
         }
+
+        @media(max-width: 480px){
+          order: 2;
+          margin: 0 0 10px 0;
+          line-height: 26px;
+        }
+
       }
 
       &__in-stock{
@@ -2858,6 +2877,11 @@ body{
           color: #2CA20E;
           padding-left: 10px;
         }
+
+        @media(max-width: 480px){
+          order: 3;
+          font-size: 15px;
+        }
       }
     }
 
@@ -2867,6 +2891,11 @@ body{
       letter-spacing: 0.0025em;
       color: #343A40;
       margin: 30px 0;
+
+      @media(max-width: 480px){
+        font-size: 26px;
+        margin: 24px 0;
+      }
     }
 
     &__line{
@@ -2882,12 +2911,20 @@ body{
     &__capacity{
       display: flex;
 
+      @media(max-width: 420px){
+        flex-direction: column;
+      }
+
       &__text{
         font-weight: 400;
         font-size: 14px;
         line-height: 24px;
         letter-spacing: 0.0025em;
         color: #6C757D;
+
+        @media(max-width: 420px){
+          margin-bottom: 5px;
+        }
       }
 
       &__options-wrapper{
@@ -2916,7 +2953,15 @@ body{
 
         @media (max-width: 935px){
           margin-left: 15px;
-        }      
+        } 
+        
+        @media(max-width: 768px){
+          margin-left: 32px;
+        }
+
+        @media(max-width: 420px){
+          margin-left: 0;
+        }
       }
 
       &__option{
@@ -2938,17 +2983,31 @@ body{
           margin-right: 8px;
           margin-bottom: 8px;
         }  
+
+        @media(max-width: 768px){
+          width: 82px;
+          margin-right: 12px;
+          margin-bottom: 12px;
+        }
       }
     }
 
     &__color{
-      margin-bottom: 6px;
+      margin-bottom: 10px;
 
       &__options-wrapper{
         margin-left: 50px;
 
         @media (max-width: 935px){
           margin-left: 33px;
+        }
+
+        @media(max-width: 768px){
+          margin-left: 50px;
+        }
+
+        @media(max-width: 420px){
+          margin: 0 0 15px;
         }
       }
 
@@ -3002,7 +3061,7 @@ body{
         margin-right: 12px;
 
         @media(max-width: 1024px){
-          width: 125px; 
+          width: 135px; 
         }
 
         @media(max-width: 875px){
@@ -3016,8 +3075,11 @@ body{
         
         @media(max-width: 540px){
           margin: 0 0 15px 0;
+          height: 54px;
+          padding: 16px 0;
         }
-        
+
+
         &__img{
           margin-right: 10px;
           vertical-align: text-bottom;
@@ -3032,11 +3094,15 @@ body{
           @media(max-width: 1024px){
             font-size: 15px;
           }
+
+          @media(max-width: 540px){
+            font-size: 16px;
+          }
         }
       }
 
       &__one-click{
-        padding: 14px 0;
+        padding: 16px 0;
         width: 222px;
         height: 50px;
         background: #FFEEE7;
@@ -3052,6 +3118,12 @@ body{
           width: 100%;
         }
 
+        @media(max-width: 540px){
+          height: 54px;
+          padding: 18px 0;
+          font-size: 16px;
+        }
+
         &__text{
           font-weight: 500;
           font-size: 16px;
@@ -3061,6 +3133,10 @@ body{
           @media(max-width: 1024px){
             font-size: 15px;
           }
+
+          @media(max-width: 540px){
+            font-size: 16px;
+          }
         }
       }
     }
@@ -3068,17 +3144,29 @@ body{
     &__info{
       margin-top: 50px;
 
+      @media(max-width: 480px){
+        margin-top: 45px;
+      }
+
       &__header{
         font-weight: 500;
         font-size: 20px;
         letter-spacing: 0.0025em;
         margin: 0;
         color: #343A40;
+
+        @media(max-width: 480px){
+          font-size: 18px;
+        }
       }
 
       &__delivery,
       &__paying-ways{
         margin-bottom: 50px;
+
+        @media(max-width: 480px){
+          margin-bottom: 35px;
+        }
       }
 
       &__line{
@@ -3088,6 +3176,10 @@ body{
         background: #E9ECEF;
         border-radius: 5px;
         margin: 0 0 30px;
+
+        @media(max-width: 480px){
+          margin: 0 0 20px;
+        }
       }
 
       &__label{
@@ -3097,6 +3189,11 @@ body{
         padding: 10px 12px;
         border-radius: 10px;
         margin: 20px 20px 0 0;
+
+        @media(max-width: 480px){
+          margin: 15px 0 0;
+          padding: 8px 12px;
+        }
 
         &:last-of-type{
           margin-right: 0;
@@ -3111,6 +3208,10 @@ body{
           font-size: 16px;
           font-weight: 500;
           color: #343A40;
+
+          @media(max-width: 480px){
+            font-size: 15px;
+          }
         }
       }
 
