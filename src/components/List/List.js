@@ -1,9 +1,7 @@
 import React from 'react'
 import ProductCard from "../ProductCard/ProductCard";
 
-
-const List = ({productsArr}) => {
-
+const List = ({productsArr, altText}) => {
   // const removeFromTheBag = (productId) => {
   //   const productIndex = addedToBag.indexOf(productId);
   //   addedToBag.splice(productIndex, 1)
@@ -30,8 +28,7 @@ const List = ({productsArr}) => {
           key={product.id}
           />
         ))}
-      </div> : 
-      'К сожалению этого товара нет в данный момент'}
+      </div> : `${altText}`}
     </>
   ) 
 }

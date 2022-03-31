@@ -1,10 +1,10 @@
 import react, {useEffect, useState} from 'react'
 import { useParams, Link } from 'react-router-dom'
-import {routesNames, initialCrumbs} from '../additionalObjects/additionalObjects'
+import {routesNames, initialProductCrumbs} from '../additionalObjects/additionalObjects'
 
 
 const ProductsPageBreadcrumbs = ({modelCurmb}) => {
-  const [crumbsNames, setCrumbsNames] = useState(initialCrumbs)
+  const [crumbsNames, setCrumbsNames] = useState(initialProductCrumbs)
   const {categoryName, id} = useParams()
 
   useEffect(() => {
@@ -15,13 +15,13 @@ const ProductsPageBreadcrumbs = ({modelCurmb}) => {
       }
 
       if(id){
-        setCrumbsNames([...initialCrumbs, categoryCrumb, modelCurmb ])
+        setCrumbsNames([...initialProductCrumbs, categoryCrumb, modelCurmb ])
       } else{
-        setCrumbsNames([...initialCrumbs, categoryCrumb ])
+        setCrumbsNames([...initialProductCrumbs, categoryCrumb ])
       }
       
     } else{
-     return setCrumbsNames(initialCrumbs)
+     return setCrumbsNames(initialProductCrumbs)
     }
   }, [categoryName, modelCurmb])
 

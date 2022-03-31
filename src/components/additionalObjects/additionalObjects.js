@@ -123,7 +123,7 @@ export const modelIphoneOptions = [
   }
 ]
 
-export const initialCrumbs = [
+export const initialProductCrumbs = [
   {
     name: 'MacMac',
     link: '/'
@@ -131,5 +131,16 @@ export const initialCrumbs = [
   {
     name: 'Все товары',
     link: '/category/all-products'
+  }
+]
+
+export const favoritesCrumbs = [
+  {
+    name: 'MacMac',
+    link: '/'
+  },
+  {
+    name: 'Избранное',
+    link: '/favourites'
   }
 ]
