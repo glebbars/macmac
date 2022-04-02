@@ -3,18 +3,19 @@ import axios from "axios";
 
 export const validatePostForm = (values) => {
   const errors = {};
+  
   if (!values.category) {
-      errors.name = 'The firstName is required';
+      errors.name = 'Это поле обязательно';
   }
   else if (!values.model) {
-      errors.price = 'The price is required';
+      errors.price = 'Это поле обязательно';
   } 
-  else if (!values.capacity) {
-      errors.price = 'The price is required';
-  } 
-  else if (!values.color) {
-      errors.color = 'The color is required';
-  } 
+  // else if (!values.capacity) {
+  //     errors.price = 'The capacity is required';
+  // } 
+  // else if (!values.color) {
+  //     errors.color = 'The color is required';
+  // } 
   else if (!values.pictures || values.pictures.length === 0) {
       errors.pictures = 'Please upload pictures';
   } 
@@ -25,15 +26,29 @@ export const validatePostForm = (values) => {
 export const onTransform = async (values) => {
 
   const newFilesArr = values.pictures.filter(item => item.rawFile)
-  const price = await getPriceOfProductFromDB(values)
-  values.price = +price
+  const filledValues = fillEmptyValues(values)
+  const price = await getPriceOfProductFromDB(filledValues)
+  filledValues.price = +price
 
   const compressedImgs = await compressImages(newFilesArr)
   const uploadedImgs = await uploadImage(compressedImgs)
-  values.pictures = [...values.pictures.filter(item => !item.rawFile), ...uploadedImgs]
+  filledValues.pictures = [...filledValues.pictures.filter(item => !item.rawFile), ...uploadedImgs]
 
-  return values  
+  return filledValues  
 };
+
+const fillEmptyValues = (values) => {
+  const allValues = {
+    category: values.category,
+    model: values.model,
+    pictures: values.pictures,
+    price: values.price,
+    capacity: values.capacity ? values.capacity : '',
+    color: values.color ? values.capacolorcity : '',
+  }
+  return allValues
+
+}
 
 export const getPriceOfProductFromDB = (allValues) =>  {
 
@@ -45,7 +60,8 @@ export const getPriceOfProductFromDB = (allValues) =>  {
   .then(pricesObj => {
     return Object.fromEntries(
       Object.entries(pricesObj)
-        .filter(([key, value]) => key.includes(filterredValuesArr.category.toLowerCase()) && key.includes(filterredValuesArr.model.toLowerCase()) && key.includes(filterredValuesArr.capacity.toLowerCase()) && key.includes(filterredValuesArr.color.toLowerCase())
+        .filter(([key, value]) => 
+        key.includes(filterredValuesArr.category.toLowerCase()) && key.includes(filterredValuesArr.model.toLowerCase()) && key.includes(filterredValuesArr.capacity.toLowerCase()) && key.includes(filterredValuesArr.color.toLowerCase())
       )
     )
   }).then(data => Object.values(data)[0] ? Object.values(data)[0] : allValues.price)
@@ -103,8 +119,9 @@ export const initialChoices = [
 
 export const getModelChoices = (value) => {
   switch(value){
-    case 'iPhone': return iphoneModelChoices
-    case 'iPad': return ipadModelChoices
+    case 'iPhone': return iphoneModelChoices;
+    case 'iPad': return ipadModelChoices;
+    case 'AirPods': return airPodsModelChoices;
     default: return []
   }
 }
@@ -120,6 +137,12 @@ const iphoneModelChoices = [
   { id: '13 Mini', name: '13 Mini' },
   { id: '13 Pro', name: '13 Pro' },
   { id: '13 Pro Max', name: '13 Pro Max' },
+]
+
+const airPodsModelChoices = [
+  { id: '2', name: '2' },
+  { id: 'Pro', name: 'Pro' },
+  { id: '3', name: '3' },
 ]
 
 const ipadModelChoices = [
@@ -279,3 +302,6 @@ export const colorForToggle = {
   // 13 pro/pro-max1
   
 }
+
+export const productsWithCapacity = ['iPhone', 'iPad']
+export const productsWithColors = ['iPhone', 'iPad']

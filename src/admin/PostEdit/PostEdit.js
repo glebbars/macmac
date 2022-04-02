@@ -4,7 +4,6 @@ import { validatePostForm, onTransform, initialChoices, getModelChoices, getCapa
 import axios from 'axios'
 
 const PostEdit = (props) =>{
-
   const [createdProduct, setCreatedProduct] = useState({})
 
   useEffect(() => {
@@ -25,19 +24,18 @@ const PostEdit = (props) =>{
           onChange={e => setCreatedProduct({...createdProduct, model: e.target.value})} 
         />
 
-        <SelectInput 
+        {createdProduct.capacity && <SelectInput 
           source="capacity"
           choices={getCapacityChoices(createdProduct.model)}
           onChange={e => setCreatedProduct({...createdProduct, capacity: e.target.value})} 
-       
-       />
+       /> }
 
-        <SelectInput 
+       {createdProduct.color && <SelectInput 
           source="color"
           choices={getColorChoices(createdProduct.model)}
           onChange={e => setCreatedProduct({...createdProduct, color: e.target.value})} 
-        
-        />
+        /> }
+
       <TextInput helperText="Это необязательное поле" source="price"/> 
 
 

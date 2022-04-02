@@ -1,7 +1,7 @@
 import React from 'react'
 import ProductCard from "../ProductCard/ProductCard";
 
-const List = ({productsArr, altText}) => {
+const List = ({productsArr, altText, className}) => {
   // const removeFromTheBag = (productId) => {
   //   const productIndex = addedToBag.indexOf(productId);
   //   addedToBag.splice(productIndex, 1)
@@ -21,7 +21,7 @@ const List = ({productsArr, altText}) => {
   return (
     <>
      {productsArr.length > 0 ? 
-     <div className="products__list">
+     <div className={`products-list ${className}`}>
        {productsArr.map(product => (
         <ProductCard
           product={product}

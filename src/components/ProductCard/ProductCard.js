@@ -6,7 +6,8 @@ const ProductCard = ({product}) => {
   return (
     <div className="product-card__container">
       <Link 
-        to={`${product.category.toLowerCase()}/${product.id}`}className="product-card__img-container">
+        to={`${product.category.toLowerCase()}/${product.id}`} 
+        className="product-card__img-container">
           <img className="product-card__img" src={product.pictures[0].url} alt="Loading..." />
       </Link>
       <span className="product-card__text">{product.category} {product.model} {product.color} {product.capacity}</span>

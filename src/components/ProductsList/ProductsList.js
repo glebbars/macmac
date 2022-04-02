@@ -74,6 +74,7 @@ const ProductsList = () => {
     <>
       {currentTableData && 
         <List 
+          className=''
           productsArr={currentTableData} 
           altText= 'К сожалению этого товара нет в данный момент'
         /> 

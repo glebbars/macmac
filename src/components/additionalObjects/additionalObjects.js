@@ -96,6 +96,14 @@ export const categoryProductsOptions = [
   },
 ]
 
+export const getModelChoices = (value) => {
+  switch(value){
+    case 'iphone': return modelIphoneOptions;
+    case 'airpods': return modelAirPodsOptions;
+    default: return []
+  }
+}
+
 export const modelIphoneOptions = [
   {
     filterName: 'Модель',
@@ -120,6 +128,21 @@ export const modelIphoneOptions = [
   {
     filterName: 'Модель',
     text: 'iPhone 11 Pro Max',
+  }
+]
+
+export const modelAirPodsOptions = [
+  {
+    filterName: 'Модель',
+    text: 'AirPods 2', 
+  },
+  {
+    filterName: 'Модель',
+    text: 'AirPods Pro', 
+  },
+  {
+    filterName: 'Модель',
+    text: 'AirPods 3', 
   }
 ]
 

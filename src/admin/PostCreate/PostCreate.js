@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import {Create, SimpleForm, ImageInput, ImageField, SelectInput, TextInput} from 'react-admin'
-import { validatePostForm, onTransform,initialChoices, getModelChoices, getCapacityChoices, getColorChoices } from "../AdditionalFunctions/AdditionalFunctions"
+import { validatePostForm, onTransform,initialChoices, getModelChoices, getCapacityChoices, getColorChoices, productsWithCapacity, productsWithColors } from "../AdditionalFunctions/AdditionalFunctions"
 
 
 const PostCreate = (props) =>{
-  // const [finalProduct, setFinalProduct] = useState({})
-
   const [createdProduct, setCreatedProduct] = useState({})
 
   return (
@@ -21,7 +19,7 @@ const PostCreate = (props) =>{
       )
     }
 
-    {createdProduct.model && (
+    {productsWithCapacity.includes(createdProduct.category) && createdProduct.model && (
         <SelectInput choices={getCapacityChoices(createdProduct.model)}
         onChange={e => setCreatedProduct({...createdProduct, capacity: e.target.value})} 
         source="capacity" 
@@ -35,8 +33,9 @@ const PostCreate = (props) =>{
       onChange={e => setCreatedProduct({...createdProduct, color: e.target.value})} 
       source="color"  />
       )}
-    {createdProduct.color && 
-      <TextInput helperText="Это необязательное поле" source="price"/> }
+    {createdProduct.model && 
+      <TextInput helperText="Это необязательное поле" source="price"/> 
+    }
       <ImageInput multiple source="pictures" label="" accept="image/*" placeholder={<p>Upload or Drop your images here</p>}>
        <ImageField source="src" title="title" />
       </ImageInput>

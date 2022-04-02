@@ -522,6 +522,72 @@
         }
       ],
       "id": 44
+    },
+    {
+      "category": "AirPods",
+      "model": "2",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648914866/uploaded_images/zvijvmr4ndg5q59vr0is.png",
+          "id": "74d4f68d66614dd4acec10636e96dfec"
+        },
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648914976/uploaded_images/dbs2vpbzrtlhshh9xwuj.png",
+          "id": "5fb468483186a4a9fb36f05277eb924d"
+        },
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648914977/uploaded_images/l2n2funhkcdkkpsizovc.png",
+          "id": "afe8a53e91e3ee39aa480ee26f728d7c"
+        }
+      ],
+      "price": 4010,
+      "capacity": "",
+      "color": "",
+      "id": 45
+    },
+    {
+      "category": "AirPods",
+      "model": "Pro",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648915198/uploaded_images/skupjxqsikl2snolp8ty.png",
+          "id": "0d71a6493300043c5fc41d84bd8ae2db"
+        },
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648915197/uploaded_images/m7g7dohqzaafcnjnrxcx.png",
+          "id": "a9d6022d62bdbc6eac6c7d9224d1e549"
+        },
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648915198/uploaded_images/h7hfdwacsr9mjnb8unlu.png",
+          "id": "5961f2050e2c2fbcb79b92759c7198d0"
+        }
+      ],
+      "price": 6305,
+      "capacity": "",
+      "color": "",
+      "id": 46
+    },
+    {
+      "category": "AirPods",
+      "model": "3",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648916045/uploaded_images/lowgpoi1fbvalavy6ff8.png",
+          "id": "35dc4ee0f1a91e07999be184cd8f6ed3"
+        },
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648916045/uploaded_images/sba4nn4auqlg9sgkez9l.png",
+          "id": "6514ae3354835d0bbc8e10200f08a826"
+        },
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648916045/uploaded_images/zz2otud48d4ihgfdb7g0.png",
+          "id": "877ce765ce088e4e20b7c9ad38904990"
+        }
+      ],
+      "price": 9380,
+      "capacity": "",
+      "color": "",
+      "id": 47
     }
   ],
   "orders": [
@@ -652,16 +718,9 @@
       "watch series 6 nike gps 40mm silver aluminum case with pure platinum/black nike sport band": 11750,
       "watch series 6 nike gps 44mm space gray aluminum case with anthracite/black nike sport band": 14325,
       "watch series 6 gps + cellular 40mm graphite stainless steel case with black sport band": 20345,
-      "airpods pro with magsafe charging case  2021": 6305,
-      "airpods 2 with charging case": 4010,
+      "airpods pro": 6305,
+      "airpods 2": 4010,
       "wireless charging case": 2005,
-      "airpods charging case": 1290,
-      "airpods 2 right": 2005,
-      "airpods 2 left": 2005,
-      "airpods 2 box": 1145,
-      "airpods pro charging case": 2005,
-      "airpods pro right": 2865,
-      "airpods pro left": 2865,
       "tv 4k 64gb  2021": 6445,
       "tv 4k 64gb": 4870,
       "magic mouse 2": 2865,

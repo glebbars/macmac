@@ -28,10 +28,15 @@ const Favourites = () => {
               )
             )}
           </div>
-          <h1 className="favorites__header__text">Избранное</h1>
+          <h1 className="favorites__header__text">
+            Избранное 
+            {favorites.length > 0 && <span className="favorites__header__text__length">{favorites.length}</span>}
+          </h1>
         </div>
       </div>
-      <List productsArr={filterredArr} altText='В избранном пока пусто'/>
+      <div className="favorites__list__wrapper">
+        <List className='favorites__list__content' productsArr={filterredArr} altText='В избранном пока пусто'/>
+      </div>
     </div>
   );
 };
