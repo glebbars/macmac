@@ -11,16 +11,16 @@ import MainPoster from "../MainPoster/MainPoster";
 
 const Main = () => {
 
-  const favorites = useSelector(store => store.app.productsArr)
-  const addedToBag = useSelector((store) => store.app.addedToBag);
+  // const favorites = useSelector(store => store.app.productsArr)
+  // const addedToBag = useSelector((store) => store.app.addedToBag);
 
-  useEffect(() => {
-    localStorage.setItem("favorites", JSON.stringify(favorites));
-  }, [favorites]);
+  // useEffect(() => {
+  //   localStorage.setItem("favorites", JSON.stringify(favorites));
+  // }, [favorites]);
 
-  useEffect(() => {
-    localStorage.setItem("favorites", JSON.stringify(addedToBag));
-  }, [favorites]);
+  // useEffect(() => {
+  //   localStorage.setItem("favorites", JSON.stringify(addedToBag));
+  // }, [favorites]);
 
   return (
     <div className="main">

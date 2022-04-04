@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import List from '../List/List'
 import {favoritesCrumbs} from '../additionalObjects/additionalObjects'
 import { Link } from 'react-router-dom'
+import wishlist from '../../img/wishlist.png'
 
 const Favourites = () => {
   const productsArr = useSelector((store) => store.app.productsArr);
@@ -34,9 +35,17 @@ const Favourites = () => {
           </h1>
         </div>
       </div>
-      <div className="favorites__list__wrapper">
-        <List className='favorites__list__content' productsArr={filterredArr} altText='В избранном пока пусто'/>
-      </div>
+      {favorites.length > 0 ?
+        <div className="favorites__list__wrapper">
+          <List className='favorites__list__content' productsArr={filterredArr}/>
+        </div>
+        :
+        <div className="favorites__none-items__wrapper">
+          <img className="favorites__none-items__image" src={wishlist} alt="" />
+          <h1 className="favorites__none-items__header">Ваша корзина всё ещё пуста:(</h1>
+          <Link className="favorites__none-items__btn" to='/category/all-products'>Перейти к каталогу</Link>
+        </div>
+      }
     </div>
   );
 };

@@ -22,7 +22,7 @@ const HeaderSearch = () => {
 
       <Search 
        onType={(text) => text.length > 0 ? setOpenedSearchWrapper(true) : null} 
-        className={`header__search ${openedSearchWrapper ? 'header__search_searching' : ''} ${touchedSearch ? 'header__search_touched' : ''}`} 
+        className={`header__search ${touchedSearch ? 'header__search_touched' : ''} ${openedSearchWrapper ? 'header__search_searching' : ''} `} 
         placeholder={openedSearchWrapper ? 'Поиск по товарам' : 'Категория, название товара, артикул'} />
     </div>
     </>

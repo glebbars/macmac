@@ -72,12 +72,11 @@ const ProductsList = () => {
   
   return (
     <>
-      {currentTableData && 
+      {currentTableData.length > 0 ? 
         <List 
           className=''
           productsArr={currentTableData} 
-          altText= 'К сожалению этого товара нет в данный момент'
-        /> 
+        />  : 'К сожалению этого товара нет в данный момент'
       }
       <ProductsPagination
         className="pagination-bar"

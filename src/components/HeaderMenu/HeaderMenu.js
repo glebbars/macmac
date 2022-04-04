@@ -4,11 +4,13 @@ import logo from '../../img/logo.svg'
 import HeaderSearch from '../HeaderSearch/HeaderSearch'
 import {CustomDropDownLinks} from "../CustomDropDown/CustomDropDown";
 import {categoryHeaderOptions} from '../additionalObjects/additionalObjects'
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 const HeaderMenu = () => {
 
   const [openedBurger, setOpenedBurger] = useState(false)
+  const favorites = useSelector((store) => store.app.favorites);
+  const addedToBag = useSelector((store) => store.app.addedToBag);
 
   const dispatch = useDispatch()
 
@@ -80,22 +82,24 @@ const HeaderMenu = () => {
         <HeaderSearch/>
 
         <div className="header__favorite-bag-container">
-          <NavLink
-            exact
+          <Link
+            // exact
             to="/bag"
             className="header__menu__link header__menu__link_bag"
-            activeClassName="link_selected"
+            // activeClassName="link_selected"
           >
+            {addedToBag.length > 0 && <span className="header__menu__link__length-notification">{addedToBag.length}</span> }
             Корзина
-          </NavLink>
-          <NavLink
-            exact
+          </Link>
+          <Link
+            // exact
             to="/favourites"
             className="header__menu__link header__menu__link_favorite"
-            activeClassName="link_selected"
+            // activeClassName="link_selected"
           >
+            {favorites.length > 0 && <span className="header__menu__link__length-notification">{favorites.length}</span> }
             Избранное
-          </NavLink>
+          </Link>
         </div>
       </div>
     </div>
