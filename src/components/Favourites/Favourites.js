@@ -42,7 +42,7 @@ const Favourites = () => {
         :
         <div className="favorites__none-items__wrapper">
           <img className="favorites__none-items__image" src={wishlist} alt="" />
-          <h1 className="favorites__none-items__header">Ваша корзина всё ещё пуста:(</h1>
+          <h1 className="favorites__none-items__header">Ваша корзина всё ещё пуста :(</h1>
           <Link className="favorites__none-items__btn" to='/category/all-products'>Перейти к каталогу</Link>
         </div>
       }
