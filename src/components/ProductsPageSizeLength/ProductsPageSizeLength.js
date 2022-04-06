@@ -7,7 +7,6 @@ const ProductsPageSizeLength = ({sortedProductsLength}) => {
   const [currentArrLength, setCurrentArrLength] = useState('1-24')
 
   useEffect(() => {
-    console.log('()')
     if(sortedProductsLength > pageSize){
       if(pageNum*24 > sortedProductsLength){
         setCurrentArrLength(`${((pageNum-1) *24) + 1}-${sortedProductsLength}`)

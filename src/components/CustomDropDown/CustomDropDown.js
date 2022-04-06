@@ -39,7 +39,6 @@ export const CustomDropDownCheckboxes = ({ activeSideBar, closeSideBar, initiall
   const productsListFilters = useSelector((store) => store.app.productsListFilters);
   const dispatch = useDispatch()
 
-  console.log('render')
 
   useEffect(() => {
     if(window.innerWidth <= 480 && clickedBtn){

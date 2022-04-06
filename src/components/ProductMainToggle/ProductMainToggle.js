@@ -23,7 +23,6 @@ const ProductMainToggle = ({productDataObj, setProductDataObj}) => {
   }
 
   const toggleCapacity = (capacity) => {
-    console.log(capacity)
     const newProduct= similarProducts.find(product => product.capacity === capacity && product.color === productDataObj.color)
     if(newProduct){
       setProductDataObj(newProduct)

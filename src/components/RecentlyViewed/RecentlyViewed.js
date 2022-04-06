@@ -1,22 +1,20 @@
-import React, { useEffect, useMemo, useState } from 'react'
+import React, { useCallback, useEffect, useMemo, useState } from 'react'
 import { useDispatch, useSelector } from "react-redux";
+import { useParams } from 'react-router-dom';
 import List from '../List/List'
 
 const RecentlyViewed = () => {
   const recentlyViewed = useSelector((store) => store.app.recentlyViewed);
   const productsArr = useSelector((store) => store.app.productsArr);
-
+  console.log(recentlyViewed)
+  
   useEffect(() => {
     localStorage.setItem('recentlyViewed', JSON.stringify(recentlyViewed))
   }, [recentlyViewed])
 
-  console.log('rerender')
-
-  const filteredArr = useMemo(() => productsArr.filter(product => recentlyViewed.includes(product.id)), [recentlyViewed])
-
   return (
     <div>
-      <List productsArr={filteredArr}/>
+      <List productsArr={recentlyViewed}/>
     </div>
   )
 }

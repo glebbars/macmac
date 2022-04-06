@@ -17,14 +17,16 @@ const ProductMain = ({productDataObj, setProductDataObj}) => {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    if(!recentlyViewed.includes(productDataObj.id)){
-      setTimeout(() => {
-        console.log('aaded a new recently viewed item', productDataObj.id)
-          dispatch({
-            type: 'ADD_RECENTLY_VIEWED',
-            payload: [productDataObj.id, ...recentlyViewed]
-          })
-        }, 7000)
+    if(!recentlyViewed.some(product => product.id === productDataObj.id)){
+      const newRecentlyViewedArr = [productDataObj, ...recentlyViewed]
+
+      if(recentlyViewed.length === 4){
+        newRecentlyViewedArr.splice(-1)
+      }
+      dispatch({
+        type: 'ADD_RECENTLY_VIEWED',
+        payload: newRecentlyViewedArr
+      })
     }
   }, [])
  

@@ -15,9 +15,7 @@ import Product from '../components/Product/Product'
 
 const AppRoutes = ({authProvider, dataProvider, history}) => {
   const dispatch = useDispatch();
-
   const location = useLocation()
-  // const location = useLocation()
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -28,7 +26,7 @@ const AppRoutes = ({authProvider, dataProvider, history}) => {
 
   useEffect(() => {
     dispatch(getAllProducts());
-  }, [dispatch])
+  }, [])
 
 
   return (

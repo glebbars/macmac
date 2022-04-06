@@ -22,13 +22,13 @@ const Product = () => {
 
   return(
     <div className='product'>
-      {productDataObj.category && <ProductsPageBreadcrumbs modelCurmb={modelCrumb}/> }
-      <div className='product__content'>
-        {productDataObj.pictures && <ProductSlider productImgs={productDataObj.pictures } productId={productDataObj.id} /> }
-        {productDataObj.category && <ProductMain setProductDataObj={setProductDataObj} productDataObj={productDataObj}/>}
-      </div>
-      <RecentlyViewed />
+    {productDataObj.category && <ProductsPageBreadcrumbs modelCurmb={modelCrumb}/> }
+    <div className='product__content'>
+      {productDataObj.pictures && <ProductSlider productImgs={productDataObj.pictures } productId={productDataObj.id} /> }
+      {productDataObj.category && <ProductMain setProductDataObj={setProductDataObj} productDataObj={productDataObj}/>}
     </div>
+    <RecentlyViewed />
+  </div>
   )
 }
 

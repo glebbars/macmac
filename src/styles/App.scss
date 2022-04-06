@@ -3410,6 +3410,7 @@ body{
       display: inline-flex;
       width: 60px;
       height: 60px;
+      overflow: hidden;
       background: #FFFFFF;
       border: 1px solid #DEE2E6;
       box-sizing: border-box;
@@ -3419,6 +3420,8 @@ body{
       &__img{
         margin: auto;
         height: 80%;
+        max-width: 80%;
+        object-fit: contain;
       }
 
       @media(max-width: 540px){
