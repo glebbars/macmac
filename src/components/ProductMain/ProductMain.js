@@ -28,7 +28,7 @@ const ProductMain = ({productDataObj, setProductDataObj}) => {
         payload: newRecentlyViewedArr
       })
     }
-  }, [])
+  }, [productDataObj])
  
   return(
     <div className="product__main">
