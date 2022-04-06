@@ -10,7 +10,8 @@ import {
   UPDATE_SORT_TYPE,
   UPDATE_PAGE_SIZE,
   UPDATE_SORTED_PRODUCTS_LENGTH,
-  UPDATE_PAGE_NUM
+  UPDATE_PAGE_NUM,
+  ADD_RECENTLY_VIEWED
 } from "./actions/types";
 
 
@@ -21,6 +22,7 @@ export const initialStore = {
   productsListFilters: [],
   pageNum: 1,
   productsArr: [],
+  recentlyViewed: JSON.parse(localStorage.getItem("recentlyViewed")) || [],
     // favorites: [],
     // addedToBag: [],
   favorites: JSON.parse(localStorage.getItem("favorites")) || [],
@@ -78,7 +80,11 @@ const appReducer = (store = initialStore, action) => {
         ...store,
         productsListFilters: [...action.payload],
       }; 
-
+    case ADD_RECENTLY_VIEWED: 
+      return  {
+        ...store,
+        recentlyViewed: [...action.payload]
+      }
     default:
       return store;
   }

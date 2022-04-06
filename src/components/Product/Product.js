@@ -4,6 +4,7 @@ import {useParams} from "react-router-dom";
 import ProductMain from '../ProductMain/ProductMain'
 import ProductSlider from '../ProductSlider/ProductSlider'
 import ProductsPageBreadcrumbs from '../ProductsPageBreadcrumbs/ProductsPageBreadcrumbs';
+import RecentlyViewed from '../RecentlyViewed/RecentlyViewed';
 
 const Product = () => {
   const {id} = useParams()
@@ -26,6 +27,7 @@ const Product = () => {
         {productDataObj.pictures && <ProductSlider productImgs={productDataObj.pictures } productId={productDataObj.id} /> }
         {productDataObj.category && <ProductMain setProductDataObj={setProductDataObj} productDataObj={productDataObj}/>}
       </div>
+      <RecentlyViewed />
     </div>
   )
 }

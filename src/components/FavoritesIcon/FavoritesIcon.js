@@ -5,7 +5,6 @@ const FavoritesIcon = ({productId}) => {
   const dispatch = useDispatch()
   const favorites = useSelector((store) => store.app.favorites);
 
-  console.log('render')
 
   useEffect(() => {
     localStorage.setItem("favorites", JSON.stringify(favorites));

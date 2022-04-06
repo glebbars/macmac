@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import tick from '../../img/tick.svg'
 import ProductMainToggle from '../ProductMainToggle/ProductMainToggle'
 import ProductMainPurchase from '../ProductMainPurchase/ProductMainPurchase'
@@ -10,8 +10,23 @@ import orangeTruck from '../../img/truck-orange.svg'
 import orangeCash from '../../img/cash-orange.svg'
 import orangeCreditCard from '../../img/credit-card-orange.svg'
 import orangeBankAccount from '../../img/bank-account-orange.svg'
+import { useDispatch, useSelector } from "react-redux";
 
 const ProductMain = ({productDataObj, setProductDataObj}) => {
+  const recentlyViewed = useSelector((store) => store.app.recentlyViewed);
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    if(!recentlyViewed.includes(productDataObj.id)){
+      setTimeout(() => {
+        console.log('aaded a new recently viewed item', productDataObj.id)
+          dispatch({
+            type: 'ADD_RECENTLY_VIEWED',
+            payload: [productDataObj.id, ...recentlyViewed]
+          })
+        }, 7000)
+    }
+  }, [])
  
   return(
     <div className="product__main">
