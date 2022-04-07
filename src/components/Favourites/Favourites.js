@@ -13,10 +13,10 @@ const Favourites = () => {
     localStorage.setItem("favorites", JSON.stringify(favorites));
   }, [favorites]);
 
-  const filterredArr = productsArr.filter(product => {
-    if(favorites.includes(product.id)){
-      return product
-    }
+  const filteredArr = productsArr.filter(product => favorites.includes(product.id))
+
+  const sortedArr = filteredArr.sort((a, b) => {
+    return favorites.indexOf(a.id) - favorites.indexOf(b.id)
   })
 
   return (
@@ -37,7 +37,7 @@ const Favourites = () => {
       </div>
       {favorites.length > 0 ?
         <div className="favorites__list__wrapper">
-          <List className='favorites__list__content' productsArr={filterredArr}/>
+          <List className='favorites__list__content' productsArr={sortedArr}/>
         </div>
         :
         <div className="favorites__none-items__wrapper">

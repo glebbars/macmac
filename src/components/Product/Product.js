@@ -27,7 +27,7 @@ const Product = () => {
       {productDataObj.pictures && <ProductSlider productImgs={productDataObj.pictures } productId={productDataObj.id} /> }
       {productDataObj.category && <ProductMain setProductDataObj={setProductDataObj} productDataObj={productDataObj}/>}
     </div>
-    <RecentlyViewed />
+    <RecentlyViewed className=''/>
   </div>
   )
 }

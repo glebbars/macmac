@@ -3,18 +3,26 @@ import { useDispatch, useSelector } from "react-redux";
 import { useParams } from 'react-router-dom';
 import List from '../List/List'
 
-const RecentlyViewed = () => {
+const RecentlyViewed = ({className}) => {
   const recentlyViewed = useSelector((store) => store.app.recentlyViewed);
   const productsArr = useSelector((store) => store.app.productsArr);
-  console.log(recentlyViewed)
-  
+
+  console.log('renderrernder')
+
   useEffect(() => {
     localStorage.setItem('recentlyViewed', JSON.stringify(recentlyViewed))
   }, [recentlyViewed])
 
+  const filteredArr = productsArr.filter(product => recentlyViewed.includes(product.id))
+
+  const sortedArr = filteredArr.sort((a, b) => {
+    return recentlyViewed.indexOf(a.id) - recentlyViewed.indexOf(b.id)
+  })
+
   return (
-    <div>
-      <List productsArr={recentlyViewed}/>
+    <div className={`recently-viewed ${className}`}>
+      <h1 className='recently-viewed__header'>Недавно просмотренные</h1>
+      <List className={`recently-viewed__list ${className}__list`} productsArr={sortedArr}/>
     </div>
   )
 }

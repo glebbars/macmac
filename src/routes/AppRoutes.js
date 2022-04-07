@@ -12,11 +12,16 @@ import NotFound from "../components/NotFound/NotFound";
 import Footer from '../components/Footer/Footer'
 import {categoryProductsOptions, modelIphoneOptions} from '../components/additionalObjects/additionalObjects'
 import Product from '../components/Product/Product'
+import { TransitionGroup, CSSTransition } from 'react-transition-group'
 
 const AppRoutes = ({authProvider, dataProvider, history}) => {
   const dispatch = useDispatch();
   const location = useLocation()
 
+  useEffect(() => {
+    dispatch(getAllProducts());
+  }, [])
+  
   useEffect(() => {
     window.scrollTo(0, 0)
     // if(!location.pathname.includes('admin')){
@@ -24,24 +29,29 @@ const AppRoutes = ({authProvider, dataProvider, history}) => {
     // }
   }, [location]);
 
-  useEffect(() => {
-    dispatch(getAllProducts());
-  }, [])
 
 
   return (
     <div>
       {!location.pathname.includes('admin') && <HeaderMenu/>}
-      <Switch>
-        <Route path="/" exact render={() => includeFooter(Main)}/>
-        <Route path="/admin" exact render={() => <AdminPannel dataProvider={dataProvider} authProvider={authProvider}  history={history} />}/>
-        <Route path="/category/:categoryName" exact render={() => includeFooter(ProductsPage)}/>
-        <Route path="/category/:categoryName/:id" exact render={() => includeFooter(Product)}/>
-        <Route path="/favourites" exact render={() => includeFooter(Favourites)}/>
-        <Route path="/bag" exact render={() => includeFooter(Bag)}/>
-        <Route component={NotFound}/>
-        <Redirect from="*" to="/" />
-      </Switch>
+      <TransitionGroup>
+        <CSSTransition
+          timeout={200}
+          classNames='fade'
+          key={location.key}
+        >
+          <Switch>
+            <Route path="/" exact render={() => includeFooter(Main)}/>
+            <Route path="/admin" exact render={() => <AdminPannel dataProvider={dataProvider} authProvider={authProvider}  history={history} />}/>
+            <Route path="/category/:categoryName" exact render={() => includeFooter(ProductsPage)}/>
+            <Route path="/category/:categoryName/:id" exact render={() => includeFooter(Product)}/>
+            <Route path="/favourites" exact render={() => includeFooter(Favourites)}/>
+            <Route path="/bag" exact render={() => includeFooter(Bag)}/>
+            <Route component={NotFound}/>
+            <Redirect from="*" to="/" />
+          </Switch>
+      </CSSTransition>
+      </TransitionGroup> 
     </div>
     );
 };

@@ -17,8 +17,8 @@ const ProductMain = ({productDataObj, setProductDataObj}) => {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    if(!recentlyViewed.some(product => product.id === productDataObj.id)){
-      const newRecentlyViewedArr = [productDataObj, ...recentlyViewed]
+    if(!recentlyViewed.includes(productDataObj.id)){
+      const newRecentlyViewedArr = [productDataObj.id, ...recentlyViewed]
 
       if(recentlyViewed.length === 4){
         newRecentlyViewedArr.splice(-1)
@@ -28,7 +28,7 @@ const ProductMain = ({productDataObj, setProductDataObj}) => {
         payload: newRecentlyViewedArr
       })
     }
-  }, [productDataObj])
+  }, [])
  
   return(
     <div className="product__main">
