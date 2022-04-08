@@ -18,7 +18,7 @@ export const openPopupboxOneClick = (productDataObj) => {
     config: {
       overlayClose: true,
       escClose: true,
-      className: 'product__pop-up',
+      className: 'pop-up__one-click',
       titleBar: {
         enable: false
       },
@@ -28,3 +28,12 @@ export const openPopupboxOneClick = (productDataObj) => {
     }
   })
 };
+
+export const parchasePopUp = () => {
+
+  return (
+    <div>
+      <div></div>
+    </div>
+  )
+}

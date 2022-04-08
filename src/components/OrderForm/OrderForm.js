@@ -43,17 +43,19 @@ const OrderForm = ({closePopUp, productDataToBot}) => {
   })
 
   return (
-    <form className='product__pop-up__form' onSubmit={handleSubmit(sendToTelegramBot)}>
-      <div className='product__pop-up__form__closing-cross' onClick={closePopUp}></div>
-      <h1 className='product__pop-up__form__header'>Купить в один клик</h1>
-      <label htmlFor="firstName" className='product__pop-up__form__label'>Имя</label>
-      <input
-        className='product__pop-up__form__input'
-        {...register("firstName", {
-          required: "Введите имя",
-        })}
-      />
-      {errors.firstName && <p className='product__pop-up__form__error'>{errors.firstName.message}</p>}
+    <form className='pop-up__one-click__form' onSubmit={handleSubmit(sendToTelegramBot)}>
+      <div className='pop-up__one-click__form__closing-cross' onClick={closePopUp}></div>
+      <h1 className='pop-up__one-click__form__header'>Купить в один клик</h1>
+      <div className='pop-up__one-click__form__field-wrapper'>
+        <label htmlFor="firstName" className='pop-up__one-click__form__label'>Имя</label>
+          <input
+            className='pop-up__one-click__form__input'
+            {...register("firstName", {
+              required: "Введите имя",
+            })}
+            />
+          {errors.firstName && <p className='pop-up__one-click__form__error'>{errors.firstName.message}</p>}
+      </div>
 
       {/* <label htmlFor="lastName">Last Name</label>
       <input
@@ -76,7 +78,7 @@ const OrderForm = ({closePopUp, productDataToBot}) => {
       />
       {errors.email && <p>{errors.email.message}</p>} */}
 
-      <label htmlFor="phone" className='product__pop-up__form__label'>Номер телефона</label>
+      <label htmlFor="phone" className='pop-up__one-click__form__label'>Номер телефона</label>
       <Controller
         name="phone"
         control={control}
@@ -86,7 +88,7 @@ const OrderForm = ({closePopUp, productDataToBot}) => {
         }}
         render={({ field: { onChange, value } }) => (
           <Input
-            className='product__pop-up__form__input product__pop-up__form__input_phone'
+            className='pop-up__one-click__form__input pop-up__one-click__form__input_phone'
             country="UA"
             international
             withCountryCallingCode
@@ -94,11 +96,11 @@ const OrderForm = ({closePopUp, productDataToBot}) => {
             onChange={onChange}/>
           )}
       />
-      {errors["phone"] && <p className="error-message">Неверный номер телефона</p>}
+      {errors["phone"] && <p className="pop-up__one-click__form__error">Неверный номер телефона</p>}
         
         
-      <p className='product__pop-up__form__contact'>Мы перезвоним вам и уточним детали</p>
-      <button className='product__pop-up__form__btn' type='submit'>Сделать заказ</button>
+      <p className='pop-up__one-click__form__contact'>Мы перезвоним вам и уточним детали</p>
+      <button className='pop-up__one-click__form__btn' type='submit'>Сделать заказ</button>
     </form>
   );
 }
