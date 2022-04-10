@@ -3,7 +3,7 @@ import bagIcon from '../../img/product-bag.svg'
 import {openPopupboxOneClick, PurchasePopUp} from '../PopUps/PopUps'
 
 const ProductMainPurchase = ({productDataObj}) => {
-  const [openedPerchasePopUp, setOpenedPurchasePopUp] = useState(false)
+  const [openedPerchasePopUp, setOpenedPurchasePopUp] = useState(true)
 
   const closePopUp = () => setOpenedPurchasePopUp(false)
 
@@ -16,7 +16,7 @@ const ProductMainPurchase = ({productDataObj}) => {
       <div onClick={() => openPopupboxOneClick(productDataObj)} className='product__main__purchase__one-click'>
         <span className='product__main__purchase__one-click__text'>Купить в один клик</span>
       </div>
-      {openedPerchasePopUp && <PurchasePopUp closePopUp={closePopUp}  productDataObj={productDataObj} />}
+      <PurchasePopUp closePopUp={closePopUp} activePopUp={openedPerchasePopUp} productDataObj={productDataObj} />
     </div>
   )
 }
