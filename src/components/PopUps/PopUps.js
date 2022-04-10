@@ -63,8 +63,10 @@ export const PurchasePopUp = ({activePopUp, productDataObj, closePopUp}) => {
             <span className='pop-up__purchase__main__content__text'>Емкость: 64Gb</span>
             <span className='pop-up__purchase__main__content__text'>Цвет: Space Grey</span>
           </div>
-          <h3  className='pop-up__purchase__main__price'>{productDataObj.price}</h3>
-          <div className='pop-up__purchase__cross pop-up__purchase__cross_product'></div>
+          <div>
+            <h3  className='pop-up__purchase__main__price'>{productDataObj.price}</h3>
+            <div className='pop-up__purchase__cross pop-up__purchase__cross_product'></div>
+          </div>
         </main>
         <div className='pop-up__purchase__line'></div>
         <div className='pop-up__purchase__btns-wrapper'>
