@@ -4060,6 +4060,13 @@ body{
     visibility: hidden;
     transition: all 0.75s ease;
 
+    @media (max-width: 540px) {
+      background: transparent;
+      position: absolute;
+      height: auto;
+      width: initial;
+    }
+
     &_active{
       opacity: 1;
       visibility: visible;
@@ -4070,18 +4077,34 @@ body{
       z-index: 3;
       width: 100%;
       height: 100%;
+
+      @media (max-width: 540px) {
+        width: 100vw;
+        height: 100vh;
+      }
     }
 
     &__wrapper{
       position: relative;
-      padding: 30px 32px 20px;
+      padding: 30px 32px 25px;
       margin: auto;
-      width: 680px;
-      height: 360px;
+      width: 640px;
       background-color: white;
       z-index: 4;
       box-shadow: 0px 0px 16px rgba(57, 59, 101, 0.12);
       border-radius: 8px;
+      box-sizing: border-box;
+      max-width: calc(100% - 20px);
+      overflow: hidden;
+
+      @media(max-width: 768px){
+        padding: 25px 25px 20px;
+      }
+
+      @media (max-width: 540px) {
+        box-shadow: none;
+        width: auto;
+      }
     }
 
     &__cross{
@@ -4092,34 +4115,43 @@ body{
       top: 16px;
       z-index: 3;
 
-    &::after,
-    &::before{
-      position: absolute;
-      left: 0;
-      content: '';
-      height: 22px;
-      width: 2px;
-      background-color: #ADB5BD;
-      transform: rotate(45deg);
-      border-radius: 1px;
+      &::after,
+      &::before{
+        position: absolute;
+        left: 0;
+        content: '';
+        height: 22px;
+        width: 2px;
+        background-color: #ADB5BD;
+        transform: rotate(45deg);
+        border-radius: 1px;
 
-      @media (max-width: 768px) {
-        height: 17px;
+        @media (max-width: 768px) {
+          height: 18px;
+        }
+
+        @media(max-width: 540px){
+          height: 17px;
+        }
       }
 
-      @media(max-width: 540px){
-        height: 16px;
+      &::after{
+        transform: rotate(-45deg);
       }
-    }
-
-    &::after{
-      transform: rotate(-45deg);
-    }
 
       &_product{
+        top: 6px;
+        right: -10px;
 
+        &::after,
+        &::before{
+          height: 16px;
+        }
       }
 
+      @media (max-width: 540px) {
+        display: none;
+      }
     }
 
     &__header{
@@ -4128,9 +4160,9 @@ body{
         display: none;
 
         @media(max-width: 540px){
+          width: 20px;
           display: inline-block;
         }
-
       }
 
       &__text,
@@ -4141,10 +4173,12 @@ body{
         letter-spacing: 0.0025em;
         color: #343A40;
         margin: 0;
+        display: inline-block;
       }
 
       &__length{
-
+        margin-left: 8px;
+        color: #ADB5BD;
       }
     }
 
@@ -4155,6 +4189,11 @@ body{
       grid-column-gap: 30px;
       grid-row-gap: 20px;
       margin-top: 30px;
+
+      @media(max-width: 768px){
+        grid-column-gap: 20px;
+        margin-top: 20px;
+      }
 
       &__img-wrapper{
         grid-area: 2/1/3/2;
@@ -4172,37 +4211,84 @@ body{
         margin: auto;
       }
 
-      &__label-name{
-        grid-area: 1/1/2/3;
-        font-size: 16px;
-        letter-spacing: 0.005em;
-        color: #6C757D;
-      }
+      &__label{
 
-      &__label-price{
-        grid-area: 1/3/2/4;
-        text-align: right;
-        font-size: 16px;
-        letter-spacing: 0.005em;
-        color: #6C757D;
+        &__name{
+          grid-area: 1/1/2/3;
+          font-size: 16px;
+          letter-spacing: 0.005em;
+          color: #6C757D;
+
+          @media (max-width: 540px) {
+            display: none;
+          }
+        }
+  
+        &__price{
+          grid-area: 1/3/2/4;
+          margin: 0 0 0 auto;
+          font-size: 16px;
+          letter-spacing: 0.005em;
+          color: #6C757D;
+
+          @media (max-width: 540px) {
+            display: none;
+          }
+        }
       }
+      
 
       &__content{
         grid-area: 2/2/3/3; 
-        @include flex-column-left;
-        
+
         &__header{
+          color: #343A40;
           font-size: 16px;
-          margin: 0 0 12px;
+          margin: 0 0 15px;
+          font-weight: 500;
+          line-height: 26px;
+
+          @media (max-width: 600px) {
+            margin: 0 0 10px;
+          }
         }
 
         &__text{
           font-size: 14px;
           color: #6C757D;
-          margin: 0 0 8px;
+          margin: 0 0 10px;
+          line-height: 24px;
+
+          @media (max-width: 600px) {
+            margin: 0 0 4px;
+          }
+
+          @media (max-width: 540px) {
+            display: inline-block;
+          }
+
+          &__label{
+            @media (max-width: 540px) {
+              display: none;
+            }
+          }
+
+          &__coma{
+            display: none;
+
+            @media (max-width: 540px) {
+              display: inline-block;
+            }
+          }
 
           &:last-of-type{
             margin: 0;
+
+            & span{
+              @media (max-width: 540px) {
+                display: none;
+              }
+            }
           }
         }
         
@@ -4210,8 +4296,13 @@ body{
 
       &__price{
         grid-area: 2/3/3/4; 
-        margin: 0;
         text-align: right;
+        font-size: 16px;
+        font-weight: 500;
+        margin: 0;
+        letter-spacing: 0.005em;
+        color: #343A40;
+        line-height: 26px;
       }
 
     }
@@ -4222,18 +4313,72 @@ body{
       height: 1px;
       width: calc(100% + 64px);
 
+      @media (max-width: 768px) {
+       margin: 25px -25px 20px; 
+      }
+
+      @media (max-width: 540px) {
+        display: none;
+      }
     }
 
     &__btns-wrapper{
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
 
+      @media (max-width: 540px) {
+        display: none;
+      }
     }
 
     &__btn-bag{
+      text-decoration: none;
+      display: flex;
+      align-items: end;
 
+      @media (max-width: 768px) {
+        align-items: center;
+      }
+
+
+      &__img{
+        margin-right: 8px;
+      }
+
+      &__text{
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 0.0155em;
+        color: #343A40;
+
+        @media (max-width: 768px) {
+          font-size: 15px;
+        }
+      }
     }
 
     &__btn-order{
+      width: 202px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: 0.0155em;
+      color: white;
+      height: 50px;
+      padding: 15px 0;
+      box-sizing: border-box;
+      text-align: center;
+      background: #FA530D;
+      border-radius: 8px;
+      margin-left: 30px;
 
+      @media (max-width: 768px) {
+        padding: 11px 0;
+        height: 40px;
+        width: 182px;
+        font-size: 15px;
+      }
     }
 
   }

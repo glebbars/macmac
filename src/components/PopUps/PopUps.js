@@ -33,10 +33,8 @@ export const openPopupboxOneClick = (productDataObj) => {
   })
 };
 
-export const PurchasePopUp = ({activePopUp, productDataObj, closePopUp}) => {
-  const addedToBag = useSelector((store) => store.app.addedToBag);
-
-  console.log(productDataObj.pictures)
+export const PurchasePopUp = ({addedToBag, activePopUp, productDataObj, closePopUp}) => {
+  const fullProductName = `${productDataObj.category} ${productDataObj.model} ${productDataObj.capacity} ${productDataObj.color}`
 
   useEffect(() => {
     localStorage.setItem("addedToBag", JSON.stringify(addedToBag));
@@ -53,28 +51,44 @@ export const PurchasePopUp = ({activePopUp, productDataObj, closePopUp}) => {
           {addedToBag.length > 0 && <span className='pop-up__purchase__header__length'>{addedToBag.length}</span>}
         </header>
         <main className='pop-up__purchase__main'>
-          <span className='pop-up__purchase__main__label-name'>Название товара</span>
-          <span className='pop-up__purchase__main__label-price'>Цена</span>
+          <span className='pop-up__purchase__main__label__name'>Название товара</span>
+          <span className='pop-up__purchase__main__label__price'>Цена</span>
           <div className='pop-up__purchase__main__img-wrapper'>
             <img className='pop-up__purchase__main__img' src={productDataObj.pictures[0].url} alt="" />
           </div>
           <div className='pop-up__purchase__main__content'>
-            <h2 className='pop-up__purchase__main__content__header'>Apple iPhone X 128Gb Grey</h2>
-            <span className='pop-up__purchase__main__content__text'>Емкость: 64Gb</span>
-            <span className='pop-up__purchase__main__content__text'>Цвет: Space Grey</span>
+            <h2 className='pop-up__purchase__main__content__header'>{fullProductName}</h2>
+            {!productDataObj.color && !productDataObj.capacity && productDataObj.model && 
+              <p className='pop-up__purchase__main__content__text'>
+                <span className='pop-up__purchase__main__content__text__label'>Модель: </span>
+                {productDataObj.model}
+                <span className='pop-up__purchase__main__content__text__coma'>&#44; &nbsp;</span>
+              </p>
+            }
+            {productDataObj.color && 
+              <p className='pop-up__purchase__main__content__text'>
+                  <span className='pop-up__purchase__main__content__text__label'>Цвет: </span>
+                  {productDataObj.color}
+                  <span className='pop-up__purchase__main__content__text__coma'>&#44; &nbsp;</span>
+              </p>
+            }
+            {productDataObj.capacity && 
+              <p className='pop-up__purchase__main__content__text'>
+                <span className='pop-up__purchase__main__content__text__label'>Память: </span>
+                {productDataObj.capacity}
+                <span className='pop-up__purchase__main__content__text__coma'>&#44; &nbsp;</span>
+              </p>
+            }
           </div>
-          <div>
-            <h3  className='pop-up__purchase__main__price'>{productDataObj.price}</h3>
-            <div className='pop-up__purchase__cross pop-up__purchase__cross_product'></div>
-          </div>
+          <h3  className='pop-up__purchase__main__price'>{productDataObj.price.toLocaleString()}.00&#x20b4;</h3>
         </main>
         <div className='pop-up__purchase__line'></div>
         <div className='pop-up__purchase__btns-wrapper'>
-          <Link className='pop-up__purchase__btn-bag' to='bag'>
-            <img src={bagGrey} alt="" />
-            Корзина
+          <Link className='pop-up__purchase__btn-bag' to='/bag'>
+            <img className='pop-up__purchase__btn-bag__img' src={bagGrey} alt="" />
+            <span className='pop-up__purchase__btn-bag__text'>Корзина</span>
           </Link>
-          <Link className='pop-up__purchase__btn-order' to='order'>Оформить заказ</Link>
+          <Link className='pop-up__purchase__btn-order' to='/order'>Оформить заказ</Link>
         </div>
       </div>
     </div>
