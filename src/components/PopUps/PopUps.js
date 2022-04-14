@@ -48,7 +48,14 @@ export const PurchasePopUp = ({addedToBag, activePopUp, productDataObj, closePop
         <header className='pop-up__purchase__header'>
           <img src={bag} alt="" className='pop-up__purchase__header__img' />
           <h1 className='pop-up__purchase__header__text'>Корзина</h1>
-          {addedToBag.length > 0 && <span className='pop-up__purchase__header__length'>{addedToBag.length}</span>}
+          <Link to="/bag" className='pop-up__purchase__header__text pop-up__purchase__header__text_link'>Корзина</Link>
+          {addedToBag.length > 0 && (
+            <span className='pop-up__purchase__header__length'>
+              <span className='pop-up__purchase__header__length__brace'>(</span>
+                {addedToBag.length}
+              <span className='pop-up__purchase__header__length__brace'>)</span>
+            </span>
+          )}
         </header>
         <main className='pop-up__purchase__main'>
           <span className='pop-up__purchase__main__label__name'>Название товара</span>

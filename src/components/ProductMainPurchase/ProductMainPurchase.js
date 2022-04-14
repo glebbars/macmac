@@ -4,7 +4,7 @@ import {openPopupboxOneClick, PurchasePopUp} from '../PopUps/PopUps'
 import { useDispatch, useSelector } from "react-redux";
 
 const ProductMainPurchase = ({productDataObj}) => {
-  const [openedPerchasePopUp, setOpenedPurchasePopUp] = useState(true)
+  const [openedPerchasePopUp, setOpenedPurchasePopUp] = useState(false)
   const addedToBag = useSelector((store) => store.app.addedToBag);
   const dispatch = useDispatch()
 

@@ -167,3 +167,16 @@ export const favoritesCrumbs = [
     link: '/favourites'
   }
 ]
+
+
+export const bagCrumbs = [
+  {
+    name: 'MacMac',
+    link: '/'
+  },
+  {
+    name: 'Корзина',
+    link: '/bag'
+  }
+]
+
