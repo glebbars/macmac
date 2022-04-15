@@ -7,18 +7,11 @@ import bagIcon from '../../img/bag-zero-length.svg'
 import BagMain from '../BagMain/BagMain'
 
 const Bag = () => {
-  const productsArr = useSelector((store) => store.app.productsArr);
   const addedToBag = useSelector((store) => store.app.addedToBag);
 
   useEffect(() => {
     localStorage.setItem("addedToBag", JSON.stringify(addedToBag));
   }, [addedToBag]);
-
-  const filteredArr = productsArr.filter(product => addedToBag.includes(product.id))
-
-  const sortedArr = filteredArr.sort((a, b) => {
-    return addedToBag.indexOf(a.id) - addedToBag.indexOf(b.id)
-  })
 
   return (
     <div className="bag">
@@ -36,7 +29,7 @@ const Bag = () => {
           </h1>
         </div>
       </div>
-      {sortedArr.length > 0 ? <BagMain productsArr={sortedArr} />
+      {addedToBag.length > 0 ? <BagMain addedToBag={addedToBag} />
         :
         <div className="favorites__none-items__wrapper">
           <img className="favorites__none-items__image" src={bagIcon} alt="" />

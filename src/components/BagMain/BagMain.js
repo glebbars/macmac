@@ -2,11 +2,11 @@ import React from 'react'
 import BagList from '../BagList/BagList'
 import BagCheckout from '../BagCheckout/BagCheckout'
 
-const BagMain = ({productsArr}) => {
+const BagMain = ({addedToBag}) => {
 
   return(
     <div className="bag__main__wrapper">
-      <BagList productsArr={productsArr} />
+      <BagList addedToBag={addedToBag} />
       <BagCheckout />
     </div>
   )

@@ -3779,6 +3779,10 @@ body{
           text-align: center;
         }
 
+        &:nth-of-type(3){
+          margin-right: 10px;
+        }
+
         &:nth-of-type(3),
         &:nth-of-type(4){
           text-align: right;
@@ -3876,6 +3880,49 @@ body{
           &_last{
             display: none;
           }
+        }
+      }
+
+      &__number{
+        @include flex-center;
+        width: 114px;
+        height: 44px;
+        background: #FFFFFF;
+        border: 1px solid #DEE2E6;
+        border-radius: 8px;
+        box-sizing: border-box;
+        margin-left: auto;
+
+        &__text{
+          min-width: 18px;
+          text-align: center;
+          font-weight: 400;
+          font-size: 16px;
+          letter-spacing: 0.005em;
+          color: #343A40;
+          margin: 0 16px;
+        }
+
+        &__increase{
+          position: relative;
+
+          &::after{
+            content: "";
+            position: absolute;
+            width: 2px;
+            bottom: -6.5px;
+            height: 15px;
+            background-color: #ADB5BD;
+            right: 6.5px;
+          }
+        }
+
+        &__increase,
+        &__decrease{
+          display: inline-block;
+          height: 2px;
+          width: 15px;
+          background-color: #ADB5BD;
         }
       }
 

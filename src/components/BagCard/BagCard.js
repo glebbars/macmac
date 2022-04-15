@@ -1,7 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-const BagCard = ({productDataObj, additionalClass}) => {
+const BagCard = ({productDataObj, additionalClass, removeFromTheBag}) => {
+  const [productsNum, setProductsNum] = useState(1)
+
   const fullProductName = `${productDataObj.category} ${productDataObj.model} ${productDataObj.capacity} ${productDataObj.color}`
+
+  const decreaseNum = () => {
+    if(productsNum > 1){
+      setProductsNum(productsNum - 1)
+    }
+  }
+
+  const increaseNum = () => {
+    if(productsNum < 10){
+      setProductsNum(productsNum + 1)
+    }
+  }
 
   return(
     <>
@@ -39,11 +53,13 @@ const BagCard = ({productDataObj, additionalClass}) => {
       {productDataObj.price.toLocaleString()}.00&#x20b4;
     </div>
     <div className='bag__main__card__number'>
-      number
+      <span onClick={decreaseNum} className='bag__main__card__number__decrease'></span>
+      <span className='bag__main__card__number__text'>{productsNum}</span>
+      <span onClick={increaseNum} className='bag__main__card__number__increase'></span>
     </div>
     <div className='bag__main__card__total'>
-      {productDataObj.price.toLocaleString()}.00&#x20b4;
-        <div className='bag__main__card__cross'></div>
+      {(productDataObj.price * productsNum).toLocaleString()}.00&#x20b4;
+      <div onClick={() => removeFromTheBag(productDataObj.id)} className='bag__main__card__cross'></div>
     </div>
     </>
   )
