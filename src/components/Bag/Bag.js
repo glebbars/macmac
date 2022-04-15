@@ -4,7 +4,7 @@ import List from '../List/List'
 import {bagCrumbs} from '../additionalObjects/additionalObjects'
 import { Link } from 'react-router-dom'
 import bagIcon from '../../img/bag-zero-length.svg'
-import BagList from '../BagList/BagList'
+import BagMain from '../BagMain/BagMain'
 
 const Bag = () => {
   const productsArr = useSelector((store) => store.app.productsArr);
@@ -36,11 +36,7 @@ const Bag = () => {
           </h1>
         </div>
       </div>
-      {addedToBag.length > 0 ?
-        <div className="favorites__list__wrapper">
-          <BagList />
-          <List className='favorites__list__content' productsArr={sortedArr}/>
-        </div>
+      {sortedArr.length > 0 ? <BagMain productsArr={sortedArr} />
         :
         <div className="favorites__none-items__wrapper">
           <img className="favorites__none-items__image" src={bagIcon} alt="" />

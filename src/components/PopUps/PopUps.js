@@ -40,6 +40,14 @@ export const PurchasePopUp = ({addedToBag, activePopUp, productDataObj, closePop
     localStorage.setItem("addedToBag", JSON.stringify(addedToBag));
  }, [addedToBag]);
 
+ useEffect(() => {
+  if(activePopUp){
+    setTimeout(() => {
+      closePopUp()
+    }, 4000)
+  }
+ }, [activePopUp])
+
   return (
     <div className={`pop-up__purchase ${activePopUp ? 'pop-up__purchase_active' : ''}`}>
       <div onClick={closePopUp}  className='pop-up__purchase__close-wrapper'></div>
