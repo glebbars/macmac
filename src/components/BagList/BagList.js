@@ -2,11 +2,8 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import BagCard from '../BagCard/BagCard'
 
-const BagList = ({addedToBag}) => {
-  const productsArr = useSelector((store) => store.app.productsArr)
+const BagList = ({addedToBag, filteredArr, setTotalOrderPrice, totalOrderPrice}) => {
   const dispatch = useDispatch()
-
-  const filteredArr = productsArr.filter(product => addedToBag.includes(product.id))
 
   const sortedArr = filteredArr.sort((a, b) => {
     return addedToBag.indexOf(a.id) - addedToBag.indexOf(b.id)
@@ -19,6 +16,14 @@ const BagList = ({addedToBag}) => {
     })
   };
 
+  const changeTotalPrice = (type, price) => {
+    if(type === 'increase'){
+      setTotalOrderPrice(totalOrderPrice + price)
+    } else if ('decrease'){
+      setTotalOrderPrice(totalOrderPrice - price)
+    }
+  }
+
   return(
     <div className='bag__main__list'>
       <span className='bag__main__list__label'>Название товара</span>
@@ -27,6 +32,7 @@ const BagList = ({addedToBag}) => {
       <span className='bag__main__list__label'>Всего</span>
       {sortedArr.map(product => (
         <BagCard 
+          changeTotalPrice={changeTotalPrice}
           removeFromTheBag={removeFromTheBag}
           key={product.id} 
           productDataObj={product} 

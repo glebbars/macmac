@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const BagCard = ({productDataObj, additionalClass, removeFromTheBag}) => {
+const BagCard = ({productDataObj, additionalClass, removeFromTheBag, changeTotalPrice}) => {
   const [productsNum, setProductsNum] = useState(1)
 
   const fullProductName = `${productDataObj.category} ${productDataObj.model} ${productDataObj.capacity} ${productDataObj.color}`
@@ -8,12 +8,14 @@ const BagCard = ({productDataObj, additionalClass, removeFromTheBag}) => {
   const decreaseNum = () => {
     if(productsNum > 1){
       setProductsNum(productsNum - 1)
+      changeTotalPrice('decrease', productDataObj.price)
     }
   }
 
   const increaseNum = () => {
     if(productsNum < 10){
       setProductsNum(productsNum + 1)
+      changeTotalPrice('increase', productDataObj.price)
     }
   }
 
