@@ -3496,8 +3496,6 @@ body{
 
 .bag,
 .favorites{
-  // min-height: 85vh;
-  // margin-bottom: 80px;
 
   @media(max-width: 1200px){
     margin-bottom: 70px;
@@ -3754,18 +3752,28 @@ body{
       margin: 50px auto 80px;
       max-width: 1140px;
       min-height: 50vh;
+
+      @media (max-width: 1200px) {
+        width: calc(100% - 50px);
+        max-width: none;
+      }
     }
     
     &__list{
-      padding: 0 50px 0 0;
+      padding: 0 55px 0 0;
       display: grid;
       grid-template-columns: auto 1fr 1fr 1fr;
       grid-template-rows: auto auto;
       grid-row-gap: 25px;
-      grid-row-gap: 25px;
+      grid-column-gap: 25px;
       max-width: 1110px;
       margin: 0 0 0 auto;
       box-sizing: border-box;
+
+      @media (max-width: 1200px) {
+        margin: 0;
+        max-width: none;        
+      }
 
       &__label{
         font-weight: 400;
@@ -3877,6 +3885,10 @@ body{
           height: 1px;
           border-radius: 5px;
 
+          @media(max-width: 1200px){
+            width: calc(100vw - 50px);
+          }
+
           &_last{
             display: none;
           }
@@ -3928,9 +3940,12 @@ body{
 
       &__price{
         text-align: center;
+        margin-top: 10px;
+
       }
 
       &__total{
+        margin-top: 10px;
         position: relative;
       }
 
@@ -3972,9 +3987,10 @@ body{
   &__checkout{
     width: 100%;
     padding: 32px 72px 34px 32px;
-    height: 150px;
+    height: 215px;
     background: #FFFFFF;
     border-radius: 8px;
+    box-sizing: border-box;
 
     &__total{
       font-weight: 400;

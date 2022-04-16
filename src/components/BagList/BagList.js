@@ -9,11 +9,13 @@ const BagList = ({addedToBag, filteredArr, setTotalOrderPrice, totalOrderPrice})
     return addedToBag.indexOf(a.id) - addedToBag.indexOf(b.id)
   })
 
-  const removeFromTheBag = (productId) => {
+  const removeFromTheBag = (productId, price) => {
     dispatch({
       type: 'REMOVE_FROM_BAG',
       payload: addedToBag.filter((id) => id !== productId),
     })
+
+    setTotalOrderPrice(totalOrderPrice - price)
   };
 
   const changeTotalPrice = (type, price) => {

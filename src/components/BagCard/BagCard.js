@@ -61,7 +61,7 @@ const BagCard = ({productDataObj, additionalClass, removeFromTheBag, changeTotal
     </div>
     <div className='bag__main__card__total'>
       {(productDataObj.price * productsNum).toLocaleString()}.00&#x20b4;
-      <div onClick={() => removeFromTheBag(productDataObj.id)} className='bag__main__card__cross'></div>
+      <div onClick={() => removeFromTheBag(productDataObj.id, productDataObj.price * productsNum)} className='bag__main__card__cross'></div>
     </div>
     </>
   )

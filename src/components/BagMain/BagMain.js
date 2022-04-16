@@ -6,7 +6,6 @@ import { useSelector } from 'react-redux';
 const BagMain = ({addedToBag, filteredArr}) => {
   const [totalOrderPrice, setTotalOrderPrice] = useState(0)
 
-
   useEffect(() => {
     if(filteredArr.length > 0){
       const prices = filteredArr.map(product => product.price)
@@ -14,6 +13,10 @@ const BagMain = ({addedToBag, filteredArr}) => {
       setTotalOrderPrice(total)
     }
   }, [])
+
+  // useEffect(() => {
+  //   setTotalOrderPrice(totalOrderPrice)
+  // }, [addedToBag])
 
   return(
     <div className="bag__main__wrapper">
