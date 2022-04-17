@@ -26,6 +26,8 @@ const BagList = ({addedToBag, filteredArr, setTotalOrderPrice, totalOrderPrice})
     }
   }
 
+
+
   return(
     <div className='bag__main__list'>
       <span className='bag__main__list__label'>Название товара</span>
@@ -38,7 +40,7 @@ const BagList = ({addedToBag, filteredArr, setTotalOrderPrice, totalOrderPrice})
           removeFromTheBag={removeFromTheBag}
           key={product.id} 
           productDataObj={product} 
-          additionalClass={product.id === sortedArr[sortedArr.length - 1].id ? 'bag__main__card__info__line_last' : ''}
+          isLastOne={product.id === sortedArr[sortedArr.length - 1].id}
         />
       ))}
     </div>
