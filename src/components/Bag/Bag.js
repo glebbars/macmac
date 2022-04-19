@@ -33,10 +33,10 @@ const Bag = () => {
       </div>
       {filteredArr.length > 0 ? <BagMain addedToBag={addedToBag} filteredArr={filteredArr} />
         :
-        <div className="favorites__none-items__wrapper">
-          <img className="favorites__none-items__image" src={bagIcon} alt="" />
-          <h1 className="favorites__none-items__header">Ваша корзина всё ещё пуста:(</h1>
-          <Link className="favorites__none-items__btn" to='/category/all-products'>Перейти к каталогу</Link>
+        <div className="bag__none-items__wrapper">
+          <img className="bag__none-items__image" src={bagIcon} alt="" />
+          <h1 className="bag__none-items__header">Ваша корзина всё ещё пуста:(</h1>
+          <Link className="bag__none-items__btn" to='/category/all-products'>Перейти к каталогу</Link>
         </div>
       }
     </div>
