@@ -3,27 +3,34 @@ import { useParams, Link } from 'react-router-dom'
 import {routesNames, initialProductCrumbs} from '../additionalObjects/additionalObjects'
 
 
-const ProductsPageBreadcrumbs = ({modelCurmb}) => {
+const ProductsPageBreadcrumbs = ({modelCurmb, searchCrumbs}) => {
   const [crumbsNames, setCrumbsNames] = useState(initialProductCrumbs)
-  const {categoryName, id} = useParams()
+  const {categoryName, id, searchResult} = useParams()
 
   useEffect(() => {
-    if(categoryName !== 'all-products'){
-      const categoryCrumb = {
-        name: routesNames[categoryName],
-        link: `/category/${categoryName}`
-      }
+   identifyPageCrumbs()
+  }, [modelCurmb])
 
-      if(id){
-        setCrumbsNames([...initialProductCrumbs, categoryCrumb, modelCurmb ])
+  const identifyPageCrumbs = () => {
+    if(categoryName){
+      if(categoryName !== 'all-products'){
+        const categoryCrumb = {
+          name: routesNames[categoryName],
+          link: `/category/${categoryName}`
+        }
+        if(id){
+          setCrumbsNames([...initialProductCrumbs, categoryCrumb, modelCurmb ])
+        } else{
+          setCrumbsNames([...initialProductCrumbs, categoryCrumb ])
+        }
+        
       } else{
-        setCrumbsNames([...initialProductCrumbs, categoryCrumb ])
+       return setCrumbsNames(initialProductCrumbs)
       }
-      
-    } else{
-     return setCrumbsNames(initialProductCrumbs)
+    } else if(searchResult){
+      return setCrumbsNames(searchCrumbs)
     }
-  }, [categoryName, modelCurmb])
+  }
 
   return(
     <div className={`${modelCurmb ? "product__crumbs" : "products__header__crumbs__wrapper" }`}>

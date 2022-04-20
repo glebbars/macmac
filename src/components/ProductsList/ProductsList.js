@@ -3,6 +3,7 @@ import {categoryProductsOptions, modelIphoneOptions} from '../additionalObjects/
 import ProductsPagination from '../ProductsPagination/ProductsPagination';
 import List from '../List/List'
 import { useSelector, useDispatch } from "react-redux";
+import { useParams } from "react-router-dom";
 
 const ProductsList = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -11,6 +12,9 @@ const ProductsList = () => {
   const sortType = useSelector(store => store.app.sortType)
   const pageSize = useSelector(store => store.app.pageSize)
   const dispatch = useDispatch()
+  const {categoryName, searchResult} = useParams()
+
+  console.log(searchResult)
 
   useEffect(() => {
     if(currentPage !==1) {
@@ -20,11 +24,15 @@ const ProductsList = () => {
   }, [productsListFilters, pageSize, sortType])
   
   const filteredByCategoryArr = productsArr.filter(product => {
-    const currentPathName = window.location.pathname
-    if(currentPathName.includes('/category/') && !currentPathName.includes('/all-products')){
-      return product.category.toLowerCase() === currentPathName.split('/category/')[1]
-    } else{
-      return product
+    if(categoryName){
+      if(categoryName !== "all-products"){
+        return product.category.toLowerCase() === categoryName
+      } else{
+        return product
+      }
+    } else if(searchResult){
+      const fullProductName = `${product.category.toLowerCase()} ${product.model.toLowerCase()} ${product.capacity.toLowerCase()} ${product.color.toLowerCase()}`
+      return fullProductName.includes(searchResult)
     }
   })
   

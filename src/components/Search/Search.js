@@ -1,13 +1,12 @@
-import React from 'react'
-import search from "../../img/search.svg"
+import React, { useRef } from 'react'
 
-const Search = ({className, placeholder, onType}) =>{
+const Search = ({className, placeholder, onType, handleSubmit}) =>{
+  const inputRef = useRef(null)
 
   return(
-      <div className={className}>
-        {/* <img src={search} alt="search" /> */}
-        <input onChange={(e) => onType(e.target.value)} type="search" className='header__search__input' placeholder={placeholder}/>
-    </div>
+      <form onSubmit={(event) => handleSubmit(event, inputRef)} className={className}>
+        <input ref={inputRef} onChange={(e) => onType(e.target.value)} type="search" className='header__search__input' placeholder={placeholder}/>
+    </form>
   )
 }
 

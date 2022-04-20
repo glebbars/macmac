@@ -1,5 +1,5 @@
 import React from "react";
-import {useLocation} from 'react-router-dom'
+import {useLocation, useParams} from 'react-router-dom'
 import {CustomDropDownLinks, CustomDropDownCheckboxes} from '../CustomDropDown/CustomDropDown'
 import {categoryProductsOptions, getModelChoices} from '../additionalObjects/additionalObjects'
 import { useEffect } from "react";
@@ -9,9 +9,8 @@ const ProductsSideBar = ({activeSideBar, closeSideBar}) => {
   const location = useLocation()
   const dispatch = useDispatch()
   const productsListFilters = useSelector((store) => store.app.productsListFilters);
+  const {categoryName} = useParams()
   
-  const categoryRouteName = location.pathname.split('/category/')[1]
-
   useEffect(() => {
     if(productsListFilters.length > 0){
       dispatch({
@@ -23,13 +22,27 @@ const ProductsSideBar = ({activeSideBar, closeSideBar}) => {
 
   return(
     <div className={`products__sidebar ${activeSideBar ? 'products__sidebar_active' : ''}`}>
-      <h1 className="products__sidebar__header">{categoryRouteName === 'all-products' ? 'Категория' : 'Фильтры'}</h1>
-      { categoryRouteName === 'all-products' && <p className="products__sidebar__subheader">Все товары</p> }
+      <h1 className="products__sidebar__header">{categoryName === 'all-products' ? 'Категория' : 'Фильтры'}</h1>
+      { categoryName === 'all-products' && <p className="products__sidebar__subheader">Все товары</p> }
 
-      { categoryRouteName === 'all-products' ? 
-        <CustomDropDownLinks options={categoryProductsOptions} header='Apple' headerClass='products__sidebar__category-header' listClass=''/> :
-        <CustomDropDownCheckboxes activeSideBar={activeSideBar} closeSideBar={closeSideBar} initiallyActive options={getModelChoices(categoryRouteName)} header='Модель' headerClass='products__sidebar__category-header products__sidebar__category-header_checkboxes' listClass='products__sidebar__category-list'/> 
-      }
+      {categoryName === 'all-products' && (
+        <CustomDropDownLinks 
+          options={categoryProductsOptions} 
+          header='Apple' 
+          headerClass='products__sidebar__category-header' 
+          listClass=''
+        /> 
+      )}
+      {categoryName !== 'all-products' && (
+        <CustomDropDownCheckboxes 
+          activeSideBar={activeSideBar} 
+          closeSideBar={closeSideBar} 
+          initiallyActive 
+          options={getModelChoices(categoryName)}
+          header='Модель'
+          headerClass='products__sidebar__category-header products__sidebar__category-header_checkboxes' listClass='products__sidebar__category-list'
+        /> 
+      )}
       <div onClick={closeSideBar} className="products__sidebar__closing-cross"></div>
   </div>
   )

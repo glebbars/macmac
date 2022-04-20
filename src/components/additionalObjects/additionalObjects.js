@@ -157,6 +157,7 @@ export const initialProductCrumbs = [
   }
 ]
 
+
 export const favoritesCrumbs = [
   {
     name: 'MacMac',

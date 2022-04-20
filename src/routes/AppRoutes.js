@@ -43,7 +43,7 @@ const AppRoutes = ({authProvider, dataProvider, history}) => {
           <Switch>
             <Route path="/" exact render={() => includeFooter(Main)}/>
             <Route path="/admin" exact render={() => <AdminPannel dataProvider={dataProvider} authProvider={authProvider}  history={history} />}/>
-            <Route path="/category/:categoryName" exact render={() => includeFooter(ProductsPage)}/>
+            <Route path={["/category/:categoryName", "/search/:searchResult"]} exact render={() => includeFooter(ProductsPage)}/>
             <Route path="/category/:categoryName/:id" exact render={() => includeFooter(Product)}/>
             <Route path="/favourites" exact render={() => includeFooter(Favourites)}/>
             <Route path="/bag" exact render={() => includeFooter(Bag)}/>
