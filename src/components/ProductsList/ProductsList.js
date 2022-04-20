@@ -14,8 +14,6 @@ const ProductsList = () => {
   const dispatch = useDispatch()
   const {categoryName, searchResult} = useParams()
 
-  console.log(searchResult)
-
   useEffect(() => {
     if(currentPage !==1) {
       onPageChange(1)
@@ -60,7 +58,8 @@ const ProductsList = () => {
       type: 'UPDATE_SORTED_PRODUCTS_LENGTH',
       payload: sortedProductsArr.length
     })
-  }, [productsArr, sortedProductsArr])
+  }, [productsListFilters])
+  // }, [productsArr, sortedProductsArr])
   
   
   const currentTableData = useMemo(() => {

@@ -9,8 +9,8 @@ const ProductsSideBar = ({activeSideBar, closeSideBar}) => {
   const location = useLocation()
   const dispatch = useDispatch()
   const productsListFilters = useSelector((store) => store.app.productsListFilters);
-  const {categoryName} = useParams()
-  
+  const {categoryName, searchResult} = useParams()
+
   useEffect(() => {
     if(productsListFilters.length > 0){
       dispatch({
@@ -19,6 +19,15 @@ const ProductsSideBar = ({activeSideBar, closeSideBar}) => {
       });
     }
   }, [location])
+
+  const getOptions = () => {
+    if(categoryName){
+      return getModelChoices(categoryName)
+    } else if(searchResult){
+      return getModelChoices(searchResult.toLowerCase())
+    }
+
+  }
 
   return(
     <div className={`products__sidebar ${activeSideBar ? 'products__sidebar_active' : ''}`}>
@@ -33,12 +42,12 @@ const ProductsSideBar = ({activeSideBar, closeSideBar}) => {
           listClass=''
         /> 
       )}
-      {categoryName !== 'all-products' && (
+      {(categoryName !== 'all-products' || searchResult) && (
         <CustomDropDownCheckboxes 
           activeSideBar={activeSideBar} 
           closeSideBar={closeSideBar} 
           initiallyActive 
-          options={getModelChoices(categoryName)}
+          options={getOptions()}
           header='Модель'
           headerClass='products__sidebar__category-header products__sidebar__category-header_checkboxes' listClass='products__sidebar__category-list'
         /> 

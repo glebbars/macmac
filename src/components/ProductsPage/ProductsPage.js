@@ -15,8 +15,12 @@ const ProductsPage = () => {
   const [activeSideBar, setActiveSideBar] = useState(false)
   const location = useLocation()
 
+  console.log('*')
+
   useEffect(() => {
-    setActiveSideBar(false)
+    if(activeSideBar){
+      setActiveSideBar(false)
+    }
   }, [location])
 
   return (
@@ -26,7 +30,7 @@ const ProductsPage = () => {
         <ProductsSideBar closeSideBar={() => setActiveSideBar(false)} activeSideBar={activeSideBar}/>
         <div className="products__main">
            <ProductsListHeader toggleSideBar={() => setActiveSideBar(!activeSideBar)}/>
-          <ProductsList location={location}/>
+            <ProductsList location={location}/>
         </div>
         {activeSideBar && <div onClick={() => setActiveSideBar(false)} className="products__sidebar__closing-popup"></div>}
       </div>

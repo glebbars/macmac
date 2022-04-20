@@ -18,40 +18,43 @@ const AppRoutes = ({authProvider, dataProvider, history}) => {
   const dispatch = useDispatch();
   const location = useLocation()
 
+  console.log('routes')
+
+
   useEffect(() => {
     dispatch(getAllProducts());
   }, [])
   
   useEffect(() => {
     window.scrollTo(0, 0)
-    // if(!location.pathname.includes('admin')){
-      // dispatch(getAllProducts());
-    // }
   }, [location]);
+
 
 
 
   return (
     <div>
       {!location.pathname.includes('admin') && <HeaderMenu/>}
-      <TransitionGroup>
+      {/* renders components too many times!!!!!!!!!! */}
+      
+      {/* <TransitionGroup>
         <CSSTransition
           timeout={200}
           classNames='fade'
           key={location.key}
-        >
+        > */}
           <Switch>
             <Route path="/" exact render={() => includeFooter(Main)}/>
             <Route path="/admin" exact render={() => <AdminPannel dataProvider={dataProvider} authProvider={authProvider}  history={history} />}/>
-            <Route path={["/category/:categoryName", "/search/:searchResult"]} exact render={() => includeFooter(ProductsPage)}/>
+            <Route path={["/category/:categoryName", "/search/:searchResult"]} exact component={ProductsPage}/>
             <Route path="/category/:categoryName/:id" exact render={() => includeFooter(Product)}/>
             <Route path="/favourites" exact render={() => includeFooter(Favourites)}/>
             <Route path="/bag" exact render={() => includeFooter(Bag)}/>
             <Route component={NotFound}/>
             <Redirect from="*" to="/" />
           </Switch>
-      </CSSTransition>
-      </TransitionGroup> 
+      {/* </CSSTransition>
+      </TransitionGroup>  */}
     </div>
     );
 };

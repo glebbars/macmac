@@ -7,8 +7,6 @@ const RecentlyViewed = ({className}) => {
   const recentlyViewed = useSelector((store) => store.app.recentlyViewed);
   const productsArr = useSelector((store) => store.app.productsArr);
 
-  console.log('renderrernder')
-
   useEffect(() => {
     localStorage.setItem('recentlyViewed', JSON.stringify(recentlyViewed))
   }, [recentlyViewed])

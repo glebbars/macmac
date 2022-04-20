@@ -13,6 +13,7 @@ const HeaderSearch = () => {
     setOpenedSearchWrapper(false)
     setTouchedSearch(false)
     history.push(`/search/${ref.current.value}`)
+    ref.current.blur()
     ref.current.value = ""
   }
 
