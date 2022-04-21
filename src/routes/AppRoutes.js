@@ -18,9 +18,6 @@ const AppRoutes = ({authProvider, dataProvider, history}) => {
   const dispatch = useDispatch();
   const location = useLocation()
 
-  console.log('routes')
-
-
   useEffect(() => {
     dispatch(getAllProducts());
   }, [])
@@ -28,8 +25,6 @@ const AppRoutes = ({authProvider, dataProvider, history}) => {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [location]);
-
-
 
 
   return (

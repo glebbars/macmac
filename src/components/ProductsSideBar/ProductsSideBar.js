@@ -1,7 +1,7 @@
 import React from "react";
 import {useLocation, useParams} from 'react-router-dom'
 import {CustomDropDownLinks, CustomDropDownCheckboxes} from '../CustomDropDown/CustomDropDown'
-import {categoryProductsOptions, getModelChoices} from '../additionalObjects/additionalObjects'
+import {appleCategoryProductsOptions, getAppleModelChoices, getSimilarCategoryName} from '../additionalObjects/additionalObjects'
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -22,12 +22,14 @@ const ProductsSideBar = ({activeSideBar, closeSideBar}) => {
 
   const getOptions = () => {
     if(categoryName){
-      return getModelChoices(categoryName)
+      return getAppleModelChoices(categoryName)
     } else if(searchResult){
-      return getModelChoices(searchResult.toLowerCase())
+      const similarName = getSimilarCategoryName(searchResult)
+      return getAppleModelChoices(similarName)
     }
-
   }
+
+  const options = getOptions()
 
   return(
     <div className={`products__sidebar ${activeSideBar ? 'products__sidebar_active' : ''}`}>
@@ -36,20 +38,21 @@ const ProductsSideBar = ({activeSideBar, closeSideBar}) => {
 
       {categoryName === 'all-products' && (
         <CustomDropDownLinks 
-          options={categoryProductsOptions} 
+          options={appleCategoryProductsOptions} 
           header='Apple' 
-          headerClass='products__sidebar__category-header' 
           listClass=''
+          headerClass='products__sidebar__category-header' 
         /> 
       )}
-      {(categoryName !== 'all-products' || searchResult) && (
+      {(categoryName !== 'all-products' || searchResult) && options.length > 0 && (
         <CustomDropDownCheckboxes 
           activeSideBar={activeSideBar} 
           closeSideBar={closeSideBar} 
           initiallyActive 
-          options={getOptions()}
+          options={options}
           header='Модель'
-          headerClass='products__sidebar__category-header products__sidebar__category-header_checkboxes' listClass='products__sidebar__category-list'
+          listClass='products__sidebar__category-list'
+          headerClass='products__sidebar__category-header products__sidebar__category-header_checkboxes' 
         /> 
       )}
       <div onClick={closeSideBar} className="products__sidebar__closing-cross"></div>

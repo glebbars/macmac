@@ -15,8 +15,6 @@ const ProductsPage = () => {
   const [activeSideBar, setActiveSideBar] = useState(false)
   const location = useLocation()
 
-  console.log('*')
-
   useEffect(() => {
     if(activeSideBar){
       setActiveSideBar(false)

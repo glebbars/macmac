@@ -4,6 +4,7 @@ import blueLine from '../../img/blue-line.svg'
 
 export const routesNames = {
   "all-products": "Все товары",
+  "apple": "Apple",
   "iphone": 'iPhone',
   "imac": 'iMac',
   "airpods": 'AirPods',
@@ -63,7 +64,7 @@ export const categoryHeaderOptions = [
   },
 ]
 
-export const categoryProductsOptions = [
+export const appleCategoryProductsOptions = [
   {
     link: "/category/iphone",
     text: 'iPhone',
@@ -96,13 +97,55 @@ export const categoryProductsOptions = [
   },
 ]
 
-export const getModelChoices = (value) => {
+export const getAppleModelChoices = (value) => {
   switch(value){
+    case 'apple': return appleCategoryOptions;
     case 'iphone': return modelIphoneOptions;
     case 'airpods': return modelAirPodsOptions;
     default: return []
   }
 }
+
+export const getSimilarCategoryName = (name) => {
+  for(let product in routesNames){
+    if(routesNames[product].toLowerCase().includes(name)){
+      console.log(routesNames[product].toLowerCase())
+      return routesNames[product].toLowerCase()
+    } 
+  }
+}
+
+
+export const appleCategoryOptions = [
+  {
+    filterName: 'Категория',
+    text: 'iPhone',
+  },
+  {
+    filterName: 'Категория',
+    text: 'iPad',
+  },
+  {
+    filterName: 'Категория',
+    text: 'iMac',
+  },
+  {
+    filterName: 'Категория',
+    text: 'Macbook',
+  },
+  {
+    filterName: 'Категория',
+    text: 'AirPods',
+  },
+  {
+    filterName: 'Категория',
+    text: 'Apple Watch',
+  },
+  {
+    filterName: 'Категория',
+    text: 'Apple TV',
+  }
+]
 
 export const modelIphoneOptions = [
   {

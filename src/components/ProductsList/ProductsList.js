@@ -29,7 +29,7 @@ const ProductsList = () => {
         return product
       }
     } else if(searchResult){
-      const fullProductName = `${product.category.toLowerCase()} ${product.model.toLowerCase()} ${product.capacity.toLowerCase()} ${product.color.toLowerCase()}`
+      const fullProductName = `${product.brand.toLowerCase()} ${product.category.toLowerCase()} ${product.model.toLowerCase()} ${product.capacity.toLowerCase()} ${product.color.toLowerCase()}`
       return fullProductName.includes(searchResult)
     }
   })
@@ -58,7 +58,7 @@ const ProductsList = () => {
       type: 'UPDATE_SORTED_PRODUCTS_LENGTH',
       payload: sortedProductsArr.length
     })
-  }, [productsListFilters])
+  }, [sortedProductsArr])
   // }, [productsArr, sortedProductsArr])
   
   

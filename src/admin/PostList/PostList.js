@@ -9,6 +9,7 @@ const PostList = (props) =>{
     <List title='Products' {...props} pagination={<PostPagination />}>
       <Datagrid>
         <TextField source="id"/>
+        <TextField source="brand"/>
         <TextField source="category"/>
         <TextField source="model"/>
         <TextField source="capacity" />

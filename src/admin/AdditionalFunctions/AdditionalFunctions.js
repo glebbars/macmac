@@ -4,6 +4,10 @@ import axios from "axios";
 export const validatePostForm = (values) => {
   const errors = {};
   
+  if (!values.brand) {
+      errors.name = 'Это поле обязательно';
+  }
+
   if (!values.category) {
       errors.name = 'Это поле обязательно';
   }
@@ -38,16 +42,13 @@ export const onTransform = async (values) => {
 };
 
 const fillEmptyValues = (values) => {
+  console.log(values)
   const allValues = {
-    category: values.category,
-    model: values.model,
-    pictures: values.pictures,
-    price: values.price,
+    ...values,
     capacity: values.capacity ? values.capacity : '',
-    color: values.color ? values.capacolorcity : '',
+    color: values.color ? values.color : '',
   }
   return allValues
-
 }
 
 export const getPriceOfProductFromDB = (allValues) =>  {
@@ -56,12 +57,19 @@ export const getPriceOfProductFromDB = (allValues) =>  {
     Object.entries(allValues).filter(([key, value]) => typeof value === 'string')
   )
 
-  return axios.get('http://localhost:5000/prices/1').then(res => res.data)
+  console.log(allValues, filterredValuesArr)
+
+
+
+  return axios.get('http://localhost:5000/prices/1')
+  .then(res => res.data)
   .then(pricesObj => {
     return Object.fromEntries(
       Object.entries(pricesObj)
-        .filter(([key, value]) => 
-        key.includes(filterredValuesArr.category.toLowerCase()) && key.includes(filterredValuesArr.model.toLowerCase()) && key.includes(filterredValuesArr.capacity.toLowerCase()) && key.includes(filterredValuesArr.color.toLowerCase())
+        .filter(([key, value]) => {
+          console.log(filterredValuesArr.category, filterredValuesArr.model, filterredValuesArr.capacity, filterredValuesArr.color)
+          return key.includes(filterredValuesArr.category.toLowerCase()) && key.includes(filterredValuesArr.model.toLowerCase()) && key.includes(filterredValuesArr.capacity.toLowerCase()) && key.includes(filterredValuesArr.color.toLowerCase())
+        }
       )
     )
   }).then(data => Object.values(data)[0] ? Object.values(data)[0] : allValues.price)
@@ -106,14 +114,31 @@ const uploadImage = async (compressedImgs) => {
   return attachments
 }
 
-export const initialChoices = [
+
+export const brandChoices = [
+  {id: 'Apple', name: 'Apple'},
+  {id: 'Sumsung', name: 'Sumsung'},
+  {id: 'GoPro', name: 'GoPro'},
+  {id: 'Dyson', name: 'Dyson'}
+]
+
+export const getCategoryChoices = (value) => {
+  switch(value){
+    case 'Apple': return appleCategoryChoices;
+    case 'Sumsung': return [];
+    case 'GoPro': return [];
+    case 'Dyson': return [];
+    default: return []
+  }
+}
+
+export const appleCategoryChoices = [
   { id: 'iPhone', name: 'iPhone' },
   { id: 'iPad', name: 'iPad' },
   { id: 'Mac', name: 'Mac' },
   { id: 'Apple Watch', name: 'Apple Watch' },
   { id: 'AirPods', name: 'AirPods' },
-  { id: 'Accessories', name: 'Accessories' },
-  { id: 'Dyson', name: 'Dyson' },
+  { id: 'Accessories', name: 'Accessories' }
 ]
 
 

@@ -9,7 +9,7 @@ const ProductsPageBreadcrumbs = ({modelCurmb, searchCrumbs}) => {
 
   useEffect(() => {
    identifyPageCrumbs()
-  }, [modelCurmb])
+  }, [categoryName, modelCurmb, searchResult])
 
   const identifyPageCrumbs = () => {
     if(categoryName){
