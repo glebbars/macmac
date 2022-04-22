@@ -48,33 +48,33 @@ export const CustomDropDownCheckboxes = ({ activeSideBar, closeSideBar, initiall
     }
   }, [activeSideBar])
 
-  const addProductsFilter = (text, filterName) => {
+  const addProductsFilter = (filterName, value) => {
     dispatch({
       type: 'ADD_PRODUCTS_LIST_FILTER',
       payload: [ 
         ...productsListFilters, 
         {
-          text: text,
+          value: value,
           filterName: filterName
         }
       ],
     });
   }
 
-  const handleComplete = (filterName, text) => {
+  const handleComplete = (filterName, value) => {
     if(productsListFilters.length > 0) { 
       productsListFilters.some(filter => {
-        if (filter.text === text) {
+        if (filter.value === value) {
           return dispatch({
             type: 'REMOVE_PRODUCTS_LIST_FILTER',
-            payload: productsListFilters.filter((filter) => filter.text !== text),
+            payload: productsListFilters.filter((filter) => filter.value !== value),
           });
         } else {
-          addProductsFilter(text, filterName)
+          addProductsFilter(filterName, value)
         }
       })
     } else{
-      addProductsFilter(text, filterName)
+      addProductsFilter(filterName, value)
     }
   }
 
@@ -103,7 +103,7 @@ export const CustomDropDownCheckboxes = ({ activeSideBar, closeSideBar, initiall
         {options.map((option, index) => 
           <label key={index}className="products__sidebar__filter">
             <input 
-              checked={productsListFilters.some(el => el.text === option.text)} 
+              checked={productsListFilters.some(el => el.value === option.text)} 
               onChange={() => handleComplete(option.filterName, option.text)} 
               className="products__sidebar__filter__checkbox"   
               type="checkbox" 
@@ -134,33 +134,35 @@ export const CustomDropDownPriceRange = ({ activeSideBar, closeSideBar, initiall
     }
   }, [activeSideBar])
 
-  const addProductsFilter = (text, filterName) => {
+  const addProductsFilter = (filterName, value) => {
     dispatch({
       type: 'ADD_PRODUCTS_LIST_FILTER',
       payload: [ 
         ...productsListFilters, 
         {
-          text: text,
+          value: value,
           filterName: filterName
         }
       ],
     });
   }
 
-  const handleComplete = (filterName, text) => {
+  const handleComplete = (filterName, value) => {
     if(productsListFilters.length > 0) { 
       productsListFilters.some(filter => {
-        if (filter.text === text) {
+        if (filter.filterName === filterName) {
+          console.log(filter)
+          filter.value = value
           return dispatch({
             type: 'REMOVE_PRODUCTS_LIST_FILTER',
-            payload: productsListFilters.filter((filter) => filter.text !== text),
+            payload: productsListFilters,
           });
-        } else {
-          addProductsFilter(text, filterName)
+        } else{
+          addProductsFilter(filterName, value)
         }
       })
     } else{
-      addProductsFilter(text, filterName)
+      addProductsFilter(filterName, value)
     }
   }
 
@@ -170,6 +172,7 @@ export const CustomDropDownPriceRange = ({ activeSideBar, closeSideBar, initiall
       payload: [],
     });
   }
+
 
   return(
     <>
@@ -185,7 +188,7 @@ export const CustomDropDownPriceRange = ({ activeSideBar, closeSideBar, initiall
           setClickedBtn(false)
         }}></div>
         <h4 className="products__sidebar__header products__sidebar__header__modal">Цена</h4>
-        <PriceRange addProductsFilter={addProductsFilter}/>
+        <PriceRange handlePriceChange={handleComplete}/>
 
         <ProductsEditComplition 
           handleComplete={closeSideBar} 
@@ -196,7 +199,7 @@ export const CustomDropDownPriceRange = ({ activeSideBar, closeSideBar, initiall
   )
 }
 
-export const PriceRange = ({addProductsFilter}) => {
+export const PriceRange = ({handlePriceChange}) => {
   const step = 100;
   const minPrice = 1000;
   const maxPrice = 10000;
@@ -219,7 +222,7 @@ export const PriceRange = ({addProductsFilter}) => {
         onChange={(values) => setValues(values)}
         onFinalChange={values => {
           console.log('final', values);
-          addProductsFilter(`${values[0].toLocaleString()} - ${values[1].toLocaleString()}`, 'Цена',)
+          handlePriceChange('Цена', `${values[0].toLocaleString()}-${values[1].toLocaleString()}`)
           // setValues(values);
         }}
         renderTrack={({ props, children }) => (

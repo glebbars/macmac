@@ -33,11 +33,24 @@ const ProductsList = () => {
       return fullProductName.includes(searchResult)
     }
   })
+
+  
+  const modelFilters = productsListFilters.filter(filter => filter.filterName === 'Модель')
+  const priceFilter = productsListFilters.find(filter => filter.filterName === 'Цена')
   
   const filteredProductsArr = filteredByCategoryArr.filter(product => {
     if(productsListFilters.length > 0){
-      const fullModelName = `${product.category.toLowerCase()} ${product.model.toLowerCase()}`
-      return productsListFilters.some(filter => filter.text.toLowerCase() === fullModelName )
+
+      if(modelFilters.length > 0){
+        const fullModelName = `${product.category.toLowerCase()} ${product.model.toLowerCase()}`
+        return modelFilters.some(filter => filter.value.toLowerCase() === fullModelName )
+      } else if(priceFilter){
+        const indexOFDash = priceFilter.value.indexOf('-')
+        const splitStr = priceFilter.value.split('-')
+        console.log(splitStr, Number(splitStr[0]), +splitStr[1])
+        // return product.price < priceFilter
+      }
+
     } else{
       return product
     }

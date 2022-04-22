@@ -3,7 +3,6 @@ import ProductsSideBar from "../ProductsSideBar/ProductsSideBar";
 import ProductsList from "../ProductsList/ProductsList";
 import ProductsPageHeader from "../ProductsPageHeader/ProductsPageHeader";
 import ProductsSort from "../ProductsSort/ProductsSort";
-import ProductsFilterLabels from '../ProductsFilterLabels/ProductsFilterLabels'
 import ProductsFiltersMobileBtn from '../ProductsFiltersMobileBtn/ProductsFiltersMobileBtn'
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";

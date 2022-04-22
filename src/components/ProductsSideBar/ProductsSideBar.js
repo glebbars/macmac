@@ -57,14 +57,15 @@ const ProductsSideBar = ({activeSideBar, closeSideBar}) => {
         /> 
       )}
 
+    {(categoryName !== 'all-products' || searchResult) && (
       <CustomDropDownPriceRange 
           activeSideBar={activeSideBar} 
           closeSideBar={closeSideBar} 
           initiallyActive 
           listClass='products__sidebar__category-list'
           headerClass='products__sidebar__category-header products__sidebar__category-header_checkboxes' 
-
-      />
+      /> 
+    )}
 
       <div onClick={closeSideBar} className="products__sidebar__closing-cross"></div>
   </div>
