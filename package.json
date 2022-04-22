@@ -28,6 +28,7 @@
     "react-image-file-resizer": "^0.4.7",
     "react-phone-number-input": "^3.1.44",
     "react-popupbox": "^2.0.9",
+    "react-range": "^1.8.12",
     "react-redux": "^7.2.6",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.0",

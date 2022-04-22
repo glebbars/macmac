@@ -1,6 +1,6 @@
 import React from "react";
 import {useLocation, useParams} from 'react-router-dom'
-import {CustomDropDownLinks, CustomDropDownCheckboxes} from '../CustomDropDown/CustomDropDown'
+import {CustomDropDownLinks, CustomDropDownCheckboxes, CustomDropDownPriceRange} from '../CustomDropDown/CustomDropDown'
 import {appleCategoryProductsOptions, getAppleModelChoices, getSimilarCategoryName} from '../additionalObjects/additionalObjects'
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -44,6 +44,7 @@ const ProductsSideBar = ({activeSideBar, closeSideBar}) => {
           headerClass='products__sidebar__category-header' 
         /> 
       )}
+      
       {(categoryName !== 'all-products' || searchResult) && options.length > 0 && (
         <CustomDropDownCheckboxes 
           activeSideBar={activeSideBar} 
@@ -55,6 +56,16 @@ const ProductsSideBar = ({activeSideBar, closeSideBar}) => {
           headerClass='products__sidebar__category-header products__sidebar__category-header_checkboxes' 
         /> 
       )}
+
+      <CustomDropDownPriceRange 
+          activeSideBar={activeSideBar} 
+          closeSideBar={closeSideBar} 
+          initiallyActive 
+          listClass='products__sidebar__category-list'
+          headerClass='products__sidebar__category-header products__sidebar__category-header_checkboxes' 
+
+      />
+
       <div onClick={closeSideBar} className="products__sidebar__closing-cross"></div>
   </div>
   )
