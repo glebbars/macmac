@@ -151,7 +151,7 @@ export const CustomDropDownPriceRange = ({ activeSideBar, closeSideBar, initiall
     if(productsListFilters.length > 0) { 
       productsListFilters.some(filter => {
         if (filter.filterName === filterName) {
-          console.log(filter)
+          // console.log(filter)
           filter.value = value
           return dispatch({
             type: 'REMOVE_PRODUCTS_LIST_FILTER',
@@ -201,69 +201,66 @@ export const CustomDropDownPriceRange = ({ activeSideBar, closeSideBar, initiall
 
 export const PriceRange = ({handlePriceChange}) => {
   const step = 100;
-  const minPrice = 0;
+  const minPrice = 1;
   const maxPrice = 100000;
   const [values, setValues] = useState([minPrice, maxPrice]);
   const [inputValues, setInputValues] = useState([minPrice, maxPrice]);
 
-  const ch = (value) => {
-    setInputValues([value, inputValues[1]])
-    // if(value > minPrice){
-    //   if(value < values[1]){
-    //     setValues([value, values[1]])
-    //   } else{
-    //     setValues([values[1] - 1, values[1]])
-    //   }
-    // } else{
-    //   setValues([minPrice, values[1]])
-    // }
-  }
-  
-  const decreasePrice = (value) => {
-    if(value < maxPrice){
-      if(value > values[0]){
-        setValues([values[0], value])
-      } else{
-        setValues([values[0], values[0] + 1])
+  console.log(inputValues, values)
+
+
+
+  const handleSubmit = (finalValues) => handlePriceChange('Цена', `${finalValues[0]}-${finalValues[1]}`)
+
+  const handleValues = () => {
+    const min = +inputValues[0]
+    const max = +inputValues[1]
+    
+    if(min && max){
+      if( min >= minPrice && min < max && max <= maxPrice ){
+        handleSubmit([min, max])
+        setInputValues([min, max])
+        setValues([min, max])
+
+      }  else if(min < minPrice){
+        handleSubmit([minPrice, inputValues[1]])
+        setInputValues([minPrice, inputValues[1]])
+        setValues([minPrice, inputValues[1]])
+
+      } else if(max > maxPrice){
+        handleSubmit([inputValues[0], maxPrice])
+        setInputValues([inputValues[0], maxPrice])
+        setValues([inputValues[0], maxPrice])
+
+      } else if(max <= min){
+        handleSubmit([max, max])
+        setInputValues([max, max])
+        setValues([max, max])
+
       }
-    } else{
-      setValues([values[0], maxPrice])
-    }
-  }
-
-  const handleSubmit = () => handlePriceChange('Цена', `${values[0]}-${values[1]}`)
-
-  const changeMainValues = () => {
-    if(inputValues[0] > minPrice){
-      setValues(inputValues)
-      console.log(values)
-    } else{
-      setValues([minPrice, inputValues[1]])
+    } else {
+      handleSubmit([minPrice, maxPrice])
+      setInputValues([minPrice, maxPrice])
+      setValues([minPrice, maxPrice])
+      
     }
   }
 
   const handleInputSubmit = (e) => {  
     if(e.key === 'Enter'){
-      changeMainValues()
-
-      handleSubmit()
+      handleValues()
     }
   }
 
-
-
-
-
-  ////// onBLURRRRRRRR
-
+  /// onBLUUUUUUURRRRRR
 
   return (
 
     <div className="price-range">
       <div className="price-range__prices-wrapper">
-        <input onKeyDown={handleInputSubmit}  onChange={(e) => setInputValues([+e.target.value, inputValues[1]])} type='text' className="price-range__price-value" value={inputValues[0]}/>
+        <input onKeyDown={handleInputSubmit}  onChange={(e) => setInputValues([e.target.value, inputValues[1]])} type='text' className="price-range__price-value" value={inputValues[0]}/>
         <span>-</span>
-        <input onKeyDown={handleInputSubmit}  onChange={(e) => setInputValues([inputValues[0], +e.target.value])} type='text' className="price-range__price-value" value={inputValues[1]} />
+        <input onKeyDown={handleInputSubmit}  onChange={(e) => setInputValues([inputValues[0], e.target.value])} type='text' className="price-range__price-value" value={inputValues[1]} />
       </div>
 
       <Range
@@ -271,12 +268,11 @@ export const PriceRange = ({handlePriceChange}) => {
         step={step}
         min={minPrice}
         max={maxPrice}
-        onChange={(values) => setValues(values)}
-        onFinalChange={values => {
-          console.log('final', values);
-          handlePriceChange('Цена', `${values[0]}-${values[1]}`)
-          // setValues(values);
+        onChange={(values) => {
+          setValues(values);
+          setInputValues(values)
         }}
+        onFinalChange={values => handleSubmit([values[0], values[1]])}
         renderTrack={({ props, children }) => (
           // eslint-disable-next-line jsx-a11y/no-static-element-interactions
           <div

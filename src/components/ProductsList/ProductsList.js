@@ -45,7 +45,7 @@ const ProductsList = () => {
 
   const priceLimits =  priceFilter.length > 0 ? priceFilter[0].split('-') : ['0', '1000000']
 
-  console.log(+priceLimits[0] , +priceLimits[1])
+  // console.log(+priceLimits[0] , +priceLimits[1])
 
   const filteredProductsArr = filteredByCategoryArr.filter(product => {
     if(productsListFilters.length > 0){
