@@ -35,36 +35,20 @@ const ProductsList = () => {
   })
 
 
-
-  
-
-
   const modelFilters = productsListFilters.filter(filter => filter.filterName === 'Модель').map(filter => filter.value)
   const colorFilters = productsListFilters.filter(filter => filter.filterName === 'Цвет').map(filter => filter.value)
   const priceFilter = productsListFilters.filter(filter => filter.filterName === 'Цена').map(filter => filter.value) 
 
   const priceLimits =  priceFilter.length > 0 ? priceFilter[0].split('-') : ['0', '1000000']
 
-  // console.log(+priceLimits[0] , +priceLimits[1])
-
   const filteredProductsArr = filteredByCategoryArr.filter(product => {
     if(productsListFilters.length > 0){
       const fullModelName = `${product.category} ${product.model}`
-
-      // console.log(product.price, product.price >= +priceLimits[0] && product.price <= +priceLimits[1])
 
       return (modelFilters.length > 0 ? modelFilters.includes(fullModelName) : product) && 
               (colorFilters.length > 0 ? colorFilters.includes(product.color) : product) &&
               (product.price >= +priceLimits[0] && product.price <= +priceLimits[1])
 
-
-      // if(modelFilters.length > 0){
-      //   const fullModelName = `${product.category.toLowerCase()} ${product.model.toLowerCase()}`
-      //   return modelFilters.some(filter => filter.value.toLowerCase() === fullModelName )
-      // } else if(priceFilter){
-      //   const splitStr = priceFilter.value.split('-')
-      //   console.log(+splitStr[0], +splitStr[1])
-      // }
     } else{
       return product
     }

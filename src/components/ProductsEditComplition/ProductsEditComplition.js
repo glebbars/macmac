@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from "react-redux";
 
-const ProductsEditComplition = ({ handleComplete, handleClose}) => {
+const ProductsEditComplition = ({ handleComplete, handleReset}) => {
   const sortedProductsLength = useSelector((store) => store.app.sortedProductsLength);
 
   const getCorrectForm = () => {
@@ -20,7 +20,7 @@ const ProductsEditComplition = ({ handleComplete, handleClose}) => {
     <div className='products__edit-complition'>
       <span className='products__edit-complition__text'>{getCorrectForm()}</span>
       <div className='products__edit-complition__btns-wrapper'>
-        <div onClick={handleClose} className='products__edit-complition__btn products__edit-complition__btn_cancel'>Сбросить</div>
+        <div onClick={handleReset} className='products__edit-complition__btn products__edit-complition__btn_cancel'>Сбросить</div>
         <div onClick={handleComplete}  className='products__edit-complition__btn'>Применить</div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useMemo} from "react";
 import {NavLink, useLocation} from 'react-router-dom'
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -7,6 +7,7 @@ import {
 import { useEffect } from "react";
 import ProductsEditComplition from '../ProductsEditComplition/ProductsEditComplition'
 import { Range, getTrackBackground } from "react-range";
+import { useParams } from "react-router-dom";
 
 
 export const CustomDropDownLinks = ({ header, options, headerClass, listClass}) => {
@@ -78,10 +79,12 @@ export const CustomDropDownCheckboxes = ({ activeSideBar, closeSideBar, initiall
     }
   }
 
-  const removeAllFilters = () => {
+
+  const removeAllFilters = (filterName) => {
+    
     dispatch({
       type: 'REMOVE_PRODUCTS_LIST_FILTER',
-      payload: [],
+      payload: productsListFilters.filter(filter => filter.filterName !== filterName)      ,
     });
   }
 
@@ -114,7 +117,7 @@ export const CustomDropDownCheckboxes = ({ activeSideBar, closeSideBar, initiall
         <ProductsEditComplition 
           // actionContent={['filter', filtersTextArr ]}
           handleComplete={closeSideBar} 
-          handleClose={removeAllFilters}
+          handleReset={() => removeAllFilters(options[0].filterName)}
         />
       </div>
     </>
@@ -151,7 +154,6 @@ export const CustomDropDownPriceRange = ({ activeSideBar, closeSideBar, initiall
     if(productsListFilters.length > 0) { 
       productsListFilters.some(filter => {
         if (filter.filterName === filterName) {
-          // console.log(filter)
           filter.value = value
           return dispatch({
             type: 'REMOVE_PRODUCTS_LIST_FILTER',
@@ -166,10 +168,10 @@ export const CustomDropDownPriceRange = ({ activeSideBar, closeSideBar, initiall
     }
   }
 
-  const removeAllFilters = () => {
+  const removeAllFilters = (filterName) => {
     dispatch({
       type: 'REMOVE_PRODUCTS_LIST_FILTER',
-      payload: [],
+      payload: productsListFilters.filter(filter => filter.filterName !== filterName),
     });
   }
 
@@ -188,61 +190,90 @@ export const CustomDropDownPriceRange = ({ activeSideBar, closeSideBar, initiall
           setClickedBtn(false)
         }}></div>
         <h4 className="products__sidebar__header products__sidebar__header__modal">Цена</h4>
-        <PriceRange handlePriceChange={handleComplete}/>
+        <PriceRange productsListFilters={productsListFilters} handlePriceChange={handleComplete}/>
 
         <ProductsEditComplition 
           handleComplete={closeSideBar} 
-          handleClose={removeAllFilters}
+          handleReset={() => removeAllFilters('Цена')}
         />
       </div>
     </>
   )
 }
 
-export const PriceRange = ({handlePriceChange}) => {
+export const PriceRange = ({handlePriceChange, productsListFilters}) => {
   const step = 100;
-  const minPrice = 1;
-  const maxPrice = 100000;
-  const [values, setValues] = useState([minPrice, maxPrice]);
-  const [inputValues, setInputValues] = useState([minPrice, maxPrice]);
+  const [priceLimits, setPriceLimits] = useState([1, 100000])
+  const [values, setValues] = useState([1, 100000])
+  const [inputValues, setInputValues] = useState([1, 100000])
+  const {categoryName, searchResult} = useParams()
+  const productsArr = useSelector((store) => store.app.productsArr);
 
-  console.log(inputValues, values)
+  const filteredByCategoryArr = productsArr.filter(product => {
+    if(categoryName){
+      if(categoryName !== "all-products"){
+        return product.category.toLowerCase() === categoryName
+      } else{
+        return product
+      }
+    } else if(searchResult){
+      const fullProductName = `${product.brand.toLowerCase()} ${product.category.toLowerCase()} ${product.model.toLowerCase()} ${product.capacity.toLowerCase()} ${product.color.toLowerCase()}`
+      return fullProductName.includes(searchResult)
+    }
+  })
 
+  const modelFilters = productsListFilters.filter(filter => filter.filterName === 'Модель').map(filter => filter.value)
+
+  const filteredProductsArr = filteredByCategoryArr.filter(product => {
+    const fullModelName = `${product.category} ${product.model}`
+    return modelFilters.length > 0 ? modelFilters.includes(fullModelName) : product
+  })
+
+  const productPrices = filteredProductsArr.map(product => product.price).sort((a, b) => b - a)
+
+  const maxPriceFromFilters = productPrices[0]
+
+  useEffect(() => {
+    if(!productsListFilters.find(filter => filter.filterName === 'Цена')){
+      setValues(priceLimits)
+      setInputValues(priceLimits)
+    }
+  }, [productsListFilters])
+
+  useEffect(() => {
+    if(maxPriceFromFilters && maxPriceFromFilters !== priceLimits[1]){
+      setPriceLimits([1, maxPriceFromFilters])
+      setValues([1, maxPriceFromFilters])
+      setInputValues([1, maxPriceFromFilters])
+    }
+  }, [maxPriceFromFilters])
 
 
   const handleSubmit = (finalValues) => handlePriceChange('Цена', `${finalValues[0]}-${finalValues[1]}`)
+
+  const changeAllValues = (valuesArr) => {
+    handleSubmit(valuesArr)
+    setInputValues(valuesArr)
+    setValues(valuesArr)
+  }
+
 
   const handleValues = () => {
     const min = +inputValues[0]
     const max = +inputValues[1]
     
     if(min && max){
-      if( min >= minPrice && min < max && max <= maxPrice ){
-        handleSubmit([min, max])
-        setInputValues([min, max])
-        setValues([min, max])
-
-      }  else if(min < minPrice){
-        handleSubmit([minPrice, inputValues[1]])
-        setInputValues([minPrice, inputValues[1]])
-        setValues([minPrice, inputValues[1]])
-
-      } else if(max > maxPrice){
-        handleSubmit([inputValues[0], maxPrice])
-        setInputValues([inputValues[0], maxPrice])
-        setValues([inputValues[0], maxPrice])
-
+      if( min >= priceLimits[0] && min < max && max <= priceLimits[1] ){
+        changeAllValues([min, max])
+      }  else if(min < priceLimits[0]){
+        changeAllValues([priceLimits[0], inputValues[1]])
+      } else if(max > priceLimits[1]){
+        changeAllValues([inputValues[0], priceLimits[1]])
       } else if(max <= min){
-        handleSubmit([max, max])
-        setInputValues([max, max])
-        setValues([max, max])
-
+        changeAllValues([max, max])
       }
     } else {
-      handleSubmit([minPrice, maxPrice])
-      setInputValues([minPrice, maxPrice])
-      setValues([minPrice, maxPrice])
-      
+      changeAllValues([priceLimits[0], priceLimits[1]])
     }
   }
 
@@ -252,22 +283,21 @@ export const PriceRange = ({handlePriceChange}) => {
     }
   }
 
-  /// onBLUUUUUUURRRRRR
 
   return (
 
     <div className="price-range">
       <div className="price-range__prices-wrapper">
-        <input onKeyDown={handleInputSubmit}  onChange={(e) => setInputValues([e.target.value, inputValues[1]])} type='text' className="price-range__price-value" value={inputValues[0]}/>
+        <input onKeyDown={handleInputSubmit} onBlur={handleValues}  onChange={(e) => setInputValues([e.target.value, inputValues[1]])} type='text' className="price-range__price-value" value={inputValues[0]}/>
         <span>-</span>
-        <input onKeyDown={handleInputSubmit}  onChange={(e) => setInputValues([inputValues[0], e.target.value])} type='text' className="price-range__price-value" value={inputValues[1]} />
+        <input onKeyDown={handleInputSubmit} onBlur={handleValues} onChange={(e) => setInputValues([inputValues[0], e.target.value])} type='text' className="price-range__price-value" value={inputValues[1]} />
       </div>
 
       <Range
         values={values}
         step={step}
-        min={minPrice}
-        max={maxPrice}
+        min={priceLimits[0]}
+        max={priceLimits[1]}
         onChange={(values) => {
           setValues(values);
           setInputValues(values)
@@ -287,8 +317,8 @@ export const PriceRange = ({handlePriceChange}) => {
                 background: getTrackBackground({
                   values,
                   colors: ["#DEE2E6", "#FA530D", "#DEE2E6"],
-                  min: minPrice,
-                  max: maxPrice
+                  min: priceLimits[0],
+                  max: priceLimits[1]
                 })
               }}
             >

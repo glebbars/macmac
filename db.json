@@ -51,7 +51,7 @@
       "model": "13 Mini",
       "capacity": "256Gb",
       "color": "Starlight",
-      "price": 1,
+      "price": 2,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644387686/uploaded_images/w5oahpp676lvudmtqrkb.png",
@@ -66,7 +66,7 @@
       "model": "12 Pro Max",
       "capacity": "256Gb",
       "color": "Pacific Blue",
-      "price": 1,
+      "price": 2,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1646163715/uploaded_images/igvjbzwcte8sl3jcn6oy.png",
@@ -81,7 +81,7 @@
       "model": "5",
       "capacity": "256Gb",
       "color": "Graphite",
-      "price": 1,
+      "price": 2,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644971094/uploaded_images/ugondrkx97lg1mn0cb0q.png",
@@ -96,7 +96,7 @@
       "model": "SE 2020",
       "capacity": "128Gb",
       "color": "Product Red",
-      "price": 1,
+      "price": 2,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644359373/uploaded_images/ltpdxjraszsyxyupxt8o.png",
@@ -126,7 +126,7 @@
       "model": "12 Pro Max",
       "capacity": "512Gb",
       "color": "Pacific Blue",
-      "price": 1,
+      "price": 2,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644387720/uploaded_images/bi3eampikig2eyq39j6t.png",
@@ -141,7 +141,7 @@
       "model": "12 Pro Max",
       "capacity": "256Gb",
       "color": "Pacific Blue",
-      "price": 1,
+      "price": 2,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644971094/uploaded_images/ugondrkx97lg1mn0cb0q.png",
@@ -186,7 +186,7 @@
       "model": "SE 2020",
       "capacity": "128Gb",
       "color": "Product Red",
-      "price": 1,
+      "price": 2,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644359373/uploaded_images/ltpdxjraszsyxyupxt8o.png",
@@ -216,7 +216,7 @@
       "model": "12 Pro Max",
       "capacity": "512Gb",
       "color": "Pacific Blue",
-      "price": 1,
+      "price": 2,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644387720/uploaded_images/bi3eampikig2eyq39j6t.png",
@@ -231,7 +231,7 @@
       "model": "12 Pro Max",
       "capacity": "256Gb",
       "color": "Pacific Blue",
-      "price": 1,
+      "price": 2,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644971094/uploaded_images/ugondrkx97lg1mn0cb0q.png",
@@ -276,7 +276,7 @@
       "model": "Se 2020",
       "capacity": "128Gb",
       "color": "Product Red",
-      "price": 1,
+      "price": 2,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644359373/uploaded_images/ltpdxjraszsyxyupxt8o.png",
@@ -306,7 +306,7 @@
       "model": "12 Pro Max",
       "capacity": "512Gb",
       "color": "Pacific Blue",
-      "price": 1,
+      "price": 2,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644387720/uploaded_images/bi3eampikig2eyq39j6t.png",
@@ -321,7 +321,7 @@
       "model": "12 Pro Max",
       "capacity": "256Gb",
       "color": "Pacific Blue",
-      "price": 1,
+      "price": 2,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644971094/uploaded_images/ugondrkx97lg1mn0cb0q.png",
@@ -336,7 +336,7 @@
       "model": "12 Pro",
       "capacity": "256Gb",
       "color": "Graphite",
-      "price": 1,
+      "price": 2,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648052267/uploaded_images/cbuxruehmehfphsifusr.png",
@@ -378,7 +378,7 @@
       "model": "13 Pro Max",
       "capacity": "512Gb",
       "color": "Alpine Green",
-      "price": 1,
+      "price": 2,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648322916/uploaded_images/eaux4jb7akm7zftlmjxz.png",
@@ -393,7 +393,7 @@
       "model": "12",
       "capacity": "64Gb",
       "color": "Mind",
-      "price": 1,
+      "price": 2,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648322943/uploaded_images/v2todi0mntqkj72yqddv.png",
@@ -408,7 +408,7 @@
       "model": "11",
       "capacity": "64Gb",
       "color": "Black",
-      "price": 1,
+      "price": 2,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648400253/uploaded_images/kiqgt1og0lsheweld4kb.png",
@@ -427,7 +427,7 @@
       "model": "11",
       "capacity": "64Gb",
       "color": "White",
-      "price": 1,
+      "price": 2,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648401027/uploaded_images/jgtjapvppsgudub2kleq.png",
@@ -446,7 +446,7 @@
       "model": "11",
       "capacity": "64Gb",
       "color": "Purple",
-      "price": 1,
+      "price": 2,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648400338/uploaded_images/it5nnust4yzjnk0ctbh6.png",
@@ -466,7 +466,7 @@
       "capacity": "64Gb",
       "color": "Yellow",
       "label": "Хит продаж",
-      "price": 1,
+      "price": 2,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648400428/uploaded_images/ao2gxvqhmgtpzhad9u0g.png",
@@ -485,7 +485,7 @@
       "model": "11",
       "capacity": "64Gb",
       "color": "Mind",
-      "price": 1,
+      "price": 2,
       "label": "Хит продаж",
       "pictures": [
         {
@@ -505,7 +505,7 @@
       "model": "11",
       "capacity": "64Gb",
       "color": "Product Red",
-      "price": 1,
+      "price": 2,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648400612/uploaded_images/lzijmmu5gthat4oi4fef.png",
@@ -524,7 +524,7 @@
       "model": "11",
       "capacity": "128Gb",
       "color": "Black",
-      "price": 1,
+      "price": 2,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648401625/uploaded_images/j0hag0en84vbupktepcb.png",
@@ -543,7 +543,7 @@
       "model": "11",
       "capacity": "128Gb",
       "color": "White",
-      "price": 1,
+      "price": 2,
       "label": "Хит продаж",
       "pictures": [
         {
@@ -575,7 +575,7 @@
           "id": "afe8a53e91e3ee39aa480ee26f728d7c"
         }
       ],
-      "price": 1,
+      "price": 2,
       "capacity": "",
       "color": "",
       "id": 45
@@ -598,7 +598,7 @@
           "id": "5961f2050e2c2fbcb79b92759c7198d0"
         }
       ],
-      "price": 1,
+      "price": 2,
       "capacity": "",
       "color": "",
       "id": 46
@@ -621,7 +621,7 @@
           "id": "877ce765ce088e4e20b7c9ad38904990"
         }
       ],
-      "price": 1,
+      "price": 2,
       "capacity": "",
       "color": "",
       "id": 47
