@@ -201,17 +201,69 @@ export const CustomDropDownPriceRange = ({ activeSideBar, closeSideBar, initiall
 
 export const PriceRange = ({handlePriceChange}) => {
   const step = 100;
-  const minPrice = 1000;
-  const maxPrice = 10000;
+  const minPrice = 0;
+  const maxPrice = 100000;
   const [values, setValues] = useState([minPrice, maxPrice]);
+  const [inputValues, setInputValues] = useState([minPrice, maxPrice]);
+
+  const ch = (value) => {
+    setInputValues([value, inputValues[1]])
+    // if(value > minPrice){
+    //   if(value < values[1]){
+    //     setValues([value, values[1]])
+    //   } else{
+    //     setValues([values[1] - 1, values[1]])
+    //   }
+    // } else{
+    //   setValues([minPrice, values[1]])
+    // }
+  }
+  
+  const decreasePrice = (value) => {
+    if(value < maxPrice){
+      if(value > values[0]){
+        setValues([values[0], value])
+      } else{
+        setValues([values[0], values[0] + 1])
+      }
+    } else{
+      setValues([values[0], maxPrice])
+    }
+  }
+
+  const handleSubmit = () => handlePriceChange('Цена', `${values[0]}-${values[1]}`)
+
+  const changeMainValues = () => {
+    if(inputValues[0] > minPrice){
+      setValues(inputValues)
+      console.log(values)
+    } else{
+      setValues([minPrice, inputValues[1]])
+    }
+  }
+
+  const handleInputSubmit = (e) => {  
+    if(e.key === 'Enter'){
+      changeMainValues()
+
+      handleSubmit()
+    }
+  }
+
+
+
+
+
+  ////// onBLURRRRRRRR
+
 
   return (
 
     <div className="price-range">
       <div className="price-range__prices-wrapper">
-        <div className="price-range__price-value">{values[0].toLocaleString()}</div>
+        <input onKeyDown={handleInputSubmit}  onChange={(e) => setInputValues([+e.target.value, inputValues[1]])} type='text' className="price-range__price-value" value={inputValues[0]}/>
         <span>-</span>
-        <div className="price-range__price-value">{values[1].toLocaleString()}</div>
+        <input onKeyDown={handleInputSubmit}  onChange={(e) => setInputValues([inputValues[0], +e.target.value])} type='text' className="price-range__price-value" value={inputValues[1]} />
       </div>
 
       <Range
@@ -222,7 +274,7 @@ export const PriceRange = ({handlePriceChange}) => {
         onChange={(values) => setValues(values)}
         onFinalChange={values => {
           console.log('final', values);
-          handlePriceChange('Цена', `${values[0].toLocaleString()}-${values[1].toLocaleString()}`)
+          handlePriceChange('Цена', `${values[0]}-${values[1]}`)
           // setValues(values);
         }}
         renderTrack={({ props, children }) => (

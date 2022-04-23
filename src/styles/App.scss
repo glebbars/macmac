@@ -1659,7 +1659,7 @@ body{
     padding: 50px 40px 80px;
     max-width: 1430px;
     margin: 0 auto;
-    min-height: 60vh;
+    min-height: 90vh;
     box-sizing: border-box;
     justify-content: space-between;
     // min-height: 350px;
@@ -5076,7 +5076,7 @@ body{
   &__price-value{
     height: 40px;
     width: 100px;
-    padding: 13px 0 13px 15px;
+    padding: 0 0 0 15px;
     box-sizing: border-box;
     border-radius: 8px;
     background-color: white;
@@ -5084,6 +5084,8 @@ body{
     font-size: 14px;
     letter-spacing: 0.0025em;
     color: #343A40;
+    border: none;
+    outline: none;
 
     @media(max-width: 1024px){
       border: 1px solid #DEE2E6;
@@ -5124,4 +5126,16 @@ body{
       outline: none;
     }
   }
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
