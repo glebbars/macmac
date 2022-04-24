@@ -37,23 +37,33 @@ const ProductsList = () => {
 
   const modelFilters = productsListFilters.filter(filter => filter.filterName === 'Модель').map(filter => filter.value)
   const colorFilters = productsListFilters.filter(filter => filter.filterName === 'Цвет').map(filter => filter.value)
+  const capacityFilters = productsListFilters.filter(filter => filter.filterName === 'Память').map(filter => filter.value)
   const priceFilter = productsListFilters.filter(filter => filter.filterName === 'Цена').map(filter => filter.value) 
 
   const priceLimits =  priceFilter.length > 0 ? priceFilter[0].split('-') : ['0', '1000000']
 
+  
   const filteredProductsArr = filteredByCategoryArr.filter(product => {
     if(productsListFilters.length > 0){
       const fullModelName = `${product.category} ${product.model}`
-
+      
       return (modelFilters.length > 0 ? modelFilters.includes(fullModelName) : product) && 
-              (colorFilters.length > 0 ? colorFilters.includes(product.color) : product) &&
-              (product.price >= +priceLimits[0] && product.price <= +priceLimits[1])
-
+      (colorFilters.length > 0 ? colorFilters.includes(product.color) : product) &&
+      (capacityFilters.length > 0 ? capacityFilters.includes(product.capacity) : product) &&
+      (product.price >= +priceLimits[0] && product.price <= +priceLimits[1])
+      
     } else{
       return product
     }
   })
-  
+
+ const myid = filteredByCategoryArr.map(product => product.id)
+ const myid2 = filteredProductsArr.map(product => product.id)
+
+ const extra = myid.filter(id => !myid2.includes(id))
+
+//  console.log(extra)
+
   const sortedProductsArr = filteredProductsArr.sort((a, b) => {
     switch (sortType){
       case '': return;

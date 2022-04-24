@@ -97,16 +97,48 @@ export const appleCategoryProductsOptions = [
   },
 ]
 
-export const getAppleModelChoices = (value) => {
+
+export const getOptions = (optionsType, categoryName, searchResult) => {
+  if(categoryName){
+    return getRightChoiceFunc(optionsType, categoryName)
+  } else if(searchResult){
+    const similarName = getSimilarCategoryName(searchResult)
+    return getRightChoiceFunc(optionsType, searchResult)
+  }
+}
+
+const getRightChoiceFunc = (optionsType, value) => {
+  switch (optionsType){
+    case 'model': return getAppleModelChoices(value);
+    case 'color': return getAppleColorChoices(value);
+    case 'capacity': return getAppleCapacityChoices(value);
+    default: return []
+  }
+}
+
+const getAppleModelChoices = (value) => {
   switch(value){
-    case 'apple': return appleCategoryOptions;
     case 'iphone': return modelIphoneOptions;
     case 'airpods': return modelAirPodsOptions;
     default: return []
   }
 }
 
-export const getSimilarCategoryName = (name) => {
+const getAppleColorChoices = (value) => {
+  switch(value){
+    case 'iphone': return colorIphoneOptions;
+    default: return []
+  }
+}
+
+const getAppleCapacityChoices = (value) => {
+  switch(value){
+    case 'iphone': return capacityIphoneOptions;
+    default: return []
+  }
+}
+
+const getSimilarCategoryName = (name) => {
   for(let product in routesNames){
     if(routesNames[product].toLowerCase().includes(name)){
       console.log(routesNames[product].toLowerCase())
@@ -116,38 +148,23 @@ export const getSimilarCategoryName = (name) => {
 }
 
 
-export const appleCategoryOptions = [
-  {
-    filterName: 'Категория',
-    text: 'iPhone',
-  },
-  {
-    filterName: 'Категория',
-    text: 'iPad',
-  },
-  {
-    filterName: 'Категория',
-    text: 'iMac',
-  },
-  {
-    filterName: 'Категория',
-    text: 'Macbook',
-  },
-  {
-    filterName: 'Категория',
-    text: 'AirPods',
-  },
-  {
-    filterName: 'Категория',
-    text: 'Apple Watch',
-  },
-  {
-    filterName: 'Категория',
-    text: 'Apple TV',
-  }
-]
-
 export const modelIphoneOptions = [
+  {
+    filterName: 'Модель',
+    text: 'iPhone 13 Mini',
+  },
+  {
+    filterName: 'Модель',
+    text: 'iPhone 13',
+  },
+  {
+    filterName: 'Модель',
+    text: 'iPhone 13 Pro',
+  },
+  {
+    filterName: 'Модель',
+    text: 'iPhone 13 Pro Max',
+  },
   {
     filterName: 'Модель',
     text: 'iPhone 12',
@@ -166,12 +183,104 @@ export const modelIphoneOptions = [
   },
   {
     filterName: 'Модель',
-    text: 'iPhone 11 Pro',
+    text: 'iPhone SE 2020',
+  }
+]
+
+export const colorIphoneOptions = [
+  {
+    filterName: 'Цвет',
+    text: 'Black',
   },
   {
-    filterName: 'Модель',
-    text: 'iPhone 11 Pro Max',
-  }
+    filterName: 'Цвет',
+    text: 'Product Red',
+  },
+  {
+    filterName: 'Цвет',
+    text: 'Yellow',
+  },
+  {
+    filterName: 'Цвет',
+    text: 'White',
+  },
+  {
+    filterName: 'Цвет',
+    text: 'Mind',
+  },
+  {
+    filterName: 'Цвет',
+    text: 'Purple',
+  },
+  {
+    filterName: 'Цвет',
+    text: 'Blue',
+  },
+  {
+    filterName: 'Цвет',
+    text: 'Silver',
+  },
+  {
+    filterName: 'Цвет',
+    text: 'Gold',
+  },
+  {
+    filterName: 'Цвет',
+    text: 'Pacific Blue',
+  },
+  {
+    filterName: 'Цвет',
+    text: 'Graphite',
+  },
+  {
+    filterName: 'Цвет',
+    text: 'Pink',
+  },
+  {
+    filterName: 'Цвет',
+    text: 'Midnight',
+  },
+  {
+    filterName: 'Цвет',
+    text: 'Starlight',
+  },
+  {
+    filterName: 'Цвет',
+    text: 'Green',
+  },
+  {
+    filterName: 'Цвет',
+    text: 'Alpine Green',
+  },
+  {
+    filterName: 'Цвет',
+    text: 'Sierra Blue',
+  },
+
+]
+
+export const capacityIphoneOptions = [
+  {
+    filterName: 'Память',
+    text: '64Gb',
+  },
+  {
+    filterName: 'Память',
+    text: '128Gb',
+  },
+  {
+    filterName: 'Память',
+    text: '256Gb',
+  },
+  {
+    filterName: 'Память',
+    text: '512Gb',
+  },
+  {
+    filterName: 'Память',
+    text: '1Tb',
+  },
+
 ]
 
 export const modelAirPodsOptions = [
@@ -188,6 +297,8 @@ export const modelAirPodsOptions = [
     text: 'AirPods 3', 
   }
 ]
+
+
 
 export const initialProductCrumbs = [
   {

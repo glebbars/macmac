@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useMemo } from "react";
 import {useLocation, useParams} from 'react-router-dom'
 import {CustomDropDownLinks, CustomDropDownCheckboxes, CustomDropDownPriceRange} from '../CustomDropDown/CustomDropDown'
-import {appleCategoryProductsOptions, getAppleModelChoices, getSimilarCategoryName} from '../additionalObjects/additionalObjects'
+import {appleCategoryProductsOptions, getOptions} from '../additionalObjects/additionalObjects'
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -20,16 +20,10 @@ const ProductsSideBar = ({activeSideBar, closeSideBar}) => {
     }
   }, [location])
 
-  const getOptions = () => {
-    if(categoryName){
-      return getAppleModelChoices(categoryName)
-    } else if(searchResult){
-      const similarName = getSimilarCategoryName(searchResult)
-      return getAppleModelChoices(similarName)
-    }
-  }
-
-  const options = getOptions()
+ 
+  const modelOptions = getOptions('model', categoryName, searchResult)
+  const colorOptions = getOptions('color', categoryName, searchResult)
+  const capacityOptions = getOptions('capacity', categoryName, searchResult)
 
   return(
     <div className={`products__sidebar ${activeSideBar ? 'products__sidebar_active' : ''}`}>
@@ -44,28 +38,52 @@ const ProductsSideBar = ({activeSideBar, closeSideBar}) => {
           headerClass='products__sidebar__category-header' 
         /> 
       )}
+
+      {(categoryName !== 'all-products' || searchResult) && (
+        <CustomDropDownPriceRange 
+            activeSideBar={activeSideBar} 
+            closeSideBar={closeSideBar} 
+            initiallyActive
+            listClass='products__sidebar__category-list'
+            headerClass='products__sidebar__category-header products__sidebar__category-header_checkboxes' 
+        /> 
+      )}
       
-      {(categoryName !== 'all-products' || searchResult) && options.length > 0 && (
+      {(categoryName !== 'all-products' || searchResult) && modelOptions.length > 0 && (
         <CustomDropDownCheckboxes 
           activeSideBar={activeSideBar} 
           closeSideBar={closeSideBar} 
-          initiallyActive 
-          options={options}
+          initiallyActive={false}
+          options={modelOptions}
           header='Модель'
           listClass='products__sidebar__category-list'
           headerClass='products__sidebar__category-header products__sidebar__category-header_checkboxes' 
         /> 
       )}
 
-    {(categoryName !== 'all-products' || searchResult) && (
-      <CustomDropDownPriceRange 
+      {(categoryName !== 'all-products' || searchResult) && colorOptions.length > 0 && (
+        <CustomDropDownCheckboxes 
           activeSideBar={activeSideBar} 
           closeSideBar={closeSideBar} 
-          initiallyActive 
+          options={colorOptions}
+          initiallyActive={false}
+          header='Цвет'
           listClass='products__sidebar__category-list'
           headerClass='products__sidebar__category-header products__sidebar__category-header_checkboxes' 
-      /> 
-    )}
+        /> 
+      )}
+
+      {(categoryName !== 'all-products' || searchResult) && capacityOptions.length > 0 && (
+        <CustomDropDownCheckboxes 
+          activeSideBar={activeSideBar} 
+          closeSideBar={closeSideBar} 
+          options={capacityOptions}
+          initiallyActive={false}
+          header='Память'
+          listClass='products__sidebar__category-list'
+          headerClass='products__sidebar__category-header products__sidebar__category-header_checkboxes' 
+        /> 
+      )}
 
       <div onClick={closeSideBar} className="products__sidebar__closing-cross"></div>
   </div>

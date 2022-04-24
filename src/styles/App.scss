@@ -180,9 +180,9 @@ body{
         @include flex-space-center ;
         visibility: hidden;
         list-style: none;
-        position: absolute;
-        top: -10px;
-        left: -10px;
+        position: fixed;
+        top: 0;
+        left: 0;
         width: 0;
         height: 100vh;
         max-width: 400px;
@@ -1734,7 +1734,7 @@ body{
     @media(max-width: 1024px){
       visibility: hidden;
       opacity: 0;
-      position: absolute;
+      position: fixed;
       background-color: white;
       top: 0;
       left: 0;
@@ -1928,7 +1928,7 @@ body{
         top: 0;
         left: 0;
         background: white;
-        height: 100vh;
+        height: auto;
         width: 0;
         transition: all .2s ease-in-out;
         visibility: hidden;
@@ -1945,7 +1945,8 @@ body{
       }
 
       @media (max-width: 480px) {
-        padding: 25px;
+        overflow: scroll;
+        padding: 25px 25px 150px;
       }
     }
 

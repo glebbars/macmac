@@ -1,4 +1,4 @@
-import React, {useState, useMemo} from "react";
+import React, {useState, useMemo, useLayoutEffect} from "react";
 import {NavLink, useLocation} from 'react-router-dom'
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -41,7 +41,7 @@ export const CustomDropDownCheckboxes = ({ activeSideBar, closeSideBar, initiall
   const [clickedBtn, setClickedBtn] = useState(initiallyActive)
   const productsListFilters = useSelector((store) => store.app.productsListFilters);
   const dispatch = useDispatch()
-
+  
 
   useEffect(() => {
     if(window.innerWidth <= 480 && clickedBtn){
@@ -129,7 +129,6 @@ export const CustomDropDownPriceRange = ({ activeSideBar, closeSideBar, initiall
   const [clickedBtn, setClickedBtn] = useState(initiallyActive)
   const productsListFilters = useSelector((store) => store.app.productsListFilters);
   const dispatch = useDispatch()
-
 
   useEffect(() => {
     if(window.innerWidth <= 480 && clickedBtn){
