@@ -103,15 +103,23 @@ export const getOptions = (optionsType, categoryName, searchResult) => {
     return getRightChoiceFunc(optionsType, categoryName)
   } else if(searchResult){
     const similarName = getSimilarCategoryName(searchResult)
-    return getRightChoiceFunc(optionsType, searchResult)
+    return getRightChoiceFunc(optionsType, similarName)
   }
 }
 
 const getRightChoiceFunc = (optionsType, value) => {
   switch (optionsType){
+    case 'category': return getCategoryChoices(value);
     case 'model': return getAppleModelChoices(value);
     case 'color': return getAppleColorChoices(value);
     case 'capacity': return getAppleCapacityChoices(value);
+    default: return []
+  }
+}
+
+const getCategoryChoices = (value) => {
+  switch(value){
+    case 'apple': return appleCategoryOptions;
     default: return []
   }
 }
@@ -126,7 +134,7 @@ const getAppleModelChoices = (value) => {
 
 const getAppleColorChoices = (value) => {
   switch(value){
-    case 'iphone': return colorIphoneOptions;
+    case 'iphone': return appleCategoryOptions;
     default: return []
   }
 }
@@ -138,15 +146,40 @@ const getAppleCapacityChoices = (value) => {
   }
 }
 
-const getSimilarCategoryName = (name) => {
+export const getSimilarCategoryName = (name) => {
   for(let product in routesNames){
     if(routesNames[product].toLowerCase().includes(name)){
-      console.log(routesNames[product].toLowerCase())
       return routesNames[product].toLowerCase()
     } 
   }
 }
 
+export const appleCategoryOptions = [
+  {
+    filterName: 'Категория',
+    text: 'iPhone',
+  },
+  {
+    filterName: 'Категория',
+    text: 'iPad',
+  },
+  {
+    filterName: 'Категория',
+    text: 'AirPods',
+  },
+  {
+    filterName: 'Категория',
+    text: 'iMac',
+  },
+  {
+    filterName: 'Категория',
+    text: 'Macbook',
+  },
+  {
+    filterName: 'Категория',
+    text: 'Apple Watch',
+  },
+]
 
 export const modelIphoneOptions = [
   {
@@ -297,7 +330,6 @@ export const modelAirPodsOptions = [
     text: 'AirPods 3', 
   }
 ]
-
 
 
 export const initialProductCrumbs = [

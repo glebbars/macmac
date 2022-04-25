@@ -35,6 +35,7 @@ const ProductsList = () => {
   })
 
 
+  const categoryFilters = productsListFilters.filter(filter => filter.filterName === 'Категория').map(filter => filter.value)
   const modelFilters = productsListFilters.filter(filter => filter.filterName === 'Модель').map(filter => filter.value)
   const colorFilters = productsListFilters.filter(filter => filter.filterName === 'Цвет').map(filter => filter.value)
   const capacityFilters = productsListFilters.filter(filter => filter.filterName === 'Память').map(filter => filter.value)
@@ -47,7 +48,8 @@ const ProductsList = () => {
     if(productsListFilters.length > 0){
       const fullModelName = `${product.category} ${product.model}`
       
-      return (modelFilters.length > 0 ? modelFilters.includes(fullModelName) : product) && 
+      return (categoryFilters.length > 0 ? categoryFilters.includes(product.category) : product) && 
+      (modelFilters.length > 0 ? modelFilters.includes(fullModelName) : product) && 
       (colorFilters.length > 0 ? colorFilters.includes(product.color) : product) &&
       (capacityFilters.length > 0 ? capacityFilters.includes(product.capacity) : product) &&
       (product.price >= +priceLimits[0] && product.price <= +priceLimits[1])

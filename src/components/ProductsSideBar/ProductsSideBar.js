@@ -20,7 +20,7 @@ const ProductsSideBar = ({activeSideBar, closeSideBar}) => {
     }
   }, [location])
 
- 
+  const categoryOptions = getOptions('category', categoryName, searchResult)
   const modelOptions = getOptions('model', categoryName, searchResult)
   const colorOptions = getOptions('color', categoryName, searchResult)
   const capacityOptions = getOptions('capacity', categoryName, searchResult)
@@ -49,6 +49,18 @@ const ProductsSideBar = ({activeSideBar, closeSideBar}) => {
         /> 
       )}
       
+      {(categoryName !== 'all-products' && searchResult) && categoryOptions.length > 0 && (
+        <CustomDropDownCheckboxes 
+          activeSideBar={activeSideBar} 
+          closeSideBar={closeSideBar} 
+          initiallyActive
+          options={categoryOptions}
+          header='Категория'
+          listClass='products__sidebar__category-list'
+          headerClass='products__sidebar__category-header products__sidebar__category-header_checkboxes' 
+        /> 
+      )}
+
       {(categoryName !== 'all-products' || searchResult) && modelOptions.length > 0 && (
         <CustomDropDownCheckboxes 
           activeSideBar={activeSideBar} 

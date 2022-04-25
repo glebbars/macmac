@@ -221,11 +221,18 @@ export const PriceRange = ({handlePriceChange, productsListFilters}) => {
     }
   })
 
+  const categoryFilters = productsListFilters.filter(filter => filter.filterName === 'Категория').map(filter => filter.value)
   const modelFilters = productsListFilters.filter(filter => filter.filterName === 'Модель').map(filter => filter.value)
+  const colorFilters = productsListFilters.filter(filter => filter.filterName === 'Цвет').map(filter => filter.value)
+  const capacityFilters = productsListFilters.filter(filter => filter.filterName === 'Память').map(filter => filter.value)
 
   const filteredProductsArr = filteredByCategoryArr.filter(product => {
     const fullModelName = `${product.category} ${product.model}`
-    return modelFilters.length > 0 ? modelFilters.includes(fullModelName) : product
+
+    return (categoryFilters.length > 0 ? categoryFilters.includes(product.category) : product) && 
+      (modelFilters.length > 0 ? modelFilters.includes(fullModelName) : product) && 
+      (colorFilters.length > 0 ? colorFilters.includes(product.color) : product) &&
+      (capacityFilters.length > 0 ? capacityFilters.includes(product.capacity) : product)
   })
 
   const productPrices = filteredProductsArr.map(product => product.price).sort((a, b) => b - a)
