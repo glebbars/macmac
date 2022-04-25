@@ -134,7 +134,7 @@ const getAppleModelChoices = (value) => {
 
 const getAppleColorChoices = (value) => {
   switch(value){
-    case 'iphone': return appleCategoryOptions;
+    case 'iphone': return colorIphoneOptions;
     default: return []
   }
 }
