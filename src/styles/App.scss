@@ -591,7 +591,7 @@ body{
 
 
     &_searching{
-      height: 500px;
+      // height: 500px;
       top: 5px;
       z-index: 2;
       padding: 8px;
@@ -685,7 +685,102 @@ body{
       }
     }
 
+    &__result{
+      display: none;
+      padding: 24px 8px;
+
+      &_active{
+        display: block;
+      }
+
+      &__header{
+        font-weight: 500;
+        font-size: 12px;
+        letter-spacing: 0.004em;
+        text-transform: uppercase;
+        color: #ADB5BD;
+        margin-bottom: 15px;
+      }
+
+      &__product{
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 25px;
+
+        &__img-wrapper{
+          display: flex;
+          width: 55px;
+          height: 55px;
+          background: #E9ECEF;
+          border-radius: 5px;
+          margin-right: 25px;
+        }
+
+        &__img{
+          max-height: 80%;
+          max-width: 80%;
+          object-fit: contain;
+          margin: auto;
+        }
+
+        &__text-wrapper{
+          @include flex-column-left;
+        }
+
+        &__text,
+        &__price{
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 24px;
+          letter-spacing: 0.0025em;
+          color: #343A40;
+          margin: 0;
+        }
+
+        &__text{
+          margin-bottom: 5px;
+        }
+
+      }
+
+      &__review-all-link{
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 0.0025em;
+        color: #343A40;
+        margin-left: 80px;
+        position: relative;
+
+        &::after{
+          content: "";
+          position: absolute;
+          top: 7px;
+          right: -25px;
+          display: block;
+          width: 7px;
+          height: 7px;
+          border-top: 2px solid #343A40;
+          border-left: 2px solid #343A40;
+          transform: rotate(135deg);
+          border-radius: 1.5px;
+        }
+    
+        &::before{
+          content: "";
+          position: absolute;
+          top: 10.5px;
+          right: -25px;
+          display: block;
+          width: 11px;
+          height: 2px;
+          background-color: #343A40;
+          border-radius: 6px;
+        }
+      }
+    }
   }
+
 
 
 }
