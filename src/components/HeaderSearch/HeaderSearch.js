@@ -10,7 +10,6 @@ import Highlighter from "react-highlight-words";
 const HeaderSearch = () => {
   const productsArr = useSelector((store) => store.app.productsArr)
   const [searchText, setSearchText] = useState('')
-  const [openedSearchWrapper, setOpenedSearchWrapper] = useState(false)
   const [touchedSearch, setTouchedSearch] = useState(false)
   const [filteredArr, setFilteredArr] = useState([])
   const location = useLocation()
@@ -19,6 +18,7 @@ const HeaderSearch = () => {
   useEffect(() => {
     handleToggle()
   }, [location])
+
 
   const handleSubmit = (event, ref) => {
     if(filteredArr.length === 1){
@@ -30,7 +30,6 @@ const HeaderSearch = () => {
     }
 
     event.preventDefault()
-    setOpenedSearchWrapper(false)
     setTouchedSearch(false)
     ref.current.blur()
     ref.current.value = ""
@@ -39,10 +38,6 @@ const HeaderSearch = () => {
   const habndleType = (text) => {
     setSearchText(text)
     
-    if(text.length > 0 && !openedSearchWrapper) {
-      setOpenedSearchWrapper(true)
-    }
-
     const filteredArr = productsArr.filter(product => {
       const fullProductName = `${product.brand.toLowerCase()} ${product.category.toLowerCase()} ${product.model.toLowerCase()} ${product.capacity.toLowerCase()} ${product.color.toLowerCase()}`
 
@@ -53,11 +48,6 @@ const HeaderSearch = () => {
   }
 
   const handleToggle = () => {
-
-    if(openedSearchWrapper){
-      setOpenedSearchWrapper(false)
-    }
-
     if(touchedSearch){
       setTouchedSearch(false)
     }
@@ -72,21 +62,22 @@ const HeaderSearch = () => {
     <>
     <div 
       onClick={handleToggle}
-      className={`header__search-screen-wrapper ${openedSearchWrapper ? 'header__search-screen-wrapper_searching' : ''} ${touchedSearch ? 'header__search-screen-wrapper_touched' : ''} `}>
+      className={`header__search-screen-wrapper ${touchedSearch ? 'header__search-screen-wrapper_touched' : ''} ${(filteredArr.length > 0 || searchText.length > 0) ?'header__search-screen-wrapper_bg' : ''}`}
+      >
     </div>
     <div 
       onClick={() => setTouchedSearch(true)} 
-      className={`header__search-container ${touchedSearch ? 'header__search-container_touched' : ''} ${openedSearchWrapper ? 'header__search-container_searching' : ''}`}>
+      className={`header__search-container ${touchedSearch ? 'header__search-container_touched' : ''}`}>
 
       <Search 
         handleSubmit={handleSubmit}
         onType={(text) => habndleType(text)} 
-        className={`header__search ${touchedSearch ? 'header__search_touched' : ''} ${openedSearchWrapper ? 'header__search_searching' : ''} `} 
-        placeholder={openedSearchWrapper ? 'Поиск по товарам' : 'Категория, название товара, артикул'} 
+        className={`header__search ${touchedSearch ? 'header__search_touched' : ''}`} 
+        placeholder={touchedSearch ? 'Поиск по товарам' : 'Категория, название товара, артикул'} 
       />
 
       {filteredArr.length > 0 && (
-        <div className={`header__search__result ${openedSearchWrapper ? 'header__search__result_active' : ''}`}>
+        <div className={`header__search__result ${touchedSearch ? 'header__search__result_active' : ''}`}>
 
           {categoriesSetArr.length > 0 && (
             <div className="header__search__result__categories">
@@ -114,7 +105,6 @@ const HeaderSearch = () => {
                     <img src={product.pictures[0].url} alt="" className="header__search__result__product__img"/>
                   </div>
                   <Link to={`/category/${product.category.toLowerCase()}/${product.id}`} className="header__search__result__product__text-wrapper">  
-                    {/* <p className="header__search__result__product__text">{product.brand} {product.category} {product.model} {product.color} {product.capacity}</p> */}
                     <Highlighter
                       className="header__search__result__product__text"
                       highlightClassName="header__search__result__product__highlighted"
