@@ -33,6 +33,11 @@ body{
   position: relative;
 }
 
+a{
+  cursor: pointer;
+}
+
+
 .drop-down{
 
   &__header{
@@ -96,16 +101,6 @@ body{
       }
     }
   }
-}
-
-.fade-enter {
-  opacity: 0;
-  z-index: 1;
-}
-
-.fade-enter.fade-enter-active {
-  opacity: 1;
-  transition: opacity 200ms ease-in;
 }
 
 
@@ -618,6 +613,7 @@ body{
     border-radius: 8px;
     box-sizing: border-box;
     position: relative;
+    caret-color: #FA530D;
 
     &::before{
       content: '';
@@ -687,10 +683,49 @@ body{
 
     &__result{
       display: none;
-      padding: 24px 8px;
+      padding: 24px 0;
 
       &_active{
         display: block;
+      }
+
+      &__categories{
+        margin-bottom: 25px;
+
+        & h3{
+          padding-left: 16px;
+        }
+
+        &__link{
+          text-decoration: none;
+        }
+
+        &__text{
+          display: block;
+          padding: 4px 0 4px 15px;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 24px;
+          letter-spacing: 0.0025em;
+          color: #ADB5BD;
+          margin: 0;
+
+          &:hover{
+            background: #F4F5F7;
+            border-radius: 8px;
+            cursor: pointer;
+          }
+
+          &__highlighted{
+            color: #FA530D;
+            background-color: transparent;
+            font-weight: 500;
+          }
+        }
+      }
+
+      &__products{
+        padding: 0 16px;
       }
 
       &__header{
@@ -714,6 +749,7 @@ body{
           background: #E9ECEF;
           border-radius: 5px;
           margin-right: 25px;
+          cursor: pointer;
         }
 
         &__img{
@@ -725,6 +761,8 @@ body{
 
         &__text-wrapper{
           @include flex-column-left;
+          cursor: pointer;
+          text-decoration: none;
         }
 
         &__text,
@@ -741,6 +779,12 @@ body{
           margin-bottom: 5px;
         }
 
+        &__highlighted{
+          color:#FA530D;
+          background-color: transparent;
+          font-weight: 500;
+        }
+
       }
 
       &__review-all-link{
@@ -749,7 +793,7 @@ body{
         font-size: 14px;
         letter-spacing: 0.0025em;
         color: #343A40;
-        margin-left: 80px;
+        margin-left: 95px;
         position: relative;
 
         &::after{
