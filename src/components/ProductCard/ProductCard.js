@@ -24,7 +24,7 @@ const ProductCard = ({product}) => {
         className="product-card__img-container">
           <img className="product-card__img" src={product.pictures[0].url} alt="Loading..." />
       </Link>
-      <span className="product-card__text">{product.category} {product.model} {product.color} {product.capacity}</span>
+      <span className="product-card__text">{product.category} {product.model} {product.capacity} {product.color}</span>
       <span className="product-card__price">{product.price.toLocaleString()}.00 &#x20b4;</span>
     </div>
   );
