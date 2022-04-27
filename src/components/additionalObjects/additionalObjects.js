@@ -64,6 +64,25 @@ export const categoryHeaderOptions = [
   },
 ]
 
+export const popularRequestsOptions = [
+  {
+    text: 'iPhone 13 Pro,',
+    link: '/category/iphone'
+  },
+  {
+    text: 'AirPods,',
+    link: '/category/airpods'
+  },
+  {
+    text: 'iMac,',
+    link: '/category/imac'
+  },
+  {
+    text: 'iPhone 11',
+    link: '/category/iphone'
+  },
+]
+
 export const appleCategoryProductsOptions = [
   {
     link: "/category/iphone",

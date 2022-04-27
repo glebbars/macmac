@@ -20,21 +20,6 @@ const HeaderSearch = () => {
   }, [location])
 
 
-  const handleSubmit = (event, ref) => {
-    if(filteredArr.length === 1){
-      const product = filteredArr[0]
-
-      history.push(`/category/${product.category.toLowerCase()}/${product.id}`)
-    } else{
-      history.push(`/search/${ref.current.value}`)
-    }
-
-    event.preventDefault()
-    setTouchedSearch(false)
-    ref.current.blur()
-    ref.current.value = ""
-  }
-
   const habndleType = (text) => {
     setSearchText(text)
     
@@ -70,10 +55,12 @@ const HeaderSearch = () => {
       className={`header__search-container ${touchedSearch ? 'header__search-container_touched' : ''}`}>
 
       <Search 
-        handleSubmit={handleSubmit}
+        // handleSubmit={handleSubmit}
         onType={(text) => habndleType(text)} 
         className={`header__search ${touchedSearch ? 'header__search_touched' : ''}`} 
         placeholder={touchedSearch ? 'Поиск по товарам' : 'Категория, название товара, артикул'} 
+        setTouchedSearch={setTouchedSearch}
+        onlyProduct={filteredArr.length === 1 ? filteredArr[0] : null}
       />
 
       {filteredArr.length > 0 && (
@@ -122,7 +109,6 @@ const HeaderSearch = () => {
           <Link to={`/search/${searchText}`} className="header__search__result__review-all-link">Посмотреть все результаты</Link>
         </div>
       )}
-
     </div>
     </>
   )

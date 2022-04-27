@@ -1460,6 +1460,7 @@ a {
     color: #343A40;
     margin-bottom: 65px;
     position: relative;
+    cursor: pointer;
 
     @media (max-width: 1300px) {
       font-size: 15px;
@@ -1483,13 +1484,13 @@ a {
       border-top: 3px solid #ADB5BD;
       border-left: 3px solid #ADB5BD;
       border-radius: 1px;
-      top: 8px;
+      top: 9px;
       right: 155px;
       transform: rotate(315deg);
       border-radius: 2px;
 
       @media (max-width: 1300px) {
-        right: 145px;
+        right: 130px;
       }
     }
 
@@ -1499,12 +1500,47 @@ a {
       width: 10px;
       height: 3px;
       background-color: #ADB5BD;
-      top: 10.5px;
+      top: 12px;
       right: 152px;
       position: absolute;
 
       @media (max-width: 1300px) {
-        right: 142px;
+        right: 127px;
+      }
+    }
+  }
+
+  &__popular{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+    @media(max-width: 480px){
+      margin-top: 24px;
+    }
+
+    &__header{
+      font-weight: 500;
+      margin: 0 16px 0 0;
+
+      @media(max-width: 480px){
+        margin-right: 16px;
+      }
+    }
+
+    &__header,
+    &__text{
+      font-size: 16px;
+      line-height: 30px;
+      letter-spacing: 0.005em;
+      color: #343A40;
+    }
+
+    &__text{
+      margin-right: 10px;
+
+      @media(max-width: 480px){
+        margin-right: 6px;
       }
     }
   }
