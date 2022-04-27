@@ -37,7 +37,11 @@ const Favourites = () => {
       </div>
       {favorites.length > 0 ?
         <div className="favorites__list__wrapper">
-          <List className='favorites__list__content' productsArr={sortedArr}/>
+          <List 
+            className='favorites__list__content' 
+            productsArr={sortedArr}
+            productClassName=''
+          />
         </div>
         :
         <div className="favorites__none-items__wrapper">

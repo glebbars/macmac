@@ -105,6 +105,7 @@ const ProductsList = () => {
       {currentTableData.length > 0 ? 
         <List 
           className=''
+          productClassName=''
           productsArr={currentTableData} 
         />  : 'К сожалению этого товара нет в данный момент'
       }

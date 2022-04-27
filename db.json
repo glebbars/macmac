@@ -6,6 +6,7 @@
       "model": "SE 2020",
       "capacity": "128Gb",
       "color": "Black",
+      "label": "Хит продаж",
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644359238/uploaded_images/lnkihpgghfp1bhggti9b.png",
@@ -126,6 +127,7 @@
       "model": "12 Pro Max",
       "capacity": "512Gb",
       "color": "Pacific Blue",
+      "label": "Хит продаж",
       "price": 2,
       "pictures": [
         {
@@ -561,6 +563,7 @@
       "brand": "Apple",
       "category": "AirPods",
       "model": "2",
+      "label": "Хит продаж",
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648914866/uploaded_images/zvijvmr4ndg5q59vr0is.png",
@@ -607,6 +610,7 @@
       "brand": "Apple",
       "category": "AirPods",
       "model": "3",
+      "label": "Хит продаж",
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648916045/uploaded_images/lowgpoi1fbvalavy6ff8.png",

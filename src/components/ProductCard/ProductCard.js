@@ -2,7 +2,7 @@ import React from "react";
 import {Link} from 'react-router-dom'
 import { useSelector, useDispatch } from "react-redux";
 
-const ProductCard = ({product}) => {
+const ProductCard = ({product, productClassName}) => {
   const favorites = useSelector((store) => store.app.favorites);
   const dispatch = useDispatch()  
 
@@ -15,7 +15,7 @@ const ProductCard = ({product}) => {
 
 
   return (
-    <div className="product-card__container">
+    <div className={`product-card__container ${productClassName}`}>
       {window.location.pathname === '/favourites' && (
         <div onClick={() => removeFromFavorites(product.id)} className="product-card__cross"></div>
       )}
