@@ -22,11 +22,11 @@ export const initialStore = {
   productsListFilters: [],
   pageNum: 1,
   productsArr: [],
-  recentlyViewed: JSON.parse(localStorage.getItem("recentlyViewed")) || [],
+  recentlyViewed: JSON.parse(localStorage.getItem("macmac-recentlyViewed")) || [],
     // favorites: [],
     // addedToBag: [],
-  favorites: JSON.parse(localStorage.getItem("favorites")) || [],
-  addedToBag: JSON.parse(localStorage.getItem("addedToBag")) || [],
+  favorites: JSON.parse(localStorage.getItem("macmac-favorites")) || [],
+  addedToBag: JSON.parse(localStorage.getItem("macmac-addedToBag")) || [],
 }
 
 const appReducer = (store = initialStore, action) => {

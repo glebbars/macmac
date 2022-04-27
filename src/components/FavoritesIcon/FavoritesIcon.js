@@ -6,7 +6,7 @@ const FavoritesIcon = ({productId}) => {
   const favorites = useSelector((store) => store.app.favorites);
 
   useEffect(() => {
-    localStorage.setItem("favorites", JSON.stringify(favorites));
+    localStorage.setItem("macmac-favorites", JSON.stringify(favorites));
   }, [favorites]);
 
   const toggleFavorites = (productId) => {

@@ -6,7 +6,7 @@ const CustomLogOutBtn = forwardRef((props, ref) => {
   console.log(props)
 
   return (
-      <div className='admin__logout-btn' onClick={() => {localStorage.removeItem('username'); window.location.replace('/')}}>Logout</div>
+      <div className='admin__logout-btn' onClick={() => {localStorage.removeItem('macmac-username'); window.location.replace('/')}}>Logout</div>
   );
 });
 

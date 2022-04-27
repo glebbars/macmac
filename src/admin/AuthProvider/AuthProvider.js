@@ -2,7 +2,7 @@ const authProvider = {
   // authentication
   login: ({ username, password }) => {
     if(username === 'admin' && password === 'admin'){
-      localStorage.setItem('username', username);
+      localStorage.setItem('macmac-username', username);
       return Promise.resolve();
     } else{
       return Promise.reject();
@@ -12,12 +12,12 @@ const authProvider = {
 },
 
 logout: () => {
-  localStorage.removeItem('username');
+  localStorage.removeItem('macmac-username');
   return Promise.resolve();
 },
 checkError: () => Promise.resolve(),
 checkAuth: () =>
-  localStorage.getItem('username') ? Promise.resolve() : Promise.reject(),
+  localStorage.getItem('macmac-username') ? Promise.resolve() : Promise.reject(),
 getPermissions: () => Promise.reject('Unknown method'),
 };
 

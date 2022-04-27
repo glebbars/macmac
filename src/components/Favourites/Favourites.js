@@ -10,7 +10,7 @@ const Favourites = () => {
   const favorites = useSelector((store) => store.app.favorites);
 
   useEffect(() => {
-    localStorage.setItem("favorites", JSON.stringify(favorites));
+    localStorage.setItem("macmac-favorites", JSON.stringify(favorites));
   }, [favorites]);
 
   const filteredArr = productsArr.filter(product => favorites.includes(product.id))

@@ -8,7 +8,7 @@ const RecentlyViewed = ({className}) => {
   const productsArr = useSelector((store) => store.app.productsArr);
 
   useEffect(() => {
-    localStorage.setItem('recentlyViewed', JSON.stringify(recentlyViewed))
+    localStorage.setItem('macmac-recentlyViewed', JSON.stringify(recentlyViewed))
   }, [recentlyViewed])
 
   const filteredArr = productsArr.filter(product => recentlyViewed.includes(product.id))

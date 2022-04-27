@@ -37,7 +37,7 @@ export const PurchasePopUp = ({addedToBag, activePopUp, productDataObj, closePop
   const fullProductName = `${productDataObj.category} ${productDataObj.model} ${productDataObj.capacity} ${productDataObj.color}`
 
   useEffect(() => {
-    localStorage.setItem("addedToBag", JSON.stringify(addedToBag));
+    localStorage.setItem("macmac-addedToBag", JSON.stringify(addedToBag));
  }, [addedToBag]);
 
  useEffect(() => {

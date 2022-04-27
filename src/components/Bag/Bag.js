@@ -12,7 +12,7 @@ const Bag = () => {
   const filteredArr = productsArr.filter(product => addedToBag.includes(product.id))
 
   useEffect(() => {
-    localStorage.setItem("addedToBag", JSON.stringify(addedToBag));
+    localStorage.setItem("macmac-addedToBag", JSON.stringify(addedToBag));
   }, [addedToBag]);
 
   return (
