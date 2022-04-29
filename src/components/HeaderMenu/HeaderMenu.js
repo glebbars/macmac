@@ -6,8 +6,9 @@ import {CustomDropDownLinks} from "../CustomDropDown/CustomDropDown";
 import {categoryHeaderOptions} from '../additionalObjects/additionalObjects'
 import { useDispatch, useSelector } from "react-redux";
 import HeaderCatalog from '../HeaderCatalog/HeaderCatalog'
-const HeaderMenu = () => {
 
+const HeaderMenu = () => {
+  const [hoveredCatalog, setHoveredCatalog] = useState(false)
   const [openedBurger, setOpenedBurger] = useState(false)
   const favorites = useSelector((store) => store.app.favorites);
   const addedToBag = useSelector((store) => store.app.addedToBag);
@@ -16,7 +17,19 @@ const HeaderMenu = () => {
 
   const location = useLocation()
 
+  const handleHoverCatalog = (type) => {
+    if(type === 'enter' && !hoveredCatalog){
+      setHoveredCatalog(true)
+    } else if(type === 'leave' && hoveredCatalog){
+      setHoveredCatalog(false)
+    }
+  }
+
+  alert(hoveredCatalog)
+
   const activeClass = openedBurger ? '_active' : ''
+
+
 
   useEffect(() =>{
     setOpenedBurger(false)
@@ -30,6 +43,8 @@ const HeaderMenu = () => {
           <img className="header__logo__img"  src={logo} alt="Logo" />
         </Link>
         <div className="header__menu">
+        <HeaderCatalog />
+                <div id='bg' className='header__catalog-bg-wrapper'></div>
           <button onClick={() => setOpenedBurger(true)} className="header__menu__burger-toggle">
             <span className="header__menu__burger-toggle__line"></span>
             <span className="header__menu__burger-toggle__line"></span>
@@ -38,6 +53,8 @@ const HeaderMenu = () => {
           <div className={`header__menu__burger-container ${'header__menu__burger-container' + activeClass}`}>
               <nav className="header__menu__nav">
                 <NavLink
+                  onMouseEnter={() => handleHoverCatalog('enter')}
+                  onMouseLeave={() => handleHoverCatalog('leave')}
                   // exact
                   to="/category/all-products"
                   className="header__menu__link header__menu__link_all"
@@ -45,9 +62,14 @@ const HeaderMenu = () => {
                 >
                   Все товары
                 </NavLink>
-                <HeaderCatalog />
-                <CustomDropDownLinks links initiallyActive options={categoryHeaderOptions} header='Apple' 
-                headerClass='header__menu__link header__menu__link_additional_header' listClass='drop-down__list_header'
+
+
+                <CustomDropDownLinks 
+                  links 
+                  initiallyActive 
+                  options={categoryHeaderOptions}    
+                  header='Apple' 
+                  headerClass='header__menu__link header__menu__link_additional_header' listClass='drop-down__list_header'
                 />
 
                 <NavLink
@@ -102,7 +124,9 @@ const HeaderMenu = () => {
             Избранное
           </Link>
         </div>
+    
       </div>
+
     </div>
   );
 };
