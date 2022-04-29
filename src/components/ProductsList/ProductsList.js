@@ -14,6 +14,10 @@ const ProductsList = () => {
   const dispatch = useDispatch()
   const {categoryName, searchResult} = useParams()
 
+  const name = 'Hi my name is Flavio'
+  const splitName = categoryName.replace(/-/g," ")
+  console.log(name, splitName)
+  
   useEffect(() => {
     if(currentPage !==1) {
       onPageChange(1)
@@ -24,7 +28,11 @@ const ProductsList = () => {
   const filteredByCategoryArr = productsArr.filter(product => {
     if(categoryName){
       if(categoryName !== "all-products"){
-        return product.category.toLowerCase() === categoryName
+        if(categoryName.includes('-')){
+          return null
+        } else {
+          return product.category.toLowerCase() === categoryName
+        }
       } else{
         return product
       }
@@ -58,13 +66,6 @@ const ProductsList = () => {
       return product
     }
   })
-
- const myid = filteredByCategoryArr.map(product => product.id)
- const myid2 = filteredProductsArr.map(product => product.id)
-
- const extra = myid.filter(id => !myid2.includes(id))
-
-//  console.log(extra)
 
   const sortedProductsArr = filteredProductsArr.sort((a, b) => {
     switch (sortType){

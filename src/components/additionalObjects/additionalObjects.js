@@ -386,3 +386,106 @@ export const bagCrumbs = [
   }
 ]
 
+export const headerCatalogOptions = [
+  {
+    header: "iPhone",
+    headerLink: '/category/iphone',
+    options: [
+      {
+        name: 'iPhone 12 Pro Max',
+        link: '/category/iphone-12-pro-max'
+      },
+      {
+        name: 'iPhone 12 Pro',
+        link: '/category/iphone-12-pro'
+      },
+      {
+        name: 'iPhone 12',
+        link: '/category/iphone-12'
+      },
+      {
+        name: 'iPhone 11 Pro Max',
+        link: '/category/iphone-11-pro-max'
+      },
+      {
+        name: 'iPhone 11 Pro',
+        link: '/category/iphone-11-pro'
+      },
+      {
+        name: 'iPhone 11',
+        link: '/category/iphone-11'
+      }
+    ]
+  },
+  {
+    header: "AirPods",
+    headerLink: '/category/airpods',
+    options: [
+      {
+        name: 'AirPods 2nd generation',
+        link: '/category/airpods-2'
+      },
+      {
+        name: 'AirPods Pro',
+        link: '/category/airpods-pro'
+      },
+      {
+        name: 'AirPods 3rd generation',
+        link: '/category/airpods-3'
+      }
+    ]
+  },
+  {
+    header: "iPad",
+    headerLink: '/category/ipad',
+    options: [
+      {
+        name: 'iPad Air',
+        link: '/category/ipad-air'
+      },
+      {
+        name: 'iPad 10.2',
+        link: '/category/ipad-10-2'
+      },
+      {
+        name: 'iPad Pro 11"',
+        link: '/category/ipad-pro-11'
+      },
+      {
+        name: 'iPad Pro 12.9"',
+        link: '/category/ipad-pro-12-9'
+      },
+      {
+        name: 'iPad Mini 5',
+        link: '/category/ipad-mini-5'
+      }
+    ]
+  },
+  {
+    header: "iMac",
+    headerLink: '/category/imac',
+    options: [
+      {
+        name: 'iMac 21"',
+        link: '/category/imac-21'
+      },
+      {
+        name: 'iMac 27"',
+        link: '/category/imac-27'
+      },
+      {
+        name: 'iMac 21.5"',
+        link: '/category/imac-21-5'
+      },
+      {
+        name: 'iMac 27.0"',
+        link: '/category/imac-27-0'
+      },
+      {
+        name: 'iMac Mini"',
+        link: '/category/imac-mini'
+      }
+    ]
+  },
+  
+]
