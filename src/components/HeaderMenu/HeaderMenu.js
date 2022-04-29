@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import { NavLink, Link, useLocation } from "react-router-dom";
 import logo from '../../img/logo.svg'
 import HeaderSearch from '../HeaderSearch/HeaderSearch'
@@ -8,43 +8,33 @@ import { useDispatch, useSelector } from "react-redux";
 import HeaderCatalog from '../HeaderCatalog/HeaderCatalog'
 
 const HeaderMenu = () => {
-  const [hoveredCatalog, setHoveredCatalog] = useState(false)
-  const [openedBurger, setOpenedBurger] = useState(false)
+  const [openedBurger, setOpenedBurger] = useState(true)
   const favorites = useSelector((store) => store.app.favorites);
   const addedToBag = useSelector((store) => store.app.addedToBag);
+  const divRef = useRef(null)
 
   const dispatch = useDispatch()
 
   const location = useLocation()
 
-  const handleHoverCatalog = (type) => {
-    if(type === 'enter' && !hoveredCatalog){
-      setHoveredCatalog(true)
-    } else if(type === 'leave' && hoveredCatalog){
-      setHoveredCatalog(false)
-    }
-  }
-
-  alert(hoveredCatalog)
 
   const activeClass = openedBurger ? '_active' : ''
 
 
-
-  useEffect(() =>{
-    setOpenedBurger(false)
-  }, [location])
+  // useEffect(() =>{
+  //   setOpenedBurger(false)
+  // }, [location])
 
 
   return (
     <div className="header">
+      <HeaderCatalog ref={divRef} />
+
       <div className="header__container">
         <Link className="header__logo" to='/'>
           <img className="header__logo__img"  src={logo} alt="Logo" />
         </Link>
         <div className="header__menu">
-        <HeaderCatalog />
-                <div id='bg' className='header__catalog-bg-wrapper'></div>
           <button onClick={() => setOpenedBurger(true)} className="header__menu__burger-toggle">
             <span className="header__menu__burger-toggle__line"></span>
             <span className="header__menu__burger-toggle__line"></span>
@@ -53,8 +43,8 @@ const HeaderMenu = () => {
           <div className={`header__menu__burger-container ${'header__menu__burger-container' + activeClass}`}>
               <nav className="header__menu__nav">
                 <NavLink
-                  onMouseEnter={() => handleHoverCatalog('enter')}
-                  onMouseLeave={() => handleHoverCatalog('leave')}
+                  onMouseEnter={() => divRef.current.style.display = 'block'}
+                  // onMouseLeave={() => divRef.current.style.display = 'none'}
                   // exact
                   to="/category/all-products"
                   className="header__menu__link header__menu__link_all"

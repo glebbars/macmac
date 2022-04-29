@@ -1,23 +1,20 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
+import HeaderCatalogColumn from '../HeaderCatalogColumn/HeaderCatalogColumn'
 import {headerCatalogCategories} from '../additionalObjects/additionalObjects'
-import {Link} from 'react-router-dom'
 
-const HeaderCatalog = () => {
+const HeaderCatalog = forwardRef((props, divRef) => {
 
   return(
-    
-    <div className='header__catalog'>
-      <div className='header__catalog__triangle'></div>
-      {headerCatalogCategories.map((category, index) => (
-        <div key={index} className='header__catalog__column'>
-          <Link className='header__catalog__option__header' to={category.headerLink}>{category.header}</Link>
-            {category.options.map((option, index) => (
-              <Link key={index} className='header__catalog__option__text' to={option.link}>{option.name}</Link>
-            ))}
-        </div>
-      ))}
+    <div ref={divRef} className='header__catalog'>
+      {/* <div className='header__catalog__bg-wrapper'></div> */}
+      <div onMouseLeave={() => divRef.current.style.display = 'none'} className='header__catalog__content-wrapper'>
+        <div className='header__catalog__triangle'></div>
+        {headerCatalogCategories.map((category, index) => (
+          <HeaderCatalogColumn key={index} category={category} />
+        ))}
+      </div>
     </div>
   )
-}
+})
 
 export default HeaderCatalog

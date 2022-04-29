@@ -1,6 +1,11 @@
 import lightpurpleLine from '../../img/lightpurple-line.svg'
 import greenLine from '../../img/green-line.svg'
 import blueLine from '../../img/blue-line.svg'
+import iphoneCatalog from '../../img/catalog-iphone.png'
+import ipadCatalog from '../../img/catalog-ipad.png'
+import imacCatalog from '../../img/catalog-imac.png'
+import airpodsCatalog from '../../img/catalog-airpods.png'
+import applewatchCatalog from '../../img/catalog-apple-watch.png'
 
 export const routesNames = {
   "all-products": "Все товары",
@@ -390,6 +395,10 @@ export const headerCatalogCategories = [
   {
     header: "iPhone",
     headerLink: '/category/iphone',
+    bg: {
+      img: iphoneCatalog,
+      color: "#EEE3F3"
+    },
     options: [
       {
         name: 'iPhone 12 Pro Max',
@@ -420,6 +429,10 @@ export const headerCatalogCategories = [
   {
     header: "AirPods",
     headerLink: '/category/airpods',
+    bg: {
+      img: airpodsCatalog,
+      color: "#DAEDF1"
+    },
     options: [
       {
         name: 'AirPods 2nd generation',
@@ -438,6 +451,10 @@ export const headerCatalogCategories = [
   {
     header: "iPad",
     headerLink: '/category/ipad',
+    bg: {
+      img: ipadCatalog,
+      color: "#FFE2D7"
+    },
     options: [
       {
         name: 'iPad Air',
@@ -464,6 +481,10 @@ export const headerCatalogCategories = [
   {
     header: "iMac",
     headerLink: '/category/imac',
+    bg: {
+      img: imacCatalog,
+      color: "#DBECCE"
+    },
     options: [
       {
         name: 'iMac 21"',
@@ -490,6 +511,10 @@ export const headerCatalogCategories = [
   {
     header: "Macbook",
     headerLink: '/category/macbook',
+    bg: {
+      img: imacCatalog,
+      color: "#DBECCE"
+    },
     options: [
       {
         name: 'iMac 21"',
@@ -516,6 +541,10 @@ export const headerCatalogCategories = [
   {
     header: "Watch",
     headerLink: '/category/apple-watch',
+    bg: {
+      img: applewatchCatalog,
+      color: "#FFD965"
+    },
     options: [
       {
         name: 'iMac 21"',

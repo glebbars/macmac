@@ -13,11 +13,11 @@ import { useParams } from "react-router-dom";
 export const CustomDropDownLinks = ({ header, options, headerClass, listClass}) => {
   const [clickedBtn, setClickedBtn] = useState(true)
 
-  useEffect(() => {
-    if(window.innerWidth <= 480){
-      setClickedBtn(false)
-    }
-  }, [])
+  // useEffect(() => {
+  //   if(window.innerWidth <= 480){
+  //     setClickedBtn(false)
+  //   }
+  // }, [])
   
   return(
     <>
