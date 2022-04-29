@@ -912,7 +912,66 @@ input[type=number] {
   }
 
   &__catalog{
-    
+    position: absolute;
+    top: 80px;
+    z-index: 1;
+    left: 0;
+    width: 100%;
+    max-width: 1340px;
+
+    &__bg-wrapper{
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      background: rgba(0, 0, 0, 0.4);
+      position: fixed;
+    }
+
+    &__content{
+      position: absolute;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      background: #FFFFFF;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.01);
+      border-radius: 8px;
+      z-index: 1;
+      padding: 30px 30px 40px;
+      box-sizing: border-box;
+
+      &__column{
+        display: flex;
+        flex-direction: column;
+      }
+
+      &__option{
+
+
+        &__header{
+          font-weight: 500;
+          font-size: 16px;
+          letter-spacing: 0.005em;
+          color: #343A40;
+          margin: 0 0 12px;
+          text-decoration: none;
+        }
+
+        &__text{
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 24px;
+          letter-spacing: 0.0025em;
+          color: #343A40;
+          text-decoration: none;
+          margin: 0 0 8px;
+  
+          &:last-of-type{
+            margin: 0;
+          }
+        }
+      }
+    }
   }
 
 

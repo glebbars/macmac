@@ -14,9 +14,12 @@ const ProductsList = () => {
   const dispatch = useDispatch()
   const {categoryName, searchResult} = useParams()
 
-  const name = 'Hi my name is Flavio'
-  const splitName = categoryName.replace(/-/g," ")
-  console.log(name, splitName)
+  const name = 'iPhone 12 Pro Max EA Sport 12.9"'
+  const splitName = name.replace(/-/g," ")
+
+  const url1 = encodeURIComponent(name)
+  const url2 = decodeURIComponent(url1)
+  console.log(name, splitName, url1, url2)
   
   useEffect(() => {
     if(currentPage !==1) {

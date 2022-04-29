@@ -386,7 +386,7 @@ export const bagCrumbs = [
   }
 ]
 
-export const headerCatalogOptions = [
+export const headerCatalogCategories = [
   {
     header: "iPhone",
     headerLink: '/category/iphone',
@@ -464,6 +464,58 @@ export const headerCatalogOptions = [
   {
     header: "iMac",
     headerLink: '/category/imac',
+    options: [
+      {
+        name: 'iMac 21"',
+        link: '/category/imac-21'
+      },
+      {
+        name: 'iMac 27"',
+        link: '/category/imac-27'
+      },
+      {
+        name: 'iMac 21.5"',
+        link: '/category/imac-21-5'
+      },
+      {
+        name: 'iMac 27.0"',
+        link: '/category/imac-27-0'
+      },
+      {
+        name: 'iMac Mini"',
+        link: '/category/imac-mini'
+      }
+    ]
+  },
+  {
+    header: "Macbook",
+    headerLink: '/category/macbook',
+    options: [
+      {
+        name: 'iMac 21"',
+        link: '/category/imac-21'
+      },
+      {
+        name: 'iMac 27"',
+        link: '/category/imac-27'
+      },
+      {
+        name: 'iMac 21.5"',
+        link: '/category/imac-21-5'
+      },
+      {
+        name: 'iMac 27.0"',
+        link: '/category/imac-27-0'
+      },
+      {
+        name: 'iMac Mini"',
+        link: '/category/imac-mini'
+      }
+    ]
+  },
+  {
+    header: "Watch",
+    headerLink: '/category/apple-watch',
     options: [
       {
         name: 'iMac 21"',

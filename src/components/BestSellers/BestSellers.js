@@ -7,8 +7,6 @@ const BestSellers = () => {
 
   const fileteredArr = productsArr.filter(product => product.label && product.label === 'Хит продаж')
 
-  console.log(fileteredArr)
-
   return(
     <div className='best-sellers'>
       <h1 className='best-sellers__header'>Топ продаж</h1>

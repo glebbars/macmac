@@ -5,7 +5,7 @@ import HeaderSearch from '../HeaderSearch/HeaderSearch'
 import {CustomDropDownLinks} from "../CustomDropDown/CustomDropDown";
 import {categoryHeaderOptions} from '../additionalObjects/additionalObjects'
 import { useDispatch, useSelector } from "react-redux";
-
+import HeaderCatalog from '../HeaderCatalog/HeaderCatalog'
 const HeaderMenu = () => {
 
   const [openedBurger, setOpenedBurger] = useState(false)
@@ -45,6 +45,7 @@ const HeaderMenu = () => {
                 >
                   Все товары
                 </NavLink>
+                <HeaderCatalog />
                 <CustomDropDownLinks links initiallyActive options={categoryHeaderOptions} header='Apple' 
                 headerClass='header__menu__link header__menu__link_additional_header' listClass='drop-down__list_header'
                 />
@@ -79,7 +80,7 @@ const HeaderMenu = () => {
           </div>
           
         </div>
-        <HeaderSearch/>
+        <HeaderSearch />
 
         <div className="header__favorite-bag-container">
           <Link
