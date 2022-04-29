@@ -918,6 +918,7 @@ input[type=number] {
 .slider {
   max-width: 1420px;
   margin: 0 auto;
+  padding: 0 10px;
 
   &__dots-list {
     margin: 0 auto;
@@ -1179,24 +1180,29 @@ input[type=number] {
   }
 }
 
-.main {
-  padding: 85px 10px;
-}
-
 .main,
 .products {
   margin-bottom: 120px;
 }
 
 .main {
-
+  padding: 85px 0;
   max-width: 1440px;
   margin: 0 auto;
 
   &__banners-container {
     @include flex-center;
     margin: 80px auto;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    max-width: calc(100% - 20px);
+
+    @media(max-width: 768px){
+      margin: 55px auto;
+    }
+
+    @media (max-width: 480px) {
+      margin: 45px auto;
+    }
   }
 
 
@@ -1257,6 +1263,10 @@ input[type=number] {
     border-radius: 12px;
     background-size: cover;
 
+    @media(max-width: 1130px){
+      max-width: calc(100% - 20px);
+    }
+
     &_original-only {
       background-image: url(../img/only-original.png);
     }
@@ -1276,7 +1286,7 @@ input[type=number] {
 
     @media (max-width: 480px) {
       padding: 140px 20px 10px;
-      margin-bottom: 50px;
+      margin-bottom: 60px;
     }
 
     &__container {
@@ -2736,7 +2746,7 @@ input[type=number] {
   &__container {
     @include flex-column-left;
     position: relative;
-    border-radius: 8px;
+    border-radius: 10px;
     padding: 16px;
     
     &:hover{
@@ -4686,6 +4696,7 @@ input[type=number] {
 
     @media(max-width: 480px) {
       font-size: 20px;
+      margin-left: 20px;
     }
 
   }
@@ -4713,6 +4724,10 @@ input[type=number] {
         background: #E9ECEF;
         margin: 0 120px;
         border-radius: 40px;
+
+        @media(max-width: 480px){
+          margin: 0 80px;
+        }  
       }
 
       &::-webkit-scrollbar-thumb {
@@ -4722,10 +4737,18 @@ input[type=number] {
 
       & .product-card__container:first-of-type {
         margin-left: 15px;
+
+        @media(max-width: 480px){
+          margin-left: 10px;
+        }
       }
 
       & .product-card__container:last-of-type {
         margin-right: 15px;
+
+        @media(max-width: 480px){
+          margin-right: 10px;
+        }
       }
     }
 
@@ -4744,7 +4767,7 @@ input[type=number] {
       grid-template-columns: repeat(4, calc(100% / 2.25));
 
       &::-webkit-scrollbar-track {
-        margin: 0 85px;
+        margin: 0 80px;
       }
     }
   }
@@ -4774,6 +4797,16 @@ input[type=number] {
 
         & .product-card__container:last-of-type {
           margin-right: 15px;
+        }
+      }
+
+      @media(max-width: 480px) {
+        & .product-card__container:first-of-type {
+          margin-left: 10px;
+        }
+
+        & .product-card__container:last-of-type {
+          margin-right: 10px;
         }
       }
     }
@@ -5457,6 +5490,14 @@ input[type=number] {
   max-width: 1130px;
   margin: 0 auto 150px;
 
+  @media(max-width: 768px){
+    margin: 0 auto 110px;
+  }
+  
+  @media(max-width: 480px){
+    margin: 0 auto 75px;
+  }
+
   &__header{
     font-weight: 500;
     font-size: 24px;
@@ -5464,10 +5505,16 @@ input[type=number] {
     color: #343A40;
     margin: 0 0 60px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    @media(max-width: 768px){
+      margin: 0 0 40px;
+    }
+
+
   }
 
   &__list{
-      grid-template-columns: repeat(7, calc(100% / 4));
+      grid-template-columns: repeat(5, calc(100% / 4));
       overflow: scroll;
       padding-bottom: 30px;
 
@@ -5482,6 +5529,10 @@ input[type=number] {
         background: #E9ECEF;
         margin: 0 120px;
         border-radius: 40px;
+
+        @media(max-width: 480px){
+          margin: 0 80px;
+        }        
       }
 
       &::-webkit-scrollbar-thumb {
@@ -5489,24 +5540,32 @@ input[type=number] {
         border-radius: 40px;
       }
 
-      // & .product-card__container:first-of-type {
-      //   margin-left: 15px;
-      // }
+      & .product-card__container:first-of-type {
+        margin-left: 15px;
 
-      // & .product-card__container:last-of-type {
-      //   margin-right: 15px;
-      // }
+        @media(max-width: 480px){
+          margin-left: 10px;
+        }
+      }
+
+      & .product-card__container:last-of-type {
+        margin-right: 15px;
+
+        @media(max-width: 480px){
+          margin-right: 10px;
+        }
+      }
 
      @media (max-width: 800px) {
-        grid-template-columns: repeat(7, calc(100% / 3));
+        grid-template-columns: repeat(5, calc(100% / 3));
      } 
 
      @media(max-width: 600px){
-      grid-template-columns: repeat(7, calc(100% / 2.5))
+      grid-template-columns: repeat(5, calc(100% / 2.5))
      }
 
      @media(max-width: 480px){
-      grid-template-columns: repeat(7, calc(100% / 2.25));
+      grid-template-columns: repeat(5, calc(100% / 2.25));
      }
   }
 
