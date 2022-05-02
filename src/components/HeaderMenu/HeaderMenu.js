@@ -8,10 +8,10 @@ import { useDispatch, useSelector } from "react-redux";
 import HeaderCatalog from '../HeaderCatalog/HeaderCatalog'
 
 const HeaderMenu = () => {
-  const [openedBurger, setOpenedBurger] = useState(true)
+  const [openedBurger, setOpenedBurger] = useState(false)
+  const [activeCatalog, setActiveCatalog] = useState(true)
   const favorites = useSelector((store) => store.app.favorites);
   const addedToBag = useSelector((store) => store.app.addedToBag);
-  const divRef = useRef(null)
 
   const dispatch = useDispatch()
 
@@ -21,15 +21,15 @@ const HeaderMenu = () => {
   const activeClass = openedBurger ? '_active' : ''
 
 
-  // useEffect(() =>{
-  //   setOpenedBurger(false)
-  // }, [location])
+  useEffect(() =>{
+    setOpenedBurger(false)
+    // setActiveCatalog(false)
+  }, [location])
 
 
   return (
     <div className="header">
-      <HeaderCatalog ref={divRef} />
-
+      {activeCatalog && <div onClick={() => setActiveCatalog(false)} className='header__catalog__bg-wrapper'></div>}
       <div className="header__container">
         <Link className="header__logo" to='/'>
           <img className="header__logo__img"  src={logo} alt="Logo" />
@@ -42,17 +42,14 @@ const HeaderMenu = () => {
 
           <div className={`header__menu__burger-container ${'header__menu__burger-container' + activeClass}`}>
               <nav className="header__menu__nav">
-                <NavLink
-                  onMouseEnter={() => divRef.current.style.display = 'block'}
-                  // onMouseLeave={() => divRef.current.style.display = 'none'}
-                  // exact
-                  to="/category/all-products"
-                  className="header__menu__link header__menu__link_all"
-                  activeClassName="link_selected header__menu__link_all_selected"
+                <span
+                  onClick={() => setActiveCatalog(!activeCatalog)}
+                  className={`header__menu__link header__menu__link_all ${activeCatalog ? 'header__menu__link_all_selected' : ''}`}
                 >
                   Все товары
-                </NavLink>
+                </span>
 
+                <HeaderCatalog activeCatalog={activeCatalog} />
 
                 <CustomDropDownLinks 
                   links 

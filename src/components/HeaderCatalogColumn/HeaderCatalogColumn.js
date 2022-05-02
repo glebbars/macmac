@@ -4,6 +4,10 @@ import {Link} from 'react-router-dom'
 const HeaderCatalogColumn = ({category}) => {
   const [activeOptionsWrapper, setActiveOptionsWrapper] = useState(false)
 
+  if(category.mobileOnly){
+    return null
+  }
+
   const handleOptionsWrapper = () => {
     if(window.innerWidth <= 1300){
       console.log('=-=')

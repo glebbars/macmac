@@ -395,6 +395,7 @@ export const headerCatalogCategories = [
   {
     header: "iPhone",
     headerLink: '/category/iphone',
+    mobileOnly: false,
     bg: {
       img: iphoneCatalog,
       color: "#EEE3F3"
@@ -429,6 +430,7 @@ export const headerCatalogCategories = [
   {
     header: "AirPods",
     headerLink: '/category/airpods',
+    mobileOnly: false,
     bg: {
       img: airpodsCatalog,
       color: "#DAEDF1"
@@ -481,6 +483,7 @@ export const headerCatalogCategories = [
   {
     header: "iMac",
     headerLink: '/category/imac',
+    mobileOnly: true,
     bg: {
       img: imacCatalog,
       color: "#DBECCE"
@@ -511,6 +514,7 @@ export const headerCatalogCategories = [
   {
     header: "Macbook",
     headerLink: '/category/macbook',
+    mobileOnly: false,
     bg: {
       img: imacCatalog,
       color: "#DBECCE"
@@ -568,5 +572,32 @@ export const headerCatalogCategories = [
       }
     ]
   },
-  
 ]
+
+export const headerCatalogOther = [
+  {
+    link: '/category/macbook',
+    text: 'Macbook',
+  },
+  {
+    link: '/category/watch',
+    text: 'Watch',
+  },
+  {
+    link: '/category/apple-tv',
+    text: 'TV',
+  },
+  {
+    link: '/category/accessories',
+    text: 'Аксессуары',
+  },
+  {
+    link: '/#best-sellers',
+    text: 'Топ продаж',
+  },
+  {
+    link: '/category/all-products',
+    text: 'Все товары',
+  },
+
+] 
