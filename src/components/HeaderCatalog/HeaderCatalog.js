@@ -6,11 +6,7 @@ import { HashLink } from 'react-router-hash-link';
 
 const HeaderCatalog = ({activeCatalog}) => {
 
-  const DownTopTopHeated = (link) => {
-    if(link === '/'){
-      console.log('*')
-    }
-  }
+  console.log(activeCatalog)
 
   return(
     <div className={`header__catalog ${activeCatalog ? 'header__catalog_active' : ''}`}>
@@ -20,20 +16,21 @@ const HeaderCatalog = ({activeCatalog}) => {
         ))}
         <div className='header__catalog__other'>
           {headerCatalogOther.map((link, index) => (
-            <Link 
-              onClick={() => DownTopTopHeated(link.link)}
-              key={index} 
-              to={link.link}
-              to='/#best-sellers'
-              className={`header__catalog__other__link ${link.link.includes('all') ? 'header__catalog__other__link_all' : ''}`} 
-            >
-              {link.text}
-            </Link>
+            <Link key={index} to={link.link}className='header__catalog__other__link' >{link.text}</Link>
           ))}
-
-            <HashLink to='/#best-sellers'>Топ продаж 2</HashLink>
-          
-
+          <HashLink 
+            scroll={(el) => el.scrollIntoView({ behavior: 'smooth'})}
+            className='header__catalog__other__link' 
+            to='/#best-sellers'
+          >
+            Топ продаж
+          </HashLink>
+          <Link 
+            className='header__catalog__other__link header__catalog__other__link_all' 
+            to='/category/all-products'
+          >
+            Все товары
+          </Link>
         </div>
     </div>
   )

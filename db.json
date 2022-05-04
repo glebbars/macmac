@@ -642,6 +642,21 @@
         }
       ],
       "id": 48
+    },
+    {
+      "brand": "Apple",
+      "category": "iPhone",
+      "model": "11",
+      "capacity": "1Tb",
+      "color": "Yellow",
+      "price": 100000,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1651515787/uploaded_images/p9nikr5otwaiecnjkpse.png",
+          "id": "f016fe3a246b9a1b9df752594568899c"
+        }
+      ],
+      "id": 49
     }
   ],
   "orders": [

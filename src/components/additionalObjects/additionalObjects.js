@@ -591,13 +591,4 @@ export const headerCatalogOther = [
     link: '/category/accessories',
     text: 'Аксессуары',
   },
-  {
-    link: '/#best-sellers',
-    text: 'Топ продаж',
-  },
-  {
-    link: '/category/all-products',
-    text: 'Все товары',
-  },
-
 ] 

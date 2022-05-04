@@ -6,10 +6,11 @@ import {CustomDropDownLinks} from "../CustomDropDown/CustomDropDown";
 import {categoryHeaderOptions} from '../additionalObjects/additionalObjects'
 import { useDispatch, useSelector } from "react-redux";
 import HeaderCatalog from '../HeaderCatalog/HeaderCatalog'
+import { HashLink } from 'react-router-hash-link';
 
 const HeaderMenu = () => {
   const [openedBurger, setOpenedBurger] = useState(false)
-  const [activeCatalog, setActiveCatalog] = useState(true)
+  const [activeCatalog, setActiveCatalog] = useState(false)
   const favorites = useSelector((store) => store.app.favorites);
   const addedToBag = useSelector((store) => store.app.addedToBag);
 
@@ -23,7 +24,7 @@ const HeaderMenu = () => {
 
   useEffect(() =>{
     setOpenedBurger(false)
-    // setActiveCatalog(false)
+    setActiveCatalog(false)
   }, [location])
 
 
@@ -67,23 +68,21 @@ const HeaderMenu = () => {
                 >
                   Аксессуары
                 </NavLink>
-                <NavLink
-                  exact
-                  to="/top-heated"
-                  className="header__menu__link header__menu__link_additional header__menu__link_additional_header"
-                  activeClassName="link_selected"
-                >
-                  Топ продаж
-                </NavLink>
 
-                <NavLink
-                  exact
-                  to="/category/all-products"
-                  className="header__menu__link header__menu__link_all header__menu__link_additional header__menu__link_additional_header"
-                  activeClassName="link_selected header__menu__link_all_selected"
+                <HashLink 
+                  scroll={(el) => el.scrollIntoView({ behavior: 'smooth'})}
+                  className="header__menu__link header__menu__link_additional header__menu__link_additional_header"
+                  to='/#best-sellers'
+                >
+                Топ продаж
+                </HashLink>
+
+                <span 
+                  onClick={() => setActiveCatalog(true)}
+                  className="header__menu__link header__menu__link_all header__menu__link_additional  header__menu__link_additional_header"
                 >
                   Все товары
-                </NavLink>
+                </span>
               </nav>
             <div onClick={() => setOpenedBurger(false)}  className="header__menu__burger-cross"></div>
           </div>
