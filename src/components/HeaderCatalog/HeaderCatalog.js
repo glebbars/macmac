@@ -6,11 +6,13 @@ import { HashLink } from 'react-router-hash-link';
 
 const HeaderCatalog = ({activeCatalog}) => {
 
-  console.log(activeCatalog)
-
   return(
     <div className={`header__catalog ${activeCatalog ? 'header__catalog_active' : ''}`}>
        <div className='header__catalog__triangle'></div>
+       <div className='header__catalog__header'>
+          <span className='header__catalog__header__back'></span>
+          <h3 className='header__catalog__header__text'>Все товары</h3>
+       </div>
         {headerCatalogCategories.map((category, index) => (
           <HeaderCatalogColumn key={index} category={category} />
         ))}

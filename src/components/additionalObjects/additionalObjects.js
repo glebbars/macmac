@@ -394,7 +394,6 @@ export const bagCrumbs = [
 export const headerCatalogCategories = [
   {
     header: "iPhone",
-    headerLink: '/category/iphone',
     mobileOnly: false,
     bg: {
       img: iphoneCatalog,
@@ -429,7 +428,6 @@ export const headerCatalogCategories = [
   },
   {
     header: "AirPods",
-    headerLink: '/category/airpods',
     mobileOnly: false,
     bg: {
       img: airpodsCatalog,
@@ -482,7 +480,6 @@ export const headerCatalogCategories = [
   },
   {
     header: "iMac",
-    headerLink: '/category/imac',
     mobileOnly: true,
     bg: {
       img: imacCatalog,
@@ -513,7 +510,6 @@ export const headerCatalogCategories = [
   },
   {
     header: "Macbook",
-    headerLink: '/category/macbook',
     mobileOnly: false,
     bg: {
       img: imacCatalog,

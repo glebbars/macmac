@@ -966,20 +966,29 @@ input[type=number] {
     opacity: 0;
     max-height: 0;
 
+    &_active{
+      visibility: visible;
+      opacity: 1;
+      max-height: 700px;
+    }
+
     @media(max-width: 1300px){
       border-radius: 0;
-      // background-color: red;
+      max-height: none;
       top: 0;
       height: 100%;
       flex-direction: column;
       justify-content: flex-start;
       z-index: 1;
-    }
+      width: 0;
+      right: auto;
+      padding: 30px 15px 0;
 
-    &_active{
-      visibility: visible;
-      opacity: 1;
-      max-height: 700px;
+      &_active{
+        @media(max-width: 1300px){
+          width: 100%;
+        }
+      }
     }
 
 
@@ -996,18 +1005,51 @@ input[type=number] {
       }
     }
 
+    &__header{
+      display: none;
+
+      @media(max-width: 1300px){
+        display: block;
+      }
+
+      &__text{
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 0.005em;
+        color: #343A40;
+        margin: 0 0 20px;
+        text-decoration: none;
+      }
+
+      &__back{
+
+      }
+
+    }
+
 
     &__column{
       display: flex;
       flex-direction: column;
 
       @media(max-width: 1300px){
-        margin: 0 0 50px;
+        margin: 0 0 20px;
         flex-direction: row;
         align-items: center;
+        border-bottom: 1px solid #ADB5BD;
+        padding-bottom: 20px;
+        border-radius: 1px;
 
         &:last-of-type{
           margin: 0;
+        }
+      }
+
+      &_mob{
+        display: none;
+
+        @media(max-width: 1300px){
+          display: block;
         }
       }
     }
@@ -1025,7 +1067,6 @@ input[type=number] {
 
         @media(max-width: 1300px){
           margin: 0;
-
         }
       }
 
@@ -1064,7 +1105,8 @@ input[type=number] {
         margin-bottom: 16px;
 
         @media(max-width: 1300px){
-          margin: 0 20px 0 0;
+          // margin: 0 20px 0 0;
+          display: none;
         }
       }
 
@@ -1159,6 +1201,10 @@ input[type=number] {
     &__other{
       @include flex-column-left;
 
+      @media(max-width: 1300px){
+        display: none;
+      }
+
       &__link{
         font-weight: 500;
         font-size: 16px;
@@ -1174,7 +1220,7 @@ input[type=number] {
           &::after{
             content: "";
             position: absolute;
-            top: 14px;
+            top: 15px;
             right: -24px;
             display: block;
             width: 11px;
@@ -1186,7 +1232,7 @@ input[type=number] {
           &::before{
             content: "";
             position: absolute;
-            top: 10.5px;
+            top: 11.5px;
             right: -25px;
             display: block;
             width: 7px;

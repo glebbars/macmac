@@ -27,6 +27,12 @@ const HeaderMenu = () => {
     setActiveCatalog(false)
   }, [location])
 
+  useEffect(() => {
+    if(activeCatalog){
+      setActiveCatalog(false)
+    }
+  }, [openedBurger])
+
 
   return (
     <div className="header">

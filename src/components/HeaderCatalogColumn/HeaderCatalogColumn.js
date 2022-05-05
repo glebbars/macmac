@@ -4,13 +4,12 @@ import {Link} from 'react-router-dom'
 const HeaderCatalogColumn = ({category}) => {
   const [activeOptionsWrapper, setActiveOptionsWrapper] = useState(false)
 
-  if(category.mobileOnly){
-    return null
-  }
+  // if(category.mobileOnly){
+  //   return null
+  // }
 
   const handleOptionsWrapper = () => {
     if(window.innerWidth <= 1300){
-      console.log('=-=')
       setActiveOptionsWrapper(true)
     }
   }
@@ -21,17 +20,16 @@ const HeaderCatalogColumn = ({category}) => {
 
   return(
 
-    <div className='header__catalog__column'>
+    <div className={`header__catalog__column ${category.mobileOnly ? 'header__catalog__column_mob' : ''}`}>
       <div style={{background: `${category.bg.color}`}} className='header__catalog__options__img-wrapper'>
           <img className='header__catalog__options__img' src={category.bg.img} alt="" />
       </div>
-      <Link
+      <span
         onClick={handleOptionsWrapper}  
         className='header__catalog__options__header' 
-        to={category.headerLink}
       >
         {category.header}
-      </Link>
+      </span>
 
       <div className={`header__catalog__options__wrapper ${activeOptionsWrapper ? 'header__catalog__options__wrapper_active' : ''}`}>
         <div onClick={closeWrapper} className='header__catalog__options__arrow-back'></div>
