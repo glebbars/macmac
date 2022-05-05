@@ -27,16 +27,11 @@ const HeaderMenu = () => {
     setActiveCatalog(false)
   }, [location])
 
-  useEffect(() => {
-    if(activeCatalog){
-      setActiveCatalog(false)
-    }
-  }, [openedBurger])
-
 
   return (
     <div className="header">
-      {activeCatalog && <div onClick={() => setActiveCatalog(false)} className='header__catalog__bg-wrapper'></div>}
+      <HeaderCatalog setActiveCatalog={setActiveCatalog} activeCatalog={activeCatalog} />
+
       <div className="header__container">
         <Link className="header__logo" to='/'>
           <img className="header__logo__img"  src={logo} alt="Logo" />
@@ -56,7 +51,6 @@ const HeaderMenu = () => {
                   Все товары
                 </span>
 
-                <HeaderCatalog activeCatalog={activeCatalog} />
 
                 <CustomDropDownLinks 
                   links 
@@ -83,12 +77,12 @@ const HeaderMenu = () => {
                 Топ продаж
                 </HashLink>
 
-                <span 
-                  onClick={() => setActiveCatalog(true)}
+                <Link 
+                  to="/category/all-products"
                   className="header__menu__link header__menu__link_all header__menu__link_additional  header__menu__link_additional_header"
                 >
                   Все товары
-                </span>
+                </Link>
               </nav>
             <div onClick={() => setOpenedBurger(false)}  className="header__menu__burger-cross"></div>
           </div>
@@ -98,19 +92,15 @@ const HeaderMenu = () => {
 
         <div className="header__favorite-bag-container">
           <Link
-            // exact
             to="/bag"
             className="header__menu__link header__menu__link_bag"
-            // activeClassName="link_selected"
           >
             {addedToBag.length > 0 && <span className="header__menu__link__length-notification">{addedToBag.length}</span> }
             Корзина
           </Link>
           <Link
-            // exact
             to="/favourites"
             className="header__menu__link header__menu__link_favorite"
-            // activeClassName="link_selected"
           >
             {favorites.length > 0 && <span className="header__menu__link__length-notification">{favorites.length}</span> }
             Избранное
@@ -118,7 +108,6 @@ const HeaderMenu = () => {
         </div>
     
       </div>
-
     </div>
   );
 };

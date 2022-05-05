@@ -394,7 +394,6 @@ export const bagCrumbs = [
 export const headerCatalogCategories = [
   {
     header: "iPhone",
-    mobileOnly: false,
     bg: {
       img: iphoneCatalog,
       color: "#EEE3F3"
@@ -428,7 +427,6 @@ export const headerCatalogCategories = [
   },
   {
     header: "AirPods",
-    mobileOnly: false,
     bg: {
       img: airpodsCatalog,
       color: "#DAEDF1"
@@ -450,7 +448,6 @@ export const headerCatalogCategories = [
   },
   {
     header: "iPad",
-    headerLink: '/category/ipad',
     bg: {
       img: ipadCatalog,
       color: "#FFE2D7"
@@ -479,38 +476,7 @@ export const headerCatalogCategories = [
     ]
   },
   {
-    header: "iMac",
-    mobileOnly: true,
-    bg: {
-      img: imacCatalog,
-      color: "#DBECCE"
-    },
-    options: [
-      {
-        name: 'iMac 21"',
-        link: '/category/imac-21'
-      },
-      {
-        name: 'iMac 27"',
-        link: '/category/imac-27'
-      },
-      {
-        name: 'iMac 21.5"',
-        link: '/category/imac-21-5'
-      },
-      {
-        name: 'iMac 27.0"',
-        link: '/category/imac-27-0'
-      },
-      {
-        name: 'iMac Mini"',
-        link: '/category/imac-mini'
-      }
-    ]
-  },
-  {
-    header: "Macbook",
-    mobileOnly: false,
+    header: "Mac",
     bg: {
       img: imacCatalog,
       color: "#DBECCE"
@@ -540,7 +506,6 @@ export const headerCatalogCategories = [
   },
   {
     header: "Watch",
-    headerLink: '/category/apple-watch',
     bg: {
       img: applewatchCatalog,
       color: "#FFD965"

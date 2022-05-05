@@ -449,6 +449,27 @@ input[type=number] {
             border-radius: 6px;
           }
         }
+
+        @media(max-width: 480px){
+          &::after{
+            top: 7px;
+            right: -25px;
+            width: 7px;
+            height: 7px;
+            border-top: 2.5px solid #ADB5BD;
+            border-left: 2.5px solid #ADB5BD;
+          }
+
+          &::before{
+            top: 10.75px;
+            right: -24px;
+            display: block;
+            width: 12px;
+            height: 2.25px;
+            background-color: #ADB5BD;
+            border-radius: 6px;
+          }
+        }
       }
 
 
@@ -947,15 +968,16 @@ input[type=number] {
 
   &__catalog{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
     position: absolute;
     top: 75px;
-    // z-index: 1;
     left: 0;
     right: 0;
     margin: auto;
     width: 100%;
     max-width: 1240px;
-    justify-content: space-between;
     background: #FFFFFF;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.01);
     border-radius: 8px;
@@ -973,23 +995,9 @@ input[type=number] {
     }
 
     @media(max-width: 1300px){
-      border-radius: 0;
-      max-height: none;
-      top: 0;
-      height: 100%;
-      flex-direction: column;
-      justify-content: flex-start;
-      z-index: 1;
-      width: 0;
-      right: auto;
-      padding: 30px 15px 0;
-
-      &_active{
-        @media(max-width: 1300px){
-          width: 100%;
-        }
-      }
+      display: none;
     }
+
 
 
     &__bg-wrapper{
@@ -1005,53 +1013,10 @@ input[type=number] {
       }
     }
 
-    &__header{
-      display: none;
-
-      @media(max-width: 1300px){
-        display: block;
-      }
-
-      &__text{
-        font-weight: 500;
-        font-size: 16px;
-        letter-spacing: 0.005em;
-        color: #343A40;
-        margin: 0 0 20px;
-        text-decoration: none;
-      }
-
-      &__back{
-
-      }
-
-    }
-
 
     &__column{
       display: flex;
       flex-direction: column;
-
-      @media(max-width: 1300px){
-        margin: 0 0 20px;
-        flex-direction: row;
-        align-items: center;
-        border-bottom: 1px solid #ADB5BD;
-        padding-bottom: 20px;
-        border-radius: 1px;
-
-        &:last-of-type{
-          margin: 0;
-        }
-      }
-
-      &_mob{
-        display: none;
-
-        @media(max-width: 1300px){
-          display: block;
-        }
-      }
     }
 
     &__options{
@@ -1064,37 +1029,11 @@ input[type=number] {
         color: #343A40;
         margin: 0 0 20px;
         text-decoration: none;
-
-        @media(max-width: 1300px){
-          margin: 0;
-        }
       }
 
       &__wrapper{
         display: flex;
         flex-direction: column;
-
-        @media(max-width: 1300px){
-          height: 100%;
-          padding: 20px 40px 40px 30px;
-          box-sizing: border-box;
-          position: absolute;
-          top: 0;
-          left: 0;
-          z-index: 1;
-          background: white;
-          visibility: hidden;
-          opacity: 0;
-          width: 0;
-          transition: all 0.2s ease-in-out;
-  
-          &_active{
-            visibility: visible;
-            width: 100%;
-            opacity: 1;
-          }
-
-        }
       }
 
       &__img-wrapper{
@@ -1103,11 +1042,6 @@ input[type=number] {
         width: 40px;
         height: 40px;
         margin-bottom: 16px;
-
-        @media(max-width: 1300px){
-          // margin: 0 20px 0 0;
-          display: none;
-        }
       }
 
       &__img{
@@ -1125,62 +1059,12 @@ input[type=number] {
         color: #343A40;
         text-decoration: none;
         margin: 0 0 8px;
-
-        @media(max-width: 1300px){
-          margin: 0 0 20px;
-        }
         
         &:last-of-type{
           margin: 0;
         }
       }
 
-      &__subheader{
-        display: none;
-
-        @media(max-width: 1300px){
-          display: block;
-          margin: 0 auto 35px;
-          font-weight: 500;
-          font-size: 16px;
-          line-height: 24px;
-          letter-spacing: 0.0025em;
-          color: #343A40;
-        }
-      }
-
-      
-      &__arrow-back {
-
-        @media (max-width: 1300px) {
-          &::after {
-            content: "";
-            position: absolute;
-            top: 30px;
-            left: 27px;
-            display: block;
-            width: 9px;
-            height: 9px;
-            border-top: 2.5px solid #ADB5BD;
-            border-left: 2.5px solid #ADB5BD;
-            transform: rotate(315deg);
-            border-radius: 1.5px;
-          }
-  
-          &::before {
-            content: "";
-            position: absolute;
-            top: 34.5px;
-            left: 25.5px;
-            display: block;
-            width: 15px;
-            height: 2.5px;
-            background-color: #ADB5BD;
-            border-radius: 6px;
-          }
-        }
-  
-      }
     }
 
     &__triangle{
@@ -1192,18 +1076,11 @@ input[type=number] {
       border-style: solid;
       border-width: 0 8px 8px 8px;
       border-color: transparent transparent white transparent;
-
-      @media(max-width: 1300px){
-        display: none;
-      }
     }
 
     &__other{
       @include flex-column-left;
 
-      @media(max-width: 1300px){
-        display: none;
-      }
 
       &__link{
         font-weight: 500;
