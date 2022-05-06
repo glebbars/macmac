@@ -119,7 +119,8 @@ export const brandChoices = [
   {id: 'Apple', name: 'Apple'},
   {id: 'Sumsung', name: 'Sumsung'},
   {id: 'GoPro', name: 'GoPro'},
-  {id: 'Dyson', name: 'Dyson'}
+  {id: 'Dyson', name: 'Dyson'},
+  { id: 'Accessories', name: 'Accessories'}
 ]
 
 export const getCategoryChoices = (value) => {
@@ -137,8 +138,7 @@ export const appleCategoryChoices = [
   { id: 'iPad', name: 'iPad' },
   { id: 'Mac', name: 'Mac' },
   { id: 'Apple Watch', name: 'Apple Watch' },
-  { id: 'AirPods', name: 'AirPods' },
-  { id: 'Accessories', name: 'Accessories' }
+  { id: 'AirPods', name: 'AirPods' }
 ]
 
 

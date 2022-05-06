@@ -476,31 +476,35 @@ export const headerCatalogCategories = [
     ]
   },
   {
-    header: "Mac",
+    header: "Macbook",
     bg: {
       img: imacCatalog,
       color: "#DBECCE"
     },
     options: [
       {
-        name: 'iMac 21"',
-        link: '/category/imac-21'
+        name: 'Macbook Air',
+        link: '/category/macbook-air'
       },
       {
-        name: 'iMac 27"',
-        link: '/category/imac-27'
+        name: 'Macbook Air',
+        link: '/category/macbook-air'
       },
       {
-        name: 'iMac 21.5"',
-        link: '/category/imac-21-5'
+        name: 'Macbook Air',
+        link: '/category/macbook-air'
       },
       {
-        name: 'iMac 27.0"',
-        link: '/category/imac-27-0'
+        name: 'Macbook Pro',
+        link: '/category/macbook-pro'
       },
       {
-        name: 'iMac Mini"',
-        link: '/category/imac-mini'
+        name: 'Macbook Pro',
+        link: '/category/macbook-pro'
+      },
+      {
+        name: 'Macbook Pro',
+        link: '/category/macbook-pro'
       }
     ]
   },
@@ -537,12 +541,8 @@ export const headerCatalogCategories = [
 
 export const headerCatalogOther = [
   {
-    link: '/category/macbook',
-    text: 'Macbook',
-  },
-  {
-    link: '/category/watch',
-    text: 'Watch',
+    link: '/category/imac',
+    text: 'iMac',
   },
   {
     link: '/category/apple-tv',
@@ -553,3 +553,8 @@ export const headerCatalogOther = [
     text: 'Аксессуары',
   },
 ] 
+
+
+//////// 
+
+
