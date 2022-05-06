@@ -1392,7 +1392,7 @@ input[type=number] {
 }
 
 .main,
-.products {
+.products{
   margin-bottom: 120px;
 }
 
@@ -4814,6 +4814,7 @@ input[type=number] {
         background: #FA530D;
         border-radius: 8px;
         margin: 0 0 0 auto;
+        text-decoration: none;
 
         @media(max-width: 540px) {
           margin: 0 0 25px;
@@ -5786,3 +5787,9 @@ input[type=number] {
   }
 }
 
+.checkout{
+  min-height: 80vh;
+  padding: 85px 0 0;
+  margin: 0 auto;
+  max-width: 1440px;
+}

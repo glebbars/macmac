@@ -1,7 +1,7 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 const BagCheckout = ({totalOrderPrice}) => {
-  console.log(totalOrderPrice)
 
   return(
     <div className='bag__checkout'>
@@ -12,7 +12,7 @@ const BagCheckout = ({totalOrderPrice}) => {
       <div className='bag__checkout__line'></div>
       <div className='bag__checkout__btns-wrapper'>
         <div className='bag__checkout__btn__continue'>Продолжить покупки</div>
-        <div className='bag__checkout__btn__order'>Оформить заказ</div>
+        <Link to='/checkout' className='bag__checkout__btn__order'>Оформить заказ</Link>
       </div>
     </div>
   )
