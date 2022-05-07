@@ -10,7 +10,7 @@ const CheckoutOrder = ({register, errors, control}) => {
       <h1 className='checkout__order__header'>Оформление заказа</h1>
       <CheckoutOrderPersonalData register={register} errors={errors} control={control} />
 
-      <CheckoutOrderDelivery register={register} />
+      <CheckoutOrderDelivery register={register} errors={errors} />
 
     </div>
   )
