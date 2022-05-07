@@ -7,8 +7,7 @@ const OrderList = (props) =>{
   return (
     <List title='Orders' {...props} pagination={<PostPagination />}>
       <Datagrid>
-        <TextField source="firstName"/>
-        <TextField source="lastName" />
+        <TextField source="fullName"/>
         <TextField source="phone" />
         <TextField source="email" />
         <TextField source="order" />

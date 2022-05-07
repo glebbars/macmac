@@ -1,59 +1,28 @@
-import React, { useEffect, useState } from "react";
-import NovaPoshta from 'novaposhta';
-import Select from 'react-select'
-
-const api = new NovaPoshta({ apiKey: '6e746f873caf533d1c241e14437edfcf' });
+import React from 'react'
+import CheckoutConfirm from '../CheckoutConfirm/CheckoutConfirm'
+import CheckoutOrder from '../CheckoutOrder/CheckoutOrder'
+import { useForm } from 'react-hook-form'
 
 const Checkout = () => {
-  const [cityOptions, setCityOptions] = useState([])
-  const [wareHouseOptions, setWareHouseOptions] = useState([])
-  const [city, setCity] = useState('')
-  const [wareHouse, setWareHouse] = useState('')
 
-  
-  useEffect(() => {
-    api.address.getCities()
-      .then((json) => {
-        const myArr = json.data.filter(el => el.SettlementTypeDescriptionRu === 'город')
-        const options = myArr.map(el => (
-          {
-            "value": el.DescriptionRu,
-            "label": el.DescriptionRu
-          }
-        ))
-        setCityOptions(options)
-      })
-  }, [])
+  const { handleSubmit, formState: { errors }, register, control } = useForm({
+    defaultValues: {
+      fullName: "",
+      phone: "",
+      callBack: false
+    }
+  })
 
-  const handleCityChange = (selectedOption) => {
-    setCity(selectedOption.value)
-
-      api.address
-      .getWarehouses({ 
-        CityName : selectedOption.value,
-      })
-      .then((json) => {
-        const options = json.data.map(el => (
-          {
-            "value": el.DescriptionRu,
-            "label": el.DescriptionRu
-          }
-        ))
-
-        setWareHouseOptions(options)
-      })
-
+  const hadleConfirm = (values) => {
+    console.log(values)
   }
 
-  const handleWareHouseChange = (selectedOption) => {
-    console.log(selectedOption.value)
-  }
 
   return (
-    <div className="checkout">
-      {cityOptions.length > 0 && <Select onChange={handleCityChange} options={cityOptions} />}
-      {wareHouseOptions.length > 0 && <Select onChange={handleWareHouseChange} options={wareHouseOptions} />}
-    </div>
+    <form className="checkout" onSubmit={handleSubmit(hadleConfirm)}>
+      <CheckoutOrder register={register} errors={errors} control={control} />
+      <CheckoutConfirm />
+    </form>
   )
 
 }

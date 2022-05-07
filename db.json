@@ -661,8 +661,7 @@
   ],
   "orders": [
     {
-      "firstName": "gleb",
-      "lastName": "bars",
+      "fullName": "gleb",
       "email": "glebars2004@gmail.com",
       "order": "iPhone 11 Pro max green",
       "phone": "+380676282524",
@@ -670,8 +669,7 @@
       "id": 1
     },
     {
-      "firstName": "Ирина",
-      "lastName": "Барс",
+      "fullName": "Ирина",
       "email": "irina@gmail.com",
       "order": "iPhone 11 Pro max green",
       "phone": "+380676304612",
@@ -679,8 +677,7 @@
       "id": 2
     },
     {
-      "firstName": "test 1",
-      "lastName": "",
+      "fullName": "test 1",
       "email": "",
       "phone": "+380671221223",
       "order": "iPhone 12 128Gb White",
@@ -688,8 +685,7 @@
       "id": 3
     },
     {
-      "firstName": "2",
-      "lastName": "bbb",
+      "fullName": "2",
       "email": "gleb@gmail.com",
       "phone": "+380967899890",
       "order": "iPhone 12 128Gb White",
@@ -697,13 +693,20 @@
       "id": 4
     },
     {
-      "firstName": "r",
-      "lastName": "",
+      "fullName": "r",
       "email": "",
       "phone": "+380676786778",
       "order": "iPhone 11 64Gb Black",
       "price": 17765,
       "id": 5
+    },
+    {
+      "fullName": "Глеб Барский",
+      "email": "",
+      "phone": "+380676282524",
+      "order": "iPhone SE 2020 128Gb Black",
+      "price": 15015,
+      "id": 6
     }
   ],
   "prices": [

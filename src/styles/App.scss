@@ -5084,17 +5084,28 @@ input[type=number] {
         color: #343A40;
         border: 1px solid #DEE2E6;
         border-radius: 8px;
-        margin: 5px 0 0;
-        height: 40px;
+        margin: 6.5px 0 0;
+        height: 44px;
         outline: none;
         width: 100%;
         padding: 0 12px;
         box-sizing: border-box;
         font-size: 15px;
 
+        &::placeholder{
+          color: #ADB5BD;
+          font-size: 16px;
+          font-weight: 400;
+        }
+
+
         @media (max-width: 480px) {
           height: 45px;
-          margin: 4px 0 0
+          margin: 5px 0 0;
+
+          &::placeholder{
+            font-size: 14px;
+          }
         }
 
         &_phone {
@@ -5788,8 +5799,101 @@ input[type=number] {
 }
 
 .checkout{
-  min-height: 80vh;
-  padding: 85px 0 0;
-  margin: 0 auto;
-  max-width: 1440px;
+  display: grid;
+  grid-template-columns: auto 420px;
+  grid-column-gap: 60px;
+  padding: 135px 0 0;
+  margin: 0 auto 120px;
+  max-width: 1120px;
+
+  &__order{
+
+    &__header{
+      font-weight: 500;
+      font-size: 35px;
+      letter-spacing: 0.0025em;
+      color: #343A40;
+      margin: 0 0 40px;
+    }
+
+    &__subheader{
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 28px;
+      letter-spacing: 0.0025em;
+      color: #343A40;
+      margin: 0 0 25px;
+    }
+
+    &__person{
+      max-width: 450px;
+
+      &__callback{
+
+        &__label{
+          display: block;
+          margin: 24px 0 0;
+
+        }
+
+        &__checkbox{
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0;
+        }
+
+
+        &__text {
+          position: relative;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 24px;
+          letter-spacing: 0.0025em;
+          color: #343A40;
+
+          &::before {
+            content: '';
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            border: 1px solid #DEE2E6;
+            margin-right: 12px;
+            border-radius: 4px;
+            background-color: white;
+            vertical-align: text-bottom;
+            box-sizing: border-box;
+          }
+
+
+          &::after{
+            content: '';
+            position: absolute;
+            left: 4px;
+            top: -0.5px;
+            width: 10px;
+            height: 10px;
+            border-radius: 2px;
+          }
+        }
+  
+        &__checkbox:checked+&__text::before {
+          border: 2px solid #FA530D;
+        }
+  
+        &__checkbox:checked+&__text::after {
+          background-color: #FA530D;
+        }
+
+
+      }
+    }
+
+
+  }
+
+  &__confirm{
+
+  }
 }
