@@ -5890,6 +5890,70 @@ input[type=number] {
       }
     }
 
+    &__delivery{
+      margin: 80px 0 0;
+
+      &__pickup{
+
+        &__label {
+          color: #343A40;
+          border-radius: 8px;
+          font-weight: 400;
+          font-size: 16px;
+          letter-spacing: 0.005em;
+          width: 100%;
+          padding: 10px 13px;
+          box-sizing: border-box;
+        
+          &:hover {
+            cursor: pointer;
+          }
+        
+        }
+
+        &__input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0;
+        
+          &_custom {
+            display: inline-block;
+            vertical-align: sub;
+            position: relative;
+            width: 18px;
+            height: 18px;
+            border: 2px solid #ADB5BD;
+            margin-right: 12px;
+            background-color: transparent;
+            box-sizing: border-box;
+            border-radius: 50%;
+        
+            &::before {
+              content: '';
+              display: inline-block;
+              width: 10px;
+              position: absolute;
+              height: 10px;
+              border-radius: 50%;
+              vertical-align: text-bottom;
+              box-sizing: border-box;
+              top: 2px;
+              left: 2px;
+            }
+          }
+        }
+        &__input:checked+&__input_custom {
+          border: 2px solid #FA530D;
+        }
+
+        &__input:checked+&__input_custom::before {
+          background-color: #FA530D;
+        }
+      }
+    }
+
 
   }
 
@@ -5897,3 +5961,5 @@ input[type=number] {
 
   }
 }
+
+

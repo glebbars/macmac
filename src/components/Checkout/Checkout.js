@@ -9,7 +9,8 @@ const Checkout = () => {
     defaultValues: {
       fullName: "",
       phone: "",
-      callBack: false
+      callBack: false,
+      delivery: 'Самовывоз'
     }
   })
 
