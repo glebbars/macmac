@@ -5800,7 +5800,7 @@ input[type=number] {
 
 .checkout{
   display: grid;
-  grid-template-columns: auto 420px;
+  grid-template-columns: auto 450px;
   grid-column-gap: 60px;
   padding: 135px 0 0;
   margin: 0 auto 120px;
@@ -5964,6 +5964,23 @@ input[type=number] {
         }
       }
 
+      &__warning{
+        width: 100%;
+        padding: 16px 24px;
+        border-radius: 8px;
+        background: #FFEEE7;
+        box-sizing: border-box;
+        margin: 25px 0 0;
+
+        &__text{
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 24px;
+          letter-spacing: 0.0025em;
+          color: #FA530D;
+        }
+      }
+
       &__pickup{
 
         &__content{
@@ -5989,27 +6006,24 @@ input[type=number] {
           }
         }
 
-        &__warning{
-          width: 100%;
-          padding: 16px 24px;
-          border-radius: 8px;
-          background: #FFEEE7;
-          box-sizing: border-box;
-          margin: 25px 0 0;
-
-          &__text{
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 24px;
-            letter-spacing: 0.0025em;
-            color: #FA530D;
-          }
-        }
       }
 
       &__city{
-        margin-top: 50px;
+        margin-top: 40px;
 
+        &__field-wrapper{
+          margin: 25px 0 0;
+
+        }
+
+      }
+
+      &__nova-poshta{
+        margin-top: 40px;
+
+        &__field-wrapper{
+          margin: 25px 0 0;
+        }
       }
     }
 

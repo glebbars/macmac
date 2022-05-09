@@ -1,17 +1,19 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 
-const CheckoutOrderDeliveryCity = ({register, delivery, setDelivery, errors}) => {
-  const [adress, setAdress] = useState('')
+const CheckoutOrderDeliveryCity = ({register, delivery, setDelivery, errors, setValue}) => {
 
   return(
     <div className="checkout__order__delivery__city">
       <label className='checkout__order__delivery__label'>
         <input 
           className='checkout__order__delivery__input' 
-          value={`Доставка по г. Днепр:  ${adress}`} 
+          {...register('delivery[0]')} 
+          value='Доставка по г. Днепр'
           type="radio" 
-          {...register('delivery')} 
-          onChange={() => setDelivery('Доставка по г. Днепр')}
+          onChange={() => {
+            setDelivery('Доставка по г. Днепр')
+            setValue('delivery', ['Доставка по г. Днепр'])
+          }}
         />
         <span className='checkout__order__delivery__input_custom'></span>
           Доставка по г. Днепр
@@ -22,16 +24,17 @@ const CheckoutOrderDeliveryCity = ({register, delivery, setDelivery, errors}) =>
       </p>
 
       {delivery === 'Доставка по г. Днепр' && (
-        <div className='pop-up__one-click__form__field-wrapper'>
-        <label htmlFor="fullName" className='pop-up__one-click__form__label'>Имя и Фамилия</label>
+        <div className='pop-up__one-click__form__field-wrapper checkout__order__delivery__city__field-wrapper'>
+        <label  className='pop-up__one-click__form__label'>Адресс доставки</label>
         <input
-          placeholder="Ваше имя"
+          type='text'
+          placeholder="Ваш адресс доставки"
           className='pop-up__one-click__form__input'
-          {...register("fullName", {
-            required: "Введите имя",
+          {...register("delivery[1]", {
+            required: "Введите ваш адресс доставки",
           })}
         />
-        {errors.fullName && <p className='pop-up__one-click__form__error'>{errors.fullName.message}</p>}
+        {errors.delivery && <p className='pop-up__one-click__form__error'>{errors.delivery[1].message}</p>}
       </div>
       )}
     </div>

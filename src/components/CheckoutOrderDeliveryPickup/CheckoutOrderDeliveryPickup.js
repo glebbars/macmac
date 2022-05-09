@@ -1,7 +1,7 @@
 import React from "react";
 import adressIcon from '../../img/adress-icon.svg'
 
-const CheckoutOrderDeliveryPickup = ({register, delivery, setDelivery}) => {
+const CheckoutOrderDeliveryPickup = ({register, delivery, setDelivery, setValue}) => {
 
   return(
     <div className="checkout__order__delivery__pickup">
@@ -11,8 +11,11 @@ const CheckoutOrderDeliveryPickup = ({register, delivery, setDelivery}) => {
           value='Самовывоз' 
           className='checkout__order__delivery__input' 
           type="radio" 
-          {...register('delivery')}
-          onChange={() => setDelivery('Самовывоз')} 
+          {...register('delivery[0]')}
+          onChange={() => {
+            setDelivery('Самовывоз') 
+            setValue('delivery', ['Самовывоз'])
+          }}
         />
         <span className='checkout__order__delivery__input_custom'></span>
           Самовывоз
@@ -29,8 +32,8 @@ const CheckoutOrderDeliveryPickup = ({register, delivery, setDelivery}) => {
             <span className="checkout__order__delivery__pickup__adress__text">г. Днепр, пр-т Гагарина, 11</span>
           </div>
 
-          <div className="checkout__order__delivery__pickup__warning">
-            <span className="checkout__order__delivery__pickup__warning__text">Поставка товара на точку выдачи займёт 1-5 дней. После поступления товара с вами свяжется менеджер нашего магазина</span>
+          <div className="checkout__order__delivery__warning">
+            <span className="checkout__order__delivery__warning__text">Поставка товара на точку выдачи займёт 1-5 дней. После поступления товара с вами свяжется менеджер нашего магазина</span>
           </div>
         </div>
       )}
