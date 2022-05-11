@@ -2,7 +2,7 @@ import React from "react";
 import adressIcon from '../../img/adress-icon.svg'
 import CheckoutDeliveryNovaPoshtaSelects from '../CheckoutDeliveryNovaPoshtaSelects/CheckoutDeliveryNovaPoshtaSelects'
 
-const CheckoutOrderDeliveryNovaPoshta = ({register, delivery, setDelivery, setValue, errors}) => {
+const CheckoutOrderDeliveryNovaPoshta = ({register, delivery, setDelivery, setValue, errors, control}) => {
 
   return(
     <div className="checkout__order__delivery__nova-poshta">
@@ -25,7 +25,7 @@ const CheckoutOrderDeliveryNovaPoshta = ({register, delivery, setDelivery, setVa
       <p className="checkout__order__delivery__subtext">Время доставки: 1-5 дней,  предоплата 100%</p>
       {delivery === 'Нова Пошта' && (
         <div className="checkout__order__delivery__nova-poshta__content">
-          <CheckoutDeliveryNovaPoshtaSelects register={register} errors={errors} />
+          <CheckoutDeliveryNovaPoshtaSelects register={register} errors={errors} control={control}/>
 
 
           <div className="checkout__order__delivery__warning">

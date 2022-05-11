@@ -6024,6 +6024,24 @@ input[type=number] {
         &__field-wrapper{
           margin: 25px 0 0;
         }
+
+        &__control{
+          display: block;
+          background: #FFFFFF;
+          color: #343A40;
+          margin: 6.5px 0 0;
+          height: 44px;
+          outline: none;
+          width: 100%;
+          padding: 0 2px;
+          box-sizing: border-box;
+          font-size: 15px;
+        }
+
+
+        &__menu{
+          background-color: white;
+        }
       }
     }
 
