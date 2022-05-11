@@ -2473,6 +2473,7 @@ input[type=number] {
     }
 
     &__closing-cross {
+      cursor: pointer;
 
       @media (max-width: 480px) {
         position: absolute;
@@ -5098,6 +5099,10 @@ input[type=number] {
           font-weight: 400;
         }
 
+        &:hover{
+          border-color: #6C757D;
+        }
+
 
         @media (max-width: 480px) {
           height: 45px;
@@ -5183,6 +5188,7 @@ input[type=number] {
         position: absolute;
         right: 26px;
         top: 16px;
+        cursor: pointer;
 
         &::after,
         &::before {
