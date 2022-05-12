@@ -10,8 +10,6 @@ const customStyles = {
     ...provided,
     color: '#343A40',
     backgroundColor: "#FFFFFF",
-
-    
   }),
   
   control: styles => ({ 
@@ -27,20 +25,18 @@ const customStyles = {
   option: (styles, { data, isDisabled, isFocused, isSelected }) => {
     return {
       ...styles,
-      backgroundColor: isSelected ? '#FA530D' : 'white',
-      color: 'black',
+      backgroundColor: isSelected ? '#FECCB7' : 'white',
 
       ':hover': {
         ...styles[':hover'],
-        backgroundColor: isSelected ? '#FA530D' : '#FFEEE7'
+        backgroundColor: isSelected ? '#FECCB7' : '#FFEEE7'
       },
     };
   },
   placeholder: (styles) => ({ ...styles, color: "#ADB5BD" }),
 };
 
-
-const api = new NovaPoshta({ apiKey: '6e746f873caf533d1c241e14437edfcf' });
+const api = new NovaPoshta({ apiKey: process.env.REACT_APP_NOVA_POSHTA_API_KEY });
 
 const CheckoutDeliveryNovaPoshtaSelects = ({register, errors, control}) => {
   const [warehouseOptions, setWarehouseOptions] = useState([])
@@ -72,7 +68,6 @@ const CheckoutDeliveryNovaPoshtaSelects = ({register, errors, control}) => {
         "label": warehouse.DescriptionRu
       }
     }) 
-    console.log(warehouseOptions)
     setWarehouseOptions(warehouseOptions)
   }
 
@@ -116,14 +111,6 @@ const CheckoutDeliveryNovaPoshtaSelects = ({register, errors, control}) => {
       {warehouseOptions.length > 0 && (
         <div className='pop-up__one-click__form__field-wrapper checkout__order__delivery__nova-poshta__field-wrapper'>
           <label  className='pop-up__one-click__form__label'>Отделение</label>
-          {/* <input
-            type='text'
-            placeholder="Отделение “Нова Пошта”"
-            className='pop-up__one-click__form__input'
-            {...register("delivery[2]", {
-              required: "Выберите отделение “Нова Пошта”",
-            })}
-          /> */}
 
           <Controller
              control={control}
@@ -135,6 +122,9 @@ const CheckoutDeliveryNovaPoshtaSelects = ({register, errors, control}) => {
               <Select
                 styles={customStyles}
                 onBlur={onBlur}
+                onChange={(data) => {
+                  onChange(data.value)
+                }}
                 selected={value}
                 noOptionsMessage={() => 'Нет результатов'}
                 placeholder="Отделение доставки"
@@ -145,7 +135,7 @@ const CheckoutDeliveryNovaPoshtaSelects = ({register, errors, control}) => {
             )}
           />
 
-          {errors.delivery && <p className='pop-up__one-click__form__error'>{errors.delivery[2].message}</p>}
+          {errors.delivery && <p className='pop-up__one-click__form__error'>Выберите отделение доставки</p>}
         </div>
       )}
     </>

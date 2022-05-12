@@ -29,7 +29,7 @@ const CheckoutOrderDeliveryNovaPoshta = ({register, delivery, setDelivery, setVa
 
 
           <div className="checkout__order__delivery__warning">
-            <span className="checkout__order__delivery__warning__text">Для получения заказа стоимостью свыше 5000 грн. нужно предъявить удостоверение личности. Перед визитом в отделение, не забудьте взять паспорт или водительское удостоверение</span>
+            <span className="checkout__order__delivery__warning__text">Для получения заказа стоимостью свыше 5000 грн нужно предъявить удостоверение личности. Перед визитом в отделение не забудьте взять паспорт или водительское удостоверение</span>
           </div>
         </div>
       )}

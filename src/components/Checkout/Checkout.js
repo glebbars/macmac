@@ -10,7 +10,8 @@ const Checkout = () => {
       fullName: "",
       phone: "",
       callBack: false,
-      delivery: ['Самовывоз']
+      delivery: ['Самовывоз'],
+      payment: 'Наличные при получении'
     }
   })
 
