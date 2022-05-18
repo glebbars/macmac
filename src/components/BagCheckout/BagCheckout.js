@@ -8,7 +8,7 @@ const BagCheckout = ({sortedArr}) => {
     const prices = sortedArr.map(product => product.price * product.quantity)
     const total = prices.reduce((a, c) => a + c)
     setTotalPrice(total)
-  }, [])
+  }, [sortedArr])
 
   const handleOrder = () => {
 

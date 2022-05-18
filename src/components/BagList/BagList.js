@@ -4,16 +4,18 @@ import BagCard from '../BagCard/BagCard'
 const BagList = ({sortedArr, removeFromTheBag, setFinalOrder}) => {
 
   const changeTotalPrice = (type, price, id) => {
-    const changedPorduct = sortedArr.find(product => product.id)
+    const changedPorduct = sortedArr.find(product => product.id === id)
 
-    console.log(sortedArr)
-    
     if(type === 'increase'){
       changedPorduct.quantity++
-      setFinalOrder(sortedArr)
+      setFinalOrder([...sortedArr])
     } else if ('decrease'){
       changedPorduct.quantity--
+      setFinalOrder([...sortedArr])
     }
+
+    const quantities = sortedArr.map(el => el.quantity)
+    console.log(quantities)
   }
 
   return(

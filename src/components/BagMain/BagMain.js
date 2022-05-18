@@ -16,8 +16,6 @@ const BagMain = ({addedToBag, filteredArr}) => {
   //   }
   // }, [])
 
-  console.log(finalProductsArr)
-
   useEffect(() => {
     const sortedArr = filteredArr.sort((a, b) => {
       return addedToBag.indexOf(a.id) - addedToBag.indexOf(b.id)
