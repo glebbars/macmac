@@ -1,22 +1,7 @@
 import React from 'react'
-import { useDispatch, useSelector } from 'react-redux';
 import BagCard from '../BagCard/BagCard'
 
-const BagList = ({addedToBag, filteredArr, setTotalOrderPrice, totalOrderPrice}) => {
-  const dispatch = useDispatch()
-
-  const sortedArr = filteredArr.sort((a, b) => {
-    return addedToBag.indexOf(a.id) - addedToBag.indexOf(b.id)
-  })
-
-  const removeFromTheBag = (productId, price) => {
-    dispatch({
-      type: 'REMOVE_FROM_BAG',
-      payload: addedToBag.filter((id) => id !== productId),
-    })
-
-    setTotalOrderPrice(totalOrderPrice - price)
-  };
+const BagList = ({sortedArr, removeFromTheBag, setTotalOrderPrice, totalOrderPrice}) => {
 
   const changeTotalPrice = (type, price) => {
     if(type === 'increase'){
@@ -25,8 +10,6 @@ const BagList = ({addedToBag, filteredArr, setTotalOrderPrice, totalOrderPrice})
       setTotalOrderPrice(totalOrderPrice - price)
     }
   }
-
-
 
   return(
     <div className='bag__main__list'>

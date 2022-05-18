@@ -1,9 +1,10 @@
 import React, {useEffect, useState} from 'react'
 import BagList from '../BagList/BagList'
 import BagCheckout from '../BagCheckout/BagCheckout'
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 const BagMain = ({addedToBag, filteredArr}) => {
+  const dispatch = useDispatch()
   const [totalOrderPrice, setTotalOrderPrice] = useState(0)
 
   useEffect(() => {
@@ -14,14 +15,26 @@ const BagMain = ({addedToBag, filteredArr}) => {
     }
   }, [])
 
-  // useEffect(() => {
-  //   setTotalOrderPrice(totalOrderPrice)
-  // }, [addedToBag])
+
+  const sortedArr = filteredArr.sort((a, b) => {
+    return addedToBag.indexOf(a.id) - addedToBag.indexOf(b.id)
+  })
+  
+
+  const removeFromTheBag = (productId, price) => {
+    dispatch({
+      type: 'REMOVE_FROM_BAG',
+      payload: addedToBag.filter((id) => id !== productId),
+    })
+
+    setTotalOrderPrice(totalOrderPrice - price)
+  };
+
 
   return(
     <div className="bag__main__wrapper">
-      <BagList addedToBag={addedToBag} filteredArr={filteredArr} totalOrderPrice={totalOrderPrice} setTotalOrderPrice={setTotalOrderPrice}/>
-      {totalOrderPrice > 0 && <BagCheckout totalOrderPrice={totalOrderPrice} />}
+      <BagList sortedArr={sortedArr} removeFromTheBag={removeFromTheBag} totalOrderPrice={totalOrderPrice} setTotalOrderPrice={setTotalOrderPrice}/>
+      {totalOrderPrice > 0 && <BagCheckout sortedArr={sortedArr} totalOrderPrice={totalOrderPrice} />}
     </div>
   )
 }

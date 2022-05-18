@@ -5,11 +5,11 @@ const CheckoutOrderDeliveryPickup = ({register, delivery, setDelivery, setValue}
 
   return(
     <div className="checkout__order__delivery__pickup">
-      <label className='checkout__order__delivery__label'>
+      <label className='checkout__order__label'>
         <input 
           defaultChecked 
           value='Самовывоз' 
-          className='checkout__order__delivery__input' 
+          className='checkout__order__input' 
           type="radio" 
           {...register('delivery[0]')}
           onChange={() => {
@@ -17,7 +17,7 @@ const CheckoutOrderDeliveryPickup = ({register, delivery, setDelivery, setValue}
             setValue('delivery', ['Самовывоз'])
           }}
         />
-        <span className='checkout__order__delivery__input_custom'></span>
+        <span className='checkout__order__input_custom'></span>
           Самовывоз
       </label>
 
@@ -29,7 +29,12 @@ const CheckoutOrderDeliveryPickup = ({register, delivery, setDelivery, setValue}
         <div className="checkout__order__delivery__pickup__content">
           <div className="checkout__order__delivery__pickup__adress">
             <img className="checkout__order__delivery__pickup__adress__img" src={adressIcon} alt="" />
-            <span className="checkout__order__delivery__pickup__adress__text">г. Днепр, пр-т Гагарина, 11</span>
+            <span className="checkout__order__delivery__pickup__adress__text">г. Днепр, ул. Московская 8</span>
+          </div>
+          
+          <div className="checkout__order__delivery__pickup__adress">
+            <img className="checkout__order__delivery__pickup__adress__img" src={adressIcon} alt="" />
+            <span className="checkout__order__delivery__pickup__adress__text">г. Киев, ул. Гетьмана 30</span>
           </div>
 
           <div className="checkout__order__delivery__warning">

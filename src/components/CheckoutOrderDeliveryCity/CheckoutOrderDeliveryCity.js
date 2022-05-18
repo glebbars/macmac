@@ -4,9 +4,9 @@ const CheckoutOrderDeliveryCity = ({register, delivery, setDelivery, errors, set
 
   return(
     <div className="checkout__order__delivery__city">
-      <label className='checkout__order__delivery__label'>
+      <label className='checkout__order__label'>
         <input 
-          className='checkout__order__delivery__input' 
+          className='checkout__order__input' 
           {...register('delivery[0]')} 
           value='Доставка по г. Днепр'
           type="radio" 
@@ -15,7 +15,7 @@ const CheckoutOrderDeliveryCity = ({register, delivery, setDelivery, errors, set
             setValue('delivery', ['Доставка по г. Днепр'])
           }}
         />
-        <span className='checkout__order__delivery__input_custom'></span>
+        <span className='checkout__order__input_custom'></span>
           Доставка по г. Днепр
       </label>
 

@@ -6,10 +6,10 @@ const CheckoutOrderDeliveryNovaPoshta = ({register, delivery, setDelivery, setVa
 
   return(
     <div className="checkout__order__delivery__nova-poshta">
-      <label className='checkout__order__delivery__label'>
+      <label className='checkout__order__label'>
         <input 
           value='Нова Пошта' 
-          className='checkout__order__delivery__input' 
+          className='checkout__order__input' 
           type="radio" 
           {...register('delivery[0]')}
           onChange={() => {
@@ -17,7 +17,7 @@ const CheckoutOrderDeliveryNovaPoshta = ({register, delivery, setDelivery, setVa
             setValue('delivery', ['Нова Пошта'])
           }}
         />
-        <span className='checkout__order__delivery__input_custom'></span>
+        <span className='checkout__order__input_custom'></span>
         Доставка в отделение “Нова Пошта”
       </label>
 

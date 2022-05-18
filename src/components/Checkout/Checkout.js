@@ -11,7 +11,8 @@ const Checkout = () => {
       phone: "",
       callBack: false,
       delivery: ['Самовывоз'],
-      payment: 'Наличные при получении'
+      payment: 'Наличные при получении',
+      comment: ""
     }
   })
 
