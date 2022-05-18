@@ -8,14 +8,14 @@ const BagCard = ({productDataObj, isLastOne, removeFromTheBag, changeTotalPrice}
   const decreaseNum = () => {
     if(productsNum > 1){
       setProductsNum(productsNum - 1)
-      changeTotalPrice('decrease', productDataObj.price)
+      changeTotalPrice('decrease', productDataObj.price, productDataObj.id)
     }
   }
 
   const increaseNum = () => {
     if(productsNum < 10){
       setProductsNum(productsNum + 1)
-      changeTotalPrice('increase', productDataObj.price)
+      changeTotalPrice('increase', productDataObj.price, productDataObj.id)
     }
   }
 

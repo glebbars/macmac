@@ -1,13 +1,18 @@
 import React from 'react'
 import BagCard from '../BagCard/BagCard'
 
-const BagList = ({sortedArr, removeFromTheBag, setTotalOrderPrice, totalOrderPrice}) => {
+const BagList = ({sortedArr, removeFromTheBag, setFinalOrder}) => {
 
-  const changeTotalPrice = (type, price) => {
+  const changeTotalPrice = (type, price, id) => {
+    const changedPorduct = sortedArr.find(product => product.id)
+
+    console.log(sortedArr)
+    
     if(type === 'increase'){
-      setTotalOrderPrice(totalOrderPrice + price)
+      changedPorduct.quantity++
+      setFinalOrder(sortedArr)
     } else if ('decrease'){
-      setTotalOrderPrice(totalOrderPrice - price)
+      changedPorduct.quantity--
     }
   }
 
