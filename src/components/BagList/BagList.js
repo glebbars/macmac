@@ -1,21 +1,33 @@
 import React from 'react'
 import BagCard from '../BagCard/BagCard'
+import { useDispatch } from 'react-redux';
 
-const BagList = ({sortedArr, removeFromTheBag, setFinalOrder}) => {
+const BagList = ({productsArr}) => {
+  const dispatch = useDispatch()
 
-  const changeTotalPrice = (type, price, id) => {
-    const changedPorduct = sortedArr.find(product => product.id === id)
+  const removeFromTheBag = (productId, price) => {
+    dispatch({
+      type: 'REMOVE_FROM_BAG',
+      payload: productsArr.filter(product => product.id !== productId)
+    })
+  };
+
+  const changeTotalPrice = (type, id) => {
+    const changedPorduct = productsArr.find(product => product.id === id)
 
     if(type === 'increase'){
       changedPorduct.quantity++
-      setFinalOrder([...sortedArr])
+      dispatch({
+        type: 'ADD_TO_BAG',
+        payload: productsArr,
+      });
     } else if ('decrease'){
       changedPorduct.quantity--
-      setFinalOrder([...sortedArr])
+      dispatch({
+        type: 'REMOVE_FROM_BAG',
+        payload: productsArr,
+      });
     }
-
-    const quantities = sortedArr.map(el => el.quantity)
-    console.log(quantities)
   }
 
   return(
@@ -24,13 +36,13 @@ const BagList = ({sortedArr, removeFromTheBag, setFinalOrder}) => {
       <span className='bag__main__list__label'>Цена</span>
       <span className='bag__main__list__label'>Количество</span>
       <span className='bag__main__list__label'>Всего</span>
-      {sortedArr.map(product => (
+      {productsArr.map(product => (
         <BagCard 
           changeTotalPrice={changeTotalPrice}
           removeFromTheBag={removeFromTheBag}
           key={product.id} 
           productDataObj={product} 
-          isLastOne={product.id === sortedArr[sortedArr.length - 1].id}
+          isLastOne={product.id === productsArr[productsArr.length - 1].id}
         />
       ))}
     </div>

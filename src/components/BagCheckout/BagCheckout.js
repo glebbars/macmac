@@ -1,20 +1,20 @@
 import React, { useEffect, useState } from 'react'
 import {Link} from 'react-router-dom'
 
-const BagCheckout = ({sortedArr}) => {
+const BagCheckout = ({productsArr}) => {
   const [totalPrice, setTotalPrice] = useState(0)
 
   useEffect(() => {
-    const prices = sortedArr.map(product => product.price * product.quantity)
+    const prices = productsArr.map(product => product.price * product.quantity)
     const total = prices.reduce((a, c) => a + c)
     setTotalPrice(total)
-  }, [sortedArr])
+  }, [productsArr])
 
   const handleOrder = () => {
 
     // console.log({
     //   price: totalOrderPrice,
-    //   order: sortedArr
+    //   order: productsArr
     // })
   }
 

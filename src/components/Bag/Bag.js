@@ -7,9 +7,7 @@ import bagIcon from '../../img/bag-zero-length.svg'
 import BagMain from '../BagMain/BagMain'
 
 const Bag = () => {
-  const productsArr = useSelector((store) => store.app.productsArr)
   const addedToBag = useSelector((store) => store.app.addedToBag);
-  const filteredArr = productsArr.filter(product => addedToBag.includes(product.id))
 
   useEffect(() => {
     localStorage.setItem("macmac-addedToBag", JSON.stringify(addedToBag));
@@ -31,7 +29,7 @@ const Bag = () => {
           </h1>
         </div>
       </div>
-      {filteredArr.length > 0 ? <BagMain addedToBag={addedToBag} filteredArr={filteredArr} />
+      {addedToBag.length > 0 ? <BagMain addedToBag={addedToBag}/>
         :
         <div className="bag__none-items__wrapper">
           <img className="bag__none-items__image" src={bagIcon} alt="" />

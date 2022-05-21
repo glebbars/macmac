@@ -10,11 +10,15 @@ const ProductMainPurchase = ({productDataObj}) => {
 
   const closePopUp = () => setOpenedPurchasePopUp(false)
 
-  const addToTheBag = (productId) => {
-    if(!addedToBag.includes(productId)){
+  const addToTheBag = (productObj) => {
+    if(!addedToBag.some(product => product.id === productObj.id)){
+      const productToBag = {
+        ...productObj,
+        quantity: 1
+      }
       dispatch({
         type: 'ADD_TO_BAG',
-        payload: [productId, ...addedToBag],
+        payload: [productToBag, ...addedToBag],
       });
     }
   };
@@ -24,7 +28,7 @@ const ProductMainPurchase = ({productDataObj}) => {
   return (
     <div className='product__main__purchase'>
       <div onClick={() => {
-        addToTheBag(productDataObj.id);
+        addToTheBag(productDataObj);
         setOpenedPurchasePopUp(true)
         scrollTop()
       }} className='product__main__purchase__buy'>
