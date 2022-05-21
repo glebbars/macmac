@@ -5806,8 +5806,8 @@ input[type=number] {
 
 .checkout{
   display: grid;
-  grid-template-columns: auto 450px;
-  grid-column-gap: 60px;
+  grid-template-columns: auto 410px;
+  grid-column-gap: 80px;
   padding: 135px 0 0;
   margin: 0 auto 120px;
   max-width: 1120px;
@@ -6089,10 +6089,132 @@ input[type=number] {
 
   }
 
-  &__confirm{
+  &__products{
+    height: fit-content;
     margin-top: 50px;
+    border-radius: 8px;
+    padding: 24px 24px 30px;
+    background: white;
+
+    &__list{
+
+      &__header{
+        @include flex-space-center;
+        margin-bottom: 30px;
+
+        &__title,
+        &__btn{
+          font-weight: 500;
+          font-size: 20px;
+          letter-spacing: 0.0025em;
+          margin: 0;
+          color: #343A40;
+        }
+
+        &__btn{
+          font-size: 16px;
+          letter-spacing: 0.0155em;
+          margin-left: 15px;
+        }
+      }
+
+      &__line{
+        height: 1px;
+        width: 100%;
+        background: #DEE2E6;
+        border-radius: 6px;
+      }
+    }
+
+    &__card{
+      display: grid;
+      grid-template-columns: 50px auto auto;
+      grid-column-gap: 16px;
+      margin-bottom: 30px;
+      
+      &__img-wrapper{
+        display: flex;
+        width: 50px;
+        height: 50px;
+        background: #E9ECEF;
+        border-radius: 8px;
+      }
+
+      &__img {
+        max-height: 80%;
+        max-width: 80%;
+        object-fit: contain;
+        margin: auto;
+      }
+
+      &__header{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.005em;
+        color: #343A40;
+        margin: 0;
+      }
+
+      &__text{
+        display: inline-block;
+        margin: 0;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.0025em;
+        color: #6C757D;
+        margin-right: 4px;
+
+        &::after{
+          content: ',';
+          font-size: 14px;
+        }
+
+        &:last-of-type{
+          margin-right: 0;
+          &::after{
+            content: '';
+          }
+        }
+      }
+
+      &__price{
+        margin-left: 15px;
+      }
+
+    }
+
+    &__confirm{
+      margin-top: 25px;
+
+      &__total{
+        @include flex-space-center;
+
+        &__text,
+        &__price{
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 26px;
+          letter-spacing: 0.005em;
+          color: #343A40;
+        }
+      }
+
+      &__btn{
+        width: 100%;
+        height: 50px;
+        margin-top: 25px;
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 16px;
+        color: white;
+        background: #FA530D;
+        text-align: center;
+        box-sizing: border-box;
+        border: none;
+      }
+    }
 
   }
 }
-
-

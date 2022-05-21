@@ -103,7 +103,7 @@ export const PurchasePopUp = ({addedToBag, activePopUp, productDataObj, closePop
             <img className='pop-up__purchase__btn-bag__img' src={bagGrey} alt="" />
             <span className='pop-up__purchase__btn-bag__text'>Корзина</span>
           </Link>
-          <Link className='pop-up__purchase__btn-order' to='/order'>Оформить заказ</Link>
+          <Link className='pop-up__purchase__btn-order' to='/checkout'>Оформить заказ</Link>
         </div>
       </div>
     </div>

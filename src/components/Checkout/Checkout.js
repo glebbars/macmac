@@ -1,5 +1,5 @@
 import React from 'react'
-import CheckoutConfirm from '../CheckoutConfirm/CheckoutConfirm'
+import CheckoutProducts from '../CheckoutProducts/CheckoutProducts'
 import CheckoutOrder from '../CheckoutOrder/CheckoutOrder'
 import { useForm } from 'react-hook-form'
 
@@ -24,7 +24,7 @@ const Checkout = () => {
   return (
     <form className="checkout" onSubmit={handleSubmit(hadleConfirm)}>
       <CheckoutOrder register={register} errors={errors} control={control} setValue={setValue}/>
-      <CheckoutConfirm />
+      <CheckoutProducts />
     </form>
   )
 

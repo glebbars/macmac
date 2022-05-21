@@ -10,13 +10,6 @@ const BagCheckout = ({productsArr}) => {
     setTotalPrice(total)
   }, [productsArr])
 
-  const handleOrder = () => {
-
-    // console.log({
-    //   price: totalOrderPrice,
-    //   order: productsArr
-    // })
-  }
 
   return(
     <div className='bag__checkout'>
@@ -27,7 +20,7 @@ const BagCheckout = ({productsArr}) => {
       <div className='bag__checkout__line'></div>
       <div className='bag__checkout__btns-wrapper'>
         <div className='bag__checkout__btn__continue'>Продолжить покупки</div>
-        <Link to='/checkout' onClick={handleOrder} className='bag__checkout__btn__order'>Оформить заказ</Link>
+        <Link to='/checkout' className='bag__checkout__btn__order'>Оформить заказ</Link>
       </div>
     </div>
   )
