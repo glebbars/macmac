@@ -5,6 +5,9 @@ import Input from "react-phone-number-input/input";
 import axios from 'axios'
 import PersonalDataFields from '../PersonalDataFields/PersonalDataFields'
 
+const {REACT_APP_TELEGRAM_BOT_TOKEN} = process.env
+console.log(REACT_APP_TELEGRAM_BOT_TOKEN)
+
 export const sendToTelegramBot = (data) => {
   axios.post('http://localhost:5000/orders', data).then(res => {
 
@@ -21,7 +24,7 @@ export const sendToTelegramBot = (data) => {
     }
 
     if(res.data.id > 0){
-      axios.post(`https://api.telegram.org/bot5001793522:AAGlAAbTMuMUUx-TqP_uWJfBf22nHw44Fys/sendMessage?chat_id=634614891&text=${dataToTelBot()}&parse_mode=html`)
+      axios.post(`https://api.telegram.org/${REACT_APP_TELEGRAM_BOT_TOKEN}/sendMessage?chat_id=634614891&text=${dataToTelBot()}&parse_mode=html`)
       .then(res => console.log(res))
       .catch(err => console.log(err))
     }

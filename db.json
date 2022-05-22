@@ -701,6 +701,13 @@
       "order": "iPhone SE 2020 128Gb Black",
       "price": 15015,
       "id": 6
+    },
+    {
+      "fullName": "glebars",
+      "phone": "+380676787878",
+      "order": "iPhone 12 Pro Max 256Gb Pacific Blue",
+      "price": 2,
+      "id": 7
     }
   ],
   "prices": [
