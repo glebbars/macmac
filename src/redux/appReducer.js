@@ -11,7 +11,8 @@ import {
   UPDATE_PAGE_SIZE,
   UPDATE_SORTED_PRODUCTS_LENGTH,
   UPDATE_PAGE_NUM,
-  ADD_RECENTLY_VIEWED
+  ADD_RECENTLY_VIEWED,
+  ADD_PERCENT_TO_PRICE
 } from "./actions/types";
 
 
@@ -25,6 +26,7 @@ export const initialStore = {
   recentlyViewed: JSON.parse(localStorage.getItem("macmac-recentlyViewed")) || [],
   favorites: JSON.parse(localStorage.getItem("macmac-favorites")) || [],
   addedToBag: JSON.parse(localStorage.getItem("macmac-addedToBag")) || [],
+  percentToAdd: 0
 }
 
 const appReducer = (store = initialStore, action) => {
@@ -83,6 +85,11 @@ const appReducer = (store = initialStore, action) => {
         ...store,
         recentlyViewed: [...action.payload]
       };
+    case ADD_PERCENT_TO_PRICE:
+      return{
+        ...store,
+        percentToAdd: action.payload
+      }  
     default:
       return store;
   }

@@ -1,12 +1,8 @@
 import React from "react";
-import { useSelector } from "react-redux";
 import CheckoutProductsConfirm from '../CheckoutProductsConfirm/CheckoutProductsConfirm'
 import CheckoutProductsList from '../CheckoutProductsList/CheckoutProductsList'
 
-const CheckoutProducts = () => {
-  const addedToBag = useSelector((store) => store.app.addedToBag);
-  
-  console.log(addedToBag)
+const CheckoutProducts = ({addedToBag}) => {
 
   return (
     <div className='checkout__products'>

@@ -662,7 +662,6 @@
   "orders": [
     {
       "fullName": "gleb",
-      "email": "glebars2004@gmail.com",
       "order": "iPhone 11 Pro max green",
       "phone": "+380676282524",
       "price": 17000,
@@ -670,7 +669,6 @@
     },
     {
       "fullName": "Ирина",
-      "email": "irina@gmail.com",
       "order": "iPhone 11 Pro max green",
       "phone": "+380676304612",
       "price": 1000,
@@ -678,7 +676,6 @@
     },
     {
       "fullName": "test 1",
-      "email": "",
       "phone": "+380671221223",
       "order": "iPhone 12 128Gb White",
       "price": 13470,
@@ -686,7 +683,6 @@
     },
     {
       "fullName": "2",
-      "email": "gleb@gmail.com",
       "phone": "+380967899890",
       "order": "iPhone 12 128Gb White",
       "price": 13470,
@@ -694,7 +690,6 @@
     },
     {
       "fullName": "r",
-      "email": "",
       "phone": "+380676786778",
       "order": "iPhone 11 64Gb Black",
       "price": 17765,
@@ -702,7 +697,6 @@
     },
     {
       "fullName": "Глеб Барский",
-      "email": "",
       "phone": "+380676282524",
       "order": "iPhone SE 2020 128Gb Black",
       "price": 15015,

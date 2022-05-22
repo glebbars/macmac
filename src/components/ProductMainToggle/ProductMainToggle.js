@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import {getCapacityChoices, getColorChoices, colorForToggle} from '../../admin/AdditionalFunctions/AdditionalFunctions'
-import OrderForm from '../OrderForm/OrderForm'
 import axios from 'axios';
 
 const ProductMainToggle = ({productDataObj, setProductDataObj}) => {

@@ -1,6 +1,15 @@
 import React from "react";
+import { useDispatch } from "react-redux";
 
 const CheckoutPayment = ({register, errors}) => {
+  const dispatch = useDispatch()
+
+  const handlePercent = (percent) => {
+    dispatch({
+      type: 'ADD_PERCENT_TO_PRICE',
+      payload: percent
+    })
+  }
 
   return(
     <div className="checkout__order__payment">
@@ -9,6 +18,7 @@ const CheckoutPayment = ({register, errors}) => {
         <label className='checkout__order__label'>
           <input 
             defaultChecked
+            onClick={() => handlePercent(0)}
             className='checkout__order__input' 
             {...register('payment')} 
             value='Наличные при получении'
@@ -21,7 +31,8 @@ const CheckoutPayment = ({register, errors}) => {
 
       <div className="checkout__order__payment__option-wrapper">
         <label className='checkout__order__label'>
-          <input 
+          <input
+            onClick={() => handlePercent(3)}
             className='checkout__order__input' 
             {...register('payment')} 
             value='Опалата картой +3%'
@@ -35,6 +46,7 @@ const CheckoutPayment = ({register, errors}) => {
       <div className="checkout__order__payment__option-wrapper">
         <label className='checkout__order__label'>
           <input 
+            onClick={() => handlePercent(1)} 
             className='checkout__order__input' 
             {...register('payment')} 
             value='Опалата на расчётный счёт +1%'

@@ -3015,6 +3015,7 @@ input[type=number] {
     right: 18px;
     top: 25px;
     z-index: 2;
+    cursor: pointer;
 
     &::after,
     &::before {
@@ -4621,6 +4622,7 @@ input[type=number] {
           height: 2px;
           width: 15px;
           background-color: #ADB5BD;
+          cursor: pointer;
         }
       }
 
@@ -4662,6 +4664,7 @@ input[type=number] {
         right: -65px;
         top: 0;
         z-index: 2;
+        cursor: pointer;
 
         @media(max-width: 1024px) {
           right: -55px;
@@ -5278,6 +5281,7 @@ input[type=number] {
       right: 8px;
       top: 16px;
       z-index: 3;
+      cursor: pointer;
 
 
       &::after,
@@ -6115,6 +6119,7 @@ input[type=number] {
           font-size: 16px;
           letter-spacing: 0.0155em;
           margin-left: 15px;
+          text-decoration: none;
         }
       }
 

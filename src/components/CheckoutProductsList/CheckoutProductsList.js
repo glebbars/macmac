@@ -1,15 +1,15 @@
 import React from "react";
 import CheckoutProductsCard from '../CheckoutProductsCard/CheckoutProductsCard'
+import { Link } from 'react-router-dom'
 
 
 const CheckoutProductsList = ({productsArr}) => {
-  console.log(productsArr)
 
   return (
     <div className='checkout__products__list'>
       <header className='checkout__products__list__header'>
         <h2 className='checkout__products__list__header__title'>Структура заказа</h2>
-        <span className='checkout__products__list__header__btn'>Изменить</span>
+        <Link to='/bag' className='checkout__products__list__header__btn'>Изменить</Link>
       </header>
       <main>
         {productsArr.map(product => (

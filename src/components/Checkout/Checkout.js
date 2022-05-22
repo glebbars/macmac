@@ -2,8 +2,10 @@ import React from 'react'
 import CheckoutProducts from '../CheckoutProducts/CheckoutProducts'
 import CheckoutOrder from '../CheckoutOrder/CheckoutOrder'
 import { useForm } from 'react-hook-form'
+import { useSelector } from "react-redux";
 
 const Checkout = () => {
+  const addedToBag = useSelector((store) => store.app.addedToBag);
 
   const { handleSubmit, formState: { errors }, register, control, setValue } = useForm({
     defaultValues: {
@@ -12,7 +14,8 @@ const Checkout = () => {
       callBack: false,
       delivery: ['Самовывоз'],
       payment: 'Наличные при получении',
-      comment: ""
+      comment: "",
+      order: addedToBag
     }
   })
 
@@ -24,7 +27,7 @@ const Checkout = () => {
   return (
     <form className="checkout" onSubmit={handleSubmit(hadleConfirm)}>
       <CheckoutOrder register={register} errors={errors} control={control} setValue={setValue}/>
-      <CheckoutProducts />
+      <CheckoutProducts addedToBag={addedToBag} />
     </form>
   )
 
