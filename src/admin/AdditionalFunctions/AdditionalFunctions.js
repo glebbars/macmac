@@ -57,9 +57,6 @@ export const getPriceOfProductFromDB = (allValues) =>  {
     Object.entries(allValues).filter(([key, value]) => typeof value === 'string')
   )
 
-  console.log(allValues, filterredValuesArr)
-
-
 
   return axios.get('http://localhost:5000/prices/1')
   .then(res => res.data)
