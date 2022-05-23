@@ -23,7 +23,7 @@ const ProductMainPurchase = ({productDataObj}) => {
     }
   };
 
-  const scrollTop = () =>  window.scrollTo({top: 0,behavior: 'smooth'})
+  const scrollTop = () =>  window.scrollTo({top: 0, behavior: 'smooth'})
 
   return (
     <div className='product__main__purchase'>
@@ -35,6 +35,7 @@ const ProductMainPurchase = ({productDataObj}) => {
         <img className='product__main__purchase__buy__img' src={bagIcon} alt="" />
         <span className='product__main__purchase__buy__text'>Купить</span>
       </div>
+      
       <div onClick={() => {
         scrollTop()
         openPopupboxOneClick(productDataObj)

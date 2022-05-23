@@ -109,3 +109,36 @@ export const PurchasePopUp = ({addedToBag, activePopUp, productDataObj, closePop
     </div>
   )
 }
+
+
+export const handlePurchaseSuccess = (id) => {
+
+  const content = (
+    <div className='pop-up__success__content'>
+      <div className='pop-up__success__content__closing-cross' onClick={PopupboxManager.close}></div>
+      <h1 className='pop-up__success__content__header'>Заказ успешно оформлен</h1>
+      <p className='pop-up__success__content__text'>
+        Номер вашего заказа:
+        <span className='pop-up__success__content__text__order-id'>{id}</span>
+      </p>
+      <button className='pop-up__success__content__btn' type='submit'>Продолжить покупки</button>
+
+    </div>
+  )
+
+
+  PopupboxManager.open({
+    content,
+    config: {
+      overlayClose: true,
+      escClose: true,
+      className: 'pop-up__success',
+      titleBar: {
+        enable: false
+      },
+      overlayOpacity: 0.5,
+      fadeIn: true,
+      fadeInSpeed: 300
+    }
+  })
+}

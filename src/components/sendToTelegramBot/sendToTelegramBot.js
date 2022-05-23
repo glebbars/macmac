@@ -3,14 +3,9 @@ import axios from 'axios'
 const {REACT_APP_TELEGRAM_BOT_TOKEN} = process.env
 
 export const sendToTelegramBot = (data) => {
-  axios.post('http://localhost:5000/orders', data).then(res => {
-
-  console.log('res', res)
-
+  return axios.post('http://localhost:5000/orders', data).then(res => {
     const dataToBot = () => {
-      let data = `<strong>Заказ:%0A ${res.data.order}</strong>  %0A%0AОбщая сумма заказа: ${res.data.totalPrice}  %0A%0AИмя: ${res.data.fullName}  %0A%0AТелефон: ${res.data.phone}`
-
-      console.log(res.data.notCallBack)
+      let data = `№ <strong>${res.data.id}</strong> %0A%0A<strong>Заказ:%0A ${res.data.order}</strong>  %0A%0AОбщая сумма заказа: ${res.data.totalPrice}  %0A%0AИмя: ${res.data.fullName}  %0A%0AТелефон: ${res.data.phone}`
 
       if(res.data.delivery){
         data = `${data} %0A%0AДоставка: ${res.data.delivery}`
@@ -29,9 +24,8 @@ export const sendToTelegramBot = (data) => {
     }
 
     if(res.data.id > 0){
-      axios.post(`https://api.telegram.org/${REACT_APP_TELEGRAM_BOT_TOKEN}/sendMessage?chat_id=634614891&text=${dataToBot()}&parse_mode=html`)
-      .then(res => console.log(res))
-      .catch(err => console.log(err))
+      return axios.post(`https://api.telegram.org/${REACT_APP_TELEGRAM_BOT_TOKEN}/sendMessage?chat_id=634614891&text=${dataToBot()}&parse_mode=html`)
+      .then(res => res)
     }
   })
 }

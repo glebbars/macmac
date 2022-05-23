@@ -5031,39 +5031,83 @@ input[type=number] {
 
 .pop-up {
 
-  &__one-click {
+  &__one-click,
+  &__success{
     box-shadow: 0px 0px 16px rgba(57, 59, 101, 0.12) !important;
     border-radius: 8px !important;
 
-    &__form {
+    &__form,
+    &__content{
       min-width: 366px;
       padding: 12px 5px 2px;
       box-sizing: border-box;
-
+    
       @media(max-width: 540px) {
         min-width: 100%;
       }
-
+    
       @media(max-width: 480px) {
         padding: 10px 2px 2px;
       }
-
+    
       @media (max-width: 375px) {
         padding: 10px 0 2px;
       }
-
+    
       &__header {
         font-weight: 500;
         font-size: 20px;
         letter-spacing: 0.0025em;
         color: #343A40;
         margin: 0 0 30px;
-
+    
         @media(max-width: 480px) {
           margin: 0 0 25px;
         }
       }
+    
+      
+      &__btn {
+        width: 150px;
+        height: 40px;
+        background: #FA530D;
+        border-radius: 8px;
+        font-size: 14px;
+        margin-top: 65px;
+        border: none;
+        letter-spacing: 0.0025em;
+        padding: 13px 0;
+        color: #FFFFFF;
+      }
+      
+      &__closing-cross {
+        position: absolute;
+        right: 26px;
+        top: 16px;
+        cursor: pointer;
+        
+        &::after,
+        &::before {
+          position: absolute;
+          left: 0;
+          content: '';
+          height: 20px;
+          width: 2px;
+          background-color: #ADB5BD;
+          transform: rotate(45deg);
+          border-radius: 1px;
+        }
+        
+        &::after {
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
 
+  &__one-click {
+  
+    &__form {
       &__label {
         font-weight: 500;
         font-size: 12px;
@@ -5164,49 +5208,15 @@ input[type=number] {
         }
       }
 
-      &__btn {
-        width: 150px;
-        height: 40px;
-        background: #FA530D;
-        border-radius: 8px;
-        font-size: 14px;
-        margin-top: 65px;
-        border: none;
-        letter-spacing: 0.0025em;
-        padding: 13px 0;
-        color: #FFFFFF;
-
+      &__btn{
         @media (max-width: 480px) {
           width: 100%;
           margin-top: 30px;
           height: 45px;
         }
-
+        
         @media (max-width: 375px) {
           margin-top: 25px;
-        }
-      }
-
-      &__closing-cross {
-        position: absolute;
-        right: 26px;
-        top: 16px;
-        cursor: pointer;
-
-        &::after,
-        &::before {
-          position: absolute;
-          left: 0;
-          content: '';
-          height: 20px;
-          width: 2px;
-          background-color: #ADB5BD;
-          transform: rotate(45deg);
-          border-radius: 1px;
-        }
-
-        &::after {
-          transform: rotate(-45deg);
         }
       }
     }
@@ -5637,6 +5647,51 @@ input[type=number] {
         height: 40px;
         width: 182px;
         font-size: 15px;
+      }
+    }
+
+  }
+
+  &__success{
+    @media (max-width: 540px) {
+      width: 100%;
+      max-width: 85% !important;
+    }
+
+    &__content{
+
+      &__header{
+        margin-bottom: 20px;
+      }
+
+      &__text{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.005em;
+        color: #343A40;
+        position: relative;
+        margin: 0;
+  
+        &__order-id{
+          color: #FA530D;
+          margin-left: 8px;
+        }
+
+        &::after{
+          content: '';
+          position: absolute;
+          width: 120%;
+          left: -35px;
+          height: 1px;
+          background: #DEE2E6;
+          top: 50px;
+        }
+      }
+
+      &__btn{
+        width: 200px;
+        margin-top: 50px;
       }
     }
 

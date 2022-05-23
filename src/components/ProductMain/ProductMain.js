@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import tick from '../../img/tick.svg'
 import ProductMainToggle from '../ProductMainToggle/ProductMainToggle'
 import ProductMainPurchase from '../ProductMainPurchase/ProductMainPurchase'
-import { PopupboxManager, PopupboxContainer } from 'react-popupbox';
+import { PopupboxContainer } from 'react-popupbox';
 import orangeArrows from '../../img/two-arrows.svg'
 import orangeGaranty from '../../img/warranty.svg'
 import orangeNovaPoshta from '../../img/nova-poshta.png'

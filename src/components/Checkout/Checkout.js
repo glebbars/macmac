@@ -4,6 +4,8 @@ import CheckoutOrder from '../CheckoutOrder/CheckoutOrder'
 import { useForm } from 'react-hook-form'
 import { useSelector } from "react-redux";
 import {sendToTelegramBot} from '../sendToTelegramBot/sendToTelegramBot'
+import { PopupboxContainer } from 'react-popupbox';
+import {handlePurchaseSuccess} from '../PopUps/PopUps'
 
 const Checkout = () => {
   const addedToBag = useSelector((store) => store.app.addedToBag);
@@ -11,8 +13,8 @@ const Checkout = () => {
 
   const { handleSubmit, formState: { errors }, register, control, setValue } = useForm({
     defaultValues: {
-      fullName: "",
-      phone: "",
+      fullName: "1",
+      phone: "+380676282524",
       notCallBack: false,
       delivery: ['Самовывоз'],
       payment: 'Наличные при получении',
@@ -22,7 +24,7 @@ const Checkout = () => {
     }
   })
 
-  const hadleConfirm = (values) => {
+  const hadleConfirm = async (values) => {
     const prices = values.order.map(product => product.price * product.quantity)
     const total = prices.reduce((a, c) => a + c)
 
@@ -35,23 +37,28 @@ const Checkout = () => {
 
     const finalOrderStr = finalOrderArr.join(';%0A')
 
-    console.log(finalOrderStr)
+    const id = Math.floor(100000 + Math.random() * 900000)
 
     const allValues = {
       ...values,
+      id: id,
       order: finalOrderStr,
       delivery: deliveryAdress,
       totalPrice: `${totalWithPercent}₴`
     }
 
-    sendToTelegramBot(allValues)
+   const botRes = await sendToTelegramBot(allValues)
+   window.scrollTo({top: 0, behavior: 'smooth'})
+   const openPopUp = await (botRes.data && botRes.data.ok) ? handlePurchaseSuccess(id) : null
   }
 
 
   return (
     <form className="checkout" onSubmit={handleSubmit(hadleConfirm)}>
-      <CheckoutOrder register={register} errors={errors} control={control} setValue={setValue}/>
+      {/* <CheckoutOrder register={register} errors={errors} control={control} setValue={setValue}/> */}
       <CheckoutProducts addedToBag={addedToBag} percentToAdd={percentToAdd} />
+      <PopupboxContainer />
+
     </form>
   )
 
