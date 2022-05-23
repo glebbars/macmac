@@ -5690,8 +5690,12 @@ input[type=number] {
       }
 
       &__btn{
+        display: block;
         width: 200px;
         margin-top: 50px;
+        box-sizing: border-box;
+        text-decoration: none;
+        text-align: center;
       }
     }
 

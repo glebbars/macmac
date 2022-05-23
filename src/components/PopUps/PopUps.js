@@ -115,17 +115,15 @@ export const handlePurchaseSuccess = (id) => {
 
   const content = (
     <div className='pop-up__success__content'>
-      <div className='pop-up__success__content__closing-cross' onClick={PopupboxManager.close}></div>
+      <div className='pop-up__success__content__closing-cross' onClick={() => window.location.pathname = '/'}></div>
       <h1 className='pop-up__success__content__header'>Заказ успешно оформлен</h1>
       <p className='pop-up__success__content__text'>
         Номер вашего заказа:
         <span className='pop-up__success__content__text__order-id'>{id}</span>
       </p>
-      <button className='pop-up__success__content__btn' type='submit'>Продолжить покупки</button>
-
+      <Link className='pop-up__success__content__btn' to='/'>Продолжить покупки</Link>
     </div>
   )
-
 
   PopupboxManager.open({
     content,
