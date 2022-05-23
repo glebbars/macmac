@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
 
-const CheckoutProductsConfirm = ({productsArr}) => {
-  const percentToAdd = useSelector((store) => store.app.percentToAdd)
+const CheckoutProductsConfirm = ({productsArr, percentToAdd}) => {
   const [totalPrice, setTotalPrice] = useState(0)
 
   useEffect(() => {

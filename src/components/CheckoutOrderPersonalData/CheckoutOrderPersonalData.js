@@ -8,7 +8,7 @@ const CheckoutOrderPersonalData = ({register, errors, control}) => {
       <h2 className="checkout__order__subheader">Шаг 1 - Информация пользователя</h2>
       <PersonalDataFields register={register} errors={errors} control={control} /> 
       <label className="checkout__order__person__callback__label">
-        <input {...register('callBack')} type="checkbox" className="checkout__order__person__callback__checkbox" />
+        <input {...register('notCallBack')} type="checkbox" className="checkout__order__person__callback__checkbox" />
         <span className="checkout__order__person__callback__text">Не перезванивать мне</span>
       </label>
     </div>

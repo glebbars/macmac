@@ -8,7 +8,7 @@ import {Link} from 'react-router-dom'
 import { useSelector } from "react-redux";
 
 export const openPopupboxOneClick = (productDataObj) => {
-  const fullProductName = `${productDataObj.category} ${productDataObj.model} ${productDataObj.capacity} ${productDataObj.color}`
+  const fullProductName = `- ${productDataObj.category} ${productDataObj.model} ${productDataObj.capacity} ${productDataObj.color} (${productDataObj.price.toLocaleString()}₴)`
 
   const productDataToBot = {
     order: fullProductName,

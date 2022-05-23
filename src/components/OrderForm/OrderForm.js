@@ -4,34 +4,7 @@ import { isValidPhoneNumber } from "react-phone-number-input";
 import Input from "react-phone-number-input/input";
 import axios from 'axios'
 import PersonalDataFields from '../PersonalDataFields/PersonalDataFields'
-
-const {REACT_APP_TELEGRAM_BOT_TOKEN} = process.env
-console.log(REACT_APP_TELEGRAM_BOT_TOKEN)
-
-export const sendToTelegramBot = (data) => {
-  axios.post('http://localhost:5000/orders', data).then(res => {
-
-    const dataToTelBot = () => {
-      let data = `<strong>Заказ: ${res.data.order} (${res.data.price})</strong> %0AИмя: ${res.data.fullName}`
-
-      if(res.data.email){
-        data = `${data} %0AEmail: ${res.data.email}`
-      }
-      if(res.data.phone){
-        data = `${data} %0A%0AТелефон: ${res.data.phone}`
-      }
-      return data
-    }
-
-    if(res.data.id > 0){
-      axios.post(`https://api.telegram.org/${REACT_APP_TELEGRAM_BOT_TOKEN}/sendMessage?chat_id=634614891&text=${dataToTelBot()}&parse_mode=html`)
-      .then(res => console.log(res))
-      .catch(err => console.log(err))
-    }
-  })
-}
-
-
+import {sendToTelegramBot} from '../sendToTelegramBot/sendToTelegramBot'
 
 const OrderForm = ({closePopUp, productDataToBot}) => {
   const { handleSubmit, formState: { errors }, register, control } = useForm({
@@ -39,7 +12,8 @@ const OrderForm = ({closePopUp, productDataToBot}) => {
       fullName: "",
       phone: "",
       order: productDataToBot.order,
-      price: productDataToBot.price
+      totalPrice: `${productDataToBot.price.toLocaleString()}₴`,
+      notCallBack: false
     }
   })
 

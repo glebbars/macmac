@@ -26,6 +26,7 @@ const customStyles = {
     return {
       ...styles,
       backgroundColor: isSelected ? '#FECCB7' : 'white',
+      color: '#343A40',
 
       ':hover': {
         ...styles[':hover'],
@@ -41,11 +42,8 @@ const api = new NovaPoshta({ apiKey: process.env.REACT_APP_NOVA_POSHTA_API_KEY }
 const CheckoutDeliveryNovaPoshtaSelects = ({register, errors, control}) => {
   const [warehouseOptions, setWarehouseOptions] = useState([])
 
-  console.log(errors)
-
   const cityOptions = async (inputValue) => {
     const json = await api.address.getCities()
-    console.log(json)
     const citiesArr = json.data.filter(el => el.SettlementTypeDescriptionRu === 'город')
     const options = citiesArr.map(city => {
       return {
@@ -108,7 +106,7 @@ const CheckoutDeliveryNovaPoshtaSelects = ({register, errors, control}) => {
         </div>
 
 
-      {warehouseOptions.length > 0 && (
+      {/* {warehouseOptions.length > 0 && ( */}
         <div className='pop-up__one-click__form__field-wrapper checkout__order__delivery__nova-poshta__field-wrapper'>
           <label  className='pop-up__one-click__form__label'>Отделение</label>
 
@@ -137,7 +135,7 @@ const CheckoutDeliveryNovaPoshtaSelects = ({register, errors, control}) => {
 
           {errors.delivery && <p className='pop-up__one-click__form__error'>Выберите отделение доставки</p>}
         </div>
-      )}
+      {/* )} */}
     </>
   )
 
