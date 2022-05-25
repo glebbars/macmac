@@ -1,20 +1,32 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import CheckoutProducts from '../CheckoutProducts/CheckoutProducts'
 import CheckoutOrder from '../CheckoutOrder/CheckoutOrder'
 import { useForm } from 'react-hook-form'
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import {sendToTelegramBot} from '../sendToTelegramBot/sendToTelegramBot'
 import { PopupboxContainer } from 'react-popupbox';
 import {handlePurchaseSuccess} from '../PopUps/PopUps'
+import { useHistory } from 'react-router-dom';
 
 const Checkout = () => {
+  const dispatch = useDispatch()
+  const history = useHistory()
   const addedToBag = useSelector((store) => store.app.addedToBag);
   const percentToAdd = useSelector((store) => store.app.percentToAdd)
 
+  useEffect(() => {
+    localStorage.setItem("macmac-addedToBag", JSON.stringify(addedToBag));
+
+    if(addedToBag.length === 0){
+      window.location.href = '/bag'
+    }
+  }, [addedToBag])
+
+
   const { handleSubmit, formState: { errors }, register, control, setValue } = useForm({
     defaultValues: {
-      fullName: "1",
-      phone: "+380676282524",
+      fullName: "",
+      phone: "",
       notCallBack: false,
       delivery: ['Самовывоз'],
       payment: 'Наличные при получении',
@@ -23,6 +35,15 @@ const Checkout = () => {
       totalPrice: 0
     }
   })
+
+  const handlePopUpClose = () => {
+    history.push('/')
+
+    dispatch({
+      type: 'ADD_TO_BAG',
+      payload: [],
+    });
+  }
 
   const hadleConfirm = async (values) => {
     const prices = values.order.map(product => product.price * product.quantity)
@@ -49,13 +70,13 @@ const Checkout = () => {
 
    const botRes = await sendToTelegramBot(allValues)
    window.scrollTo({top: 0, behavior: 'smooth'})
-   const openPopUp = await (botRes.data && botRes.data.ok) ? handlePurchaseSuccess(id) : null
+   return await (botRes.data && botRes.data.ok) ? handlePurchaseSuccess(id, handlePopUpClose) : null
   }
 
 
   return (
     <form className="checkout" onSubmit={handleSubmit(hadleConfirm)}>
-      {/* <CheckoutOrder register={register} errors={errors} control={control} setValue={setValue}/> */}
+      <CheckoutOrder register={register} errors={errors} control={control} setValue={setValue}/>
       <CheckoutProducts addedToBag={addedToBag} percentToAdd={percentToAdd} />
       <PopupboxContainer />
 

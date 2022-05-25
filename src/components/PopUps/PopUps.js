@@ -5,7 +5,7 @@ import "react-popupbox/dist/react-popupbox.css"
 import bag from '../../img/shopping-bag-black.svg'
 import bagGrey from '../../img/shopping-bag.svg'
 import {Link} from 'react-router-dom'
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 
 export const openPopupboxOneClick = (productDataObj) => {
   const fullProductName = `- ${productDataObj.category} ${productDataObj.model} ${productDataObj.capacity} ${productDataObj.color} (${productDataObj.price.toLocaleString()}₴)`
@@ -111,25 +111,33 @@ export const PurchasePopUp = ({addedToBag, activePopUp, productDataObj, closePop
 }
 
 
-export const handlePurchaseSuccess = (id) => {
+export const handlePurchaseSuccess = (id, handleClose) => {
+
+  const closePopUp = () => {
+    if(handleClose){
+      handleClose()
+    } else {
+      PopupboxManager.close()
+    }
+  }
 
   const content = (
     <div className='pop-up__success__content'>
-      <div className='pop-up__success__content__closing-cross' onClick={() => window.location.pathname = '/'}></div>
+      <div className='pop-up__success__content__closing-cross' onClick={closePopUp}></div>
       <h1 className='pop-up__success__content__header'>Заказ успешно оформлен</h1>
       <p className='pop-up__success__content__text'>
         Номер вашего заказа:
         <span className='pop-up__success__content__text__order-id'>{id}</span>
       </p>
-      <Link className='pop-up__success__content__btn' to='/'>Продолжить покупки</Link>
+      <button className='pop-up__success__content__btn' onClick={closePopUp}>Продолжить покупки</button>
     </div>
   )
 
   PopupboxManager.open({
     content,
     config: {
-      overlayClose: true,
-      escClose: true,
+      overlayClose: false,
+      escClose: false,
       className: 'pop-up__success',
       titleBar: {
         enable: false

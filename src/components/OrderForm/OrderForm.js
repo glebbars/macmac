@@ -21,7 +21,12 @@ const OrderForm = ({closePopUp, productDataToBot}) => {
   const hadleConfirm = async (values) => {
     const id = Math.floor(100000 + Math.random() * 900000)
 
-    const botRes = await sendToTelegramBot(values)
+    const allValues = {
+      id: id,
+      ...values
+    }
+
+    const botRes = await sendToTelegramBot(allValues)
     const openPopUp = await (botRes.data && botRes.data.ok) ? handlePurchaseSuccess(id) : null
   }
 

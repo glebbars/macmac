@@ -23,6 +23,7 @@ const CheckoutProductsCard = ({productDataObj}) => {
       <div className='checkout__products__card__price'>
         {productDataObj.price.toLocaleString()}.00&#x20b4;
       </div>
+      <div className="checkout__products__card__line"></div>
     </div>
   )
 }
