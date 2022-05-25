@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {Create, SimpleForm, ImageInput, ImageField, SelectInput, TextInput} from 'react-admin'
+import {Create, SimpleForm, ImageInput, ImageField, SelectInput, TextInput, NumberInput} from 'react-admin'
 import { validatePostForm, onTransform, brandChoices, getCategoryChoices, getModelChoices, getCapacityChoices, getColorChoices, productsWithCapacity, productsWithColors } from "../AdditionalFunctions/AdditionalFunctions"
 
 
@@ -11,15 +11,15 @@ const PostCreate = (props) =>{
     <SimpleForm validate={validatePostForm}> 
 
       <SelectInput 
-        onChange={e => setCreatedProduct({...createdProduct, brand: e.target.value})} 
-        source="brand" 
+        onChange={e => setCreatedProduct({brand: e.target.value})} 
+        source="description.brand" 
         choices={brandChoices} 
       />
 
       {createdProduct.brand && (
         <SelectInput 
           onChange={e => setCreatedProduct({...createdProduct, category: e.target.value})} 
-          source="category" 
+          source="description.category" 
           choices={getCategoryChoices(createdProduct.brand)} 
         />
       )}
@@ -27,7 +27,7 @@ const PostCreate = (props) =>{
       {createdProduct.category && (
         <SelectInput 
             onChange={e => setCreatedProduct({...createdProduct, model: e.target.value})} 
-            source="model" 
+            source="description.model" 
             choices={getModelChoices(createdProduct.category)}
           />
         )
@@ -35,23 +35,24 @@ const PostCreate = (props) =>{
 
       {productsWithCapacity.includes(createdProduct.category) && createdProduct.model && (
           <SelectInput 
-            choices={getCapacityChoices(createdProduct.model)}
+            choices={getCapacityChoices(createdProduct.category, createdProduct.model)}
             onChange={e => setCreatedProduct({...createdProduct, capacity: e.target.value})} 
-            source="capacity" 
+            source="description.capacity" 
           />
         )
       }
       
-      {createdProduct.capacity && ( 
+      {productsWithCapacity.includes(createdProduct.category) && createdProduct.model && ( 
         <SelectInput 
-          choices={getColorChoices(createdProduct.model)}
+          choices={getColorChoices(createdProduct.category, createdProduct.model)}
           onChange={e => setCreatedProduct({...createdProduct, color: e.target.value})} 
-          source="color"  
+          source="description.color"  
         />
-        )}
+      )}
 
       {createdProduct.model && 
-        <TextInput helperText="Это необязательное поле" source="price"/> 
+        // <TextInput helperText="Это необязательное поле" source="price"/> 
+        <NumberInput source="price" />
       }
 
       <ImageInput multiple source="pictures" label="" accept="image/*" placeholder={<p>Upload or Drop your images here</p>}>

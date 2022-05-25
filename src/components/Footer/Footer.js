@@ -61,13 +61,13 @@ const Footer = () => {
                 >
                   iPhone
                 </NavLink>
-                <NavLink
+                {/* <NavLink
                   to="/category/imac"
                   className='footer__link'
                   activeClassName='link_selected'
                 >
                   Mac
-                </NavLink>
+                </NavLink> */}
                 <NavLink
                   to="/category/ipad"
                   className='footer__link'

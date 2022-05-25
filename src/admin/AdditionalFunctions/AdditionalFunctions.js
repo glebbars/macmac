@@ -3,15 +3,15 @@ import axios from "axios";
 
 export const validatePostForm = (values) => {
   const errors = {};
-  
-  if (!values.brand) {
+
+  if (!values.description?.brand) {
       errors.name = 'Это поле обязательно';
   }
 
-  if (!values.category) {
+  if (!values.description?.category) {
       errors.name = 'Это поле обязательно';
   }
-  else if (!values.model) {
+  else if (!values.description?.model) {
       errors.price = 'Это поле обязательно';
   } 
   // else if (!values.capacity) {
@@ -28,48 +28,41 @@ export const validatePostForm = (values) => {
 
 
 export const onTransform = async (values) => {
-
+  
   const newFilesArr = values.pictures.filter(item => item.rawFile)
-  const filledValues = fillEmptyValues(values)
-  const price = await getPriceOfProductFromDB(filledValues)
-  filledValues.price = +price
-
+  const price = await getPriceOfProductFromDB(values.description)
   const compressedImgs = await compressImages(newFilesArr)
   const uploadedImgs = await uploadImage(compressedImgs)
-  filledValues.pictures = [...filledValues.pictures.filter(item => !item.rawFile), ...uploadedImgs]
 
-  return filledValues  
+  const allValues = {
+    id: values.id,
+    price: price ? price : values.price,
+    pictures: [...values.pictures.filter(item => !item.rawFile), ...uploadedImgs],
+    description: values.description
+  }
+
+  return allValues  
 };
 
-const fillEmptyValues = (values) => {
-  console.log(values)
-  const allValues = {
-    ...values,
-    capacity: values.capacity ? values.capacity : '',
-    color: values.color ? values.color : '',
-  }
-  return allValues
-}
 
-export const getPriceOfProductFromDB = (allValues) =>  {
+export const getPriceOfProductFromDB = async (description) =>  {
 
-  const filterredValuesArr = Object.fromEntries(
-    Object.entries(allValues).filter(([key, value]) => typeof value === 'string')
-  )
+  const response = await axios.get('http://localhost:5000/prices/1')
+  const priceListDB = response.data
 
+  const descriptionValues = Object.values(description).map(name => name.toLowerCase())
 
-  return axios.get('http://localhost:5000/prices/1')
-  .then(res => res.data)
-  .then(pricesObj => {
-    return Object.fromEntries(
-      Object.entries(pricesObj)
-        .filter(([key, value]) => {
-          console.log(filterredValuesArr.category, filterredValuesArr.model, filterredValuesArr.capacity, filterredValuesArr.color)
-          return key.includes(filterredValuesArr.category.toLowerCase()) && key.includes(filterredValuesArr.model.toLowerCase()) && key.includes(filterredValuesArr.capacity.toLowerCase()) && key.includes(filterredValuesArr.color.toLowerCase())
-        }
-      )
-    )
-  }).then(data => Object.values(data)[0] ? Object.values(data)[0] : allValues.price)
+  const productNamesArr = Object.keys(priceListDB).filter(key => {
+    const includesAll = descriptionValues.every(name => key.includes(name))
+
+    if(includesAll && key){
+      return priceListDB[key]
+    }
+  })
+
+  const price = priceListDB[productNamesArr[0]]
+
+  return price
 }
   
 const compressImages = async (filesArr) => {
@@ -133,7 +126,7 @@ export const getCategoryChoices = (value) => {
 export const appleCategoryChoices = [
   { id: 'iPhone', name: 'iPhone' },
   { id: 'iPad', name: 'iPad' },
-  { id: 'Mac', name: 'Mac' },
+  { id: 'Macbook', name: 'Macbook' },
   { id: 'Apple Watch', name: 'Apple Watch' },
   { id: 'AirPods', name: 'AirPods' }
 ]
@@ -144,6 +137,8 @@ export const getModelChoices = (value) => {
     case 'iPhone': return iphoneModelChoices;
     case 'iPad': return ipadModelChoices;
     case 'AirPods': return airPodsModelChoices;
+    case 'Macbook': return macBookModelChoices;
+    case 'Watch': return watchModelChoices;
     default: return []
   }
 }
@@ -175,20 +170,40 @@ const ipadModelChoices = [
   { id: 'Air 4', name: 'Air 4' }
 ]
 
-export const getCapacityChoices = (value) => {
-  switch(value){
-    // case '11':
+const macBookModelChoices = [
+  { id: 'Pro', name: 'Pro' },
+  { id: 'Air', name: 'Air' },
+]
+
+const watchModelChoices = [
+  { id: '6', name: '6' },
+  { id: '7', name: '7' }, 
+]
+
+
+export const getCapacityChoices = (category, model) => {
+  switch(category){
+    case 'iPhone': return getIphoneCapacityChoices(model)
+    case 'iPad': return getIpadCapacityChoices(model)
+    case 'Macbook': return getMacbookCapacityChoices(model)
+    default: return []
+  }
+}
+
+
+const getIphoneCapacityChoices = (model) => {
+  switch(model){
     case "SE 2020":
     case "12":
-      return [capacityOptions["64"], capacityOptions["128"]]
+      return [capacityOptions["64"], capacityOptions["128"]];
 
     case '12 Pro':
     case "12 Pro Max":
     case "13 Mini":
-      return [capacityOptions["256"], capacityOptions["512"]]
+      return [capacityOptions["256"], capacityOptions["512"]];
 
     case "13": 
-      return [capacityOptions["128"], capacityOptions["256"], capacityOptions["512"]]
+      return [capacityOptions["128"], capacityOptions["256"], capacityOptions["512"]];
 
     case '11':
     case "13 Pro":
@@ -196,9 +211,32 @@ export const getCapacityChoices = (value) => {
       return [capacityOptions["64"], capacityOptions["128"], capacityOptions["256"], capacityOptions["512"], capacityOptions["1"]]
       
     default: return []
+  } 
+}
 
+const getIpadCapacityChoices = (model) => {
+  switch(model){
+    case '10.2 2021':
+    case '11 2021':
+    case '12.9 2021':
+    case 'Mini 6':  
+    case 'Air 4':  
+      return [capacityOptions["64"], capacityOptions["128"], capacityOptions["256"], capacityOptions["512"], capacityOptions["1"]]
+        
+    default: return []
   }
 }
+
+const getMacbookCapacityChoices = (model) => {
+  switch(model){ 
+    case 'Air':  
+    case 'Pro':  
+      return [capacityOptions["64"], capacityOptions["128"], capacityOptions["256"], capacityOptions["512"], capacityOptions["1"]]
+        
+    default: return []
+  }
+}
+
 
 const capacityOptions = {
   "64":  { id: '64Gb', name: '64Gb' },
@@ -208,8 +246,21 @@ const capacityOptions = {
   "1": { id: '1Tb', name: '1Tb' },
 }
 
-export const getColorChoices = (value) => {
-  switch(value){
+export const getColorChoices = (category, model) => {
+
+  switch(category){
+    case 'iPhone': return getIphoneColorChoices(model);
+    case 'iPad': return getIpadColorChoices(model);
+    case 'Macbook': return getMacbookColorChoices(model);
+    case 'Watch': return getWatchColorChoices(model)
+    default: return [];
+  }
+
+}
+
+const getIphoneColorChoices = (model) => {
+  console.log(model)
+  switch(model){
     case '11':
       return [colorOptions["black"], colorOptions["white"],  colorOptions["purple"], colorOptions['product red'], colorOptions["yellow"], colorOptions["mind"]]
 
@@ -235,55 +286,57 @@ export const getColorChoices = (value) => {
   }
 }
 
-// DONE: 11; se 2020; 12; 12 pro/pro-max; 13 pro/pro-max
+const getIpadColorChoices = (model) => {
+  switch(model){
+    case '10.2 2021':
+    case '11 2021':
+    case '12.9 2021':
+    case 'Mini 6':  
+    case 'Air 4':  
+      return [colorOptions["silver"],  colorOptions["white"],  colorOptions['product red'], colorOptions["mind"], colorOptions['blue'],colorOptions["purple"]];
+        
+    default: return []
+  }
+}
+
+const getMacbookColorChoices = (model) => {
+  switch(model){ 
+    case 'Air':  
+    case 'Pro':
+      return [colorOptions["black"],  colorOptions["white"],  colorOptions['product red'], colorOptions["mind"], colorOptions['blue'],colorOptions["purple"]];
+        
+    default: return []
+  }
+}
+
+const getWatchColorChoices = (model) => {
+  switch(model){ 
+    case '6':  
+    case '7':
+      return [colorOptions["black"],  colorOptions["white"],  colorOptions['product red'], colorOptions["mind"], colorOptions['blue'],colorOptions["purple"]];
+        
+    default: return []
+  }
+}
 
 const colorOptions =  {
-  // 11 and se 2020
   'black': { id: 'Black', name: 'Black' },
   'product red': { id: 'Product Red', name: 'Product Red' },
   'yellow': { id: 'Yellow', name: 'Yellow' },
   'white': { id: 'White', name: 'White' },
   'mind': { id: 'Mind', name: 'Mind' },
   'purple': { id: 'Purple', name: 'Purple' },
-  // 11 and se 2020
-
-
-  // 12
   'blue': { id: 'Blue', name: 'Blue' },
-  // black
-  // white
-  // green
-  // purple
-  // yellow
-  // 12
-  
-
-  // 12 pro and 12 pro max
   'silver': { id: 'Silver', name: 'Silver' },
   'gold': { id: 'Gold', name: 'Gold' },
   'pacific blue': { id: 'Pacific Blue', name: 'Pacific Blue' },
   'graphite': { id: 'Graphite', name: 'Graphite' },
-  // 12 pro and 12 pro max
-  
-  
-  // 13 - 13 mini
   'pink': { id: 'Pink', name: 'Pink' },
   'midnight': { id: 'Midnight', name: 'Midnight' },
   'starlight': { id: 'Starlight', name: 'Starlight' },
   'green': { id: 'Green', name: 'Green' },
-  // blue 
-  // product red
-  // 13 - 13 mini
-  
-  
-  // 13 pro and 13 pro max
-  // gold 
-  // silver 
-  // graphite
   'alpine green': { id: 'Alpine Green', name: 'Alpine Green' },
-  'sierra blue': { id: 'Sierra Blue', name: 'Sierra Blue' },
-  // 13 pro and 13 pro max
-
+  'sierra blue': { id: 'Sierra Blue', name: 'Sierra Blue' }
 }
 
 export const colorForToggle = {
@@ -325,5 +378,5 @@ export const colorForToggle = {
   
 }
 
-export const productsWithCapacity = ['iPhone', 'iPad']
-export const productsWithColors = ['iPhone', 'iPad']
+export const productsWithCapacity = ['iPhone', 'iPad', 'Macbook']
+export const productsWithColors = ['iPhone', 'iPad', 'Macbook', 'Watch']

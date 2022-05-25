@@ -12,6 +12,7 @@ import BestSellers from "../BestSellers/BestSellers";
 
 const Main = () => {
 
+
   return (
     <div className="main">
 

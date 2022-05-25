@@ -11,6 +11,8 @@ const PostEdit = (props) =>{
       .then(res=> setCreatedProduct(res.data))
   }, [])
 
+  console.log(createdProduct)
+
   return (
     <Edit {...props} transform={onTransform} title='Edit a Product'>
         <SimpleForm validate={validatePostForm}>
@@ -18,34 +20,34 @@ const PostEdit = (props) =>{
 
           <SelectInput 
             onChange={e => setCreatedProduct({...createdProduct, brand: e.target.value})} 
-            source="brand" 
+            source="description.brand" 
             choices={brandChoices} 
           />
 
           <SelectInput 
             onChange={e => setCreatedProduct({...createdProduct, category: e.target.value})} 
-            source="category" 
-            choices={getCategoryChoices(createdProduct.brand)} 
+            source="description.category" 
+            choices={getCategoryChoices(createdProduct.description?.brand)} 
           />
 
           <SelectInput 
-            source="model"
-            choices={getModelChoices(createdProduct.category)}
+            source="description.model"
+            choices={getModelChoices(createdProduct.description?.category)}
             onChange={e => setCreatedProduct({...createdProduct, model: e.target.value})} 
           />
 
-          {createdProduct.capacity && (
+          {createdProduct.description?.capacity && (
             <SelectInput 
-              source="capacity"
-              choices={getCapacityChoices(createdProduct.model)}
+              source="description.capacity"
+              choices={getCapacityChoices(createdProduct.description?.category, createdProduct.description?.model)}
               onChange={e => setCreatedProduct({...createdProduct, capacity: e.target.value})} 
             /> 
           )}
 
-          {createdProduct.color && (
+          {createdProduct.description?.color && (
             <SelectInput 
-              source="color"
-              choices={getColorChoices(createdProduct.model)}
+              source="description.color"
+              choices={getColorChoices(createdProduct.description?.category, createdProduct.description?.model)}
               onChange={e => setCreatedProduct({...createdProduct, color: e.target.value})} 
             /> 
           )}

@@ -11,7 +11,7 @@ export const routesNames = {
   "all-products": "Все товары",
   "apple": "Apple",
   "iphone": 'iPhone',
-  "imac": 'iMac',
+  // "imac": 'iMac',
   "airpods": 'AirPods',
   "ipad": 'iPad',
   "macbook": 'Macbook',
@@ -53,15 +53,15 @@ export const categoryHeaderOptions = [
     class: 'header__menu__link',
   },
   {
-    link: '/category/imac',
-    text: 'iMac',
-    class: 'header__menu__link',
-  },
-  {
     link: '/category/macbook',
     text: 'Macbook',
-    class: 'header__menu__link header__menu__link_additional',
+    class: 'header__menu__link',
   },
+  // {
+  //   link: '/category/imac',
+  //   text: 'iMac',
+  //   class: 'header__menu__link  header__menu__link_additional',
+  // },
   {
     link: '/category/watch',
     text: 'Watch',

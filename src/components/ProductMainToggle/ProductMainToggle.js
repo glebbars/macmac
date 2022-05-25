@@ -4,8 +4,8 @@ import axios from 'axios';
 
 const ProductMainToggle = ({productDataObj, setProductDataObj}) => {
   const [similarProducts, setSimilarProducts] = useState([])
-  const colorChoices = getColorChoices(productDataObj.model)
-  const capacityChoices = getCapacityChoices(productDataObj.model)
+  const colorChoices = getColorChoices(productDataObj.category, productDataObj.model)
+  const capacityChoices = getCapacityChoices(productDataObj.category, productDataObj.model)
 
   useEffect(() => {
     axios.get(`http://localhost:5000/posts`).then(res => res.data)

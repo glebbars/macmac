@@ -1,5 +1,5 @@
 import React from "react";
-import {List, Datagrid, TextField, EditButton, DeleteButton, Pagination} from 'react-admin'
+import {List, Datagrid, TextField, NumberField, EditButton, DeleteButton, Pagination} from 'react-admin'
 
 const PostPagination = props => <Pagination rowsPerPageOptions={[5, 10, 25, 50, 100]} {...props} />;
 
@@ -9,12 +9,12 @@ const PostList = (props) =>{
     <List title='Products' {...props} pagination={<PostPagination />}>
       <Datagrid>
         <TextField source="id"/>
-        <TextField source="brand"/>
-        <TextField source="category"/>
-        <TextField source="model"/>
-        <TextField source="capacity" />
-        <TextField source="color" />
-        <TextField source="price" />
+        <TextField source="description.brand"/>
+        <TextField source="description.category"/>
+        <TextField source="description.model"/>
+        <TextField source="description.capacity" />
+        <TextField source="description.color" />
+        <NumberField source="price" />
         <EditButton basePath="/posts"/>
         <DeleteButton basePath="/posts"/>
       </Datagrid>

@@ -1,415 +1,13 @@
 {
   "posts": [
     {
-      "brand": "Apple",
-      "category": "iPhone",
-      "model": "SE 2020",
-      "capacity": "128Gb",
-      "color": "Black",
-      "label": "Хит продаж",
-      "pictures": [
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644359238/uploaded_images/lnkihpgghfp1bhggti9b.png",
-          "id": "1189b4cbec68eb721788fca0f715074b"
-        }
-      ],
-      "price": 16650,
-      "id": 2
-    },
-    {
-      "brand": "Apple",
-      "category": "iPhone",
-      "model": "13 Pro",
-      "capacity": "1Tb",
-      "color": "Gold",
-      "price": 57720,
-      "pictures": [
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644359248/uploaded_images/hyi8npb1vwufpkx3a5et.png",
-          "id": "dd8ca7f016cb4b4b831e921c1113832b"
-        }
-      ],
-      "id": 3
-    },
-    {
-      "brand": "Apple",
-      "category": "iPhone",
-      "model": "SE 2020",
-      "capacity": "128Gb",
-      "color": "Product Red",
-      "price": 12,
-      "pictures": [
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644359373/uploaded_images/ltpdxjraszsyxyupxt8o.png",
-          "id": "98a9134d0af0cc2b8a78c8b4a1952dd0"
-        }
-      ],
-      "id": 4
-    },
-    {
-      "brand": "Apple",
-      "category": "iPhone",
-      "model": "13 Mini",
-      "capacity": "256Gb",
-      "color": "Starlight",
-      "price": 2,
-      "pictures": [
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644387686/uploaded_images/w5oahpp676lvudmtqrkb.png",
-          "id": "aa89fcce68301351eeb7c02f0cf04af9"
-        }
-      ],
-      "id": 5
-    },
-    {
-      "brand": "Apple",
-      "category": "iPhone",
-      "model": "12 Pro Max",
-      "capacity": "256Gb",
-      "color": "Pacific Blue",
-      "price": 2,
-      "pictures": [
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1646163715/uploaded_images/igvjbzwcte8sl3jcn6oy.png",
-          "id": "a720a97cd5c62004eb35bac4d5990d18"
-        }
-      ],
-      "id": 6
-    },
-    {
-      "brand": "Apple",
-      "category": "iPad",
-      "model": "5",
-      "capacity": "256Gb",
-      "color": "Graphite",
-      "price": 2,
-      "pictures": [
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644971094/uploaded_images/ugondrkx97lg1mn0cb0q.png",
-          "id": "0fb7bf25dafdc0a6b75ab601d3d48bf8"
-        }
-      ],
-      "id": 8
-    },
-    {
-      "brand": "Apple",
-      "category": "iPhone",
-      "model": "SE 2020",
-      "capacity": "128Gb",
-      "color": "Product Red",
-      "price": 2,
-      "pictures": [
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644359373/uploaded_images/ltpdxjraszsyxyupxt8o.png",
-          "id": "98a9134d0af0cc2b8a78c8b4a1952dd0"
-        }
-      ],
-      "id": 12
-    },
-    {
-      "brand": "Apple",
-      "category": "iPhone",
-      "model": "13 Mini",
-      "capacity": "256Gb",
-      "color": "Pink",
-      "price": 27930,
-      "pictures": [
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644387686/uploaded_images/w5oahpp676lvudmtqrkb.png",
-          "id": "aa89fcce68301351eeb7c02f0cf04af9"
-        }
-      ],
-      "id": 13
-    },
-    {
-      "brand": "Apple",
-      "category": "iPhone",
-      "model": "12 Pro Max",
-      "capacity": "512Gb",
-      "color": "Pacific Blue",
-      "label": "Хит продаж",
-      "price": 2,
-      "pictures": [
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644387720/uploaded_images/bi3eampikig2eyq39j6t.png",
-          "id": "204f8edba1c36ea9084fc942c5499510"
-        }
-      ],
-      "id": 14
-    },
-    {
-      "brand": "Apple",
-      "category": "iPhone",
-      "model": "12 Pro Max",
-      "capacity": "256Gb",
-      "color": "Pacific Blue",
-      "price": 2,
-      "pictures": [
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644971094/uploaded_images/ugondrkx97lg1mn0cb0q.png",
-          "id": "0fb7bf25dafdc0a6b75ab601d3d48bf8"
-        }
-      ],
-      "id": 16
-    },
-    {
-      "brand": "Apple",
-      "category": "iPhone",
-      "model": "SE 2020",
-      "capacity": "128Gb",
-      "color": "Black",
-      "pictures": [
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644359238/uploaded_images/lnkihpgghfp1bhggti9b.png",
-          "id": "1189b4cbec68eb721788fca0f715074b"
-        }
-      ],
-      "price": 16650,
-      "id": 18
-    },
-    {
-      "brand": "Apple",
-      "category": "iPhone",
-      "model": "13 Pro",
-      "capacity": "1Tb",
-      "color": "Gold",
-      "price": 57720,
-      "pictures": [
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644359248/uploaded_images/hyi8npb1vwufpkx3a5et.png",
-          "id": "dd8ca7f016cb4b4b831e921c1113832b"
-        }
-      ],
-      "id": 19
-    },
-    {
-      "brand": "Apple",
-      "category": "iPhone",
-      "model": "SE 2020",
-      "capacity": "128Gb",
-      "color": "Product Red",
-      "price": 2,
-      "pictures": [
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644359373/uploaded_images/ltpdxjraszsyxyupxt8o.png",
-          "id": "98a9134d0af0cc2b8a78c8b4a1952dd0"
-        }
-      ],
-      "id": 20
-    },
-    {
-      "brand": "Apple",
-      "category": "iPhone",
-      "model": "13 Mini",
-      "capacity": "256Gb",
-      "color": "Pink",
-      "price": 27930,
-      "pictures": [
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644387686/uploaded_images/w5oahpp676lvudmtqrkb.png",
-          "id": "aa89fcce68301351eeb7c02f0cf04af9"
-        }
-      ],
-      "id": 21
-    },
-    {
-      "brand": "Apple",
-      "category": "iPhone",
-      "model": "12 Pro Max",
-      "capacity": "512Gb",
-      "color": "Pacific Blue",
-      "price": 2,
-      "pictures": [
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644387720/uploaded_images/bi3eampikig2eyq39j6t.png",
-          "id": "204f8edba1c36ea9084fc942c5499510"
-        }
-      ],
-      "id": 22
-    },
-    {
-      "brand": "Apple",
-      "category": "iPhone",
-      "model": "12 Pro Max",
-      "capacity": "256Gb",
-      "color": "Pacific Blue",
-      "price": 2,
-      "pictures": [
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644971094/uploaded_images/ugondrkx97lg1mn0cb0q.png",
-          "id": "0fb7bf25dafdc0a6b75ab601d3d48bf8"
-        }
-      ],
-      "id": 24
-    },
-    {
-      "brand": "Apple",
-      "category": "iPhone",
-      "model": "SE 2020",
-      "capacity": "128Gb",
-      "color": "Black",
-      "pictures": [
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644359238/uploaded_images/lnkihpgghfp1bhggti9b.png",
-          "id": "1189b4cbec68eb721788fca0f715074b"
-        }
-      ],
-      "price": 16650,
-      "id": 26
-    },
-    {
-      "brand": "Apple",
-      "category": "iPhone",
-      "model": "13 Pro",
-      "capacity": "1Tb",
-      "color": "Gold",
-      "price": 57720,
-      "pictures": [
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644359248/uploaded_images/hyi8npb1vwufpkx3a5et.png",
-          "id": "dd8ca7f016cb4b4b831e921c1113832b"
-        }
-      ],
-      "id": 27
-    },
-    {
-      "brand": "Apple",
-      "category": "iPhone",
-      "model": "SE 2020",
-      "capacity": "128Gb",
-      "color": "Product Red",
-      "price": 2,
-      "pictures": [
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644359373/uploaded_images/ltpdxjraszsyxyupxt8o.png",
-          "id": "98a9134d0af0cc2b8a78c8b4a1952dd0"
-        }
-      ],
-      "id": 28
-    },
-    {
-      "brand": "Apple",
-      "category": "iPhone",
-      "model": "13 Mini",
-      "capacity": "256Gb",
-      "color": "Pink",
-      "price": 27930,
-      "pictures": [
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644387686/uploaded_images/w5oahpp676lvudmtqrkb.png",
-          "id": "aa89fcce68301351eeb7c02f0cf04af9"
-        }
-      ],
-      "id": 29
-    },
-    {
-      "brand": "Apple",
-      "category": "iPhone",
-      "model": "12 Pro Max",
-      "capacity": "512Gb",
-      "color": "Pacific Blue",
-      "price": 2,
-      "pictures": [
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644387720/uploaded_images/bi3eampikig2eyq39j6t.png",
-          "id": "204f8edba1c36ea9084fc942c5499510"
-        }
-      ],
-      "id": 30
-    },
-    {
-      "brand": "Apple",
-      "category": "iPhone",
-      "model": "12 Pro Max",
-      "capacity": "256Gb",
-      "color": "Pacific Blue",
-      "price": 2,
-      "pictures": [
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1644971094/uploaded_images/ugondrkx97lg1mn0cb0q.png",
-          "id": "0fb7bf25dafdc0a6b75ab601d3d48bf8"
-        }
-      ],
-      "id": 32
-    },
-    {
-      "brand": "Apple",
-      "category": "iPhone",
-      "model": "12 Pro",
-      "capacity": "256Gb",
-      "color": "Graphite",
-      "price": 39240,
-      "pictures": [
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648052267/uploaded_images/cbuxruehmehfphsifusr.png",
-          "id": "3f65bbeacfc336474fb0b8fc6f82a489"
-        },
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648052267/uploaded_images/krjicm1bl6quuipns3hs.png",
-          "id": "7a75d3559d47f24f0c6b1d8e722eaa61"
-        }
-      ],
-      "id": 33
-    },
-    {
-      "brand": "Apple",
-      "category": "iPhone",
-      "model": "12",
-      "capacity": "128Gb",
-      "color": "Black",
-      "price": 25200,
-      "pictures": [
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648226262/uploaded_images/ue7rvjyaosk82hwpubdl.png",
-          "id": "a2490c9cc7631e4c11f3946882f6866c"
-        },
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648226262/uploaded_images/yssk8bh11m10polyjyzj.png",
-          "id": "91961db00ac104d1a2cfedeadfead8d3"
-        },
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648226262/uploaded_images/u3qplpgrvxqtbbf8iyvu.png",
-          "id": "27c665afd9f35365583b1a7247a883af"
-        }
-      ],
-      "id": 34
-    },
-    {
-      "brand": "Apple",
-      "category": "iPhone",
-      "model": "13 Pro Max",
-      "capacity": "512Gb",
-      "color": "Alpine Green",
-      "price": 55080,
-      "pictures": [
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648322916/uploaded_images/eaux4jb7akm7zftlmjxz.png",
-          "id": "94ce3d96d800277b6d434fc128912eef"
-        }
-      ],
-      "id": 35
-    },
-    {
-      "brand": "Apple",
-      "category": "iPhone",
-      "model": "12",
-      "capacity": "64Gb",
-      "color": "Mind",
-      "price": 2,
-      "pictures": [
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648322943/uploaded_images/v2todi0mntqkj72yqddv.png",
-          "id": "b8ad580448e2f179e862abf71b3d7a4e"
-        }
-      ],
-      "id": 36
-    },
-    {
-      "brand": "Apple",
-      "category": "iPhone",
-      "model": "11",
-      "capacity": "64Gb",
-      "color": "Black",
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "11",
+        "capacity": "64Gb",
+        "color": "Black"
+      },
       "price": 2,
       "pictures": [
         {
@@ -424,11 +22,13 @@
       "id": 37
     },
     {
-      "brand": "Apple",
-      "category": "iPhone",
-      "model": "11",
-      "capacity": "64Gb",
-      "color": "White",
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "11",
+        "capacity": "64Gb",
+        "color": "White"
+      },
       "price": 2,
       "pictures": [
         {
@@ -443,11 +43,13 @@
       "id": 38
     },
     {
-      "brand": "Apple",
-      "category": "iPhone",
-      "model": "11",
-      "capacity": "64Gb",
-      "color": "Purple",
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "11",
+        "capacity": "64Gb",
+        "color": "Purple"
+      },
       "price": 22075,
       "pictures": [
         {
@@ -462,11 +64,13 @@
       "id": 39
     },
     {
-      "brand": "Apple",
-      "category": "iPhone",
-      "model": "11",
-      "capacity": "64Gb",
-      "color": "Yellow",
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "11",
+        "capacity": "64Gb",
+        "color": "Yellow"
+      },
       "label": "Хит продаж",
       "price": 20720,
       "pictures": [
@@ -482,11 +86,13 @@
       "id": 40
     },
     {
-      "brand": "Apple",
-      "category": "iPhone",
-      "model": "11",
-      "capacity": "64Gb",
-      "color": "Mind",
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "11",
+        "capacity": "64Gb",
+        "color": "Mind"
+      },
       "price": 2,
       "label": "Хит продаж",
       "pictures": [
@@ -502,11 +108,13 @@
       "id": 41
     },
     {
-      "brand": "Apple",
-      "category": "iPhone",
-      "model": "11",
-      "capacity": "64Gb",
-      "color": "Product Red",
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "11",
+        "capacity": "64Gb",
+        "color": "Product Red"
+      },
       "price": 19820,
       "pictures": [
         {
@@ -521,11 +129,13 @@
       "id": 42
     },
     {
-      "brand": "Apple",
-      "category": "iPhone",
-      "model": "11",
-      "capacity": "128Gb",
-      "color": "Black",
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "11",
+        "capacity": "128Gb",
+        "color": "Black"
+      },
       "price": 23680,
       "pictures": [
         {
@@ -540,11 +150,13 @@
       "id": 43
     },
     {
-      "brand": "Apple",
-      "category": "iPhone",
-      "model": "11",
-      "capacity": "128Gb",
-      "color": "White",
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "11",
+        "capacity": "128Gb",
+        "color": "White"
+      },
       "price": 23680,
       "label": "Хит продаж",
       "pictures": [
@@ -560,103 +172,95 @@
       "id": 44
     },
     {
-      "brand": "Apple",
-      "category": "AirPods",
-      "model": "2",
+      "description": {
+        "brand": "Apple",
+        "category": "iPad",
+        "model": "11 2021",
+        "capacity": "64Gb",
+        "color": "White"
+      },
+      "price": 37900,
       "pictures": [
         {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648914866/uploaded_images/zvijvmr4ndg5q59vr0is.png",
-          "id": "74d4f68d66614dd4acec10636e96dfec"
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1653505608/uploaded_images/zwfkcropvl3ktgsuldv6.png",
+          "id": "1328e1a58478f5f731641ad36d693661"
         },
         {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648914976/uploaded_images/dbs2vpbzrtlhshh9xwuj.png",
-          "id": "5fb468483186a4a9fb36f05277eb924d"
-        },
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648914977/uploaded_images/l2n2funhkcdkkpsizovc.png",
-          "id": "afe8a53e91e3ee39aa480ee26f728d7c"
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1653505608/uploaded_images/ayzkf4jlpjaitgap50ow.png",
+          "id": "ad880f5788840019ab8ea6dffc310a2d"
         }
       ],
-      "price": 6105,
-      "capacity": "",
-      "color": "",
       "id": 45
     },
     {
-      "brand": "Apple",
-      "category": "AirPods",
-      "model": "Pro",
+      "id": 46,
+      "price": 23680,
       "pictures": [
         {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648915198/uploaded_images/skupjxqsikl2snolp8ty.png",
-          "id": "0d71a6493300043c5fc41d84bd8ae2db"
-        },
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648915197/uploaded_images/m7g7dohqzaafcnjnrxcx.png",
-          "id": "a9d6022d62bdbc6eac6c7d9224d1e549"
-        },
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648915198/uploaded_images/h7hfdwacsr9mjnb8unlu.png",
-          "id": "5961f2050e2c2fbcb79b92759c7198d0"
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1653508784/uploaded_images/htpjojwdbrd9jt1nvicr.png",
+          "id": "ff3869abcbfc9875dbd9fd9ece49bbc8"
         }
       ],
-      "price": 7475,
-      "capacity": "",
-      "color": "",
-      "id": 46
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "11",
+        "capacity": "128Gb",
+        "color": "Black"
+      }
     },
     {
-      "brand": "Apple",
-      "category": "AirPods",
-      "model": "3",
+      "id": 47,
+      "price": 7800,
       "pictures": [
         {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648916045/uploaded_images/lowgpoi1fbvalavy6ff8.png",
-          "id": "35dc4ee0f1a91e07999be184cd8f6ed3"
-        },
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648916045/uploaded_images/sba4nn4auqlg9sgkez9l.png",
-          "id": "6514ae3354835d0bbc8e10200f08a826"
-        },
-        {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1648916045/uploaded_images/zz2otud48d4ihgfdb7g0.png",
-          "id": "877ce765ce088e4e20b7c9ad38904990"
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1653509788/uploaded_images/toedzqvfaxwmt8iccplw.png",
+          "id": "7ec03c4b6ab7cc105dd7a0290f8841b8"
         }
       ],
-      "price": 18870,
-      "capacity": "",
-      "color": "",
-      "id": 47
+      "description": {
+        "brand": "Apple",
+        "category": "AirPods",
+        "model": "2"
+      }
     },
     {
-      "brand": "Apple",
-      "category": "iPhone",
-      "model": "13",
-      "capacity": "512Gb",
-      "color": "Pink",
-      "price": 25825,
+      "id": 48,
+      "price": 37000,
       "pictures": [
         {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1650553012/uploaded_images/mt5nprhrkaezvisyptcx.png",
-          "id": "ede450088f103a0d28ef9cfc782f8308"
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1653510324/uploaded_images/ulx9knqtvau9yfwbgfxb.png",
+          "id": "4aa510ee46395da6136b5149bbef83cd"
         }
       ],
-      "id": 48
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "13 Mini",
+        "capacity": "512Gb",
+        "color": "Starlight"
+      }
     },
     {
-      "brand": "Apple",
-      "category": "iPhone",
-      "model": "11",
-      "capacity": "1Tb",
-      "color": "Yellow",
-      "price": 100000,
+      "id": 49,
+      "price": 28490,
       "pictures": [
         {
-          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1651515787/uploaded_images/p9nikr5otwaiecnjkpse.png",
-          "id": "f016fe3a246b9a1b9df752594568899c"
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1653511859/uploaded_images/f3ug5goghselkpnmg2yg.png",
+          "id": "698c849385accd311555b57c8cdd99fb"
+        },
+        {
+          "url": "https://res.cloudinary.com/dlt6mfxib/image/upload/v1653511859/uploaded_images/whgee1cjk01fciyjxuzv.png",
+          "id": "5e00643e5e589c906e35299f2451f029"
         }
       ],
-      "id": 49
+      "description": {
+        "brand": "Apple",
+        "category": "iPad",
+        "model": "10.2 2021",
+        "color": "Silver",
+        "capacity": "256Gb"
+      }
     }
   ],
   "orders": [
@@ -1389,7 +993,7 @@
       "apple ipad 10.2\" 2021 wi-fi 64gb space gray (mk2k3)": 15725,
       "apple ipad 10.2\" 2021 wi-fi 256gb space gray (mk2n3)": 20350,
       "apple ipad 10.2\" 2021 wi-fi 256gb silver (mk2p3)": 20350,
-      "apple ipad 10.2\" 2021 wi-fi + cellular 256gb silver (mk6a3, mk4h3)": 28490,
+      "apple ipad 10.2 2021 wi-fi + cellular 256gb silver (mk6a3, mk4h3)": 28490,
       "apple ipad 10.2\" 2021 wi-fi + cellular 256gb space gray ()": 28490,
       "ipad air 4 10.9'' wi-fi 64gb space gray (myfm2)": 22200,
       "ipad air 4 10.9'' wi-fi 64gb silver (myfn2)": 22200,
