@@ -14,12 +14,6 @@ export const validatePostForm = (values) => {
   else if (!values.description?.model) {
       errors.price = 'Это поле обязательно';
   } 
-  // else if (!values.capacity) {
-  //     errors.price = 'The capacity is required';
-  // } 
-  // else if (!values.color) {
-  //     errors.color = 'The color is required';
-  // } 
   else if (!values.pictures || values.pictures.length === 0) {
       errors.pictures = 'Please upload pictures';
   } 
@@ -28,7 +22,7 @@ export const validatePostForm = (values) => {
 
 
 export const onTransform = async (values) => {
-  
+
   const newFilesArr = values.pictures.filter(item => item.rawFile)
   const price = await getPriceOfProductFromDB(values.description)
   const compressedImgs = await compressImages(newFilesArr)
@@ -36,6 +30,7 @@ export const onTransform = async (values) => {
 
   const allValues = {
     id: values.id,
+    fullName: values.fullName,
     price: price ? price : values.price,
     pictures: [...values.pictures.filter(item => !item.rawFile), ...uploadedImgs],
     description: values.description
@@ -84,14 +79,17 @@ const resizeFile = (file) => new Promise ((resolve) => {
     "file"
   );
 });
-  
+
+const {REACT_APP_CLOUDINARY_PRESET_NAME, REACT_APP_CLOUDINARY_CLOUD_NAME} = process.env
+
+
 const uploadImage = async (compressedImgs) => {
   const attachments = await Promise.all(
     compressedImgs.map(img => {
       const data = new FormData();
       data.append('file', img);
-      data.append('upload_preset', "njebqo0r")
-      return axios.post("https://api.cloudinary.com/v1_1/dlt6mfxib/image/upload", data)
+      data.append('upload_preset', `${REACT_APP_CLOUDINARY_PRESET_NAME}`)
+      return axios.post(`https://api.cloudinary.com/v1_1/${REACT_APP_CLOUDINARY_CLOUD_NAME}/image/upload`, data)
       .then(res => {
         return {
           url: res.data.secure_url,
@@ -144,10 +142,11 @@ export const getModelChoices = (value) => {
 }
 
 const iphoneModelChoices = [
-  { id: '11', name: '11' },
   { id: 'SE 2020', name: 'SE 2020' },
+  { id: 'SE 3', name: 'SE 3' },
+  { id: '11', name: '11' },
   { id: '12', name: '12' },
-  // { id: '12 mini', name: '12 Mini' },
+  { id: '12 Mini', name: '12 Mini' },
   { id: '12 Pro', name: '12 Pro' },
   { id: '12 Pro Max', name: '12 Pro Max' },
   { id: '13', name: '13' },
@@ -194,21 +193,27 @@ export const getCapacityChoices = (category, model) => {
 const getIphoneCapacityChoices = (model) => {
   switch(model){
     case "SE 2020":
-    case "12":
       return [capacityOptions["64"], capacityOptions["128"]];
+      
+    case "SE 3":
+    case "11":
+      return [capacityOptions["64"], capacityOptions["128"], capacityOptions["256"]];
+
+    case '12':
+    case '12 Mini':
+      return [capacityOptions["64"], capacityOptions["128"], capacityOptions["256"], capacityOptions["512"]];
 
     case '12 Pro':
     case "12 Pro Max":
-    case "13 Mini":
-      return [capacityOptions["256"], capacityOptions["512"]];
+      return [capacityOptions["128"], capacityOptions["256"]];
 
     case "13": 
+    case "13 Mini":
       return [capacityOptions["128"], capacityOptions["256"], capacityOptions["512"]];
 
-    case '11':
     case "13 Pro":
     case "13 Pro Max":
-      return [capacityOptions["64"], capacityOptions["128"], capacityOptions["256"], capacityOptions["512"], capacityOptions["1"]]
+      return [capacityOptions["128"], capacityOptions["256"], capacityOptions["512"], capacityOptions["1"]]
       
     default: return []
   } 
@@ -259,14 +264,17 @@ export const getColorChoices = (category, model) => {
 }
 
 const getIphoneColorChoices = (model) => {
-  console.log(model)
   switch(model){
+    case "SE 2020":
+      return [colorOptions["black"], colorOptions["white"], colorOptions['product red']];
+
+    case "SE 3":
+      return [colorOptions["midnight"], colorOptions["starlight"], colorOptions['product red']];
+
     case '11':
       return [colorOptions["black"], colorOptions["white"],  colorOptions["purple"], colorOptions['product red'], colorOptions["yellow"], colorOptions["mind"]]
-
-    case "SE 2020":
-      return [colorOptions["black"], colorOptions["white"], colorOptions['product red']]
-
+      
+    case "12 Mini":
     case '12':
       return [colorOptions["black"],  colorOptions["white"],  colorOptions['product red'], colorOptions["mind"], colorOptions['blue'],colorOptions["purple"]]
 

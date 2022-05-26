@@ -6,6 +6,8 @@ import { validatePostForm, onTransform, brandChoices, getCategoryChoices, getMod
 const PostCreate = (props) =>{
   const [createdProduct, setCreatedProduct] = useState({})
 
+  const fullName = Object.values(createdProduct).join(' ')
+
   return (
     <Create {...props} transform={onTransform} title='Create a Product'>
     <SimpleForm validate={validatePostForm}> 
@@ -54,6 +56,16 @@ const PostCreate = (props) =>{
         // <TextInput helperText="Это необязательное поле" source="price"/> 
         <NumberInput source="price" />
       }
+
+      {createdProduct.brand && (
+        <TextInput
+          initialValue={fullName} 
+          onChange={e => setCreatedProduct({...createdProduct, fullName: e.target.value})} 
+          source="fullName"  
+        />
+      )}
+
+
 
       <ImageInput multiple source="pictures" label="" accept="image/*" placeholder={<p>Upload or Drop your images here</p>}>
         <ImageField source="src" title="title" />

@@ -8,10 +8,10 @@ const PostEdit = (props) =>{
 
   useEffect(() => {
     axios.get(`http://localhost:5000/posts/${props.id}`)
-      .then(res=> setCreatedProduct(res.data))
+    .then(res=> setCreatedProduct(res.data))
   }, [])
 
-  console.log(createdProduct)
+  const fullName = createdProduct.description ? Object.values(createdProduct.description).join(' ') : ''
 
   return (
     <Edit {...props} transform={onTransform} title='Edit a Product'>
@@ -19,28 +19,52 @@ const PostEdit = (props) =>{
           <TextInput disabled source='id' /> 
 
           <SelectInput 
-            onChange={e => setCreatedProduct({...createdProduct, brand: e.target.value})} 
             source="description.brand" 
             choices={brandChoices} 
+            onChange={e => setCreatedProduct({
+              ...createdProduct,
+              description: {
+                ...createdProduct.description,
+                brand: e.target.value
+              }
+            })} 
           />
 
           <SelectInput 
-            onChange={e => setCreatedProduct({...createdProduct, category: e.target.value})} 
             source="description.category" 
             choices={getCategoryChoices(createdProduct.description?.brand)} 
+            onChange={e => setCreatedProduct({
+              ...createdProduct,
+              description: {
+                ...createdProduct.description,
+                category: e.target.value
+              }
+            })} 
           />
 
           <SelectInput 
             source="description.model"
             choices={getModelChoices(createdProduct.description?.category)}
-            onChange={e => setCreatedProduct({...createdProduct, model: e.target.value})} 
+            onChange={e => setCreatedProduct({
+              ...createdProduct,
+              description: {
+                ...createdProduct.description,
+                model: e.target.value
+              }
+            })} 
           />
 
           {createdProduct.description?.capacity && (
             <SelectInput 
               source="description.capacity"
               choices={getCapacityChoices(createdProduct.description?.category, createdProduct.description?.model)}
-              onChange={e => setCreatedProduct({...createdProduct, capacity: e.target.value})} 
+              onChange={e => setCreatedProduct({
+                ...createdProduct, 
+                description: {
+                  ...createdProduct.description,
+                  capacity: e.target.value
+                }
+              })} 
             /> 
           )}
 
@@ -48,11 +72,25 @@ const PostEdit = (props) =>{
             <SelectInput 
               source="description.color"
               choices={getColorChoices(createdProduct.description?.category, createdProduct.description?.model)}
-              onChange={e => setCreatedProduct({...createdProduct, color: e.target.value})} 
+              onChange={e => setCreatedProduct({
+                ...createdProduct, 
+                description: {
+                  ...createdProduct.description,
+                  color: e.target.value
+                }
+              })} 
             /> 
           )}
 
           <TextInput helperText="Это необязательное поле" source="price"/> 
+
+          {createdProduct.description?.brand && (
+            <TextInput
+              initialValue={fullName} 
+              onChange={e => setCreatedProduct({...createdProduct, fullName: e.target.value})} 
+              source="fullName"  
+            />
+          )}
 
          <ImageInput multiple source="pictures" label="" accept="image/*"  placeholder={<p>Upload or Drop your images here</p>}>
             <ImageField source="url" title="title" />
