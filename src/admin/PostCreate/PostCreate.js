@@ -53,8 +53,7 @@ const PostCreate = (props) =>{
       )}
 
       {createdProduct.model && 
-        // <TextInput helperText="Это необязательное поле" source="price"/> 
-        <NumberInput source="price" />
+        <NumberInput helperText="Это необязательное поле, цена подтянется из базы данных" source="price" />
       }
 
       {createdProduct.brand && (

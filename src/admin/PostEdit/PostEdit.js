@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import {Edit, SimpleForm, TextInput, ImageInput, ImageField, SelectInput} from 'react-admin'
+import {Edit, SimpleForm, TextInput, ImageInput, ImageField, SelectInput, NumberInput} from 'react-admin'
 import {brandChoices, validatePostForm, onTransform, getCategoryChoices, getModelChoices, getCapacityChoices, getColorChoices } from "../AdditionalFunctions/AdditionalFunctions";
 import axios from 'axios'
 
@@ -82,7 +82,7 @@ const PostEdit = (props) =>{
             /> 
           )}
 
-          <TextInput helperText="Это необязательное поле" source="price"/> 
+          <NumberInput helperText="Это необязательное поле, цена подтянется из базы данных" source="price" />
 
           {createdProduct.description?.brand && (
             <TextInput

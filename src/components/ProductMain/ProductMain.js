@@ -33,7 +33,7 @@ const ProductMain = ({productDataObj, setProductDataObj}) => {
   return(
     <div className="product__main">
       <div className="product__main__header">
-        <h1 className="product__main__header__text">{productDataObj.category} {productDataObj.model} {productDataObj.capacity} {productDataObj.color}</h1>
+        <h1 className="product__main__header__text">{productDataObj.fullName}</h1>
         {productDataObj.label === 'Хит продаж' && <div className="product__main__header__label">{productDataObj.label}</div>} 
         <div className="product__main__header__in-stock">
           <img src={tick} alt="" />

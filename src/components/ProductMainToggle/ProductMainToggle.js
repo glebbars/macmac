@@ -4,25 +4,26 @@ import axios from 'axios';
 
 const ProductMainToggle = ({productDataObj, setProductDataObj}) => {
   const [similarProducts, setSimilarProducts] = useState([])
-  const colorChoices = getColorChoices(productDataObj.category, productDataObj.model)
-  const capacityChoices = getCapacityChoices(productDataObj.category, productDataObj.model)
+  const colorChoices = getColorChoices(productDataObj.description.category, productDataObj.description.model)
+  const capacityChoices = getCapacityChoices(productDataObj.description.category, productDataObj.description.model)
 
   useEffect(() => {
     axios.get(`http://localhost:5000/posts`).then(res => res.data)
-    .then(data => data.filter(productFromDB => productFromDB.model === productDataObj.model && productFromDB.category === productDataObj.category))
+    .then(data => data.filter(productFromDB => productFromDB.description.category === productDataObj.description.category && productFromDB.description.model === productDataObj.description.model))
     .then(data => setSimilarProducts(data))
   }, [])
   
 
   const toggleColor = (color) => {
-    const newProduct = similarProducts.find(product => product.color === color && product.capacity === productDataObj.capacity)
+    const newProduct = similarProducts.find(product => product.description.color === color && product.description.capacity === productDataObj.description.capacity)
     if(newProduct){
       setProductDataObj(newProduct)
     }
   }
 
   const toggleCapacity = (capacity) => {
-    const newProduct= similarProducts.find(product => product.capacity === capacity && product.color === productDataObj.color)
+    const newProduct= similarProducts.find(product => product.description.capacity === capacity && product.description.color === productDataObj.description.color)
+
     if(newProduct){
       setProductDataObj(newProduct)
     }
@@ -38,7 +39,7 @@ const ProductMainToggle = ({productDataObj, setProductDataObj}) => {
               <div 
                 onClick={() => toggleColor(colorObj.name)}
                 key={index}
-                className={`product__main__color__option ${productDataObj.color === colorObj.name ? "product__main__color__option_active" : ""}`} 
+                className={`product__main__color__option ${productDataObj.description.color === colorObj.name ? "product__main__color__option_active" : ""}`} 
               >
                 <div className='product__main__color__option__value' style={{background: colorForToggle[colorObj.name]}}></div>
               </div> 
@@ -54,7 +55,7 @@ const ProductMainToggle = ({productDataObj, setProductDataObj}) => {
               <div 
                 onClick={() => toggleCapacity(capacityObj.name)}
                 key={index}
-                className={`product__main__capacity__option ${productDataObj.capacity === capacityObj.name ? "product__main__capacity__option_active" : ""}`}
+                className={`product__main__capacity__option ${productDataObj.description.capacity === capacityObj.name ? "product__main__capacity__option_active" : ""}`}
               >
                 {capacityObj.name}
               </div> 

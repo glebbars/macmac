@@ -24,14 +24,14 @@ export const validatePostForm = (values) => {
 export const onTransform = async (values) => {
 
   const newFilesArr = values.pictures.filter(item => item.rawFile)
-  const price = await getPriceOfProductFromDB(values.description)
+  const price = await getPriceOfProductFromDB(values)
   const compressedImgs = await compressImages(newFilesArr)
   const uploadedImgs = await uploadImage(compressedImgs)
 
   const allValues = {
     id: values.id,
     fullName: values.fullName,
-    price: price ? price : values.price,
+    price: price,
     pictures: [...values.pictures.filter(item => !item.rawFile), ...uploadedImgs],
     description: values.description
   }
@@ -40,12 +40,10 @@ export const onTransform = async (values) => {
 };
 
 
-export const getPriceOfProductFromDB = async (description) =>  {
+export const getPriceOfProductFromDB = async (productObj, priceList) =>  {
+  const priceListDB = await getPriceListDB(priceList)
 
-  const response = await axios.get('http://localhost:5000/prices/1')
-  const priceListDB = response.data
-
-  const descriptionValues = Object.values(description).map(name => name.toLowerCase())
+  const descriptionValues = Object.values(productObj.description).map(name => name.toLowerCase())
 
   const productNamesArr = Object.keys(priceListDB).filter(key => {
     const includesAll = descriptionValues.every(name => key.includes(name))
@@ -57,7 +55,16 @@ export const getPriceOfProductFromDB = async (description) =>  {
 
   const price = priceListDB[productNamesArr[0]]
 
-  return price
+  return price ? price : productObj.price
+}
+
+const getPriceListDB = async (priceList) => {
+  if(priceList){
+    return priceList
+  } else {
+    const response = await axios.get('http://localhost:5000/prices/1')
+    return response.data
+  }
 }
   
 const compressImages = async (filesArr) => {
@@ -329,7 +336,7 @@ const getWatchColorChoices = (model) => {
 
 const colorOptions =  {
   'black': { id: 'Black', name: 'Black' },
-  'product red': { id: 'Product Red', name: 'Product Red' },
+  'product red': { id: '(Product) Red', name: '(Product) Red' },
   'yellow': { id: 'Yellow', name: 'Yellow' },
   'white': { id: 'White', name: 'White' },
   'mind': { id: 'Mind', name: 'Mind' },
@@ -352,7 +359,7 @@ export const colorForToggle = {
   "Black": "rgb(31, 32, 33)",
   "White": "rgb(246, 243, 241)",
   "Yellow": "rgb(251, 230, 143)",
-  "Product Red": "rgb(170, 39, 52)",
+  "(Product) Red": "rgb(170, 39, 52)",
   "Purple": "rgb(190, 184, 230)",
   "Mind": "rgb(184, 223, 206)",
   // 11 and se 2020

@@ -20,11 +20,11 @@ const ProductCard = ({product, productClassName}) => {
         <div onClick={() => removeFromFavorites(product.id)} className="product-card__cross"></div>
       )}
       <Link 
-        to={`/category/${product.category.toLowerCase()}/${product.id}`} 
+        to={`/category/${product.description.category.toLowerCase()}/${product.id}`} 
         className="product-card__img-container">
           <img className="product-card__img" src={product.pictures[0].url} alt="Loading..." />
       </Link>
-      <span className="product-card__text">{product.category} {product.model} {product.capacity} {product.color}</span>
+      <span className="product-card__text">{product.fullName}</span>
       <span className="product-card__price">{product.price.toLocaleString()}.00 &#x20b4;</span>
     </div>
   );

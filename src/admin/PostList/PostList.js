@@ -1,12 +1,16 @@
 import React from "react";
-import {List, Datagrid, TextField, NumberField, EditButton, DeleteButton, Pagination} from 'react-admin'
+import {List, Datagrid, TextField, NumberField, EditButton, DeleteButton, Pagination, TextInput} from 'react-admin'
 
 const PostPagination = props => <Pagination rowsPerPageOptions={[5, 10, 25, 50, 100]} {...props} />;
+
+const postFilters = [
+  <TextInput label="Search" source="q" alwaysOn />
+];
 
 const PostList = (props) =>{
 
   return (
-    <List title='Products' {...props} pagination={<PostPagination />}>
+    <List title='Products' {...props} pagination={<PostPagination />} filters={postFilters}>
       <Datagrid>
         <TextField source="id"/>
         <TextField source="fullName"/>

@@ -34,13 +34,13 @@ const ProductsList = () => {
         if(categoryName.includes('-')){
           return null
         } else {
-          return product.category.toLowerCase() === categoryName
+          return product.description.category.toLowerCase() === categoryName
         }
       } else{
         return product
       }
     } else if(searchResult){
-      const fullProductName = `${product.brand.toLowerCase()} ${product.category.toLowerCase()} ${product.model.toLowerCase()} ${product.capacity.toLowerCase()} ${product.color.toLowerCase()}`
+      const fullProductName = product.fullName.toLowerCase()
       return fullProductName.includes(searchResult)
     }
   })

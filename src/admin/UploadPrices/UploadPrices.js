@@ -23,6 +23,7 @@ const UploadPrices = () => {
 
   const allPricesObj = {}
 
+
   const updateObjPricesWithExcel = (e) => {
     readXlsxFile(e.target.files[0], { sheet: 1 }).then( rows => {
       const usdExchangeRate = rows[0][0] === 'Курс' ? rows[0][1] : 0
@@ -37,14 +38,18 @@ const UploadPrices = () => {
       return allPricesObj
     })
     .then(data => axios.patch('http://localhost:5000/prices/1', data))
-    .then(res => updateProductsPrices())
+    .then(res => updateProductsPrices(allPricesObj))
+    .then(res => refresh())
   }
   
-  const updateProductsPrices = () => {
+  const updateProductsPrices = async (priceListDB) => {
     if(productsArr.length > 0){
-      productsArr.map(obj => getPriceOfProductFromDB(obj)
-        .then(data => axios.patch(`http://localhost:5000/posts/${obj.id}`, {price: data}) )
-        .then(res => refresh())
+      productsArr.map(obj => getPriceOfProductFromDB(obj, priceListDB)
+        .then(data => {
+          if(data !== obj.price){
+            return axios.patch(`http://localhost:5000/posts/${obj.id}`, {price: data}) 
+          }
+        })
       )
     }
   }

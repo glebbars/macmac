@@ -211,12 +211,13 @@ export const PriceRange = ({handlePriceChange, productsListFilters}) => {
   const filteredByCategoryArr = productsArr.filter(product => {
     if(categoryName){
       if(categoryName !== "all-products"){
-        return product.category.toLowerCase() === categoryName
+        return product.description.category.toLowerCase() === categoryName
       } else{
         return product
       }
     } else if(searchResult){
-      const fullProductName = `${product.brand.toLowerCase()} ${product.category.toLowerCase()} ${product.model.toLowerCase()} ${product.capacity.toLowerCase()} ${product.color.toLowerCase()}`
+      console.log(product.fullName)
+      const fullProductName = product.fullName.toLowerCase()
       return fullProductName.includes(searchResult)
     }
   })
