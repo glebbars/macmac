@@ -917,647 +917,670 @@
         "color": "Gold"
       },
       "id": 49
+    },
+    {
+      "fullName": "Apple iPhone 13 128Gb Green",
+      "price": 32375,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692619/mac-mac-images/pqutfkmtmmuidotq8rnj.png",
+          "id": "46a8baeacea755ea2d787abf06945add"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "13",
+        "capacity": "128Gb",
+        "color": "Green"
+      },
+      "id": 50
+    },
+    {
+      "fullName": "Apple iPhone 13 128Gb Blue",
+      "price": 32190,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692725/mac-mac-images/ggncwt7yuuiezdwtjcp0.png",
+          "id": "6e4082d62202ac0e279e409d9cc4ef80"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "13",
+        "capacity": "128Gb",
+        "color": "Blue"
+      },
+      "id": 51
+    },
+    {
+      "fullName": "Apple iPhone 13 128Gb Pink",
+      "price": 32190,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692752/mac-mac-images/nchialn9rahyaazazmeo.png",
+          "id": "cc3501e2dd4ef3ceff140797dc79b088"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "13",
+        "capacity": "128Gb",
+        "color": "Pink"
+      },
+      "id": 52
+    },
+    {
+      "fullName": "Apple iPhone 13 128Gb (Product) Red",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692781/mac-mac-images/e4ltk96bjxlrgwt3hkso.png",
+          "id": "bfbe332b5467a7861bf3525601352403"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "13",
+        "capacity": "128Gb",
+        "color": "(Product) Red"
+      },
+      "id": 53,
+      "price": 32190
+    },
+    {
+      "fullName": "Apple iPhone 13 128Gb Midnight",
+      "price": 32190,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692979/mac-mac-images/zve2tewomyfemvi1tu2n.png",
+          "id": "c0ff004167720aaf91be8edc493cbc87"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "13",
+        "capacity": "128Gb",
+        "color": "Midnight"
+      },
+      "id": 54
+    },
+    {
+      "fullName": "Apple iPhone 13 128Gb Starlight",
+      "price": 32190,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653693003/mac-mac-images/fdkr7v7ap2u4fr3tdgdb.png",
+          "id": "ab4b7353b582344848fc38b676edda86"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "13",
+        "capacity": "128Gb",
+        "color": "Starlight"
+      },
+      "id": 55
+    },
+    {
+      "fullName": "Apple iPhone 13 256Gb Green",
+      "price": 34040,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692619/mac-mac-images/pqutfkmtmmuidotq8rnj.png",
+          "id": "46a8baeacea755ea2d787abf06945add"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "13",
+        "capacity": "256Gb",
+        "color": "Green"
+      },
+      "id": 56
+    },
+    {
+      "fullName": "Apple iPhone 13 256Gb Blue",
+      "price": 34040,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692725/mac-mac-images/ggncwt7yuuiezdwtjcp0.png",
+          "id": "6e4082d62202ac0e279e409d9cc4ef80"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "13",
+        "capacity": "256Gb",
+        "color": "Blue"
+      },
+      "id": 57
+    },
+    {
+      "fullName": "Apple iPhone 13 256Gb Pink",
+      "price": 34040,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692752/mac-mac-images/nchialn9rahyaazazmeo.png",
+          "id": "cc3501e2dd4ef3ceff140797dc79b088"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "13",
+        "capacity": "256Gb",
+        "color": "Pink"
+      },
+      "id": 58
+    },
+    {
+      "fullName": "Apple iPhone 13 256Gb (Product) Red",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692781/mac-mac-images/e4ltk96bjxlrgwt3hkso.png",
+          "id": "bfbe332b5467a7861bf3525601352403"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "13",
+        "capacity": "256Gb",
+        "color": "(Product) Red"
+      },
+      "id": 59,
+      "price": 34040
+    },
+    {
+      "fullName": "Apple iPhone 13 256Gb Midnight",
+      "price": 34040,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692979/mac-mac-images/zve2tewomyfemvi1tu2n.png",
+          "id": "c0ff004167720aaf91be8edc493cbc87"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "13",
+        "capacity": "256Gb",
+        "color": "Midnight"
+      },
+      "id": 60
+    },
+    {
+      "fullName": "Apple iPhone 13 256Gb Starlight",
+      "price": 34040,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653693003/mac-mac-images/fdkr7v7ap2u4fr3tdgdb.png",
+          "id": "ab4b7353b582344848fc38b676edda86"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "13",
+        "capacity": "256Gb",
+        "color": "Starlight"
+      },
+      "id": 61
+    },
+    {
+      "fullName": "Apple iPhone 13 512Gb Green",
+      "price": 37740,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692619/mac-mac-images/pqutfkmtmmuidotq8rnj.png",
+          "id": "46a8baeacea755ea2d787abf06945add"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "13",
+        "capacity": "512Gb",
+        "color": "Green"
+      },
+      "id": 62
+    },
+    {
+      "fullName": "Apple iPhone 13 512Gb Blue",
+      "price": 37740,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692725/mac-mac-images/ggncwt7yuuiezdwtjcp0.png",
+          "id": "6e4082d62202ac0e279e409d9cc4ef80"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "13",
+        "capacity": "512Gb",
+        "color": "Blue"
+      },
+      "id": 63
+    },
+    {
+      "fullName": "Apple iPhone 13 512Gb Pink",
+      "price": 37740,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692752/mac-mac-images/nchialn9rahyaazazmeo.png",
+          "id": "cc3501e2dd4ef3ceff140797dc79b088"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "13",
+        "capacity": "512Gb",
+        "color": "Pink"
+      },
+      "id": 64
+    },
+    {
+      "fullName": "Apple iPhone 13 512Gb (Product) Red",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692781/mac-mac-images/e4ltk96bjxlrgwt3hkso.png",
+          "id": "bfbe332b5467a7861bf3525601352403"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "13",
+        "capacity": "512Gb",
+        "color": "(Product) Red"
+      },
+      "id": 65,
+      "price": 37740
+    },
+    {
+      "fullName": "Apple iPhone 13 512Gb Midnight",
+      "price": 37740,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692979/mac-mac-images/zve2tewomyfemvi1tu2n.png",
+          "id": "c0ff004167720aaf91be8edc493cbc87"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "13",
+        "capacity": "512Gb",
+        "color": "Midnight"
+      },
+      "id": 66
+    },
+    {
+      "fullName": "Apple iPhone 13 512Gb Starlight",
+      "price": 37740,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653693003/mac-mac-images/fdkr7v7ap2u4fr3tdgdb.png",
+          "id": "ab4b7353b582344848fc38b676edda86"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "13",
+        "capacity": "512Gb",
+        "color": "Starlight"
+      },
+      "id": 67
+    },
+    {
+      "fullName": "Apple iPhone 13 Mini 128Gb Green",
+      "price": 27010,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692619/mac-mac-images/pqutfkmtmmuidotq8rnj.png",
+          "id": "46a8baeacea755ea2d787abf06945add"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "13 Mini",
+        "capacity": "128Gb",
+        "color": "Green"
+      },
+      "id": 68
+    },
+    {
+      "fullName": "Apple iPhone 13 Mini 128Gb Blue",
+      "price": 27010,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692725/mac-mac-images/ggncwt7yuuiezdwtjcp0.png",
+          "id": "6e4082d62202ac0e279e409d9cc4ef80"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "13 Mini",
+        "capacity": "128Gb",
+        "color": "Blue"
+      },
+      "id": 69
+    },
+    {
+      "fullName": "Apple iPhone 13 Mini 128Gb Pink",
+      "price": 27010,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692752/mac-mac-images/nchialn9rahyaazazmeo.png",
+          "id": "cc3501e2dd4ef3ceff140797dc79b088"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "13 Mini",
+        "capacity": "128Gb",
+        "color": "Pink"
+      },
+      "id": 70
+    },
+    {
+      "fullName": "Apple iPhone 13 Mini 128Gb (Product) Red",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692781/mac-mac-images/e4ltk96bjxlrgwt3hkso.png",
+          "id": "bfbe332b5467a7861bf3525601352403"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "13 Mini",
+        "capacity": "128Gb",
+        "color": "(Product) Red"
+      },
+      "id": 71,
+      "price": 27010
+    },
+    {
+      "fullName": "Apple iPhone 13 Mini 128Gb Midnight",
+      "price": 27010,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692979/mac-mac-images/zve2tewomyfemvi1tu2n.png",
+          "id": "c0ff004167720aaf91be8edc493cbc87"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "13 Mini",
+        "capacity": "128Gb",
+        "color": "Midnight"
+      },
+      "id": 72
+    },
+    {
+      "fullName": "Apple iPhone 13 Mini 128Gb Starlight",
+      "price": 27010,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653693003/mac-mac-images/fdkr7v7ap2u4fr3tdgdb.png",
+          "id": "ab4b7353b582344848fc38b676edda86"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "13 Mini",
+        "capacity": "128Gb",
+        "color": "Starlight"
+      },
+      "id": 73
+    },
+    {
+      "fullName": "Apple iPhone 13 Mini 256Gb Green",
+      "price": 28860,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692619/mac-mac-images/pqutfkmtmmuidotq8rnj.png",
+          "id": "46a8baeacea755ea2d787abf06945add"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "13 Mini",
+        "capacity": "256Gb",
+        "color": "Green"
+      },
+      "id": 74
+    },
+    {
+      "fullName": "Apple iPhone 13 Mini 256Gb Blue",
+      "price": 28860,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692725/mac-mac-images/ggncwt7yuuiezdwtjcp0.png",
+          "id": "6e4082d62202ac0e279e409d9cc4ef80"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "13 Mini",
+        "capacity": "256Gb",
+        "color": "Blue"
+      },
+      "id": 75
+    },
+    {
+      "fullName": "Apple iPhone 13 Mini 256Gb Pink",
+      "price": 28860,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692752/mac-mac-images/nchialn9rahyaazazmeo.png",
+          "id": "cc3501e2dd4ef3ceff140797dc79b088"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "13 Mini",
+        "capacity": "256Gb",
+        "color": "Pink"
+      },
+      "id": 76
+    },
+    {
+      "fullName": "Apple iPhone 13 Mini 256Gb (Product) Red",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692781/mac-mac-images/e4ltk96bjxlrgwt3hkso.png",
+          "id": "bfbe332b5467a7861bf3525601352403"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "13 Mini",
+        "capacity": "256Gb",
+        "color": "(Product) Red"
+      },
+      "id": 77,
+      "price": 28860
+    },
+    {
+      "fullName": "Apple iPhone 13 Mini 256Gb Midnight",
+      "price": 28860,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692979/mac-mac-images/zve2tewomyfemvi1tu2n.png",
+          "id": "c0ff004167720aaf91be8edc493cbc87"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "13 Mini",
+        "capacity": "256Gb",
+        "color": "Midnight"
+      },
+      "id": 78
+    },
+    {
+      "fullName": "Apple iPhone 13 Mini 256Gb Starlight",
+      "price": 28860,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653693003/mac-mac-images/fdkr7v7ap2u4fr3tdgdb.png",
+          "id": "ab4b7353b582344848fc38b676edda86"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "13 Mini",
+        "capacity": "256Gb",
+        "color": "Starlight"
+      },
+      "id": 79
+    },
+    {
+      "fullName": "Apple iPhone 13 Mini 512Gb Green",
+      "price": 36260,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692619/mac-mac-images/pqutfkmtmmuidotq8rnj.png",
+          "id": "46a8baeacea755ea2d787abf06945add"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "13 Mini",
+        "capacity": "512Gb",
+        "color": "Green"
+      },
+      "id": 80
+    },
+    {
+      "fullName": "Apple iPhone 13 Mini 512Gb Blue",
+      "price": 36260,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692725/mac-mac-images/ggncwt7yuuiezdwtjcp0.png",
+          "id": "6e4082d62202ac0e279e409d9cc4ef80"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "13 Mini",
+        "capacity": "512Gb",
+        "color": "Blue"
+      },
+      "id": 81
+    },
+    {
+      "fullName": "Apple iPhone 13 Mini 512Gb Pink",
+      "price": 36260,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692752/mac-mac-images/nchialn9rahyaazazmeo.png",
+          "id": "cc3501e2dd4ef3ceff140797dc79b088"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "13 Mini",
+        "capacity": "512Gb",
+        "color": "Pink"
+      },
+      "id": 82
+    },
+    {
+      "fullName": "Apple iPhone 13 Mini 512Gb (Product) Red",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692781/mac-mac-images/e4ltk96bjxlrgwt3hkso.png",
+          "id": "bfbe332b5467a7861bf3525601352403"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "13 Mini",
+        "capacity": "512Gb",
+        "color": "(Product) Red"
+      },
+      "id": 83,
+      "price": 36260
+    },
+    {
+      "fullName": "Apple iPhone 13 Mini 512Gb Midnight",
+      "price": 36260,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692979/mac-mac-images/zve2tewomyfemvi1tu2n.png",
+          "id": "c0ff004167720aaf91be8edc493cbc87"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "13 Mini",
+        "capacity": "512Gb",
+        "color": "Midnight"
+      },
+      "id": 84
+    },
+    {
+      "fullName": "Apple iPhone 13 Mini 512Gb Starlight",
+      "price": 36260,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653693003/mac-mac-images/fdkr7v7ap2u4fr3tdgdb.png",
+          "id": "ab4b7353b582344848fc38b676edda86"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "13 Mini",
+        "capacity": "512Gb",
+        "color": "Starlight"
+      },
+      "id": 85
     }
   ],
-  "orders": [
-    {
-      "fullName": "Gleb Barskiy",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Самовывоз",
-      "payment": "Наличные при получении",
-      "comment": "",
-      "order": "- iPhone SE 2020 128Gb Black x6 (15 015₴);%0A- iPhone 12 128Gb Black x6 (22 075₴);%0A- iPhone 12 Pro Max 512Gb Pacific Blue x10 (2₴);%0A- iPhone 13 Mini 256Gb Starlight x6 (2₴);%0A- iPhone 12 Pro Max 256Gb Pacific Blue x1 (2₴)",
-      "totalPrice": "222 574₴",
-      "id": 518444
-    },
-    {
-      "fullName": "Gleb Barskiy",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Самовывоз",
-      "payment": "Наличные при получении",
-      "comment": "",
-      "order": "- iPhone SE 2020 128Gb Black x6 (15 015₴);%0A- iPhone 12 128Gb Black x6 (22 075₴);%0A- iPhone 12 Pro Max 512Gb Pacific Blue x10 (2₴);%0A- iPhone 13 Mini 256Gb Starlight x6 (2₴);%0A- iPhone 12 Pro Max 256Gb Pacific Blue x1 (2₴)",
-      "totalPrice": "222 574₴",
-      "id": 437903
-    },
-    {
-      "fullName": "Gleb Barskiy",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Самовывоз",
-      "payment": "Наличные при получении",
-      "comment": "",
-      "order": "- iPhone SE 2020 128Gb Black x6 (15 015₴);%0A- iPhone 12 128Gb Black x6 (22 075₴);%0A- iPhone 12 Pro Max 512Gb Pacific Blue x10 (2₴);%0A- iPhone 13 Mini 256Gb Starlight x6 (2₴);%0A- iPhone 12 Pro Max 256Gb Pacific Blue x1 (2₴)",
-      "totalPrice": "222 574₴",
-      "id": 874161
-    },
-    {
-      "fullName": "2erer",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Самовывоз",
-      "payment": "Наличные при получении",
-      "comment": "",
-      "order": "- iPhone SE 2020 128Gb Black x6 (15 015₴);%0A- iPhone 12 128Gb Black x6 (22 075₴);%0A- iPhone 12 Pro Max 512Gb Pacific Blue x10 (2₴);%0A- iPhone 13 Mini 256Gb Starlight x6 (2₴);%0A- iPhone 12 Pro Max 256Gb Pacific Blue x1 (2₴)",
-      "totalPrice": "222 574₴",
-      "id": 612298
-    },
-    {
-      "fullName": "232323",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Самовывоз",
-      "payment": "Наличные при получении",
-      "comment": "",
-      "order": "- iPhone SE 2020 128Gb Black x6 (15 015₴);%0A- iPhone 12 128Gb Black x6 (22 075₴);%0A- iPhone 12 Pro Max 512Gb Pacific Blue x10 (2₴);%0A- iPhone 13 Mini 256Gb Starlight x6 (2₴);%0A- iPhone 12 Pro Max 256Gb Pacific Blue x1 (2₴)",
-      "totalPrice": "222 574₴",
-      "id": 568579
-    },
-    {
-      "fullName": "23",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Самовывоз",
-      "payment": "Наличные при получении",
-      "comment": "",
-      "order": "- iPhone SE 2020 128Gb Black x6 (15 015₴);%0A- iPhone 12 128Gb Black x6 (22 075₴);%0A- iPhone 12 Pro Max 512Gb Pacific Blue x10 (2₴);%0A- iPhone 13 Mini 256Gb Starlight x6 (2₴);%0A- iPhone 12 Pro Max 256Gb Pacific Blue x1 (2₴)",
-      "totalPrice": "222 574₴",
-      "id": 830082
-    },
-    {
-      "fullName": "uktm",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Самовывоз",
-      "payment": "Наличные при получении",
-      "comment": "",
-      "order": "- iPhone SE 2020 128Gb Black x6 (15 015₴);%0A- iPhone 12 128Gb Black x6 (22 075₴);%0A- iPhone 12 Pro Max 512Gb Pacific Blue x10 (2₴);%0A- iPhone 13 Mini 256Gb Starlight x6 (2₴);%0A- iPhone 12 Pro Max 256Gb Pacific Blue x1 (2₴)",
-      "totalPrice": "222 574₴",
-      "id": 614500
-    },
-    {
-      "fullName": "Glib Barskyi",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Самовывоз",
-      "payment": "Наличные при получении",
-      "comment": "",
-      "order": "- iPhone SE 2020 128Gb Black x6 (15 015₴);%0A- iPhone 12 128Gb Black x6 (22 075₴);%0A- iPhone 12 Pro Max 512Gb Pacific Blue x10 (2₴);%0A- iPhone 13 Mini 256Gb Starlight x6 (2₴);%0A- iPhone 12 Pro Max 256Gb Pacific Blue x1 (2₴)",
-      "totalPrice": "222 574₴",
-      "id": 653571
-    },
-    {
-      "fullName": "Gleb Barskiy",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Самовывоз",
-      "payment": "Наличные при получении",
-      "comment": "",
-      "order": "- iPhone SE 2020 128Gb Black x6 (15 015₴);%0A- iPhone 12 128Gb Black x6 (22 075₴);%0A- iPhone 12 Pro Max 512Gb Pacific Blue x10 (2₴);%0A- iPhone 13 Mini 256Gb Starlight x6 (2₴);%0A- iPhone 12 Pro Max 256Gb Pacific Blue x1 (2₴)",
-      "totalPrice": "222 574₴",
-      "id": 161798
-    },
-    {
-      "fullName": "Glib Barskyi",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Самовывоз",
-      "payment": "Наличные при получении",
-      "comment": "",
-      "order": "- iPhone SE 2020 128Gb Black x6 (15 015₴);%0A- iPhone 12 128Gb Black x6 (22 075₴);%0A- iPhone 12 Pro Max 512Gb Pacific Blue x10 (2₴);%0A- iPhone 13 Mini 256Gb Starlight x6 (2₴);%0A- iPhone 12 Pro Max 256Gb Pacific Blue x1 (2₴)",
-      "totalPrice": "222 574₴",
-      "id": 237427
-    },
-    {
-      "fullName": "Gleb Barskiy",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Самовывоз",
-      "payment": "Наличные при получении",
-      "comment": "",
-      "order": "- iPhone SE 2020 128Gb Black x6 (15 015₴);%0A- iPhone 12 128Gb Black x6 (22 075₴);%0A- iPhone 12 Pro Max 512Gb Pacific Blue x10 (2₴);%0A- iPhone 13 Mini 256Gb Starlight x6 (2₴);%0A- iPhone 12 Pro Max 256Gb Pacific Blue x1 (2₴)",
-      "totalPrice": "222 574₴",
-      "id": 327451
-    },
-    {
-      "fullName": "uktm",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Самовывоз",
-      "payment": "Наличные при получении",
-      "comment": "",
-      "order": "- iPhone SE 2020 128Gb Black x6 (15 015₴);%0A- iPhone 12 128Gb Black x6 (22 075₴);%0A- iPhone 12 Pro Max 512Gb Pacific Blue x10 (2₴);%0A- iPhone 13 Mini 256Gb Starlight x6 (2₴);%0A- iPhone 12 Pro Max 256Gb Pacific Blue x1 (2₴)",
-      "totalPrice": "222 574₴",
-      "id": 248752
-    },
-    {
-      "fullName": "uktm",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Самовывоз",
-      "payment": "Наличные при получении",
-      "comment": "",
-      "order": "- iPhone SE 2020 128Gb Black x6 (15 015₴);%0A- iPhone 12 128Gb Black x6 (22 075₴);%0A- iPhone 12 Pro Max 512Gb Pacific Blue x10 (2₴);%0A- iPhone 13 Mini 256Gb Starlight x6 (2₴);%0A- iPhone 12 Pro Max 256Gb Pacific Blue x1 (2₴)",
-      "totalPrice": "222 574₴",
-      "id": 246248
-    },
-    {
-      "fullName": "Gleb Barskiy",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Самовывоз",
-      "payment": "Наличные при получении",
-      "comment": "",
-      "order": "- iPhone SE 2020 128Gb Black x6 (15 015₴);%0A- iPhone 12 128Gb Black x6 (22 075₴);%0A- iPhone 12 Pro Max 512Gb Pacific Blue x10 (2₴);%0A- iPhone 13 Mini 256Gb Starlight x6 (2₴);%0A- iPhone 12 Pro Max 256Gb Pacific Blue x1 (2₴)",
-      "totalPrice": "222 574₴",
-      "id": 364819
-    },
-    {
-      "fullName": "2erer",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Самовывоз",
-      "payment": "Наличные при получении",
-      "comment": "",
-      "order": "- iPhone SE 2020 128Gb Black x6 (15 015₴);%0A- iPhone 12 128Gb Black x6 (22 075₴);%0A- iPhone 12 Pro Max 512Gb Pacific Blue x10 (2₴);%0A- iPhone 13 Mini 256Gb Starlight x6 (2₴);%0A- iPhone 12 Pro Max 256Gb Pacific Blue x1 (2₴)",
-      "totalPrice": "222 574₴",
-      "id": 948651
-    },
-    {
-      "fullName": "Gleb Barskiy",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Самовывоз",
-      "payment": "Наличные при получении",
-      "comment": "",
-      "order": "- iPhone SE 2020 128Gb Black x6 (15 015₴);%0A- iPhone 12 128Gb Black x6 (22 075₴);%0A- iPhone 12 Pro Max 512Gb Pacific Blue x10 (2₴);%0A- iPhone 13 Mini 256Gb Starlight x6 (2₴);%0A- iPhone 12 Pro Max 256Gb Pacific Blue x1 (2₴)",
-      "totalPrice": "222 574₴",
-      "id": 972649
-    },
-    {
-      "fullName": "232323",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Самовывоз",
-      "payment": "Наличные при получении",
-      "comment": "",
-      "order": "- iPhone SE 2020 128Gb Black x6 (15 015₴);%0A- iPhone 12 128Gb Black x6 (22 075₴);%0A- iPhone 12 Pro Max 512Gb Pacific Blue x10 (2₴);%0A- iPhone 13 Mini 256Gb Starlight x6 (2₴);%0A- iPhone 12 Pro Max 256Gb Pacific Blue x1 (2₴)",
-      "totalPrice": "222 574₴",
-      "id": 477611
-    },
-    {
-      "fullName": "1",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Самовывоз",
-      "payment": "Наличные при получении",
-      "comment": "",
-      "order": "- iPhone SE 2020 128Gb Black x6 (15 015₴);%0A- iPhone 12 128Gb Black x6 (22 075₴);%0A- iPhone 12 Pro Max 512Gb Pacific Blue x10 (2₴);%0A- iPhone 13 Mini 256Gb Starlight x6 (2₴);%0A- iPhone 12 Pro Max 256Gb Pacific Blue x1 (2₴)",
-      "totalPrice": "222 574₴",
-      "id": 191366
-    },
-    {
-      "fullName": "1",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Самовывоз",
-      "payment": "Наличные при получении",
-      "comment": "",
-      "order": "- iPhone SE 2020 128Gb Black x6 (15 015₴);%0A- iPhone 12 128Gb Black x6 (22 075₴);%0A- iPhone 12 Pro Max 512Gb Pacific Blue x10 (2₴);%0A- iPhone 13 Mini 256Gb Starlight x6 (2₴);%0A- iPhone 12 Pro Max 256Gb Pacific Blue x1 (2₴)",
-      "totalPrice": "222 574₴",
-      "id": 874504
-    },
-    {
-      "fullName": "1",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Самовывоз",
-      "payment": "Наличные при получении",
-      "comment": "",
-      "order": "- iPhone SE 2020 128Gb Black x6 (15 015₴);%0A- iPhone 12 128Gb Black x6 (22 075₴);%0A- iPhone 12 Pro Max 512Gb Pacific Blue x10 (2₴);%0A- iPhone 13 Mini 256Gb Starlight x6 (2₴);%0A- iPhone 12 Pro Max 256Gb Pacific Blue x1 (2₴)",
-      "totalPrice": "222 574₴",
-      "id": 267205
-    },
-    {
-      "fullName": "1",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Самовывоз",
-      "payment": "Наличные при получении",
-      "comment": "",
-      "order": "- iPhone SE 2020 128Gb Black x6 (15 015₴);%0A- iPhone 12 128Gb Black x6 (22 075₴);%0A- iPhone 12 Pro Max 512Gb Pacific Blue x10 (2₴);%0A- iPhone 13 Mini 256Gb Starlight x6 (2₴);%0A- iPhone 12 Pro Max 256Gb Pacific Blue x1 (2₴)",
-      "totalPrice": "222 574₴",
-      "id": 718267
-    },
-    {
-      "fullName": "1",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Самовывоз",
-      "payment": "Наличные при получении",
-      "comment": "",
-      "order": "- iPhone SE 2020 128Gb Black x6 (15 015₴);%0A- iPhone 12 128Gb Black x6 (22 075₴);%0A- iPhone 12 Pro Max 512Gb Pacific Blue x10 (2₴);%0A- iPhone 13 Mini 256Gb Starlight x6 (2₴);%0A- iPhone 12 Pro Max 256Gb Pacific Blue x1 (2₴)",
-      "totalPrice": "222 574₴",
-      "id": 640298
-    },
-    {
-      "fullName": "1",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Самовывоз",
-      "payment": "Наличные при получении",
-      "comment": "",
-      "order": "- iPhone SE 2020 128Gb Black x6 (15 015₴);%0A- iPhone 12 128Gb Black x6 (22 075₴);%0A- iPhone 12 Pro Max 512Gb Pacific Blue x10 (2₴);%0A- iPhone 13 Mini 256Gb Starlight x6 (2₴);%0A- iPhone 12 Pro Max 256Gb Pacific Blue x1 (2₴)",
-      "totalPrice": "222 574₴",
-      "id": 975952
-    },
-    {
-      "fullName": "1",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Самовывоз",
-      "payment": "Наличные при получении",
-      "comment": "",
-      "order": "- iPhone SE 2020 128Gb Black x6 (15 015₴);%0A- iPhone 12 128Gb Black x6 (22 075₴);%0A- iPhone 12 Pro Max 512Gb Pacific Blue x10 (2₴);%0A- iPhone 13 Mini 256Gb Starlight x6 (2₴);%0A- iPhone 12 Pro Max 256Gb Pacific Blue x1 (2₴)",
-      "totalPrice": "222 574₴",
-      "id": 131901
-    },
-    {
-      "fullName": "1",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Самовывоз",
-      "payment": "Наличные при получении",
-      "comment": "",
-      "order": "- iPhone SE 2020 128Gb Black x6 (15 015₴);%0A- iPhone 12 128Gb Black x6 (22 075₴);%0A- iPhone 12 Pro Max 512Gb Pacific Blue x10 (2₴);%0A- iPhone 13 Mini 256Gb Starlight x6 (2₴);%0A- iPhone 12 Pro Max 256Gb Pacific Blue x1 (2₴)",
-      "totalPrice": "222 574₴",
-      "id": 748705
-    },
-    {
-      "fullName": "Gleb Barskiy",
-      "phone": "+380676282524",
-      "order": "- iPhone SE 2020 128Gb Black (16 650₴)",
-      "totalPrice": "16 650₴",
-      "notCallBack": false,
-      "id": 975953
-    },
-    {
-      "fullName": "232323",
-      "phone": "+380676282524",
-      "order": "- iPhone SE 2020 128Gb Black (16 650₴)",
-      "totalPrice": "16 650₴",
-      "notCallBack": false,
-      "id": 975954
-    },
-    {
-      "fullName": "232323",
-      "phone": "+380676282524",
-      "order": "- iPhone SE 2020 128Gb Black (16 650₴)",
-      "totalPrice": "16 650₴",
-      "notCallBack": false,
-      "id": 975955
-    },
-    {
-      "fullName": "Glib Barskyi",
-      "phone": "+380676282524",
-      "order": "- iPhone SE 2020 128Gb Black (16 650₴)",
-      "totalPrice": "16 650₴",
-      "notCallBack": false,
-      "id": 975956
-    },
-    {
-      "fullName": "Glib Barskyi",
-      "phone": "+380676282524",
-      "order": "- iPhone SE 2020 128Gb Black (16 650₴)",
-      "totalPrice": "16 650₴",
-      "notCallBack": false,
-      "id": 975957
-    },
-    {
-      "fullName": "Gleb Barskiy",
-      "phone": "+380676282524",
-      "order": "- iPhone SE 2020 128Gb Black (16 650₴)",
-      "totalPrice": "16 650₴",
-      "notCallBack": false,
-      "id": 975958
-    },
-    {
-      "fullName": "1",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Самовывоз",
-      "payment": "Наличные при получении",
-      "comment": "",
-      "order": "- iPhone SE 2020 128Gb Black x6 (15 015₴);%0A- iPhone 12 128Gb Black x6 (22 075₴);%0A- iPhone 12 Pro Max 512Gb Pacific Blue x10 (2₴);%0A- iPhone 13 Mini 256Gb Starlight x6 (2₴);%0A- iPhone 12 Pro Max 256Gb Pacific Blue x1 (2₴)",
-      "totalPrice": "222 574₴",
-      "id": 956868
-    },
-    {
-      "fullName": "1",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Самовывоз",
-      "payment": "Наличные при получении",
-      "comment": "",
-      "order": "- iPhone SE 2020 128Gb Black x6 (15 015₴);%0A- iPhone 12 128Gb Black x6 (22 075₴);%0A- iPhone 12 Pro Max 512Gb Pacific Blue x10 (2₴);%0A- iPhone 13 Mini 256Gb Starlight x6 (2₴);%0A- iPhone 12 Pro Max 256Gb Pacific Blue x1 (2₴)",
-      "totalPrice": "222 574₴",
-      "id": 754321
-    },
-    {
-      "fullName": "1",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Самовывоз",
-      "payment": "Наличные при получении",
-      "comment": "",
-      "order": "- iPhone SE 2020 128Gb Black x6 (15 015₴);%0A- iPhone 12 128Gb Black x6 (22 075₴);%0A- iPhone 12 Pro Max 512Gb Pacific Blue x10 (2₴);%0A- iPhone 13 Mini 256Gb Starlight x6 (2₴);%0A- iPhone 12 Pro Max 256Gb Pacific Blue x1 (2₴)",
-      "totalPrice": "222 574₴",
-      "id": 596602
-    },
-    {
-      "fullName": "1",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Самовывоз",
-      "payment": "Наличные при получении",
-      "comment": "",
-      "order": "- iPhone SE 2020 128Gb Black x6 (15 015₴);%0A- iPhone 12 128Gb Black x6 (22 075₴);%0A- iPhone 12 Pro Max 512Gb Pacific Blue x10 (2₴);%0A- iPhone 13 Mini 256Gb Starlight x6 (2₴);%0A- iPhone 12 Pro Max 256Gb Pacific Blue x1 (2₴)",
-      "totalPrice": "222 574₴",
-      "id": 294257
-    },
-    {
-      "fullName": "1",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Самовывоз",
-      "payment": "Наличные при получении",
-      "comment": "",
-      "order": "- iPhone SE 2020 128Gb Black x6 (15 015₴);%0A- iPhone 12 128Gb Black x6 (22 075₴);%0A- iPhone 12 Pro Max 512Gb Pacific Blue x10 (2₴);%0A- iPhone 13 Mini 256Gb Starlight x6 (2₴);%0A- iPhone 12 Pro Max 256Gb Pacific Blue x1 (2₴)",
-      "totalPrice": "222 574₴",
-      "id": 590304
-    },
-    {
-      "fullName": "1",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Самовывоз",
-      "payment": "Наличные при получении",
-      "comment": "",
-      "order": "- iPhone SE 2020 128Gb Black x6 (15 015₴);%0A- iPhone 12 128Gb Black x6 (22 075₴);%0A- iPhone 12 Pro Max 512Gb Pacific Blue x10 (2₴);%0A- iPhone 13 Mini 256Gb Starlight x6 (2₴);%0A- iPhone 12 Pro Max 256Gb Pacific Blue x1 (2₴)",
-      "totalPrice": "222 574₴",
-      "id": 309487
-    },
-    {
-      "fullName": "1",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Нова Пошта;  Днепр;  Почтомат \"Новая Почта\" №1319: Запорожское шоссе, 80, подьезд №11 (ТОЛЬКО ДЛЯ ЖИТЕЛЕЙ)",
-      "payment": "Опалата на расчётный счёт +1%",
-      "comment": "Тестовый комментарий",
-      "order": "- iPhone SE 2020 128Gb Black x6 (15 015₴);%0A- iPhone 12 128Gb Black x6 (22 075₴);%0A- iPhone 12 Pro Max 512Gb Pacific Blue x10 (2₴);%0A- iPhone 13 Mini 256Gb Starlight x6 (2₴);%0A- iPhone 12 Pro Max 256Gb Pacific Blue x1 (2₴)",
-      "totalPrice": "224 800₴",
-      "id": 978615
-    },
-    {
-      "fullName": "1",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Доставка по г. Днепр;  проспект дмитрия яворницкого 3а",
-      "payment": "Опалата картой +3%",
-      "comment": " ",
-      "order": "- iPhone SE 2020 128Gb Black x6 (15 015₴);%0A- iPhone 12 128Gb Black x6 (22 075₴);%0A- iPhone 12 Pro Max 512Gb Pacific Blue x10 (2₴);%0A- iPhone 13 Mini 256Gb Starlight x6 (2₴);%0A- iPhone 12 Pro Max 256Gb Pacific Blue x1 (2₴)",
-      "totalPrice": "229 251₴",
-      "id": 352692
-    },
-    {
-      "fullName": "1",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Самовывоз",
-      "payment": "Наличные при получении",
-      "comment": "",
-      "order": "- iPhone SE 2020 128Gb Black x6 (15 015₴);%0A- iPhone 12 128Gb Black x6 (22 075₴);%0A- iPhone 12 Pro Max 512Gb Pacific Blue x10 (2₴);%0A- iPhone 13 Mini 256Gb Starlight x6 (2₴);%0A- iPhone 12 Pro Max 256Gb Pacific Blue x1 (2₴)",
-      "totalPrice": "222 574₴",
-      "id": 704340
-    },
-    {
-      "fullName": "1",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Самовывоз",
-      "payment": "Наличные при получении",
-      "comment": "",
-      "order": "- iPhone SE 2020 128Gb Black x6 (15 015₴);%0A- iPhone 12 128Gb Black x6 (22 075₴);%0A- iPhone 12 Pro Max 512Gb Pacific Blue x10 (2₴);%0A- iPhone 13 Mini 256Gb Starlight x6 (2₴);%0A- iPhone 12 Pro Max 256Gb Pacific Blue x1 (2₴)",
-      "totalPrice": "222 574₴",
-      "id": 566015
-    },
-    {
-      "fullName": "1",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Самовывоз",
-      "payment": "Наличные при получении",
-      "comment": "",
-      "order": "- iPhone SE 2020 128Gb Black x6 (15 015₴);%0A- iPhone 12 128Gb Black x6 (22 075₴);%0A- iPhone 12 Pro Max 512Gb Pacific Blue x10 (2₴);%0A- iPhone 13 Mini 256Gb Starlight x6 (2₴);%0A- iPhone 12 Pro Max 256Gb Pacific Blue x1 (2₴)",
-      "totalPrice": "222 574₴",
-      "id": 119517
-    },
-    {
-      "fullName": "1",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Самовывоз",
-      "payment": "Наличные при получении",
-      "comment": "",
-      "order": "- iPhone SE 2020 128Gb Black x6 (15 015₴);%0A- iPhone 12 128Gb Black x6 (22 075₴);%0A- iPhone 12 Pro Max 512Gb Pacific Blue x10 (2₴);%0A- iPhone 13 Mini 256Gb Starlight x6 (2₴);%0A- iPhone 12 Pro Max 256Gb Pacific Blue x1 (2₴)",
-      "totalPrice": "222 574₴",
-      "id": 244509
-    },
-    {
-      "fullName": "1",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Самовывоз",
-      "payment": "Наличные при получении",
-      "comment": "",
-      "order": "- iPhone SE 2020 128Gb Black x6 (15 015₴);%0A- iPhone 12 128Gb Black x6 (22 075₴);%0A- iPhone 12 Pro Max 512Gb Pacific Blue x10 (2₴);%0A- iPhone 13 Mini 256Gb Starlight x6 (2₴);%0A- iPhone 12 Pro Max 256Gb Pacific Blue x1 (2₴)",
-      "totalPrice": "222 574₴",
-      "id": 442878
-    },
-    {
-      "fullName": "1",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Самовывоз",
-      "payment": "Наличные при получении",
-      "comment": "",
-      "order": "- iPhone SE 2020 128Gb Black x1 (16 650₴)",
-      "totalPrice": "16 650₴",
-      "id": 263902
-    },
-    {
-      "fullName": "1",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Самовывоз",
-      "payment": "Наличные при получении",
-      "comment": "",
-      "order": "- iPhone SE 2020 128Gb Black x1 (16 650₴)",
-      "totalPrice": "16 650₴",
-      "id": 317995
-    },
-    {
-      "fullName": "1",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Самовывоз",
-      "payment": "Наличные при получении",
-      "comment": "",
-      "order": "- iPhone SE 2020 128Gb Black x1 (16 650₴)",
-      "totalPrice": "16 650₴",
-      "id": 742567
-    },
-    {
-      "fullName": "1",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Самовывоз",
-      "payment": "Наличные при получении",
-      "comment": "",
-      "order": "- iPhone SE 2020 128Gb Black x1 (16 650₴)",
-      "totalPrice": "16 650₴",
-      "id": 342641
-    },
-    {
-      "fullName": "1",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Самовывоз",
-      "payment": "Наличные при получении",
-      "comment": "",
-      "order": "- iPhone SE 2020 128Gb Black x1 (16 650₴)",
-      "totalPrice": "16 650₴",
-      "id": 831624
-    },
-    {
-      "fullName": "1",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Самовывоз",
-      "payment": "Наличные при получении",
-      "comment": "",
-      "order": "- iPhone SE 2020 128Gb Black x1 (16 650₴)",
-      "totalPrice": "16 650₴",
-      "id": 773704
-    },
-    {
-      "fullName": "1",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Самовывоз",
-      "payment": "Наличные при получении",
-      "comment": "",
-      "order": "- iPhone SE 2020 128Gb Black x1 (16 650₴)",
-      "totalPrice": "16 650₴",
-      "id": 853027
-    },
-    {
-      "fullName": "1",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Самовывоз",
-      "payment": "Наличные при получении",
-      "comment": "",
-      "order": "- iPhone SE 2020 128Gb Black x1 (16 650₴)",
-      "totalPrice": "16 650₴",
-      "id": 340169
-    },
-    {
-      "fullName": "1",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Самовывоз",
-      "payment": "Наличные при получении",
-      "comment": "",
-      "order": "- iPhone 13 Pro 1Tb Gold x1 (57 720₴)",
-      "totalPrice": "57 720₴",
-      "id": 635468
-    },
-    {
-      "fullName": "Gleb Barskiy",
-      "phone": "+380676282524",
-      "order": "- iPhone SE 2020 128Gb Black (16 650₴)",
-      "totalPrice": "16 650₴",
-      "notCallBack": false,
-      "id": 978616
-    },
-    {
-      "fullName": "Gleb Barskiy",
-      "phone": "+380676282524",
-      "order": "- iPhone SE 2020 128Gb Black (16 650₴)",
-      "totalPrice": "16 650₴",
-      "notCallBack": false,
-      "id": 978617
-    },
-    {
-      "id": 760772,
-      "fullName": "Gleb Barskiy",
-      "phone": "+380676282524",
-      "order": "- iPhone SE 2020 128Gb Black (16 650₴)",
-      "totalPrice": "16 650₴",
-      "notCallBack": false
-    },
-    {
-      "id": 749124,
-      "fullName": "232323",
-      "phone": "+380676282524",
-      "order": "- iPhone SE 2020 128Gb Black (16 650₴)",
-      "totalPrice": "16 650₴",
-      "notCallBack": false
-    },
-    {
-      "id": 106545,
-      "fullName": "Gleb Barskiy",
-      "phone": "+380676282524",
-      "order": "- iPhone SE 2020 128Gb Black (16 650₴)",
-      "totalPrice": "16 650₴",
-      "notCallBack": false
-    },
-    {
-      "fullName": "uktm",
-      "phone": "+380676282524",
-      "notCallBack": false,
-      "delivery": "Нова Пошта;  Киев;  Отделение №6: ул. Николая Василенко, 2 (метро Берестейская)",
-      "payment": "Опалата картой +3%",
-      "comment": "",
-      "order": "- iPhone SE 2020 128Gb Black x1 (16 650₴)",
-      "totalPrice": "17 150₴",
-      "id": 622718
-    },
-    {
-      "fullName": "Глеб Барский",
-      "phone": "+380676242321",
-      "notCallBack": false,
-      "delivery": "Нова Пошта;  Днепр;  Отделение №97 (до 30 кг): просп. Гагарина, 171",
-      "payment": "Опалата картой +3%",
-      "comment": "У меня есть собака )",
-      "order": "- AirPods 3   x2 (18 870₴);%0A- iPhone 12 128Gb Black x3 (25 200₴);%0A- iPhone 12 Pro 256Gb Graphite x4 (39 240₴);%0A- iPhone SE 2020 128Gb Black x2 (16 650₴);%0A- AirPods 2   x7 (6 105₴);%0A- iPhone 13 Pro 1Tb Gold x2 (57 720₴)",
-      "totalPrice": "475 628₴",
-      "id": 569229
-    }
-  ],
+  "orders": [],
   "prices": [
     {
       "id": 1,
-      "apple iphone 13 mini 128gb starlight": 27010,
-      "apple iphone 13 mini 512gb starlight": 37000,
       "apple iphone 13 128gb green": 32375,
       "apple iphone 13 128gb blue": 32190,
+      "apple iphone 13 128gb midnight": 32190,
+      "apple iphone 13 128gb (product) red": 32190,
       "apple iphone 13 128gb pink": 32190,
-      "apple iphone 13 256gb blue": 35150,
+      "apple iphone 13 128gb starlight": 32190,
+      "apple iphone 13 256gb blue": 34040,
       "apple iphone 13 512gb blue": 37740,
+      "apple iphone 13 mini 128gb starlight": 27010,
+      "apple iphone 13 mini 512gb starlight": 36260,
       "apple iphone 13 pro 128gb alpine green": 41440,
       "apple iphone 13 pro 128gb graphite": 41440,
       "apple iphone 13 pro 128gb sierra blue": 41070,
@@ -1754,7 +1777,33 @@
       "apple atlantic blue braided solo loop watch - size 11 для apple watch 42/44mm (my8j2)": 4625,
       "apple black sport band (mtpl2, mj4n2, mj4q2, mj4g2, mu9l2) для apple watch 42/44mm": 2220,
       "apple white sport band (mtpk2, mj4m2, mq3q2) для apple watch 42/44mm": 2220,
-      "apple deep navy sport band (myax2) для apple watch 42/44mm": 2220
+      "apple deep navy sport band (myax2) для apple watch 42/44mm": 2220,
+      "apple iphone 13 256gb green": 34040,
+      "apple iphone 13 256gb midnight": 34040,
+      "apple iphone 13 256gb starlight": 34040,
+      "apple iphone 13 256gb (product) red": 34040,
+      "apple iphone 13 256gb pink": 34040,
+      "apple iphone 13 512gb green": 37740,
+      "apple iphone 13 512gb midnight": 37740,
+      "apple iphone 13 512gb starlight": 37740,
+      "apple iphone 13 512gb (product) red": 37740,
+      "apple iphone 13 512gb pink": 37740,
+      "apple iphone 13 mini 128gb green": 27010,
+      "apple iphone 13 mini 128gb blue": 27010,
+      "apple iphone 13 mini 128gb midnight": 27010,
+      "apple iphone 13 mini 128gb (product) red": 27010,
+      "apple iphone 13 mini 128gb pink": 27010,
+      "apple iphone 13 mini 256gb green": 28860,
+      "apple iphone 13 mini 256gb blue": 28860,
+      "apple iphone 13 mini 256gb midnight": 28860,
+      "apple iphone 13 mini 256gb starlight": 28860,
+      "apple iphone 13 mini 256gb (product) red": 28860,
+      "apple iphone 13 mini 256gb pink": 28860,
+      "apple iphone 13 mini 512gb green": 36260,
+      "apple iphone 13 mini 512gb blue": 36260,
+      "apple iphone 13 mini 512gb midnight": 36260,
+      "apple iphone 13 mini 512gb (product) red": 36260,
+      "apple iphone 13 mini 512gb pink": 36260
     }
   ]
 }
