@@ -23,7 +23,6 @@ const UploadPrices = () => {
 
   const allPricesObj = {}
 
-
   const updateObjPricesWithExcel = (e) => {
     readXlsxFile(e.target.files[0], { sheet: 1 }).then( rows => {
       const usdExchangeRate = rows[0][0] === 'Курс' ? rows[0][1] : 0
@@ -41,22 +40,34 @@ const UploadPrices = () => {
     .then(res => updateProductsPrices(allPricesObj))
     .then(res => refresh())
   }
+
   
   const updateProductsPrices = async (priceListDB) => {
     const allUpdatedProducts = await Promise.all(
       productsArr.map(async (obj) => {
         const newPrice = await getPriceOfProductFromDB(obj, priceListDB)
-        if(newPrice !== obj.price){
-          console.log(obj.price, '-->', newPrice)
-          const response = await axios.patch(`http://localhost:5000/posts/${obj.id}`, {"price": newPrice}) 
-          return response.data.price
-        } else{
-          return obj.price
+        if(obj.price !== newPrice){
+          return {
+            data: obj,
+            newPrice: newPrice
+          }
+          // return await axios.patch(`http://localhost:5000/posts/${obj.id}`, {"price": newPrice}) 
         }
       }
     ))
-    console.log(allUpdatedProducts)
+    const filteredArr = allUpdatedProducts.filter(el => el)
+    const updateProducts = updateProductsByChunks(filteredArr)
+    console.log(updateProducts)
     return allUpdatedProducts
+  }
+
+  const updateProductsByChunks = (arr) => {
+    console.log(arr)
+    const chunkSize = 10;
+    for (let i = 0; i < arr.length; i += chunkSize) {
+        const chunk = arr.slice(i, i + chunkSize);
+        return chunk.map(product => axios.patch(`http://localhost:5000/posts/${product.data.id}`, {"price": product.newPrice}) )
+    }
   }
 
   return (

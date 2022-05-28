@@ -55,7 +55,6 @@ export const getPriceOfProductFromDB = async (productObj, priceList) =>  {
   
   const productNamesArr = Object.keys(priceListDB).find(key => {
     if(productObj.fullName.toLowerCase() === key){
-      console.log(productObj.id, productObj.fullName.toLowerCase(), key, priceListDB[key])
       return priceListDB[key]
     }
   })
