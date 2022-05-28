@@ -4,7 +4,6 @@ import axios from 'axios'
 import readXlsxFile from 'read-excel-file'
 import { useSelector } from "react-redux";
 import {getPriceOfProductFromDB} from '../AdditionalFunctions/AdditionalFunctions'
-import { object } from "prop-types";
 
 const UploadPrices = () => {
 
