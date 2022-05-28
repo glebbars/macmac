@@ -4,6 +4,7 @@ import axios from 'axios'
 import readXlsxFile from 'read-excel-file'
 import { useSelector } from "react-redux";
 import {getPriceOfProductFromDB} from '../AdditionalFunctions/AdditionalFunctions'
+import { object } from "prop-types";
 
 const UploadPrices = () => {
 
@@ -37,20 +38,30 @@ const UploadPrices = () => {
       })
       return allPricesObj
     })
-    .then(data => axios.patch('http://localhost:5000/prices/1', data))
+    .then(data => axios.put('http://localhost:5000/prices/1', data))
     .then(res => updateProductsPrices(allPricesObj))
-    .then(res => refresh())
+    .then(res => timer())
+  }
+
+  const timer = () => {
+    console.log('!!!!!!!!!!!!!!!!!!!!! finished')
+    refresh()
   }
   
-  const updateProductsPrices = async (priceListDB) => {
+  const updateProductsPrices = (priceListDB) => {
     if(productsArr.length > 0){
-      productsArr.map(obj => getPriceOfProductFromDB(obj, priceListDB)
-        .then(data => {
-          if(data !== obj.price){
-            return axios.patch(`http://localhost:5000/posts/${obj.id}`, {price: data}) 
+     return Promise.all(
+        productsArr.map(async (obj) => {
+          const newPrice = await getPriceOfProductFromDB(obj, priceListDB)
+          console.log(obj.newPrice, obj.price)
+          if(newPrice !== obj.price){
+            console.log(obj.id, obj.price, '-->', newPrice)
+            const updatedPrice = await axios.patch(`http://localhost:5000/posts/${obj.id}`, {"price": 5}) 
+            return updatedPrice
           }
-        })
-      )
+          return newPrice
+        }
+      ))
     }
   }
 

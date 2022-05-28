@@ -1,7 +1,7 @@
 import React from "react";
 import {List, Datagrid, TextField, NumberField, EditButton, DeleteButton, Pagination, TextInput} from 'react-admin'
 
-const PostPagination = props => <Pagination rowsPerPageOptions={[5, 10, 25, 50, 100]} {...props} />;
+const PostPagination = props => <Pagination rowsPerPageOptions={[5, 10, 25, 50, 100, 200]} {...props} />;
 
 const postFilters = [
   <TextInput label="Search" source="q" alwaysOn />

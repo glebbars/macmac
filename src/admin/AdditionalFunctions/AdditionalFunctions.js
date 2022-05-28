@@ -43,19 +43,24 @@ export const onTransform = async (values) => {
 export const getPriceOfProductFromDB = async (productObj, priceList) =>  {
   const priceListDB = await getPriceListDB(priceList)
 
-  const descriptionValues = Object.values(productObj.description).map(name => name.toLowerCase())
+  // const descriptionValues = Object.values(productObj.description).map(name => name.toLowerCase())
 
-  const productNamesArr = Object.keys(priceListDB).filter(key => {
-    const includesAll = descriptionValues.every(name => key.includes(name))
+  // const productNamesArr = Object.keys(priceListDB).filter(key => {
+  //   const includesAll = descriptionValues.every(name => key.includes(name))
 
-    if(includesAll && key){
+  //   if(includesAll && key){
+  //     return priceListDB[key]
+  //   }
+  // })
+  
+  const productNamesArr = Object.keys(priceListDB).find(key => {
+    if(productObj.fullName.toLowerCase() === key){
       return priceListDB[key]
     }
   })
 
-  const price = priceListDB[productNamesArr[0]]
-
-  return price ? price : productObj.price
+  const price = productNamesArr ? priceListDB[productNamesArr] : productObj.price
+  return price
 }
 
 const getPriceListDB = async (priceList) => {
@@ -150,7 +155,7 @@ export const getModelChoices = (value) => {
 
 const iphoneModelChoices = [
   { id: 'SE 2020', name: 'SE 2020' },
-  { id: 'SE 3', name: 'SE 3' },
+  { id: 'SE 2022', name: 'SE 2022' },
   { id: '11', name: '11' },
   { id: '12', name: '12' },
   { id: '12 Mini', name: '12 Mini' },
@@ -202,7 +207,7 @@ const getIphoneCapacityChoices = (model) => {
     case "SE 2020":
       return [capacityOptions["64"], capacityOptions["128"]];
       
-    case "SE 3":
+    case "SE 2022":
     case "11":
       return [capacityOptions["64"], capacityOptions["128"], capacityOptions["256"]];
 
@@ -275,7 +280,7 @@ const getIphoneColorChoices = (model) => {
     case "SE 2020":
       return [colorOptions["black"], colorOptions["white"], colorOptions['product red']];
 
-    case "SE 3":
+    case "SE 2022":
       return [colorOptions["midnight"], colorOptions["starlight"], colorOptions['product red']];
 
     case '11':
