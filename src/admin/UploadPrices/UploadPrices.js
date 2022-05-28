@@ -39,29 +39,24 @@ const UploadPrices = () => {
     })
     .then(data => axios.put('http://localhost:5000/prices/1', data))
     .then(res => updateProductsPrices(allPricesObj))
-    .then(res => timer())
-  }
-
-  const timer = () => {
-    console.log('!!!!!!!!!!!!!!!!!!!!! finished')
-    refresh()
+    .then(res => refresh())
   }
   
-  const updateProductsPrices = (priceListDB) => {
-    if(productsArr.length > 0){
-     return Promise.all(
-        productsArr.map(async (obj) => {
-          const newPrice = await getPriceOfProductFromDB(obj, priceListDB)
-          console.log(obj.newPrice, obj.price)
-          if(newPrice !== obj.price){
-            console.log(obj.id, obj.price, '-->', newPrice)
-            const updatedPrice = await axios.patch(`http://localhost:5000/posts/${obj.id}`, {"price": 5}) 
-            return updatedPrice
-          }
-          return newPrice
+  const updateProductsPrices = async (priceListDB) => {
+    const allUpdatedProducts = await Promise.all(
+      productsArr.map(async (obj) => {
+        const newPrice = await getPriceOfProductFromDB(obj, priceListDB)
+        if(newPrice !== obj.price){
+          console.log(obj.price, '-->', newPrice)
+          const response = await axios.patch(`http://localhost:5000/posts/${obj.id}`, {"price": newPrice}) 
+          return response.data.price
+        } else{
+          return obj.price
         }
-      ))
-    }
+      }
+    ))
+    console.log(allUpdatedProducts)
+    return allUpdatedProducts
   }
 
   return (
