@@ -44,30 +44,40 @@ const UploadPrices = () => {
   
   const updateProductsPrices = async (priceListDB) => {
     const allUpdatedProducts = await Promise.all(
-      productsArr.map(async (obj) => {
-        const newPrice = await getPriceOfProductFromDB(obj, priceListDB)
-        if(obj.price !== newPrice){
-          return {
-            data: obj,
-            newPrice: newPrice
-          }
-          // return await axios.patch(`http://localhost:5000/posts/${obj.id}`, {"price": newPrice}) 
+      productsArr.map(async product => {
+        const newPrice = await getPriceOfProductFromDB(product, priceListDB)
+        if(product.price !== newPrice){
+          product.newPrice = newPrice
+          return product
         }
       }
     ))
+
     const filteredArr = allUpdatedProducts.filter(el => el)
-    const updateProducts = updateProductsByChunks(filteredArr)
-    console.log(updateProducts)
-    return allUpdatedProducts
+
+    if(filteredArr.length > 0){
+      const updateProducts = await updateProductsByChunks(filteredArr)
+      console.log(updateProducts)
+      return updateProducts
+    }
   }
 
   const updateProductsByChunks = (arr) => {
-    console.log(arr)
-    const chunkSize = 10;
+    // const splittedArr = []
+    const chunkSize = 15;
     for (let i = 0; i < arr.length; i += chunkSize) {
-        const chunk = arr.slice(i, i + chunkSize);
-        return chunk.map(product => axios.patch(`http://localhost:5000/posts/${product.data.id}`, {"price": product.newPrice}) )
+      const chunk = arr.slice(i, i + chunkSize);
+      // console.log(chunk)
+      // splittedArr.push(chunk)
+      return Promise.all(chunk.map(product => axios.patch(`http://localhost:5000/posts/${product.id}`, {"price": product.newPrice}) ))
+      // return chunk
     }
+
+    // const allSplittedResponses = Promise.all(splittedArr.map(productsArr => {
+      // return Promise.all(productsArr.map(product => axios.get(`http://localhost:5000/posts/${product.id}`)))
+    // }))
+
+    // return allSplittedResponses
   }
 
   return (

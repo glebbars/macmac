@@ -2,7 +2,7 @@
   "posts": [
     {
       "fullName": "Apple iPhone SE 2022 64Gb Midnight",
-      "price": 17390,
+      "price": 9870,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653663734/mac-mac-images/eode9scu4crbh6ydvmkq.png",
@@ -24,7 +24,7 @@
     },
     {
       "fullName": "Apple iPhone SE 2022 64Gb Starlight",
-      "price": 17390,
+      "price": 9870,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653663870/mac-mac-images/ts7zgzktwbifknq00qun.png",
@@ -47,7 +47,7 @@
     {
       "id": 3,
       "fullName": "Apple iPhone SE 2022 64Gb (Product) Red",
-      "price": 17390,
+      "price": 9870,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653665681/mac-mac-images/qmhpihc7eordzalkkw4a.png",
@@ -69,7 +69,7 @@
     {
       "id": 4,
       "fullName": "Apple iPhone SE 2022 128Gb Midnight",
-      "price": 19610,
+      "price": 11130,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653663734/mac-mac-images/eode9scu4crbh6ydvmkq.png",
@@ -91,7 +91,7 @@
     {
       "id": 5,
       "fullName": "Apple iPhone SE 2022 128Gb Starlight",
-      "price": 19610,
+      "price": 11130,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653663870/mac-mac-images/ts7zgzktwbifknq00qun.png",
@@ -113,7 +113,7 @@
     {
       "id": 6,
       "fullName": "Apple iPhone SE 2022 128Gb (Product) Red",
-      "price": 19610,
+      "price": 11130,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653665681/mac-mac-images/qmhpihc7eordzalkkw4a.png",
@@ -135,7 +135,7 @@
     {
       "id": 7,
       "fullName": "Apple iPhone SE 2022 256Gb Midnight",
-      "price": 22200,
+      "price": 12600,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653663734/mac-mac-images/eode9scu4crbh6ydvmkq.png",
@@ -157,7 +157,7 @@
     {
       "id": 8,
       "fullName": "Apple iPhone SE 2022 256Gb Starlight",
-      "price": 22200,
+      "price": 12600,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653663870/mac-mac-images/ts7zgzktwbifknq00qun.png",
@@ -179,7 +179,7 @@
     {
       "id": 9,
       "fullName": "Apple iPhone SE 2022 256Gb (Product) Red",
-      "price": 22200,
+      "price": 12600,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653665681/mac-mac-images/qmhpihc7eordzalkkw4a.png",
@@ -200,7 +200,7 @@
     },
     {
       "fullName": "Apple iPhone 13 Pro Max 128Gb Alpine Green",
-      "price": 45140,
+      "price": 25620,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668578/mac-mac-images/kj6yu2qkpy6c1u4n4s9o.png",
@@ -218,7 +218,7 @@
     },
     {
       "fullName": "Apple iPhone 13 Pro Max 128Gb Sierra Blue",
-      "price": 45980,
+      "price": 25620,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668484/mac-mac-images/aeots1hppamb42u3jbbc.png",
@@ -236,7 +236,7 @@
     },
     {
       "fullName": "Apple iPhone 13 Pro Max 128Gb Graphite",
-      "price": 46170,
+      "price": 25620,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668645/mac-mac-images/gfpwuxkvmjyteyrtqlt0.png",
@@ -254,7 +254,7 @@
     },
     {
       "fullName": "Apple iPhone 13 Pro Max 128Gb Silver",
-      "price": 45980,
+      "price": 25620,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668780/mac-mac-images/pkjmhztkogodrlrvfvm3.png",
@@ -272,7 +272,7 @@
     },
     {
       "fullName": "Apple iPhone 13 Pro Max 128Gb Gold",
-      "price": 45600,
+      "price": 25620,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668811/mac-mac-images/blanrsn3ldkrnbxvtg7p.png",
@@ -291,7 +291,7 @@
     {
       "id": 15,
       "fullName": "Apple iPhone 13 Pro Max 256Gb Alpine Green",
-      "price": 48840,
+      "price": 27720,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668578/mac-mac-images/kj6yu2qkpy6c1u4n4s9o.png",
@@ -309,7 +309,7 @@
     {
       "id": 16,
       "fullName": "Apple iPhone 13 Pro Max 256Gb Sierra Blue",
-      "price": 48840,
+      "price": 27720,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668484/mac-mac-images/aeots1hppamb42u3jbbc.png",
@@ -327,7 +327,7 @@
     {
       "id": 17,
       "fullName": "Apple iPhone 13 Pro Max 256Gb Graphite",
-      "price": 48840,
+      "price": 27720,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668645/mac-mac-images/gfpwuxkvmjyteyrtqlt0.png",
@@ -345,7 +345,7 @@
     {
       "id": 18,
       "fullName": "Apple iPhone 13 Pro Max 256Gb Silver",
-      "price": 48840,
+      "price": 27720,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668780/mac-mac-images/pkjmhztkogodrlrvfvm3.png",
@@ -363,7 +363,7 @@
     {
       "id": 19,
       "fullName": "Apple iPhone 13 Pro Max 256Gb Gold",
-      "price": 48470,
+      "price": 27720,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668811/mac-mac-images/blanrsn3ldkrnbxvtg7p.png",
@@ -380,7 +380,7 @@
     },
     {
       "fullName": "Apple iPhone 13 Pro Max 512Gb Alpine Green",
-      "price": 56610,
+      "price": 32130,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668578/mac-mac-images/kj6yu2qkpy6c1u4n4s9o.png",
@@ -398,7 +398,7 @@
     },
     {
       "fullName": "Apple iPhone 13 Pro Max 512Gb Sierra Blue",
-      "price": 55870,
+      "price": 32130,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668484/mac-mac-images/aeots1hppamb42u3jbbc.png",
@@ -416,7 +416,7 @@
     },
     {
       "fullName": "Apple iPhone 13 Pro Max 512Gb Graphite",
-      "price": 55870,
+      "price": 32130,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668645/mac-mac-images/gfpwuxkvmjyteyrtqlt0.png",
@@ -434,7 +434,7 @@
     },
     {
       "fullName": "Apple iPhone 13 Pro Max 512Gb Silver",
-      "price": 54390,
+      "price": 32130,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668780/mac-mac-images/pkjmhztkogodrlrvfvm3.png",
@@ -452,7 +452,7 @@
     },
     {
       "fullName": "Apple iPhone 13 Pro Max 512Gb Gold",
-      "price": 54390,
+      "price": 32130,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668811/mac-mac-images/blanrsn3ldkrnbxvtg7p.png",
@@ -470,7 +470,7 @@
     },
     {
       "fullName": "Apple iPhone 13 Pro Max 1Tb Alpine Green",
-      "price": 60680,
+      "price": 33180,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668578/mac-mac-images/kj6yu2qkpy6c1u4n4s9o.png",
@@ -488,7 +488,7 @@
     },
     {
       "fullName": "Apple iPhone 13 Pro Max 1Tb Sierra Blue",
-      "price": 58460,
+      "price": 33180,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668484/mac-mac-images/aeots1hppamb42u3jbbc.png",
@@ -506,7 +506,7 @@
     },
     {
       "fullName": "Apple iPhone 13 Pro Max 1Tb Graphite",
-      "price": 58645,
+      "price": 33180,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668645/mac-mac-images/gfpwuxkvmjyteyrtqlt0.png",
@@ -524,7 +524,7 @@
     },
     {
       "fullName": "Apple iPhone 13 Pro Max 1Tb Silver",
-      "price": 57720,
+      "price": 33180,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668780/mac-mac-images/pkjmhztkogodrlrvfvm3.png",
@@ -542,7 +542,7 @@
     },
     {
       "fullName": "Apple iPhone 13 Pro Max 1Tb Gold",
-      "price": 57720,
+      "price": 33180,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668811/mac-mac-images/blanrsn3ldkrnbxvtg7p.png",
@@ -561,7 +561,7 @@
     {
       "id": 30,
       "fullName": "Apple iPhone 13 Pro 128Gb Alpine Green",
-      "price": 41440,
+      "price": 23310,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668578/mac-mac-images/kj6yu2qkpy6c1u4n4s9o.png",
@@ -578,7 +578,7 @@
     },
     {
       "fullName": "Apple iPhone 13 Pro 128Gb Sierra Blue",
-      "price": 41070,
+      "price": 23310,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668484/mac-mac-images/aeots1hppamb42u3jbbc.png",
@@ -596,7 +596,7 @@
     },
     {
       "fullName": "Apple iPhone 13 Pro 128Gb Graphite",
-      "price": 41440,
+      "price": 23310,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668645/mac-mac-images/gfpwuxkvmjyteyrtqlt0.png",
@@ -614,7 +614,7 @@
     },
     {
       "fullName": "Apple iPhone 13 Pro 128Gb Silver",
-      "price": 40700,
+      "price": 23310,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668780/mac-mac-images/pkjmhztkogodrlrvfvm3.png",
@@ -632,7 +632,7 @@
     },
     {
       "fullName": "Apple iPhone 13 Pro 128Gb Gold",
-      "price": 40700,
+      "price": 23310,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668811/mac-mac-images/blanrsn3ldkrnbxvtg7p.png",
@@ -651,7 +651,7 @@
     {
       "id": 35,
       "fullName": "Apple iPhone 13 Pro 256Gb Alpine Green",
-      "price": 44955,
+      "price": 25515,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668578/mac-mac-images/kj6yu2qkpy6c1u4n4s9o.png",
@@ -668,7 +668,7 @@
     },
     {
       "fullName": "Apple iPhone 13 Pro 256Gb Sierra Blue",
-      "price": 44770,
+      "price": 25725,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668484/mac-mac-images/aeots1hppamb42u3jbbc.png",
@@ -686,7 +686,7 @@
     },
     {
       "fullName": "Apple iPhone 13 Pro 256Gb Graphite",
-      "price": 45325,
+      "price": 25725,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668645/mac-mac-images/gfpwuxkvmjyteyrtqlt0.png",
@@ -704,7 +704,7 @@
     },
     {
       "fullName": "Apple iPhone 13 Pro 256Gb Silver",
-      "price": 44770,
+      "price": 25725,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668780/mac-mac-images/pkjmhztkogodrlrvfvm3.png",
@@ -722,7 +722,7 @@
     },
     {
       "fullName": "Apple iPhone 13 Pro 256Gb Gold",
-      "price": 44400,
+      "price": 25725,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668811/mac-mac-images/blanrsn3ldkrnbxvtg7p.png",
@@ -741,7 +741,7 @@
     {
       "id": 40,
       "fullName": "Apple iPhone 13 Pro 512Gb Alpine Green",
-      "price": 50690,
+      "price": 28665,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668578/mac-mac-images/kj6yu2qkpy6c1u4n4s9o.png",
@@ -758,7 +758,7 @@
     },
     {
       "fullName": "Apple iPhone 13 Pro 512Gb Sierra Blue",
-      "price": 50320,
+      "price": 28665,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668484/mac-mac-images/aeots1hppamb42u3jbbc.png",
@@ -776,7 +776,7 @@
     },
     {
       "fullName": "Apple iPhone 13 Pro 512Gb Graphite",
-      "price": 50505,
+      "price": 28665,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668645/mac-mac-images/gfpwuxkvmjyteyrtqlt0.png",
@@ -794,7 +794,7 @@
     },
     {
       "fullName": "Apple iPhone 13 Pro 512Gb Silver",
-      "price": 50320,
+      "price": 28665,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668780/mac-mac-images/pkjmhztkogodrlrvfvm3.png",
@@ -812,7 +812,7 @@
     },
     {
       "fullName": "Apple iPhone 13 Pro 512Gb Gold",
-      "price": 49950,
+      "price": 28665,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668811/mac-mac-images/blanrsn3ldkrnbxvtg7p.png",
@@ -831,7 +831,7 @@
     {
       "id": 45,
       "fullName": "Apple iPhone 13 Pro 1Tb Alpine Green",
-      "price": 56055,
+      "price": 31815,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668578/mac-mac-images/kj6yu2qkpy6c1u4n4s9o.png",
@@ -848,7 +848,7 @@
     },
     {
       "fullName": "Apple iPhone 13 Pro 1Tb Sierra Blue",
-      "price": 55870,
+      "price": 31815,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668484/mac-mac-images/aeots1hppamb42u3jbbc.png",
@@ -866,7 +866,7 @@
     },
     {
       "fullName": "Apple iPhone 13 Pro 1Tb Graphite",
-      "price": 55500,
+      "price": 31815,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668645/mac-mac-images/gfpwuxkvmjyteyrtqlt0.png",
@@ -884,7 +884,7 @@
     },
     {
       "fullName": "Apple iPhone 13 Pro 1Tb Silver",
-      "price": 55685,
+      "price": 31815,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668780/mac-mac-images/pkjmhztkogodrlrvfvm3.png",
@@ -902,7 +902,7 @@
     },
     {
       "fullName": "Apple iPhone 13 Pro 1Tb Gold",
-      "price": 57000,
+      "price": 31815,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668811/mac-mac-images/blanrsn3ldkrnbxvtg7p.png",
@@ -920,7 +920,7 @@
     },
     {
       "fullName": "Apple iPhone 13 128Gb Green",
-      "price": 33250,
+      "price": 18270,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692619/mac-mac-images/pqutfkmtmmuidotq8rnj.png",
@@ -938,7 +938,7 @@
     },
     {
       "fullName": "Apple iPhone 13 128Gb Blue",
-      "price": 32190,
+      "price": 18270,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692725/mac-mac-images/ggncwt7yuuiezdwtjcp0.png",
@@ -956,7 +956,7 @@
     },
     {
       "fullName": "Apple iPhone 13 128Gb Pink",
-      "price": 32190,
+      "price": 18270,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692752/mac-mac-images/nchialn9rahyaazazmeo.png",
@@ -988,11 +988,11 @@
         "color": "(Product) Red"
       },
       "id": 53,
-      "price": 32190
+      "price": 18270
     },
     {
       "fullName": "Apple iPhone 13 128Gb Midnight",
-      "price": 32190,
+      "price": 18270,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692979/mac-mac-images/zve2tewomyfemvi1tu2n.png",
@@ -1010,7 +1010,7 @@
     },
     {
       "fullName": "Apple iPhone 13 128Gb Starlight",
-      "price": 32190,
+      "price": 18270,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653693003/mac-mac-images/fdkr7v7ap2u4fr3tdgdb.png",
@@ -1028,7 +1028,7 @@
     },
     {
       "fullName": "Apple iPhone 13 256Gb Green",
-      "price": 34040,
+      "price": 19320,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692619/mac-mac-images/pqutfkmtmmuidotq8rnj.png",
@@ -1046,7 +1046,7 @@
     },
     {
       "fullName": "Apple iPhone 13 256Gb Blue",
-      "price": 34040,
+      "price": 19320,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692725/mac-mac-images/ggncwt7yuuiezdwtjcp0.png",
@@ -1064,7 +1064,7 @@
     },
     {
       "fullName": "Apple iPhone 13 256Gb Pink",
-      "price": 34040,
+      "price": 19320,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692752/mac-mac-images/nchialn9rahyaazazmeo.png",
@@ -1096,11 +1096,11 @@
         "color": "(Product) Red"
       },
       "id": 59,
-      "price": 34040
+      "price": 19320
     },
     {
       "fullName": "Apple iPhone 13 256Gb Midnight",
-      "price": 34040,
+      "price": 19320,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692979/mac-mac-images/zve2tewomyfemvi1tu2n.png",
@@ -1118,7 +1118,7 @@
     },
     {
       "fullName": "Apple iPhone 13 256Gb Starlight",
-      "price": 34040,
+      "price": 19320,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653693003/mac-mac-images/fdkr7v7ap2u4fr3tdgdb.png",
@@ -1136,7 +1136,7 @@
     },
     {
       "fullName": "Apple iPhone 13 512Gb Green",
-      "price": 37740,
+      "price": 21420,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692619/mac-mac-images/pqutfkmtmmuidotq8rnj.png",
@@ -1154,7 +1154,7 @@
     },
     {
       "fullName": "Apple iPhone 13 512Gb Blue",
-      "price": 37740,
+      "price": 21420,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692725/mac-mac-images/ggncwt7yuuiezdwtjcp0.png",
@@ -1172,7 +1172,7 @@
     },
     {
       "fullName": "Apple iPhone 13 512Gb Pink",
-      "price": 37740,
+      "price": 21420,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692752/mac-mac-images/nchialn9rahyaazazmeo.png",
@@ -1204,11 +1204,11 @@
         "color": "(Product) Red"
       },
       "id": 65,
-      "price": 37740
+      "price": 21420
     },
     {
       "fullName": "Apple iPhone 13 512Gb Midnight",
-      "price": 37740,
+      "price": 21420,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692979/mac-mac-images/zve2tewomyfemvi1tu2n.png",
@@ -1226,7 +1226,7 @@
     },
     {
       "fullName": "Apple iPhone 13 512Gb Starlight",
-      "price": 37740,
+      "price": 21420,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653693003/mac-mac-images/fdkr7v7ap2u4fr3tdgdb.png",
@@ -1244,7 +1244,7 @@
     },
     {
       "fullName": "Apple iPhone 13 Mini 128Gb Green",
-      "price": 27010,
+      "price": 15330,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692619/mac-mac-images/pqutfkmtmmuidotq8rnj.png",
@@ -1262,7 +1262,7 @@
     },
     {
       "fullName": "Apple iPhone 13 Mini 128Gb Blue",
-      "price": 27010,
+      "price": 15330,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692725/mac-mac-images/ggncwt7yuuiezdwtjcp0.png",
@@ -1280,7 +1280,7 @@
     },
     {
       "fullName": "Apple iPhone 13 Mini 128Gb Pink",
-      "price": 27010,
+      "price": 15330,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692752/mac-mac-images/nchialn9rahyaazazmeo.png",
@@ -1312,11 +1312,11 @@
         "color": "(Product) Red"
       },
       "id": 71,
-      "price": 27010
+      "price": 15330
     },
     {
       "fullName": "Apple iPhone 13 Mini 128Gb Midnight",
-      "price": 27010,
+      "price": 15330,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692979/mac-mac-images/zve2tewomyfemvi1tu2n.png",
@@ -1334,7 +1334,7 @@
     },
     {
       "fullName": "Apple iPhone 13 Mini 128Gb Starlight",
-      "price": 27010,
+      "price": 15330,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653693003/mac-mac-images/fdkr7v7ap2u4fr3tdgdb.png",
@@ -1352,7 +1352,7 @@
     },
     {
       "fullName": "Apple iPhone 13 Mini 256Gb Green",
-      "price": 28860,
+      "price": 16380,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692619/mac-mac-images/pqutfkmtmmuidotq8rnj.png",
@@ -1370,7 +1370,7 @@
     },
     {
       "fullName": "Apple iPhone 13 Mini 256Gb Blue",
-      "price": 28860,
+      "price": 16380,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692725/mac-mac-images/ggncwt7yuuiezdwtjcp0.png",
@@ -1388,7 +1388,7 @@
     },
     {
       "fullName": "Apple iPhone 13 Mini 256Gb Pink",
-      "price": 28860,
+      "price": 16380,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692752/mac-mac-images/nchialn9rahyaazazmeo.png",
@@ -1420,11 +1420,11 @@
         "color": "(Product) Red"
       },
       "id": 77,
-      "price": 28860
+      "price": 16380
     },
     {
       "fullName": "Apple iPhone 13 Mini 256Gb Midnight",
-      "price": 28860,
+      "price": 16380,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692979/mac-mac-images/zve2tewomyfemvi1tu2n.png",
@@ -1442,7 +1442,7 @@
     },
     {
       "fullName": "Apple iPhone 13 Mini 256Gb Starlight",
-      "price": 28860,
+      "price": 16380,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653693003/mac-mac-images/fdkr7v7ap2u4fr3tdgdb.png",
@@ -1460,7 +1460,7 @@
     },
     {
       "fullName": "Apple iPhone 13 Mini 512Gb Green",
-      "price": 36260,
+      "price": 20580,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692619/mac-mac-images/pqutfkmtmmuidotq8rnj.png",
@@ -1478,7 +1478,7 @@
     },
     {
       "fullName": "Apple iPhone 13 Mini 512Gb Blue",
-      "price": 36260,
+      "price": 20580,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692725/mac-mac-images/ggncwt7yuuiezdwtjcp0.png",
@@ -1496,7 +1496,7 @@
     },
     {
       "fullName": "Apple iPhone 13 Mini 512Gb Pink",
-      "price": 36260,
+      "price": 20580,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692752/mac-mac-images/nchialn9rahyaazazmeo.png",
@@ -1528,11 +1528,11 @@
         "color": "(Product) Red"
       },
       "id": 83,
-      "price": 36260
+      "price": 20580
     },
     {
       "fullName": "Apple iPhone 13 Mini 512Gb Midnight",
-      "price": 36260,
+      "price": 20580,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692979/mac-mac-images/zve2tewomyfemvi1tu2n.png",
@@ -1550,7 +1550,7 @@
     },
     {
       "fullName": "Apple iPhone 13 Mini 512Gb Starlight",
-      "price": 36260,
+      "price": 20580,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653693003/mac-mac-images/fdkr7v7ap2u4fr3tdgdb.png",
@@ -1568,7 +1568,7 @@
     },
     {
       "fullName": "Apple iPhone 12 Pro Max 128Gb Pacific Blue",
-      "price": 42550,
+      "price": 24150,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653756959/mac-mac-images/dieo05p5zwi6is92sppf.png",
@@ -1586,7 +1586,7 @@
     },
     {
       "fullName": "Apple iPhone 12 Pro Max 128Gb Gold",
-      "price": 42550,
+      "price": 24150,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653756999/mac-mac-images/knzbk3somexvvoipngqb.png",
@@ -1604,7 +1604,7 @@
     },
     {
       "fullName": "Apple iPhone 12 Pro Max 128Gb Graphite",
-      "price": 42550,
+      "price": 24150,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757019/mac-mac-images/msunr9a67rptxtza7xws.png",
@@ -1622,7 +1622,7 @@
     },
     {
       "fullName": "Apple iPhone 12 Pro Max 128Gb Silver",
-      "price": 42550,
+      "price": 24150,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757039/mac-mac-images/v3bw9jd4qhj3qfkmvp2k.png",
@@ -1640,7 +1640,7 @@
     },
     {
       "fullName": "Apple iPhone 12 Pro Max 256Gb Pacific Blue",
-      "price": 44400,
+      "price": 25200,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653756959/mac-mac-images/dieo05p5zwi6is92sppf.png",
@@ -1658,7 +1658,7 @@
     },
     {
       "fullName": "Apple iPhone 12 Pro Max 256Gb Gold",
-      "price": 44400,
+      "price": 25200,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653756999/mac-mac-images/knzbk3somexvvoipngqb.png",
@@ -1676,7 +1676,7 @@
     },
     {
       "fullName": "Apple iPhone 12 Pro Max 256Gb Graphite",
-      "price": 44400,
+      "price": 25200,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757019/mac-mac-images/msunr9a67rptxtza7xws.png",
@@ -1694,7 +1694,7 @@
     },
     {
       "fullName": "Apple iPhone 12 Pro Max 256Gb Silver",
-      "price": 44400,
+      "price": 25200,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757039/mac-mac-images/v3bw9jd4qhj3qfkmvp2k.png",
@@ -1712,7 +1712,7 @@
     },
     {
       "fullName": "Apple iPhone 12 Pro 128Gb Pacific Blue",
-      "price": 37000,
+      "price": 21000,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653756959/mac-mac-images/dieo05p5zwi6is92sppf.png",
@@ -1730,7 +1730,7 @@
     },
     {
       "fullName": "Apple iPhone 12 Pro 128Gb Gold",
-      "price": 37000,
+      "price": 21000,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653756999/mac-mac-images/knzbk3somexvvoipngqb.png",
@@ -1748,7 +1748,7 @@
     },
     {
       "fullName": "Apple iPhone 12 Pro 128Gb Graphite",
-      "price": 37000,
+      "price": 21000,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757019/mac-mac-images/msunr9a67rptxtza7xws.png",
@@ -1766,7 +1766,7 @@
     },
     {
       "fullName": "Apple iPhone 12 Pro 128Gb Silver",
-      "price": 37000,
+      "price": 21000,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757039/mac-mac-images/v3bw9jd4qhj3qfkmvp2k.png",
@@ -1784,7 +1784,7 @@
     },
     {
       "fullName": "Apple iPhone 12 Pro 256Gb Pacific Blue",
-      "price": 40700,
+      "price": 23100,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653756959/mac-mac-images/dieo05p5zwi6is92sppf.png",
@@ -1802,7 +1802,7 @@
     },
     {
       "fullName": "Apple iPhone 12 Pro 256Gb Gold",
-      "price": 40700,
+      "price": 23100,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653756999/mac-mac-images/knzbk3somexvvoipngqb.png",
@@ -1820,7 +1820,7 @@
     },
     {
       "fullName": "Apple iPhone 12 Pro 256Gb Graphite",
-      "price": 40700,
+      "price": 23100,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757019/mac-mac-images/msunr9a67rptxtza7xws.png",
@@ -1838,7 +1838,7 @@
     },
     {
       "fullName": "Apple iPhone 12 Pro 256Gb Silver",
-      "price": 40700,
+      "price": 23100,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757039/mac-mac-images/v3bw9jd4qhj3qfkmvp2k.png",
@@ -1857,7 +1857,7 @@
     {
       "id": 102,
       "fullName": "Apple iPhone 12 64Gb Black",
-      "price": 24420,
+      "price": 13860,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757890/mac-mac-images/olj9bzswwatvm4qhvyja.png",
@@ -1875,7 +1875,7 @@
     {
       "id": 103,
       "fullName": "Apple iPhone 12 64Gb White",
-      "price": 24420,
+      "price": 13860,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757901/mac-mac-images/r80hh0muk2cgvkvh1l8y.png",
@@ -1893,7 +1893,7 @@
     {
       "id": 104,
       "fullName": "Apple iPhone 12 64Gb (Product) Red",
-      "price": 24420,
+      "price": 13860,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757912/mac-mac-images/uz9xavlcwdnuclynkrxm.png",
@@ -1911,7 +1911,7 @@
     {
       "id": 105,
       "fullName": "Apple iPhone 12 64Gb Mind",
-      "price": 24420,
+      "price": 13860,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757942/mac-mac-images/z2goemdbmz8banhh9bft.png",
@@ -1928,7 +1928,7 @@
     },
     {
       "fullName": "Apple iPhone 12 64Gb Blue",
-      "price": 24420,
+      "price": 13860,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757856/mac-mac-images/blwnunmgqhwm8txnyrdi.png",
@@ -1946,7 +1946,7 @@
     },
     {
       "fullName": "Apple iPhone 12 64Gb Purple",
-      "price": 24420,
+      "price": 13860,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757873/mac-mac-images/monocjnqhqtvygkllhio.png",
@@ -1965,7 +1965,7 @@
     {
       "id": 108,
       "fullName": "Apple iPhone 12 128Gb Black",
-      "price": 28490,
+      "price": 16170,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757890/mac-mac-images/olj9bzswwatvm4qhvyja.png",
@@ -1983,7 +1983,7 @@
     {
       "id": 109,
       "fullName": "Apple iPhone 12 128Gb White",
-      "price": 28490,
+      "price": 16170,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757901/mac-mac-images/r80hh0muk2cgvkvh1l8y.png",
@@ -2001,7 +2001,7 @@
     {
       "id": 110,
       "fullName": "Apple iPhone 12 128Gb (Product) Red",
-      "price": 28490,
+      "price": 16170,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757912/mac-mac-images/uz9xavlcwdnuclynkrxm.png",
@@ -2019,7 +2019,7 @@
     {
       "id": 111,
       "fullName": "Apple iPhone 12 128Gb Mind",
-      "price": 28490,
+      "price": 16170,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757942/mac-mac-images/z2goemdbmz8banhh9bft.png",
@@ -2036,7 +2036,7 @@
     },
     {
       "fullName": "Apple iPhone 12 128Gb Blue",
-      "price": 28490,
+      "price": 16170,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757856/mac-mac-images/blwnunmgqhwm8txnyrdi.png",
@@ -2054,7 +2054,7 @@
     },
     {
       "fullName": "Apple iPhone 12 128Gb Purple",
-      "price": 28490,
+      "price": 16170,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757873/mac-mac-images/monocjnqhqtvygkllhio.png",
@@ -2073,7 +2073,7 @@
     {
       "id": 114,
       "fullName": "Apple iPhone 12 256Gb Black",
-      "price": 32560,
+      "price": 18480,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757890/mac-mac-images/olj9bzswwatvm4qhvyja.png",
@@ -2091,7 +2091,7 @@
     {
       "id": 115,
       "fullName": "Apple iPhone 12 256Gb White",
-      "price": 32560,
+      "price": 18480,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757901/mac-mac-images/r80hh0muk2cgvkvh1l8y.png",
@@ -2109,7 +2109,7 @@
     {
       "id": 116,
       "fullName": "Apple iPhone 12 256Gb (Product) Red",
-      "price": 32560,
+      "price": 18480,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757912/mac-mac-images/uz9xavlcwdnuclynkrxm.png",
@@ -2127,7 +2127,7 @@
     {
       "id": 117,
       "fullName": "Apple iPhone 12 256Gb Mind",
-      "price": 32560,
+      "price": 18480,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757942/mac-mac-images/z2goemdbmz8banhh9bft.png",
@@ -2144,7 +2144,7 @@
     },
     {
       "fullName": "Apple iPhone 12 256Gb Blue",
-      "price": 32560,
+      "price": 18480,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757856/mac-mac-images/blwnunmgqhwm8txnyrdi.png",
@@ -2162,7 +2162,7 @@
     },
     {
       "fullName": "Apple iPhone 12 256Gb Purple",
-      "price": 32560,
+      "price": 18480,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757873/mac-mac-images/monocjnqhqtvygkllhio.png",
@@ -2181,7 +2181,7 @@
     {
       "id": 120,
       "fullName": "Apple iPhone 12 512Gb Black",
-      "price": 36445,
+      "price": 20685,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757890/mac-mac-images/olj9bzswwatvm4qhvyja.png",
@@ -2199,7 +2199,7 @@
     {
       "id": 121,
       "fullName": "Apple iPhone 12 512Gb White",
-      "price": 36445,
+      "price": 20685,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757901/mac-mac-images/r80hh0muk2cgvkvh1l8y.png",
@@ -2217,7 +2217,7 @@
     {
       "id": 122,
       "fullName": "Apple iPhone 12 512Gb (Product) Red",
-      "price": 36445,
+      "price": 20685,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757912/mac-mac-images/uz9xavlcwdnuclynkrxm.png",
@@ -2235,7 +2235,7 @@
     {
       "id": 123,
       "fullName": "Apple iPhone 12 512Gb Mind",
-      "price": 36445,
+      "price": 20685,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757942/mac-mac-images/z2goemdbmz8banhh9bft.png",
@@ -2252,7 +2252,7 @@
     },
     {
       "fullName": "Apple iPhone 12 512Gb Blue",
-      "price": 36445,
+      "price": 20685,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757856/mac-mac-images/blwnunmgqhwm8txnyrdi.png",
@@ -2270,7 +2270,7 @@
     },
     {
       "fullName": "Apple iPhone 12 512Gb Purple",
-      "price": 36445,
+      "price": 20685,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757873/mac-mac-images/monocjnqhqtvygkllhio.png",
@@ -2289,7 +2289,7 @@
     {
       "id": 126,
       "fullName": "Apple iPhone 12 Mini 64Gb Black",
-      "price": 19980,
+      "price": 11340,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757890/mac-mac-images/olj9bzswwatvm4qhvyja.png",
@@ -2307,7 +2307,7 @@
     {
       "id": 127,
       "fullName": "Apple iPhone 12 Mini 64Gb White",
-      "price": 19980,
+      "price": 11340,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757901/mac-mac-images/r80hh0muk2cgvkvh1l8y.png",
@@ -2325,7 +2325,7 @@
     {
       "id": 128,
       "fullName": "Apple iPhone 12 Mini 64Gb (Product) Red",
-      "price": 19980,
+      "price": 11340,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757912/mac-mac-images/uz9xavlcwdnuclynkrxm.png",
@@ -2343,7 +2343,7 @@
     {
       "id": 129,
       "fullName": "Apple iPhone 12 Mini 64Gb Mind",
-      "price": 19980,
+      "price": 11340,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757942/mac-mac-images/z2goemdbmz8banhh9bft.png",
@@ -2360,7 +2360,7 @@
     },
     {
       "fullName": "Apple iPhone 12 Mini 64Gb Blue",
-      "price": 19980,
+      "price": 11340,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757856/mac-mac-images/blwnunmgqhwm8txnyrdi.png",
@@ -2378,7 +2378,7 @@
     },
     {
       "fullName": "Apple iPhone 12 Mini 64Gb Purple",
-      "price": 19980,
+      "price": 11340,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757873/mac-mac-images/monocjnqhqtvygkllhio.png",
@@ -2397,7 +2397,7 @@
     {
       "id": 132,
       "fullName": "Apple iPhone 12 Mini 128Gb Black",
-      "price": 23310,
+      "price": 13230,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757890/mac-mac-images/olj9bzswwatvm4qhvyja.png",
@@ -2415,7 +2415,7 @@
     {
       "id": 133,
       "fullName": "Apple iPhone 12 Mini 128Gb White",
-      "price": 23310,
+      "price": 13230,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757901/mac-mac-images/r80hh0muk2cgvkvh1l8y.png",
@@ -2433,7 +2433,7 @@
     {
       "id": 134,
       "fullName": "Apple iPhone 12 Mini 128Gb (Product) Red",
-      "price": 23310,
+      "price": 13230,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757912/mac-mac-images/uz9xavlcwdnuclynkrxm.png",
@@ -2451,7 +2451,7 @@
     {
       "id": 135,
       "fullName": "Apple iPhone 12 Mini 128Gb Mind",
-      "price": 23310,
+      "price": 13230,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757942/mac-mac-images/z2goemdbmz8banhh9bft.png",
@@ -2468,7 +2468,7 @@
     },
     {
       "fullName": "Apple iPhone 12 Mini 128Gb Blue",
-      "price": 23310,
+      "price": 13230,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757856/mac-mac-images/blwnunmgqhwm8txnyrdi.png",
@@ -2486,7 +2486,7 @@
     },
     {
       "fullName": "Apple iPhone 12 Mini 128Gb Purple",
-      "price": 23310,
+      "price": 13230,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757873/mac-mac-images/monocjnqhqtvygkllhio.png",
@@ -2505,7 +2505,7 @@
     {
       "id": 138,
       "fullName": "Apple iPhone 12 Mini 256Gb Black",
-      "price": 27565,
+      "price": 15645,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757890/mac-mac-images/olj9bzswwatvm4qhvyja.png",
@@ -2523,7 +2523,7 @@
     {
       "id": 139,
       "fullName": "Apple iPhone 12 Mini 256Gb White",
-      "price": 27565,
+      "price": 15645,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757901/mac-mac-images/r80hh0muk2cgvkvh1l8y.png",
@@ -2541,7 +2541,7 @@
     {
       "id": 140,
       "fullName": "Apple iPhone 12 Mini 256Gb (Product) Red",
-      "price": 27565,
+      "price": 15645,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757912/mac-mac-images/uz9xavlcwdnuclynkrxm.png",
@@ -2559,7 +2559,7 @@
     {
       "id": 141,
       "fullName": "Apple iPhone 12 Mini 256Gb Mind",
-      "price": 27565,
+      "price": 15645,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757942/mac-mac-images/z2goemdbmz8banhh9bft.png",
@@ -2576,7 +2576,7 @@
     },
     {
       "fullName": "Apple iPhone 12 Mini 256Gb Blue",
-      "price": 27565,
+      "price": 15645,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757856/mac-mac-images/blwnunmgqhwm8txnyrdi.png",
@@ -2594,7 +2594,7 @@
     },
     {
       "fullName": "Apple iPhone 12 Mini 256Gb Purple",
-      "price": 27565,
+      "price": 15645,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757873/mac-mac-images/monocjnqhqtvygkllhio.png",
@@ -2613,7 +2613,7 @@
     {
       "id": 144,
       "fullName": "Apple iPhone 12 Mini 512Gb Black",
-      "price": 32190,
+      "price": 18270,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757890/mac-mac-images/olj9bzswwatvm4qhvyja.png",
@@ -2631,7 +2631,7 @@
     {
       "id": 145,
       "fullName": "Apple iPhone 12 Mini 512Gb White",
-      "price": 32190,
+      "price": 18270,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757901/mac-mac-images/r80hh0muk2cgvkvh1l8y.png",
@@ -2649,7 +2649,7 @@
     {
       "id": 146,
       "fullName": "Apple iPhone 12 Mini 512Gb (Product) Red",
-      "price": 32190,
+      "price": 18270,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757912/mac-mac-images/uz9xavlcwdnuclynkrxm.png",
@@ -2667,7 +2667,7 @@
     {
       "id": 147,
       "fullName": "Apple iPhone 12 Mini 512Gb Mind",
-      "price": 32190,
+      "price": 18270,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757942/mac-mac-images/z2goemdbmz8banhh9bft.png",
@@ -2684,7 +2684,7 @@
     },
     {
       "fullName": "Apple iPhone 12 Mini 512Gb Blue",
-      "price": 32190,
+      "price": 18270,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757856/mac-mac-images/blwnunmgqhwm8txnyrdi.png",
@@ -2702,7 +2702,7 @@
     },
     {
       "fullName": "Apple iPhone 12 Mini 512Gb Purple",
-      "price": 32190,
+      "price": 18270,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757873/mac-mac-images/monocjnqhqtvygkllhio.png",
@@ -2717,290 +2717,737 @@
         "color": "Purple"
       },
       "id": 149
+    },
+    {
+      "fullName": "Apple iPhone SE 2020 64Gb Black",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653784923/mac-mac-images/p28rhrpootzuv4dm8raf.png",
+          "id": "d1960695fdef5af84919035f9e94af8a"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "SE 2020",
+        "capacity": "64Gb",
+        "color": "Black"
+      },
+      "id": 150,
+      "price": 8190
+    },
+    {
+      "fullName": "Apple iPhone SE 2020 64Gb White",
+      "price": 8190,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785011/mac-mac-images/sw8bqagcoewpgjlvy2ks.png",
+          "id": "bc84f880f98da44d1ff3bd34c138fa18"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "SE 2020",
+        "capacity": "64Gb",
+        "color": "White"
+      },
+      "id": 151
+    },
+    {
+      "fullName": "Apple iPhone SE 2020 64Gb (Product) Red",
+      "price": 8190,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785032/mac-mac-images/vmkigwjjlew5mwnzuem2.png",
+          "id": "62601514954d11d2421ac01a2520838b"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "SE 2020",
+        "capacity": "64Gb",
+        "color": "(Product) Red"
+      },
+      "id": 152
+    },
+    {
+      "fullName": "Apple iPhone SE 2020 128Gb Black",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653784923/mac-mac-images/p28rhrpootzuv4dm8raf.png",
+          "id": "d1960695fdef5af84919035f9e94af8a"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "SE 2020",
+        "capacity": "128Gb",
+        "color": "Black"
+      },
+      "id": 153,
+      "price": 9030
+    },
+    {
+      "fullName": "Apple iPhone SE 2020 128Gb White",
+      "price": 9030,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785011/mac-mac-images/sw8bqagcoewpgjlvy2ks.png",
+          "id": "bc84f880f98da44d1ff3bd34c138fa18"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "SE 2020",
+        "capacity": "128Gb",
+        "color": "White"
+      },
+      "id": 154
+    },
+    {
+      "fullName": "Apple iPhone SE 2020 128Gb (Product) Red",
+      "price": 9030,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785032/mac-mac-images/vmkigwjjlew5mwnzuem2.png",
+          "id": "62601514954d11d2421ac01a2520838b"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "SE 2020",
+        "capacity": "128Gb",
+        "color": "(Product) Red"
+      },
+      "id": 155
+    },
+    {
+      "fullName": "Apple iPhone 11 64Gb Mind",
+      "price": 11760,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785149/mac-mac-images/svejlrqtaypk59qvznmk.png",
+          "id": "7d6fb49cc07af4d8b06181337ba1e449"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "11",
+        "capacity": "64Gb",
+        "color": "Mind"
+      },
+      "id": 156
+    },
+    {
+      "fullName": "Apple iPhone 11 64Gb (Product) Red",
+      "price": 11760,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785174/mac-mac-images/ptxincileyaavcpdaniz.png",
+          "id": "1524058a9fa303280d60907683d60536"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "11",
+        "capacity": "64Gb",
+        "color": "(Product) Red"
+      },
+      "id": 157
+    },
+    {
+      "fullName": "Apple iPhone 11 64Gb White",
+      "price": 11760,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785197/mac-mac-images/fspeaevbkpy44bwt3qan.png",
+          "id": "889e9c43705aec03d4381443b462675b"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "11",
+        "capacity": "64Gb",
+        "color": "White"
+      },
+      "id": 158
+    },
+    {
+      "fullName": "Apple iPhone 11 64Gb Black",
+      "price": 11760,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785218/mac-mac-images/yvanhll73c8g4lozi6vc.png",
+          "id": "19831dc132d8e904bcf3081c9a0ac961"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "11",
+        "capacity": "64Gb",
+        "color": "Black"
+      },
+      "id": 159
+    },
+    {
+      "fullName": "Apple iPhone 11 64Gb Purple",
+      "price": 11760,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785242/mac-mac-images/m45m81d7necxbvrlvwuk.png",
+          "id": "de9df796c8d971e149b86f08dae2dbe8"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "11",
+        "capacity": "64Gb",
+        "color": "Purple"
+      },
+      "id": 160
+    },
+    {
+      "fullName": "Apple iPhone 11 64Gb Yellow",
+      "price": 11760,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785267/mac-mac-images/vppgoq7cnnk3kbbgaywf.png",
+          "id": "3954c8402449544a2c5cd8a07244b3c0"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "11",
+        "capacity": "64Gb",
+        "color": "Yellow"
+      },
+      "id": 161
+    },
+    {
+      "fullName": "Apple iPhone 11 128Gb Mind",
+      "price": 13440,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785149/mac-mac-images/svejlrqtaypk59qvznmk.png",
+          "id": "7d6fb49cc07af4d8b06181337ba1e449"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "11",
+        "capacity": "128Gb",
+        "color": "Mind"
+      },
+      "id": 162
+    },
+    {
+      "fullName": "Apple iPhone 11 128Gb (Product) Red",
+      "price": 13440,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785174/mac-mac-images/ptxincileyaavcpdaniz.png",
+          "id": "1524058a9fa303280d60907683d60536"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "11",
+        "capacity": "128Gb",
+        "color": "(Product) Red"
+      },
+      "id": 163
+    },
+    {
+      "fullName": "Apple iPhone 11 128Gb White",
+      "price": 13440,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785197/mac-mac-images/fspeaevbkpy44bwt3qan.png",
+          "id": "889e9c43705aec03d4381443b462675b"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "11",
+        "capacity": "128Gb",
+        "color": "White"
+      },
+      "id": 164
+    },
+    {
+      "fullName": "Apple iPhone 11 128Gb Black",
+      "price": 13440,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785218/mac-mac-images/yvanhll73c8g4lozi6vc.png",
+          "id": "19831dc132d8e904bcf3081c9a0ac961"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "11",
+        "capacity": "128Gb",
+        "color": "Black"
+      },
+      "id": 165
+    },
+    {
+      "fullName": "Apple iPhone 11 128Gb Purple",
+      "price": 13440,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785242/mac-mac-images/m45m81d7necxbvrlvwuk.png",
+          "id": "de9df796c8d971e149b86f08dae2dbe8"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "11",
+        "capacity": "128Gb",
+        "color": "Purple"
+      },
+      "id": 166
+    },
+    {
+      "fullName": "Apple iPhone 11 128Gb Yellow",
+      "price": 13440,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785267/mac-mac-images/vppgoq7cnnk3kbbgaywf.png",
+          "id": "3954c8402449544a2c5cd8a07244b3c0"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "11",
+        "capacity": "128Gb",
+        "color": "Yellow"
+      },
+      "id": 167
+    },
+    {
+      "fullName": "Apple iPhone 11 256Gb Mind",
+      "price": 15120,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785149/mac-mac-images/svejlrqtaypk59qvznmk.png",
+          "id": "7d6fb49cc07af4d8b06181337ba1e449"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "11",
+        "capacity": "256Gb",
+        "color": "Mind"
+      },
+      "id": 168
+    },
+    {
+      "fullName": "Apple iPhone 11 256Gb (Product) Red",
+      "price": 15120,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785174/mac-mac-images/ptxincileyaavcpdaniz.png",
+          "id": "1524058a9fa303280d60907683d60536"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "11",
+        "capacity": "256Gb",
+        "color": "(Product) Red"
+      },
+      "id": 169
+    },
+    {
+      "fullName": "Apple iPhone 11 256Gb White",
+      "price": 15120,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785197/mac-mac-images/fspeaevbkpy44bwt3qan.png",
+          "id": "889e9c43705aec03d4381443b462675b"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "11",
+        "capacity": "256Gb",
+        "color": "White"
+      },
+      "id": 170
+    },
+    {
+      "fullName": "Apple iPhone 11 256Gb Black",
+      "price": 15120,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785218/mac-mac-images/yvanhll73c8g4lozi6vc.png",
+          "id": "19831dc132d8e904bcf3081c9a0ac961"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "11",
+        "capacity": "256Gb",
+        "color": "Black"
+      },
+      "id": 171
+    },
+    {
+      "fullName": "Apple iPhone 11 256Gb Purple",
+      "price": 15120,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785242/mac-mac-images/m45m81d7necxbvrlvwuk.png",
+          "id": "de9df796c8d971e149b86f08dae2dbe8"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "11",
+        "capacity": "256Gb",
+        "color": "Purple"
+      },
+      "id": 172
+    },
+    {
+      "fullName": "Apple iPhone 11 256Gb Yellow",
+      "price": 15120,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785267/mac-mac-images/vppgoq7cnnk3kbbgaywf.png",
+          "id": "3954c8402449544a2c5cd8a07244b3c0"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "iPhone",
+        "model": "11",
+        "capacity": "256Gb",
+        "color": "Yellow"
+      },
+      "id": 173
     }
   ],
   "orders": [],
   "prices": [
     {
-      "apple iphone 13 128gb green": 33250,
-      "apple iphone 13 128gb blue": 33060,
-      "apple iphone 13 128gb midnight": 33060,
-      "apple iphone 13 128gb starlight": 33060,
-      "apple iphone 13 128gb (product) red": 33060,
-      "apple iphone 13 128gb pink": 33060,
-      "apple iphone 13 256gb green": 34960,
-      "apple iphone 13 256gb blue": 34960,
-      "apple iphone 13 256gb midnight": 34960,
-      "apple iphone 13 256gb starlight": 34960,
-      "apple iphone 13 256gb (product) red": 34960,
-      "apple iphone 13 256gb pink": 34960,
-      "apple iphone 13 512gb green": 38760,
-      "apple iphone 13 512gb blue": 38760,
-      "apple iphone 13 512gb midnight": 38760,
-      "apple iphone 13 512gb starlight": 38760,
-      "apple iphone 13 512gb (product) red": 38760,
-      "apple iphone 13 512gb pink": 38760,
-      "apple iphone 13 mini 128gb starlight": 27740,
-      "apple iphone 13 mini 128gb green": 27740,
-      "apple iphone 13 mini 128gb blue": 27740,
-      "apple iphone 13 mini 128gb midnight": 27740,
-      "apple iphone 13 mini 128gb (product) red": 27740,
-      "apple iphone 13 mini 128gb pink": 27740,
-      "apple iphone 13 mini 256gb green": 29640,
-      "apple iphone 13 mini 256gb blue": 29640,
-      "apple iphone 13 mini 256gb midnight": 29640,
-      "apple iphone 13 mini 256gb starlight": 29640,
-      "apple iphone 13 mini 256gb (product) red": 29640,
-      "apple iphone 13 mini 256gb pink": 29640,
-      "apple iphone 13 mini 512gb green": 37240,
-      "apple iphone 13 mini 512gb blue": 37240,
-      "apple iphone 13 mini 512gb midnight": 37240,
-      "apple iphone 13 mini 512gb starlight": 37240,
-      "apple iphone 13 mini 512gb (product) red": 37240,
-      "apple iphone 13 mini 512gb pink": 37240,
-      "apple iphone 13 pro 128gb alpine green": 42560,
-      "apple iphone 13 pro 128gb graphite": 42560,
-      "apple iphone 13 pro 128gb sierra blue": 42180,
-      "apple iphone 13 pro 128gb silver": 41800,
-      "apple iphone 13 pro 128gb gold": 41800,
-      "apple iphone 13 pro 256gb alpine green": 46170,
-      "apple iphone 13 pro 256gb graphite": 46550,
-      "apple iphone 13 pro 256gb sierra blue": 45980,
-      "apple iphone 13 pro 256gb silver": 45980,
-      "apple iphone 13 pro 256gb gold": 45600,
-      "apple iphone 13 pro 512gb alpine green": 52060,
-      "apple iphone 13 pro 512gb graphite": 51870,
-      "apple iphone 13 pro 512gb sierra blue": 51680,
-      "apple iphone 13 pro 512gb silver": 51680,
-      "apple iphone 13 pro 512gb gold": 51300,
-      "apple iphone 13 pro 1tb alpine green": 57570,
-      "apple iphone 13 pro 1tb graphite": 57000,
-      "apple iphone 13 pro 1tb sierra blue": 57380,
-      "apple iphone 13 pro 1tb silver": 57190,
-      "apple iphone 13 pro 1tb gold": 57000,
-      "apple iphone 13 pro max 128gb alpine green": 46360,
-      "apple iphone 13 pro max 128gb graphite": 46170,
-      "apple iphone 13 pro max 128gb sierra blue": 45980,
-      "apple iphone 13 pro max 128gb silver": 45980,
-      "apple iphone 13 pro max 128gb gold": 45600,
-      "apple iphone 13 pro max 256gb alpine green": 50160,
-      "apple iphone 13 pro max 256gb graphite": 50160,
-      "apple iphone 13 pro max 256gb sierra blue": 50160,
-      "apple iphone 13 pro max 256gb silver": 50160,
-      "apple iphone 13 pro max 256gb gold": 49780,
-      "apple iphone 13 pro max 512gb alpine green": 58140,
-      "apple iphone 13 pro max 512gb graphite": 57380,
-      "apple iphone 13 pro max 512gb sierra blue": 57380,
-      "apple iphone 13 pro max 512gb silver": 55860,
-      "apple iphone 13 pro max 512gb gold": 55860,
-      "apple iphone 13 pro max 1tb alpine green": 62320,
-      "apple iphone 13 pro max 1tb graphite": 60230,
-      "apple iphone 13 pro max 1tb sierra blue": 60040,
-      "apple iphone 13 pro max 1tb silver": 59280,
-      "apple iphone 13 pro max 1tb gold": 59280,
-      "apple iphone 12 64gb black": 25080,
-      "apple iphone 12 64gb blue": 25080,
-      "apple iphone 12 64gb (product) red": 25080,
-      "apple iphone 12 64gb mind": 25080,
-      "apple iphone 12 64gb purple": 25080,
-      "apple iphone 12 64gb white": 25080,
-      "apple iphone 12 128gb black": 29260,
-      "apple iphone 12 128gb white": 29260,
-      "apple iphone 12 128gb blue": 29260,
-      "apple iphone 12 128gb (product) red": 29260,
-      "apple iphone 12 128gb mind": 29260,
-      "apple iphone 12 128gb purple": 29260,
-      "apple iphone 12 256gb black": 33440,
-      "apple iphone 12 256gb white": 33440,
-      "apple iphone 12 256gb blue": 33440,
-      "apple iphone 12 256gb (product) red": 33440,
-      "apple iphone 12 256gb mind": 33440,
-      "apple iphone 12 256gb purple": 33440,
-      "apple iphone 12 512gb black": 37430,
-      "apple iphone 12 512gb white": 37430,
-      "apple iphone 12 512gb blue": 37430,
-      "apple iphone 12 512gb (product) red": 37430,
-      "apple iphone 12 512gb mind": 37430,
-      "apple iphone 12 512gb purple": 37430,
-      "apple iphone 12 mini 64gb black": 20520,
-      "apple iphone 12 mini 64gb blue": 20520,
-      "apple iphone 12 mini 64gb (product) red": 20520,
-      "apple iphone 12 mini 64gb mind": 20520,
-      "apple iphone 12 mini 64gb purple": 20520,
-      "apple iphone 12 mini 64gb white": 20520,
-      "apple iphone 12 mini 128gb black": 23940,
-      "apple iphone 12 mini 128gb white": 23940,
-      "apple iphone 12 mini 128gb (product) red": 23940,
-      "apple iphone 12 mini 128gb mind": 23940,
-      "apple iphone 12 mini 128gb blue": 23940,
-      "apple iphone 12 mini 128gb purple": 23940,
-      "apple iphone 12 mini 256gb black": 28310,
-      "apple iphone 12 mini 256gb white": 28310,
-      "apple iphone 12 mini 256gb blue": 28310,
-      "apple iphone 12 mini 256gb (product) red": 28310,
-      "apple iphone 12 mini 256gb mind": 28310,
-      "apple iphone 12 mini 256gb purple": 28310,
-      "apple iphone 12 mini 512gb black": 33060,
-      "apple iphone 12 mini 512gb white": 33060,
-      "apple iphone 12 mini 512gb blue": 33060,
-      "apple iphone 12 mini 512gb (product) red": 33060,
-      "apple iphone 12 mini 512gb mind": 33060,
-      "apple iphone 12 mini 512gb purple": 33060,
-      "apple iphone 12 pro 128gb graphite": 38000,
-      "apple iphone 12 pro 128gb pacific blue": 38000,
-      "apple iphone 12 pro 128gb silver": 38000,
-      "apple iphone 12 pro 128gb gold": 38000,
-      "apple iphone 12 pro 256gb graphite": 41800,
-      "apple iphone 12 pro 256gb pacific blue": 41800,
-      "apple iphone 12 pro 256gb silver": 41800,
-      "apple iphone 12 pro 256gb gold": 41800,
-      "apple iphone 12 pro max 128gb graphite": 43700,
-      "apple iphone 12 pro max 128gb pacific blue": 43700,
-      "apple iphone 12 pro max 128gb silver": 43700,
-      "apple iphone 12 pro max 128gb gold": 43700,
-      "apple iphone 12 pro max 256gb graphite": 45600,
-      "apple iphone 12 pro max 256gb pacific blue": 45600,
-      "apple iphone 12 pro max 256gb silver": 45600,
-      "apple iphone 12 pro max 256gb gold": 45600,
-      "apple iphone se 2022 64gb midnight": 17860,
-      "apple iphone se 2022 64gb starlight": 17860,
-      "apple iphone se 2022 64gb (product) red": 17860,
-      "apple iphone se 2022 128gb midnight": 20140,
-      "apple iphone se 2022 128gb starlight": 20140,
-      "apple iphone se 2022 128gb (product) red": 20140,
-      "apple iphone se 2022 256gb midnight": 22800,
-      "apple iphone se 2022 256gb starlight": 22800,
-      "apple iphone se 2022 256gb (product) red": 22800,
-      "apple iphone se 2020 128gb black (mxd02)  slim box": 17100,
-      "apple iphone se 2020 128gb white (mxd12)  slim box": 16340,
-      "apple iphone 11 64gb product (red) (mhcr3, mhdd3) slim box": 21280,
-      "apple iphone 11 64gb green (mhcw3, mhdg3) slim box": 21280,
-      "apple iphone 11 64gb yellow (mhcu3, mhde3) slim box": 21280,
-      "apple iphone 11 128gb black (mhcx3, mhdh3) slim box": 24320,
-      "apple iphone 11 128gb product (red) (mhd03, mhdk3) slim box": 24320,
-      "apple iphone 11 128gb white (mhcy3, mhdj3) slim box": 24320,
-      "apple iphone 11 128gb green (mhd33, mhdn3) slim box": 24320,
-      "apple iphone 11 128gb purple (mhd23, mhdm3) slim box": 25840,
-      "apple iphone 11 128gb yellow (mhd13, mhdl3) slim box": 24320,
-      "ipad pro 11\" 2021 wi-fi 128gb space gray (mhqr3)": 33820,
-      "ipad pro 11\" 2021 wi-fi 256gb space gray (mhqu3)": 37620,
-      "ipad pro 11\" 2021 wi-fi  1tb silver (mhr03)": 50350,
-      "ipad pro 11\" 2020 wi-fi 2tb silver (mhr33)": 54150,
-      "ipad pro 11\" 2021 wi-fi+5g 128gb space gray (mhmt3)": 43700,
-      "ipad pro 11\" 2021 wi-fi + cellular 2tb silver (mhn33, mhwf3)": 58900,
-      "ipad pro 12.9\" 2021 wi-fi 128gb space gray (mhnf3)": 39710,
-      "ipad pro 12.9\" 2021 wi-fi 512gb silver (mhnl3 )": 50540,
-      "ipad pro 12.9\" 2021 wi-fi + cellular 128gb space gray (mhnr3,mhr43)": 45220,
-      "ipad pro 12.9\" 2021 wi-fi + cellular 128gb silver (mhnt3, mhr53)": 45220,
-      "ipad pro 12.9\" 2021 wi-fi + cellular 256gb space gray (mhr63, mhnw3)": 49020,
-      "apple magic keyboard for ipad pro 12.9‑inch (5th generation) white (mjql3)": 13680,
-      "apple magic keyboard for ipad pro 12.9‑inch (5th generation) black (mjqk3": 15200,
-      "ipad pro 12.9\" 2020 wi-fi + cellular 1tb silver (mxg32, mxfa2)": 49400,
-      "ipad mini 6 wi-fi 64gb space gray (mk7m3)": 21660,
-      "ipad mini 6 wi-fi 64gb starlight (mk7p3)": 20900,
-      "ipad mini 6 wi-fi + lte  64gb  starlight  (mk8c3)": 27360,
-      "ipad mini 6 wi-fi 256gb space gray (mk7t3)": 28120,
-      "apple ipad 10.2\" 2021 wi-fi 64gb space gray (mk2k3)": 16150,
-      "apple ipad 10.2\" 2021 wi-fi 256gb space gray (mk2n3)": 20900,
-      "apple ipad 10.2\" 2021 wi-fi 256gb silver (mk2p3)": 20900,
-      "apple ipad 10.2\" 2021 wi-fi + cellular 256gb silver (mk6a3, mk4h3)": 29260,
-      "apple ipad 10.2\" 2021 wi-fi + cellular 256gb space gray ()": 29260,
-      "ipad air 4 10.9'' wi-fi 64gb space gray (myfm2)": 22800,
-      "ipad air 4 10.9'' wi-fi 64gb silver (myfn2)": 22800,
-      "ipad air 4 10.9'' wi-fi 64gb rose gold (myfp2)": 22800,
-      "ipad air 4 10.9'' wi-fi 64gb sky blue (myfq2)": 22800,
-      "ipad air 4 10.9'' wi-fi 256gb silver (myfw2)": 28500,
-      "ipad air 4 10.9'' wi-fi + cellular 64gb space gray (mygw2)": 28120,
-      "macbook air 13\" gold 2020 m1 (fgnd3) - 256gb ssd  cpo": 36100,
-      "macbook air 13\" space gray 2020 m1 (mgn63) - 256gb ssd": 40280,
-      "macbook air 13\" silver 2020 m1 (mgnd3) - 256gb ssd": 40280,
-      "macbook air 13\" space gray 2020 m1 (mgn73) - 512gb ssd": 50920,
-      "macbook air 13\" silver 2020 m1 (z127000fk) - 7‑core gpu/16 gb/256 gb": 55100,
-      "macbook air 13\" gold 2020 m1 (z12a000fk) - 7‑core gpu/16 gb/256 gb": 53960,
-      "macbook pro 14\" space gray (mkgp3) 2021 - 512gb ssd": 79040,
-      "macbook pro 14\" silver (mkgr3) 2021 - 512gb ssd": 79800,
-      "macbook pro 14\" space gray (mkgq3) 2021 - 1tb ssd": 93100,
-      "macbook pro 14\" silver (mkgt3) 2021 - 1tb ssd": 93100,
-      "macbook pro 14\" space gray (z15g001vr ) 2021 - 8-14/ 16 1tb ssd  m1   67w зарядка": 87400,
-      "macbook pro 14\" space gray (z15g0022 ) 2021 - 8-14/ 16 1tb ssd  m1  96w зарядка": 87400,
-      "macbook pro 13\" m1 space gray (z11c000gd, z11c000em) 2020 - 16 gb/1 tb": 76000,
-      "macbook pro 13\" m1 silver (z11f000em, z11d000gk) 2020 - 16 gb/1 tb": 76000,
-      "macbook pro 13\" m1 space gray (z11c000en, z11b000ep) 2020 - 16 gb/2 tb": 89300,
-      "macbook pro 13\" m1 silver (z11f000en) 2020 - 16 gb/2 tb": 89300,
-      "macbook pro 13\" space gray (mwp42) 2020 - 512gb ssd": 52440,
-      "macbook pro 13\" silver (mwp72) 2020 - 512gb ssd": 52440,
-      "macbook pro 13\" space gray (mwp52) 2020 - 1tb ssd": 55100,
-      "macbook pro 16\" space gray (mk183) 2021 - 512gb ssd": 93100,
-      "macbook pro 16\" silver (mk1e3) 2021 - 512gb ssd": 95000,
-      "macbook pro 16\" space gray (mk193) 2021 - 1tb ssd": 105640,
-      "macbook pro 16\" silver (mk1f3) 2021 - 1tb ssd": 105640,
-      "macbook pro 16\" space gray (mk1a3) 2021 1tb ssd     m1 max": 182400,
-      "macbook pro 16\" space grey (mvvj2) 2019 - 512gb ssd": 85880,
-      "macbook pro 16\" silver (mvvl2) 2019 - 512gb ssd": 85500,
-      "macbook pro 16'' space gray (mvvk2) 2019 - 1 tb ssd": 88160,
-      "mac mini z12n000kp/z12n000g0 apple m1|16gb|256gb": 36860,
-      "apple watch series 7 gps 41mm midnight aluminum case with midnight sport band (mkmx3)": 15960,
-      "apple watch series 7 gps 45mm midnight aluminum case with midnight sport band (mkn53)": 16910,
-      "apple watch series 7 gps 41mm starlight aluminum case with starlight sport band (mkmy3)": 16340,
-      "apple watch series 7 gps 45mm starlight aluminum case with starlight sport band (mkn63)": 16720,
-      "apple watch series 7 gps 41mm green aluminum case with clover sport band (mkn03)": 15960,
-      "apple watch series 7 gps 45mm green aluminum case with clover sport band (mkn73)": 16720,
-      "apple watch series 7 gps 41mm blue aluminum case with abyss blue sport band (mkn13)": 15960,
-      "apple watch series 7 gps 45mm blue aluminum case with abyss blue sport band (mkn83)": 16720,
-      "apple watch series 7 gps + cellular 45mm graphite stainless steel case with with graphite milanese loop (mkjj3, mkl33, mkmr3)": 35340,
-      "apple watch series 6 gps 40mm blue aluminium case with deep navy sport band (mg143)": 15580,
-      "apple watch series 6 gps 44mm blue aluminium case with deep navy sport band (m00j3)": 16720,
-      "apple watch series 6 gps 40mm (product)red aluminum case with (product)red sport band (m00a3)": 16150,
-      "apple watch series 6 gps 40mm space gray aluminum case with black sport band (mg133)": 15580,
-      "apple watch series 6 gps 40mm gold aluminum case with pink sand sport band (mg123)": 16150,
-      "apple watch series 6 gps + cellular 40mm gold aluminum case with pink sand sport band (m02p3, m06n3)": 17480,
-      "apple watch series 6 nike gps 44mm space gray aluminum case with anthracite/black nike sport band (mg173)": 17860,
-      "apple airpods max green (mgyn3)": 19380,
-      "apple airpods max pink (mgym3)": 18240,
-      "apple airpods max silver (mgyj3)": 19380,
-      "apple airpods max sky blue (mgyl3)": 19380,
-      "apple airpods max space grey (mgyh3)": 19760,
-      "apple airpods 3 (mme73) 2021": 6270,
-      "apple airpods pro with magsafe charging case (mlwk3) 2021": 7675,
-      "apple airpods 2 with charging case (mv7n2)": 4560,
-      "apple wireless charging case (mr8u2)": 2660,
-      "apple airpods charging case": 1710,
-      "apple airpods 2 right": 2660,
-      "apple airpods 2 left": 2280,
-      "apple airpods 2 box": 1330,
-      "apple airpods pro magsafe    case": 3040,
-      "apple airpods pro right": 3800,
-      "apple airpods pro left": 3230,
-      "apple airpods 3 right": 2660,
-      "apple airpods 3 left": 2660,
-      "apple airpods 3 box": 2280,
-      "комплект амбушюр для airpods pro (s/l)": 265,
-      "lightning to usb cable (1 m) mque2) 100% оригинал": 645,
-      "lightning to usb-c cable (1 m) (mqgj2) 100% оригинал": 645,
-      "коробка от apple airpods (mv7n2)": 75,
-      "коробка от apple airpods (mrxj2)": 75,
-      "коробка от apple airpods pro (mwp22)": 75,
-      "apple homepod mini blue (mj2c3)": 4560,
-      "apple homepod mini white (my5h2)": 4560,
-      "apple tv 4k 64gb (mp7p2)": 5890,
-      "apple magic mouse 3 silver (mk2e3)": 3610,
-      "apple magic mouse 2 (mla02)": 3040,
-      "apple magic mouse 2 space gray gray (mrme2)": 4370,
-      "apple 20w usb-c power adapter (mhje3 ) -ua 🇺🇦 orig": 835,
-      "apple airtag 4 pack (mx542)": 3990,
-      "apple pencil 1 for ipad pro (mk0c2)": 3610,
-      "apple pencil 2 for ipad pro (mu8f2)": 4750,
-      "apple usb-c digital av multiport adapter (muf82) 4k": 1900,
-      "apple 61w usb-c power adapter (mnf72)": 2660,
-      "apple 87w usb-c power adapter (mnf82)": 2660,
-      "apple 96w usb-c power adapter (mx0j2)": 3040,
-      "apple watch magnetic charger to usb-c cable (1 m) (mx2h2) (из комплекта)": 1900,
-      "apple watch magnetic charging cable (1 m) (mklg2)": 1520,
-      "apple atlantic blue braided solo loop watch - size 10 для apple watch 42/44mm (my8h2)": 4750,
-      "apple atlantic blue braided solo loop watch - size 11 для apple watch 42/44mm (my8j2)": 4750,
-      "apple black sport band (mtpl2, mj4n2, mj4q2, mj4g2, mu9l2) для apple watch 42/44mm": 2280,
-      "apple white sport band (mtpk2, mj4m2, mq3q2) для apple watch 42/44mm": 2280,
-      "apple deep navy sport band (myax2) для apple watch 42/44mm": 2280,
+      "apple iphone 13 128gb green": 18270,
+      "apple iphone 13 128gb blue": 18270,
+      "apple iphone 13 128gb midnight": 18270,
+      "apple iphone 13 128gb starlight": 18270,
+      "apple iphone 13 128gb (product) red": 18270,
+      "apple iphone 13 128gb pink": 18270,
+      "apple iphone 13 256gb green": 19320,
+      "apple iphone 13 256gb blue": 19320,
+      "apple iphone 13 256gb midnight": 19320,
+      "apple iphone 13 256gb starlight": 19320,
+      "apple iphone 13 256gb (product) red": 19320,
+      "apple iphone 13 256gb pink": 19320,
+      "apple iphone 13 512gb green": 21420,
+      "apple iphone 13 512gb blue": 21420,
+      "apple iphone 13 512gb midnight": 21420,
+      "apple iphone 13 512gb starlight": 21420,
+      "apple iphone 13 512gb (product) red": 21420,
+      "apple iphone 13 512gb pink": 21420,
+      "apple iphone 13 mini 128gb starlight": 15330,
+      "apple iphone 13 mini 128gb green": 15330,
+      "apple iphone 13 mini 128gb blue": 15330,
+      "apple iphone 13 mini 128gb midnight": 15330,
+      "apple iphone 13 mini 128gb (product) red": 15330,
+      "apple iphone 13 mini 128gb pink": 15330,
+      "apple iphone 13 mini 256gb green": 16380,
+      "apple iphone 13 mini 256gb blue": 16380,
+      "apple iphone 13 mini 256gb midnight": 16380,
+      "apple iphone 13 mini 256gb starlight": 16380,
+      "apple iphone 13 mini 256gb (product) red": 16380,
+      "apple iphone 13 mini 256gb pink": 16380,
+      "apple iphone 13 mini 512gb green": 20580,
+      "apple iphone 13 mini 512gb blue": 20580,
+      "apple iphone 13 mini 512gb midnight": 20580,
+      "apple iphone 13 mini 512gb starlight": 20580,
+      "apple iphone 13 mini 512gb (product) red": 20580,
+      "apple iphone 13 mini 512gb pink": 20580,
+      "apple iphone 13 pro 128gb alpine green": 23310,
+      "apple iphone 13 pro 128gb graphite": 23310,
+      "apple iphone 13 pro 128gb sierra blue": 23310,
+      "apple iphone 13 pro 128gb silver": 23310,
+      "apple iphone 13 pro 128gb gold": 23310,
+      "apple iphone 13 pro 256gb alpine green": 25515,
+      "apple iphone 13 pro 256gb graphite": 25725,
+      "apple iphone 13 pro 256gb sierra blue": 25725,
+      "apple iphone 13 pro 256gb silver": 25725,
+      "apple iphone 13 pro 256gb gold": 25725,
+      "apple iphone 13 pro 512gb alpine green": 28665,
+      "apple iphone 13 pro 512gb graphite": 28665,
+      "apple iphone 13 pro 512gb sierra blue": 28665,
+      "apple iphone 13 pro 512gb silver": 28665,
+      "apple iphone 13 pro 512gb gold": 28665,
+      "apple iphone 13 pro 1tb alpine green": 31815,
+      "apple iphone 13 pro 1tb graphite": 31815,
+      "apple iphone 13 pro 1tb sierra blue": 31815,
+      "apple iphone 13 pro 1tb silver": 31815,
+      "apple iphone 13 pro 1tb gold": 31815,
+      "apple iphone 13 pro max 128gb alpine green": 25620,
+      "apple iphone 13 pro max 128gb graphite": 25620,
+      "apple iphone 13 pro max 128gb sierra blue": 25620,
+      "apple iphone 13 pro max 128gb silver": 25620,
+      "apple iphone 13 pro max 128gb gold": 25620,
+      "apple iphone 13 pro max 256gb alpine green": 27720,
+      "apple iphone 13 pro max 256gb graphite": 27720,
+      "apple iphone 13 pro max 256gb sierra blue": 27720,
+      "apple iphone 13 pro max 256gb silver": 27720,
+      "apple iphone 13 pro max 256gb gold": 27720,
+      "apple iphone 13 pro max 512gb alpine green": 32130,
+      "apple iphone 13 pro max 512gb graphite": 32130,
+      "apple iphone 13 pro max 512gb sierra blue": 32130,
+      "apple iphone 13 pro max 512gb silver": 32130,
+      "apple iphone 13 pro max 512gb gold": 32130,
+      "apple iphone 13 pro max 1tb alpine green": 33180,
+      "apple iphone 13 pro max 1tb graphite": 33180,
+      "apple iphone 13 pro max 1tb sierra blue": 33180,
+      "apple iphone 13 pro max 1tb silver": 33180,
+      "apple iphone 13 pro max 1tb gold": 33180,
+      "apple iphone 12 64gb black": 13860,
+      "apple iphone 12 64gb blue": 13860,
+      "apple iphone 12 64gb (product) red": 13860,
+      "apple iphone 12 64gb mind": 13860,
+      "apple iphone 12 64gb purple": 13860,
+      "apple iphone 12 64gb white": 13860,
+      "apple iphone 12 128gb black": 16170,
+      "apple iphone 12 128gb white": 16170,
+      "apple iphone 12 128gb blue": 16170,
+      "apple iphone 12 128gb (product) red": 16170,
+      "apple iphone 12 128gb mind": 16170,
+      "apple iphone 12 128gb purple": 16170,
+      "apple iphone 12 256gb black": 18480,
+      "apple iphone 12 256gb white": 18480,
+      "apple iphone 12 256gb blue": 18480,
+      "apple iphone 12 256gb (product) red": 18480,
+      "apple iphone 12 256gb mind": 18480,
+      "apple iphone 12 256gb purple": 18480,
+      "apple iphone 12 512gb black": 20685,
+      "apple iphone 12 512gb white": 20685,
+      "apple iphone 12 512gb blue": 20685,
+      "apple iphone 12 512gb (product) red": 20685,
+      "apple iphone 12 512gb mind": 20685,
+      "apple iphone 12 512gb purple": 20685,
+      "apple iphone 12 mini 64gb black": 11340,
+      "apple iphone 12 mini 64gb blue": 11340,
+      "apple iphone 12 mini 64gb (product) red": 11340,
+      "apple iphone 12 mini 64gb mind": 11340,
+      "apple iphone 12 mini 64gb purple": 11340,
+      "apple iphone 12 mini 64gb white": 11340,
+      "apple iphone 12 mini 128gb black": 13230,
+      "apple iphone 12 mini 128gb white": 13230,
+      "apple iphone 12 mini 128gb (product) red": 13230,
+      "apple iphone 12 mini 128gb mind": 13230,
+      "apple iphone 12 mini 128gb blue": 13230,
+      "apple iphone 12 mini 128gb purple": 13230,
+      "apple iphone 12 mini 256gb black": 15645,
+      "apple iphone 12 mini 256gb white": 15645,
+      "apple iphone 12 mini 256gb blue": 15645,
+      "apple iphone 12 mini 256gb (product) red": 15645,
+      "apple iphone 12 mini 256gb mind": 15645,
+      "apple iphone 12 mini 256gb purple": 15645,
+      "apple iphone 12 mini 512gb black": 18270,
+      "apple iphone 12 mini 512gb white": 18270,
+      "apple iphone 12 mini 512gb blue": 18270,
+      "apple iphone 12 mini 512gb (product) red": 18270,
+      "apple iphone 12 mini 512gb mind": 18270,
+      "apple iphone 12 mini 512gb purple": 18270,
+      "apple iphone 12 pro 128gb graphite": 21000,
+      "apple iphone 12 pro 128gb pacific blue": 21000,
+      "apple iphone 12 pro 128gb silver": 21000,
+      "apple iphone 12 pro 128gb gold": 21000,
+      "apple iphone 12 pro 256gb graphite": 23100,
+      "apple iphone 12 pro 256gb pacific blue": 23100,
+      "apple iphone 12 pro 256gb silver": 23100,
+      "apple iphone 12 pro max 128gb graphite": 24150,
+      "apple iphone 12 pro max 128gb pacific blue": 24150,
+      "apple iphone 12 pro max 128gb silver": 24150,
+      "apple iphone 12 pro max 128gb gold": 24150,
+      "apple iphone 12 pro max 256gb graphite": 25200,
+      "apple iphone 12 pro max 256gb pacific blue": 25200,
+      "apple iphone 12 pro max 256gb silver": 25200,
+      "apple iphone 12 pro max 256gb gold": 25200,
+      "apple iphone se 2022 64gb midnight": 9870,
+      "apple iphone se 2022 64gb starlight": 9870,
+      "apple iphone se 2022 64gb (product) red": 9870,
+      "apple iphone se 2022 128gb midnight": 11130,
+      "apple iphone se 2022 128gb starlight": 11130,
+      "apple iphone se 2022 128gb (product) red": 11130,
+      "apple iphone se 2022 256gb midnight": 12600,
+      "apple iphone se 2022 256gb starlight": 12600,
+      "apple iphone se 2022 256gb (product) red": 12600,
+      "apple iphone se 2020 64gb black": 8190,
+      "apple iphone se 2020 64gb white": 8190,
+      "apple iphone se 2020 64gb (product) red": 8190,
+      "apple iphone se 2020 128gb black": 9030,
+      "apple iphone se 2020 128gb (product) red": 9030,
+      "apple iphone se 2020 128gb white": 9030,
+      "apple iphone se 2020 256gb black": 10710,
+      "apple iphone se 2020 256gb white": 10710,
+      "apple iphone se 2020 256gb (product) red": 10710,
+      "apple iphone 11 64gb black": 11760,
+      "apple iphone 11 64gb (product) red": 11760,
+      "apple iphone 11 64gb white": 11760,
+      "apple iphone 11 64gb mind": 11760,
+      "apple iphone 11 64gb purple": 11760,
+      "apple iphone 11 64gb yellow": 11760,
+      "apple iphone 11 128gb black": 13440,
+      "apple iphone 11 128gb (product) red": 13440,
+      "apple iphone 11 128gb white": 13440,
+      "apple iphone 11 128gb mind": 13440,
+      "apple iphone 11 128gb purple": 13440,
+      "apple iphone 11 128gb yellow": 13440,
+      "apple iphone 11 256gb black": 15120,
+      "apple iphone 11 256gb white": 15120,
+      "apple iphone 11 256gb (product) red": 15120,
+      "apple iphone 11 256gb yellow": 15120,
+      "apple iphone 11 256gb purple": 15120,
+      "apple iphone 11 256gb mind": 15120,
+      "ipad pro 11\" 2021 wi-fi 128gb space gray (mhqr3)": 18690,
+      "ipad pro 11\" 2021 wi-fi 256gb space gray (mhqu3)": 20790,
+      "ipad pro 11\" 2021 wi-fi  1tb silver (mhr03)": 27825,
+      "ipad pro 11\" 2020 wi-fi 2tb silver (mhr33)": 29925,
+      "ipad pro 11\" 2021 wi-fi+5g 128gb space gray (mhmt3)": 24150,
+      "ipad pro 11\" 2021 wi-fi + cellular 2tb silver (mhn33, mhwf3)": 32550,
+      "ipad pro 12.9\" 2021 wi-fi 128gb space gray (mhnf3)": 21945,
+      "ipad pro 12.9\" 2021 wi-fi 512gb silver (mhnl3 )": 27930,
+      "ipad pro 12.9\" 2021 wi-fi + cellular 128gb space gray (mhnr3,mhr43)": 24990,
+      "ipad pro 12.9\" 2021 wi-fi + cellular 128gb silver (mhnt3, mhr53)": 24990,
+      "ipad pro 12.9\" 2021 wi-fi + cellular 256gb space gray (mhr63, mhnw3)": 27090,
+      "apple magic keyboard for ipad pro 12.9‑inch (5th generation) white (mjql3)": 7560,
+      "apple magic keyboard for ipad pro 12.9‑inch (5th generation) black (mjqk3": 8400,
+      "ipad pro 12.9\" 2020 wi-fi + cellular 1tb silver (mxg32, mxfa2)": 27300,
+      "ipad mini 6 wi-fi 64gb space gray (mk7m3)": 11970,
+      "ipad mini 6 wi-fi 64gb starlight (mk7p3)": 11550,
+      "ipad mini 6 wi-fi + lte  64gb  starlight  (mk8c3)": 15120,
+      "ipad mini 6 wi-fi 256gb space gray (mk7t3)": 15540,
+      "apple ipad 10.2\" 2021 wi-fi 64gb space gray (mk2k3)": 8925,
+      "apple ipad 10.2\" 2021 wi-fi 256gb space gray (mk2n3)": 11550,
+      "apple ipad 10.2\" 2021 wi-fi 256gb silver (mk2p3)": 11550,
+      "apple ipad 10.2\" 2021 wi-fi + cellular 256gb silver (mk6a3, mk4h3)": 16170,
+      "apple ipad 10.2\" 2021 wi-fi + cellular 256gb space gray ()": 16170,
+      "ipad air 4 10.9'' wi-fi 64gb space gray (myfm2)": 12600,
+      "ipad air 4 10.9'' wi-fi 64gb silver (myfn2)": 12600,
+      "ipad air 4 10.9'' wi-fi 64gb rose gold (myfp2)": 12600,
+      "ipad air 4 10.9'' wi-fi 64gb sky blue (myfq2)": 12600,
+      "ipad air 4 10.9'' wi-fi 256gb silver (myfw2)": 15750,
+      "ipad air 4 10.9'' wi-fi + cellular 64gb space gray (mygw2)": 15540,
+      "macbook air 13\" gold 2020 m1 (fgnd3) - 256gb ssd  cpo": 19950,
+      "macbook air 13\" space gray 2020 m1 (mgn63) - 256gb ssd": 22260,
+      "macbook air 13\" silver 2020 m1 (mgnd3) - 256gb ssd": 22260,
+      "macbook air 13\" space gray 2020 m1 (mgn73) - 512gb ssd": 28140,
+      "macbook air 13\" silver 2020 m1 (z127000fk) - 7‑core gpu/16 gb/256 gb": 30450,
+      "macbook air 13\" gold 2020 m1 (z12a000fk) - 7‑core gpu/16 gb/256 gb": 29820,
+      "macbook pro 14\" space gray (mkgp3) 2021 - 512gb ssd": 43680,
+      "macbook pro 14\" silver (mkgr3) 2021 - 512gb ssd": 44100,
+      "macbook pro 14\" space gray (mkgq3) 2021 - 1tb ssd": 51450,
+      "macbook pro 14\" silver (mkgt3) 2021 - 1tb ssd": 51450,
+      "macbook pro 14\" space gray (z15g001vr ) 2021 - 8-14/ 16 1tb ssd  m1   67w зарядка": 48300,
+      "macbook pro 14\" space gray (z15g0022 ) 2021 - 8-14/ 16 1tb ssd  m1  96w зарядка": 48300,
+      "macbook pro 13\" m1 space gray (z11c000gd, z11c000em) 2020 - 16 gb/1 tb": 42000,
+      "macbook pro 13\" m1 silver (z11f000em, z11d000gk) 2020 - 16 gb/1 tb": 42000,
+      "macbook pro 13\" m1 space gray (z11c000en, z11b000ep) 2020 - 16 gb/2 tb": 49350,
+      "macbook pro 13\" m1 silver (z11f000en) 2020 - 16 gb/2 tb": 49350,
+      "macbook pro 13\" space gray (mwp42) 2020 - 512gb ssd": 28980,
+      "macbook pro 13\" silver (mwp72) 2020 - 512gb ssd": 28980,
+      "macbook pro 13\" space gray (mwp52) 2020 - 1tb ssd": 30450,
+      "macbook pro 16\" space gray (mk183) 2021 - 512gb ssd": 51450,
+      "macbook pro 16\" silver (mk1e3) 2021 - 512gb ssd": 52500,
+      "macbook pro 16\" space gray (mk193) 2021 - 1tb ssd": 58380,
+      "macbook pro 16\" silver (mk1f3) 2021 - 1tb ssd": 58380,
+      "macbook pro 16\" space gray (mk1a3) 2021 1tb ssd     m1 max": 100800,
+      "macbook pro 16\" space grey (mvvj2) 2019 - 512gb ssd": 47460,
+      "macbook pro 16\" silver (mvvl2) 2019 - 512gb ssd": 47250,
+      "macbook pro 16'' space gray (mvvk2) 2019 - 1 tb ssd": 48720,
+      "mac mini z12n000kp/z12n000g0 apple m1|16gb|256gb": 20370,
+      "apple watch series 7 gps 41mm midnight aluminum case with midnight sport band (mkmx3)": 8820,
+      "apple watch series 7 gps 45mm midnight aluminum case with midnight sport band (mkn53)": 9345,
+      "apple watch series 7 gps 41mm starlight aluminum case with starlight sport band (mkmy3)": 9030,
+      "apple watch series 7 gps 45mm starlight aluminum case with starlight sport band (mkn63)": 9240,
+      "apple watch series 7 gps 41mm green aluminum case with clover sport band (mkn03)": 8820,
+      "apple watch series 7 gps 45mm green aluminum case with clover sport band (mkn73)": 9240,
+      "apple watch series 7 gps 41mm blue aluminum case with abyss blue sport band (mkn13)": 8820,
+      "apple watch series 7 gps 45mm blue aluminum case with abyss blue sport band (mkn83)": 9240,
+      "apple watch series 7 gps + cellular 45mm graphite stainless steel case with with graphite milanese loop (mkjj3, mkl33, mkmr3)": 19530,
+      "apple watch series 6 gps 40mm blue aluminium case with deep navy sport band (mg143)": 8610,
+      "apple watch series 6 gps 44mm blue aluminium case with deep navy sport band (m00j3)": 9240,
+      "apple watch series 6 gps 40mm (product)red aluminum case with (product)red sport band (m00a3)": 8925,
+      "apple watch series 6 gps 40mm space gray aluminum case with black sport band (mg133)": 8610,
+      "apple watch series 6 gps 40mm gold aluminum case with pink sand sport band (mg123)": 8925,
+      "apple watch series 6 gps + cellular 40mm gold aluminum case with pink sand sport band (m02p3, m06n3)": 9660,
+      "apple watch series 6 nike gps 44mm space gray aluminum case with anthracite/black nike sport band (mg173)": 9870,
+      "apple airpods max green (mgyn3)": 10710,
+      "apple airpods max pink (mgym3)": 10080,
+      "apple airpods max silver (mgyj3)": 10710,
+      "apple airpods max sky blue (mgyl3)": 10710,
+      "apple airpods max space grey (mgyh3)": 10920,
+      "apple airpods 3 (mme73) 2021": 3465,
+      "apple airpods pro with magsafe charging case (mlwk3) 2021": 4240,
+      "apple airpods 2 with charging case (mv7n2)": 2520,
+      "apple wireless charging case (mr8u2)": 1470,
+      "apple airpods charging case": 945,
+      "apple airpods 2 right": 1470,
+      "apple airpods 2 left": 1260,
+      "apple airpods 2 box": 735,
+      "apple airpods pro magsafe    case": 1680,
+      "apple airpods pro right": 2100,
+      "apple airpods pro left": 1785,
+      "apple airpods 3 right": 1470,
+      "apple airpods 3 left": 1470,
+      "apple airpods 3 box": 1260,
+      "комплект амбушюр для airpods pro (s/l)": 145,
+      "lightning to usb cable (1 m) mque2) 100% оригинал": 355,
+      "lightning to usb-c cable (1 m) (mqgj2) 100% оригинал": 355,
+      "коробка от apple airpods (mv7n2)": 40,
+      "коробка от apple airpods (mrxj2)": 40,
+      "коробка от apple airpods pro (mwp22)": 40,
+      "apple homepod mini blue (mj2c3)": 2520,
+      "apple homepod mini white (my5h2)": 2520,
+      "apple tv 4k 64gb (mp7p2)": 3255,
+      "apple magic mouse 3 silver (mk2e3)": 1995,
+      "apple magic mouse 2 (mla02)": 1680,
+      "apple magic mouse 2 space gray gray (mrme2)": 2415,
+      "apple 20w usb-c power adapter (mhje3 ) -ua 🇺🇦 orig": 460,
+      "apple airtag 4 pack (mx542)": 2205,
+      "apple pencil 1 for ipad pro (mk0c2)": 1995,
+      "apple pencil 2 for ipad pro (mu8f2)": 2625,
+      "apple usb-c digital av multiport adapter (muf82) 4k": 1050,
+      "apple 61w usb-c power adapter (mnf72)": 1470,
+      "apple 87w usb-c power adapter (mnf82)": 1470,
+      "apple 96w usb-c power adapter (mx0j2)": 1680,
+      "apple watch magnetic charger to usb-c cable (1 m) (mx2h2) (из комплекта)": 1050,
+      "apple watch magnetic charging cable (1 m) (mklg2)": 840,
+      "apple atlantic blue braided solo loop watch - size 10 для apple watch 42/44mm (my8h2)": 2625,
+      "apple atlantic blue braided solo loop watch - size 11 для apple watch 42/44mm (my8j2)": 2625,
+      "apple black sport band (mtpl2, mj4n2, mj4q2, mj4g2, mu9l2) для apple watch 42/44mm": 1260,
+      "apple white sport band (mtpk2, mj4m2, mq3q2) для apple watch 42/44mm": 1260,
+      "apple deep navy sport band (myax2) для apple watch 42/44mm": 1260,
       "id": 1
     }
   ]
