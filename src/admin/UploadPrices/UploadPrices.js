@@ -6,20 +6,8 @@ import { useSelector } from "react-redux";
 import {getPriceOfProductFromDB} from '../AdditionalFunctions/AdditionalFunctions'
 
 const UploadPrices = () => {
-
   const refresh = useRefresh()
-
   const productsArr = useSelector(store => store.app.productsArr);
-
-  // const [usdExchangeRate, setUsdExchangeRate] = useState(0)
-
-
-  // useEffect(() => {
-  //   axios.get('https://api.privatbank.ua/p24api/pubinfo?exchange&json&coursid=11')
-  //   .then(res => {
-  //     res.data.find(obj => obj.ccy === 'USD' && obj.base_ccy === 'UAH' ? setUsdExchangeRate(+obj.sale) : null)
-  //   })
-  // }, [])
 
   const allPricesObj = {}
 
@@ -46,39 +34,35 @@ const UploadPrices = () => {
     const allUpdatedProducts = await Promise.all(
       productsArr.map(async product => {
         const newPrice = await getPriceOfProductFromDB(product, priceListDB)
+
         if(product.price !== newPrice){
-          product.newPrice = newPrice
-          return product
+          console.log(product.id, product.fullName, product.price, '--->', newPrice)
+          // const response = await axios.patch(`http://localhost:5000/posts/${product.id}`, {"price": newPrice})
+          // console.log(product.id, response)
+          // return response
+          // product.newPrice = newPrice
+          // return product
         }
       }
     ))
 
-    const filteredArr = allUpdatedProducts.filter(el => el)
+    // const filteredArr = allUpdatedProducts.filter(el => el)
 
-    if(filteredArr.length > 0){
-      const updateProducts = await updateProductsByChunks(filteredArr)
-      console.log(updateProducts)
-      return updateProducts
-    }
+    // if(filteredArr.length > 0){
+    //   const updateProducts = await updateProductsByChunks(filteredArr)
+    //   console.log(updateProducts)
+    //   return updateProducts
+    // }
   }
 
-  const updateProductsByChunks = (arr) => {
-    // const splittedArr = []
-    const chunkSize = 15;
-    for (let i = 0; i < arr.length; i += chunkSize) {
-      const chunk = arr.slice(i, i + chunkSize);
-      // console.log(chunk)
-      // splittedArr.push(chunk)
-      return Promise.all(chunk.map(product => axios.patch(`http://localhost:5000/posts/${product.id}`, {"price": product.newPrice}) ))
-      // return chunk
-    }
+  // const updateProductsByChunks = (arr) => {
+  //   const chunkSize = 15;
+  //   for (let i = 0; i < arr.length; i += chunkSize) {
+  //     const chunk = arr.slice(i, i + chunkSize);
+  //     return Promise.all(chunk.map(product => axios.patch(`http://localhost:5000/posts/${product.id}`, {"price": product.newPrice}) ))
+  //   }
+  // }
 
-    // const allSplittedResponses = Promise.all(splittedArr.map(productsArr => {
-      // return Promise.all(productsArr.map(product => axios.get(`http://localhost:5000/posts/${product.id}`)))
-    // }))
-
-    // return allSplittedResponses
-  }
 
   return (
     <label className="admin__upload-file">
