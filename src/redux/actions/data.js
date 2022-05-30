@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const getAllProducts = () => {
   return (dispatch) => {
-    axios.get("https://macmac-test.netlify.app/api/posts")
+    axios.get("https://my-test-admin.herokuapp.com/api/posts")
       .then(response => dispatch(getAllProductsSuccessCase(response.data)))
       .catch((err) => {
         dispatch(getAllProductsFailureCase(err));

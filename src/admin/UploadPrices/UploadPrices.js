@@ -26,7 +26,7 @@ const UploadPrices = () => {
       })
       return allPricesObj
     })
-    .then(data => axios.put('https://macmac-test.netlify.app/api/prices/1', data))
+    .then(data => axios.put('https://my-test-admin.herokuapp.com/api/prices/1', data))
     .then(res => updateProductsPrices(allPricesObj))
     .then(res => refresh())
   }

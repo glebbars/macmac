@@ -67,7 +67,7 @@ const getPriceListDB = async (priceList) => {
   if(priceList){
     return priceList
   } else {
-    const response = await axios.get('https://macmac-test.netlify.app/api/prices/1')
+    const response = await axios.get('https://my-test-admin.herokuapp.com/api/prices/1')
     return response.data
   }
 }

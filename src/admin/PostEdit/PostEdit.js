@@ -7,7 +7,7 @@ const PostEdit = (props) =>{
   const [createdProduct, setCreatedProduct] = useState({})
 
   useEffect(() => {
-    axios.get(`https://macmac-test.netlify.app/api/posts/${props.id}`)
+    axios.get(`https://my-test-admin.herokuapp.com/api/posts/${props.id}`)
     .then(res=> setCreatedProduct(res.data))
   }, [])
 
