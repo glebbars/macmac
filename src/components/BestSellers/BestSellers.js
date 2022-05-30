@@ -7,7 +7,7 @@ const BestSellers = () => {
   const location = useLocation()
   const productsArr = useSelector(store => store.app.productsArr);
 
-  if(!productsArr){
+  if(productsArr.length === 0){
     return 
   }
 
