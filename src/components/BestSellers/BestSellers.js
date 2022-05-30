@@ -7,6 +7,10 @@ const BestSellers = () => {
   const location = useLocation()
   const productsArr = useSelector(store => store.app.productsArr);
 
+  if(!productsArr){
+    return 
+  }
+
   const fileteredArr = productsArr.filter(product => product.label && product.label === 'Хит продаж')
 
   return(
