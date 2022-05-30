@@ -9,6 +9,8 @@ const UploadPrices = () => {
   const refresh = useRefresh()
   const productsArr = useSelector(store => store.app.productsArr);
 
+  console.log('array', productsArr)
+
   const allPricesObj = {}
 
   const updateObjPricesWithExcel = (e) => {
