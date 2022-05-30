@@ -3,7 +3,7 @@ import axios from 'axios'
 const {REACT_APP_TELEGRAM_BOT_TOKEN} = process.env
 
 export const sendToTelegramBot = (data) => {
-  return axios.post('https://mac-mac.herokuapp.com/api/orders', data).then(res => {
+  return axios.post('https://macmac-test.netlify.app/api/orders', data).then(res => {
     const dataToBot = () => {
       let data = `№ <strong>${res.data.id}</strong> %0A%0A<strong>Заказ:%0A ${res.data.order}</strong>  %0A%0AОбщая сумма заказа: ${res.data.totalPrice}  %0A%0AИмя: ${res.data.fullName}  %0A%0AТелефон: ${res.data.phone}`
 
