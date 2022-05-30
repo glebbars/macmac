@@ -8,7 +8,7 @@ const ProductMainToggle = ({productDataObj, setProductDataObj}) => {
   const capacityChoices = getCapacityChoices(productDataObj.description.category, productDataObj.description.model)
 
   useEffect(() => {
-    axios.get(`http://localhost:5000/posts`).then(res => res.data)
+    axios.get(`https://mac-mac.herokuapp.com/api/posts`).then(res => res.data)
     .then(data => data.filter(productFromDB => productFromDB.description.category === productDataObj.description.category && productFromDB.description.model === productDataObj.description.model))
     .then(data => setSimilarProducts(data))
   }, [])

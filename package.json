@@ -2,7 +2,7 @@
   "name": "macmac",
   "version": "1.0.0",
   "start_url": ".",
-  "proxy": "http://localhost:5000/",
+  "proxy": "https://mac-mac.herokuapp.com/api",
   "engines": {
     "node": "14.x",
     "npm": "6.14.15"

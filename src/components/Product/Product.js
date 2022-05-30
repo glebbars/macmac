@@ -12,7 +12,7 @@ const Product = () => {
   const [productDataObj, setProductDataObj] = useState([])
 
   useEffect(() => {
-    axios.get(`http://localhost:5000/posts/${id}`).then(res => setProductDataObj(res.data))
+    axios.get(`https://mac-mac.herokuapp.com/api/posts/${id}`).then(res => setProductDataObj(res.data))
   }, [id])
 
   const modelCrumb = {
