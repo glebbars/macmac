@@ -24,7 +24,7 @@ const UploadPrices = () => {
       })
       return allPricesObj
     })
-    .then(data => axios.put('http://localhost:5000/prices/1', data))
+    .then(data => axios.put('https://mac-mac.herokuapp.com/api/prices/1', data))
     .then(res => updateProductsPrices(allPricesObj))
     .then(res => refresh())
   }
