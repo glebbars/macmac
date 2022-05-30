@@ -8,7 +8,7 @@ const BestSellers = () => {
   const productsArr = useSelector(store => store.app.productsArr);
 
   if(productsArr.length === 0){
-    return 
+    return null
   }
 
   const fileteredArr = productsArr.filter(product => product.label && product.label === 'Хит продаж')
