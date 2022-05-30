@@ -18,13 +18,17 @@ const RecentlyViewed = ({className}) => {
   })
 
   return (
-    <div className={`recently-viewed ${className}`}>
-      <h1 className='recently-viewed__header'>Недавно просмотренные</h1>
-      <List 
-        className={`recently-viewed__list ${className}__list`} productsArr={sortedArr}
-        productClassName=''
-      />
-    </div>
+    <>
+      {recentlyViewed.length > 0 && (
+      <div className={`recently-viewed ${className}`}>
+          <h1 className='recently-viewed__header'>Недавно просмотренные</h1>
+          <List 
+            className={`recently-viewed__list ${className}__list`} productsArr={sortedArr}
+            productClassName=''
+          />
+        </div>
+      )}
+    </>
   )
 }
 
