@@ -1,21 +1,21 @@
-const jsonServer = require('json-server');
+const jsonServer = require('');
 const path = require('path');
 const express = require('express');
-const app = jsonServer.create();
+const server = jsonServer.create();
 const router = jsonServer.router('./db.json');
 const middlewares = jsonServer.defaults({ static: './build' });
 const port = process.env.PORT || 5000;
 
-// app.use(middlewares);
-app.use(jsonServer.rewriter({ '/api/*': '/$1', })) 
-// app.use(router);
+// server.use(middlewares);
+// server.use(jsonServer.rewriter({ '/api/*': '/$1', }))
+// server.use(router);
 
-app.use('/db.json', middlewares, router);
-app.use(express.static(path.join(__dirname, 'build')));
+server.use(jsonServer.rewriter({ '/api/*': '/$1', }), middlewares, router);
+server.use(express.static(path.join(__dirname, 'build')));
 
-app.get('/*', function (req, res) {
+server.get('/*', (req, res) => {
     console.log('***')
-    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+    return res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
-app.listen(port, () => console.log('server is running'))
+server.listen(port, () => console.log('server is running'))
