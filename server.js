@@ -13,9 +13,9 @@ app.use(router);
 // app.use('/db.json', middlewares, router);
 // app.use(express.static(path.join(__dirname, 'build')));
 
-// app.get('/*', function (req, res) {
-//     console.log('***')
-//     res.sendFile(path.join(__dirname, 'build', 'index.html'));
-// });
+app.get('/*', function (req, res) {
+    console.log('***')
+    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
 
 app.listen(port, () => console.log('server is running'))
