@@ -67,6 +67,7 @@ const getPriceListDB = async (priceList) => {
   if(priceList){
     return priceList
   } else {
+    // const response = await axios.get('http://localhost:5000/prices/1')
     const response = await axios.get('https://mac-mac.herokuapp.com/api/prices/1')
     return response.data
   }

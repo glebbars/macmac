@@ -8,6 +8,7 @@ const PostEdit = (props) =>{
 
   useEffect(() => {
     axios.get(`https://mac-mac.herokuapp.com/api/posts/${props.id}`)
+    // axios.get(`http://localhost:5000/posts/${props.id}`)
     .then(res=> setCreatedProduct(res.data))
   }, [])
 

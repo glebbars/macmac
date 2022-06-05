@@ -9,8 +9,6 @@ const UploadPrices = () => {
   const refresh = useRefresh()
   const productsArr = useSelector(store => store.app.productsArr);
 
-  console.log('array', productsArr)
-
   const allPricesObj = {}
 
   const updateObjPricesWithExcel = (e) => {
@@ -27,44 +25,30 @@ const UploadPrices = () => {
       return allPricesObj
     })
     .then(data => axios.put('https://mac-mac.herokuapp.com/api/prices/1', data))
+    // .then(data => axios.put('http://localhost:5000/prices/1', data))
     .then(res => updateProductsPrices(allPricesObj))
     .then(res => refresh())
   }
 
   
   const updateProductsPrices = async (priceListDB) => {
-    const allUpdatedProducts = await Promise.all(
+    const newPriceObjs = await Promise.all(
       productsArr.map(async product => {
         const newPrice = await getPriceOfProductFromDB(product, priceListDB)
 
-        if(product.price !== newPrice){
-          console.log(product.id, product.fullName, product.price, '--->', newPrice)
-          // const response = await axios.patch(`http://localhost:5000/posts/${product.id}`, {"price": newPrice})
-          // console.log(product.id, response)
-          // return response
-          // product.newPrice = newPrice
-          // return product
+        if(product.price !== 1){
+          return {
+            id: product.id,
+            price: 1
+          }
         }
       }
     ))
+    const filteredObjs = newPriceObjs.filter(el => el)
 
-    // const filteredArr = allUpdatedProducts.filter(el => el)
-
-    // if(filteredArr.length > 0){
-    //   const updateProducts = await updateProductsByChunks(filteredArr)
-    //   console.log(updateProducts)
-    //   return updateProducts
-    // }
+    // const updatedPrices = await axios.patch('http://localhost:5000/patchcollection', filteredObjs)
+    const updatedPrices = await axios.patch('https://mac-mac.herokuapp.com/api/patchcollection', filteredObjs)
   }
-
-  // const updateProductsByChunks = (arr) => {
-  //   const chunkSize = 15;
-  //   for (let i = 0; i < arr.length; i += chunkSize) {
-  //     const chunk = arr.slice(i, i + chunkSize);
-  //     return Promise.all(chunk.map(product => axios.patch(`http://localhost:5000/posts/${product.id}`, {"price": product.newPrice}) ))
-  //   }
-  // }
-
 
   
   return (
