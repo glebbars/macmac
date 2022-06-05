@@ -12,7 +12,6 @@ server.use(router);
 
 // server.use(jsonServer.rewriter({ '/api/*': '/$1', }), middlewares, router);
 // server.use(express.static(path.join(__dirname, 'build')));
-
 server.get('/*', function (req, res) {
     console.log('***')
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
