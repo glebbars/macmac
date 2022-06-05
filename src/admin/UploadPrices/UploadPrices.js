@@ -24,8 +24,7 @@ const UploadPrices = () => {
       })
       return allPricesObj
     })
-    // .then(data => axios.put('https://mac-mac.herokuapp.com/api/prices/1', data))
-    .then(data => axios.put('http://localhost:5000/prices/1', data))
+    .then(data => axios.put(`${process.env.REACT_APP_DB_API}/prices/1`, data))
     .then(res => updateProductsPrices(allPricesObj))
     .then(res => refresh())
   }
@@ -39,7 +38,7 @@ const UploadPrices = () => {
         if(product.price !== 3){
           return {
             id: product.id,
-            price: 4
+            price: 5
           }
         }
       }
@@ -48,11 +47,10 @@ const UploadPrices = () => {
     
     if(filteredObjs.length > 0){
       console.log(filteredObjs)
-      const updatedPrices = await axios.patch('http://localhost:5000/patchcollection', filteredObjs)
+      const updatedPrices = await axios.patch(`${process.env.REACT_APP_DB_API}/patchcollection`, filteredObjs)
       return updatedPrices
     }
 
-    // const updatedPrices = await axios.patch('https://mac-mac.herokuapp.com/api/patchcollection', filteredObjs)
   }
 
   

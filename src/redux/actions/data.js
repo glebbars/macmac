@@ -4,7 +4,7 @@ import axios from "axios";
 export const getAllProducts = () => {
   return (dispatch) => {
     // axios.get("https://mac-mac.herokuapp.com/api/posts")
-    axios.get("http://localhost:5000/posts")
+    axios.get(`${process.env.REACT_APP_DB_API}/posts`)
       .then(response => dispatch(getAllProductsSuccessCase(response.data)))
       .catch((err) => {
         dispatch(getAllProductsFailureCase(err));
