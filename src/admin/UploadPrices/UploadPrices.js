@@ -28,7 +28,6 @@ const UploadPrices = () => {
     .then(res => updateProductsPrices(allPricesObj))
     .then(res => refresh())
   }
-
   
   const updateProductsPrices = async (priceListDB) => {
     const newPriceObjs = await Promise.all(
