@@ -2562,7 +2562,7 @@
     {
       "id": 141,
       "fullName": "iPhone 12 Mini 256Gb Mind",
-      "price": 1,
+      "price": 4,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757942/mac-mac-images/z2goemdbmz8banhh9bft.png",
@@ -2579,7 +2579,7 @@
     },
     {
       "fullName": "iPhone 12 Mini 256Gb Blue",
-      "price": 1,
+      "price": 4,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757856/mac-mac-images/blwnunmgqhwm8txnyrdi.png",
@@ -2597,7 +2597,7 @@
     },
     {
       "fullName": "iPhone 12 Mini 256Gb Purple",
-      "price": 1,
+      "price": 4,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757873/mac-mac-images/monocjnqhqtvygkllhio.png",
@@ -2616,7 +2616,7 @@
     {
       "id": 144,
       "fullName": "iPhone 12 Mini 512Gb Black",
-      "price": 1,
+      "price": 4,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757890/mac-mac-images/olj9bzswwatvm4qhvyja.png",
@@ -2634,7 +2634,7 @@
     {
       "id": 145,
       "fullName": "iPhone 12 Mini 512Gb White",
-      "price": 1,
+      "price": 4,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757901/mac-mac-images/r80hh0muk2cgvkvh1l8y.png",
@@ -2652,7 +2652,7 @@
     {
       "id": 146,
       "fullName": "iPhone 12 Mini 512Gb (Product) Red",
-      "price": 1,
+      "price": 4,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757912/mac-mac-images/uz9xavlcwdnuclynkrxm.png",
@@ -2670,7 +2670,7 @@
     {
       "id": 147,
       "fullName": "iPhone 12 Mini 512Gb Mind",
-      "price": 1,
+      "price": 4,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757942/mac-mac-images/z2goemdbmz8banhh9bft.png",
@@ -2687,7 +2687,7 @@
     },
     {
       "fullName": "iPhone 12 Mini 512Gb Blue",
-      "price": 1,
+      "price": 4,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757856/mac-mac-images/blwnunmgqhwm8txnyrdi.png",
@@ -2705,7 +2705,7 @@
     },
     {
       "fullName": "iPhone 12 Mini 512Gb Purple",
-      "price": 1,
+      "price": 4,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757873/mac-mac-images/monocjnqhqtvygkllhio.png",
@@ -2737,11 +2737,11 @@
         "color": "Black"
       },
       "id": 150,
-      "price": 1
+      "price": 4
     },
     {
       "fullName": "iPhone SE 2020 64Gb White",
-      "price": 1,
+      "price": 4,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785011/mac-mac-images/sw8bqagcoewpgjlvy2ks.png",
@@ -2760,7 +2760,7 @@
     {
       "fullName": "iPhone SE 2020 64Gb (Product) Red",
       "label": "Хит продаж",
-      "price": 1,
+      "price": 4,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785032/mac-mac-images/vmkigwjjlew5mwnzuem2.png",
@@ -2792,11 +2792,11 @@
         "color": "Black"
       },
       "id": 153,
-      "price": 1
+      "price": 4
     },
     {
       "fullName": "iPhone SE 2020 128Gb White",
-      "price": 1,
+      "price": 4,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785011/mac-mac-images/sw8bqagcoewpgjlvy2ks.png",
@@ -2814,7 +2814,7 @@
     },
     {
       "fullName": "iPhone SE 2020 128Gb (Product) Red",
-      "price": 1,
+      "price": 4,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785032/mac-mac-images/vmkigwjjlew5mwnzuem2.png",
@@ -2833,7 +2833,7 @@
     {
       "fullName": "iPhone 11 64Gb Mind",
       "label": "Хит продаж",
-      "price": 1,
+      "price": 4,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785149/mac-mac-images/svejlrqtaypk59qvznmk.png",
@@ -2851,7 +2851,7 @@
     },
     {
       "fullName": "iPhone 11 64Gb (Product) Red",
-      "price": 1,
+      "price": 4,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785174/mac-mac-images/ptxincileyaavcpdaniz.png",
@@ -2869,7 +2869,7 @@
     },
     {
       "fullName": "iPhone 11 64Gb White",
-      "price": 1,
+      "price": 4,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785197/mac-mac-images/fspeaevbkpy44bwt3qan.png",
@@ -2887,7 +2887,7 @@
     },
     {
       "fullName": "iPhone 11 64Gb Black",
-      "price": 1,
+      "price": 4,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785218/mac-mac-images/yvanhll73c8g4lozi6vc.png",
@@ -2905,7 +2905,7 @@
     },
     {
       "fullName": "iPhone 11 64Gb Purple",
-      "price": 1,
+      "price": 4,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785242/mac-mac-images/m45m81d7necxbvrlvwuk.png",
@@ -2923,7 +2923,7 @@
     },
     {
       "fullName": "iPhone 11 64Gb Yellow",
-      "price": 1,
+      "price": 4,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785267/mac-mac-images/vppgoq7cnnk3kbbgaywf.png",
@@ -2941,7 +2941,7 @@
     },
     {
       "fullName": "iPhone 11 128Gb Mind",
-      "price": 1,
+      "price": 4,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785149/mac-mac-images/svejlrqtaypk59qvznmk.png",
@@ -2959,7 +2959,7 @@
     },
     {
       "fullName": "iPhone 11 128Gb (Product) Red",
-      "price": 1,
+      "price": 4,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785174/mac-mac-images/ptxincileyaavcpdaniz.png",
@@ -2977,7 +2977,7 @@
     },
     {
       "fullName": "iPhone 11 128Gb White",
-      "price": 1,
+      "price": 4,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785197/mac-mac-images/fspeaevbkpy44bwt3qan.png",
@@ -2995,7 +2995,7 @@
     },
     {
       "fullName": "iPhone 11 128Gb Black",
-      "price": 1,
+      "price": 4,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785218/mac-mac-images/yvanhll73c8g4lozi6vc.png",
@@ -3013,7 +3013,7 @@
     },
     {
       "fullName": "iPhone 11 128Gb Purple",
-      "price": 1,
+      "price": 4,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785242/mac-mac-images/m45m81d7necxbvrlvwuk.png",
@@ -3031,7 +3031,7 @@
     },
     {
       "fullName": "iPhone 11 128Gb Yellow",
-      "price": 1,
+      "price": 4,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785267/mac-mac-images/vppgoq7cnnk3kbbgaywf.png",
@@ -3049,7 +3049,7 @@
     },
     {
       "fullName": "iPhone 11 256Gb Mind",
-      "price": 1,
+      "price": 4,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785149/mac-mac-images/svejlrqtaypk59qvznmk.png",
@@ -3067,7 +3067,7 @@
     },
     {
       "fullName": "iPhone 11 256Gb (Product) Red",
-      "price": 1,
+      "price": 4,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785174/mac-mac-images/ptxincileyaavcpdaniz.png",
@@ -3103,7 +3103,7 @@
     },
     {
       "fullName": "iPhone 11 256Gb Black",
-      "price": 1,
+      "price": 4,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785218/mac-mac-images/yvanhll73c8g4lozi6vc.png",
@@ -3121,7 +3121,7 @@
     },
     {
       "fullName": "iPhone 11 256Gb Purple",
-      "price": 1,
+      "price": 4,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785242/mac-mac-images/m45m81d7necxbvrlvwuk.png",
@@ -3139,7 +3139,7 @@
     },
     {
       "fullName": "iPhone 11 256Gb Yellow",
-      "price": 1,
+      "price": 4,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785267/mac-mac-images/vppgoq7cnnk3kbbgaywf.png",

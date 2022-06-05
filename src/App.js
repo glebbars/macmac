@@ -6,8 +6,8 @@ import createAdminStore from './redux'
 import { Provider } from 'react-redux';
 import jsonServerProvider from 'ra-data-json-server';
 
-const dataProvider = jsonServerProvider("https://mac-mac.herokuapp.com/api")
-// const dataProvider = jsonServerProvider("http://localhost:5000")
+// const dataProvider = jsonServerProvider("https://mac-mac.herokuapp.com/api")
+const dataProvider = jsonServerProvider("http://localhost:5000")
 
 const history = createHashHistory();
 

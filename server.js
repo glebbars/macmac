@@ -1,14 +1,17 @@
 const jsonServer = require('json-server');
+const path = require('path');
+const express = require('express');
 const server = jsonServer.create();
 const _ = require('lodash')
 const router = jsonServer.router('./db.json');
-const middlewares = jsonServer.defaults();
+const middlewares = jsonServer.defaults({ static: './build' });
 const port = process.env.PORT || 5000;
 
 server.use(middlewares);
 server.use(jsonServer.bodyParser)
-    
+
 server.patch('/patchcollection', (req, res) => {
+    console.log('*')
 
     const db = router.db; // Assign the lowdb instance
 
@@ -26,6 +29,8 @@ server.patch('/patchcollection', (req, res) => {
     function insert(db, collection, data) {
         const table = db.get(collection);
 
+        console.log(data.id)
+
         if (table.find({id: data.id}).value()) {
             table.find({id: data.id})
             .assign(_.omit(data, ['_id']))
@@ -35,6 +40,6 @@ server.patch('/patchcollection', (req, res) => {
 
 });
 
-    
 server.use(router);
-server.listen(port);
+
+server.listen(port, () => console.log('server is running'));
