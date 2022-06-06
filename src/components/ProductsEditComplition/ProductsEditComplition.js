@@ -6,9 +6,12 @@ const ProductsEditComplition = ({ handleComplete, handleReset}) => {
 
   const getCorrectForm = () => {
     const lastDigit = String(sortedProductsLength).slice(-1)
-    if(lastDigit === '1'){
+    const lastTwoDigits = String(sortedProductsLength).slice(-2)
+    console.log(lastTwoDigits)
+
+    if(lastDigit === '1' && lastTwoDigits !== '11' ){
       return `${sortedProductsLength} результат`;
-    } else if(lastDigit === '2' || lastDigit === '3' || lastDigit === '4'){
+    } else if((lastDigit === '2' || lastDigit === '3' || lastDigit === '4') && (lastTwoDigits !== '11' && lastTwoDigits !== '12' && lastTwoDigits !== '13')){
       return `${sortedProductsLength} результата`
     } else{
       return `${sortedProductsLength} результатов`

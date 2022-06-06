@@ -84,7 +84,7 @@ export const CustomDropDownCheckboxes = ({ activeSideBar, closeSideBar, initiall
     
     dispatch({
       type: 'REMOVE_PRODUCTS_LIST_FILTER',
-      payload: productsListFilters.filter(filter => filter.filterName !== filterName)      ,
+      payload: productsListFilters.filter(filter => filter.filterName !== filterName)
     });
   }
 
@@ -228,12 +228,12 @@ export const PriceRange = ({handlePriceChange, productsListFilters}) => {
   const capacityFilters = productsListFilters.filter(filter => filter.filterName === 'Память').map(filter => filter.value)
 
   const filteredProductsArr = filteredByCategoryArr.filter(product => {
-    const fullModelName = `${product.category} ${product.model}`
+    const fullModelName = `${product.description.category} ${product.description.model}`
 
-    return (categoryFilters.length > 0 ? categoryFilters.includes(product.category) : product) && 
+    return (categoryFilters.length > 0 ? categoryFilters.includes(product.description.category) : product) && 
       (modelFilters.length > 0 ? modelFilters.includes(fullModelName) : product) && 
-      (colorFilters.length > 0 ? colorFilters.includes(product.color) : product) &&
-      (capacityFilters.length > 0 ? capacityFilters.includes(product.capacity) : product)
+      (colorFilters.length > 0 ? colorFilters.includes(product.description.color) : product) &&
+      (capacityFilters.length > 0 ? capacityFilters.includes(product.description.capacity) : product)
   })
 
   const productPrices = filteredProductsArr.map(product => product.price).sort((a, b) => b - a)

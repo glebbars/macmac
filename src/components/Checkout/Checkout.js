@@ -54,7 +54,7 @@ const Checkout = () => {
 
     const deliveryAdress = values.delivery.join(';  ') 
 
-    const finalOrderArr = values.order.map(product => `- ${product.category} ${product.model} ${product.capacity} ${product.color} x${product.quantity} (${product.price.toLocaleString()}₴)`)
+    const finalOrderArr = values.order.map(product => `- ${product.fullName} (${product.price.toLocaleString()}₴)`)
 
     const finalOrderStr = finalOrderArr.join(';%0A')
 

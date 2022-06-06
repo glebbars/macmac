@@ -34,10 +34,10 @@ const UploadPrices = () => {
       productsArr.map(async product => {
         const newPrice = await getPriceOfProductFromDB(product, priceListDB)
 
-        if(product.price !== 3){
+        if(product.price !== newPrice){
           return {
             id: product.id,
-            price: 5
+            price: newPrice
           }
         }
       }

@@ -1,7 +1,8 @@
 import React from "react";
 
 const CheckoutProductsCard = ({productDataObj}) => {
-  const fullProductName = `${productDataObj.category} ${productDataObj.model} ${productDataObj.capacity} ${productDataObj.color}`
+
+ const {color, capacity, model} = productDataObj.description
 
   return(
     <div className='checkout__products__card'>
@@ -9,15 +10,15 @@ const CheckoutProductsCard = ({productDataObj}) => {
         <img className='checkout__products__card__img' src={productDataObj.pictures[0].url} alt="" />
       </div>
       <div>
-        <h3 className='checkout__products__card__header'>{fullProductName} x{productDataObj.quantity}</h3>
-        {!productDataObj.color && !productDataObj.capacity && productDataObj.model && (
-          <span className='checkout__products__card__text'>{productDataObj.model}</span>
+        <h3 className='checkout__products__card__header'>{productDataObj.fullName} x{productDataObj.quantity}</h3>
+        {!color && !capacity && model && (
+          <span className='checkout__products__card__text'>{model}</span>
         )}
-        {productDataObj.color && (
-          <span className='checkout__products__card__text'>{productDataObj.color}</span>
+        {color && (
+          <span className='checkout__products__card__text'>{color}</span>
         )}
-        {productDataObj.capacity && (
-          <span className='checkout__products__card__text'>{productDataObj.capacity}</span>
+        {capacity && (
+          <span className='checkout__products__card__text'>{capacity}</span>
         )}  
       </div>
       <div className='checkout__products__card__price'>

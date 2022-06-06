@@ -24,7 +24,9 @@ const HeaderSearch = () => {
     setSearchText(text)
     
     const filteredArr = productsArr.filter(product => {
-      const fullProductName = `${product.brand.toLowerCase()} ${product.category.toLowerCase()} ${product.model.toLowerCase()} ${product.capacity.toLowerCase()} ${product.color.toLowerCase()}`
+      // const {brand, category, model, capacity, color} = product.description
+      // const fullProductName = `${brand.toLowerCase()} ${category.toLowerCase()} ${model.toLowerCase()} ${capacity.toLowerCase()} ${color.toLowerCase()}`
+      const fullProductName = product.fullName.toLowerCase()
 
       return fullProductName.includes(text.toLowerCase())
     })
@@ -38,7 +40,7 @@ const HeaderSearch = () => {
     }
   }
 
-  const categoriesArr = filteredArr.map(product => product.category)
+  const categoriesArr = filteredArr.map(product => product.description.category)
   const categorySet = new Set(categoriesArr)
   const categoriesSetArr = Array.from(categorySet)
 
@@ -91,13 +93,14 @@ const HeaderSearch = () => {
                   <div className="header__search__result__product__img-wrapper">
                     <img src={product.pictures[0].url} alt="" className="header__search__result__product__img"/>
                   </div>
-                  <Link to={`/category/${product.category.toLowerCase()}/${product.id}`} className="header__search__result__product__text-wrapper">  
+                  <Link to={`/category/${product.description.category.toLowerCase()}/${product.id}`} className="header__search__result__product__text-wrapper">  
                     <Highlighter
                       className="header__search__result__product__text"
                       highlightClassName="header__search__result__product__highlighted"
                       searchWords={[searchText]}
                       autoEscape={true}
-                      textToHighlight={`${product.brand} ${product.category} ${product.model} ${product.capacity} ${product.color}`}
+                      // textToHighlight={`${product.description.brand} ${product.description.category} ${product.description.model} ${product.description.capacity} ${product.description.color}`}
+                      textToHighlight={product.fullName}
                     />
                     <span className="header__search__result__product__price">{product.price.toLocaleString()}.00&#x20b4;</span>
                   </Link>

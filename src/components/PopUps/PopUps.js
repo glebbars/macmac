@@ -8,7 +8,7 @@ import {Link} from 'react-router-dom'
 import { useSelector, useDispatch } from "react-redux";
 
 export const openPopupboxOneClick = (productDataObj) => {
-  const fullProductName = `- ${productDataObj.category} ${productDataObj.model} ${productDataObj.capacity} ${productDataObj.color} (${productDataObj.price.toLocaleString()}₴)`
+  const fullProductName = `- ${productDataObj.fullName} (${productDataObj.price.toLocaleString()}₴)`
 
   const productDataToBot = {
     order: fullProductName,
@@ -34,7 +34,6 @@ export const openPopupboxOneClick = (productDataObj) => {
 };
 
 export const PurchasePopUp = ({addedToBag, activePopUp, productDataObj, closePopUp}) => {
-  const fullProductName = `${productDataObj.fullName}`
 
   useEffect(() => {
     localStorage.setItem("macmac-addedToBag", JSON.stringify(addedToBag));
@@ -47,6 +46,8 @@ export const PurchasePopUp = ({addedToBag, activePopUp, productDataObj, closePop
     }, 4000)
   }
  }, [activePopUp])
+
+ const {color, capacity, model} = productDataObj.description
 
   return (
     <div className={`pop-up__purchase ${activePopUp ? 'pop-up__purchase_active' : ''}`}>
@@ -72,25 +73,25 @@ export const PurchasePopUp = ({addedToBag, activePopUp, productDataObj, closePop
             <img className='pop-up__purchase__main__img' src={productDataObj.pictures[0].url} alt="" />
           </div>
           <div className='pop-up__purchase__main__content'>
-            <h2 className='pop-up__purchase__main__content__header'>{fullProductName}</h2>
-            {!productDataObj.color && !productDataObj.capacity && productDataObj.model && 
+            <h2 className='pop-up__purchase__main__content__header'>{productDataObj.fullName}</h2>
+            {!color && !capacity && model && 
               <p className='pop-up__purchase__main__content__text'>
                 <span className='pop-up__purchase__main__content__text__label'>Модель: </span>
-                {productDataObj.model}
+                {model}
                 <span className='pop-up__purchase__main__content__text__coma'>&#44; &nbsp;</span>
               </p>
             }
-            {productDataObj.color && 
+            {color && 
               <p className='pop-up__purchase__main__content__text'>
                   <span className='pop-up__purchase__main__content__text__label'>Цвет: </span>
-                  {productDataObj.color}
+                  {color}
                   <span className='pop-up__purchase__main__content__text__coma'>&#44; &nbsp;</span>
               </p>
             }
-            {productDataObj.capacity && 
+            {capacity && 
               <p className='pop-up__purchase__main__content__text'>
                 <span className='pop-up__purchase__main__content__text__label'>Память: </span>
-                {productDataObj.capacity}
+                {capacity}
                 <span className='pop-up__purchase__main__content__text__coma'>&#44; &nbsp;</span>
               </p>
             }

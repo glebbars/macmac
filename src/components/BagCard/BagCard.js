@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 
 const BagCard = ({productDataObj, isLastOne, removeFromTheBag, changeTotalPrice}) => {
-  const fullProductName = `${productDataObj.category} ${productDataObj.model} ${productDataObj.capacity} ${productDataObj.color}`
   const productsNum = productDataObj.quantity
 
   const decreaseNum = () => {
@@ -16,6 +15,8 @@ const BagCard = ({productDataObj, isLastOne, removeFromTheBag, changeTotalPrice}
     }
   }
 
+  const {color, capacity, model} = productDataObj.description
+
   return(
     <>
       <div className='bag__main__card__info'>
@@ -23,25 +24,25 @@ const BagCard = ({productDataObj, isLastOne, removeFromTheBag, changeTotalPrice}
           <img className='bag__main__card__info__img' src={productDataObj.pictures[0].url} alt="" />
         </div>
         <div>
-          <h3 className='bag__main__card__info__header'>{fullProductName}</h3>
-          {!productDataObj.color && !productDataObj.capacity && productDataObj.model && 
+          <h3 className='bag__main__card__info__header'>{productDataObj.fullName}</h3>
+          {!color && !capacity && model && 
             <p className='bag__main__card__info__header__text'>
               <span className='bag__main__card__info__header__text__label'>Модель: </span>
-                {productDataObj.model}
+                {model}
               <span className='bag__main__card__info__header__text__coma'>&#44; &nbsp;</span>
             </p>
           }
-          {productDataObj.color && 
+          {color && 
             <p className='bag__main__card__info__header__text'>
               <span className='bag__main__card__info__header__text__label'>Цвет: </span>
-                {productDataObj.color}
+                {color}
               <span className='bag__main__card__info__header__text__coma'>&#44; &nbsp;</span>
             </p>
           }
-          {productDataObj.capacity && 
+          {capacity && 
             <p className='bag__main__card__info__header__text'>
               <span className='bag__main__card__info__header__text__label'>Память: </span>
-              {productDataObj.capacity}
+              {capacity}
               <span className='bag__main__card__info__header__text__coma'>&#44; &nbsp;</span>
             </p>
           }
