@@ -41,11 +41,11 @@ const ProductsSideBar = ({activeSideBar, closeSideBar}) => {
 
       {(categoryName !== 'all-products' || searchResult) && (
         <CustomDropDownPriceRange 
-            activeSideBar={activeSideBar} 
-            closeSideBar={closeSideBar} 
-            initiallyActive
-            listClass='products__sidebar__category-list'
-            headerClass='products__sidebar__category-header products__sidebar__category-header_checkboxes' 
+          activeSideBar={activeSideBar} 
+          closeSideBar={closeSideBar} 
+          initiallyActive
+          listClass='products__sidebar__category-list'
+          headerClass='products__sidebar__category-header products__sidebar__category-header_checkboxes' 
         /> 
       )}
       

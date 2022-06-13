@@ -56,7 +56,7 @@ const Checkout = () => {
 
     const finalOrderArr = values.order.map(product => `- ${product.fullName} (${product.price.toLocaleString()}₴)`)
 
-    const finalOrderStr = finalOrderArr.join(';%0A')
+    const finalOrderStr = finalOrderArr.join(';\n')
 
     const id = Math.floor(100000 + Math.random() * 900000)
 

@@ -1,11 +1,11 @@
 import React from "react";
-import {List, Datagrid, TextField, Pagination} from 'react-admin'
+import {List, Datagrid, TextField} from 'react-admin'
+import {CustomPagination, customFilters} from '../AdminListsProps/AdminListsProps'
 
-const PostPagination = props => <Pagination rowsPerPageOptions={[5, 10, 25, 50, 100]} {...props} />;
 
 const OrderList = (props) =>{
   return (
-    <List title='Orders' {...props} pagination={<PostPagination />}>
+    <List title='Orders' {...props} pagination={<CustomPagination />} filters={customFilters}>
       <Datagrid>
         <TextField source="id"/>
         <TextField source="fullName"/>
