@@ -57,10 +57,10 @@ const ProductsList = () => {
   
   const filteredProductsArr = filteredByCategoryArr.filter(product => {
     if(productsListFilters.length > 0){
-      const fullModelName = `${product.description.category} ${product.description.model}`
+      // const fullModelName = `${product.description.category} ${product.description.model}`
       
       return (categoryFilters.length > 0 ? categoryFilters.includes(product.description.category) : product) && 
-      (modelFilters.length > 0 ? modelFilters.includes(fullModelName) : product) && 
+      (modelFilters.length > 0 ? modelFilters.includes(product.description.model) : product) && 
       (colorFilters.length > 0 ? colorFilters.includes(product.description.color) : product) &&
       (capacityFilters.length > 0 ? capacityFilters.includes(product.description.capacity) : product) &&
       (product.price >= +priceLimits[0] && product.price <= +priceLimits[1])

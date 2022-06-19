@@ -7,7 +7,6 @@ const ProductsEditComplition = ({ handleComplete, handleReset}) => {
   const getCorrectForm = () => {
     const lastDigit = String(sortedProductsLength).slice(-1)
     const lastTwoDigits = String(sortedProductsLength).slice(-2)
-    console.log(lastTwoDigits)
 
     if(lastDigit === '1' && lastTwoDigits !== '11' ){
       return `${sortedProductsLength} результат`;

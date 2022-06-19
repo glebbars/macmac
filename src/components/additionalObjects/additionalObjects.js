@@ -208,11 +208,11 @@ export const appleCategoryOptions = [
 export const modelIphoneOptions = [
   {
     filterName: 'Модель',
-    text: 'iPhone 13 Mini',
+    text: 'iPhone 13',
   },
   {
     filterName: 'Модель',
-    text: 'iPhone 13',
+    text: 'iPhone 13 Mini',
   },
   {
     filterName: 'Модель',
@@ -228,6 +228,10 @@ export const modelIphoneOptions = [
   },
   {
     filterName: 'Модель',
+    text: 'iPhone 12 Mini',
+  },
+  {
+    filterName: 'Модель',
     text: 'iPhone 12 Pro',
   },
   {
@@ -237,6 +241,10 @@ export const modelIphoneOptions = [
   {
     filterName: 'Модель',
     text: 'iPhone 11',
+  },
+  {
+    filterName: 'Модель',
+    text: 'iPhone SE 2022',
   },
   {
     filterName: 'Модель',
@@ -251,7 +259,7 @@ export const colorIphoneOptions = [
   },
   {
     filterName: 'Цвет',
-    text: 'Product Red',
+    text: '(Product) Red',
   },
   {
     filterName: 'Цвет',

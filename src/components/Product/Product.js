@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react'
+import React, { useLayoutEffect, useState } from 'react'
 import {useParams} from "react-router-dom";
 import ProductMain from '../ProductMain/ProductMain'
 import ProductSlider from '../ProductSlider/ProductSlider'
@@ -11,23 +11,23 @@ const Product = () => {
 
   const [productDataObj, setProductDataObj] = useState([])
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     axios.get(`${process.env.REACT_APP_DB_API}/posts/${id}`).then(res => setProductDataObj(res.data))
   }, [id])
 
   const modelCrumb = {
-    name: `${productDataObj.category} ${productDataObj.model} ${productDataObj.capacity} ${productDataObj.color}`,
+    name: productDataObj.fullName,
     link: window.location.pathname
   }
 
   return(
     <div className='product'>
-    {productDataObj.category && <ProductsPageBreadcrumbs modelCurmb={modelCrumb}/> }
+    {productDataObj.description?.category && <ProductsPageBreadcrumbs modelCurmb={modelCrumb}/> }
     <div className='product__content'>
-      {productDataObj.pictures && <ProductSlider productImgs={productDataObj.pictures } productId={productDataObj.id} /> }
+      {productDataObj.pictures && <ProductSlider productImgs={productDataObj.pictures} productId={productDataObj.id} /> }
       {productDataObj.fullName && <ProductMain setProductDataObj={setProductDataObj} productDataObj={productDataObj}/>}
     </div>
-    <RecentlyViewed className=''/>
+    {productDataObj.fullName && <RecentlyViewed />}
   </div>
   )
 }

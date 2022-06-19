@@ -155,17 +155,17 @@ export const getModelChoices = (value) => {
 }
 
 const iphoneModelChoices = [
-  { id: 'SE 2020', name: 'SE 2020' },
-  { id: 'SE 2022', name: 'SE 2022' },
-  { id: '11', name: '11' },
-  { id: '12', name: '12' },
-  { id: '12 Mini', name: '12 Mini' },
-  { id: '12 Pro', name: '12 Pro' },
-  { id: '12 Pro Max', name: '12 Pro Max' },
-  { id: '13', name: '13' },
-  { id: '13 Mini', name: '13 Mini' },
-  { id: '13 Pro', name: '13 Pro' },
-  { id: '13 Pro Max', name: '13 Pro Max' },
+  { id: 'iPhone SE 2020', name: 'iPhone SE 2020' },
+  { id: 'iPhone SE 2022', name: 'iPhone SE 2022' },
+  { id: 'iPhone 11', name: 'iPhone 11' },
+  { id: 'iPhone 12', name: 'iPhone 12' },
+  { id: 'iPhone 12 Mini', name: 'iPhone 12 Mini' },
+  { id: 'iPhone 12 Pro', name: 'iPhone 12 Pro' },
+  { id: 'iPhone 12 Pro Max', name: 'iPhone 12 Pro Max' },
+  { id: 'iPhone 13', name: 'iPhone 13' },
+  { id: 'iPhone 13 Mini', name: 'iPhone 13 Mini' },
+  { id: 'iPhone 13 Pro', name: 'iPhone 13 Pro' },
+  { id: 'iPhone 13 Pro Max', name: 'iPhone 13 Pro Max' },
 ]
 
 const airPodsModelChoices = [
@@ -205,27 +205,27 @@ export const getCapacityChoices = (category, model) => {
 
 const getIphoneCapacityChoices = (model) => {
   switch(model){
-    case "SE 2020":
+    case "iPhone SE 2020":
       return [capacityOptions["64"], capacityOptions["128"]];
       
-    case "SE 2022":
-    case "11":
+    case "iPhone SE 2022":
+    case "iPhone 11":
       return [capacityOptions["64"], capacityOptions["128"], capacityOptions["256"]];
 
-    case '12':
-    case '12 Mini':
+    case 'iPhone 12':
+    case 'iPhone 12 Mini':
       return [capacityOptions["64"], capacityOptions["128"], capacityOptions["256"], capacityOptions["512"]];
 
-    case '12 Pro':
-    case "12 Pro Max":
+    case 'iPhone 12 Pro':
+    case "iPhone 12 Pro Max":
       return [capacityOptions["128"], capacityOptions["256"]];
 
-    case "13": 
-    case "13 Mini":
+    case "iPhone 13": 
+    case "iPhone 13 Mini":
       return [capacityOptions["128"], capacityOptions["256"], capacityOptions["512"]];
 
-    case "13 Pro":
-    case "13 Pro Max":
+    case "iPhone 13 Pro":
+    case "iPhone 13 Pro Max":
       return [capacityOptions["128"], capacityOptions["256"], capacityOptions["512"], capacityOptions["1"]]
       
     default: return []
@@ -278,29 +278,29 @@ export const getColorChoices = (category, model) => {
 
 const getIphoneColorChoices = (model) => {
   switch(model){
-    case "SE 2020":
+    case "iPhone SE 2020":
       return [colorOptions["black"], colorOptions["white"], colorOptions['product red']];
 
-    case "SE 2022":
+    case "iPhone SE 2022":
       return [colorOptions["midnight"], colorOptions["starlight"], colorOptions['product red']];
 
-    case '11':
+    case 'iPhone 11':
       return [colorOptions["black"], colorOptions["white"],  colorOptions["purple"], colorOptions['product red'], colorOptions["yellow"], colorOptions["mind"]]
       
-    case "12 Mini":
-    case '12':
+    case "iPhone 12 Mini":
+    case 'iPhone 12':
       return [colorOptions["black"],  colorOptions["white"],  colorOptions['product red'], colorOptions["mind"], colorOptions['blue'],colorOptions["purple"]]
 
-    case '12 Pro':
-    case "12 Pro Max":
+    case 'iPhone 12 Pro':
+    case "iPhone 12 Pro Max":
       return [colorOptions["pacific blue"], colorOptions['graphite'], colorOptions["gold"],colorOptions["silver"]]
 
-    case "13 Mini":
-    case "13": 
+    case "iPhone 13 Mini":
+    case "iPhone 13": 
       return [colorOptions["midnight"], colorOptions["starlight"], colorOptions['product red'],colorOptions["blue"], colorOptions["pink"], colorOptions["green"]]
 
-    case "13 Pro":
-    case "13 Pro Max":
+    case "iPhone 13 Pro":
+    case "iPhone 13 Pro Max":
       return [colorOptions["sierra blue"], colorOptions['graphite'], colorOptions["gold"],colorOptions["silver"], colorOptions["alpine green"]]
 
     default: return []

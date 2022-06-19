@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useParams } from 'react-router-dom';
 import List from '../List/List'
 
-const RecentlyViewed = ({className}) => {
+const RecentlyViewed = ({className = ""}) => {
   const recentlyViewed = useSelector((store) => store.app.recentlyViewed);
   const productsArr = useSelector((store) => store.app.productsArr);
 
