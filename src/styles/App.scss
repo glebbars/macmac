@@ -1162,7 +1162,7 @@ input[type=number] {
     width: 56px;
     height: 56px;
     position: absolute;
-
+    
     @media (max-width: 1024px) {
       right: 60px;
     }
@@ -3891,7 +3891,6 @@ input[type=number] {
 
     &__slide {
       display: flex;
-      cursor: pointer;
       border-radius: 8px;
       height: 505px;
       background: #E9ECEF;
@@ -3938,6 +3937,7 @@ input[type=number] {
       right: 23px;
       z-index: 2;
       top: 50%;
+      cursor: pointer;
 
       &::after {
         display: inline-block;
