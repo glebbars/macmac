@@ -63,7 +63,7 @@ const PostCreate = (props) => {
             <SelectInput
               choices={getDiagonalChoices(
                 createdProduct.category,
-                createdProduct.model
+                createdProduct.model.toLowercase()
               )}
               onChange={(e) =>
                 setCreatedProduct({
@@ -94,7 +94,7 @@ const PostCreate = (props) => {
             <SelectInput
               choices={getCapacityChoices(
                 createdProduct.category,
-                createdProduct.model
+                createdProduct.model.toLowercase()
               )}
               onChange={(e) =>
                 setCreatedProduct({

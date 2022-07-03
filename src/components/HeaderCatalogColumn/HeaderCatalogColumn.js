@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const HeaderCatalogColumn = ({ category }) => {
   const [activeOptionsWrapper, setActiveOptionsWrapper] = useState(false);
@@ -20,25 +20,27 @@ const HeaderCatalogColumn = ({ category }) => {
           alt=""
         />
       </div>
-      <Link
+      <NavLink
         to={`/category/${category.header.toLowerCase()}`}
         className="header__catalog__options__header"
+        activeClassName="header__catalog__options__text_active"
       >
         {category.header}
-      </Link>
+      </NavLink>
       <div
         className={`header__catalog__options__wrapper ${
           activeOptionsWrapper ? "header__catalog__options__wrapper_active" : ""
         }`}
       >
         {category.options.map((option, index) => (
-          <Link
+          <NavLink
             key={index}
             className="header__catalog__options__text"
+            activeClassName="header__catalog__options__text_active"
             to={option.link}
           >
             {option.name}
-          </Link>
+          </NavLink>
         ))}
       </div>
     </div>

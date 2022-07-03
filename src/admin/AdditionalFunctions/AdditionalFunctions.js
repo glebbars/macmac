@@ -221,13 +221,13 @@ export const getDiagonalChoices = (category, model) => {
 
 const getIpadDiagonalChoices = (model) => {
   switch (model) {
-    case "iPad Air 2022":
+    case "ipad air 2022":
       return [diagonalChoices["10.9"]];
-    case "iPad 2021":
+    case "ipad 2021":
       return [diagonalChoices["10.2"]];
-    case "iPad mini 6":
+    case "ipad mini 6":
       return [diagonalChoices["8.3"]];
-    case "iPad Pro 2021":
+    case "ipad pro 2021":
       return [diagonalChoices["11"], diagonalChoices["12.9"]];
 
     default:
@@ -270,21 +270,21 @@ export const getCapacityChoices = (category, model) => {
   }
 };
 
-const getIphoneCapacityChoices = (model) => {
+export const getIphoneCapacityChoices = (model) => {
   switch (model) {
-    case "iPhone SE 2020":
+    case "iphone se 2020":
       return [capacityOptions["64"], capacityOptions["128"]];
 
-    case "iPhone SE 2022":
-    case "iPhone 11":
+    case "iphone se 2022":
+    case "iphone 11":
       return [
         capacityOptions["64"],
         capacityOptions["128"],
         capacityOptions["256"],
       ];
 
-    case "iPhone 12":
-    case "iPhone 12 Mini":
+    case "iphone 12":
+    case "iphone 12 mini":
       return [
         capacityOptions["64"],
         capacityOptions["128"],
@@ -292,20 +292,20 @@ const getIphoneCapacityChoices = (model) => {
         capacityOptions["512"],
       ];
 
-    case "iPhone 12 Pro":
-    case "iPhone 12 Pro Max":
+    case "iphone 12 pro":
+    case "iphone 12 pro max":
       return [capacityOptions["128"], capacityOptions["256"]];
 
-    case "iPhone 13":
-    case "iPhone 13 Mini":
+    case "iphone 13":
+    case "iphone 13 mini":
       return [
         capacityOptions["128"],
         capacityOptions["256"],
         capacityOptions["512"],
       ];
 
-    case "iPhone 13 Pro":
-    case "iPhone 13 Pro Max":
+    case "iphone 13 pro":
+    case "iphone 13 pro max":
       return [
         capacityOptions["128"],
         capacityOptions["256"],
@@ -318,13 +318,13 @@ const getIphoneCapacityChoices = (model) => {
   }
 };
 
-const getIpadCapacityChoices = (model) => {
+export const getIpadCapacityChoices = (model) => {
   switch (model) {
-    case "iPad Air 2022":
-    case "iPad 2021":
-    case "iPad mini 6":
+    case "ipad air 2022":
+    case "ipad 2021":
+    case "ipad mini 6":
       return [capacityOptions["64"], capacityOptions["256"]];
-    case "iPad Pro 2021":
+    case "ipad pro 2021":
       return [
         capacityOptions["128"],
         capacityOptions["256"],
@@ -378,23 +378,23 @@ export const getColorChoices = (category, model) => {
   }
 };
 
-const getIphoneColorChoices = (model) => {
+export const getIphoneColorChoices = (model) => {
   switch (model) {
-    case "iPhone SE 2020":
+    case "iphone se 2020":
       return [
         colorOptions["black"],
         colorOptions["white"],
         colorOptions["product red"],
       ];
 
-    case "iPhone SE 2022":
+    case "iphone se 2022":
       return [
         colorOptions["midnight"],
         colorOptions["starlight"],
         colorOptions["product red"],
       ];
 
-    case "iPhone 11":
+    case "iphone 11":
       return [
         colorOptions["black"],
         colorOptions["white"],
@@ -404,8 +404,8 @@ const getIphoneColorChoices = (model) => {
         colorOptions["mind"],
       ];
 
-    case "iPhone 12 Mini":
-    case "iPhone 12":
+    case "iphone 12 mini":
+    case "iphone 12":
       return [
         colorOptions["black"],
         colorOptions["white"],
@@ -415,8 +415,8 @@ const getIphoneColorChoices = (model) => {
         colorOptions["purple"],
       ];
 
-    case "iPhone 12 Pro":
-    case "iPhone 12 Pro Max":
+    case "iphone 12 pro":
+    case "iphone 12 pro max":
       return [
         colorOptions["pacific blue"],
         colorOptions["graphite"],
@@ -424,8 +424,8 @@ const getIphoneColorChoices = (model) => {
         colorOptions["silver"],
       ];
 
-    case "iPhone 13 Mini":
-    case "iPhone 13":
+    case "iphone 13 mini":
+    case "iphone 13":
       return [
         colorOptions["midnight"],
         colorOptions["starlight"],
@@ -435,8 +435,8 @@ const getIphoneColorChoices = (model) => {
         colorOptions["green"],
       ];
 
-    case "iPhone 13 Pro":
-    case "iPhone 13 Pro Max":
+    case "iphone 13 pro":
+    case "iphone 13 pro max":
       return [
         colorOptions["sierra blue"],
         colorOptions["graphite"],
@@ -450,9 +450,9 @@ const getIphoneColorChoices = (model) => {
   }
 };
 
-const getIpadColorChoices = (model) => {
+export const getIpadColorChoices = (model) => {
   switch (model) {
-    case "iPad Air 2022":
+    case "ipad air 2022":
       return [
         colorOptions["space gray"],
         colorOptions["starlight"],
@@ -460,15 +460,15 @@ const getIpadColorChoices = (model) => {
         colorOptions["purple"],
         colorOptions["blue"],
       ];
-    case "iPad mini 6":
+    case "ipad mini 6":
       return [
         colorOptions["space gray"],
         colorOptions["starlight"],
         colorOptions["pink"],
         colorOptions["purple"],
       ];
-    case "iPad 2021":
-    case "iPad Pro 2021":
+    case "ipad 2021":
+    case "ipad pro 2021":
       return [colorOptions["space gray"], colorOptions["silver"]];
     default:
       return [];
