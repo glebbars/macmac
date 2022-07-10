@@ -29,6 +29,8 @@ const PostCreate = (props) => {
 
   const fullName = Object.values(createdProduct).join(" ");
 
+  console.log(createdProduct);
+
   return (
     <Create {...props} transform={onTransform} title="Create a Product">
       <SimpleForm validate={validatePostForm}>
@@ -63,7 +65,7 @@ const PostCreate = (props) => {
             <SelectInput
               choices={getDiagonalChoices(
                 createdProduct.category,
-                createdProduct.model.toLowercase()
+                createdProduct.model.toLowerCase()
               )}
               onChange={(e) =>
                 setCreatedProduct({
@@ -94,7 +96,7 @@ const PostCreate = (props) => {
             <SelectInput
               choices={getCapacityChoices(
                 createdProduct.category,
-                createdProduct.model.toLowercase()
+                createdProduct.model.toLowerCase()
               )}
               onChange={(e) =>
                 setCreatedProduct({
@@ -103,6 +105,7 @@ const PostCreate = (props) => {
                 })
               }
               source="description.capacity"
+              helperText="Это SSD"
             />
           )}
 
@@ -111,7 +114,7 @@ const PostCreate = (props) => {
             <SelectInput
               choices={getColorChoices(
                 createdProduct.category,
-                createdProduct.model
+                createdProduct.model.toLowerCase(),
               )}
               onChange={(e) =>
                 setCreatedProduct({ ...createdProduct, color: e.target.value })

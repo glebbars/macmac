@@ -27,7 +27,7 @@ const Main = () => {
           <img src={phoneImg} alt="" className="main__banner__img"/>
           <span className="main__banner__title">iPhone</span>
         </Link>
-        <Link className="main__banner" to="/category/macbook">
+        <Link className="main__banner" to="/category/mac">
           <img src={macImg} alt="" className="main__banner__img"/>
           <span className="main__banner__title">Mac</span>
         </Link>

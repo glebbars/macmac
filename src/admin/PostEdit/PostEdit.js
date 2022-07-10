@@ -87,7 +87,7 @@ const PostEdit = (props) => {
             source="description.diagonal"
             choices={getDiagonalChoices(
               createdProduct.description?.category,
-              createdProduct.description?.model
+              createdProduct.description?.model.toLowerCase(),
             )}
             onChange={(e) =>
               setCreatedProduct({
@@ -122,7 +122,7 @@ const PostEdit = (props) => {
             source="description.capacity"
             choices={getCapacityChoices(
               createdProduct.description?.category,
-              createdProduct.description?.model
+              createdProduct.description?.model.toLowerCase()
             )}
             onChange={(e) =>
               setCreatedProduct({
@@ -133,6 +133,7 @@ const PostEdit = (props) => {
                 },
               })
             }
+            helperText="Это SSD"
           />
         )}
 
@@ -141,7 +142,7 @@ const PostEdit = (props) => {
             source="description.color"
             choices={getColorChoices(
               createdProduct.description?.category,
-              createdProduct.description?.model
+              createdProduct.description?.model.toLowerCase()
             )}
             onChange={(e) =>
               setCreatedProduct({

@@ -17,10 +17,9 @@ export const routesNames = {
   "all-products": "Все товары",
   apple: "Apple",
   iphone: "iPhone",
-  // "imac": 'iMac',
   airpods: "AirPods",
   ipad: "iPad",
-  macbook: "Macbook",
+  mac: "Mac",
   watch: "Apple Watch",
   accessories: "Аксессуары",
   "apple-tv": "Apple TV",
@@ -59,8 +58,8 @@ export const categoryHeaderOptions = [
     class: "header__menu__link",
   },
   {
-    link: "/category/macbook",
-    text: "Macbook",
+    link: "/category/mac",
+    text: "Mac",
     class: "header__menu__link",
   },
   // {
@@ -85,8 +84,8 @@ export const popularRequestsOptions = [
     link: "/category/airpods",
   },
   {
-    text: "iMac,",
-    link: "/category/imac",
+    text: "Mac,",
+    link: "/category/mac",
   },
   {
     text: "iPhone 11",
@@ -111,13 +110,8 @@ export const appleCategoryProductsOptions = [
     class: "products__sidebar__category-text",
   },
   {
-    link: "/category/imac",
-    text: "iMac",
-    class: "products__sidebar__category-text",
-  },
-  {
-    link: "/category/macbook",
-    text: "Macbook",
+    link: "/category/mac",
+    text: "Mac",
     class: "products__sidebar__category-text",
   },
   {
@@ -302,11 +296,7 @@ const appleCategoryOptions = [
   },
   {
     filterName: "Категория",
-    text: "iMac",
-  },
-  {
-    filterName: "Категория",
-    text: "Macbook",
+    text: "Mac",
   },
   {
     filterName: "Категория",
@@ -626,27 +616,6 @@ export const headerCatalogCategories = [
     ],
   },
   {
-    header: "AirPods",
-    bg: {
-      img: airpodsCatalog,
-      color: "#DAEDF1",
-    },
-    options: [
-      {
-        name: "AirPods 2nd generation",
-        link: "/category/airpods-2",
-      },
-      {
-        name: "AirPods Pro",
-        link: "/category/airpods-pro",
-      },
-      {
-        name: "AirPods 3rd generation",
-        link: "/category/airpods-3",
-      },
-    ],
-  },
-  {
     header: "iPad",
     bg: {
       img: ipadCatalog,
@@ -672,7 +641,28 @@ export const headerCatalogCategories = [
     ],
   },
   {
-    header: "Macbook",
+    header: "AirPods",
+    bg: {
+      img: airpodsCatalog,
+      color: "#DAEDF1",
+    },
+    options: [
+      {
+        name: "AirPods 2nd generation",
+        link: "/category/airpods-2",
+      },
+      {
+        name: "AirPods Pro",
+        link: "/category/airpods-pro",
+      },
+      {
+        name: "AirPods 3rd generation",
+        link: "/category/airpods-3",
+      },
+    ],
+  },
+  {
+    header: "Mac",
     bg: {
       img: imacCatalog,
       color: "#DBECCE",
@@ -683,24 +673,12 @@ export const headerCatalogCategories = [
         link: "/category/macbook-air",
       },
       {
-        name: "Macbook Air",
-        link: "/category/macbook-air",
-      },
-      {
-        name: "Macbook Air",
-        link: "/category/macbook-air",
-      },
-      {
         name: "Macbook Pro",
         link: "/category/macbook-pro",
       },
       {
-        name: "Macbook Pro",
-        link: "/category/macbook-pro",
-      },
-      {
-        name: "Macbook Pro",
-        link: "/category/macbook-pro",
+        name: "iMac",
+        link: "/category/imac",
       },
     ],
   },
@@ -736,10 +714,6 @@ export const headerCatalogCategories = [
 ];
 
 export const headerCatalogOther = [
-  {
-    link: "/category/imac",
-    text: "iMac",
-  },
   {
     link: "/category/apple-tv",
     text: "TV",

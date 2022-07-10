@@ -116,7 +116,7 @@ input[type="number"] {
 .header {
   position: absolute;
   width: 100%;
-  max-width: 1440px;
+  max-width: 1320px;
   margin: 10px auto 0;
   right: 0;
   left: 0;
@@ -943,7 +943,7 @@ input[type="number"] {
     right: 0;
     margin: auto;
     width: 100%;
-    max-width: 1240px;
+    max-width: 1120px;
     background: #ffffff;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.01);
     border-radius: 8px;
@@ -1035,7 +1035,7 @@ input[type="number"] {
       position: absolute;
       width: 0;
       height: 0;
-      left: 200px;
+      left: 150px;
       top: -7px;
       border-style: solid;
       border-width: 0 8px 8px 8px;
@@ -1089,7 +1089,7 @@ input[type="number"] {
 }
 
 .slider {
-  max-width: 1420px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 0 10px;
 
@@ -2714,6 +2714,7 @@ input[type="number"] {
         margin-left: 15px;
         position: relative;
         font-weight: 500;
+        cursor: pointer;
 
         @media (max-width: 480px) {
           margin-left: 10px;
