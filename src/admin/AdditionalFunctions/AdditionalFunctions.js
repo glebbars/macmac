@@ -24,7 +24,7 @@ export const onTransform = async (values) => {
   const compressedImgs = await compressImages(newFilesArr);
   const uploadedImgs = await uploadImage(compressedImgs);
 
-  const allValues = {
+  return {
     id: values.id,
     fullName: values.fullName,
     price: price,
@@ -34,8 +34,6 @@ export const onTransform = async (values) => {
     ],
     description: values.description,
   };
-
-  return allValues;
 };
 
 export const getPriceOfProductFromDB = async (productObj, priceList) => {
@@ -52,16 +50,14 @@ export const getPriceOfProductFromDB = async (productObj, priceList) => {
   // })
 
   const productNamesArr = Object.keys(priceListDB).find((key) => {
-    console.log(productObj.fullName.toLowerCase(), key);
     if (productObj.fullName.toLowerCase() === key) {
       return priceListDB[key];
     }
+
+    return "";
   });
 
-  const price = productNamesArr
-    ? priceListDB[productNamesArr]
-    : productObj.price;
-  return price;
+  return productNamesArr ? priceListDB[productNamesArr] : productObj.price;
 };
 
 const getPriceListDB = async (priceList) => {
@@ -77,10 +73,9 @@ const getPriceListDB = async (priceList) => {
 };
 
 const compressImages = async (filesArr) => {
-  const compressedPhotos = await Promise.all(
+  return await Promise.all(
     filesArr.map(async (file) => await resizeFile(file.rawFile))
   );
-  return compressedPhotos;
 };
 
 const resizeFile = (file) =>
@@ -101,7 +96,7 @@ const { REACT_APP_CLOUDINARY_PRESET_NAME, REACT_APP_CLOUDINARY_CLOUD_NAME } =
   process.env;
 
 const uploadImage = async (compressedImgs) => {
-  const attachments = await Promise.all(
+  return await Promise.all(
     compressedImgs.map((img) => {
       const data = new FormData();
       data.append("file", img);
@@ -120,7 +115,6 @@ const uploadImage = async (compressedImgs) => {
         .catch((err) => err);
     })
   );
-  return attachments;
 };
 
 export const brandChoices = [
@@ -539,6 +533,9 @@ export const getColorForToggle = (category, color) => {
 
     case "iPad":
       return ipadColorsForToggle[color];
+
+    default:
+      return [];
   }
 };
 
