@@ -1,5 +1,5 @@
-import React, { useState, useMemo, useLayoutEffect } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { ADD_PRODUCTS_LIST_FILTER } from "../../redux/actions/types";
 import { useEffect } from "react";
@@ -71,11 +71,11 @@ export const CustomDropDownCheckboxes = ({
     if (window.innerWidth <= 480 && clickedBtn) {
       setClickedBtn(false);
     }
-  }, [activeSideBar]);
+  }, [activeSideBar, clickedBtn]);
 
   const addProductsFilter = (filterName, value) => {
     dispatch({
-      type: "ADD_PRODUCTS_LIST_FILTER",
+      type: ADD_PRODUCTS_LIST_FILTER,
       payload: [
         ...productsListFilters,
         {
@@ -97,11 +97,11 @@ export const CustomDropDownCheckboxes = ({
             ),
           });
         } else {
-          addProductsFilter(filterName, value);
+          return addProductsFilter(filterName, value);
         }
       });
     } else {
-      addProductsFilter(filterName, value);
+      return addProductsFilter(filterName, value);
     }
   };
 
@@ -182,7 +182,7 @@ export const CustomDropDownPriceRange = ({
     if (window.innerWidth <= 480 && clickedBtn) {
       setClickedBtn(false);
     }
-  }, [activeSideBar]);
+  }, [activeSideBar, clickedBtn]);
 
   const addProductsFilter = (filterName, value) => {
     dispatch({
@@ -207,11 +207,11 @@ export const CustomDropDownPriceRange = ({
             payload: productsListFilters,
           });
         } else {
-          addProductsFilter(filterName, value);
+          return addProductsFilter(filterName, value);
         }
       });
     } else {
-      addProductsFilter(filterName, value);
+      return addProductsFilter(filterName, value);
     }
   };
 
@@ -274,14 +274,15 @@ export const PriceRange = ({ handlePriceChange, productsListFilters }) => {
   const filteredByCategoryArr = productsArr.filter((product) => {
     if (categoryName) {
       if (categoryName !== "all-products") {
-        return product.description.category.toLowerCase() === categoryName;
+        return product?.description?.category.toLowerCase() === categoryName;
       } else {
         return product;
       }
     } else if (searchResult) {
-      const fullProductName = product.fullName.toLowerCase();
+      const fullProductName = product?.fullName.toLowerCase();
       return fullProductName.includes(searchResult);
     }
+    return product;
   });
 
   const categoryFilters = productsListFilters
@@ -337,7 +338,7 @@ export const PriceRange = ({ handlePriceChange, productsListFilters }) => {
       setValues(priceLimits);
       setInputValues(priceLimits);
     }
-  }, [productsListFilters]);
+  }, [priceLimits, productsListFilters]);
 
   useEffect(() => {
     if (maxPriceFromFilters && maxPriceFromFilters !== priceLimits[1]) {
@@ -345,7 +346,7 @@ export const PriceRange = ({ handlePriceChange, productsListFilters }) => {
       setValues([1, maxPriceFromFilters]);
       setInputValues([1, maxPriceFromFilters]);
     }
-  }, [maxPriceFromFilters]);
+  }, [maxPriceFromFilters, priceLimits]);
 
   const handleSubmit = (finalValues) =>
     handlePriceChange("Цена", `${finalValues[0]}-${finalValues[1]}`);
@@ -436,7 +437,7 @@ export const PriceRange = ({ handlePriceChange, productsListFilters }) => {
             </div>
           </div>
         )}
-        renderThumb={({ props, isDragged }) => (
+        renderThumb={({ props }) => (
           <div
             className="price-range__scroll__thumb"
             {...props}

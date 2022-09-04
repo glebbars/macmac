@@ -1,8 +1,4 @@
 import React, { useState, useMemo, useEffect, useCallback } from "react";
-import {
-  categoryProductsOptions,
-  modelIphoneOptions,
-} from "../additionalObjects/additionalObjects";
 import ProductsPagination from "../ProductsPagination/ProductsPagination";
 import List from "../List/List";
 import { useSelector, useDispatch } from "react-redux";
@@ -19,29 +15,43 @@ const ProductsList = () => {
   const dispatch = useDispatch();
   const { categoryName, searchResult } = useParams();
 
+  const onPageChange = useCallback(
+    (page) => {
+      setCurrentPage(page);
+      dispatch({
+        type: "UPDATE_PAGE_NUM",
+        payload: page,
+      });
+      window.scrollTo(0, 0);
+    },
+    [dispatch]
+  );
+
   useEffect(() => {
     if (currentPage !== 1) {
       onPageChange(1);
     }
     // window.scrollTo(0, 0)
-  }, [productsListFilters, pageSize, sortType]);
+  }, [productsListFilters, pageSize, sortType, currentPage, onPageChange]);
 
   const initiallyFilteredArr = productsArr.filter((product) => {
     if (categoryName) {
       if (categoryName !== "all-products") {
         if (categoryName.includes("-")) {
           const routeModel = categoryName.split("-").join(" ");
-          return product.description.model.toLowerCase() === routeModel;
+          return product?.description?.model.toLowerCase() === routeModel;
         } else {
-          return product.description.category.toLowerCase() === categoryName;
+          return product?.description?.category.toLowerCase() === categoryName;
         }
       } else {
         return product;
       }
     } else if (searchResult) {
-      const fullProductName = product.fullName.toLowerCase();
+      const fullProductName = product?.fullName.toLowerCase();
       return fullProductName.includes(searchResult);
     }
+
+    return product;
   });
 
   const categoryFilters = productsListFilters
@@ -101,15 +111,16 @@ const ProductsList = () => {
   const sortedProductsArr = filteredProductsArr.sort((a, b) => {
     switch (sortType) {
       case "":
-        return;
       case "popularity":
-        return;
       case "novelty":
-        return;
+        return filteredProductsArr;
       case "price-decrease":
         return b.price - a.price;
       case "price-increase":
         return a.price - b.price;
+
+      default:
+        return filteredProductsArr;
     }
   });
 
@@ -118,23 +129,13 @@ const ProductsList = () => {
       type: "UPDATE_SORTED_PRODUCTS_LENGTH",
       payload: sortedProductsArr.length,
     });
-  }, [sortedProductsArr]);
-  // }, [productsArr, sortedProductsArr])
+  }, [dispatch, sortedProductsArr]);
 
   const currentTableData = useMemo(() => {
     const firstPageIndex = (currentPage - 1) * pageSize;
     const lastPageIndex = firstPageIndex + pageSize;
     return sortedProductsArr.slice(firstPageIndex, lastPageIndex);
-  }, [currentPage, sortedProductsArr]);
-
-  const onPageChange = (page) => {
-    setCurrentPage(page);
-    dispatch({
-      type: "UPDATE_PAGE_NUM",
-      payload: page,
-    });
-    window.scrollTo(0, 0);
-  };
+  }, [currentPage, pageSize, sortedProductsArr]);
 
   return (
     <>

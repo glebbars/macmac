@@ -24,10 +24,10 @@ server.patch("/patchcollection", (req, res) => {
   res.sendStatus(200);
 
   function insert(db, collection, data) {
+    console.log(data.id);
     const table = db.get(collection);
 
     if (table.find({ id: data.id }).value()) {
-      // console.log(data.id);
       table
         .find({ id: data.id })
         .assign(_.omit(data, ["_id"]))

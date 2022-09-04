@@ -39,18 +39,8 @@ export const onTransform = async (values) => {
 export const getPriceOfProductFromDB = async (productObj, priceList) => {
   const priceListDB = await getPriceListDB(priceList);
 
-  // const descriptionValues = Object.values(productObj.description).map(name => name.toLowerCase())
-
-  // const productNamesArr = Object.keys(priceListDB).filter(key => {
-  //   const includesAll = descriptionValues.every(name => key.includes(name))
-
-  //   if(includesAll && key){
-  //     return priceListDB[key]
-  //   }
-  // })
-
   const productNamesArr = Object.keys(priceListDB).find((key) => {
-    if (productObj.fullName.toLowerCase() === key) {
+    if (productObj?.fullName?.toLowerCase() === key) {
       return priceListDB[key];
     }
 
@@ -64,7 +54,6 @@ const getPriceListDB = async (priceList) => {
   if (priceList) {
     return priceList;
   } else {
-    // const response = await axios.get('http://localhost:5000/prices/1')
     const response = await axios.get(
       `${process.env.REACT_APP_DB_API}/prices/1`
     );
