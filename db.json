@@ -1,5 +1,5 @@
 {
-  "posts":  [
+  "posts": [
     {
       "fullName": "iPhone SE 2022 64Gb Midnight (MMX53)",
       "price": 15480,
@@ -2040,7 +2040,7 @@
     },
     {
       "id": 112,
-      "fullName": "iPhone 12 64Gb Product Red",
+      "fullName": "iPhone 12 64Gb Product Red (MGJ73/MGH83)",
       "price": 22440,
       "pictures": [
         {
@@ -2058,7 +2058,7 @@
     },
     {
       "id": 113,
-      "fullName": "iPhone 12 64Gb Mind",
+      "fullName": "iPhone 12 64Gb Mind (MGJ93/MGHA3)",
       "price": 22440,
       "pictures": [
         {
@@ -2148,7 +2148,7 @@
     },
     {
       "id": 118,
-      "fullName": "iPhone 12 128Gb Product Red",
+      "fullName": "iPhone 12 128Gb Product Red (MGJD3/MGHE3)",
       "price": 26180,
       "pictures": [
         {
@@ -2166,7 +2166,7 @@
     },
     {
       "id": 119,
-      "fullName": "iPhone 12 128Gb Mind",
+      "fullName": "iPhone 12 128Gb Mind (MGJF3/MGHG3)",
       "price": 26180,
       "pictures": [
         {
@@ -2220,7 +2220,7 @@
     },
     {
       "id": 122,
-      "fullName": "iPhone 12 256Gb Black",
+      "fullName": "iPhone 12 256Gb Black (MGJG3/MGHH3)",
       "price": 29920,
       "pictures": [
         {
@@ -2256,7 +2256,7 @@
     },
     {
       "id": 124,
-      "fullName": "iPhone 12 256Gb (Product) Red",
+      "fullName": "iPhone 12 256Gb Product Red (MGJJ3/MGHK3)",
       "price": 29920,
       "pictures": [
         {
@@ -2274,7 +2274,7 @@
     },
     {
       "id": 125,
-      "fullName": "iPhone 12 256Gb Mind",
+      "fullName": "iPhone 12 256Gb Mind (MGJL3/MGHM3)",
       "price": 29920,
       "pictures": [
         {
@@ -2364,7 +2364,7 @@
     },
     {
       "id": 130,
-      "fullName": "iPhone 12 Mini 64Gb Product Red",
+      "fullName": "iPhone 12 mini 64Gb Product Red (MGE03)",
       "price": 18360,
       "pictures": [
         {
@@ -2382,7 +2382,7 @@
     },
     {
       "id": 131,
-      "fullName": "iPhone 12 Mini 64Gb Mind",
+      "fullName": "iPhone 12 mini 64Gb Mind (MGE23)",
       "price": 18360,
       "pictures": [
         {
@@ -2472,7 +2472,7 @@
     },
     {
       "id": 136,
-      "fullName": "iPhone 12 Mini 128Gb Product Red",
+      "fullName": "iPhone 12 mini 128Gb Product Red (MGE53)",
       "price": 21420,
       "pictures": [
         {
@@ -2490,7 +2490,7 @@
     },
     {
       "id": 137,
-      "fullName": "iPhone 12 Mini 128Gb Mind",
+      "fullName": "iPhone 12 mini 128Gb Mind (MGE73)",
       "price": 21420,
       "pictures": [
         {
@@ -2580,7 +2580,7 @@
     },
     {
       "id": 142,
-      "fullName": "iPhone 12 Mini 256Gb Product Red",
+      "fullName": "iPhone 12 mini 256Gb Product Red (MGEC3)",
       "price": 25330,
       "pictures": [
         {
@@ -2598,7 +2598,7 @@
     },
     {
       "id": 143,
-      "fullName": "iPhone 12 Mini 256Gb Mind",
+      "fullName": "iPhone 12 mini 256Gb Mind (MGEE3)",
       "price": 25330,
       "pictures": [
         {
@@ -2687,7 +2687,7 @@
       "id": 147
     },
     {
-      "fullName": "iPhone SE 2020 64Gb (Product) Red",
+      "fullName": "iPhone SE 2020 64Gb Product Red",
       "label": "Хит продаж",
       "price": 13260,
       "pictures": [
@@ -2742,7 +2742,7 @@
       "id": 150
     },
     {
-      "fullName": "iPhone SE 2020 128Gb (Product) Red",
+      "fullName": "iPhone SE 2020 128Gb Product Red",
       "price": 14620,
       "pictures": [
         {
@@ -2779,7 +2779,7 @@
       "id": 152
     },
     {
-      "fullName": "iPhone 11 64Gb (Product) Red",
+      "fullName": "iPhone 11 64Gb Product Red",
       "price": 19040,
       "pictures": [
         {
@@ -2815,7 +2815,7 @@
       "id": 154
     },
     {
-      "fullName": "iPhone 11 64Gb Black (MWLT2) FULL used(A+)",
+      "fullName": "iPhone 11 64Gb Black (MWLT2)",
       "price": 19040,
       "pictures": [
         {
