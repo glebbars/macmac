@@ -3982,8 +3982,8 @@
     },
     {
       "id": 206,
-      "fullName": "iPad mini 6 Wi-Fi + Cellular 64Gb Space Gray",
-      "price": 26690,
+      "fullName": "iPad mini 6 Wi-Fi + Cellular 64Gb Space Gray (MK893)",
+      "price": 23980,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656266727/mac-mac-images/lqgvpcguum8acu0xzitd.png",
@@ -4009,8 +4009,8 @@
       }
     },
     {
-      "fullName": "iPad mini 6 Wi-Fi + Cellular 64Gb Starlight",
-      "price": 25670,
+      "fullName": "iPad mini 6 Wi-Fi + Cellular 64Gb Starlight (MK8C3)",
+      "price": 24150,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656267284/mac-mac-images/mfwsqp9ciotuusbufjvg.png",
@@ -4037,8 +4037,8 @@
       "id": 207
     },
     {
-      "fullName": "iPad mini 6 Wi-Fi + Cellular 64Gb Pink",
-      "price": 25670,
+      "fullName": "iPad mini 6 Wi-Fi + Cellular 64Gb Pink (MLX43)",
+      "price": 24840,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656267339/mac-mac-images/ca3rmgwbfjxka1aarhup.png",
@@ -4065,8 +4065,8 @@
       "id": 208
     },
     {
-      "fullName": "iPad mini 6 Wi-Fi + Cellular 64Gb Purple",
-      "price": 25670,
+      "fullName": "iPad mini 6 Wi-Fi + Cellular 64Gb Purple (MK8E3)",
+      "price": 24670,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656267399/mac-mac-images/a9lleyicdwc2ch4t7xzf.png",
@@ -4094,8 +4094,8 @@
     },
     {
       "id": 210,
-      "fullName": "iPad mini 6 Wi-Fi + Cellular 256Gb Space Gray",
-      "price": 30600,
+      "fullName": "iPad mini 6 Wi-Fi + Cellular 256Gb Space Gray (MK8F3)",
+      "price": 35535,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656266727/mac-mac-images/lqgvpcguum8acu0xzitd.png",
@@ -4121,8 +4121,8 @@
       }
     },
     {
-      "fullName": "iPad mini 6 Wi-Fi + Cellular 256Gb Starlight",
-      "price": 30600,
+      "fullName": "iPad mini 6 Wi-Fi + Cellular 256Gb Starlight (MK8H3)",
+      "price": 31050,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656267284/mac-mac-images/mfwsqp9ciotuusbufjvg.png",
@@ -4149,8 +4149,8 @@
       "id": 211
     },
     {
-      "fullName": "iPad mini 6 Wi-Fi + Cellular 256Gb Pink",
-      "price": 30600,
+      "fullName": "iPad mini 6 Wi-Fi + Cellular 256Gb Pink (MLX93)",
+      "price": 31050,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656267339/mac-mac-images/ca3rmgwbfjxka1aarhup.png",
@@ -4177,8 +4177,8 @@
       "id": 212
     },
     {
-      "fullName": "iPad mini 6 Wi-Fi + Cellular 256Gb Purple",
-      "price": 30600,
+      "fullName": "iPad mini 6 Wi-Fi + Cellular 256Gb Purple (MK8K3)",
+      "price": 34500,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656267399/mac-mac-images/a9lleyicdwc2ch4t7xzf.png",
@@ -5509,18 +5509,18 @@
       "ipad mini 6 wi-fi 64gb space gray (mk7m3)": 17595,
       "ipad mini 6 wi-fi 64gb purple (mk7r3)": 17595,
       "ipad mini 6 wi-fi 64gb pink (mlwl3)": 17770,
-      "ipad mini 6 4g 64gb space gray (mk893)": 23980,
-      "ipad mini 6 4g 64gb starlight (mk8c3)": 24150,
-      "ipad mini 6 4g 64gb pink (mlx43)": 24840,
-      "ipad mini 6 4g 64gb purple (mk8e3)": 24670,
+      "ipad mini 6 wi-fi + cellular 64gb space gray (mk893)": 23980,
+      "ipad mini 6 wi-fi + cellular 64gb starlight (mk8c3)": 24150,
+      "ipad mini 6 wi-fi + cellular 64gb pink (mlx43)": 24840,
+      "ipad mini 6 wi-fi + cellular 64gb purple (mk8e3)": 24670,
       "ipad mini 6 wi-fi 256gb space gray (mk7t3)": 24150,
       "ipad mini 6 wi-fi 256gb starlight (mk7v3)": 25185,
       "ipad mini 6 wi-fi 256gb pink (mlwr3)": 25185,
       "ipad mini 6 wi-fi 256gb purple (mk7x3)": 25185,
-      "ipad mini 6 4g 256gb space gray (mk8f3)": 35535,
-      "ipad mini 6 4g 256gb starlight (mk8h3)": 31050,
-      "ipad mini 6 4g 256gb purple (mk8k3)": 34500,
-      "ipad mini 6 4g 256gb pink (mlx93)": 31050,
+      "ipad mini 6 wi-fi + cellular 256gb space gray (mk8f3)": 35535,
+      "ipad mini 6 wi-fi + cellular 256gb starlight (mk8h3)": 31050,
+      "ipad mini 6 wi-fi + cellular 256gb purple (mk8k3)": 34500,
+      "ipad mini 6 wi-fi + cellular 256gb pink (mlx93)": 31050,
       "ipad air 2019 4g 64gb space (mv152/mv0d2)": 22770,
       "ipad air 2019 4g 256gb space gray (mv1d2/mv0n2)": 29500,
       "ipad air 2020 wi-fi 64gb space gray (myfm2)": 20010,
