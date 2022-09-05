@@ -3565,8 +3565,8 @@
       }
     },
     {
-      "fullName": "iPad 2021 10.2\" Wi-Fi 64Gb Space Gray",
-      "price": 14450,
+      "fullName": "iPad 2021 10.2\" Wi-Fi 64Gb Space Gray (MK2K3)",
+      "price": 12940,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656260692/mac-mac-images/qcudv9sxbqp34hvlto8c.png",
@@ -3590,8 +3590,8 @@
     },
     {
       "id": 191,
-      "fullName": "iPad 2021 10.2\" Wi-Fi 64Gb Silver",
-      "price": 14450,
+      "fullName": "iPad 2021 10.2\" Wi-Fi 64Gb Silver (MK2L3)",
+      "price": 12940,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656260721/mac-mac-images/hzrwf52gcqp6hbpbpgc4.png",
@@ -3613,8 +3613,8 @@
       }
     },
     {
-      "fullName": "iPad 2021 10.2\" Wi-Fi 256Gb Space Gray",
-      "price": 18700,
+      "fullName": "iPad 2021 10.2\" Wi-Fi 256Gb Space Gray (MK2N3)",
+      "price": 16560,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656260692/mac-mac-images/qcudv9sxbqp34hvlto8c.png",
@@ -3638,8 +3638,8 @@
     },
     {
       "id": 193,
-      "fullName": "iPad 2021 10.2\" Wi-Fi 256Gb Silver",
-      "price": 18700,
+      "fullName": "iPad 2021 10.2\" Wi-Fi 256Gb Silver (MK2P3)",
+      "price": 16560,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656260721/mac-mac-images/hzrwf52gcqp6hbpbpgc4.png",
@@ -3661,8 +3661,8 @@
       }
     },
     {
-      "fullName": "iPad 2021 10.2\" Wi-Fi + Cellular 64Gb Space Gray",
-      "price": 23120,
+      "fullName": "iPad 2021 10.2\" Wi-Fi + Cellular 64Gb Space Gray (MK663/MK473)",
+      "price": 19665,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656260692/mac-mac-images/qcudv9sxbqp34hvlto8c.png",
@@ -3686,8 +3686,8 @@
     },
     {
       "id": 195,
-      "fullName": "iPad 2021 10.2\" Wi-Fi + Cellular 64Gb Silver",
-      "price": 23120,
+      "fullName": "iPad 2021 10.2\" Wi-Fi + Cellular 64Gb Silver (MK673/MK493)",
+      "price": 19495,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656260721/mac-mac-images/hzrwf52gcqp6hbpbpgc4.png",
@@ -3709,8 +3709,8 @@
       }
     },
     {
-      "fullName": "iPad 2021 10.2\" Wi-Fi + Cellular 256Gb Space Gray",
-      "price": 26180,
+      "fullName": "iPad 2021 10.2\" Wi-Fi + Cellular 256Gb Space Gray (MK693/MK4E3)",
+      "price": 23805,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656260692/mac-mac-images/qcudv9sxbqp34hvlto8c.png",
@@ -3734,8 +3734,8 @@
     },
     {
       "id": 197,
-      "fullName": "iPad 2021 10.2\" Wi-Fi + Cellular 256Gb Silver",
-      "price": 26180,
+      "fullName": "iPad 2021 10.2\" Wi-Fi + Cellular 256Gb Silver (MK6A3/MK4H3)",
+      "price": 24150,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656260721/mac-mac-images/hzrwf52gcqp6hbpbpgc4.png",
@@ -5488,14 +5488,14 @@
       "ipad 10.2 2020 4g 32gb space gray (myn32/mymh2)": 17250,
       "ipad 10.2 2020 4g 128gb space gray (myml2/myn72) open": 21220,
       "ipad 10.2 2020 4g 128gb space gray (myml2/myn72)": 21735,
-      "ipad 10.2 2021 wi-fi 64gb silver (mk2l3)": 12940,
-      "ipad 10.2 2021 wi-fi 64gb space gray (mk2k3)": 12940,
-      "ipad 10.2 2021 wi-fi 256gb space gray (mk2n3)": 16560,
-      "ipad 10.2 2021 wi-fi 256gb silver (mk2p3)": 16560,
-      "ipad 10.2 2021 4g 64gb space gray (mk663/mk473)": 19665,
-      "ipad 10.2 2021 4g 64gb silver (mk673/mk493)": 19495,
-      "ipad 10.2 2021 4g 256gb space gray (mk693/mk4e3)": 23805,
-      "ipad 10.2 2021 4g 256gb silver (mk6a3/mk4h3)": 24150,
+      "ipad 2021 10.2\" wi-fi 64gb silver (mk2l3)": 12940,
+      "ipad 2021 10.2\" wi-fi 64gb space gray (mk2k3)": 12940,
+      "ipad 2021 10.2\" wi-fi 256gb space gray (mk2n3)": 16560,
+      "ipad 2021 10.2\" wi-fi 256gb silver (mk2p3)": 16560,
+      "ipad 2021 10.2\" wi-fi + cellular 64gb space gray (mk663/mk473)": 19665,
+      "ipad 2021 10.2\" wi-fi + cellular 64gb silver (mk673/mk493)": 19495,
+      "ipad 2021 10.2\" wi-fi + cellular 256gb space gray (mk693/mk4e3)": 23805,
+      "ipad 2021 10.2\" wi-fi + cellular 256gb silver (mk6a3/mk4h3)": 24150,
       "ipad mini 5 wi-fi 64gb gold (muqy2)": 14835,
       "ipad mini 5 wi-fi 64gb silver (muqx2)": 15010,
       "ipad mini 5 wi-fi 64gb space gray (muqw2)": 15355,
