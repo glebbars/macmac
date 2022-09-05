@@ -2,7 +2,7 @@
   "posts": [
     {
       "fullName": "iPhone SE 2022 64Gb Midnight (MMX53)",
-      "price": 14835,
+      "price": 14620,
       "label": "Хит продаж",
       "pictures": [
         {
@@ -25,7 +25,7 @@
     },
     {
       "fullName": "iPhone SE 2022 64Gb Starlight (MMX63)",
-      "price": 14320,
+      "price": 14110,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653663870/mac-mac-images/ts7zgzktwbifknq00qun.png",
@@ -48,7 +48,7 @@
     {
       "id": 3,
       "fullName": "iPhone SE 2022 64Gb Product Red (MMX73)",
-      "price": 14320,
+      "price": 14110,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653665681/mac-mac-images/qmhpihc7eordzalkkw4a.png",
@@ -70,7 +70,7 @@
     {
       "id": 4,
       "fullName": "iPhone SE 2022 128Gb Midnight (MMX83)",
-      "price": 17250,
+      "price": 17000,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653663734/mac-mac-images/eode9scu4crbh6ydvmkq.png",
@@ -92,7 +92,7 @@
     {
       "id": 5,
       "fullName": "iPhone SE 2022 128Gb Starlight (MMX93)",
-      "price": 15870,
+      "price": 15640,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653663870/mac-mac-images/ts7zgzktwbifknq00qun.png",
@@ -114,7 +114,7 @@
     {
       "id": 6,
       "fullName": "iPhone SE 2022 128Gb Product Red (MMXA3)",
-      "price": 15870,
+      "price": 15640,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653665681/mac-mac-images/qmhpihc7eordzalkkw4a.png",
@@ -136,7 +136,7 @@
     {
       "id": 7,
       "fullName": "iPhone SE 2022 256Gb Midnight (MMXC3)",
-      "price": 20700,
+      "price": 20400,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653663734/mac-mac-images/eode9scu4crbh6ydvmkq.png",
@@ -158,7 +158,7 @@
     {
       "id": 8,
       "fullName": "iPhone SE 2022 256Gb Starlight (MMXD3)",
-      "price": 20355,
+      "price": 20060,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653663870/mac-mac-images/ts7zgzktwbifknq00qun.png",
@@ -180,7 +180,7 @@
     {
       "id": 9,
       "fullName": "iPhone SE 2022 256Gb Product Red (MMXE3)",
-      "price": 20355,
+      "price": 20060,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653665681/mac-mac-images/qmhpihc7eordzalkkw4a.png",
@@ -201,7 +201,7 @@
     },
     {
       "fullName": "iPhone 13 Pro Max 128Gb Alpine Green (MNCP3)",
-      "price": 39160,
+      "price": 38590,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668578/mac-mac-images/kj6yu2qkpy6c1u4n4s9o.png",
@@ -219,7 +219,7 @@
     },
     {
       "fullName": "iPhone 13 Pro Max 128Gb Sierra Blue (MLL93)",
-      "price": 39160,
+      "price": 38590,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668484/mac-mac-images/aeots1hppamb42u3jbbc.png",
@@ -237,7 +237,7 @@
     },
     {
       "fullName": "iPhone 13 Pro Max 128Gb Graphite (MLL63)",
-      "price": 38985,
+      "price": 38420,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668645/mac-mac-images/gfpwuxkvmjyteyrtqlt0.png",
@@ -255,7 +255,7 @@
     },
     {
       "fullName": "iPhone 13 Pro Max 128Gb Silver (MLL73)",
-      "price": 39160,
+      "price": 38590,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668780/mac-mac-images/pkjmhztkogodrlrvfvm3.png",
@@ -273,7 +273,7 @@
     },
     {
       "fullName": "iPhone 13 Pro Max 128Gb Gold (MLL83)",
-      "price": 39160,
+      "price": 38590,
       "label": "Хит продаж",
       "pictures": [
         {
@@ -293,7 +293,7 @@
     {
       "id": 15,
       "fullName": "iPhone 13 Pro Max 256Gb Alpine Green (MNCQ3)",
-      "price": 42610,
+      "price": 41990,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668578/mac-mac-images/kj6yu2qkpy6c1u4n4s9o.png",
@@ -311,7 +311,7 @@
     {
       "id": 16,
       "fullName": "iPhone 13 Pro Max 256Gb Sierra Blue (MLLE3)",
-      "price": 42780,
+      "price": 42160,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668484/mac-mac-images/aeots1hppamb42u3jbbc.png",
@@ -329,7 +329,7 @@
     {
       "id": 17,
       "fullName": "iPhone 13 Pro Max 256Gb Graphite (MLLA3)",
-      "price": 42435,
+      "price": 41820,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668645/mac-mac-images/gfpwuxkvmjyteyrtqlt0.png",
@@ -347,7 +347,7 @@
     {
       "id": 18,
       "fullName": "iPhone 13 Pro Max 256Gb Silver (MLLC3)",
-      "price": 42610,
+      "price": 41990,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668780/mac-mac-images/pkjmhztkogodrlrvfvm3.png",
@@ -365,7 +365,7 @@
     {
       "id": 19,
       "fullName": "iPhone 13 Pro Max 256Gb Gold (MLLD3)",
-      "price": 42780,
+      "price": 42160,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668811/mac-mac-images/blanrsn3ldkrnbxvtg7p.png",
@@ -382,7 +382,7 @@
     },
     {
       "fullName": "iPhone 13 Pro Max 512Gb Alpine Green (MNCR3)",
-      "price": 51405,
+      "price": 50660,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668578/mac-mac-images/kj6yu2qkpy6c1u4n4s9o.png",
@@ -400,7 +400,7 @@
     },
     {
       "fullName": "iPhone 13 Pro Max 512Gb Sierra Blue (MLLJ3)",
-      "price": 49335,
+      "price": 48620,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668484/mac-mac-images/aeots1hppamb42u3jbbc.png",
@@ -418,7 +418,7 @@
     },
     {
       "fullName": "iPhone 13 Pro Max 512Gb Graphite (MLLF3)",
-      "price": 49165,
+      "price": 48450,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668645/mac-mac-images/gfpwuxkvmjyteyrtqlt0.png",
@@ -436,7 +436,7 @@
     },
     {
       "fullName": "iPhone 13 Pro Max 512Gb Silver (MLLG3)",
-      "price": 50370,
+      "price": 49640,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668780/mac-mac-images/pkjmhztkogodrlrvfvm3.png",
@@ -454,7 +454,7 @@
     },
     {
       "fullName": "iPhone 13 Pro Max 512Gb Gold (MLLH3)",
-      "price": 49335,
+      "price": 48620,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668811/mac-mac-images/blanrsn3ldkrnbxvtg7p.png",
@@ -472,7 +472,7 @@
     },
     {
       "fullName": "iPhone 13 Pro Max 1Tb Alpine Green (MNCT3)",
-      "price": 54340,
+      "price": 53550,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668578/mac-mac-images/kj6yu2qkpy6c1u4n4s9o.png",
@@ -490,7 +490,7 @@
     },
     {
       "fullName": "iPhone 13 Pro Max 1Tb Sierra Blue (MLLN3)",
-      "price": 54340,
+      "price": 53550,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668484/mac-mac-images/aeots1hppamb42u3jbbc.png",
@@ -508,7 +508,7 @@
     },
     {
       "fullName": "iPhone 13 Pro Max 1Tb Graphite (MLLK3)",
-      "price": 54165,
+      "price": 53380,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668645/mac-mac-images/gfpwuxkvmjyteyrtqlt0.png",
@@ -526,7 +526,7 @@
     },
     {
       "fullName": "iPhone 13 Pro Max 1Tb Silver (MLLL3)",
-      "price": 52440,
+      "price": 51680,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668780/mac-mac-images/pkjmhztkogodrlrvfvm3.png",
@@ -544,7 +544,7 @@
     },
     {
       "fullName": "iPhone 13 Pro Max 1Tb Gold (MLLM3)",
-      "price": 56235,
+      "price": 55420,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668811/mac-mac-images/blanrsn3ldkrnbxvtg7p.png",
@@ -563,7 +563,7 @@
     {
       "id": 30,
       "fullName": "iPhone 13 Pro 128Gb Alpine Green (MNDT3)",
-      "price": 35880,
+      "price": 35360,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668578/mac-mac-images/kj6yu2qkpy6c1u4n4s9o.png",
@@ -580,7 +580,7 @@
     },
     {
       "fullName": "iPhone 13 Pro 128Gb Sierra Blue (MLVD3)",
-      "price": 35710,
+      "price": 35190,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668484/mac-mac-images/aeots1hppamb42u3jbbc.png",
@@ -598,7 +598,7 @@
     },
     {
       "fullName": "iPhone 13 Pro 128Gb Graphite (MLV93)",
-      "price": 35710,
+      "price": 35190,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668645/mac-mac-images/gfpwuxkvmjyteyrtqlt0.png",
@@ -616,7 +616,7 @@
     },
     {
       "fullName": "iPhone 13 Pro 128Gb Silver (MLVA3)",
-      "price": 35710,
+      "price": 35190,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668780/mac-mac-images/pkjmhztkogodrlrvfvm3.png",
@@ -634,7 +634,7 @@
     },
     {
       "fullName": "iPhone 13 Pro 128Gb Gold (MLVC3)",
-      "price": 35710,
+      "price": 35190,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668811/mac-mac-images/blanrsn3ldkrnbxvtg7p.png",
@@ -653,7 +653,7 @@
     {
       "id": 35,
       "fullName": "iPhone 13 Pro 256Gb Alpine Green (MNDU3)",
-      "price": 39330,
+      "price": 38760,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668578/mac-mac-images/kj6yu2qkpy6c1u4n4s9o.png",
@@ -670,7 +670,7 @@
     },
     {
       "fullName": "iPhone 13 Pro 256Gb Sierra Blue (MLVP3)",
-      "price": 39160,
+      "price": 38590,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668484/mac-mac-images/aeots1hppamb42u3jbbc.png",
@@ -688,7 +688,7 @@
     },
     {
       "fullName": "iPhone 13 Pro 256Gb Graphite (MLVE3)",
-      "price": 39160,
+      "price": 38590,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668645/mac-mac-images/gfpwuxkvmjyteyrtqlt0.png",
@@ -706,7 +706,7 @@
     },
     {
       "fullName": "iPhone 13 Pro 256Gb Silver (MLVF3)",
-      "price": 39330,
+      "price": 38760,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668780/mac-mac-images/pkjmhztkogodrlrvfvm3.png",
@@ -724,7 +724,7 @@
     },
     {
       "fullName": "iPhone 13 Pro 256Gb Gold (MLVK3)",
-      "price": 39160,
+      "price": 38590,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668811/mac-mac-images/blanrsn3ldkrnbxvtg7p.png",
@@ -743,7 +743,7 @@
     {
       "id": 40,
       "fullName": "iPhone 13 Pro 512Gb Alpine Green (MNDV3)",
-      "price": 47610,
+      "price": 46920,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668578/mac-mac-images/kj6yu2qkpy6c1u4n4s9o.png",
@@ -760,7 +760,7 @@
     },
     {
       "fullName": "iPhone 13 Pro 512Gb Sierra Blue (MLVU3)",
-      "price": 47610,
+      "price": 46920,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668484/mac-mac-images/aeots1hppamb42u3jbbc.png",
@@ -778,7 +778,7 @@
     },
     {
       "fullName": "iPhone 13 Pro 512Gb Graphite (MLVH3)",
-      "price": 47265,
+      "price": 46580,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668645/mac-mac-images/gfpwuxkvmjyteyrtqlt0.png",
@@ -796,7 +796,7 @@
     },
     {
       "fullName": "iPhone 13 Pro 512Gb Silver (MLVN3)",
-      "price": 47265,
+      "price": 46580,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668780/mac-mac-images/pkjmhztkogodrlrvfvm3.png",
@@ -814,7 +814,7 @@
     },
     {
       "fullName": "iPhone 13 Pro 512Gb Gold (MLVQ3)",
-      "price": 46060,
+      "price": 45390,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668811/mac-mac-images/blanrsn3ldkrnbxvtg7p.png",
@@ -833,7 +833,7 @@
     {
       "id": 45,
       "fullName": "iPhone 13 Pro 1Tb Alpine Green (MNDW3)",
-      "price": 50890,
+      "price": 50150,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668578/mac-mac-images/kj6yu2qkpy6c1u4n4s9o.png",
@@ -850,7 +850,7 @@
     },
     {
       "fullName": "iPhone 13 Pro 1Tb Sierra Blue (MLW03)",
-      "price": 50715,
+      "price": 49980,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668484/mac-mac-images/aeots1hppamb42u3jbbc.png",
@@ -868,7 +868,7 @@
     },
     {
       "fullName": "iPhone 13 Pro 1Tb Graphite (MLVV3)",
-      "price": 54165,
+      "price": 53380,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668645/mac-mac-images/gfpwuxkvmjyteyrtqlt0.png",
@@ -886,7 +886,7 @@
     },
     {
       "fullName": "iPhone 13 Pro 1Tb Silver (MLVW3)",
-      "price": 50715,
+      "price": 49980,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668780/mac-mac-images/pkjmhztkogodrlrvfvm3.png",
@@ -904,7 +904,7 @@
     },
     {
       "fullName": "iPhone 13 Pro 1Tb Gold (MLVY3)",
-      "price": 51750,
+      "price": 51000,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653668811/mac-mac-images/blanrsn3ldkrnbxvtg7p.png",
@@ -922,7 +922,7 @@
     },
     {
       "fullName": "iPhone 13 128Gb Green (MNGD3)",
-      "price": 28120,
+      "price": 27710,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692619/mac-mac-images/pqutfkmtmmuidotq8rnj.png",
@@ -940,7 +940,7 @@
     },
     {
       "fullName": "iPhone 13 128Gb Blue (MLPK3)",
-      "price": 27945,
+      "price": 27540,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692725/mac-mac-images/ggncwt7yuuiezdwtjcp0.png",
@@ -958,7 +958,7 @@
     },
     {
       "fullName": "iPhone 13 128Gb Pink (MLPH3)",
-      "price": 28465,
+      "price": 28050,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692752/mac-mac-images/nchialn9rahyaazazmeo.png",
@@ -990,11 +990,11 @@
         "color": "(Product) Red"
       },
       "id": 53,
-      "price": 27945
+      "price": 27540
     },
     {
       "fullName": "iPhone 13 128Gb Midnight (MLPF3)",
-      "price": 27945,
+      "price": 27540,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692979/mac-mac-images/zve2tewomyfemvi1tu2n.png",
@@ -1012,7 +1012,7 @@
     },
     {
       "fullName": "iPhone 13 128Gb Starlight (MLPG3)",
-      "price": 28120,
+      "price": 27710,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653693003/mac-mac-images/fdkr7v7ap2u4fr3tdgdb.png",
@@ -1030,7 +1030,7 @@
     },
     {
       "fullName": "iPhone 13 256Gb Green (MNGE3)",
-      "price": 30880,
+      "price": 30430,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692619/mac-mac-images/pqutfkmtmmuidotq8rnj.png",
@@ -1048,7 +1048,7 @@
     },
     {
       "fullName": "iPhone 13 256Gb Blue (MLQA3)",
-      "price": 30705,
+      "price": 30260,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692725/mac-mac-images/ggncwt7yuuiezdwtjcp0.png",
@@ -1066,7 +1066,7 @@
     },
     {
       "fullName": "iPhone 13 256Gb Pink (MLQ83)",
-      "price": 32775,
+      "price": 32300,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692752/mac-mac-images/nchialn9rahyaazazmeo.png",
@@ -1098,11 +1098,11 @@
         "color": "(Product) Red"
       },
       "id": 59,
-      "price": 30705
+      "price": 30260
     },
     {
       "fullName": "iPhone 13 256Gb Midnight (MLQ63)",
-      "price": 31225,
+      "price": 30770,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692979/mac-mac-images/zve2tewomyfemvi1tu2n.png",
@@ -1120,7 +1120,7 @@
     },
     {
       "fullName": "iPhone 13 256Gb Starlight (MLQ73)",
-      "price": 32775,
+      "price": 32300,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653693003/mac-mac-images/fdkr7v7ap2u4fr3tdgdb.png",
@@ -1138,7 +1138,7 @@
     },
     {
       "fullName": "iPhone 13 512Gb Green (MNGF3)",
-      "price": 37260,
+      "price": 36720,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692619/mac-mac-images/pqutfkmtmmuidotq8rnj.png",
@@ -1156,7 +1156,7 @@
     },
     {
       "fullName": "iPhone 13 512Gb Blue (MLQG3)",
-      "price": 32605,
+      "price": 32130,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692725/mac-mac-images/ggncwt7yuuiezdwtjcp0.png",
@@ -1174,7 +1174,7 @@
     },
     {
       "fullName": "iPhone 13 512Gb Pink (MLQE3)",
-      "price": 36570,
+      "price": 36040,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692752/mac-mac-images/nchialn9rahyaazazmeo.png",
@@ -1206,11 +1206,11 @@
         "color": "(Product) Red"
       },
       "id": 65,
-      "price": 32430
+      "price": 31960
     },
     {
       "fullName": "iPhone 13 512Gb Midnight (MLQC3)",
-      "price": 32605,
+      "price": 32130,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692979/mac-mac-images/zve2tewomyfemvi1tu2n.png",
@@ -1228,7 +1228,7 @@
     },
     {
       "fullName": "iPhone 13 512Gb Starlight (MLQD3)",
-      "price": 35190,
+      "price": 34680,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653693003/mac-mac-images/fdkr7v7ap2u4fr3tdgdb.png",
@@ -1246,7 +1246,7 @@
     },
     {
       "fullName": "iPhone 13 Mini 128Gb Green (MNF83)",
-      "price": 26220,
+      "price": 25840,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692619/mac-mac-images/pqutfkmtmmuidotq8rnj.png",
@@ -1264,7 +1264,7 @@
     },
     {
       "fullName": "iPhone 13 Mini 128Gb Blue (MLK43)",
-      "price": 25015,
+      "price": 24650,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692725/mac-mac-images/ggncwt7yuuiezdwtjcp0.png",
@@ -1282,7 +1282,7 @@
     },
     {
       "fullName": "iPhone 13 Mini 128Gb Pink (MLK23)",
-      "price": 25015,
+      "price": 24650,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692752/mac-mac-images/nchialn9rahyaazazmeo.png",
@@ -1314,11 +1314,11 @@
         "color": "(Product) Red"
       },
       "id": 71,
-      "price": 26220
+      "price": 25840
     },
     {
       "fullName": "iPhone 13 Mini 128Gb Midnight (MLK03)",
-      "price": 26220,
+      "price": 25840,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692979/mac-mac-images/zve2tewomyfemvi1tu2n.png",
@@ -1336,7 +1336,7 @@
     },
     {
       "fullName": "iPhone 13 Mini 128Gb Starlight (MLK13)",
-      "price": 25015,
+      "price": 24650,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653693003/mac-mac-images/fdkr7v7ap2u4fr3tdgdb.png",
@@ -1354,7 +1354,7 @@
     },
     {
       "fullName": "iPhone 13 Mini 256Gb Green (MNF93)",
-      "price": 32775,
+      "price": 32300,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692619/mac-mac-images/pqutfkmtmmuidotq8rnj.png",
@@ -1372,7 +1372,7 @@
     },
     {
       "fullName": "iPhone 13 Mini 256Gb Blue (MLK93)",
-      "price": 28290,
+      "price": 27880,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692725/mac-mac-images/ggncwt7yuuiezdwtjcp0.png",
@@ -1390,7 +1390,7 @@
     },
     {
       "fullName": "iPhone 13 Mini 256Gb Pink (MLK73)",
-      "price": 28980,
+      "price": 28560,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692752/mac-mac-images/nchialn9rahyaazazmeo.png",
@@ -1422,11 +1422,11 @@
         "color": "(Product) Red"
       },
       "id": 77,
-      "price": 28290
+      "price": 27880
     },
     {
       "fullName": "iPhone 13 Mini 256Gb Midnight (MLK53)",
-      "price": 30705,
+      "price": 30260,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692979/mac-mac-images/zve2tewomyfemvi1tu2n.png",
@@ -1444,7 +1444,7 @@
     },
     {
       "fullName": "iPhone 13 Mini 256Gb Starlight (MLK63)",
-      "price": 29325,
+      "price": 28900,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653693003/mac-mac-images/fdkr7v7ap2u4fr3tdgdb.png",
@@ -1462,7 +1462,7 @@
     },
     {
       "fullName": "iPhone 13 Mini 512Gb Green (MNFA3)",
-      "price": 34845,
+      "price": 34340,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692619/mac-mac-images/pqutfkmtmmuidotq8rnj.png",
@@ -1480,7 +1480,7 @@
     },
     {
       "fullName": "iPhone 13 Mini 512Gb Blue (MLKF3)",
-      "price": 32775,
+      "price": 32300,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692725/mac-mac-images/ggncwt7yuuiezdwtjcp0.png",
@@ -1498,7 +1498,7 @@
     },
     {
       "fullName": "iPhone 13 Mini 512Gb Pink (MLKD3)",
-      "price": 32605,
+      "price": 32130,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692752/mac-mac-images/nchialn9rahyaazazmeo.png",
@@ -1530,11 +1530,11 @@
         "color": "(Product) Red"
       },
       "id": 83,
-      "price": 32605
+      "price": 32130
     },
     {
       "fullName": "iPhone 13 Mini 512Gb Midnight (MLKA3)",
-      "price": 34675,
+      "price": 34170,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653692979/mac-mac-images/zve2tewomyfemvi1tu2n.png",
@@ -1552,7 +1552,7 @@
     },
     {
       "fullName": "iPhone 13 Mini 512Gb Starlight (MLKC3)",
-      "price": 31915,
+      "price": 31450,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653693003/mac-mac-images/fdkr7v7ap2u4fr3tdgdb.png",
@@ -1570,7 +1570,7 @@
     },
     {
       "fullName": "iPhone 12 Pro Max 128Gb Pacific Blue (MGDA3)",
-      "price": 35365,
+      "price": 34850,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653756959/mac-mac-images/dieo05p5zwi6is92sppf.png",
@@ -1588,7 +1588,7 @@
     },
     {
       "fullName": "iPhone 12 Pro Max 128Gb Gold (MGD93)",
-      "price": 37780,
+      "price": 37230,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653756999/mac-mac-images/knzbk3somexvvoipngqb.png",
@@ -1606,7 +1606,7 @@
     },
     {
       "fullName": "iPhone 12 Pro Max 128Gb Graphite (MGD73)",
-      "price": 37605,
+      "price": 37060,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757019/mac-mac-images/msunr9a67rptxtza7xws.png",
@@ -1624,7 +1624,7 @@
     },
     {
       "fullName": "iPhone 12 Pro Max 128Gb Silver (MGD83)",
-      "price": 38295,
+      "price": 37740,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757039/mac-mac-images/v3bw9jd4qhj3qfkmvp2k.png",
@@ -1642,7 +1642,7 @@
     },
     {
       "fullName": "iPhone 12 Pro Max 256Gb Pacific Blue (MGDF3)",
-      "price": 39675,
+      "price": 39100,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653756959/mac-mac-images/dieo05p5zwi6is92sppf.png",
@@ -1660,7 +1660,7 @@
     },
     {
       "fullName": "iPhone 12 Pro Max 256Gb Gold (MGDE3)",
-      "price": 39675,
+      "price": 39100,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653756999/mac-mac-images/knzbk3somexvvoipngqb.png",
@@ -1678,7 +1678,7 @@
     },
     {
       "fullName": "iPhone 12 Pro Max 256Gb Graphite (MGDC3)",
-      "price": 40020,
+      "price": 39440,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757019/mac-mac-images/msunr9a67rptxtza7xws.png",
@@ -1696,7 +1696,7 @@
     },
     {
       "fullName": "iPhone 12 Pro Max 256Gb Silver (MGDD3)",
-      "price": 41055,
+      "price": 40460,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757039/mac-mac-images/v3bw9jd4qhj3qfkmvp2k.png",
@@ -1714,7 +1714,7 @@
     },
     {
       "fullName": "iPhone 12 Pro Max 512Gb Pacific Blue (MGDL3)",
-      "price": 41400,
+      "price": 40800,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653756959/mac-mac-images/dieo05p5zwi6is92sppf.png",
@@ -1732,7 +1732,7 @@
     },
     {
       "fullName": "iPhone 12 Pro Max 512Gb Gold (MGDK3)",
-      "price": 40020,
+      "price": 39440,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653756999/mac-mac-images/knzbk3somexvvoipngqb.png",
@@ -1750,7 +1750,7 @@
     },
     {
       "fullName": "iPhone 12 Pro Max 512Gb Graphite (MGDG3)",
-      "price": 39330,
+      "price": 38760,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757019/mac-mac-images/msunr9a67rptxtza7xws.png",
@@ -1768,7 +1768,7 @@
     },
     {
       "fullName": "iPhone 12 Pro Max 512Gb Silver (MGDH3)",
-      "price": 40020,
+      "price": 39440,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757039/mac-mac-images/v3bw9jd4qhj3qfkmvp2k.png",
@@ -1786,7 +1786,7 @@
     },
     {
       "fullName": "iPhone 12 Pro 128Gb Pacific Blue (MGMN3/MGLR3)",
-      "price": 34675,
+      "price": 34170,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653756959/mac-mac-images/dieo05p5zwi6is92sppf.png",
@@ -1804,7 +1804,7 @@
     },
     {
       "fullName": "iPhone 12 Pro 128Gb Gold (MGMM3/MGLQ3)",
-      "price": 34155,
+      "price": 33660,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653756999/mac-mac-images/knzbk3somexvvoipngqb.png",
@@ -1822,7 +1822,7 @@
     },
     {
       "fullName": "iPhone 12 Pro 128Gb Graphite (MGMK3/MGLN3)",
-      "price": 34500,
+      "price": 34000,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757019/mac-mac-images/msunr9a67rptxtza7xws.png",
@@ -1840,7 +1840,7 @@
     },
     {
       "fullName": "iPhone 12 Pro 128Gb Silver (MGML3/MGLP3)",
-      "price": 34330,
+      "price": 33830,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757039/mac-mac-images/v3bw9jd4qhj3qfkmvp2k.png",
@@ -1858,7 +1858,7 @@
     },
     {
       "fullName": "iPhone 12 Pro 256Gb Pacific Blue (MGMT3/MGLW3)",
-      "price": 34675,
+      "price": 34170,
       "label": "Хит продаж",
       "pictures": [
         {
@@ -1877,7 +1877,7 @@
     },
     {
       "fullName": "iPhone 12 Pro 256Gb Gold (MGMR3/MGLV3)",
-      "price": 34675,
+      "price": 34170,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653756999/mac-mac-images/knzbk3somexvvoipngqb.png",
@@ -1895,7 +1895,7 @@
     },
     {
       "fullName": "iPhone 12 Pro 256Gb Graphite (MGMP3/MGLT3)",
-      "price": 34500,
+      "price": 34000,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757019/mac-mac-images/msunr9a67rptxtza7xws.png",
@@ -1913,7 +1913,7 @@
     },
     {
       "fullName": "iPhone 12 Pro 256Gb Silver (MGMQ3/MGLU3)",
-      "price": 34675,
+      "price": 34170,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757039/mac-mac-images/v3bw9jd4qhj3qfkmvp2k.png",
@@ -1931,7 +1931,7 @@
     },
     {
       "fullName": "iPhone 12 Pro 512Gb Pacific Blue (MGMX3/MGM43)",
-      "price": 35190,
+      "price": 34680,
       "label": "Хит продаж",
       "pictures": [
         {
@@ -1950,7 +1950,7 @@
     },
     {
       "fullName": "iPhone 12 Pro 512Gb Gold (MGMW3/MGM23)",
-      "price": 35190,
+      "price": 34680,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653756999/mac-mac-images/knzbk3somexvvoipngqb.png",
@@ -1968,7 +1968,7 @@
     },
     {
       "fullName": "iPhone 12 Pro 512Gb Graphite (MGMU3/MGLX3)",
-      "price": 35190,
+      "price": 34680,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757019/mac-mac-images/msunr9a67rptxtza7xws.png",
@@ -1986,7 +1986,7 @@
     },
     {
       "fullName": "iPhone 12 Pro 512Gb Silver (MGMV3/MGLY3)",
-      "price": 35190,
+      "price": 34680,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757039/mac-mac-images/v3bw9jd4qhj3qfkmvp2k.png",
@@ -2005,7 +2005,7 @@
     {
       "id": 110,
       "fullName": "iPhone 12 64Gb Black (MGJ53/MGH63)",
-      "price": 21565,
+      "price": 21250,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757890/mac-mac-images/olj9bzswwatvm4qhvyja.png",
@@ -2023,7 +2023,7 @@
     {
       "id": 111,
       "fullName": "iPhone 12 64Gb White (MGJ63/MGH73)",
-      "price": 21565,
+      "price": 21250,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757901/mac-mac-images/r80hh0muk2cgvkvh1l8y.png",
@@ -2041,7 +2041,7 @@
     {
       "id": 112,
       "fullName": "iPhone 12 64Gb Product Red (MGJ73/MGH83)",
-      "price": 21735,
+      "price": 21420,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757912/mac-mac-images/uz9xavlcwdnuclynkrxm.png",
@@ -2059,7 +2059,7 @@
     {
       "id": 113,
       "fullName": "iPhone 12 64Gb Mind (MGJ93/MGHA3)",
-      "price": 23805,
+      "price": 23460,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757942/mac-mac-images/z2goemdbmz8banhh9bft.png",
@@ -2076,7 +2076,7 @@
     },
     {
       "fullName": "iPhone 12 64Gb Blue (MGJ83/MGH93)",
-      "price": 23115,
+      "price": 22780,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757856/mac-mac-images/blwnunmgqhwm8txnyrdi.png",
@@ -2094,7 +2094,7 @@
     },
     {
       "fullName": "iPhone 12 64Gb Purple (MJNM3)",
-      "price": 22080,
+      "price": 21760,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757873/mac-mac-images/monocjnqhqtvygkllhio.png",
@@ -2113,7 +2113,7 @@
     {
       "id": 116,
       "fullName": "iPhone 12 128Gb Black (MGJA3/MGHC3)",
-      "price": 25530,
+      "price": 25160,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757890/mac-mac-images/olj9bzswwatvm4qhvyja.png",
@@ -2131,7 +2131,7 @@
     {
       "id": 117,
       "fullName": "iPhone 12 128Gb White (MGJC3/MGHD3)",
-      "price": 25530,
+      "price": 25160,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757901/mac-mac-images/r80hh0muk2cgvkvh1l8y.png",
@@ -2149,7 +2149,7 @@
     {
       "id": 118,
       "fullName": "iPhone 12 128Gb Product Red (MGJD3/MGHE3)",
-      "price": 25705,
+      "price": 25330,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757912/mac-mac-images/uz9xavlcwdnuclynkrxm.png",
@@ -2167,7 +2167,7 @@
     {
       "id": 119,
       "fullName": "iPhone 12 128Gb Mind (MGJF3/MGHG3)",
-      "price": 25530,
+      "price": 25160,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757942/mac-mac-images/z2goemdbmz8banhh9bft.png",
@@ -2184,7 +2184,7 @@
     },
     {
       "fullName": "iPhone 12 128Gb Blue (MGJE3/MGHF3)",
-      "price": 25530,
+      "price": 25160,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757856/mac-mac-images/blwnunmgqhwm8txnyrdi.png",
@@ -2202,7 +2202,7 @@
     },
     {
       "fullName": "iPhone 12 128Gb Purple (MJNP3)",
-      "price": 25875,
+      "price": 25500,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757873/mac-mac-images/monocjnqhqtvygkllhio.png",
@@ -2221,7 +2221,7 @@
     {
       "id": 122,
       "fullName": "iPhone 12 256Gb Black (MGJG3/MGHH3)",
-      "price": 31050,
+      "price": 30600,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757890/mac-mac-images/olj9bzswwatvm4qhvyja.png",
@@ -2239,7 +2239,7 @@
     {
       "id": 123,
       "fullName": "iPhone 12 256Gb White (MGJH3/MGHJ3)",
-      "price": 31050,
+      "price": 30600,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757901/mac-mac-images/r80hh0muk2cgvkvh1l8y.png",
@@ -2257,7 +2257,7 @@
     {
       "id": 124,
       "fullName": "iPhone 12 256Gb Product Red (MGJJ3/MGHK3)",
-      "price": 28465,
+      "price": 28050,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757912/mac-mac-images/uz9xavlcwdnuclynkrxm.png",
@@ -2275,7 +2275,7 @@
     {
       "id": 125,
       "fullName": "iPhone 12 256Gb Mind (MGJL3/MGHM3)",
-      "price": 29670,
+      "price": 29240,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757942/mac-mac-images/z2goemdbmz8banhh9bft.png",
@@ -2292,7 +2292,7 @@
     },
     {
       "fullName": "iPhone 12 256Gb Blue (MGJK3/MGHL3)",
-      "price": 28980,
+      "price": 28560,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757856/mac-mac-images/blwnunmgqhwm8txnyrdi.png",
@@ -2310,7 +2310,7 @@
     },
     {
       "fullName": "iPhone 12 256Gb Purple (MJNQ3)",
-      "price": 31050,
+      "price": 30600,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757873/mac-mac-images/monocjnqhqtvygkllhio.png",
@@ -2329,7 +2329,7 @@
     {
       "id": 128,
       "fullName": "iPhone 12 mini 64Gb Black (MGDX3)",
-      "price": 20700,
+      "price": 20400,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757890/mac-mac-images/olj9bzswwatvm4qhvyja.png",
@@ -2347,7 +2347,7 @@
     {
       "id": 129,
       "fullName": "iPhone 12 mini 64Gb White (MGDY3)",
-      "price": 20010,
+      "price": 19720,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757901/mac-mac-images/r80hh0muk2cgvkvh1l8y.png",
@@ -2365,7 +2365,7 @@
     {
       "id": 130,
       "fullName": "iPhone 12 mini 64Gb Product Red (MGE03)",
-      "price": 19150,
+      "price": 18870,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757912/mac-mac-images/uz9xavlcwdnuclynkrxm.png",
@@ -2383,7 +2383,7 @@
     {
       "id": 131,
       "fullName": "iPhone 12 mini 64Gb Mind (MGE23)",
-      "price": 20010,
+      "price": 19720,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757942/mac-mac-images/z2goemdbmz8banhh9bft.png",
@@ -2400,7 +2400,7 @@
     },
     {
       "fullName": "iPhone 12 mini 64Gb Blue (MGE13)",
-      "price": 20010,
+      "price": 19720,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757856/mac-mac-images/blwnunmgqhwm8txnyrdi.png",
@@ -2418,7 +2418,7 @@
     },
     {
       "fullName": "iPhone 12 mini 64Gb Purple (MJQF3)",
-      "price": 20010,
+      "price": 19720,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757873/mac-mac-images/monocjnqhqtvygkllhio.png",
@@ -2437,7 +2437,7 @@
     {
       "id": 134,
       "fullName": "iPhone 12 mini 128Gb Black (MGE33)",
-      "price": 24150,
+      "price": 23800,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757890/mac-mac-images/olj9bzswwatvm4qhvyja.png",
@@ -2455,7 +2455,7 @@
     {
       "id": 135,
       "fullName": "iPhone 12 mini 128Gb White (MGE43)",
-      "price": 23460,
+      "price": 23120,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757901/mac-mac-images/r80hh0muk2cgvkvh1l8y.png",
@@ -2473,7 +2473,7 @@
     {
       "id": 136,
       "fullName": "iPhone 12 mini 128Gb Product Red (MGE53)",
-      "price": 22600,
+      "price": 22270,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757912/mac-mac-images/uz9xavlcwdnuclynkrxm.png",
@@ -2491,7 +2491,7 @@
     {
       "id": 137,
       "fullName": "iPhone 12 mini 128Gb Mind (MGE73)",
-      "price": 24495,
+      "price": 24140,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757942/mac-mac-images/z2goemdbmz8banhh9bft.png",
@@ -2508,7 +2508,7 @@
     },
     {
       "fullName": "iPhone 12 mini 128Gb Blue (MGE63)",
-      "price": 23805,
+      "price": 23460,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757856/mac-mac-images/blwnunmgqhwm8txnyrdi.png",
@@ -2526,7 +2526,7 @@
     },
     {
       "fullName": "iPhone 12 mini 128Gb Purple (MJQG3)",
-      "price": 24150,
+      "price": 23800,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757873/mac-mac-images/monocjnqhqtvygkllhio.png",
@@ -2545,7 +2545,7 @@
     {
       "id": 140,
       "fullName": "iPhone 12 mini 256Gb Black (MGE93)",
-      "price": 26565,
+      "price": 26180,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757890/mac-mac-images/olj9bzswwatvm4qhvyja.png",
@@ -2563,7 +2563,7 @@
     {
       "id": 141,
       "fullName": "iPhone 12 mini 256Gb White (MGEA3)",
-      "price": 25530,
+      "price": 25160,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757901/mac-mac-images/r80hh0muk2cgvkvh1l8y.png",
@@ -2581,7 +2581,7 @@
     {
       "id": 142,
       "fullName": "iPhone 12 mini 256Gb Product Red (MGEC3)",
-      "price": 26395,
+      "price": 26010,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757912/mac-mac-images/uz9xavlcwdnuclynkrxm.png",
@@ -2599,7 +2599,7 @@
     {
       "id": 143,
       "fullName": "iPhone 12 mini 256Gb Mind (MGEE3)",
-      "price": 25705,
+      "price": 25330,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757942/mac-mac-images/z2goemdbmz8banhh9bft.png",
@@ -2616,7 +2616,7 @@
     },
     {
       "fullName": "iPhone 12 mini 256Gb Blue (MGED3)",
-      "price": 26910,
+      "price": 26520,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757856/mac-mac-images/blwnunmgqhwm8txnyrdi.png",
@@ -2634,7 +2634,7 @@
     },
     {
       "fullName": "iPhone 12 mini 256Gb Purple (MJQH3)",
-      "price": 26565,
+      "price": 26180,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653757873/mac-mac-images/monocjnqhqtvygkllhio.png",
@@ -2666,11 +2666,11 @@
         "color": "Black"
       },
       "id": 146,
-      "price": 14665
+      "price": 14450
     },
     {
       "fullName": "iPhone SE 2020 64Gb White (MX9T2/MX9P2)",
-      "price": 14320,
+      "price": 14110,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785011/mac-mac-images/sw8bqagcoewpgjlvy2ks.png",
@@ -2689,7 +2689,7 @@
     {
       "fullName": "iPhone SE 2020 64Gb Product Red (MX9U2/MX9Q2)",
       "label": "Хит продаж",
-      "price": 14490,
+      "price": 14280,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785032/mac-mac-images/vmkigwjjlew5mwnzuem2.png",
@@ -2721,11 +2721,11 @@
         "color": "Black"
       },
       "id": 149,
-      "price": 15525
+      "price": 15300
     },
     {
       "fullName": "iPhone SE 2020 128Gb White (MXD12)",
-      "price": 15525,
+      "price": 15300,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785011/mac-mac-images/sw8bqagcoewpgjlvy2ks.png",
@@ -2743,7 +2743,7 @@
     },
     {
       "fullName": "iPhone SE 2020 128Gb Product Red (MXD22/MXCY2)",
-      "price": 15870,
+      "price": 15640,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785032/mac-mac-images/vmkigwjjlew5mwnzuem2.png",
@@ -2762,7 +2762,7 @@
     {
       "fullName": "iPhone 11 64Gb Mind (MWLD2)",
       "label": "Хит продаж",
-      "price": 20700,
+      "price": 20400,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785149/mac-mac-images/svejlrqtaypk59qvznmk.png",
@@ -2780,7 +2780,7 @@
     },
     {
       "fullName": "iPhone 11 64Gb Product Red (MHDD3GH/A)",
-      "price": 21390,
+      "price": 21080,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785174/mac-mac-images/ptxincileyaavcpdaniz.png",
@@ -2798,7 +2798,7 @@
     },
     {
       "fullName": "iPhone 11 64Gb White (MWL82)",
-      "price": 21390,
+      "price": 21080,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785197/mac-mac-images/fspeaevbkpy44bwt3qan.png",
@@ -2816,7 +2816,7 @@
     },
     {
       "fullName": "iPhone 11 64Gb Black (MWLT2)",
-      "price": 21045,
+      "price": 20740,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785218/mac-mac-images/yvanhll73c8g4lozi6vc.png",
@@ -2834,7 +2834,7 @@
     },
     {
       "fullName": "iPhone 11 64Gb Purple (MWLC2/MWLX2)",
-      "price": 22080,
+      "price": 21760,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785242/mac-mac-images/m45m81d7necxbvrlvwuk.png",
@@ -2852,7 +2852,7 @@
     },
     {
       "fullName": "iPhone 11 64Gb Yellow (MWLA2)",
-      "price": 17250,
+      "price": 17000,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785267/mac-mac-images/vppgoq7cnnk3kbbgaywf.png",
@@ -2870,7 +2870,7 @@
     },
     {
       "fullName": "iPhone 11 128Gb Mind (MWLK2)",
-      "price": 20700,
+      "price": 20400,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785149/mac-mac-images/svejlrqtaypk59qvznmk.png",
@@ -2888,7 +2888,7 @@
     },
     {
       "fullName": "iPhone 11 128Gb Product Red (MWLG2)",
-      "price": 22770,
+      "price": 22440,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785174/mac-mac-images/ptxincileyaavcpdaniz.png",
@@ -2906,7 +2906,7 @@
     },
     {
       "fullName": "iPhone 11 128Gb White (MWLF2)",
-      "price": 23460,
+      "price": 23120,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785197/mac-mac-images/fspeaevbkpy44bwt3qan.png",
@@ -2924,7 +2924,7 @@
     },
     {
       "fullName": "iPhone 11 128Gb Black (MWLE2/MWM02/MWJ02)",
-      "price": 21045,
+      "price": 20740,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785218/mac-mac-images/yvanhll73c8g4lozi6vc.png",
@@ -2942,7 +2942,7 @@
     },
     {
       "fullName": "iPhone 11 128Gb Purple (MHDM3CN/A)",
-      "price": 20700,
+      "price": 20400,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785242/mac-mac-images/m45m81d7necxbvrlvwuk.png",
@@ -2960,7 +2960,7 @@
     },
     {
       "fullName": "iPhone 11 128Gb Yellow (MWLH2)",
-      "price": 20700,
+      "price": 20400,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785267/mac-mac-images/vppgoq7cnnk3kbbgaywf.png",
@@ -2978,7 +2978,7 @@
     },
     {
       "fullName": "iPhone 11 256Gb Mind (MWLR2)",
-      "price": 27600,
+      "price": 27200,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785149/mac-mac-images/svejlrqtaypk59qvznmk.png",
@@ -2996,7 +2996,7 @@
     },
     {
       "fullName": "iPhone 11 256Gb Product Red (MWLN2)",
-      "price": 27600,
+      "price": 27200,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785174/mac-mac-images/ptxincileyaavcpdaniz.png",
@@ -3014,7 +3014,7 @@
     },
     {
       "fullName": "iPhone 11 256Gb White (MWLM2)",
-      "price": 28635,
+      "price": 28220,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785197/mac-mac-images/fspeaevbkpy44bwt3qan.png",
@@ -3032,7 +3032,7 @@
     },
     {
       "fullName": "iPhone 11 256Gb Black (MWLL2/MWL12)",
-      "price": 28635,
+      "price": 28220,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785218/mac-mac-images/yvanhll73c8g4lozi6vc.png",
@@ -3050,7 +3050,7 @@
     },
     {
       "fullName": "iPhone 11 256Gb Purple (MWLQ2)",
-      "price": 27085,
+      "price": 26690,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785242/mac-mac-images/m45m81d7necxbvrlvwuk.png",
@@ -3068,7 +3068,7 @@
     },
     {
       "fullName": "iPhone 11 256Gb Yellow (MWLP2)",
-      "price": 27600,
+      "price": 27200,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1653785267/mac-mac-images/vppgoq7cnnk3kbbgaywf.png",
@@ -3087,7 +3087,7 @@
     {
       "id": 170,
       "fullName": "iPad Air 2022 Wi-Fi 64Gb Space Gray (MM9C3)",
-      "price": 22255,
+      "price": 21930,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656257382/mac-mac-images/qoi0ftkvd9vqxcvg23wf.png",
@@ -3110,7 +3110,7 @@
     },
     {
       "fullName": "iPad Air 2022 Wi-Fi 64Gb Starlight (MM9F3)",
-      "price": 22255,
+      "price": 21930,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656258438/mac-mac-images/le9ca8y8fofln2kf9xov.png",
@@ -3134,7 +3134,7 @@
     },
     {
       "fullName": "iPad Air 2022 Wi-Fi 64Gb Pink (MM9D3)",
-      "price": 23115,
+      "price": 22780,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656258522/mac-mac-images/fwi8xp79eijx3mn3xycn.png",
@@ -3159,7 +3159,7 @@
     {
       "id": 173,
       "fullName": "iPad Air 2022 Wi-Fi 64Gb Purple (MME23)",
-      "price": 22255,
+      "price": 21930,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656259092/mac-mac-images/an7aqhhldufllydlxz80.png",
@@ -3182,7 +3182,7 @@
     },
     {
       "fullName": "iPad Air 2022 Wi-Fi 64Gb Blue (MM9E3)",
-      "price": 22255,
+      "price": 21930,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656258954/mac-mac-images/vlufyq5p8mcexajghych.png",
@@ -3207,7 +3207,7 @@
     {
       "id": 175,
       "fullName": "iPad Air 2022 Wi-Fi 256Gb Space Gray (MM9L3)",
-      "price": 29670,
+      "price": 29240,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656257382/mac-mac-images/qoi0ftkvd9vqxcvg23wf.png",
@@ -3231,7 +3231,7 @@
     {
       "id": 176,
       "fullName": "iPad Air 2022 Wi-Fi 256Gb Starlight (MM9P3)",
-      "price": 29845,
+      "price": 29410,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656258438/mac-mac-images/le9ca8y8fofln2kf9xov.png",
@@ -3255,7 +3255,7 @@
     {
       "id": 177,
       "fullName": "iPad Air 2022 Wi-Fi 256Gb Pink (MM9M3)",
-      "price": 30705,
+      "price": 30260,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656258522/mac-mac-images/fwi8xp79eijx3mn3xycn.png",
@@ -3279,7 +3279,7 @@
     {
       "id": 178,
       "fullName": "iPad Air 2022 Wi-Fi 256Gb Purple (MME63)",
-      "price": 30705,
+      "price": 30260,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656259092/mac-mac-images/an7aqhhldufllydlxz80.png",
@@ -3303,7 +3303,7 @@
     {
       "id": 179,
       "fullName": "iPad Air 2022 Wi-Fi 256Gb Blue (MM9N3)",
-      "price": 29325,
+      "price": 28900,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656258954/mac-mac-images/vlufyq5p8mcexajghych.png",
@@ -3327,7 +3327,7 @@
     {
       "id": 180,
       "fullName": "iPad Air 2022 Wi-Fi + Cellular 64Gb Space Gray (MM6R3/MM753)",
-      "price": 27945,
+      "price": 27540,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656257382/mac-mac-images/qoi0ftkvd9vqxcvg23wf.png",
@@ -3350,7 +3350,7 @@
     },
     {
       "fullName": "iPad Air 2022 Wi-Fi + Cellular 64Gb Starlight (MM6V3)",
-      "price": 29325,
+      "price": 28900,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656258438/mac-mac-images/le9ca8y8fofln2kf9xov.png",
@@ -3374,7 +3374,7 @@
     },
     {
       "fullName": "iPad Air 2022 Wi-Fi + Cellular 64Gb Pink (MM6T3)",
-      "price": 28810,
+      "price": 28390,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656258522/mac-mac-images/fwi8xp79eijx3mn3xycn.png",
@@ -3399,7 +3399,7 @@
     {
       "id": 183,
       "fullName": "iPad Air 2022 Wi-Fi + Cellular 64Gb Purple (MME93)",
-      "price": 27945,
+      "price": 27540,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656259092/mac-mac-images/an7aqhhldufllydlxz80.png",
@@ -3422,7 +3422,7 @@
     },
     {
       "fullName": "iPad Air 2022 Wi-Fi + Cellular 64Gb Blue (MM6U3/MM773)",
-      "price": 27945,
+      "price": 27540,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656258954/mac-mac-images/vlufyq5p8mcexajghych.png",
@@ -3447,7 +3447,7 @@
     {
       "id": 185,
       "fullName": "iPad Air 2022 Wi-Fi + Cellular 256Gb Space Gray (MM713/MM7E3)",
-      "price": 35710,
+      "price": 35190,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656257382/mac-mac-images/qoi0ftkvd9vqxcvg23wf.png",
@@ -3471,7 +3471,7 @@
     {
       "id": 186,
       "fullName": "iPad Air 2022 Wi-Fi + Cellular 256Gb Starlight (MM743/MM7H3)",
-      "price": 35535,
+      "price": 35020,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656258438/mac-mac-images/le9ca8y8fofln2kf9xov.png",
@@ -3495,7 +3495,7 @@
     {
       "id": 187,
       "fullName": "iPad Air 2022 Wi-Fi + Cellular 256Gb Pink (MM723, MM7F3)",
-      "price": 36225,
+      "price": 35700,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656258522/mac-mac-images/fwi8xp79eijx3mn3xycn.png",
@@ -3519,7 +3519,7 @@
     {
       "id": 188,
       "fullName": "iPad Air 2022 Wi-Fi + Cellular 256Gb Purple (MMED3)",
-      "price": 36225,
+      "price": 35700,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656259092/mac-mac-images/an7aqhhldufllydlxz80.png",
@@ -3543,7 +3543,7 @@
     {
       "id": 189,
       "fullName": "iPad Air 2022 Wi-Fi + Cellular 256Gb Blue (MM733/MM7G3)",
-      "price": 35020,
+      "price": 34510,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656258954/mac-mac-images/vlufyq5p8mcexajghych.png",
@@ -3566,7 +3566,7 @@
     },
     {
       "fullName": "iPad 2021 10.2\" Wi-Fi 64Gb Space Gray (MK2K3)",
-      "price": 12940,
+      "price": 12750,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656260692/mac-mac-images/qcudv9sxbqp34hvlto8c.png",
@@ -3591,7 +3591,7 @@
     {
       "id": 191,
       "fullName": "iPad 2021 10.2\" Wi-Fi 64Gb Silver (MK2L3)",
-      "price": 12940,
+      "price": 12750,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656260721/mac-mac-images/hzrwf52gcqp6hbpbpgc4.png",
@@ -3614,7 +3614,7 @@
     },
     {
       "fullName": "iPad 2021 10.2\" Wi-Fi 256Gb Space Gray (MK2N3)",
-      "price": 16560,
+      "price": 16320,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656260692/mac-mac-images/qcudv9sxbqp34hvlto8c.png",
@@ -3639,7 +3639,7 @@
     {
       "id": 193,
       "fullName": "iPad 2021 10.2\" Wi-Fi 256Gb Silver (MK2P3)",
-      "price": 16560,
+      "price": 16320,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656260721/mac-mac-images/hzrwf52gcqp6hbpbpgc4.png",
@@ -3662,7 +3662,7 @@
     },
     {
       "fullName": "iPad 2021 10.2\" Wi-Fi + Cellular 64Gb Space Gray (MK663/MK473)",
-      "price": 19665,
+      "price": 19380,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656260692/mac-mac-images/qcudv9sxbqp34hvlto8c.png",
@@ -3687,7 +3687,7 @@
     {
       "id": 195,
       "fullName": "iPad 2021 10.2\" Wi-Fi + Cellular 64Gb Silver (MK673/MK493)",
-      "price": 19495,
+      "price": 19210,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656260721/mac-mac-images/hzrwf52gcqp6hbpbpgc4.png",
@@ -3710,7 +3710,7 @@
     },
     {
       "fullName": "iPad 2021 10.2\" Wi-Fi + Cellular 256Gb Space Gray (MK693/MK4E3)",
-      "price": 23805,
+      "price": 23460,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656260692/mac-mac-images/qcudv9sxbqp34hvlto8c.png",
@@ -3735,7 +3735,7 @@
     {
       "id": 197,
       "fullName": "iPad 2021 10.2\" Wi-Fi + Cellular 256Gb Silver (MK6A3/MK4H3)",
-      "price": 24150,
+      "price": 23800,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656260721/mac-mac-images/hzrwf52gcqp6hbpbpgc4.png",
@@ -3759,7 +3759,7 @@
     {
       "id": 198,
       "fullName": "iPad mini 6 Wi-Fi 64Gb Space Gray (MK7M3)",
-      "price": 17595,
+      "price": 17340,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656266727/mac-mac-images/lqgvpcguum8acu0xzitd.png",
@@ -3786,7 +3786,7 @@
     },
     {
       "fullName": "iPad mini 6 Wi-Fi 64Gb Starlight (MK7P3)",
-      "price": 17595,
+      "price": 17340,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656267284/mac-mac-images/mfwsqp9ciotuusbufjvg.png",
@@ -3814,7 +3814,7 @@
     },
     {
       "fullName": "iPad mini 6 Wi-Fi 64Gb Pink (MLWL3)",
-      "price": 17770,
+      "price": 17510,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656267339/mac-mac-images/ca3rmgwbfjxka1aarhup.png",
@@ -3842,7 +3842,7 @@
     },
     {
       "fullName": "iPad mini 6 Wi-Fi 64Gb Purple (MK7R3)",
-      "price": 17595,
+      "price": 17340,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656267399/mac-mac-images/a9lleyicdwc2ch4t7xzf.png",
@@ -3871,7 +3871,7 @@
     {
       "id": 202,
       "fullName": "iPad mini 6 Wi-Fi 256Gb Space Gray (MK7T3)",
-      "price": 24150,
+      "price": 23800,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656266727/mac-mac-images/lqgvpcguum8acu0xzitd.png",
@@ -3898,7 +3898,7 @@
     },
     {
       "fullName": "iPad mini 6 Wi-Fi 256Gb Starlight (MK7V3)",
-      "price": 25185,
+      "price": 24820,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656267284/mac-mac-images/mfwsqp9ciotuusbufjvg.png",
@@ -3926,7 +3926,7 @@
     },
     {
       "fullName": "iPad mini 6 Wi-Fi 256Gb Pink (MLWR3)",
-      "price": 25185,
+      "price": 24820,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656267339/mac-mac-images/ca3rmgwbfjxka1aarhup.png",
@@ -3954,7 +3954,7 @@
     },
     {
       "fullName": "iPad mini 6 Wi-Fi 256Gb Purple (MK7X3)",
-      "price": 25185,
+      "price": 24820,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656267399/mac-mac-images/a9lleyicdwc2ch4t7xzf.png",
@@ -3983,7 +3983,7 @@
     {
       "id": 206,
       "fullName": "iPad mini 6 Wi-Fi + Cellular 64Gb Space Gray (MK893)",
-      "price": 23980,
+      "price": 23630,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656266727/mac-mac-images/lqgvpcguum8acu0xzitd.png",
@@ -4010,7 +4010,7 @@
     },
     {
       "fullName": "iPad mini 6 Wi-Fi + Cellular 64Gb Starlight (MK8C3)",
-      "price": 24150,
+      "price": 23800,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656267284/mac-mac-images/mfwsqp9ciotuusbufjvg.png",
@@ -4038,7 +4038,7 @@
     },
     {
       "fullName": "iPad mini 6 Wi-Fi + Cellular 64Gb Pink (MLX43)",
-      "price": 24840,
+      "price": 24480,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656267339/mac-mac-images/ca3rmgwbfjxka1aarhup.png",
@@ -4066,7 +4066,7 @@
     },
     {
       "fullName": "iPad mini 6 Wi-Fi + Cellular 64Gb Purple (MK8E3)",
-      "price": 24670,
+      "price": 24310,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656267399/mac-mac-images/a9lleyicdwc2ch4t7xzf.png",
@@ -4095,7 +4095,7 @@
     {
       "id": 210,
       "fullName": "iPad mini 6 Wi-Fi + Cellular 256Gb Space Gray (MK8F3)",
-      "price": 35535,
+      "price": 35020,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656266727/mac-mac-images/lqgvpcguum8acu0xzitd.png",
@@ -4122,7 +4122,7 @@
     },
     {
       "fullName": "iPad mini 6 Wi-Fi + Cellular 256Gb Starlight (MK8H3)",
-      "price": 31050,
+      "price": 30600,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656267284/mac-mac-images/mfwsqp9ciotuusbufjvg.png",
@@ -4150,7 +4150,7 @@
     },
     {
       "fullName": "iPad mini 6 Wi-Fi + Cellular 256Gb Pink (MLX93)",
-      "price": 31050,
+      "price": 30600,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656267339/mac-mac-images/ca3rmgwbfjxka1aarhup.png",
@@ -4178,7 +4178,7 @@
     },
     {
       "fullName": "iPad mini 6 Wi-Fi + Cellular 256Gb Purple (MK8K3)",
-      "price": 34500,
+      "price": 34000,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656267399/mac-mac-images/a9lleyicdwc2ch4t7xzf.png",
@@ -4206,7 +4206,7 @@
     },
     {
       "fullName": "iPad Pro 2021 11\" Wi-Fi 128Gb Space Gray (MHQR3)",
-      "price": 28810,
+      "price": 28390,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656283864/mac-mac-images/f1jb90nck5uuh781hha9.png",
@@ -4234,7 +4234,7 @@
     },
     {
       "fullName": "iPad Pro 2021 11\" Wi-Fi 128Gb Silver (MHQT3)",
-      "price": 28810,
+      "price": 28390,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656283911/mac-mac-images/lka3mb9lgaw7dvsn5okm.png",
@@ -4262,7 +4262,7 @@
     },
     {
       "fullName": "iPad Pro 2021 11\" Wi-Fi 256Gb Space Gray (MHQU3)",
-      "price": 32260,
+      "price": 31790,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656283864/mac-mac-images/f1jb90nck5uuh781hha9.png",
@@ -4290,7 +4290,7 @@
     },
     {
       "fullName": "iPad Pro 2021 11\" Wi-Fi 256Gb Silver (MHQV3)",
-      "price": 32260,
+      "price": 31790,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656283911/mac-mac-images/lka3mb9lgaw7dvsn5okm.png",
@@ -4318,7 +4318,7 @@
     },
     {
       "fullName": "iPad Pro 2021 11\" Wi-Fi 512Gb Space Gray (MHQW3)",
-      "price": 38295,
+      "price": 37740,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656283864/mac-mac-images/f1jb90nck5uuh781hha9.png",
@@ -4346,7 +4346,7 @@
     },
     {
       "fullName": "iPad Pro 2021 11\" Wi-Fi 512Gb Silver (MHQX3)",
-      "price": 38985,
+      "price": 38420,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656283911/mac-mac-images/lka3mb9lgaw7dvsn5okm.png",
@@ -4374,7 +4374,7 @@
     },
     {
       "fullName": "iPad Pro 2021 11\" Wi-Fi 1Tb Space Gray (MHQY3)",
-      "price": 47610,
+      "price": 46920,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656283864/mac-mac-images/f1jb90nck5uuh781hha9.png",
@@ -4402,7 +4402,7 @@
     },
     {
       "fullName": "iPad Pro 2021 11\" Wi-Fi 1Tb Silver (MHR03)",
-      "price": 49680,
+      "price": 48960,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656283911/mac-mac-images/lka3mb9lgaw7dvsn5okm.png",
@@ -4430,7 +4430,7 @@
     },
     {
       "fullName": "iPad Pro 2021 11\" Wi-Fi 2Tb Space Gray (MHR23)",
-      "price": 49680,
+      "price": 48960,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656283864/mac-mac-images/f1jb90nck5uuh781hha9.png",
@@ -4458,7 +4458,7 @@
     },
     {
       "fullName": "iPad Pro 2021 11\" Wi-Fi 2Tb Silver (MHR33)",
-      "price": 48990,
+      "price": 48280,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656283911/mac-mac-images/lka3mb9lgaw7dvsn5okm.png",
@@ -4486,7 +4486,7 @@
     },
     {
       "fullName": "iPad Pro 2021 11\" Wi-Fi 128Gb Space Gray (MHQR3)",
-      "price": 28810,
+      "price": 28390,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656283864/mac-mac-images/f1jb90nck5uuh781hha9.png",
@@ -4514,7 +4514,7 @@
     },
     {
       "fullName": "iPad Pro 2021 11\" Wi-Fi 128Gb Silver (MHQT3)",
-      "price": 28810,
+      "price": 28390,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656283911/mac-mac-images/lka3mb9lgaw7dvsn5okm.png",
@@ -4542,7 +4542,7 @@
     },
     {
       "fullName": "iPad Pro 2021 11\" Wi-Fi + Cellular 256Gb Space Gray (MHW73/MHMV3)",
-      "price": 41400,
+      "price": 40800,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656283864/mac-mac-images/f1jb90nck5uuh781hha9.png",
@@ -4570,7 +4570,7 @@
     },
     {
       "fullName": "iPad Pro 2021 11\" Wi-Fi + Cellular 256Gb Silver (MHW83/MHMW3)",
-      "price": 41745,
+      "price": 41140,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656283911/mac-mac-images/lka3mb9lgaw7dvsn5okm.png",
@@ -4598,7 +4598,7 @@
     },
     {
       "fullName": "iPad Pro 2021 11\" Wi-Fi + Cellular 512Gb Space Gray (MHW93/MHMX3)",
-      "price": 51750,
+      "price": 51000,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656283864/mac-mac-images/f1jb90nck5uuh781hha9.png",
@@ -4626,7 +4626,7 @@
     },
     {
       "fullName": "iPad Pro 2021 11\" Wi-Fi + Cellular 512Gb Silver (MHMY3/MHWA3)",
-      "price": 52440,
+      "price": 51680,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656283911/mac-mac-images/lka3mb9lgaw7dvsn5okm.png",
@@ -4654,7 +4654,7 @@
     },
     {
       "fullName": "iPad Pro 2021 11\" Wi-Fi + Cellular 1Tb Space Gray (MHWC3/MHN03)",
-      "price": 55890,
+      "price": 55080,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656283864/mac-mac-images/f1jb90nck5uuh781hha9.png",
@@ -4682,7 +4682,7 @@
     },
     {
       "fullName": "iPad Pro 2021 11\" Wi-Fi + Cellular 1Tb Silver (MHWD3/MHN13)",
-      "price": 56235,
+      "price": 55420,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656283911/mac-mac-images/lka3mb9lgaw7dvsn5okm.png",
@@ -4710,7 +4710,7 @@
     },
     {
       "fullName": "iPad Pro 2021 11\" Wi-Fi + Cellular 2Tb Space Gray (MHWE3/MHN23)",
-      "price": 59340,
+      "price": 58480,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656283864/mac-mac-images/f1jb90nck5uuh781hha9.png",
@@ -4738,7 +4738,7 @@
     },
     {
       "fullName": "iPad Pro 2021 11\" Wi-Fi + Cellular 2Tb Silver (MHN33/MHWF3)",
-      "price": 59340,
+      "price": 58480,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656283911/mac-mac-images/lka3mb9lgaw7dvsn5okm.png",
@@ -4766,7 +4766,7 @@
     },
     {
       "fullName": "iPad Pro 2021 12.9\" Wi-Fi 128Gb Space Gray (MHNF3)",
-      "price": 38295,
+      "price": 37740,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656286066/mac-mac-images/q6nl0ihfthvbg4xr54uv.png",
@@ -4794,7 +4794,7 @@
     },
     {
       "fullName": "iPad Pro 2021 12.9\" Wi-Fi 128Gb Silver (MHNG3)",
-      "price": 39160,
+      "price": 38590,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656286104/mac-mac-images/yckcuwre5uviavgrfwcd.png",
@@ -4822,7 +4822,7 @@
     },
     {
       "fullName": "iPad Pro 2021 12.9\" Wi-Fi 256Gb Space Gray (MHNH3)",
-      "price": 42435,
+      "price": 41820,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656286066/mac-mac-images/q6nl0ihfthvbg4xr54uv.png",
@@ -4850,7 +4850,7 @@
     },
     {
       "fullName": "iPad Pro 2021 12.9\" Wi-Fi 256Gb Silver (MHNJ3)",
-      "price": 42435,
+      "price": 41820,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656286104/mac-mac-images/yckcuwre5uviavgrfwcd.png",
@@ -4878,7 +4878,7 @@
     },
     {
       "fullName": "iPad Pro 2021 12.9\" Wi-Fi 512Gb Space Gray (MHNK3)",
-      "price": 48990,
+      "price": 48280,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656286066/mac-mac-images/q6nl0ihfthvbg4xr54uv.png",
@@ -4906,7 +4906,7 @@
     },
     {
       "fullName": "iPad Pro 2021 12.9\" Wi-Fi 512Gb Silver (MHNL3)",
-      "price": 48990,
+      "price": 48280,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656286104/mac-mac-images/yckcuwre5uviavgrfwcd.png",
@@ -4934,7 +4934,7 @@
     },
     {
       "fullName": "iPad Pro 2021 12.9\" Wi-Fi 1Tb Space Gray (MHNM3)",
-      "price": 55200,
+      "price": 54400,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656286066/mac-mac-images/q6nl0ihfthvbg4xr54uv.png",
@@ -4962,7 +4962,7 @@
     },
     {
       "fullName": "iPad Pro 2021 12.9\" Wi-Fi 1Tb Silver (MHNN3)",
-      "price": 55545,
+      "price": 54740,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656286104/mac-mac-images/yckcuwre5uviavgrfwcd.png",
@@ -4990,7 +4990,7 @@
     },
     {
       "fullName": "iPad Pro 2021 12.9\" Wi-Fi 2Tb Space Gray (MHNP3)",
-      "price": 57615,
+      "price": 56780,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656286066/mac-mac-images/q6nl0ihfthvbg4xr54uv.png",
@@ -5018,7 +5018,7 @@
     },
     {
       "fullName": "iPad Pro 2021 12.9\" Wi-Fi 2Tb Silver (MHNQ3)",
-      "price": 57270,
+      "price": 56440,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656286104/mac-mac-images/yckcuwre5uviavgrfwcd.png",
@@ -5046,7 +5046,7 @@
     },
     {
       "fullName": "iPad Pro 2021 12.9\" Wi-Fi + Cellular 128Gb Space Gray (MHNR3/MHR43)",
-      "price": 39675,
+      "price": 39100,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656286066/mac-mac-images/q6nl0ihfthvbg4xr54uv.png",
@@ -5074,7 +5074,7 @@
     },
     {
       "fullName": "iPad Pro 2021 12.9\" Wi-Fi + Cellular 128Gb Silver (MHR53/MHNT3)",
-      "price": 39675,
+      "price": 39100,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656286104/mac-mac-images/yckcuwre5uviavgrfwcd.png",
@@ -5102,7 +5102,7 @@
     },
     {
       "fullName": "iPad Pro 2021 12.9\" Wi-Fi + Cellular 256Gb Space Gray (MHR63/MHNW3)",
-      "price": 45195,
+      "price": 44540,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656286066/mac-mac-images/q6nl0ihfthvbg4xr54uv.png",
@@ -5130,7 +5130,7 @@
     },
     {
       "fullName": "iPad Pro 2021 12.9\" Wi-Fi + Cellular 256Gb Silver (MHR73/MHNX3)",
-      "price": 45540,
+      "price": 44880,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656286104/mac-mac-images/yckcuwre5uviavgrfwcd.png",
@@ -5158,7 +5158,7 @@
     },
     {
       "fullName": "iPad Pro 2021 12.9\" Wi-Fi + Cellular 512Gb Space Gray (MHNY3/MHR83)",
-      "price": 54510,
+      "price": 53720,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656286066/mac-mac-images/q6nl0ihfthvbg4xr54uv.png",
@@ -5186,7 +5186,7 @@
     },
     {
       "fullName": "iPad Pro 2021 12.9\" Wi-Fi + Cellular 512Gb Silver (MHP03/MHR93)",
-      "price": 54510,
+      "price": 53720,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656286104/mac-mac-images/yckcuwre5uviavgrfwcd.png",
@@ -5214,7 +5214,7 @@
     },
     {
       "fullName": "iPad Pro 2021 12.9\" Wi-Fi + Cellular 1Tb Space Gray (MHRA3/MHP13)",
-      "price": 59685,
+      "price": 58820,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656286066/mac-mac-images/q6nl0ihfthvbg4xr54uv.png",
@@ -5242,7 +5242,7 @@
     },
     {
       "fullName": "iPad Pro 2021 12.9\" Wi-Fi + Cellular 1Tb Silver (MHP23/MHRC3)",
-      "price": 59340,
+      "price": 58480,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656286104/mac-mac-images/yckcuwre5uviavgrfwcd.png",
@@ -5270,7 +5270,7 @@
     },
     {
       "fullName": "iPad Pro 2021 12.9\" Wi-Fi + Cellular 2Tb Space Gray (MHP43/MHRD3)",
-      "price": 65550,
+      "price": 64600,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656286066/mac-mac-images/q6nl0ihfthvbg4xr54uv.png",
@@ -5298,7 +5298,7 @@
     },
     {
       "fullName": "iPad Pro 2021 12.9\" Wi-Fi + Cellular 2Tb Silver (MHP53/MHRE3)",
-      "price": 69000,
+      "price": 68000,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656286104/mac-mac-images/yckcuwre5uviavgrfwcd.png",
@@ -5328,866 +5328,866 @@
   "orders": [],
   "prices": [
     {
-      "macbook 12\" space 256gb (mnyf2)": 33295,
-      "macbook air 13\" 256gb (mqd42) 2017": 30015,
-      "macbook air 13\" gold 128gb 2018 (mree2)": 31050,
-      "macbook air 13\" space 256gb 2018 (5re92) сро": 32605,
-      "macbook air 13\" gold 256gb 2018 (5ref2) сро": 32605,
-      "macbook air 13\" gold 256gb 2018 (mref2)": 32605,
-      "macbook air 13\" 2020 m1 512gb gold (mgne3) cpo": 42090,
-      "macbook air 13\" 2020 m1 256gb gold (mgnd3)": 35365,
-      "macbook air 13\" 2020 m1 256gb gold (mgnd3ua/a)": 36570,
-      "macbook air 13\" 2020 m1 256gb space gray (mgn63)": 36055,
-      "macbook air 13\" 2020 m1 256gb space gray (mgn63ua/a)": 36915,
-      "macbook air 13\" 2020 m1 256gb silver (mgn93)": 36915,
-      "macbook air 13\" 2020 m1 512gb gold (mgne3)": 44160,
-      "macbook air 13\" 2020 m1 512gb silver (mgna3)": 44505,
-      "macbook air 13\" 2020 m1 512gb space gray (mgn73)": 44505,
-      "macbook pro 13\" 256gb silver 2019 (muhr2)": 41400,
-      "macbook pro 13\" 256gb silver 2019 (muhr2ua/a)": 42780,
-      "macbook pro 13\" 256gb space 2019 (mv962)": 42090,
-      "macbook pro 13\" 256gb silver 2019 (mv992)": 40020,
-      "macbook pro 13\" 512gb space 2018 (mr9r2)": 45715,
-      "macbook pro 13\" 512gb space 2018 (mv972)": 46060,
-      "macbook pro 13\" 256gb silver 2018 (5r9u2) сро": 39505,
-      "macbook pro 13\" 512gb silver 2018 (mv9a2)": 46230,
-      "macbook pro 13\" 2020 256gb space gray (mxk32)": 43125,
-      "macbook pro 13\" 2020 256gb silver (mxk62)": 41400,
-      "macbook pro 13\" 2020 512gb/8gb space gray (mxk52)": 45540,
-      "macbook pro 13\" 2020 512gb/8gb silver (mxk72)": 45715,
-      "macbook pro 13\" 2020 512gb/16gb space gray (mwp42)": 46575,
-      "macbook pro 13\" 2020 512gb/16gb silver (mwp72)": 46750,
-      "macbook pro 13\" 2020 512gb/16gb silver (mwp72ua/a)": 48990,
-      "macbook pro 13\" 2020 1tb/16gb space gray (mwp52)": 50025,
-      "macbook pro 13\" 2020 1tb/16gb silver (mwp82)": 50025,
-      "macbook pro 13\" 2020 1tb/16gb silver (mwp82ua/a)": 52440,
-      "macbook pro 13\" 2020 m1 256gb/8gb space gray (myd82)": 44160,
-      "macbook pro 13\" 2020 m1 256gb/8gb silver (myda2)": 44850,
-      "macbook pro 13\" 2020 m1 256gb/8gb silver (myda2ru/a)": 45715,
-      "macbook pro 13\" 2020 m1 512gb/8gb space gray (myd92)": 48130,
-      "macbook pro 13\" 2020 m1 512gb/8gb silver (mydc2)": 48300,
-      "macbook pro 16\" 512gb space 2019 (mvvj2)": 76590,
-      "macbook pro 16\" 512gb silver 2019 (mvvl2)": 76590,
-      "macbook pro 16\" 1tb space 2019 (mvvk2)": 80040,
-      "macbook pro 16\" 1tb silver 2019 (mvvm2)": 80040,
-      "macbook air 13\" space gray i5 1.6ghz/16gb/512gb ssd (mvh62)": 45540,
-      "macbook pro 13\" space gray 2020 (z0w40) (i7 1.7/8gb/256gb)": 40365,
-      "macbook pro 16\" silver i7 2.6ghz/16gb/1tb ssd/radeon pro 5500m with 4gb (z0y1002c4) 2019": 87975,
-      "macbook pro 16\" space gray i9 2.4ghz/16gb/512gb ssd/radeon pro 5500m with 4gb (z0xz004sp) 2019": 86250,
-      "macbook pro 16\" space gray i9 2.4ghz/16gb/1tb ssd/radeon pro 5500m with 4gb (z0xz0056a)": 87975,
-      "macbook pro 16\" space (i7 2.6ghz/32gb/1tb ssd/radeon pro 5500m with 8gb) (z0xz0007k)": 115575,
-      "macbook pro 16\" space gray (i9 2.4ghz/64gb/1tb ssd/radeon pro 5500m with 4gb) (z0xz004zc)": 136275,
-      "macbook air m1 13\" 512gb/8gb/7gpu silver 2020 (z127000f2)": 43125,
-      "macbook air m1 13\" 256gb/16gb/7gpu space gray 2020 (z124000fkll/a) mdm": 44850,
-      "macbook air m1 13\" 256gb/16gb/7gpu space gray 2020 (z124000fk/z1240004p)": 50370,
-      "macbook air m1 13\" 256gb/16gb/7gpu silver 2020 (z127000fk)": 50715,
-      "macbook air m1 13\" 256gb/16gb/7gpu gold 2020 (z12a000fk)": 48990,
-      "macbook air m1 13\" 512gb/8gb/7gpu space gray 2020 (z124000f2)": 45885,
-      "macbook air m1 13\" 512gb/16gb/8gpu space gray 2020 (z125000dl)": 60375,
-      "macbook air m1 13\" 512gb/16gb/8gpu silver 2020 (z128000dl)": 55200,
-      "macbook air m1 13\" 512gb/16gb/8gpu gold (z12b000pv/z12b000dl)": 60375,
-      "macbook air m1 13\" 1tb/16gb/8gpu gold late 2020 (mgqp3/z12b000dm)": 66070,
-      "macbook air m1 13\" 1tb/16gb/8gpu space gray 2020 (mgqn3/z125000y5/z125000dm)": 66070,
-      "macbook air m2 13,6\" 256gb/8gb/8gpu space gray 2022 (mlxw3)": 56925,
-      "macbook air m2 13,6\" 256gb/8gb/8gpu silver 2022 (mlxy3)": 58650,
-      "macbook air m2 13,6\" 256gb/8gb/8gpu starlight 2022 (mly13)": 56925,
-      "macbook air m2 13,6\" 256gb/8gb/8gpu midnight 2022 (mly33)": 59685,
-      "macbook air m2 13,6\" 512gb/8gb/10gpu space gray 2022 (mlxx3)": 72450,
-      "macbook pro 13\" space gray late 2020 m1/256gb/16gb (z11b000e3/z11b0004t)": 59340,
-      "macbook pro 13\" silver late 2020 m1/256gb/16gb (z11d000g0)": 59340,
-      "macbook pro 13\" space gray late 2020 m1/1tb/16gb (mj123/z11c000gd/z11b000en)": 69690,
-      "macbook pro 13\" silver late 2020 m1/1tb/16gb (z11f000s7/z11d000gk/z11f000em)": 69690,
-      "macbook pro 13\" silver late 2020 m1/2tb/16gb (z11d000gl/z11f000en)": 79350,
-      "macbook pro 13\" space gray late 2020 m1/2tb/16gb (z11b000ep)": 79350,
-      "macbook pro 13\" m2 8-cpu/10-gpu/8gb/256gb space gray 2022 (mneh3)": 49680,
-      "macbook pro 13\" m2 8-cpu/10-gpu/8gb/256gb silver 2022 (mnep3)": 49680,
-      "macbook pro 13\" m2 8-cpu/10-gpu/8gb/512gb silver 2022 (mneq3)": 56925,
-      "macbook pro 13\" m2 8-cpu/10-gpu/8gb/512gb space gray 2022 (mnej3)": 56580,
-      "macbook pro 13\" m2 8-cpu/10-gpu/16gb/256gb silver 2022 (z16t000ab/z16t000r5)": 65550,
-      "macbook pro 13\" m2 8-cpu/10-gpu/16gb/256gb space gray 2022 (z16r0009v/mbpm2-05/z16r0005s)": 66585,
-      "macbook pro 13\" m2 8-cpu/10-gpu/16gb/512gb silver 2022 (z16t0006m)": 73140,
-      "macbook pro 13\" m2 8-cpu/10-gpu/16gb/512gb space gray 2022 (z16s0005d/mbpm2-06/z16r0005u)": 73140,
-      "macbook pro 13\" m2 8-cpu/10-gpu/16gb/1tb space gray 2022 (z16s000ns/z16s000nt)": 81075,
-      "macbook pro 14\" m1 pro 8cpu/14gpu/16gb/512gb space gray (mkgp3)": 74175,
-      "macbook pro 14\" m1 pro 8cpu/14gpu/16gb/512gb space gray (mkgp3ua/a)": 79350,
-      "macbook pro 14\" m1 pro 8cpu/14gpu/16gb/512gb silver (mkgr3)": 74175,
-      "macbook pro 14\" m1 pro 8cpu/14gpu/16gb/512gb silver (mkgr3ua/a)": 81075,
-      "macbook pro 14'' m1 pro 10cpu/16gpu/16gb/1tb space gray (mkgq3)": 80385,
-      "macbook pro 14'' m1 pro 10cpu/16gpu/16gb/1tb silver (mkgt3)": 79695,
-      "macbook pro 14\" m1 pro 8cpu/14gpu/16gb/1tb/space gray/96w usb-c power adapter (z15g0022j)": 81075,
-      "macbook pro 14\" m1 pro 8cpu/14gpu/16gb/2tb space gray 2021 (z15g0023s, z15g001vs)": 94875,
-      "macbook pro 14\" m1 pro 8cpu/14gpu/32gb/512gb space gray (z15g001wa/z15g0002b/z15g0021l)": 99705,
-      "macbook pro 14\" m1 pro 8cpu/14gpu/32gb/512gb space gray (z15g001wa) ll/a": 101775,
-      "macbook pro 14\" m1 pro 8cpu/14gpu/32gb/512gb silver (z15j001w9)": 103500,
-      "macbook pro 14\" m1 pro 8cpu/14gpu/32gb/1tb space gray (z15g001wy)": 113850,
-      "macbook pro 14\" m1 pro 8cpu/14gpu/32gb/2tb space gray 2021 (z15g00245/z15g001wz)": 127650,
-      "macbook pro 14'' m1 pro 10cpu/14gpu/16gb/1tb grey (z15g004el/z15g001wg )": 84525,
-      "macbook pro 14'' m1 pro 10cpu/14gpu/16gb/2tb grey (z15g001wh)": 111435,
-      "macbook pro 14\" m1 pro 10cpu/14gpu/32gb/512gb space gray (z15g001x2/z15g00272)": 107640,
-      "macbook pro 14\" m1 pro 10cpu/14gpu/32gb/1tb space gray (z15g001x3)": 120750,
-      "macbook pro 14\" m1 pro 10cpu/16gpu/16gb/512gb space gray (z15g0008g/z15g001wd)": 79350,
-      "macbook pro 14\" m1 pro 10cpu/16gpu/16gb/2tb space gray (z15g004en/z15g001wm )": 112815,
-      "macbook pro 14\" m1 pro 10cpu/16gpu/32gb/1tb silver (z15k00105)": 121095,
-      "macbook pro 14\" m1 pro 10cpu/16gpu/32gb/1tb space gray (z15g001x8/z15g0015m)": 120750,
-      "macbook pro 14\" m1 pro 10cpu/16gpu/32gb/2tb space gray (z15g001x9/z15h000mv)": 139725,
-      "macbook pro 14'' m1 max with 10cpu/24gpu/32gb/512gb space gray (z15g001we/z15g0008h)": 117300,
-      "macbook pro 14'' m1 max with 10cpu/24gpu/32gb/1tb space gray (z15g001wq /z15h00106)": 131790,
-      "macbook pro 14'' m1 max with 10cpu/24gpu/32gb/1tb space gray (z15g001wq /z15h00106) ll/a": 133860,
-      "macbook pro 14'' m1 max with 10cpu/24gpu/32gb/1tb silver (z15k00106)": 131790,
-      "macbook pro 14'' m1 max with 10cpu/24gpu/32gb/2tb silver (z15k0010c)": 144900,
-      "macbook pro 14'' m1 max with 10cpu/32gpu/32gb/512gb space gray (z15g001wf)": 134550,
-      "macbook pro 14” m1 max with 10cpu/32gpu/32gb/1tb space gray 2021 (z15h00107) ll/a": 131100,
-      "macbook pro 14” m1 max with 10cpu/32gpu/32gb/2tb grey 2021 (z15h0010d)": 145935,
-      "macbook pro 14” m1 max with 10cpu/32gpu/32gb/2tb silver 2021 (z15k0010k)": 149730,
-      "macbook pro 14” m1 max with 10cpu/32gpu/64gb/1tb grey 2021 (z15h00109)": 151110,
-      "macbook pro 14” m1 max with 10cpu/32gpu/64gb/1tb grey 2021 (z15h00109) ll/a": 151800,
-      "macbook pro 14” m1 max with 10cpu/32gpu/64gb/2tb silver 2021 (mmqx3/ z15k0010l)": 174225,
-      "macbook pro 14” m1 max with 10cpu/32gpu/64gb/2tb grey 2021 (z15g0003j/mkh53/z15h0010e)": 164565,
-      "macbook pro 14” m1 max with 10cpu/32gpu/64gb/4tb grey 2021 (z15h0010k/ z15g001xl)": 196650,
-      "macbook pro 16” m1 pro 512gb/16gb space gray (mk183)": 85215,
-      "macbook pro 16” m1 pro 512gb/16gb space gray (mk183) ua": 86940,
-      "macbook pro 16” m1 pro 512gb/16gb silver (mk1e3)": 85560,
-      "macbook pro 16” m1 pro 512gb/16gb silver (mk1e3) ua": 87975,
-      "macbook pro 16” m1 pro 1tb/16gb silver (mk1f3)": 92460,
-      "macbook pro 16” m1 pro 1tb/16gb space gray (mk193)": 92460,
-      "macbook pro 16\" м1 pro 10cpu/16gpu/32gb/512gb space gray (z14v0016e/z14v000ra)": 119025,
-      "macbook pro 16\" м1 pro 10cpu/16gpu/32gb/512gb space gray (z14v0016e/z14v000ra) ll/a": 120750,
-      "macbook pro 16\" м1 pro 10cpu/16gpu/32gb/512gb silver (z14y0001k/z14y0016c)": 120750,
-      "macbook pro 16\" м1 pro 10cpu/16gpu/32gb/1tb space gray (z14w00105/z14v0016h)": 136620,
-      "macbook pro 16\" м1 pro 10cpu/16gpu/32gb/1tb silver (z14z00105) ll/a": 139725,
-      "macbook pro 16\" м1 pro 10cpu/16gpu/32gb/2tb space gray (z14w00108) ll/a": 142485,
-      "macbook pro 16\" м1 pro 10cpu/16gpu/32gb/2tb silver (z14y0026q/z14z00108)": 155250,
-      "macbook pro 16\" m1 max 10cpu/32gpu/1tb/32gb space gray (mk1a3)": 144900,
-      "macbook pro 16\" m1 max 10cpu/32gpu/1tb/32gb space gray (mk1a3ll/a)": 148350,
-      "macbook pro 16\" m1 max 10cpu/32gpu/1tb/32gb silver (mk1h3)": 143175,
-      "macbook pro 16\" m1 max 10cpu/24gpu/512gb/32gb space gray (z14v0016f)": 139725,
-      "macbook pro 16\" m1 max 10cpu/24gpu/1tb/32gb space gray (z14w00106/z14v0001s)": 141450,
-      "macbook pro 16\" m1 max 10cpu/24gpu/1tb/32gb silver (z14z00106)": 148350,
-      "macbook pro 16\" m1 max 10cpu/24gpu/2tb/32gb space gray (z14w0010c)": 171120,
-      "macbook pro 16\" m1 max 10cpu/24gpu/1tb/64gb space gray (z14w0010b)": 165600,
-      "macbook pro 16\" m1 max 10cpu/24gpu/2tb/64gb space gray (z14w0010d)": 177675,
-      "macbook pro 16\" m1 max 10cpu/32gpu/2tb/32gb space gray (z14x000h6)": 172500,
-      "macbook pro 16\" m1 max 10cpu/32gpu/4tb/32gb space gray (z14x000h7/ z14v0008x)": 203550,
-      "macbook pro 16\" m1 max 10cpu/32gpu/4tb/32gb silver (z150000h6/z14y0008w)": 208380,
-      "macbook pro 16\" m1 max 10cpu/32gpu/1tb/64gb space gray (z14v001xn / z14x000gd )": 175950,
-      "macbook pro 16\" m1 max 10cpu/32gpu/1tb/64gb silver (z14y001jd/z150000hp )": 182505,
-      "macbook pro 16'' m1 max 10cpu/32gpu/2tb/64gb space gray (z14x000hq)": 184575,
-      "macbook pro 16'' m1 max 10cpu/32gpu/2tb/64gb silver (z150000hq)": 193890,
-      "macbook pro 16'' m1 max 10cpu/32gpu/4tb/64gb space gray (mk233/z14x000hr)": 210105,
-      "ipad 10.2 4g 32gb silver (mw6x2/mw6c2)": 16390,
-      "ipad 10.2 4g 32gb gold (mw6y2/mw6d2)": 16560,
-      "ipad 10.2 4g 128gb space grey (mw702/mw6e2)": 20700,
-      "ipad 10.2 2020 wi-fi 32gb gold (mylc2)": 13800,
-      "ipad 10.2 2020 wi-fi 32gb silver (myla2)": 13800,
-      "ipad 10.2 2020 wi-fi 32gb space gray (myl92)": 12765,
-      "ipad 10.2 2020 wi-fi 128gb gold (mylf2)": 17595,
-      "ipad 10.2 2020 wi-fi 128gb silver (myle2)": 16560,
-      "ipad 10.2 2020 wi-fi 128gb space gray (myld2)": 16905,
-      "ipad 10.2 2020 4g 32gb silver (myn52/mymj2)": 17425,
-      "ipad 10.2 2020 4g 32gb gold (myn62/mymk2)": 16905,
-      "ipad 10.2 2020 4g 32gb space gray (myn32/mymh2)": 17250,
-      "ipad 10.2 2020 4g 128gb space gray (myml2/myn72) open": 21220,
-      "ipad 10.2 2020 4g 128gb space gray (myml2/myn72)": 21735,
-      "ipad 2021 10.2\" wi-fi 64gb silver (mk2l3)": 12940,
-      "ipad 2021 10.2\" wi-fi 64gb space gray (mk2k3)": 12940,
-      "ipad 2021 10.2\" wi-fi 256gb space gray (mk2n3)": 16560,
-      "ipad 2021 10.2\" wi-fi 256gb silver (mk2p3)": 16560,
-      "ipad 2021 10.2\" wi-fi + cellular 64gb space gray (mk663/mk473)": 19665,
-      "ipad 2021 10.2\" wi-fi + cellular 64gb silver (mk673/mk493)": 19495,
-      "ipad 2021 10.2\" wi-fi + cellular 256gb space gray (mk693/mk4e3)": 23805,
-      "ipad 2021 10.2\" wi-fi + cellular 256gb silver (mk6a3/mk4h3)": 24150,
-      "ipad mini 5 wi-fi 64gb gold (muqy2)": 14835,
-      "ipad mini 5 wi-fi 64gb silver (muqx2)": 15010,
-      "ipad mini 5 wi-fi 64gb space gray (muqw2)": 15355,
-      "ipad mini 5 4g 64gb gold (muxh2/mux72)": 22770,
-      "ipad mini 5 4g 64gb space gray (muxf2/mux52)": 21390,
-      "ipad mini 5 wi-fi 256gb space gray (muu32)": 20355,
-      "ipad mini 5 wi-fi 256gb gold (muu62)": 20355,
-      "ipad mini 5 4g 256gb gold (muxe2/muxp2/muya2)": 24840,
-      "ipad mini 5 4g 256gb space gray (muxm2/muxc2)": 26910,
-      "ipad mini 6 wi-fi 64gb starlight (mk7p3)": 17595,
-      "ipad mini 6 wi-fi 64gb space gray (mk7m3)": 17595,
-      "ipad mini 6 wi-fi 64gb purple (mk7r3)": 17595,
-      "ipad mini 6 wi-fi 64gb pink (mlwl3)": 17770,
-      "ipad mini 6 wi-fi + cellular 64gb space gray (mk893)": 23980,
-      "ipad mini 6 wi-fi + cellular 64gb starlight (mk8c3)": 24150,
-      "ipad mini 6 wi-fi + cellular 64gb pink (mlx43)": 24840,
-      "ipad mini 6 wi-fi + cellular 64gb purple (mk8e3)": 24670,
-      "ipad mini 6 wi-fi 256gb space gray (mk7t3)": 24150,
-      "ipad mini 6 wi-fi 256gb starlight (mk7v3)": 25185,
-      "ipad mini 6 wi-fi 256gb pink (mlwr3)": 25185,
-      "ipad mini 6 wi-fi 256gb purple (mk7x3)": 25185,
-      "ipad mini 6 wi-fi + cellular 256gb space gray (mk8f3)": 35535,
-      "ipad mini 6 wi-fi + cellular 256gb starlight (mk8h3)": 31050,
-      "ipad mini 6 wi-fi + cellular 256gb purple (mk8k3)": 34500,
-      "ipad mini 6 wi-fi + cellular 256gb pink (mlx93)": 31050,
-      "ipad air 2019 4g 64gb space (mv152/mv0d2)": 22770,
-      "ipad air 2019 4g 256gb space gray (mv1d2/mv0n2)": 29500,
-      "ipad air 2020 wi-fi 64gb space gray (myfm2)": 20010,
-      "ipad air 2020 wi-fi 64gb silver (myfn2)": 20010,
-      "ipad air 2020 wi-fi 64gb sky blue (myfq2)": 20700,
-      "ipad air 2020 wi-fi 64gb green (myfr2)": 20700,
-      "ipad air 2020 wi-fi 64gb rose gold (myfp2)": 20700,
-      "ipad air 2020 wi-fi 256gb space gray (myft2)": 29325,
-      "ipad air 2020 wi-fi 256gb rose gold (myfx2)": 28120,
-      "ipad air 2020 wi-fi 256gb sky blue (myfy2)": 29670,
-      "ipad air 2020 4g 64gb rose gold (myj02/mygy2)": 25705,
-      "ipad air 2020 4g 64gb space gray (myhx2/mygw2)": 24840,
-      "ipad air 2020 4g 64gb sky blue (myj12/myh02)": 24840,
-      "ipad air 2020 4g 64gb silver (myhy2/mygx2)": 25015,
-      "ipad air 2020 4g 64gb green (myj22/myh12)": 25875,
-      "ipad air 2020 4g 256gb sky blue (myj62/myh62)": 35190,
-      "ipad air 2020 4g 256gb silver (myj42/myh42)": 36055,
-      "ipad air 2020 4g 256gb rose gold (myj52/myh52)": 36225,
-      "ipad air 2020 4g 256gb space gray (myj32/myh22)": 35365,
-      "ipad air 2020 4g 256gb green (myj72/myh72)": 35190,
-      "ipad air 2022 wi-fi 64gb starlight (mm9f3)": 22255,
-      "ipad air 2022 wi-fi 64gb blue (mm9e3)": 22255,
-      "ipad air 2022 wi-fi 64gb purple (mme23)": 22255,
-      "ipad air 2022 wi-fi 64gb space gray (mm9c3)": 22255,
-      "ipad air 2022 wi-fi 64gb pink (mm9d3)": 23115,
-      "ipad air 2022 wi-fi + cellular 64gb space gray (mm6r3/mm753)": 27945,
-      "ipad air 2022 wi-fi + cellular 64gb blue (mm6u3/mm773)": 27945,
-      "ipad air 2022 wi-fi + cellular 64gb starlight (mm6v3)": 29325,
-      "ipad air 2022 wi-fi + cellular 64gb purple (mme93)": 27945,
-      "ipad air 2022 wi-fi + cellular 64gb pink (mm6t3)": 28810,
-      "ipad air 2022 wi-fi 256gb space gray (mm9l3)": 29670,
-      "ipad air 2022 wi-fi 256gb pink (mm9m3)": 30705,
-      "ipad air 2022 wi-fi 256gb purple (mme63)": 30705,
-      "ipad air 2022 wi-fi 256gb blue (mm9n3)": 29325,
-      "ipad air 2022 wi-fi 256gb starlight (mm9p3)": 29845,
-      "ipad air 2022 wi-fi + cellular 256gb space gray (mm713/mm7e3)": 35710,
-      "ipad air 2022 wi-fi + cellular 256gb blue (mm733/mm7g3)": 35020,
-      "ipad air 2022 wi-fi + cellular 256gb starlight (mm743/mm7h3)": 35535,
-      "ipad air 2022 wi-fi + cellular 256gb purple (mmed3)": 36225,
-      "ipad air 2022 wi-fi + cellular 256gb pink (mm723, mm7f3)": 36225,
-      "ipad pro 10.5 wi-fi 64gb space grey (mqdt2)": 19495,
-      "ipad pro 10.5 wi-fi 64gb silver (mqdw2)": 19495,
-      "ipad pro 10.5 4g 64gb gold (mqf12/mqf52)": 18975,
-      "ipad pro 10.5 4g 64gb silver (mqf02/mqf42)": 20010,
-      "ipad pro 10.5 4g 64gb space gray (mqey2/mqf32)": 20010,
-      "ipad pro 10.5 4g 64gb rose gold (mqf22)": 18975,
-      "ipad pro 10.5 4g 256gb space gray (mphg2)": 23460,
-      "ipad pro 10.5 4g 256gb gold (mphj2)": 23460,
-      "ipad pro 11 2018 4g 64gb silver (mu0u2/mu0y2)": 28290,
-      "ipad pro 11 2018 4g 512gb silver (mu1m2/mu1u2)": 36915,
-      "ipad pro 11 2018 4g 512gb space gray (mu1f2/mu1k2)": 36915,
-      "ipad pro 11 2018 4g 512gb space gray (fu1k2) cpo": 33640,
-      "ipad pro 11 2018 wi-fi 1tb space gray (mtxv2)": 34500,
-      "ipad pro 11 2018 4g 1tb silver (mu222/mu282)": 39330,
-      "ipad pro 11 2020 4g 128gb silver (my342/my2w2)": 36225,
-      "ipad pro 11 2020 4g 256gb silver (mxex2/mxe52)": 38640,
-      "ipad pro 11 2020 wi-fi 256gb space gray (mxdc2)": 29670,
-      "ipad pro 11 2020 wi-fi 512gb silver (mxdf2)": 37605,
-      "ipad pro 11 2020 wi-fi 512gb space gray (mxde2)": 36225,
-      "ipad pro 11 2020 4g 512gb space gray (mxey2/mxe62)": 40365,
-      "ipad pro 11 2020 4g 512gb silver (mxf02/mxe72)": 40365,
-      "ipad pro 11 2020 wi-fi 1tb space gray (mxdg2)": 40020,
-      "ipad pro 11 2020 wi-fi 1tb silver (mxdh2)": 39675,
-      "ipad pro 11 2020 4g 1tb silver (mxf22/mxe92)": 42780,
-      "ipad pro 11 2020 4g 1tb space gray (mxf12/mxe82)": 42090,
-      "ipad pro 2021 11\" wi-fi 128gb silver (mhqt3)": 28810,
-      "ipad pro 2021 11\" wi-fi 128gb space gray (mhqr3)": 28810,
-      "ipad pro 2021 11\" wi-fi + cellular 128gb silver (mhw63/mhmu3)": 37260,
-      "ipad pro 2021 11\" wi-fi + cellular 128gb space gray (mhw53/mhmt3)": 36570,
-      "ipad pro 2021 11\" wi-fi 256gb silver (mhqv3)": 32260,
-      "ipad pro 2021 11\" wi-fi 256gb space gray (mhqu3)": 32260,
-      "ipad pro 2021 11\" wi-fi + cellular 256gb silver (mhw83/mhmw3)": 41745,
-      "ipad pro 2021 11\" wi-fi + cellular 256gb space gray (mhw73/mhmv3)": 41400,
-      "ipad pro 2021 11\" wi-fi 512gb space gray (mhqw3)": 38295,
-      "ipad pro 2021 11\" wi-fi 512gb silver (mhqx3)": 38985,
-      "ipad pro 2021 11\" wi-fi + cellular 512gb silver (mhmy3/mhwa3)": 52440,
-      "ipad pro 2021 11\" wi-fi + cellular 512gb space gray (mhw93/mhmx3)": 51750,
-      "ipad pro 2021 11\" wi-fi 1tb space gray (mhqy3)": 47610,
-      "ipad pro 2021 11\" wi-fi 1tb silver (mhr03)": 49680,
-      "ipad pro 2021 11\" wi-fi + cellular 1tb space gray (mhwc3/mhn03)": 55890,
-      "ipad pro 2021 11\" wi-fi + cellular 1tb silver (mhwd3/mhn13)": 56235,
-      "ipad pro 2021 11\" wi-fi 2tb space gray (mhr23)": 49680,
-      "ipad pro 2021 11\" wi-fi 2tb silver (mhr33)": 48990,
-      "ipad pro 2021 11\" wi-fi + cellular 2tb space gray (mhwe3/mhn23)": 59340,
-      "ipad pro 2021 11\" wi-fi + cellular 2tb silver (mhn33/mhwf3)": 59340,
-      "ipad pro 12.9 2018 4g 256gb silver (mtj62/mtja2/mtj82)": 36225,
-      "ipad pro 12.9 2018 4g 1tb space gray 2018 (mtjp2/mtju2)": 38815,
-      "ipad pro 12.9 2020 wi-fi 128gb space gray (my2h2)": 35190,
-      "ipad pro 12.9 2020 wi-fi 128gb silver (my2j2)": 35190,
-      "ipad pro 12.9 2020 4g 128gb silver (my3k2/my3d2)": 36915,
-      "ipad pro 12.9 2020 4g 128gb space gray (my3j2/my3c2)": 36915,
-      "ipad pro 12.9 2020 wi-fi 256gb silver (mxau2)": 37605,
-      "ipad pro 12.9 2020 wi-fi 256gb space gray (mxat2)": 37950,
-      "ipad pro 12.9 2020 4g 256gb space gray (mxfx2/mxf52)": 40710,
-      "ipad pro 12.9 2020 4g 512gb space gray (mxg02/mxf72)": 43470,
-      "ipad pro 12.9 2020 wi-fi 1tb space gray (mxax2)": 43470,
-      "ipad pro 12.9 2020 wi-fi 1tb silver (mxay2)": 44850,
-      "ipad pro 12.9 2020 4g 1tb silver (mxg32/mxfa2)": 45195,
-      "ipad pro 12.9 2020 4g 1tb space gray (mxg22/mxf92)": 45540,
-      "ipad pro 2021 12.9\" wi-fi 128gb silver (mhng3)": 39160,
-      "ipad pro 2021 12.9\" wi-fi 128gb space gray (mhnf3)": 38295,
-      "ipad pro 2021 12.9\" wi-fi + cellular 128gb space gray (mhnr3/mhr43)": 39675,
-      "ipad pro 2021 12.9\" wi-fi + cellular 128gb silver (mhr53/mhnt3)": 39675,
-      "ipad pro 2021 12.9\" wi-fi 256gb space gray (mhnh3)": 42435,
-      "ipad pro 2021 12.9\" wi-fi 256gb silver (mhnj3)": 42435,
-      "ipad pro 2021 12.9\" wi-fi + cellular 256gb silver (mhr73/mhnx3)": 45540,
-      "ipad pro 2021 12.9\" wi-fi + cellular 256gb space gray (mhr63/mhnw3)": 45195,
-      "ipad pro 2021 12.9\" wi-fi 512gb silver (mhnl3)": 48990,
-      "ipad pro 2021 12.9\" wi-fi 512gb space gray (mhnk3)": 48990,
-      "ipad pro 2021 12.9\" wi-fi + cellular 512gb space gray (mhny3/mhr83)": 54510,
-      "ipad pro 2021 12.9\" wi-fi + cellular 512gb silver (mhp03/mhr93)": 54510,
-      "ipad pro 2021 12.9\" wi-fi 1tb space gray (mhnm3)": 55200,
-      "ipad pro 2021 12.9\" wi-fi 1tb silver (mhnn3)": 55545,
-      "ipad pro 2021 12.9\" wi-fi + cellular 1tb space gray (mhra3/mhp13)": 59685,
-      "ipad pro 2021 12.9\" wi-fi + cellular 1tb silver (mhp23/mhrc3)": 59340,
-      "ipad pro 2021 12.9\" wi-fi 2tb silver (mhnq3)": 57270,
-      "ipad pro 2021 12.9\" wi-fi 2tb space gray (mhnp3)": 57615,
-      "ipad pro 2021 12.9\" wi-fi + cellular 2tb space gray (mhp43/mhrd3)": 65550,
-      "ipad pro 2021 12.9\" wi-fi + cellular 2tb silver (mhp53/mhre3)": 69000,
-      "iphone se 32gb space grey (mp822)": 9660,
-      "iphone se 32gb rose gold (mp852)": 10180,
-      "iphone se 128gb rose gold (mp892)": 11215,
-      "iphone 7 128gb rose gold (mn952)": 12420,
-      "iphone 7 128gb gold (mn942)": 12765,
-      "iphone 7 plus 128gb black (mn4m2)": 17595,
-      "iphone 7 plus 128gb jet black (mn4v2)": 18975,
-      "iphone 7 plus 128gb product red (mpqw2)": 18460,
-      "iphone 7 plus 256gb silver (mn4x2)": 20010,
-      "iphone 8 128gb gold (mx182)": 16045,
-      "iphone 8 256gb silver (mq7g2)": 16905,
-      "iphone 8 256gb space gray (mq7f2)": 16390,
-      "iphone 8 plus 64gb gold (mq8n2)": 20530,
-      "iphone 8 plus 128gb space grey (mx242)": 22770,
-      "iphone 8 plus 128gb gold (mx262)": 21735,
-      "iphone 8 plus 256gb silver (mq8h2)": 23805,
-      "iphone 8 plus 256gb space gray (mq8g2/mq8p2)": 23460,
-      "iphone xr 64gb black (mry42)": 18115,
-      "iphone xr 64gb slim box black (mh6m3)": 16560,
-      "iphone xr 64gb slim box white (mh6n3)": 16560,
-      "iphone xr 64gb yellow (mry72)": 16390,
-      "iphone xr 64gb slim box blue (mh6t3)": 16390,
-      "iphone xr 64gb slim box red (mh6p3)": 16215,
-      "iphone xr 64gb product red (mry62)": 18115,
-      "iphone xr 64gb slim box coral (mh6r3)": 17940,
-      "iphone xr 64gb coral (mry82/mryw2)": 16215,
-      "iphone xr 128gb slim box black (mh7l3)": 20185,
-      "iphone xr 128gb black (mry92)": 20185,
-      "iphone xr 128gb slim box yellow (mh7p3)": 18115,
-      "iphone xr 128gb yellow (mryf2)": 20700,
-      "iphone xr 128gb slim box blue (mh7r3)": 18115,
-      "iphone xr 128gb white (mryd2)": 20700,
-      "iphone xr 128gb slim box coral (mh7q3)": 18115,
-      "iphone xr 128gb coral (mryg2)": 18115,
-      "iphone xr 128gb slim box red (mh7n3)": 17425,
-      "iphone xr 128gb product red (mrye2)": 18115,
-      "iphone xr dual sim 128gb white (mt1a2)": 20700,
-      "iphone xr dual sim 128gb coral (mt1f2)": 19665,
-      "iphone xr 256gb blue (mryq2)": 20010,
-      "iphone xr 256gb yellow (mryn2)": 20010,
-      "iphone xr 256gb product red (mrym2)": 20010,
-      "iphone xr 256gb white (mryl2)": 24150,
-      "iphone x 64gb space gray (mqac2)": 18630,
-      "iphone x 256gb silver (mqag2)": 24495,
-      "iphone x 256gb space gray (mqaf2/mqa82)": 24495,
-      "iphone xs 64gb gold (mt9g2)": 22080,
-      "iphone xs 256gb space gray (mt9h2)": 26910,
-      "iphone xs 256gb gold (mt9k2)": 22425,
-      "iphone xs 512gb silver (mt9m2)": 27255,
-      "iphone xs max 64gb silver (mt512)": 21045,
-      "iphone xs max 64gb gold (mt522)": 21390,
-      "iphone xs max 64gb space gray (mt502)": 21220,
-      "iphone xs max 256gb space gray (mt682)": 28120,
-      "iphone xs max 512gb space gray (mt622)": 29670,
-      "iphone xs max 512gb gold (mt582)": 29500,
-      "iphone xs max 512gb silver (mt632)": 29500,
-      "iphone se 2020 64gb slim box black (mhgp3)": 12420,
-      "iphone se 2020 64gb black (mx9r2/mx9n2)": 14665,
-      "iphone se 2020 64gb slim box white (mhgq3)": 12420,
-      "iphone se 2020 64gb white (mx9t2/mx9p2)": 14320,
-      "iphone se 2020 64gb product red (mx9u2/mx9q2)": 14490,
-      "iphone se 2020 64gb slim box red (mhgr3)": 12420,
-      "iphone se 2020 128gb slim box red (mhgv3)": 13630,
-      "iphone se 2020 128gb product red (mxd22/mxcy2)": 15870,
-      "iphone se 2020 128gb slim box black (mhgh3/mhgt3)": 14665,
-      "iphone se 2020 128gb black (mxd02)": 15525,
-      "iphone se 2020 128gb slim box white (mxd12/mxcx2)": 13630,
-      "iphone se 2020 128gb white (mxd12)": 15525,
-      "iphone se 2020 256gb slim box red (mhgy3)": 16905,
-      "iphone se 2020 256gb product red (mxvv2/mxvr2)": 17940,
-      "iphone se 2020 256gb slim box white (mhgx3)": 16905,
-      "iphone se 2020 256gb white (mxvu2/mxvq2)": 17940,
-      "iphone se 2020 256gb slim box black (mhgw3)": 16905,
-      "iphone se 2020 256gb black (mxvt2/mxvp2)": 17940,
-      "iphone se 2022 64gb midnight (mmx53)": 14835,
-      "iphone se 2022 64gb starlight (mmx63)": 14320,
-      "iphone se 2022 64gb product red (mmx73)": 14320,
-      "iphone se 2022 128gb product red (mmxa3)": 15870,
-      "iphone se 2022 128gb starlight (mmx93)": 15870,
-      "iphone se 2022 128gb midnight (mmx83)": 17250,
-      "iphone se 2022 256gb product red (mmxe3)": 20355,
-      "iphone se 2022 256gb starlight (mmxd3)": 20355,
-      "iphone se 2022 256gb midnight (mmxc3)": 20700,
-      "iphone 11 64gb slim box black (mhda3)": 17940,
-      "iphone 11 64gb black (mwlt2)": 21045,
-      "iphone 11 64gb mind (mwld2)": 20700,
-      "iphone 11 64gb slim box mind (mhdg3)": 18460,
-      "iphone 11 64gb slim box purple (mhdf3)": 17940,
-      "iphone 11 64gb purple (mwlc2/mwlx2)": 22080,
-      "iphone 11 64gb product red (mhdd3gh/a)": 21390,
-      "iphone 11 64gb slim box red (mhdd3)": 17770,
-      "iphone 11 64gb white (mwl82)": 21390,
-      "iphone 11 64gb slim box white (mhdc3)": 17940,
-      "iphone 11 64gb slim box yellow (mhde3)": 17250,
-      "iphone 11 64gb yellow (mwla2)": 17250,
-      "iphone 11 128gb slim box black (mhdh3)": 20700,
-      "iphone 11 128gb black (mwle2/mwm02/mwj02)": 21045,
-      "iphone 11 128gb slim box white (mhdj3)": 20875,
-      "iphone 11 128gb white (mwlf2)": 23460,
-      "iphone 11 128gb slim box yellow (mhdl3)": 20700,
-      "iphone 11 128gb yellow (mwlh2)": 20700,
-      "iphone 11 128gb slim box green (mhdn3)": 20530,
-      "iphone 11 128gb mind (mwlk2)": 20700,
-      "iphone 11 128gb slim box red (mhdk3)": 20875,
-      "iphone 11 128gb product red (mwlg2)": 22770,
-      "iphone 11 128gb purple (mhdm3cn/a)": 20700,
-      "iphone 11 128gb slim box purple (mhdm3)": 20530,
-      "iphone 11 256gb slim box black (mhdp3)": 23805,
-      "iphone 11 256gb black (mwll2/mwl12)": 28635,
-      "iphone 11 256gb slim box green (mhdv3)": 26910,
-      "iphone 11 256gb mind (mwlr2)": 27600,
-      "iphone 11 256gb slim box product red (mhdr3)": 24325,
-      "iphone 11 256gb product red (mwln2)": 27600,
-      "iphone 11 256gb slim box yellow (mhdt3)": 25875,
-      "iphone 11 256gb yellow (mwlp2)": 27600,
-      "iphone 11 256gb slim box purple (mhdu3)": 26910,
-      "iphone 11 256gb purple (mwlq2)": 27085,
-      "iphone 11 256gb slim box white (mhdq3)": 23805,
-      "iphone 11 256gb white (mwlm2)": 28635,
-      "iphone 11 128gb dual sim slim box white (mhew3)": 23460,
-      "iphone 11 pro 64gb space grey cpo": 24150,
-      "iphone 11 pro 64gb silver cpo": 24150,
-      "iphone 11 pro 256gb midnight green cpo": 29845,
-      "iphone 11 pro 256gb gold cpo": 27775,
-      "iphone 11 pro 256gb space gray cpo": 27775,
-      "iphone 11 pro 256gb silver cpo": 29845,
-      "iphone 11 pro max 64gb space grey cpo": 27430,
-      "iphone 11 pro max 64gb silver cpo": 27430,
-      "iphone 11 pro max 64gb gold cpo": 27430,
-      "iphone 11 pro max 256gb midnight green cpo": 33120,
-      "iphone 11 pro max 256gb space gray cpo": 30880,
-      "iphone 11 pro max 256gb gold cpo": 30880,
-      "iphone 11 pro 64gb midnight green (mwc62/mwcl2)": 30015,
-      "iphone 11 pro 64gb space gray (mwc22/mwch2)": 29325,
-      "iphone 11 pro 64gb gold (mwc52/mwck2)": 31050,
-      "iphone 11 pro 64gb dual sim space gray (mwd92)": 31570,
-      "iphone 11 pro 64gb dual sim midnight green (mwdd2)": 31570,
-      "iphone 11 pro 64gb dual sim silver (mwda2)": 31570,
-      "iphone 11 pro 256gb space gray (mwcm2)": 33120,
-      "iphone 11 pro 256gb midnight green (mwcq2)": 33120,
-      "iphone 11 pro 256gb silver (mwcn2)": 33810,
-      "iphone 11 pro 256gb gold (mwcp2/mwcp2/mwc92)": 33810,
-      "iphone 11 pro 256gb dual sim silver (mwdf2)": 33810,
-      "iphone 11 pro 256gb dual sim space gray (mwde2) open": 32430,
-      "iphone 11 pro 512gb midnight green (mwcv2)": 34845,
-      "iphone 11 pro 512gb gold (mwcu2)": 34155,
-      "iphone 11 pro 512gb silver (mwct2)": 34845,
-      "iphone 11 pro 512gb space gray (mwcd2)": 34845,
-      "iphone 11 pro 512gb dual sim midnight green (mwdm2)": 39675,
-      "iphone 11 pro max 64gb gold (mwh12)": 28635,
-      "iphone 11 pro max 64gb space gray (mwgy2/mwhd2)": 28635,
-      "iphone 11 pro max 64gb midnight green (mwh22)": 29325,
-      "iphone 11 pro max 64gb silver (mwh02)": 28635,
-      "iphone 11 pro max 256gb space gray (mwh42)": 35535,
-      "iphone 11 pro max 256gb gold (mwh62)": 35535,
-      "iphone 11 pro max 256gb midnight green (mwh72)": 35535,
-      "iphone 11 pro max 256gb dual sim space gray (mwf12)": 36225,
-      "iphone 11 pro max 512gb midnight green (mwhc2)": 40365,
-      "iphone 11 pro max 512gb space gray (mwh82/mwhn2)": 40365,
-      "iphone 12 mini 64gb black (mgdx3)": 20700,
-      "iphone 12 mini 64gb blue (mge13)": 20010,
-      "iphone 12 mini 64gb white (mgdy3)": 20010,
-      "iphone 12 mini 64gb mind (mge23)": 20010,
-      "iphone 12 mini 64gb product red (mge03)": 19150,
-      "iphone 12 mini 64gb purple (mjqf3)": 20010,
-      "iphone 12 mini 128gb white (mge43)": 23460,
-      "iphone 12 mini 128gb mind (mge73)": 24495,
-      "iphone 12 mini 128gb blue (mge63)": 23805,
-      "iphone 12 mini 128gb black (mge33)": 24150,
-      "iphone 12 mini 128gb product red (mge53)": 22600,
-      "iphone 12 mini 128gb purple (mjqg3)": 24150,
-      "iphone 12 mini 256gb blue (mged3)": 26910,
-      "iphone 12 mini 256gb black (mge93)": 26565,
-      "iphone 12 mini 256gb product red (mgec3)": 26395,
-      "iphone 12 mini 256gb mind (mgee3)": 25705,
-      "iphone 12 mini 256gb purple (mjqh3)": 26565,
-      "iphone 12 mini 256gb white (mgea3)": 25530,
-      "iphone 12 64gb black (mgj53/mgh63)": 21565,
-      "iphone 12 64gb purple (mjnm3)": 22080,
-      "iphone 12 64gb white (mgj63/mgh73)": 21565,
-      "iphone 12 64gb mind (mgj93/mgha3)": 23805,
-      "iphone 12 64gb product red (mgj73/mgh83)": 21735,
-      "iphone 12 64gb blue (mgj83/mgh93)": 23115,
-      "iphone 12 128gb white (mgjc3/mghd3)": 25530,
-      "iphone 12 128gb black (mgja3/mghc3)": 25530,
-      "iphone 12 128gb mind (mgjf3/mghg3)": 25530,
-      "iphone 12 128gb blue (mgje3/mghf3)": 25530,
-      "iphone 12 128gb product red (mgjd3/mghe3)": 25705,
-      "iphone 12 128gb purple (mjnp3)": 25875,
-      "iphone 12 256gb purple (mjnq3)": 31050,
-      "iphone 12 256gb black (mgjg3/mghh3)": 31050,
-      "iphone 12 256gb mind (mgjl3/mghm3)": 29670,
-      "iphone 12 256gb blue (mgjk3/mghl3)": 28980,
-      "iphone 12 256gb product red (mgjj3/mghk3)": 28465,
-      "iphone 12 256gb white (mgjh3/mghj3)": 31050,
-      "iphone 12 pro 128gb graphite (mgmk3/mgln3)": 34500,
-      "iphone 12 pro 128gb pacific blue (mgmn3/mglr3)": 34675,
-      "iphone 12 pro 128gb silver (mgml3/mglp3)": 34330,
-      "iphone 12 pro 128gb gold (mgmm3/mglq3)": 34155,
-      "iphone 12 pro 256gb graphite (mgmp3/mglt3)": 34500,
-      "iphone 12 pro 256gb pacific blue (mgmt3/mglw3)": 34675,
-      "iphone 12 pro 256gb gold (mgmr3/mglv3)": 34675,
-      "iphone 12 pro 256gb silver (mgmq3/mglu3)": 34675,
-      "iphone 12 pro 512gb pacific blue (mgmx3/mgm43)": 35190,
-      "iphone 12 pro 512gb graphite (mgmu3/mglx3)": 35190,
-      "iphone 12 pro 512gb gold (mgmw3/mgm23)": 35190,
-      "iphone 12 pro 512gb silver (mgmv3/mgly3)": 35190,
-      "iphone 12 pro max 128gb graphite (mgd73)": 37605,
-      "iphone 12 pro max 128gb pacific blue (mgda3)": 35365,
-      "iphone 12 pro max 128gb silver (mgd83)": 38295,
-      "iphone 12 pro max 128gb gold (mgd93)": 37780,
-      "iphone 12 pro max 256gb gold (mgde3)": 39675,
-      "iphone 12 pro max 256gb pacific blue (mgdf3)": 39675,
-      "iphone 12 pro max 256gb silver (mgdd3)": 41055,
-      "iphone 12 pro max 256gb graphite (mgdc3)": 40020,
-      "iphone 12 pro max 512gb silver (mgdh3)": 40020,
-      "iphone 12 pro max 512gb graphite (mgdg3)": 39330,
-      "iphone 12 pro max 512gb pacific blue (mgdl3)": 41400,
-      "iphone 12 pro max 512gb gold (mgdk3)": 40020,
-      "iphone 12 pro max dual sim 128gb graphite (mgc03)": 45195,
-      "iphone 12 pro max dual sim 128gb silver (mgc13)": 44505,
-      "iphone 12 pro max dual sim 128gb gold (mgc23)": 45195,
-      "iphone 12 pro max dual sim 256gb silver (mgc53)": 46920,
-      "iphone 12 pro max dual sim 512gb silver (mgca3)": 48645,
-      "iphone 13 mini 128gb blue (mlk43)": 25015,
-      "iphone 13 mini 128gb pink (mlk23)": 25015,
-      "iphone 13 mini 128gb green (mnf83)": 26220,
-      "iphone 13 mini 128gb product red (mlk33)": 26220,
-      "iphone 13 mini 128gb starlight (mlk13)": 25015,
-      "iphone 13 mini 128gb midnight (mlk03)": 26220,
-      "iphone 13 mini 256gb blue (mlk93)": 28290,
-      "iphone 13 mini 256gb midnight (mlk53)": 30705,
-      "iphone 13 mini 256gb green (mnf93)": 32775,
-      "iphone 13 mini 256gb pink (mlk73)": 28980,
-      "iphone 13 mini 256gb product red (mlk83)": 28290,
-      "iphone 13 mini 256gb starlight (mlk63)": 29325,
-      "iphone 13 mini 512gb blue (mlkf3)": 32775,
-      "iphone 13 mini 512gb green (mnfa3)": 34845,
-      "iphone 13 mini 512gb midnight (mlka3)": 34675,
-      "iphone 13 mini 512gb pink (mlkd3)": 32605,
-      "iphone 13 mini 512gb product red (mlke3)": 32605,
-      "iphone 13 mini 512gb starlight (mlkc3)": 31915,
-      "iphone 13 128gb starlight (mlpg3)": 28120,
-      "iphone 13 128gb green (mngd3)": 28120,
-      "iphone 13 128gbи pink (mlph3)": 24150,
-      "iphone 13 128gb pink (mlph3)": 28465,
-      "iphone 13 128gb midnight (mlpf3)": 27945,
-      "iphone 13 128gb product red (mlpj3)": 27945,
-      "iphone 13 128gb blue (mlpk3)": 27945,
-      "iphone 13 256gb green (mnge3)": 30880,
-      "iphone 13 256gb pink (mlq83)": 32775,
-      "iphone 13 256gb product red (mlq93)": 30705,
-      "iphone 13 256gb blue (mlqa3)": 30705,
-      "iphone 13 256gb starlight (mlq73)": 32775,
-      "iphone 13 256gb midnight (mlq63)": 31225,
-      "iphone 13 512gb green (mngf3)": 37260,
-      "iphone 13 512gb pink (mlqe3)": 36570,
-      "iphone 13 512gb product red (mlqf3)": 32430,
-      "iphone 13 512gb starlight (mlqd3)": 35190,
-      "iphone 13 512gb blue (mlqg3)": 32605,
-      "iphone 13 512gb midnight (mlqc3)": 32605,
-      "iphone 13 pro 128gb gold (mlvc3)": 35710,
-      "iphone 13 pro 128gb silver (mlva3)": 35710,
-      "iphone 13 pro 128gb sierra blue (mlvd3)": 35710,
-      "iphone 13 pro 128gb graphite (mlv93)": 35710,
-      "iphone 13 pro 128gb alpine green (mndt3)": 35880,
-      "iphone 13 pro 256gb gold (mlvk3)": 39160,
-      "iphone 13 pro 256gb graphite (mlve3)": 39160,
-      "iphone 13 pro 256gb silver (mlvf3)": 39330,
-      "iphone 13 pro 256gb alpine green (mndu3)": 39330,
-      "iphone 13 pro 256gb sierra blue (mlvp3)": 39160,
-      "iphone 13 pro 512gb alpine green (mndv3)": 47610,
-      "iphone 13 pro 512gb silver (mlvn3)": 47265,
-      "iphone 13 pro 512gb sierra blue (mlvu3)": 47610,
-      "iphone 13 pro 512gb graphite (mlvh3)": 47265,
-      "iphone 13 pro 512gb gold (mlvq3)": 46060,
-      "iphone 13 pro 1tb alpine green (mndw3)": 50890,
-      "iphone 13 pro 1tb gold (mlvy3)": 51750,
-      "iphone 13 pro 1tb graphite (mlvv3)": 54165,
-      "iphone 13 pro 1tb sierra blue (mlw03)": 50715,
-      "iphone 13 pro 1tb silver (mlvw3)": 50715,
-      "iphone 13 pro max 128gb graphite (mll63)": 38985,
-      "iphone 13 pro max 128gb sierra blue (mll93)": 39160,
-      "iphone 13 pro max 128gb alpine green (mncp3)": 39160,
-      "iphone 13 pro max 128gb gold (mll83)": 39160,
-      "iphone 13 pro max 128gb silver (mll73)": 39160,
-      "iphone 13 pro max 256gb alpine green (mncq3)": 42610,
-      "iphone 13 pro max 256gb silver (mllc3)": 42610,
-      "iphone 13 pro max 256gb sierra blue (mlle3)": 42780,
-      "iphone 13 pro max 256gb gold (mlld3)": 42780,
-      "iphone 13 pro max 256gb graphite (mlla3)": 42435,
-      "iphone 13 pro max 512gb alpine green (mncr3)": 51405,
-      "iphone 13 pro max 512gb gold (mllh3)": 49335,
-      "iphone 13 pro max 512gb sierra blue (mllj3)": 49335,
-      "iphone 13 pro max 512gb silver (mllg3)": 50370,
-      "iphone 13 pro max 512gb graphite (mllf3)": 49165,
-      "iphone 13 pro max 1tb silver (mlll3)": 52440,
-      "iphone 13 pro max 1tb alpine green (mnct3)": 54340,
-      "iphone 13 pro max 1tb sierra blue (mlln3)": 54340,
-      "iphone 13 pro max 1tb graphite (mllk3)": 54165,
-      "iphone 13 pro max 1tb gold (mllm3)": 56235,
-      "apple watch 2 42mm space/black(mp4a2)": 9835,
-      "apple watch 3 38mm space/black (mtf02)": 7590,
-      "apple watch 3 38mm silver/white (mtey2)": 8280,
-      "apple watch 3 42mm silver/fog(mtf22)": 8455,
-      "apple watch 3 42mm silver/fog(mql02)": 8455,
-      "apple watch 3 42mm space/black(mql12/mtf32)": 8455,
-      "apple watch 3 42mm nike space/black(mtf42/mql42)": 10525,
-      "apple watch 3 38mm 4g gold/pink(mqjq2/mqkh2)": 8280,
-      "apple watch 3 38mm 4g gray/sport loop (mqjp2/mtgh2)": 8280,
-      "apple watch 4 44mm space/black (mu6d2)": 12420,
-      "apple watch 4 40mm 4g nike silver/sport loop (mtx72/mtxf2)": 14835,
-      "apple watch 4 44mm nike silver/summit white loop (mu7h2)": 12765,
-      "apple watch 4 44mm 4g silver/white sport (mtuu2/mtvr2)": 13110,
-      "apple watch 5 40mm silver/white (mwv62)": 13110,
-      "apple watch 5 40mm space/black (mwv82)": 12940,
-      "apple watch 5 40mm gold/pink (mwv72)": 13455,
-      "apple watch 5 40mm gold/pink (mwv72) open box": 12595,
-      "apple watch 5 44mm gold/pink (mwve2)": 12940,
-      "apple watch 5 44mm silver/lemon cream (mwt32)": 13800,
-      "apple watch 5 40mm nike silver/silver (fx3r2) cpo": 13110,
-      "apple watch 5 40mm nike silver/silver (mx3r2)": 13800,
-      "apple watch 5 44mm nike silver/silver (mx3v2)": 14320,
-      "apple watch 5 4g 40mm gold/pink (mwwp2/mwx22)": 13800,
-      "apple watch 5 4g 40mm space/black (mwwq2/mwx32)": 12765,
-      "apple watch 5 4g 40mm nike silver pure platinum/black sport (mx372/mx3c2)": 15355,
-      "apple watch 5 4g 44mm gold/pink (mww02/mwwd2)": 14490,
-      "apple watch 5 4g 44mm space anthracite/black nike (mx3a2/mx3f2)": 16045,
-      "apple watch 5 4g 44mm space/black sport (mww72/mwwk2)": 23460,
-      "apple watch 5 4g 44mm gold/black leather loop (mwqn2)": 25530,
-      "apple watch 5 4g 44mm gold/gold milanese loop (mww62/mwwj2)": 20700,
-      "apple watch se 40mm gold aluminum case w. pink sand sport b. (mydn2)": 11560,
-      "apple watch se 40mm gold aluminum case with starlight sport band (mkq03)": 10525,
-      "apple watch se 40mm space gray aluminum case with black sport band (mydp2)": 10525,
-      "apple watch se 40mm space gray aluminium case with midnight sport band (mkq13)": 9835,
-      "apple watch se 4g 40mm space gray aluminum case with charcoal sport loop (myee2/myel2)": 12075,
-      "apple watch se 40mm silver aluminum case w. abyss blue s. band (mkny3)": 9835,
-      "apple watch se 40mm silver aluminum case with white sport band (mydm2)": 11560,
-      "apple watch se 4g 40mm gold aluminum case with plum sport loop (myec2/myej2)": 12420,
-      "apple watch se 44mm silver aluminum case with white sport band (mydq2)": 11905,
-      "apple watch se 44mm gold aluminum case w. starlight sport band (mkq53)": 11040,
-      "apple watch se 44mm space gray midnight sport band (mkq63)": 11040,
-      "apple watch se 44mm space gray aluminum case with black sport band (mydt2)": 11560,
-      "apple watch se 44mm silver aluminum case w. abyss blue s. band (mkq43)": 10870,
-      "apple watch se 44mm gold aluminum case w. pink sand sport band (mydr2)": 11560,
-      "apple watch se 4g 44mm silver aluminum case with white sport band (myem2/myev2)": 13285,
-      "apple watch se 4g 44mm space gray aluminum case with black sport band (myer2/myf02)": 12940,
-      "apple watch se 4g 44mm space gray aluminum case with midnight sport band (mkrr3)": 13285,
-      "apple watch se 4g 44mm gold aluminum case with pink sand sport band (myep2/myex2)": 12940,
-      "apple watch nike se gps 40mm silver aluminum case w. pure platinum/black nike sport band (myyd2)": 12250,
-      "apple watch nike se gps 40mm silver aluminum case w. pure platinum/black nike sport band (mkq23)": 12075,
-      "apple watch nike se gps 40mm space gray aluminum case w. anthracite/black nike sport b. (myyf2/mkq33)": 11385,
-      "apple watch nike se gps 44mm sil. al. case with pure platinum/black nike sp. b (myyh2/mkq73)": 12765,
-      "apple watch nike se gps 44mm space gray aluminum case w. anthracite/black nike sport b. (myyk2/mkq83)": 12940,
-      "apple watch nike se 4g 40mm silver aluminum case w. pure platinum/black nike sport b. (myyr2/myyw2)": 11560,
-      "apple watch nike se 4g 40mm space gray aluminum case with anthracite/black nike sport band (myyu2/mg013)": 12075,
-      "apple watch nike se 4g 44mm silver aluminium case w. pure platinum/black nike sport band (mg083/mg043)": 15355,
-      "apple watch 6 40mm gold aluminum case with pink sand sport band (mg123)": 14490,
-      "apple watch 6 40mm gold aluminum with sport loop (mg193)": 15010,
-      "apple watch 6 40mm space gray aluminum case with black sport band (mg133)": 12765,
-      "apple watch 6 40mm silver aluminum case with white sport band (mg283)": 13455,
-      "apple watch 6 40mm blue aluminum case with deep navy sport band (mg143)": 12075,
-      "apple watch 6 40mm red aluminium case with red sport band (m00a3)": 12420,
-      "apple watch 6 44mm gold aluminum case with pink sand sport band (m00e3)": 15010,
-      "apple watch 6 44mm blue aluminium case without strap or option other (m02g3)": 14490,
-      "apple watch 6 44mm blue aluminum case with deep navy sport band (m00j3)": 13110,
-      "apple watch 6 44mm space gray aluminum case with black sport band (m00h3)": 14145,
-      "apple watch 6 44mm red aluminium case with red sport band (m00m3)": 12765,
-      "apple watch 6 44mm silver aluminum case w. white sport b. (m00d3)": 13110,
-      "apple watch 6 nike 40mm silver aluminium case with pure platinum black nike sport band (m00t3)": 14665,
-      "apple watch 6 nike 44mm silver aluminium case without strap(+option other) (m02l3)": 15525,
-      "apple watch 6 nike 44mm silver aluminium case with pure platinum black nike sport band (mg293)": 16560,
-      "apple watch 6 nike 44mm space gray aluminum case with anthracite/black nike sport band (mg173)": 16560,
-      "apple watch 6 4g 40mm space gray aluminum case with black sport band (m02q3/m06p3)": 13285,
-      "apple watch 6 4g 44mm blue aluminium case with deep navy sport band (m07j3/m09a3)": 14145,
-      "apple watch 6 4g 44mm gold aluminum case with pink sand sport band (m07g3/mg2d3)": 15870,
-      "apple watch 6 4g 44mm space gray aluminum case with black sport band (m07h3/mg2e3)": 14490,
-      "apple watch 6 4g 44mm black unity aluminum case with sport band (mj6t3)": 17250,
-      "apple watch 6 nike 4g 40mm space gray aluminum case with anthracite/black nike sport band (m06l3/m07e3)": 16735,
-      "apple watch 6 4g 40mm silver stainless steel case with white sport band (m02u3/m06t3)": 22080,
-      "apple watch 6 4g 40mm silver stainless steel case with my702 40mm atlantic blue braided solo loop 5(size) (m0dv3)": 25875,
-      "apple watch 6 4g 44mm gold stainless steel case with gold milanese loop (m07p3/m09g3)": 26910,
-      "apple watch 6 4g 44mm graphite stainless steel case with graphite milanese loop (m09j3/m07r3)": 30015,
-      "apple watch series 7 gps 41mm midnight aluminum case with midnight sport band (mkmx3)": 13285,
-      "apple watch series 7 gps 41mm green aluminum case with green sport band (mkn03)": 13285,
-      "apple watch series 7 gps 41mm blue aluminum case with blue sport band (mkn13)": 13285,
-      "apple watch series 7 gps 41mm starlight aluminum case with starlight sport band (mkmy3)": 14320,
-      "apple watch series 7 gps 41mm product red aluminum case with product red sport band (mkn23)": 14665,
-      "apple watch series 7 gps 45mm midnight aluminum case with midnight sport band (mkn53)": 14490,
-      "apple watch series 7 gps 45mm blue aluminum case with blue sport band (mkn83)": 14145,
-      "apple watch series 7 gps 45mm starlight aluminum case with starlight sport band (mkn63)": 15180,
-      "apple watch series 7 gps 45mm green aluminum case with green sport band (mkn73)": 14320,
-      "apple watch series 7 gps 45mm product red aluminum case with product red sport band (mkn93)": 15010,
-      "apple watch 7 4g 41mm starlight aluminum case with starlight sport band (mkh83/mkhr3)": 18115,
-      "apple watch 7 4g 41mm blue aluminum case with abyss blue sport band (mkhc3/mkhu3)": 16560,
-      "apple watch 7 4g 41mm midnight aluminum case w. midnight s. band (mkh73/mkhq3)": 16560,
-      "apple watch 7 4g 41mm green aluminum case with clover sport band cellular (mkh93, mkht3)": 16390,
-      "apple watch 7 4g 45mm green aluminum case with clover sport band (mkjr3,mkj93)": 18285,
-      "apple watch 7 4g 45mm midnight aluminum case w. midnight s. band (mkj73/mkjp3)": 17940,
-      "apple watch 7 4g 45mm s. aluminum case w. starlight s. band (mkj83/mkjq3)": 17940,
-      "apple watch 7 4g 45mm blue aluminum case with blue sport band (mkjt3/mkja3)": 17940,
-      "apple watch nike 7 gps 41mm midnight aluminum case w. anthracite/black nike sport band (mkn43)": 15525,
-      "apple watch nike 7 gps 41mm starlight aluminum case w. pure platinum/black nike sport band (mkn33)": 16390,
-      "apple watch nike 7 gps 45mm starlight aluminum case w. pure platinum/black nike sport band (mkna3)": 17250,
-      "apple watch nike 7 gps 45mm midnight aluminum case w. anthracite/black nike sport band (mknc3)": 18285,
-      "apple watch nike 7 4g 41mm midnight aluminum case with anthracite/black nike sport band (mkhm3)": 17595,
-      "apple watch nike 7 4g 45mm midnight aluminum case with anthracite/black nike (mkjl3/mkl53)": 23115,
-      "apple watch nike 7 4g 41mm starlight aluminum case with pure platinum/black nike sport band (mkhl3/mkj33)": 18975,
-      "apple watch nike 7 4g 45mm starlight aluminum case with pure platinum/black nike sport band (mkjk3, mkl43)": 20355,
-      "apple watch 7 4g 41mm silver stainless steel case w. starlight sport band (mkhe3/mkhw3)": 26565,
-      "apple watch 7 4g 41mm silver stainless steel case with silver milanese loop (mkhx3/mkhf3)": 29670,
-      "apple watch 7 4g 41mm gold stainless steel case with gold milanese loop (mkhh3/mkj03)": 31740,
-      "apple watch 7 4g 41mm gold s. steel case w. dark cherry sport band (mkhg3/mkhy3)": 28465,
-      "apple watch 7 4g 41mm graphite s. steel case w. abyss blue s. band (mkhj3)": 26910,
-      "apple watch 7 4g 41mm graphite stainless steel case with graphite milanese loop (mkhk3/mkj23)": 26565,
-      "apple watch 7 4g 45mm silver stainless steel case with starlight sport band (mkjd3/mkjv3)": 28290,
-      "apple watch 7 4g 45mm graphite s. steel case w. abyss blue s. band (mkjh3/mkl23)": 28635,
-      "apple watch 7 4g 45mm gold s. steel case w. dark cherry sport band (mkjf3/mkjx3)": 28635,
-      "apple watch 7 4g 45mm silver stainless steel case with silver milanese loop (mkjw3/‎mkje3)": 29670,
-      "apple watch 7 4g 45mm graphite stainless steel case with graphite milanese loop (mkjj3/mkmr3)": 29670,
-      "apple watch 7 4g 45mm gold stainless steel case with gold milanese loop (mkjy3/mkjg3)": 34330,
-      "apple airtag 4-pack (mx542)": 3970,
-      "apple airtag 1-pack (mx532)": 1210,
-      "apple airtag loop deep navy (mhj03)": 485,
-      "apple airtag leather loop product red (mk0v3)": 655,
-      "apple airtag leather loop saddle brown (mx4a2)": 965,
-      "apple airtag loop electric orange (mk0x3)": 520,
-      "apple airtag loop sunflower (mk0w3)": 690,
-      "apple magsafe battery pack (mjwy3)": 3280,
-      "ipod touch 7gen 32gb space gray (mvhw2)": 6900,
-      "ipod touch 7gen 32gb silver (mvhv2)": 6900,
-      "ipod touch 7gen 32gb gold (mvht2)": 6900,
-      "ipod touch 7gen 128gb space gray (mvj62)": 8625,
-      "ipod touch 7gen 128gb pink (mvhy2)": 7935,
-      "аpple airpods (mmef2)": 3970,
-      "apple airpods 2 (mv7n2)": 4035,
-      "apple airpods 2 (mv7n2ru/a)": 4140,
-      "apple wireless charging case for airpods (mr8u2)": 1725,
-      "apple airpods 2 with wireless charging case (mrxj2)": 5070,
-      "airpods pro (mwp22) (open box)": 5350,
-      "airpods pro (mwp22)": 6555,
-      "airpods 3 (mme73)": 5760,
-      "apple airpods pro with magsafe charging case (mlwk3)": 6730,
-      "apple airpods max silver (mgyj3)": 17250,
-      "apple airpods max space gray (mgyh3)": 16390,
-      "apple airpods max sky blue (mgyl3)": 16905,
-      "apple airpods max pink (mgym3)": 16735,
-      "apple airpods max green (mgyn3)": 17250,
-      "apple homepod mini space gray (my5g2)": 4140,
-      "apple homepod mini white (my5h2)": 3865,
-      "apple homepod mini yellow (mj2e3)": 4485,
-      "apple homepod mini blue (mj2c3)": 3970,
-      "apple homepod mini orange (mj2d3)": 4485,
-      "apple magsafe charger (mhxh3)": 1725,
-      "apple magsafe duo charge (mhxf3)": 3795,
-      "apple pencil tips (mlun2) 1pcs": 520,
-      "apple pencil tips (mlun2)": 1275,
-      "комплект амбушюр для airpods pro (s/l)": 345,
-      "apple pencil (mk0c2)": 3280,
-      "apple pencil 2 for ipad pro 2018/2020 (mu8f2)": 4140,
-      "apple siri remote (2nd gen) (mjfn3)": 2590,
-      "apple tv 4 32gb (mgy52/mr912)": 4485,
-      "apple tv 4k 32gb (mqd22)": 4485,
-      "apple tv 4k 64gb (mp7p2)": 5350,
-      "apple tv hd 2021 32gb (mhy93)": 5175,
-      "apple tv 4k 2021 32gb (mxgy2)": 6210,
-      "apple tv 4k 2021 64gb (mxh02)": 7075,
-      "apple airport express (mc414)": 6385,
-      "apple airport extreme (me918)": 9660,
-      "apple time capsule 2tb (me177)": 13455,
-      "apple magic trackpad 2 silver (mj2r2)": 4485,
-      "apple magic trackpad 2021 silver (mk2d3)": 4315,
-      "apple magic trackpad 3 (mmmp3) black": 6555,
-      "apple magic keyboard (mla22)": 3280,
-      "apple magic keyboard 3 (mk2a3rs/a)": 3970,
-      "apple magic keyboard + magic mouse 2 silver (mla02/mla22)": 6385,
-      "apple magic keyboard with numeric keypad (mq052)": 4485,
-      "apple magic keyboard space gray (mrmh2)": 8625,
-      "apple magic keyboard with touch id (mk293)": 5520,
-      "apple magic keyboard with touch id and numeric keypad (mk2c3)": 6210,
-      "apple magic keyboard 3 num with touch id - eng (mmmr3)": 10525,
-      "apple magic mouse 2 silver (mla02)": 2935,
-      "apple magic mouse 2 space gray (mrme2)": 4315,
-      "apple magic mouse 3 silver (mk2e3)": 3280,
-      "apple magic mouse 2022 black multi-touch surface (mmmq3)": 4315,
-      "apple ipad pro keyboard 10.2\"/10.5\"/air 3 (mptl2/mx3l2)": 3450,
-      "apple smart keyboard folio for ipad pro 11\" (mu8g2)": 5520,
-      "apple smart keyboard folio for 12.9” ipad pro 2018 (mu8h2)": 4140,
-      "apple smart keyboard folio for ipad 11\" pro 2nd (mxnk2) - (грав)": 5695,
-      "apple magic keyboard folio with trackpad for ipad 11\" pro 2/3nd/air4 black (mxqt2)": 11385,
-      "apple magic keyboard folio with trackpad for ipad 11\" pro 2/3nd/air4 gen white (mjqj3)": 11040,
-      "apple magic keyboard folio with trackpad for ipad 11\" pro 2/3nd/air4 gen white (mjqj3ua/a)": 14490,
-      "apple smart keyboard folio for ipad 12.9\" pro 4nd (mxnl2)": 5350,
-      "apple magic keyboard folio with trackpad for ipad 12.9\" pro 4nd (mxqu2) грав": 11040,
-      "apple magic keyboard for ipad pro 12.9\" 5th gen. (black) (mjqk3)": 15525,
-      "apple magic keyboard for ipad pro 12.9\" 5th gen. (black) (mjqk3rs/a)": 16905,
-      "apple magic keyboard for ipad pro 12.9\" 5th gen. (white) (mjql3)": 12250,
-      "apple magic keyboard for ipad pro 12.9\" 5th gen. (white) (mjql3rs/a)": 16735,
-      "apple lightning to usb camera adapter (md821)": 1380,
-      "apple lightning to sd card camera reader (mjyt2/md822)": 1555,
-      "apple usb-c to sd card reader (mufg2)": 1725,
-      "apple lightning to usb3 camera adapter (mk0w2)": 1585,
-      "apple lightning to vga (md825)": 965,
-      "apple lightning digital av adapter (md826)": 1380,
-      "apple minidisplayport to dvi (mb570)": 830,
-      "apple thunderbolt to gigabit ethernet adapter (md463)": 1210,
-      "apple watch magnetic charging cable (1m)(mklg2/mu9g2)": 1450,
-      "apple watch magnetic fast charger to usb-c cable (1 m) (mlwj3)": 1555,
-      "apple watch magnetic charging cable (2m) (mjvx2/mu9h2)": 1210,
-      "apple lightning to usb cable (0.5 m)(me291)": 585,
-      "apple lightning to usb cable (md818)": 865,
-      "apple lightning to usb cable (mque2)": 865,
-      "apple lightning to usb cable (mxly2)": 865,
-      "apple lighting to usb cable 2m (md819)": 1105,
-      "apple lightning to 3.5mm headphone jack adapter retail box (mmx62)": 450,
-      "apple usb-c to 3.5 mm headphone jack adapter (mu7e2)": 450,
-      "lightning apple usb-c to lightning cable 1m (mm0a3)": 760,
-      "apple usb-c charge cable 1 m (muf72/mm093)": 760,
-      "apple usb-c charge cable 2m (mll82)": 1035,
-      "apple adapter usb-c to usb (mj1m2)": 865,
-      "apple usb-c vga multiport adapter (mj1l2)": 1210,
-      "apple usb-c adapter (mj1k2/muf82)": 1900,
-      "apple usb type-c apple usb-c to magsafe 3 cable 2m silver (mlyv3)": 2760,
-      "apple thunderbolt 3 usb-c to thunderbolt 2 (mmel2)": 1725,
-      "apple usb-c to lightning cable (2m) (mkq42) комплектный": 1035,
-      "apple usb-c to lightning cable (2m) (mkq42)": 1555,
-      "apple thunderbolt 3 (usb-c) cable (0.8 m) (mq4h2)": 2245,
-      "apple earpods original retail box (mnhf2)": 690,
-      "apple earpods lightning original no box (mmtn2)": 760,
-      "apple earpods with lightning connector (mmtn2)": 1035,
-      "комплект ориг аксов от iphone (уши+кабель+зарядка(сша)+вкладыш)": 1140,
-      "apple magsafe 45w power adapter (mc747)": 1725,
-      "apple magsafe 60w power adapter (mc461)": 1725,
-      "apple magsafe 2 45w power adapter (md592)": 2450,
-      "apple magsafe 2 60w power adapter (md565)": 2760,
-      "apple magsafe 85w power adapter (mc556)": 2590,
-      "apple power adapter extension cable (mk122)": 415,
-      "apple 12w for ipad (md836)": 795,
-      "apple 20w usb-c power adapter (mhje3)": 690,
-      "apple 30w usb-c power adapter (my1w2)": 2070,
-      "apple 35w dual usb-c port power adapter (mnwp3)": 3795,
-      "apple 61w usb-c power adapter (mnf72/mrw22)": 2760,
-      "apple 67w usb-c power adapter (mku63)": 2760,
-      "apple 87w usb-c power adapter (mnf82)": 2760,
-      "apple 96w usb-c power adapter (mx0j2)": 3450,
-      "apple 140w usb-c power adapter (mlyu3)": 6900,
-      "11 smart battery case black (mwvh2)": 3280,
-      "11 pro max smart battery case black (mwvp2)": 3450,
+      "macbook 12\" space 256gb (mnyf2)": 32810,
+      "macbook air 13\" 256gb (mqd42) 2017": 29580,
+      "macbook air 13\" gold 128gb 2018 (mree2)": 30600,
+      "macbook air 13\" space 256gb 2018 (5re92) сро": 32130,
+      "macbook air 13\" gold 256gb 2018 (5ref2) сро": 32130,
+      "macbook air 13\" gold 256gb 2018 (mref2)": 32130,
+      "macbook air 13\" 2020 m1 512gb gold (mgne3) cpo": 41480,
+      "macbook air 13\" 2020 m1 256gb gold (mgnd3)": 34850,
+      "macbook air 13\" 2020 m1 256gb gold (mgnd3ua/a)": 36040,
+      "macbook air 13\" 2020 m1 256gb space gray (mgn63)": 35530,
+      "macbook air 13\" 2020 m1 256gb space gray (mgn63ua/a)": 36380,
+      "macbook air 13\" 2020 m1 256gb silver (mgn93)": 36380,
+      "macbook air 13\" 2020 m1 512gb gold (mgne3)": 43520,
+      "macbook air 13\" 2020 m1 512gb silver (mgna3)": 43860,
+      "macbook air 13\" 2020 m1 512gb space gray (mgn73)": 43860,
+      "macbook pro 13\" 256gb silver 2019 (muhr2)": 40800,
+      "macbook pro 13\" 256gb silver 2019 (muhr2ua/a)": 42160,
+      "macbook pro 13\" 256gb space 2019 (mv962)": 41480,
+      "macbook pro 13\" 256gb silver 2019 (mv992)": 39440,
+      "macbook pro 13\" 512gb space 2018 (mr9r2)": 45050,
+      "macbook pro 13\" 512gb space 2018 (mv972)": 45390,
+      "macbook pro 13\" 256gb silver 2018 (5r9u2) сро": 38930,
+      "macbook pro 13\" 512gb silver 2018 (mv9a2)": 45560,
+      "macbook pro 13\" 2020 256gb space gray (mxk32)": 42500,
+      "macbook pro 13\" 2020 256gb silver (mxk62)": 40800,
+      "macbook pro 13\" 2020 512gb/8gb space gray (mxk52)": 44880,
+      "macbook pro 13\" 2020 512gb/8gb silver (mxk72)": 45050,
+      "macbook pro 13\" 2020 512gb/16gb space gray (mwp42)": 45900,
+      "macbook pro 13\" 2020 512gb/16gb silver (mwp72)": 46070,
+      "macbook pro 13\" 2020 512gb/16gb silver (mwp72ua/a)": 48280,
+      "macbook pro 13\" 2020 1tb/16gb space gray (mwp52)": 49300,
+      "macbook pro 13\" 2020 1tb/16gb silver (mwp82)": 49300,
+      "macbook pro 13\" 2020 1tb/16gb silver (mwp82ua/a)": 51680,
+      "macbook pro 13\" 2020 m1 256gb/8gb space gray (myd82)": 43520,
+      "macbook pro 13\" 2020 m1 256gb/8gb silver (myda2)": 44200,
+      "macbook pro 13\" 2020 m1 256gb/8gb silver (myda2ru/a)": 45050,
+      "macbook pro 13\" 2020 m1 512gb/8gb space gray (myd92)": 47430,
+      "macbook pro 13\" 2020 m1 512gb/8gb silver (mydc2)": 47600,
+      "macbook pro 16\" 512gb space 2019 (mvvj2)": 75480,
+      "macbook pro 16\" 512gb silver 2019 (mvvl2)": 75480,
+      "macbook pro 16\" 1tb space 2019 (mvvk2)": 78880,
+      "macbook pro 16\" 1tb silver 2019 (mvvm2)": 78880,
+      "macbook air 13\" space gray i5 1.6ghz/16gb/512gb ssd (mvh62)": 44880,
+      "macbook pro 13\" space gray 2020 (z0w40) (i7 1.7/8gb/256gb)": 39780,
+      "macbook pro 16\" silver i7 2.6ghz/16gb/1tb ssd/radeon pro 5500m with 4gb (z0y1002c4) 2019": 86700,
+      "macbook pro 16\" space gray i9 2.4ghz/16gb/512gb ssd/radeon pro 5500m with 4gb (z0xz004sp) 2019": 85000,
+      "macbook pro 16\" space gray i9 2.4ghz/16gb/1tb ssd/radeon pro 5500m with 4gb (z0xz0056a)": 86700,
+      "macbook pro 16\" space (i7 2.6ghz/32gb/1tb ssd/radeon pro 5500m with 8gb) (z0xz0007k)": 113900,
+      "macbook pro 16\" space gray (i9 2.4ghz/64gb/1tb ssd/radeon pro 5500m with 4gb) (z0xz004zc)": 134300,
+      "macbook air m1 13\" 512gb/8gb/7gpu silver 2020 (z127000f2)": 42500,
+      "macbook air m1 13\" 256gb/16gb/7gpu space gray 2020 (z124000fkll/a) mdm": 44200,
+      "macbook air m1 13\" 256gb/16gb/7gpu space gray 2020 (z124000fk/z1240004p)": 49640,
+      "macbook air m1 13\" 256gb/16gb/7gpu silver 2020 (z127000fk)": 49980,
+      "macbook air m1 13\" 256gb/16gb/7gpu gold 2020 (z12a000fk)": 48280,
+      "macbook air m1 13\" 512gb/8gb/7gpu space gray 2020 (z124000f2)": 45220,
+      "macbook air m1 13\" 512gb/16gb/8gpu space gray 2020 (z125000dl)": 59500,
+      "macbook air m1 13\" 512gb/16gb/8gpu silver 2020 (z128000dl)": 54400,
+      "macbook air m1 13\" 512gb/16gb/8gpu gold (z12b000pv/z12b000dl)": 59500,
+      "macbook air m1 13\" 1tb/16gb/8gpu gold late 2020 (mgqp3/z12b000dm)": 65110,
+      "macbook air m1 13\" 1tb/16gb/8gpu space gray 2020 (mgqn3/z125000y5/z125000dm)": 65110,
+      "macbook air m2 13,6\" 256gb/8gb/8gpu space gray 2022 (mlxw3)": 56100,
+      "macbook air m2 13,6\" 256gb/8gb/8gpu silver 2022 (mlxy3)": 57800,
+      "macbook air m2 13,6\" 256gb/8gb/8gpu starlight 2022 (mly13)": 56100,
+      "macbook air m2 13,6\" 256gb/8gb/8gpu midnight 2022 (mly33)": 58820,
+      "macbook air m2 13,6\" 512gb/8gb/10gpu space gray 2022 (mlxx3)": 71400,
+      "macbook pro 13\" space gray late 2020 m1/256gb/16gb (z11b000e3/z11b0004t)": 58480,
+      "macbook pro 13\" silver late 2020 m1/256gb/16gb (z11d000g0)": 58480,
+      "macbook pro 13\" space gray late 2020 m1/1tb/16gb (mj123/z11c000gd/z11b000en)": 68680,
+      "macbook pro 13\" silver late 2020 m1/1tb/16gb (z11f000s7/z11d000gk/z11f000em)": 68680,
+      "macbook pro 13\" silver late 2020 m1/2tb/16gb (z11d000gl/z11f000en)": 78200,
+      "macbook pro 13\" space gray late 2020 m1/2tb/16gb (z11b000ep)": 78200,
+      "macbook pro 13\" m2 8-cpu/10-gpu/8gb/256gb space gray 2022 (mneh3)": 48960,
+      "macbook pro 13\" m2 8-cpu/10-gpu/8gb/256gb silver 2022 (mnep3)": 48960,
+      "macbook pro 13\" m2 8-cpu/10-gpu/8gb/512gb silver 2022 (mneq3)": 56100,
+      "macbook pro 13\" m2 8-cpu/10-gpu/8gb/512gb space gray 2022 (mnej3)": 55760,
+      "macbook pro 13\" m2 8-cpu/10-gpu/16gb/256gb silver 2022 (z16t000ab/z16t000r5)": 64600,
+      "macbook pro 13\" m2 8-cpu/10-gpu/16gb/256gb space gray 2022 (z16r0009v/mbpm2-05/z16r0005s)": 65620,
+      "macbook pro 13\" m2 8-cpu/10-gpu/16gb/512gb silver 2022 (z16t0006m)": 72080,
+      "macbook pro 13\" m2 8-cpu/10-gpu/16gb/512gb space gray 2022 (z16s0005d/mbpm2-06/z16r0005u)": 72080,
+      "macbook pro 13\" m2 8-cpu/10-gpu/16gb/1tb space gray 2022 (z16s000ns/z16s000nt)": 79900,
+      "macbook pro 14\" m1 pro 8cpu/14gpu/16gb/512gb space gray (mkgp3)": 73100,
+      "macbook pro 14\" m1 pro 8cpu/14gpu/16gb/512gb space gray (mkgp3ua/a)": 78200,
+      "macbook pro 14\" m1 pro 8cpu/14gpu/16gb/512gb silver (mkgr3)": 73100,
+      "macbook pro 14\" m1 pro 8cpu/14gpu/16gb/512gb silver (mkgr3ua/a)": 79900,
+      "macbook pro 14'' m1 pro 10cpu/16gpu/16gb/1tb space gray (mkgq3)": 79220,
+      "macbook pro 14'' m1 pro 10cpu/16gpu/16gb/1tb silver (mkgt3)": 78540,
+      "macbook pro 14\" m1 pro 8cpu/14gpu/16gb/1tb/space gray/96w usb-c power adapter (z15g0022j)": 79900,
+      "macbook pro 14\" m1 pro 8cpu/14gpu/16gb/2tb space gray 2021 (z15g0023s, z15g001vs)": 93500,
+      "macbook pro 14\" m1 pro 8cpu/14gpu/32gb/512gb space gray (z15g001wa/z15g0002b/z15g0021l)": 98260,
+      "macbook pro 14\" m1 pro 8cpu/14gpu/32gb/512gb space gray (z15g001wa) ll/a": 100300,
+      "macbook pro 14\" m1 pro 8cpu/14gpu/32gb/512gb silver (z15j001w9)": 102000,
+      "macbook pro 14\" m1 pro 8cpu/14gpu/32gb/1tb space gray (z15g001wy)": 112200,
+      "macbook pro 14\" m1 pro 8cpu/14gpu/32gb/2tb space gray 2021 (z15g00245/z15g001wz)": 125800,
+      "macbook pro 14'' m1 pro 10cpu/14gpu/16gb/1tb grey (z15g004el/z15g001wg )": 83300,
+      "macbook pro 14'' m1 pro 10cpu/14gpu/16gb/2tb grey (z15g001wh)": 109820,
+      "macbook pro 14\" m1 pro 10cpu/14gpu/32gb/512gb space gray (z15g001x2/z15g00272)": 106080,
+      "macbook pro 14\" m1 pro 10cpu/14gpu/32gb/1tb space gray (z15g001x3)": 119000,
+      "macbook pro 14\" m1 pro 10cpu/16gpu/16gb/512gb space gray (z15g0008g/z15g001wd)": 78200,
+      "macbook pro 14\" m1 pro 10cpu/16gpu/16gb/2tb space gray (z15g004en/z15g001wm )": 111180,
+      "macbook pro 14\" m1 pro 10cpu/16gpu/32gb/1tb silver (z15k00105)": 119340,
+      "macbook pro 14\" m1 pro 10cpu/16gpu/32gb/1tb space gray (z15g001x8/z15g0015m)": 119000,
+      "macbook pro 14\" m1 pro 10cpu/16gpu/32gb/2tb space gray (z15g001x9/z15h000mv)": 137700,
+      "macbook pro 14'' m1 max with 10cpu/24gpu/32gb/512gb space gray (z15g001we/z15g0008h)": 115600,
+      "macbook pro 14'' m1 max with 10cpu/24gpu/32gb/1tb space gray (z15g001wq /z15h00106)": 129880,
+      "macbook pro 14'' m1 max with 10cpu/24gpu/32gb/1tb space gray (z15g001wq /z15h00106) ll/a": 131920,
+      "macbook pro 14'' m1 max with 10cpu/24gpu/32gb/1tb silver (z15k00106)": 129880,
+      "macbook pro 14'' m1 max with 10cpu/24gpu/32gb/2tb silver (z15k0010c)": 142800,
+      "macbook pro 14'' m1 max with 10cpu/32gpu/32gb/512gb space gray (z15g001wf)": 132600,
+      "macbook pro 14” m1 max with 10cpu/32gpu/32gb/1tb space gray 2021 (z15h00107) ll/a": 129200,
+      "macbook pro 14” m1 max with 10cpu/32gpu/32gb/2tb grey 2021 (z15h0010d)": 143820,
+      "macbook pro 14” m1 max with 10cpu/32gpu/32gb/2tb silver 2021 (z15k0010k)": 147560,
+      "macbook pro 14” m1 max with 10cpu/32gpu/64gb/1tb grey 2021 (z15h00109)": 148920,
+      "macbook pro 14” m1 max with 10cpu/32gpu/64gb/1tb grey 2021 (z15h00109) ll/a": 149600,
+      "macbook pro 14” m1 max with 10cpu/32gpu/64gb/2tb silver 2021 (mmqx3/ z15k0010l)": 171700,
+      "macbook pro 14” m1 max with 10cpu/32gpu/64gb/2tb grey 2021 (z15g0003j/mkh53/z15h0010e)": 162180,
+      "macbook pro 14” m1 max with 10cpu/32gpu/64gb/4tb grey 2021 (z15h0010k/ z15g001xl)": 193800,
+      "macbook pro 16” m1 pro 512gb/16gb space gray (mk183)": 83980,
+      "macbook pro 16” m1 pro 512gb/16gb space gray (mk183) ua": 85680,
+      "macbook pro 16” m1 pro 512gb/16gb silver (mk1e3)": 84320,
+      "macbook pro 16” m1 pro 512gb/16gb silver (mk1e3) ua": 86700,
+      "macbook pro 16” m1 pro 1tb/16gb silver (mk1f3)": 91120,
+      "macbook pro 16” m1 pro 1tb/16gb space gray (mk193)": 91120,
+      "macbook pro 16\" м1 pro 10cpu/16gpu/32gb/512gb space gray (z14v0016e/z14v000ra)": 117300,
+      "macbook pro 16\" м1 pro 10cpu/16gpu/32gb/512gb space gray (z14v0016e/z14v000ra) ll/a": 119000,
+      "macbook pro 16\" м1 pro 10cpu/16gpu/32gb/512gb silver (z14y0001k/z14y0016c)": 119000,
+      "macbook pro 16\" м1 pro 10cpu/16gpu/32gb/1tb space gray (z14w00105/z14v0016h)": 134640,
+      "macbook pro 16\" м1 pro 10cpu/16gpu/32gb/1tb silver (z14z00105) ll/a": 137700,
+      "macbook pro 16\" м1 pro 10cpu/16gpu/32gb/2tb space gray (z14w00108) ll/a": 140420,
+      "macbook pro 16\" м1 pro 10cpu/16gpu/32gb/2tb silver (z14y0026q/z14z00108)": 153000,
+      "macbook pro 16\" m1 max 10cpu/32gpu/1tb/32gb space gray (mk1a3)": 142800,
+      "macbook pro 16\" m1 max 10cpu/32gpu/1tb/32gb space gray (mk1a3ll/a)": 146200,
+      "macbook pro 16\" m1 max 10cpu/32gpu/1tb/32gb silver (mk1h3)": 141100,
+      "macbook pro 16\" m1 max 10cpu/24gpu/512gb/32gb space gray (z14v0016f)": 137700,
+      "macbook pro 16\" m1 max 10cpu/24gpu/1tb/32gb space gray (z14w00106/z14v0001s)": 139400,
+      "macbook pro 16\" m1 max 10cpu/24gpu/1tb/32gb silver (z14z00106)": 146200,
+      "macbook pro 16\" m1 max 10cpu/24gpu/2tb/32gb space gray (z14w0010c)": 168640,
+      "macbook pro 16\" m1 max 10cpu/24gpu/1tb/64gb space gray (z14w0010b)": 163200,
+      "macbook pro 16\" m1 max 10cpu/24gpu/2tb/64gb space gray (z14w0010d)": 175100,
+      "macbook pro 16\" m1 max 10cpu/32gpu/2tb/32gb space gray (z14x000h6)": 170000,
+      "macbook pro 16\" m1 max 10cpu/32gpu/4tb/32gb space gray (z14x000h7/ z14v0008x)": 200600,
+      "macbook pro 16\" m1 max 10cpu/32gpu/4tb/32gb silver (z150000h6/z14y0008w)": 205360,
+      "macbook pro 16\" m1 max 10cpu/32gpu/1tb/64gb space gray (z14v001xn / z14x000gd )": 173400,
+      "macbook pro 16\" m1 max 10cpu/32gpu/1tb/64gb silver (z14y001jd/z150000hp )": 179860,
+      "macbook pro 16'' m1 max 10cpu/32gpu/2tb/64gb space gray (z14x000hq)": 181900,
+      "macbook pro 16'' m1 max 10cpu/32gpu/2tb/64gb silver (z150000hq)": 191080,
+      "macbook pro 16'' m1 max 10cpu/32gpu/4tb/64gb space gray (mk233/z14x000hr)": 207060,
+      "ipad 10.2 4g 32gb silver (mw6x2/mw6c2)": 16150,
+      "ipad 10.2 4g 32gb gold (mw6y2/mw6d2)": 16320,
+      "ipad 10.2 4g 128gb space grey (mw702/mw6e2)": 20400,
+      "ipad 10.2 2020 wi-fi 32gb gold (mylc2)": 13600,
+      "ipad 10.2 2020 wi-fi 32gb silver (myla2)": 13600,
+      "ipad 10.2 2020 wi-fi 32gb space gray (myl92)": 12580,
+      "ipad 10.2 2020 wi-fi 128gb gold (mylf2)": 17340,
+      "ipad 10.2 2020 wi-fi 128gb silver (myle2)": 16320,
+      "ipad 10.2 2020 wi-fi 128gb space gray (myld2)": 16660,
+      "ipad 10.2 2020 4g 32gb silver (myn52/mymj2)": 17170,
+      "ipad 10.2 2020 4g 32gb gold (myn62/mymk2)": 16660,
+      "ipad 10.2 2020 4g 32gb space gray (myn32/mymh2)": 17000,
+      "ipad 10.2 2020 4g 128gb space gray (myml2/myn72) open": 20910,
+      "ipad 10.2 2020 4g 128gb space gray (myml2/myn72)": 21420,
+      "ipad 2021 10.2\" wi-fi 64gb silver (mk2l3)": 12750,
+      "ipad 2021 10.2\" wi-fi 64gb space gray (mk2k3)": 12750,
+      "ipad 2021 10.2\" wi-fi 256gb space gray (mk2n3)": 16320,
+      "ipad 2021 10.2\" wi-fi 256gb silver (mk2p3)": 16320,
+      "ipad 2021 10.2\" wi-fi + cellular 64gb space gray (mk663/mk473)": 19380,
+      "ipad 2021 10.2\" wi-fi + cellular 64gb silver (mk673/mk493)": 19210,
+      "ipad 2021 10.2\" wi-fi + cellular 256gb space gray (mk693/mk4e3)": 23460,
+      "ipad 2021 10.2\" wi-fi + cellular 256gb silver (mk6a3/mk4h3)": 23800,
+      "ipad mini 5 wi-fi 64gb gold (muqy2)": 14620,
+      "ipad mini 5 wi-fi 64gb silver (muqx2)": 14790,
+      "ipad mini 5 wi-fi 64gb space gray (muqw2)": 15130,
+      "ipad mini 5 4g 64gb gold (muxh2/mux72)": 22440,
+      "ipad mini 5 4g 64gb space gray (muxf2/mux52)": 21080,
+      "ipad mini 5 wi-fi 256gb space gray (muu32)": 20060,
+      "ipad mini 5 wi-fi 256gb gold (muu62)": 20060,
+      "ipad mini 5 4g 256gb gold (muxe2/muxp2/muya2)": 24480,
+      "ipad mini 5 4g 256gb space gray (muxm2/muxc2)": 26520,
+      "ipad mini 6 wi-fi 64gb starlight (mk7p3)": 17340,
+      "ipad mini 6 wi-fi 64gb space gray (mk7m3)": 17340,
+      "ipad mini 6 wi-fi 64gb purple (mk7r3)": 17340,
+      "ipad mini 6 wi-fi 64gb pink (mlwl3)": 17510,
+      "ipad mini 6 wi-fi + cellular 64gb space gray (mk893)": 23630,
+      "ipad mini 6 wi-fi + cellular 64gb starlight (mk8c3)": 23800,
+      "ipad mini 6 wi-fi + cellular 64gb pink (mlx43)": 24480,
+      "ipad mini 6 wi-fi + cellular 64gb purple (mk8e3)": 24310,
+      "ipad mini 6 wi-fi 256gb space gray (mk7t3)": 23800,
+      "ipad mini 6 wi-fi 256gb starlight (mk7v3)": 24820,
+      "ipad mini 6 wi-fi 256gb pink (mlwr3)": 24820,
+      "ipad mini 6 wi-fi 256gb purple (mk7x3)": 24820,
+      "ipad mini 6 wi-fi + cellular 256gb space gray (mk8f3)": 35020,
+      "ipad mini 6 wi-fi + cellular 256gb starlight (mk8h3)": 30600,
+      "ipad mini 6 wi-fi + cellular 256gb purple (mk8k3)": 34000,
+      "ipad mini 6 wi-fi + cellular 256gb pink (mlx93)": 30600,
+      "ipad air 2019 4g 64gb space (mv152/mv0d2)": 22440,
+      "ipad air 2019 4g 256gb space gray (mv1d2/mv0n2)": 29070,
+      "ipad air 2020 wi-fi 64gb space gray (myfm2)": 19720,
+      "ipad air 2020 wi-fi 64gb silver (myfn2)": 19720,
+      "ipad air 2020 wi-fi 64gb sky blue (myfq2)": 20400,
+      "ipad air 2020 wi-fi 64gb green (myfr2)": 20400,
+      "ipad air 2020 wi-fi 64gb rose gold (myfp2)": 20400,
+      "ipad air 2020 wi-fi 256gb space gray (myft2)": 28900,
+      "ipad air 2020 wi-fi 256gb rose gold (myfx2)": 27710,
+      "ipad air 2020 wi-fi 256gb sky blue (myfy2)": 29240,
+      "ipad air 2020 4g 64gb rose gold (myj02/mygy2)": 25330,
+      "ipad air 2020 4g 64gb space gray (myhx2/mygw2)": 24480,
+      "ipad air 2020 4g 64gb sky blue (myj12/myh02)": 24480,
+      "ipad air 2020 4g 64gb silver (myhy2/mygx2)": 24650,
+      "ipad air 2020 4g 64gb green (myj22/myh12)": 25500,
+      "ipad air 2020 4g 256gb sky blue (myj62/myh62)": 34680,
+      "ipad air 2020 4g 256gb silver (myj42/myh42)": 35530,
+      "ipad air 2020 4g 256gb rose gold (myj52/myh52)": 35700,
+      "ipad air 2020 4g 256gb space gray (myj32/myh22)": 34850,
+      "ipad air 2020 4g 256gb green (myj72/myh72)": 34680,
+      "ipad air 2022 wi-fi 64gb starlight (mm9f3)": 21930,
+      "ipad air 2022 wi-fi 64gb blue (mm9e3)": 21930,
+      "ipad air 2022 wi-fi 64gb purple (mme23)": 21930,
+      "ipad air 2022 wi-fi 64gb space gray (mm9c3)": 21930,
+      "ipad air 2022 wi-fi 64gb pink (mm9d3)": 22780,
+      "ipad air 2022 wi-fi + cellular 64gb space gray (mm6r3/mm753)": 27540,
+      "ipad air 2022 wi-fi + cellular 64gb blue (mm6u3/mm773)": 27540,
+      "ipad air 2022 wi-fi + cellular 64gb starlight (mm6v3)": 28900,
+      "ipad air 2022 wi-fi + cellular 64gb purple (mme93)": 27540,
+      "ipad air 2022 wi-fi + cellular 64gb pink (mm6t3)": 28390,
+      "ipad air 2022 wi-fi 256gb space gray (mm9l3)": 29240,
+      "ipad air 2022 wi-fi 256gb pink (mm9m3)": 30260,
+      "ipad air 2022 wi-fi 256gb purple (mme63)": 30260,
+      "ipad air 2022 wi-fi 256gb blue (mm9n3)": 28900,
+      "ipad air 2022 wi-fi 256gb starlight (mm9p3)": 29410,
+      "ipad air 2022 wi-fi + cellular 256gb space gray (mm713/mm7e3)": 35190,
+      "ipad air 2022 wi-fi + cellular 256gb blue (mm733/mm7g3)": 34510,
+      "ipad air 2022 wi-fi + cellular 256gb starlight (mm743/mm7h3)": 35020,
+      "ipad air 2022 wi-fi + cellular 256gb purple (mmed3)": 35700,
+      "ipad air 2022 wi-fi + cellular 256gb pink (mm723, mm7f3)": 35700,
+      "ipad pro 10.5 wi-fi 64gb space grey (mqdt2)": 19210,
+      "ipad pro 10.5 wi-fi 64gb silver (mqdw2)": 19210,
+      "ipad pro 10.5 4g 64gb gold (mqf12/mqf52)": 18700,
+      "ipad pro 10.5 4g 64gb silver (mqf02/mqf42)": 19720,
+      "ipad pro 10.5 4g 64gb space gray (mqey2/mqf32)": 19720,
+      "ipad pro 10.5 4g 64gb rose gold (mqf22)": 18700,
+      "ipad pro 10.5 4g 256gb space gray (mphg2)": 23120,
+      "ipad pro 10.5 4g 256gb gold (mphj2)": 23120,
+      "ipad pro 11 2018 4g 64gb silver (mu0u2/mu0y2)": 27880,
+      "ipad pro 11 2018 4g 512gb silver (mu1m2/mu1u2)": 36380,
+      "ipad pro 11 2018 4g 512gb space gray (mu1f2/mu1k2)": 36380,
+      "ipad pro 11 2018 4g 512gb space gray (fu1k2) cpo": 33150,
+      "ipad pro 11 2018 wi-fi 1tb space gray (mtxv2)": 34000,
+      "ipad pro 11 2018 4g 1tb silver (mu222/mu282)": 38760,
+      "ipad pro 11 2020 4g 128gb silver (my342/my2w2)": 35700,
+      "ipad pro 11 2020 4g 256gb silver (mxex2/mxe52)": 38080,
+      "ipad pro 11 2020 wi-fi 256gb space gray (mxdc2)": 29240,
+      "ipad pro 11 2020 wi-fi 512gb silver (mxdf2)": 37060,
+      "ipad pro 11 2020 wi-fi 512gb space gray (mxde2)": 35700,
+      "ipad pro 11 2020 4g 512gb space gray (mxey2/mxe62)": 39780,
+      "ipad pro 11 2020 4g 512gb silver (mxf02/mxe72)": 39780,
+      "ipad pro 11 2020 wi-fi 1tb space gray (mxdg2)": 39440,
+      "ipad pro 11 2020 wi-fi 1tb silver (mxdh2)": 39100,
+      "ipad pro 11 2020 4g 1tb silver (mxf22/mxe92)": 42160,
+      "ipad pro 11 2020 4g 1tb space gray (mxf12/mxe82)": 41480,
+      "ipad pro 2021 11\" wi-fi 128gb silver (mhqt3)": 28390,
+      "ipad pro 2021 11\" wi-fi 128gb space gray (mhqr3)": 28390,
+      "ipad pro 2021 11\" wi-fi + cellular 128gb silver (mhw63/mhmu3)": 36720,
+      "ipad pro 2021 11\" wi-fi + cellular 128gb space gray (mhw53/mhmt3)": 36040,
+      "ipad pro 2021 11\" wi-fi 256gb silver (mhqv3)": 31790,
+      "ipad pro 2021 11\" wi-fi 256gb space gray (mhqu3)": 31790,
+      "ipad pro 2021 11\" wi-fi + cellular 256gb silver (mhw83/mhmw3)": 41140,
+      "ipad pro 2021 11\" wi-fi + cellular 256gb space gray (mhw73/mhmv3)": 40800,
+      "ipad pro 2021 11\" wi-fi 512gb space gray (mhqw3)": 37740,
+      "ipad pro 2021 11\" wi-fi 512gb silver (mhqx3)": 38420,
+      "ipad pro 2021 11\" wi-fi + cellular 512gb silver (mhmy3/mhwa3)": 51680,
+      "ipad pro 2021 11\" wi-fi + cellular 512gb space gray (mhw93/mhmx3)": 51000,
+      "ipad pro 2021 11\" wi-fi 1tb space gray (mhqy3)": 46920,
+      "ipad pro 2021 11\" wi-fi 1tb silver (mhr03)": 48960,
+      "ipad pro 2021 11\" wi-fi + cellular 1tb space gray (mhwc3/mhn03)": 55080,
+      "ipad pro 2021 11\" wi-fi + cellular 1tb silver (mhwd3/mhn13)": 55420,
+      "ipad pro 2021 11\" wi-fi 2tb space gray (mhr23)": 48960,
+      "ipad pro 2021 11\" wi-fi 2tb silver (mhr33)": 48280,
+      "ipad pro 2021 11\" wi-fi + cellular 2tb space gray (mhwe3/mhn23)": 58480,
+      "ipad pro 2021 11\" wi-fi + cellular 2tb silver (mhn33/mhwf3)": 58480,
+      "ipad pro 12.9 2018 4g 256gb silver (mtj62/mtja2/mtj82)": 35700,
+      "ipad pro 12.9 2018 4g 1tb space gray 2018 (mtjp2/mtju2)": 38250,
+      "ipad pro 12.9 2020 wi-fi 128gb space gray (my2h2)": 34680,
+      "ipad pro 12.9 2020 wi-fi 128gb silver (my2j2)": 34680,
+      "ipad pro 12.9 2020 4g 128gb silver (my3k2/my3d2)": 36380,
+      "ipad pro 12.9 2020 4g 128gb space gray (my3j2/my3c2)": 36380,
+      "ipad pro 12.9 2020 wi-fi 256gb silver (mxau2)": 37060,
+      "ipad pro 12.9 2020 wi-fi 256gb space gray (mxat2)": 37400,
+      "ipad pro 12.9 2020 4g 256gb space gray (mxfx2/mxf52)": 40120,
+      "ipad pro 12.9 2020 4g 512gb space gray (mxg02/mxf72)": 42840,
+      "ipad pro 12.9 2020 wi-fi 1tb space gray (mxax2)": 42840,
+      "ipad pro 12.9 2020 wi-fi 1tb silver (mxay2)": 44200,
+      "ipad pro 12.9 2020 4g 1tb silver (mxg32/mxfa2)": 44540,
+      "ipad pro 12.9 2020 4g 1tb space gray (mxg22/mxf92)": 44880,
+      "ipad pro 2021 12.9\" wi-fi 128gb silver (mhng3)": 38590,
+      "ipad pro 2021 12.9\" wi-fi 128gb space gray (mhnf3)": 37740,
+      "ipad pro 2021 12.9\" wi-fi + cellular 128gb space gray (mhnr3/mhr43)": 39100,
+      "ipad pro 2021 12.9\" wi-fi + cellular 128gb silver (mhr53/mhnt3)": 39100,
+      "ipad pro 2021 12.9\" wi-fi 256gb space gray (mhnh3)": 41820,
+      "ipad pro 2021 12.9\" wi-fi 256gb silver (mhnj3)": 41820,
+      "ipad pro 2021 12.9\" wi-fi + cellular 256gb silver (mhr73/mhnx3)": 44880,
+      "ipad pro 2021 12.9\" wi-fi + cellular 256gb space gray (mhr63/mhnw3)": 44540,
+      "ipad pro 2021 12.9\" wi-fi 512gb silver (mhnl3)": 48280,
+      "ipad pro 2021 12.9\" wi-fi 512gb space gray (mhnk3)": 48280,
+      "ipad pro 2021 12.9\" wi-fi + cellular 512gb space gray (mhny3/mhr83)": 53720,
+      "ipad pro 2021 12.9\" wi-fi + cellular 512gb silver (mhp03/mhr93)": 53720,
+      "ipad pro 2021 12.9\" wi-fi 1tb space gray (mhnm3)": 54400,
+      "ipad pro 2021 12.9\" wi-fi 1tb silver (mhnn3)": 54740,
+      "ipad pro 2021 12.9\" wi-fi + cellular 1tb space gray (mhra3/mhp13)": 58820,
+      "ipad pro 2021 12.9\" wi-fi + cellular 1tb silver (mhp23/mhrc3)": 58480,
+      "ipad pro 2021 12.9\" wi-fi 2tb silver (mhnq3)": 56440,
+      "ipad pro 2021 12.9\" wi-fi 2tb space gray (mhnp3)": 56780,
+      "ipad pro 2021 12.9\" wi-fi + cellular 2tb space gray (mhp43/mhrd3)": 64600,
+      "ipad pro 2021 12.9\" wi-fi + cellular 2tb silver (mhp53/mhre3)": 68000,
+      "iphone se 32gb space grey (mp822)": 9520,
+      "iphone se 32gb rose gold (mp852)": 10030,
+      "iphone se 128gb rose gold (mp892)": 11050,
+      "iphone 7 128gb rose gold (mn952)": 12240,
+      "iphone 7 128gb gold (mn942)": 12580,
+      "iphone 7 plus 128gb black (mn4m2)": 17340,
+      "iphone 7 plus 128gb jet black (mn4v2)": 18700,
+      "iphone 7 plus 128gb product red (mpqw2)": 18190,
+      "iphone 7 plus 256gb silver (mn4x2)": 19720,
+      "iphone 8 128gb gold (mx182)": 15810,
+      "iphone 8 256gb silver (mq7g2)": 16660,
+      "iphone 8 256gb space gray (mq7f2)": 16150,
+      "iphone 8 plus 64gb gold (mq8n2)": 20230,
+      "iphone 8 plus 128gb space grey (mx242)": 22440,
+      "iphone 8 plus 128gb gold (mx262)": 21420,
+      "iphone 8 plus 256gb silver (mq8h2)": 23460,
+      "iphone 8 plus 256gb space gray (mq8g2/mq8p2)": 23120,
+      "iphone xr 64gb black (mry42)": 17850,
+      "iphone xr 64gb slim box black (mh6m3)": 16320,
+      "iphone xr 64gb slim box white (mh6n3)": 16320,
+      "iphone xr 64gb yellow (mry72)": 16150,
+      "iphone xr 64gb slim box blue (mh6t3)": 16150,
+      "iphone xr 64gb slim box red (mh6p3)": 15980,
+      "iphone xr 64gb product red (mry62)": 17850,
+      "iphone xr 64gb slim box coral (mh6r3)": 17680,
+      "iphone xr 64gb coral (mry82/mryw2)": 15980,
+      "iphone xr 128gb slim box black (mh7l3)": 19890,
+      "iphone xr 128gb black (mry92)": 19890,
+      "iphone xr 128gb slim box yellow (mh7p3)": 17850,
+      "iphone xr 128gb yellow (mryf2)": 20400,
+      "iphone xr 128gb slim box blue (mh7r3)": 17850,
+      "iphone xr 128gb white (mryd2)": 20400,
+      "iphone xr 128gb slim box coral (mh7q3)": 17850,
+      "iphone xr 128gb coral (mryg2)": 17850,
+      "iphone xr 128gb slim box red (mh7n3)": 17170,
+      "iphone xr 128gb product red (mrye2)": 17850,
+      "iphone xr dual sim 128gb white (mt1a2)": 20400,
+      "iphone xr dual sim 128gb coral (mt1f2)": 19380,
+      "iphone xr 256gb blue (mryq2)": 19720,
+      "iphone xr 256gb yellow (mryn2)": 19720,
+      "iphone xr 256gb product red (mrym2)": 19720,
+      "iphone xr 256gb white (mryl2)": 23800,
+      "iphone x 64gb space gray (mqac2)": 18360,
+      "iphone x 256gb silver (mqag2)": 24140,
+      "iphone x 256gb space gray (mqaf2/mqa82)": 24140,
+      "iphone xs 64gb gold (mt9g2)": 21760,
+      "iphone xs 256gb space gray (mt9h2)": 26520,
+      "iphone xs 256gb gold (mt9k2)": 22100,
+      "iphone xs 512gb silver (mt9m2)": 26860,
+      "iphone xs max 64gb silver (mt512)": 20740,
+      "iphone xs max 64gb gold (mt522)": 21080,
+      "iphone xs max 64gb space gray (mt502)": 20910,
+      "iphone xs max 256gb space gray (mt682)": 27710,
+      "iphone xs max 512gb space gray (mt622)": 29240,
+      "iphone xs max 512gb gold (mt582)": 29070,
+      "iphone xs max 512gb silver (mt632)": 29070,
+      "iphone se 2020 64gb slim box black (mhgp3)": 12240,
+      "iphone se 2020 64gb black (mx9r2/mx9n2)": 14450,
+      "iphone se 2020 64gb slim box white (mhgq3)": 12240,
+      "iphone se 2020 64gb white (mx9t2/mx9p2)": 14110,
+      "iphone se 2020 64gb product red (mx9u2/mx9q2)": 14280,
+      "iphone se 2020 64gb slim box red (mhgr3)": 12240,
+      "iphone se 2020 128gb slim box red (mhgv3)": 13430,
+      "iphone se 2020 128gb product red (mxd22/mxcy2)": 15640,
+      "iphone se 2020 128gb slim box black (mhgh3/mhgt3)": 14450,
+      "iphone se 2020 128gb black (mxd02)": 15300,
+      "iphone se 2020 128gb slim box white (mxd12/mxcx2)": 13430,
+      "iphone se 2020 128gb white (mxd12)": 15300,
+      "iphone se 2020 256gb slim box red (mhgy3)": 16660,
+      "iphone se 2020 256gb product red (mxvv2/mxvr2)": 17680,
+      "iphone se 2020 256gb slim box white (mhgx3)": 16660,
+      "iphone se 2020 256gb white (mxvu2/mxvq2)": 17680,
+      "iphone se 2020 256gb slim box black (mhgw3)": 16660,
+      "iphone se 2020 256gb black (mxvt2/mxvp2)": 17680,
+      "iphone se 2022 64gb midnight (mmx53)": 14620,
+      "iphone se 2022 64gb starlight (mmx63)": 14110,
+      "iphone se 2022 64gb product red (mmx73)": 14110,
+      "iphone se 2022 128gb product red (mmxa3)": 15640,
+      "iphone se 2022 128gb starlight (mmx93)": 15640,
+      "iphone se 2022 128gb midnight (mmx83)": 17000,
+      "iphone se 2022 256gb product red (mmxe3)": 20060,
+      "iphone se 2022 256gb starlight (mmxd3)": 20060,
+      "iphone se 2022 256gb midnight (mmxc3)": 20400,
+      "iphone 11 64gb slim box black (mhda3)": 17680,
+      "iphone 11 64gb black (mwlt2)": 20740,
+      "iphone 11 64gb mind (mwld2)": 20400,
+      "iphone 11 64gb slim box mind (mhdg3)": 18190,
+      "iphone 11 64gb slim box purple (mhdf3)": 17680,
+      "iphone 11 64gb purple (mwlc2/mwlx2)": 21760,
+      "iphone 11 64gb product red (mhdd3gh/a)": 21080,
+      "iphone 11 64gb slim box red (mhdd3)": 17510,
+      "iphone 11 64gb white (mwl82)": 21080,
+      "iphone 11 64gb slim box white (mhdc3)": 17680,
+      "iphone 11 64gb slim box yellow (mhde3)": 17000,
+      "iphone 11 64gb yellow (mwla2)": 17000,
+      "iphone 11 128gb slim box black (mhdh3)": 20400,
+      "iphone 11 128gb black (mwle2/mwm02/mwj02)": 20740,
+      "iphone 11 128gb slim box white (mhdj3)": 20570,
+      "iphone 11 128gb white (mwlf2)": 23120,
+      "iphone 11 128gb slim box yellow (mhdl3)": 20400,
+      "iphone 11 128gb yellow (mwlh2)": 20400,
+      "iphone 11 128gb slim box green (mhdn3)": 20230,
+      "iphone 11 128gb mind (mwlk2)": 20400,
+      "iphone 11 128gb slim box red (mhdk3)": 20570,
+      "iphone 11 128gb product red (mwlg2)": 22440,
+      "iphone 11 128gb purple (mhdm3cn/a)": 20400,
+      "iphone 11 128gb slim box purple (mhdm3)": 20230,
+      "iphone 11 256gb slim box black (mhdp3)": 23460,
+      "iphone 11 256gb black (mwll2/mwl12)": 28220,
+      "iphone 11 256gb slim box green (mhdv3)": 26520,
+      "iphone 11 256gb mind (mwlr2)": 27200,
+      "iphone 11 256gb slim box product red (mhdr3)": 23970,
+      "iphone 11 256gb product red (mwln2)": 27200,
+      "iphone 11 256gb slim box yellow (mhdt3)": 25500,
+      "iphone 11 256gb yellow (mwlp2)": 27200,
+      "iphone 11 256gb slim box purple (mhdu3)": 26520,
+      "iphone 11 256gb purple (mwlq2)": 26690,
+      "iphone 11 256gb slim box white (mhdq3)": 23460,
+      "iphone 11 256gb white (mwlm2)": 28220,
+      "iphone 11 128gb dual sim slim box white (mhew3)": 23120,
+      "iphone 11 pro 64gb space grey cpo": 23800,
+      "iphone 11 pro 64gb silver cpo": 23800,
+      "iphone 11 pro 256gb midnight green cpo": 29410,
+      "iphone 11 pro 256gb gold cpo": 27370,
+      "iphone 11 pro 256gb space gray cpo": 27370,
+      "iphone 11 pro 256gb silver cpo": 29410,
+      "iphone 11 pro max 64gb space grey cpo": 27030,
+      "iphone 11 pro max 64gb silver cpo": 27030,
+      "iphone 11 pro max 64gb gold cpo": 27030,
+      "iphone 11 pro max 256gb midnight green cpo": 32640,
+      "iphone 11 pro max 256gb space gray cpo": 30430,
+      "iphone 11 pro max 256gb gold cpo": 30430,
+      "iphone 11 pro 64gb midnight green (mwc62/mwcl2)": 29580,
+      "iphone 11 pro 64gb space gray (mwc22/mwch2)": 28900,
+      "iphone 11 pro 64gb gold (mwc52/mwck2)": 30600,
+      "iphone 11 pro 64gb dual sim space gray (mwd92)": 31110,
+      "iphone 11 pro 64gb dual sim midnight green (mwdd2)": 31110,
+      "iphone 11 pro 64gb dual sim silver (mwda2)": 31110,
+      "iphone 11 pro 256gb space gray (mwcm2)": 32640,
+      "iphone 11 pro 256gb midnight green (mwcq2)": 32640,
+      "iphone 11 pro 256gb silver (mwcn2)": 33320,
+      "iphone 11 pro 256gb gold (mwcp2/mwcp2/mwc92)": 33320,
+      "iphone 11 pro 256gb dual sim silver (mwdf2)": 33320,
+      "iphone 11 pro 256gb dual sim space gray (mwde2) open": 31960,
+      "iphone 11 pro 512gb midnight green (mwcv2)": 34340,
+      "iphone 11 pro 512gb gold (mwcu2)": 33660,
+      "iphone 11 pro 512gb silver (mwct2)": 34340,
+      "iphone 11 pro 512gb space gray (mwcd2)": 34340,
+      "iphone 11 pro 512gb dual sim midnight green (mwdm2)": 39100,
+      "iphone 11 pro max 64gb gold (mwh12)": 28220,
+      "iphone 11 pro max 64gb space gray (mwgy2/mwhd2)": 28220,
+      "iphone 11 pro max 64gb midnight green (mwh22)": 28900,
+      "iphone 11 pro max 64gb silver (mwh02)": 28220,
+      "iphone 11 pro max 256gb space gray (mwh42)": 35020,
+      "iphone 11 pro max 256gb gold (mwh62)": 35020,
+      "iphone 11 pro max 256gb midnight green (mwh72)": 35020,
+      "iphone 11 pro max 256gb dual sim space gray (mwf12)": 35700,
+      "iphone 11 pro max 512gb midnight green (mwhc2)": 39780,
+      "iphone 11 pro max 512gb space gray (mwh82/mwhn2)": 39780,
+      "iphone 12 mini 64gb black (mgdx3)": 20400,
+      "iphone 12 mini 64gb blue (mge13)": 19720,
+      "iphone 12 mini 64gb white (mgdy3)": 19720,
+      "iphone 12 mini 64gb mind (mge23)": 19720,
+      "iphone 12 mini 64gb product red (mge03)": 18870,
+      "iphone 12 mini 64gb purple (mjqf3)": 19720,
+      "iphone 12 mini 128gb white (mge43)": 23120,
+      "iphone 12 mini 128gb mind (mge73)": 24140,
+      "iphone 12 mini 128gb blue (mge63)": 23460,
+      "iphone 12 mini 128gb black (mge33)": 23800,
+      "iphone 12 mini 128gb product red (mge53)": 22270,
+      "iphone 12 mini 128gb purple (mjqg3)": 23800,
+      "iphone 12 mini 256gb blue (mged3)": 26520,
+      "iphone 12 mini 256gb black (mge93)": 26180,
+      "iphone 12 mini 256gb product red (mgec3)": 26010,
+      "iphone 12 mini 256gb mind (mgee3)": 25330,
+      "iphone 12 mini 256gb purple (mjqh3)": 26180,
+      "iphone 12 mini 256gb white (mgea3)": 25160,
+      "iphone 12 64gb black (mgj53/mgh63)": 21250,
+      "iphone 12 64gb purple (mjnm3)": 21760,
+      "iphone 12 64gb white (mgj63/mgh73)": 21250,
+      "iphone 12 64gb mind (mgj93/mgha3)": 23460,
+      "iphone 12 64gb product red (mgj73/mgh83)": 21420,
+      "iphone 12 64gb blue (mgj83/mgh93)": 22780,
+      "iphone 12 128gb white (mgjc3/mghd3)": 25160,
+      "iphone 12 128gb black (mgja3/mghc3)": 25160,
+      "iphone 12 128gb mind (mgjf3/mghg3)": 25160,
+      "iphone 12 128gb blue (mgje3/mghf3)": 25160,
+      "iphone 12 128gb product red (mgjd3/mghe3)": 25330,
+      "iphone 12 128gb purple (mjnp3)": 25500,
+      "iphone 12 256gb purple (mjnq3)": 30600,
+      "iphone 12 256gb black (mgjg3/mghh3)": 30600,
+      "iphone 12 256gb mind (mgjl3/mghm3)": 29240,
+      "iphone 12 256gb blue (mgjk3/mghl3)": 28560,
+      "iphone 12 256gb product red (mgjj3/mghk3)": 28050,
+      "iphone 12 256gb white (mgjh3/mghj3)": 30600,
+      "iphone 12 pro 128gb graphite (mgmk3/mgln3)": 34000,
+      "iphone 12 pro 128gb pacific blue (mgmn3/mglr3)": 34170,
+      "iphone 12 pro 128gb silver (mgml3/mglp3)": 33830,
+      "iphone 12 pro 128gb gold (mgmm3/mglq3)": 33660,
+      "iphone 12 pro 256gb graphite (mgmp3/mglt3)": 34000,
+      "iphone 12 pro 256gb pacific blue (mgmt3/mglw3)": 34170,
+      "iphone 12 pro 256gb gold (mgmr3/mglv3)": 34170,
+      "iphone 12 pro 256gb silver (mgmq3/mglu3)": 34170,
+      "iphone 12 pro 512gb pacific blue (mgmx3/mgm43)": 34680,
+      "iphone 12 pro 512gb graphite (mgmu3/mglx3)": 34680,
+      "iphone 12 pro 512gb gold (mgmw3/mgm23)": 34680,
+      "iphone 12 pro 512gb silver (mgmv3/mgly3)": 34680,
+      "iphone 12 pro max 128gb graphite (mgd73)": 37060,
+      "iphone 12 pro max 128gb pacific blue (mgda3)": 34850,
+      "iphone 12 pro max 128gb silver (mgd83)": 37740,
+      "iphone 12 pro max 128gb gold (mgd93)": 37230,
+      "iphone 12 pro max 256gb gold (mgde3)": 39100,
+      "iphone 12 pro max 256gb pacific blue (mgdf3)": 39100,
+      "iphone 12 pro max 256gb silver (mgdd3)": 40460,
+      "iphone 12 pro max 256gb graphite (mgdc3)": 39440,
+      "iphone 12 pro max 512gb silver (mgdh3)": 39440,
+      "iphone 12 pro max 512gb graphite (mgdg3)": 38760,
+      "iphone 12 pro max 512gb pacific blue (mgdl3)": 40800,
+      "iphone 12 pro max 512gb gold (mgdk3)": 39440,
+      "iphone 12 pro max dual sim 128gb graphite (mgc03)": 44540,
+      "iphone 12 pro max dual sim 128gb silver (mgc13)": 43860,
+      "iphone 12 pro max dual sim 128gb gold (mgc23)": 44540,
+      "iphone 12 pro max dual sim 256gb silver (mgc53)": 46240,
+      "iphone 12 pro max dual sim 512gb silver (mgca3)": 47940,
+      "iphone 13 mini 128gb blue (mlk43)": 24650,
+      "iphone 13 mini 128gb pink (mlk23)": 24650,
+      "iphone 13 mini 128gb green (mnf83)": 25840,
+      "iphone 13 mini 128gb product red (mlk33)": 25840,
+      "iphone 13 mini 128gb starlight (mlk13)": 24650,
+      "iphone 13 mini 128gb midnight (mlk03)": 25840,
+      "iphone 13 mini 256gb blue (mlk93)": 27880,
+      "iphone 13 mini 256gb midnight (mlk53)": 30260,
+      "iphone 13 mini 256gb green (mnf93)": 32300,
+      "iphone 13 mini 256gb pink (mlk73)": 28560,
+      "iphone 13 mini 256gb product red (mlk83)": 27880,
+      "iphone 13 mini 256gb starlight (mlk63)": 28900,
+      "iphone 13 mini 512gb blue (mlkf3)": 32300,
+      "iphone 13 mini 512gb green (mnfa3)": 34340,
+      "iphone 13 mini 512gb midnight (mlka3)": 34170,
+      "iphone 13 mini 512gb pink (mlkd3)": 32130,
+      "iphone 13 mini 512gb product red (mlke3)": 32130,
+      "iphone 13 mini 512gb starlight (mlkc3)": 31450,
+      "iphone 13 128gb starlight (mlpg3)": 27710,
+      "iphone 13 128gb green (mngd3)": 27710,
+      "iphone 13 128gbи pink (mlph3)": 23800,
+      "iphone 13 128gb pink (mlph3)": 28050,
+      "iphone 13 128gb midnight (mlpf3)": 27540,
+      "iphone 13 128gb product red (mlpj3)": 27540,
+      "iphone 13 128gb blue (mlpk3)": 27540,
+      "iphone 13 256gb green (mnge3)": 30430,
+      "iphone 13 256gb pink (mlq83)": 32300,
+      "iphone 13 256gb product red (mlq93)": 30260,
+      "iphone 13 256gb blue (mlqa3)": 30260,
+      "iphone 13 256gb starlight (mlq73)": 32300,
+      "iphone 13 256gb midnight (mlq63)": 30770,
+      "iphone 13 512gb green (mngf3)": 36720,
+      "iphone 13 512gb pink (mlqe3)": 36040,
+      "iphone 13 512gb product red (mlqf3)": 31960,
+      "iphone 13 512gb starlight (mlqd3)": 34680,
+      "iphone 13 512gb blue (mlqg3)": 32130,
+      "iphone 13 512gb midnight (mlqc3)": 32130,
+      "iphone 13 pro 128gb gold (mlvc3)": 35190,
+      "iphone 13 pro 128gb silver (mlva3)": 35190,
+      "iphone 13 pro 128gb sierra blue (mlvd3)": 35190,
+      "iphone 13 pro 128gb graphite (mlv93)": 35190,
+      "iphone 13 pro 128gb alpine green (mndt3)": 35360,
+      "iphone 13 pro 256gb gold (mlvk3)": 38590,
+      "iphone 13 pro 256gb graphite (mlve3)": 38590,
+      "iphone 13 pro 256gb silver (mlvf3)": 38760,
+      "iphone 13 pro 256gb alpine green (mndu3)": 38760,
+      "iphone 13 pro 256gb sierra blue (mlvp3)": 38590,
+      "iphone 13 pro 512gb alpine green (mndv3)": 46920,
+      "iphone 13 pro 512gb silver (mlvn3)": 46580,
+      "iphone 13 pro 512gb sierra blue (mlvu3)": 46920,
+      "iphone 13 pro 512gb graphite (mlvh3)": 46580,
+      "iphone 13 pro 512gb gold (mlvq3)": 45390,
+      "iphone 13 pro 1tb alpine green (mndw3)": 50150,
+      "iphone 13 pro 1tb gold (mlvy3)": 51000,
+      "iphone 13 pro 1tb graphite (mlvv3)": 53380,
+      "iphone 13 pro 1tb sierra blue (mlw03)": 49980,
+      "iphone 13 pro 1tb silver (mlvw3)": 49980,
+      "iphone 13 pro max 128gb graphite (mll63)": 38420,
+      "iphone 13 pro max 128gb sierra blue (mll93)": 38590,
+      "iphone 13 pro max 128gb alpine green (mncp3)": 38590,
+      "iphone 13 pro max 128gb gold (mll83)": 38590,
+      "iphone 13 pro max 128gb silver (mll73)": 38590,
+      "iphone 13 pro max 256gb alpine green (mncq3)": 41990,
+      "iphone 13 pro max 256gb silver (mllc3)": 41990,
+      "iphone 13 pro max 256gb sierra blue (mlle3)": 42160,
+      "iphone 13 pro max 256gb gold (mlld3)": 42160,
+      "iphone 13 pro max 256gb graphite (mlla3)": 41820,
+      "iphone 13 pro max 512gb alpine green (mncr3)": 50660,
+      "iphone 13 pro max 512gb gold (mllh3)": 48620,
+      "iphone 13 pro max 512gb sierra blue (mllj3)": 48620,
+      "iphone 13 pro max 512gb silver (mllg3)": 49640,
+      "iphone 13 pro max 512gb graphite (mllf3)": 48450,
+      "iphone 13 pro max 1tb silver (mlll3)": 51680,
+      "iphone 13 pro max 1tb alpine green (mnct3)": 53550,
+      "iphone 13 pro max 1tb sierra blue (mlln3)": 53550,
+      "iphone 13 pro max 1tb graphite (mllk3)": 53380,
+      "iphone 13 pro max 1tb gold (mllm3)": 55420,
+      "apple watch 2 42mm space/black(mp4a2)": 9690,
+      "apple watch 3 38mm space/black (mtf02)": 7480,
+      "apple watch 3 38mm silver/white (mtey2)": 8160,
+      "apple watch 3 42mm silver/fog(mtf22)": 8330,
+      "apple watch 3 42mm silver/fog(mql02)": 8330,
+      "apple watch 3 42mm space/black(mql12/mtf32)": 8330,
+      "apple watch 3 42mm nike space/black(mtf42/mql42)": 10370,
+      "apple watch 3 38mm 4g gold/pink(mqjq2/mqkh2)": 8160,
+      "apple watch 3 38mm 4g gray/sport loop (mqjp2/mtgh2)": 8160,
+      "apple watch 4 44mm space/black (mu6d2)": 12240,
+      "apple watch 4 40mm 4g nike silver/sport loop (mtx72/mtxf2)": 14620,
+      "apple watch 4 44mm nike silver/summit white loop (mu7h2)": 12580,
+      "apple watch 4 44mm 4g silver/white sport (mtuu2/mtvr2)": 12920,
+      "apple watch 5 40mm silver/white (mwv62)": 12920,
+      "apple watch 5 40mm space/black (mwv82)": 12750,
+      "apple watch 5 40mm gold/pink (mwv72)": 13260,
+      "apple watch 5 40mm gold/pink (mwv72) open box": 12410,
+      "apple watch 5 44mm gold/pink (mwve2)": 12750,
+      "apple watch 5 44mm silver/lemon cream (mwt32)": 13600,
+      "apple watch 5 40mm nike silver/silver (fx3r2) cpo": 12920,
+      "apple watch 5 40mm nike silver/silver (mx3r2)": 13600,
+      "apple watch 5 44mm nike silver/silver (mx3v2)": 14110,
+      "apple watch 5 4g 40mm gold/pink (mwwp2/mwx22)": 13600,
+      "apple watch 5 4g 40mm space/black (mwwq2/mwx32)": 12580,
+      "apple watch 5 4g 40mm nike silver pure platinum/black sport (mx372/mx3c2)": 15130,
+      "apple watch 5 4g 44mm gold/pink (mww02/mwwd2)": 14280,
+      "apple watch 5 4g 44mm space anthracite/black nike (mx3a2/mx3f2)": 15810,
+      "apple watch 5 4g 44mm space/black sport (mww72/mwwk2)": 23120,
+      "apple watch 5 4g 44mm gold/black leather loop (mwqn2)": 25160,
+      "apple watch 5 4g 44mm gold/gold milanese loop (mww62/mwwj2)": 20400,
+      "apple watch se 40mm gold aluminum case w. pink sand sport b. (mydn2)": 11390,
+      "apple watch se 40mm gold aluminum case with starlight sport band (mkq03)": 10370,
+      "apple watch se 40mm space gray aluminum case with black sport band (mydp2)": 10370,
+      "apple watch se 40mm space gray aluminium case with midnight sport band (mkq13)": 9690,
+      "apple watch se 4g 40mm space gray aluminum case with charcoal sport loop (myee2/myel2)": 11900,
+      "apple watch se 40mm silver aluminum case w. abyss blue s. band (mkny3)": 9690,
+      "apple watch se 40mm silver aluminum case with white sport band (mydm2)": 11390,
+      "apple watch se 4g 40mm gold aluminum case with plum sport loop (myec2/myej2)": 12240,
+      "apple watch se 44mm silver aluminum case with white sport band (mydq2)": 11730,
+      "apple watch se 44mm gold aluminum case w. starlight sport band (mkq53)": 10880,
+      "apple watch se 44mm space gray midnight sport band (mkq63)": 10880,
+      "apple watch se 44mm space gray aluminum case with black sport band (mydt2)": 11390,
+      "apple watch se 44mm silver aluminum case w. abyss blue s. band (mkq43)": 10710,
+      "apple watch se 44mm gold aluminum case w. pink sand sport band (mydr2)": 11390,
+      "apple watch se 4g 44mm silver aluminum case with white sport band (myem2/myev2)": 13090,
+      "apple watch se 4g 44mm space gray aluminum case with black sport band (myer2/myf02)": 12750,
+      "apple watch se 4g 44mm space gray aluminum case with midnight sport band (mkrr3)": 13090,
+      "apple watch se 4g 44mm gold aluminum case with pink sand sport band (myep2/myex2)": 12750,
+      "apple watch nike se gps 40mm silver aluminum case w. pure platinum/black nike sport band (myyd2)": 12070,
+      "apple watch nike se gps 40mm silver aluminum case w. pure platinum/black nike sport band (mkq23)": 11900,
+      "apple watch nike se gps 40mm space gray aluminum case w. anthracite/black nike sport b. (myyf2/mkq33)": 11220,
+      "apple watch nike se gps 44mm sil. al. case with pure platinum/black nike sp. b (myyh2/mkq73)": 12580,
+      "apple watch nike se gps 44mm space gray aluminum case w. anthracite/black nike sport b. (myyk2/mkq83)": 12750,
+      "apple watch nike se 4g 40mm silver aluminum case w. pure platinum/black nike sport b. (myyr2/myyw2)": 11390,
+      "apple watch nike se 4g 40mm space gray aluminum case with anthracite/black nike sport band (myyu2/mg013)": 11900,
+      "apple watch nike se 4g 44mm silver aluminium case w. pure platinum/black nike sport band (mg083/mg043)": 15130,
+      "apple watch 6 40mm gold aluminum case with pink sand sport band (mg123)": 14280,
+      "apple watch 6 40mm gold aluminum with sport loop (mg193)": 14790,
+      "apple watch 6 40mm space gray aluminum case with black sport band (mg133)": 12580,
+      "apple watch 6 40mm silver aluminum case with white sport band (mg283)": 13260,
+      "apple watch 6 40mm blue aluminum case with deep navy sport band (mg143)": 11900,
+      "apple watch 6 40mm red aluminium case with red sport band (m00a3)": 12240,
+      "apple watch 6 44mm gold aluminum case with pink sand sport band (m00e3)": 14790,
+      "apple watch 6 44mm blue aluminium case without strap or option other (m02g3)": 14280,
+      "apple watch 6 44mm blue aluminum case with deep navy sport band (m00j3)": 12920,
+      "apple watch 6 44mm space gray aluminum case with black sport band (m00h3)": 13940,
+      "apple watch 6 44mm red aluminium case with red sport band (m00m3)": 12580,
+      "apple watch 6 44mm silver aluminum case w. white sport b. (m00d3)": 12920,
+      "apple watch 6 nike 40mm silver aluminium case with pure platinum black nike sport band (m00t3)": 14450,
+      "apple watch 6 nike 44mm silver aluminium case without strap(+option other) (m02l3)": 15300,
+      "apple watch 6 nike 44mm silver aluminium case with pure platinum black nike sport band (mg293)": 16320,
+      "apple watch 6 nike 44mm space gray aluminum case with anthracite/black nike sport band (mg173)": 16320,
+      "apple watch 6 4g 40mm space gray aluminum case with black sport band (m02q3/m06p3)": 13090,
+      "apple watch 6 4g 44mm blue aluminium case with deep navy sport band (m07j3/m09a3)": 13940,
+      "apple watch 6 4g 44mm gold aluminum case with pink sand sport band (m07g3/mg2d3)": 15640,
+      "apple watch 6 4g 44mm space gray aluminum case with black sport band (m07h3/mg2e3)": 14280,
+      "apple watch 6 4g 44mm black unity aluminum case with sport band (mj6t3)": 17000,
+      "apple watch 6 nike 4g 40mm space gray aluminum case with anthracite/black nike sport band (m06l3/m07e3)": 16490,
+      "apple watch 6 4g 40mm silver stainless steel case with white sport band (m02u3/m06t3)": 21760,
+      "apple watch 6 4g 40mm silver stainless steel case with my702 40mm atlantic blue braided solo loop 5(size) (m0dv3)": 25500,
+      "apple watch 6 4g 44mm gold stainless steel case with gold milanese loop (m07p3/m09g3)": 26520,
+      "apple watch 6 4g 44mm graphite stainless steel case with graphite milanese loop (m09j3/m07r3)": 29580,
+      "apple watch series 7 gps 41mm midnight aluminum case with midnight sport band (mkmx3)": 13090,
+      "apple watch series 7 gps 41mm green aluminum case with green sport band (mkn03)": 13090,
+      "apple watch series 7 gps 41mm blue aluminum case with blue sport band (mkn13)": 13090,
+      "apple watch series 7 gps 41mm starlight aluminum case with starlight sport band (mkmy3)": 14110,
+      "apple watch series 7 gps 41mm product red aluminum case with product red sport band (mkn23)": 14450,
+      "apple watch series 7 gps 45mm midnight aluminum case with midnight sport band (mkn53)": 14280,
+      "apple watch series 7 gps 45mm blue aluminum case with blue sport band (mkn83)": 13940,
+      "apple watch series 7 gps 45mm starlight aluminum case with starlight sport band (mkn63)": 14960,
+      "apple watch series 7 gps 45mm green aluminum case with green sport band (mkn73)": 14110,
+      "apple watch series 7 gps 45mm product red aluminum case with product red sport band (mkn93)": 14790,
+      "apple watch 7 4g 41mm starlight aluminum case with starlight sport band (mkh83/mkhr3)": 17850,
+      "apple watch 7 4g 41mm blue aluminum case with abyss blue sport band (mkhc3/mkhu3)": 16320,
+      "apple watch 7 4g 41mm midnight aluminum case w. midnight s. band (mkh73/mkhq3)": 16320,
+      "apple watch 7 4g 41mm green aluminum case with clover sport band cellular (mkh93, mkht3)": 16150,
+      "apple watch 7 4g 45mm green aluminum case with clover sport band (mkjr3,mkj93)": 18020,
+      "apple watch 7 4g 45mm midnight aluminum case w. midnight s. band (mkj73/mkjp3)": 17680,
+      "apple watch 7 4g 45mm s. aluminum case w. starlight s. band (mkj83/mkjq3)": 17680,
+      "apple watch 7 4g 45mm blue aluminum case with blue sport band (mkjt3/mkja3)": 17680,
+      "apple watch nike 7 gps 41mm midnight aluminum case w. anthracite/black nike sport band (mkn43)": 15300,
+      "apple watch nike 7 gps 41mm starlight aluminum case w. pure platinum/black nike sport band (mkn33)": 16150,
+      "apple watch nike 7 gps 45mm starlight aluminum case w. pure platinum/black nike sport band (mkna3)": 17000,
+      "apple watch nike 7 gps 45mm midnight aluminum case w. anthracite/black nike sport band (mknc3)": 18020,
+      "apple watch nike 7 4g 41mm midnight aluminum case with anthracite/black nike sport band (mkhm3)": 17340,
+      "apple watch nike 7 4g 45mm midnight aluminum case with anthracite/black nike (mkjl3/mkl53)": 22780,
+      "apple watch nike 7 4g 41mm starlight aluminum case with pure platinum/black nike sport band (mkhl3/mkj33)": 18700,
+      "apple watch nike 7 4g 45mm starlight aluminum case with pure platinum/black nike sport band (mkjk3, mkl43)": 20060,
+      "apple watch 7 4g 41mm silver stainless steel case w. starlight sport band (mkhe3/mkhw3)": 26180,
+      "apple watch 7 4g 41mm silver stainless steel case with silver milanese loop (mkhx3/mkhf3)": 29240,
+      "apple watch 7 4g 41mm gold stainless steel case with gold milanese loop (mkhh3/mkj03)": 31280,
+      "apple watch 7 4g 41mm gold s. steel case w. dark cherry sport band (mkhg3/mkhy3)": 28050,
+      "apple watch 7 4g 41mm graphite s. steel case w. abyss blue s. band (mkhj3)": 26520,
+      "apple watch 7 4g 41mm graphite stainless steel case with graphite milanese loop (mkhk3/mkj23)": 26180,
+      "apple watch 7 4g 45mm silver stainless steel case with starlight sport band (mkjd3/mkjv3)": 27880,
+      "apple watch 7 4g 45mm graphite s. steel case w. abyss blue s. band (mkjh3/mkl23)": 28220,
+      "apple watch 7 4g 45mm gold s. steel case w. dark cherry sport band (mkjf3/mkjx3)": 28220,
+      "apple watch 7 4g 45mm silver stainless steel case with silver milanese loop (mkjw3/‎mkje3)": 29240,
+      "apple watch 7 4g 45mm graphite stainless steel case with graphite milanese loop (mkjj3/mkmr3)": 29240,
+      "apple watch 7 4g 45mm gold stainless steel case with gold milanese loop (mkjy3/mkjg3)": 33830,
+      "apple airtag 4-pack (mx542)": 3910,
+      "apple airtag 1-pack (mx532)": 1190,
+      "apple airtag loop deep navy (mhj03)": 475,
+      "apple airtag leather loop product red (mk0v3)": 645,
+      "apple airtag leather loop saddle brown (mx4a2)": 950,
+      "apple airtag loop electric orange (mk0x3)": 510,
+      "apple airtag loop sunflower (mk0w3)": 680,
+      "apple magsafe battery pack (mjwy3)": 3230,
+      "ipod touch 7gen 32gb space gray (mvhw2)": 6800,
+      "ipod touch 7gen 32gb silver (mvhv2)": 6800,
+      "ipod touch 7gen 32gb gold (mvht2)": 6800,
+      "ipod touch 7gen 128gb space gray (mvj62)": 8500,
+      "ipod touch 7gen 128gb pink (mvhy2)": 7820,
+      "аpple airpods (mmef2)": 3910,
+      "apple airpods 2 (mv7n2)": 3980,
+      "apple airpods 2 (mv7n2ru/a)": 4080,
+      "apple wireless charging case for airpods (mr8u2)": 1700,
+      "apple airpods 2 with wireless charging case (mrxj2)": 5000,
+      "airpods pro (mwp22) (open box)": 5270,
+      "airpods pro (mwp22)": 6460,
+      "airpods 3 (mme73)": 5680,
+      "apple airpods pro with magsafe charging case (mlwk3)": 6630,
+      "apple airpods max silver (mgyj3)": 17000,
+      "apple airpods max space gray (mgyh3)": 16150,
+      "apple airpods max sky blue (mgyl3)": 16660,
+      "apple airpods max pink (mgym3)": 16490,
+      "apple airpods max green (mgyn3)": 17000,
+      "apple homepod mini space gray (my5g2)": 4080,
+      "apple homepod mini white (my5h2)": 3810,
+      "apple homepod mini yellow (mj2e3)": 4420,
+      "apple homepod mini blue (mj2c3)": 3910,
+      "apple homepod mini orange (mj2d3)": 4420,
+      "apple magsafe charger (mhxh3)": 1700,
+      "apple magsafe duo charge (mhxf3)": 3740,
+      "apple pencil tips (mlun2) 1pcs": 510,
+      "apple pencil tips (mlun2)": 1260,
+      "комплект амбушюр для airpods pro (s/l)": 340,
+      "apple pencil (mk0c2)": 3230,
+      "apple pencil 2 for ipad pro 2018/2020 (mu8f2)": 4080,
+      "apple siri remote (2nd gen) (mjfn3)": 2550,
+      "apple tv 4 32gb (mgy52/mr912)": 4420,
+      "apple tv 4k 32gb (mqd22)": 4420,
+      "apple tv 4k 64gb (mp7p2)": 5270,
+      "apple tv hd 2021 32gb (mhy93)": 5100,
+      "apple tv 4k 2021 32gb (mxgy2)": 6120,
+      "apple tv 4k 2021 64gb (mxh02)": 6970,
+      "apple airport express (mc414)": 6290,
+      "apple airport extreme (me918)": 9520,
+      "apple time capsule 2tb (me177)": 13260,
+      "apple magic trackpad 2 silver (mj2r2)": 4420,
+      "apple magic trackpad 2021 silver (mk2d3)": 4250,
+      "apple magic trackpad 3 (mmmp3) black": 6460,
+      "apple magic keyboard (mla22)": 3230,
+      "apple magic keyboard 3 (mk2a3rs/a)": 3910,
+      "apple magic keyboard + magic mouse 2 silver (mla02/mla22)": 6290,
+      "apple magic keyboard with numeric keypad (mq052)": 4420,
+      "apple magic keyboard space gray (mrmh2)": 8500,
+      "apple magic keyboard with touch id (mk293)": 5440,
+      "apple magic keyboard with touch id and numeric keypad (mk2c3)": 6120,
+      "apple magic keyboard 3 num with touch id - eng (mmmr3)": 10370,
+      "apple magic mouse 2 silver (mla02)": 2890,
+      "apple magic mouse 2 space gray (mrme2)": 4250,
+      "apple magic mouse 3 silver (mk2e3)": 3230,
+      "apple magic mouse 2022 black multi-touch surface (mmmq3)": 4250,
+      "apple ipad pro keyboard 10.2\"/10.5\"/air 3 (mptl2/mx3l2)": 3400,
+      "apple smart keyboard folio for ipad pro 11\" (mu8g2)": 5440,
+      "apple smart keyboard folio for 12.9” ipad pro 2018 (mu8h2)": 4080,
+      "apple smart keyboard folio for ipad 11\" pro 2nd (mxnk2) - (грав)": 5610,
+      "apple magic keyboard folio with trackpad for ipad 11\" pro 2/3nd/air4 black (mxqt2)": 11220,
+      "apple magic keyboard folio with trackpad for ipad 11\" pro 2/3nd/air4 gen white (mjqj3)": 10880,
+      "apple magic keyboard folio with trackpad for ipad 11\" pro 2/3nd/air4 gen white (mjqj3ua/a)": 14280,
+      "apple smart keyboard folio for ipad 12.9\" pro 4nd (mxnl2)": 5270,
+      "apple magic keyboard folio with trackpad for ipad 12.9\" pro 4nd (mxqu2) грав": 10880,
+      "apple magic keyboard for ipad pro 12.9\" 5th gen. (black) (mjqk3)": 15300,
+      "apple magic keyboard for ipad pro 12.9\" 5th gen. (black) (mjqk3rs/a)": 16660,
+      "apple magic keyboard for ipad pro 12.9\" 5th gen. (white) (mjql3)": 12070,
+      "apple magic keyboard for ipad pro 12.9\" 5th gen. (white) (mjql3rs/a)": 16490,
+      "apple lightning to usb camera adapter (md821)": 1360,
+      "apple lightning to sd card camera reader (mjyt2/md822)": 1530,
+      "apple usb-c to sd card reader (mufg2)": 1700,
+      "apple lightning to usb3 camera adapter (mk0w2)": 1565,
+      "apple lightning to vga (md825)": 950,
+      "apple lightning digital av adapter (md826)": 1360,
+      "apple minidisplayport to dvi (mb570)": 815,
+      "apple thunderbolt to gigabit ethernet adapter (md463)": 1190,
+      "apple watch magnetic charging cable (1m)(mklg2/mu9g2)": 1430,
+      "apple watch magnetic fast charger to usb-c cable (1 m) (mlwj3)": 1530,
+      "apple watch magnetic charging cable (2m) (mjvx2/mu9h2)": 1190,
+      "apple lightning to usb cable (0.5 m)(me291)": 580,
+      "apple lightning to usb cable (md818)": 850,
+      "apple lightning to usb cable (mque2)": 850,
+      "apple lightning to usb cable (mxly2)": 850,
+      "apple lighting to usb cable 2m (md819)": 1090,
+      "apple lightning to 3.5mm headphone jack adapter retail box (mmx62)": 440,
+      "apple usb-c to 3.5 mm headphone jack adapter (mu7e2)": 440,
+      "lightning apple usb-c to lightning cable 1m (mm0a3)": 750,
+      "apple usb-c charge cable 1 m (muf72/mm093)": 750,
+      "apple usb-c charge cable 2m (mll82)": 1020,
+      "apple adapter usb-c to usb (mj1m2)": 850,
+      "apple usb-c vga multiport adapter (mj1l2)": 1190,
+      "apple usb-c adapter (mj1k2/muf82)": 1870,
+      "apple usb type-c apple usb-c to magsafe 3 cable 2m silver (mlyv3)": 2720,
+      "apple thunderbolt 3 usb-c to thunderbolt 2 (mmel2)": 1700,
+      "apple usb-c to lightning cable (2m) (mkq42) комплектный": 1020,
+      "apple usb-c to lightning cable (2m) (mkq42)": 1530,
+      "apple thunderbolt 3 (usb-c) cable (0.8 m) (mq4h2)": 2210,
+      "apple earpods original retail box (mnhf2)": 680,
+      "apple earpods lightning original no box (mmtn2)": 750,
+      "apple earpods with lightning connector (mmtn2)": 1020,
+      "комплект ориг аксов от iphone (уши+кабель+зарядка(сша)+вкладыш)": 1120,
+      "apple magsafe 45w power adapter (mc747)": 1700,
+      "apple magsafe 60w power adapter (mc461)": 1700,
+      "apple magsafe 2 45w power adapter (md592)": 2415,
+      "apple magsafe 2 60w power adapter (md565)": 2720,
+      "apple magsafe 85w power adapter (mc556)": 2550,
+      "apple power adapter extension cable (mk122)": 410,
+      "apple 12w for ipad (md836)": 780,
+      "apple 20w usb-c power adapter (mhje3)": 680,
+      "apple 30w usb-c power adapter (my1w2)": 2040,
+      "apple 35w dual usb-c port power adapter (mnwp3)": 3740,
+      "apple 61w usb-c power adapter (mnf72/mrw22)": 2720,
+      "apple 67w usb-c power adapter (mku63)": 2720,
+      "apple 87w usb-c power adapter (mnf82)": 2720,
+      "apple 96w usb-c power adapter (mx0j2)": 3400,
+      "apple 140w usb-c power adapter (mlyu3)": 6800,
+      "11 smart battery case black (mwvh2)": 3230,
+      "11 pro max smart battery case black (mwvp2)": 3400,
       "id": 1
     }
   ]
