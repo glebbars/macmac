@@ -11,6 +11,7 @@ import {
   getIpadColorChoices,
   getIphoneCapacityChoices,
   getIphoneColorChoices,
+  getIpadDiagonalChoices,
 } from "../../admin/AdditionalFunctions/AdditionalFunctions";
 
 export const routesNames = {
@@ -123,7 +124,9 @@ export const appleCategoryProductsOptions = [
 
 export const getOptions = (optionsType, categoryName, searchResult) => {
   if (categoryName) {
-    return getRightChoiceFunc(optionsType, categoryName);
+    const result = getRightChoiceFunc(optionsType, categoryName);
+    console.log(result);
+    return result;
   } else if (searchResult) {
     const similarName = getSimilarCategoryName(searchResult);
     return getRightChoiceFunc(optionsType, similarName);
@@ -131,6 +134,7 @@ export const getOptions = (optionsType, categoryName, searchResult) => {
 };
 
 const getRightChoiceFunc = (optionsType, value) => {
+  console.log(value, optionsType);
   switch (optionsType) {
     case "category":
       return getCategoryChoices(value);
@@ -246,29 +250,48 @@ const getModelOptions = (model, name, getOptionsFunc) => {
 };
 
 const getAppleDiagonalChoices = (value) => {
-  console.log(value);
-  switch (value) {
-    case "ipad":
-      return [
-        diagonalChoices[8.3],
-        diagonalChoices[10.2],
-        diagonalChoices[10.9],
-        diagonalChoices[11],
-        diagonalChoices[12.9],
-      ];
+  if (!value.includes("-")) {
+    switch (value) {
+      case "ipad":
+        return [
+          diagonalChoices[8.3],
+          diagonalChoices[10.2],
+          diagonalChoices[10.9],
+          diagonalChoices[11],
+          diagonalChoices[12.9],
+        ];
 
-    default:
-      return [];
+      default:
+        return [];
+    }
+  } else {
+    switch (true) {
+      case value.includes("ipad"):
+        return getModelOptions(value, "Диагональ", getIpadDiagonalChoices);
+
+      default:
+        return [];
+    }
   }
 };
 
 const getAppleWifiChoices = (value) => {
-  switch (value) {
-    case "ipad":
-      return [wifiChoices["wifi"], wifiChoices["wifi+cellular"]];
+  if (!value.includes("-")) {
+    switch (value) {
+      case "ipad":
+        return [wifiChoices["wifi"], wifiChoices["wifi+cellular"]];
 
-    default:
-      return [];
+      default:
+        return [];
+    }
+  } else {
+    switch (true) {
+      case value.includes("ipad"):
+        return [wifiChoices["wifi"], wifiChoices["wifi+cellular"]];
+
+      default:
+        return [];
+    }
   }
 };
 

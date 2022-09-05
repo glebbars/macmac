@@ -202,7 +202,7 @@ export const getDiagonalChoices = (category, model) => {
   }
 };
 
-const getIpadDiagonalChoices = (model) => {
+export const getIpadDiagonalChoices = (model) => {
   switch (model) {
     case "ipad air 2022":
       return [diagonalChoices["10.9"]];
