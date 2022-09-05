@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import {
   getCapacityChoices,
   getColorChoices,
-  getColor,
   getColorForToggle,
 } from "../../admin/AdditionalFunctions/AdditionalFunctions";
 import axios from "axios";
@@ -11,11 +10,13 @@ const ProductMainToggle = ({ productDataObj, setProductDataObj }) => {
   const [similarProducts, setSimilarProducts] = useState([]);
   const colorChoices = getColorChoices(
     productDataObj.description.category,
-    productDataObj.description.model
+    productDataObj.description.model.toLowerCase()
   );
+
+  console.log(similarProducts, colorChoices);
   const capacityChoices = getCapacityChoices(
     productDataObj.description.category,
-    productDataObj.description.model
+    productDataObj.description.model.toLowerCase()
   );
 
   useEffect(() => {
@@ -52,10 +53,11 @@ const ProductMainToggle = ({ productDataObj, setProductDataObj }) => {
               return productFromDB;
             }
           }
+          return null;
         })
       )
       .then((data) => setSimilarProducts(data));
-  }, []);
+  }, [productDataObj.description]);
 
   const toggleColor = (color) => {
     const newProduct = similarProducts.find(
