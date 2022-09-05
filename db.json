@@ -3834,7 +3834,7 @@
       "id": 187
     },
     {
-      "fullName": "iPad Pro 2021 11\" Wi-Fi 128Gb Space Gray (MHQR3)",
+      "fullName": "iPad Pro 2021 11\" Wi-Fi + Cellular 128Gb Space Gray (MHW53/MHMT3)",
       "price": 28390,
       "pictures": [
         {
@@ -3855,14 +3855,14 @@
         "category": "iPad",
         "model": "iPad Pro 2021",
         "diagonal": "11\"",
-        "wifi": "Wi-Fi",
+        "wifi": "Wi-Fi + Cellular",
         "capacity": "128Gb",
         "color": "Space Gray"
       },
       "id": 188
     },
     {
-      "fullName": "iPad Pro 2021 11\" Wi-Fi 128Gb Silver (MHQT3)",
+      "fullName": "iPad Pro 2021 11\" Wi-Fi + Cellular 128Gb Silver (MHW63/MHMU3)",
       "price": 28390,
       "pictures": [
         {
@@ -3883,7 +3883,7 @@
         "category": "iPad",
         "model": "iPad Pro 2021",
         "diagonal": "11\"",
-        "wifi": "Wi-Fi",
+        "wifi": "Wi-Fi + Cellular",
         "capacity": "128Gb",
         "color": "Silver"
       },
