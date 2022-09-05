@@ -32,7 +32,7 @@ const ProductsList = () => {
       onPageChange(1);
     }
     // window.scrollTo(0, 0)
-  }, [productsListFilters, pageSize, sortType, currentPage, onPageChange]);
+  }, [productsListFilters, pageSize, sortType]);
 
   const initiallyFilteredArr = productsArr.filter((product) => {
     if (categoryName) {

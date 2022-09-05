@@ -7,10 +7,10 @@ import imacCatalog from "../../img/catalog-imac.png";
 import airpodsCatalog from "../../img/catalog-airpods.png";
 import applewatchCatalog from "../../img/catalog-apple-watch.png";
 import {
-  getIphoneColorChoices,
-  getIphoneCapacityChoices,
-  getIpadColorChoices,
   getIpadCapacityChoices,
+  getIpadColorChoices,
+  getIphoneCapacityChoices,
+  getIphoneColorChoices,
 } from "../../admin/AdditionalFunctions/AdditionalFunctions";
 
 export const routesNames = {
@@ -141,7 +141,7 @@ const getRightChoiceFunc = (optionsType, value) => {
     case "capacity":
       return getAppleCapacityChoices(value);
     case "diagonal":
-      return getAppleDiagonalCHoices(value);
+      return getAppleDiagonalChoices(value);
     case "wifi":
       return getAppleWifiChoices(value);
     default:
@@ -239,15 +239,14 @@ const getModelOptions = (model, name, getOptionsFunc) => {
 
   const adminOptions = getOptionsFunc(routeModel);
 
-  const userOptions = adminOptions.map((obj) => ({
+  return adminOptions.map((obj) => ({
     filterName: name,
     text: obj.name,
   }));
-
-  return userOptions;
 };
 
-const getAppleDiagonalCHoices = (value) => {
+const getAppleDiagonalChoices = (value) => {
+  console.log(value);
   switch (value) {
     case "ipad":
       return [

@@ -71,7 +71,7 @@ export const CustomDropDownCheckboxes = ({
     if (window.innerWidth <= 480 && clickedBtn) {
       setClickedBtn(false);
     }
-  }, [activeSideBar, clickedBtn]);
+  }, [activeSideBar]);
 
   const addProductsFilter = (filterName, value) => {
     dispatch({
@@ -182,7 +182,7 @@ export const CustomDropDownPriceRange = ({
     if (window.innerWidth <= 480 && clickedBtn) {
       setClickedBtn(false);
     }
-  }, [activeSideBar, clickedBtn]);
+  }, [activeSideBar]);
 
   const addProductsFilter = (filterName, value) => {
     dispatch({
