@@ -20,7 +20,7 @@ export const routesNames = {
   iphone: "iPhone",
   airpods: "AirPods",
   ipad: "iPad",
-  mac: "Mac",
+  macbook: "Macbook",
   watch: "Apple Watch",
   accessories: "Аксессуары",
   "apple-tv": "Apple TV",
@@ -59,8 +59,8 @@ export const categoryHeaderOptions = [
     class: "header__menu__link",
   },
   {
-    link: "/category/mac",
-    text: "Mac",
+    link: "/category/macbook",
+    text: "Macbook",
     class: "header__menu__link",
   },
   // {
@@ -85,8 +85,8 @@ export const popularRequestsOptions = [
     link: "/category/airpods",
   },
   {
-    text: "Mac,",
-    link: "/category/mac",
+    text: "Macbook,",
+    link: "/category/macbook",
   },
   {
     text: "iPhone 11",
@@ -111,8 +111,8 @@ export const appleCategoryProductsOptions = [
     class: "products__sidebar__category-text",
   },
   {
-    link: "/category/mac",
-    text: "Mac",
+    link: "/category/macbook",
+    text: "Macbook",
     class: "products__sidebar__category-text",
   },
   {
@@ -318,7 +318,7 @@ const appleCategoryOptions = [
   },
   {
     filterName: "Категория",
-    text: "Mac",
+    text: "Macbook",
   },
   {
     filterName: "Категория",
@@ -684,7 +684,7 @@ export const headerCatalogCategories = [
     ],
   },
   {
-    header: "Mac",
+    header: "Macbook",
     bg: {
       img: imacCatalog,
       color: "#DBECCE",

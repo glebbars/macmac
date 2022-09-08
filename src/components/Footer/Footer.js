@@ -14,14 +14,14 @@ const Footer = () => {
             Интернет-магазин аксессуаров и техники Apple и Samsung
           </p>
           <div className="footer__social__networks-container">
-            <a href="1">
+            <a href="#">
               <img
                 className="footer__social__network"
                 src={instagramIcon}
                 alt=""
               />
             </a>
-            <a href="1">
+            <a href="#">
               <img
                 className="footer__social__network"
                 src={facebookIcon}
@@ -75,7 +75,7 @@ const Footer = () => {
                   className='footer__link'
                   activeClassName='link_selected'
                 >
-                  Mac
+                  iMac
                 </NavLink> */}
             <NavLink
               to="/category/ipad"
@@ -92,11 +92,11 @@ const Footer = () => {
               AirPods
             </NavLink>
             <NavLink
-              to="/category/mac"
+              to="/category/macbook"
               className="footer__link"
               activeClassName="link_selected"
             >
-              Mac
+              Macbook
             </NavLink>
             <NavLink
               to="/category/watch"

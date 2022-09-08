@@ -132,7 +132,7 @@ export const getCategoryChoices = (value) => {
 export const appleCategoryChoices = [
   { id: "iPhone", name: "iPhone" },
   { id: "iPad", name: "iPad" },
-  { id: "Mac", name: "Mac" },
+  { id: "Macbook", name: "Macbook" },
   { id: "Apple Watch", name: "Apple Watch" },
   { id: "AirPods", name: "AirPods" },
 ];
@@ -145,8 +145,8 @@ export const getModelChoices = (value) => {
       return ipadModelChoices;
     case "AirPods":
       return airPodsModelChoices;
-    case "Mac":
-      return macModelChoices;
+    case "Macbook":
+      return macbookModelChoices;
     case "Watch":
       return watchModelChoices;
     default:
@@ -181,7 +181,7 @@ const ipadModelChoices = [
   { id: "iPad Pro 2021", name: "iPad Pro 2021" },
 ];
 
-const macModelChoices = [
+const macbookModelChoices = [
   { id: "Pro", name: "Pro" },
   { id: "Air", name: "Air" },
 ];
@@ -195,7 +195,7 @@ export const getDiagonalChoices = (category, model) => {
   switch (category) {
     case "iPad":
       return getIpadDiagonalChoices(model);
-    case "Mac":
+    case "Macbook":
       return getMacCapacityChoices(model);
     default:
       return [];
@@ -246,7 +246,7 @@ export const getCapacityChoices = (category, model) => {
       return getIphoneCapacityChoices(model);
     case "iPad":
       return getIpadCapacityChoices(model);
-    case "Mac":
+    case "Macbook":
       return getMacCapacityChoices(model);
     default:
       return [];
@@ -352,7 +352,7 @@ export const getColorChoices = (category, model) => {
       return getIphoneColorChoices(model);
     case "iPad":
       return getIpadColorChoices(model);
-    case "Mac":
+    case "Macbook":
       return getMacColorChoices(model);
     case "Watch":
       return getWatchColorChoices(model);
@@ -557,7 +557,7 @@ const ipadColorsForToggle = {
   Silver: "rgb(221, 223, 222)",
 };
 
-export const productsWithCapacity = ["iPhone", "iPad", "Mac"];
-export const productsWithColors = ["iPhone", "iPad", "Mac", "Watch"];
-export const productsWithDiagonal = ["iPad", "Mac", "Watch"];
+export const productsWithCapacity = ["iPhone", "iPad", "Macbook"];
+export const productsWithColors = ["iPhone", "iPad", "Macbook", "Watch"];
+export const productsWithDiagonal = ["iPad", "Macbook", "Watch"];
 export const productsWithWiFi = ["iPad"];
