@@ -12,6 +12,9 @@ import {
   getIphoneCapacityChoices,
   getIphoneColorChoices,
   getIpadDiagonalChoices,
+  getMacbookDiagonalChoices,
+  getMacbookCapacityChoices,
+  getMacbookColorChoices,
 } from "../../admin/AdditionalFunctions/AdditionalFunctions";
 
 export const routesNames = {
@@ -194,6 +197,9 @@ const getAppleColorChoices = (value) => {
       case value.includes("ipad"):
         return getModelOptions(value, "Цвет", getIpadColorChoices);
 
+      case value.includes("macbook"):
+        return getModelOptions(value, "Цвет", getMacbookColorChoices);
+
       default:
         return [];
     }
@@ -232,6 +238,9 @@ const getAppleCapacityChoices = (value) => {
       case value.includes("ipad"):
         return getModelOptions(value, "Память", getIpadCapacityChoices);
 
+      case value.includes("macbook"):
+        return getModelOptions(value, "Память", getMacbookCapacityChoices);
+
       default:
         return [];
     }
@@ -261,6 +270,14 @@ const getAppleDiagonalChoices = (value) => {
           diagonalChoices[12.9],
         ];
 
+      case "macbook":
+        return [
+          diagonalChoices[13.3],
+          diagonalChoices[13.6],
+          diagonalChoices[14],
+          diagonalChoices[16],
+        ];
+
       default:
         return [];
     }
@@ -268,6 +285,9 @@ const getAppleDiagonalChoices = (value) => {
     switch (true) {
       case value.includes("ipad"):
         return getModelOptions(value, "Диагональ", getIpadDiagonalChoices);
+
+      case value.includes("macbook"):
+        return getModelOptions(value, "Диагональ", getMacbookDiagonalChoices);
 
       default:
         return [];

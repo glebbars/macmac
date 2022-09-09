@@ -182,8 +182,12 @@ const ipadModelChoices = [
 ];
 
 const macbookModelChoices = [
-  { id: "Pro", name: "Pro" },
-  { id: "Air", name: "Air" },
+  { id: "MacBook Air M2", name: "MacBook Air M2" },
+  { id: "MacBook Air M1", name: "MacBook Air M1" },
+  { id: "MacBook Pro M2", name: "MacBook Pro M2" },
+  { id: "MacBook Pro M1", name: "MacBook Pro M1" },
+  { id: "MacBook Pro M1 Pro", name: "MacBook Pro M1 Pro" },
+  { id: "MacBook Pro M1 Max", name: "MacBook Pro M1 Max" },
 ];
 
 const watchModelChoices = [
@@ -196,7 +200,7 @@ export const getDiagonalChoices = (category, model) => {
     case "iPad":
       return getIpadDiagonalChoices(model);
     case "Macbook":
-      return getMacCapacityChoices(model);
+      return getMacbookDiagonalChoices(model);
     default:
       return [];
   }
@@ -218,12 +222,40 @@ export const getIpadDiagonalChoices = (model) => {
   }
 };
 
+export const getMacbookDiagonalChoices = (model) => {
+  console.log(model);
+
+  switch (model) {
+    case "macbook air m2":
+    case "macbook pro m2":
+      return [diagonalChoices["13.6"]];
+
+    case "macbook air m1":
+    case "macbook pro m1":
+      return [diagonalChoices["13.3"]];
+
+    case "macbook pro m1 pro":
+      return [diagonalChoices["14"], diagonalChoices["16"]];
+
+    case "macbook pro m1 max":
+      return [diagonalChoices["16"]];
+
+    default:
+      return [];
+  }
+};
+
 const diagonalChoices = {
-  10.9: { id: '10.9"', name: '10.9"' },
-  10.2: { id: '10.2"', name: '10.2"' },
   8.3: { id: '8.3"', name: '8.3"' },
-  12.9: { id: '12.9"', name: '12.9"' },
+  10.2: { id: '10.2"', name: '10.2"' },
+  10.9: { id: '10.9"', name: '10.9"' },
   11: { id: '11"', name: '11"' },
+  12.9: { id: '12.9"', name: '12.9"' },
+
+  13.3: { id: '13.3"', name: '13.3"' },
+  13.6: { id: '13.6"', name: '13.6"' },
+  14: { id: '14"', name: '14"' },
+  16: { id: '16"', name: '16"' },
 };
 
 export const getWiFiChoices = (category) => {
@@ -247,7 +279,7 @@ export const getCapacityChoices = (category, model) => {
     case "iPad":
       return getIpadCapacityChoices(model);
     case "Macbook":
-      return getMacCapacityChoices(model);
+      return getMacbookCapacityChoices(model);
     default:
       return [];
   }
@@ -320,17 +352,17 @@ export const getIpadCapacityChoices = (model) => {
   }
 };
 
-const getMacCapacityChoices = (model) => {
+export const getMacbookCapacityChoices = (model) => {
   switch (model) {
-    case "Air":
-    case "Pro":
-      return [
-        capacityOptions["64"],
-        capacityOptions["128"],
-        capacityOptions["256"],
-        capacityOptions["512"],
-        capacityOptions["1"],
-      ];
+    case "macbook air m2":
+    case "macbook pro m2":
+    case "macbook air m1":
+    case "macbook pro m1":
+      return [capacityOptions["256"], capacityOptions["512"]];
+
+    case "macbook pro m1 pro":
+    case "macbook pro m1 max":
+      return [capacityOptions["512"], capacityOptions["1"]];
 
     default:
       return [];
@@ -353,7 +385,7 @@ export const getColorChoices = (category, model) => {
     case "iPad":
       return getIpadColorChoices(model);
     case "Macbook":
-      return getMacColorChoices(model);
+      return getMacbookColorChoices(model);
     case "Watch":
       return getWatchColorChoices(model);
     default:
@@ -458,18 +490,28 @@ export const getIpadColorChoices = (model) => {
   }
 };
 
-const getMacColorChoices = (model) => {
+export const getMacbookColorChoices = (model) => {
   switch (model) {
-    case "Air":
-    case "Pro":
+    case "macbook air m2":
       return [
-        colorOptions["black"],
-        colorOptions["white"],
-        colorOptions["product red"],
-        colorOptions["mind"],
-        colorOptions["blue"],
-        colorOptions["purple"],
+        colorOptions["space gray"],
+        colorOptions["silver"],
+        colorOptions["starlight"],
+        colorOptions["midnight"],
       ];
+
+    case "macbook air m1":
+      return [
+        colorOptions["space gray"],
+        colorOptions["silver"],
+        colorOptions["gold"],
+      ];
+
+    case "macbook pro m2":
+    case "macbook pro m1":
+    case "macbook pro m1 pro":
+    case "macbook pro m1 max":
+      return [colorOptions["space gray"], colorOptions["silver"]];
 
     default:
       return [];
@@ -523,6 +565,9 @@ export const getColorForToggle = (category, color) => {
     case "iPad":
       return ipadColorsForToggle[color];
 
+    case "Macbook":
+      return macBookColorsForToggle[color];
+
     default:
       return [];
   }
@@ -555,6 +600,14 @@ const ipadColorsForToggle = {
   Purple: "rgb(191, 189, 209)",
   Blue: "rgb(151, 179, 192)",
   Silver: "rgb(221, 223, 222)",
+};
+
+const macBookColorsForToggle = {
+  "Space Gray": "",
+  Silver: "",
+  Gold: "",
+  Midnight: "",
+  Starlight: "",
 };
 
 export const productsWithCapacity = ["iPhone", "iPad", "Macbook"];
