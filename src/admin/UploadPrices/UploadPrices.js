@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useRefresh } from "react-admin";
 import axios from "axios";
 import readXlsxFile from "read-excel-file";
@@ -34,8 +34,8 @@ const UploadPrices = () => {
       .then((data) =>
         axios.put(`${process.env.REACT_APP_DB_API}/prices/1`, data)
       )
-      .then((res) => updateProductsPrices(allPricesObj))
-      .then((res) => refresh());
+      .then(() => updateProductsPrices(allPricesObj))
+      .then(() => refresh());
   };
 
   const updateProductsPrices = async (priceListDB) => {
@@ -54,12 +54,10 @@ const UploadPrices = () => {
     const filteredObjs = newPriceObjs.filter((el) => el);
 
     if (filteredObjs.length > 0) {
-      console.log(filteredObjs);
-      const updatedPrices = await axios.patch(
+      return await axios.patch(
         `${process.env.REACT_APP_DB_API}/patchcollection`,
         filteredObjs
       );
-      return updatedPrices;
     }
   };
 

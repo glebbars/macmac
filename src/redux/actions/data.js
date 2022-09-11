@@ -35,7 +35,6 @@ const checkIds = (allProducts, sendReq) => {
 };
 
 const getAllProductsSuccessCase = (allProducts) => {
-  console.log(allProducts);
   return {
     type: REQUEST_ALL_PRODUCTS_SUCCESS,
     payload: allProducts,

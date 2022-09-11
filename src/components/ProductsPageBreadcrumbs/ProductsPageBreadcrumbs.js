@@ -1,4 +1,4 @@
-import react, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import {
   routesNames,
@@ -45,7 +45,6 @@ const ProductsPageBreadcrumbs = ({ modelCurmb, searchCrumbs }) => {
         if (id) {
           setCrumbsNames([...initialProductCrumbs, primaryCrumb, modelCurmb]);
         } else {
-          console.log("[");
           setCrumbsNames([...initialProductCrumbs, primaryCrumb]);
         }
       } else {

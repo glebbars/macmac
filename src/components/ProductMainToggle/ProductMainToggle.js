@@ -13,7 +13,6 @@ const ProductMainToggle = ({ productDataObj, setProductDataObj }) => {
     productDataObj.description.model.toLowerCase()
   );
 
-  console.log(similarProducts, colorChoices);
   const capacityChoices = getCapacityChoices(
     productDataObj.description.category,
     productDataObj.description.model.toLowerCase()
