@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import ProductsEditComplition from "../ProductsEditComplition/ProductsEditComplition";
 import { Range, getTrackBackground } from "react-range";
 import { useParams } from "react-router-dom";
+import { getFilteredProducts } from "../ProductsList/ProductsList";
 
 export const CustomDropDownLinks = ({
   header,
@@ -285,47 +286,11 @@ export const PriceRange = ({ handlePriceChange, productsListFilters }) => {
     return product;
   });
 
-  const categoryFilters = productsListFilters
-    .filter((filter) => filter.filterName === "Категория")
-    .map((filter) => filter.value);
-  const modelFilters = productsListFilters
-    .filter((filter) => filter.filterName === "Модель")
-    .map((filter) => filter.value);
-  const colorFilters = productsListFilters
-    .filter((filter) => filter.filterName === "Цвет")
-    .map((filter) => filter.value);
-  const capacityFilters = productsListFilters
-    .filter((filter) => filter.filterName === "Память")
-    .map((filter) => filter.value);
-  const diagonalFilters = productsListFilters
-    .filter((filter) => filter.filterName === "Диагональ")
-    .map((filter) => filter.value);
-  const wifiFilters = productsListFilters
-    .filter((filter) => filter.filterName === "Wi-Fi")
-    .map((filter) => filter.value);
-
-  const filteredProductsArr = filteredByCategoryArr.filter((product) => {
-    return (
-      (categoryFilters.length > 0
-        ? categoryFilters.includes(product.description.category)
-        : product) &&
-      (modelFilters.length > 0
-        ? modelFilters.includes(product.description.model)
-        : product) &&
-      (colorFilters.length > 0
-        ? colorFilters.includes(product.description.color)
-        : product) &&
-      (capacityFilters.length > 0
-        ? capacityFilters.includes(product.description.capacity)
-        : product) &&
-      (diagonalFilters.length > 0
-        ? diagonalFilters.includes(product.description.diagonal)
-        : product) &&
-      (wifiFilters.length > 0
-        ? wifiFilters.includes(product.description.wifi)
-        : product)
-    );
-  });
+  const filteredProductsArr = getFilteredProducts(
+    productsListFilters,
+    filteredByCategoryArr,
+    false
+  );
 
   const productPrices = filteredProductsArr
     .map((product) => product.price)

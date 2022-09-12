@@ -7,7 +7,7 @@ import {
 } from "../CustomDropDown/CustomDropDown";
 import {
   appleCategoryProductsOptions,
-  getOptions,
+  getFilteringOptions,
 } from "../additionalObjects/additionalObjects";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -29,22 +29,38 @@ const ProductsSideBar = ({ activeSideBar, closeSideBar }) => {
     }
   }, [location]);
 
-  const categoryOptions = getOptions("category", categoryName, searchResult);
+  const categoryOptions = getFilteringOptions(
+    "category",
+    categoryName,
+    searchResult
+  );
 
   const initialModelOptions = useMemo(
-    () => getOptions("model", categoryName, searchResult),
+    () => getFilteringOptions("model", categoryName, searchResult),
     [categoryName, searchResult]
   );
 
-  console.log(initialModelOptions, initialModelOptions.length);
+  const colorOptions = getFilteringOptions("color", categoryName, searchResult);
 
-  const colorOptions = getOptions("color", categoryName, searchResult);
+  const capacityOptions = getFilteringOptions(
+    "capacity",
+    categoryName,
+    searchResult
+  );
 
-  const capacityOptions = getOptions("capacity", categoryName, searchResult);
+  const diagonalOptions = getFilteringOptions(
+    "diagonal",
+    categoryName,
+    searchResult
+  );
 
-  const diagonalOptions = getOptions("diagonal", categoryName, searchResult);
+  const memoryOptions = getFilteringOptions(
+    "memory",
+    categoryName,
+    searchResult
+  );
 
-  const wifiOptions = getOptions("wifi", categoryName, searchResult);
+  const wifiOptions = getFilteringOptions("wifi", categoryName, searchResult);
 
   // const modelChoices = initialModelOptions(model => model.text)
 
@@ -81,20 +97,6 @@ const ProductsSideBar = ({ activeSideBar, closeSideBar }) => {
       )}
 
       {/* why is category options are here ?? They are supposed to be when we are on all products route which means that there must be links (iphone, ipad, macbook) instead of checkboxes */}
-
-      {/* {categoryName !== "all-products" &&
-        searchResult &&
-        categoryOptions.length > 0 && (
-          <CustomDropDownCheckboxes
-            activeSideBar={activeSideBar}
-            closeSideBar={closeSideBar}
-            initiallyActive
-            options={categoryOptions}
-            header="Категория"
-            listClass="products__sidebar__category-list"
-            headerClass="products__sidebar__category-header products__sidebar__category-header_checkboxes"
-          />
-        )} */}
 
       {(categoryName !== "all-products" || searchResult) &&
         initialModelOptions.length > 0 && (
@@ -143,6 +145,19 @@ const ProductsSideBar = ({ activeSideBar, closeSideBar }) => {
             options={diagonalOptions}
             initiallyActive={false}
             header="Диагональ"
+            listClass="products__sidebar__category-list"
+            headerClass="products__sidebar__category-header products__sidebar__category-header_checkboxes"
+          />
+        )}
+
+      {(categoryName !== "all-products" || searchResult) &&
+        memoryOptions.length > 0 && (
+          <CustomDropDownCheckboxes
+            activeSideBar={activeSideBar}
+            closeSideBar={closeSideBar}
+            options={memoryOptions}
+            initiallyActive={false}
+            header="Оперативная память"
             listClass="products__sidebar__category-list"
             headerClass="products__sidebar__category-header products__sidebar__category-header_checkboxes"
           />

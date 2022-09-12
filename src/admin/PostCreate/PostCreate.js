@@ -11,17 +11,18 @@ import {
 import {
   validatePostForm,
   onTransform,
-  brandChoices,
-  getCategoryChoices,
-  getModelChoices,
-  getCapacityChoices,
-  getColorChoices,
+  brandOptions,
+  getCategoryOptions,
+  getModelOptions,
+  getCapacityOptions,
+  getColorOptions,
   productsWithCapacity,
-  productsWithColors,
   productsWithDiagonal,
-  getDiagonalChoices,
+  getDiagonalOptions,
   productsWithWiFi,
-  getWiFiChoices,
+  getWiFiOptions,
+  productsWithMemory,
+  getMemoryOptions,
 } from "../AdditionalFunctions/AdditionalFunctions";
 
 const PostCreate = (props) => {
@@ -29,15 +30,13 @@ const PostCreate = (props) => {
 
   const fullName = Object.values(createdProduct).join(" ");
 
-  console.log(createdProduct);
-
   return (
     <Create {...props} transform={onTransform} title="Create a Product">
       <SimpleForm validate={validatePostForm}>
         <SelectInput
           onChange={(e) => setCreatedProduct({ brand: e.target.value })}
           source="description.brand"
-          choices={brandChoices}
+          choices={brandOptions}
         />
 
         {createdProduct.brand && (
@@ -46,7 +45,7 @@ const PostCreate = (props) => {
               setCreatedProduct({ ...createdProduct, category: e.target.value })
             }
             source="description.category"
-            choices={getCategoryChoices(createdProduct.brand)}
+            choices={getCategoryOptions(createdProduct.brand)}
           />
         )}
 
@@ -56,14 +55,14 @@ const PostCreate = (props) => {
               setCreatedProduct({ ...createdProduct, model: e.target.value })
             }
             source="description.model"
-            choices={getModelChoices(createdProduct.category)}
+            choices={getModelOptions(createdProduct.category)}
           />
         )}
 
         {productsWithDiagonal.includes(createdProduct.category) &&
           createdProduct.model && (
             <SelectInput
-              choices={getDiagonalChoices(
+              choices={getDiagonalOptions(
                 createdProduct.category,
                 createdProduct.model.toLowerCase()
               )}
@@ -80,7 +79,7 @@ const PostCreate = (props) => {
         {productsWithWiFi.includes(createdProduct.category) &&
           createdProduct.model && (
             <SelectInput
-              choices={getWiFiChoices(createdProduct.category)}
+              choices={getWiFiOptions(createdProduct.category)}
               onChange={(e) =>
                 setCreatedProduct({
                   ...createdProduct,
@@ -94,7 +93,7 @@ const PostCreate = (props) => {
         {productsWithCapacity.includes(createdProduct.category) &&
           createdProduct.model && (
             <SelectInput
-              choices={getCapacityChoices(
+              choices={getCapacityOptions(
                 createdProduct.category,
                 createdProduct.model.toLowerCase()
               )}
@@ -109,12 +108,30 @@ const PostCreate = (props) => {
             />
           )}
 
+        {productsWithMemory.includes(createdProduct.category) &&
+          createdProduct.model && (
+            <SelectInput
+              choices={getMemoryOptions(
+                createdProduct.category,
+                createdProduct.model.toLowerCase()
+              )}
+              onChange={(e) =>
+                setCreatedProduct({
+                  ...createdProduct,
+                  memory: e.target.value,
+                })
+              }
+              source="description.memory"
+              helperText="Это Оперативная память"
+            />
+          )}
+
         {productsWithCapacity.includes(createdProduct.category) &&
           createdProduct.model && (
             <SelectInput
-              choices={getColorChoices(
+              choices={getColorOptions(
                 createdProduct.category,
-                createdProduct.model.toLowerCase(),
+                createdProduct.model.toLowerCase()
               )}
               onChange={(e) =>
                 setCreatedProduct({ ...createdProduct, color: e.target.value })

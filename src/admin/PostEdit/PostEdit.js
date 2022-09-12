@@ -9,15 +9,16 @@ import {
   NumberInput,
 } from "react-admin";
 import {
-  brandChoices,
+  brandOptions,
   validatePostForm,
   onTransform,
-  getCategoryChoices,
-  getModelChoices,
-  getCapacityChoices,
-  getColorChoices,
-  getDiagonalChoices,
-  getWiFiChoices,
+  getCategoryOptions,
+  getModelOptions,
+  getCapacityOptions,
+  getColorOptions,
+  getDiagonalOptions,
+  getWiFiOptions,
+  getMemoryOptions,
 } from "../AdditionalFunctions/AdditionalFunctions";
 import axios from "axios";
 
@@ -42,7 +43,7 @@ const PostEdit = (props) => {
 
         <SelectInput
           source="description.brand"
-          choices={brandChoices}
+          choices={brandOptions}
           onChange={(e) =>
             setCreatedProduct({
               ...createdProduct,
@@ -56,7 +57,7 @@ const PostEdit = (props) => {
 
         <SelectInput
           source="description.category"
-          choices={getCategoryChoices(createdProduct.description?.brand)}
+          choices={getCategoryOptions(createdProduct.description?.brand)}
           onChange={(e) =>
             setCreatedProduct({
               ...createdProduct,
@@ -70,7 +71,7 @@ const PostEdit = (props) => {
 
         <SelectInput
           source="description.model"
-          choices={getModelChoices(createdProduct.description?.category)}
+          choices={getModelOptions(createdProduct.description?.category)}
           onChange={(e) =>
             setCreatedProduct({
               ...createdProduct,
@@ -85,9 +86,9 @@ const PostEdit = (props) => {
         {createdProduct.description?.diagonal && (
           <SelectInput
             source="description.diagonal"
-            choices={getDiagonalChoices(
+            choices={getDiagonalOptions(
               createdProduct.description?.category,
-              createdProduct.description?.model.toLowerCase(),
+              createdProduct.description?.model.toLowerCase()
             )}
             onChange={(e) =>
               setCreatedProduct({
@@ -104,7 +105,7 @@ const PostEdit = (props) => {
         {createdProduct.description?.wifi && (
           <SelectInput
             source="description.wifi"
-            choices={getWiFiChoices(createdProduct.description?.category)}
+            choices={getWiFiOptions(createdProduct.description?.category)}
             onChange={(e) =>
               setCreatedProduct({
                 ...createdProduct,
@@ -120,7 +121,7 @@ const PostEdit = (props) => {
         {createdProduct.description?.capacity && (
           <SelectInput
             source="description.capacity"
-            choices={getCapacityChoices(
+            choices={getCapacityOptions(
               createdProduct.description?.category,
               createdProduct.description?.model.toLowerCase()
             )}
@@ -137,10 +138,30 @@ const PostEdit = (props) => {
           />
         )}
 
+        {createdProduct.description?.capacity && (
+          <SelectInput
+            source="description.memory"
+            choices={getMemoryOptions(
+              createdProduct.description?.category,
+              createdProduct.description?.model.toLowerCase()
+            )}
+            onChange={(e) =>
+              setCreatedProduct({
+                ...createdProduct,
+                description: {
+                  ...createdProduct.description,
+                  memory: e.target.value,
+                },
+              })
+            }
+            helperText="Это Оперативная память"
+          />
+        )}
+
         {createdProduct.description?.color && (
           <SelectInput
             source="description.color"
-            choices={getColorChoices(
+            choices={getColorOptions(
               createdProduct.description?.category,
               createdProduct.description?.model.toLowerCase()
             )}

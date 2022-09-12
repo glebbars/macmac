@@ -7,14 +7,25 @@ import imacCatalog from "../../img/catalog-imac.png";
 import airpodsCatalog from "../../img/catalog-airpods.png";
 import applewatchCatalog from "../../img/catalog-apple-watch.png";
 import {
-  getIpadCapacityChoices,
-  getIpadColorChoices,
-  getIphoneCapacityChoices,
-  getIphoneColorChoices,
-  getIpadDiagonalChoices,
-  getMacbookDiagonalChoices,
-  getMacbookCapacityChoices,
-  getMacbookColorChoices,
+  getIpadCapacityOptions,
+  getIpadColorOptions,
+  getIpadDiagonalOptions,
+  getIphoneCapacityOptions,
+  getIphoneColorgetIphoneColorOptions,
+  getMacbookCapacityOptions,
+  getMacbookColorOptions,
+  getMacbookDiagonalOptions,
+  getMacbookMemoryOptions,
+  iphoneModelOptions,
+  ipadModelOptions,
+  macbookModelOptions,
+  airPodsModelOptions,
+  colorOptions,
+  appleCategoryOptions,
+  capacityOptions,
+  diagonalOptions,
+  wifiOptions,
+  memoryOptions,
 } from "../../admin/AdditionalFunctions/AdditionalFunctions";
 
 export const routesNames = {
@@ -125,80 +136,95 @@ export const appleCategoryProductsOptions = [
   },
 ];
 
-export const getOptions = (optionsType, categoryName, searchResult) => {
+export const getFilteringOptions = (
+  optionsType,
+  categoryName,
+  searchResult
+) => {
   if (categoryName) {
-    const result = getRightChoiceFunc(optionsType, categoryName);
-    console.log(result);
-    return result;
+    return getRightOptionsFunc(optionsType, categoryName);
   } else if (searchResult) {
     const similarName = getSimilarCategoryName(searchResult);
-    return getRightChoiceFunc(optionsType, similarName);
+    return getRightOptionsFunc(optionsType, similarName);
   }
 };
 
-const getRightChoiceFunc = (optionsType, value) => {
-  console.log(value, optionsType);
+const getRightOptionsFunc = (optionsType, value) => {
   switch (optionsType) {
     case "category":
-      return getCategoryChoices(value);
+      return getCategoryOptions(value);
     case "model":
-      return getAppleModelChoices(value);
+      return getAppleModelOptions(value);
     case "color":
-      return getAppleColorChoices(value);
+      return getAppleColorOptions(value);
     case "capacity":
-      return getAppleCapacityChoices(value);
+      return getAppleCapacityOptions(value);
     case "diagonal":
-      return getAppleDiagonalChoices(value);
+      return getAppleDiagonalOptions(value);
     case "wifi":
-      return getAppleWifiChoices(value);
+      return getAppleWifiOptions(value);
+    case "memory":
+      return getAppleMemoryOptions(value);
     default:
       return [];
   }
 };
 
-const getCategoryChoices = (value) => {
+const getCategoryOptions = (value) => {
   switch (value) {
     case "apple":
-      return appleCategoryOptions;
+      return getOptionsForFiltering(appleCategoryOptions, "Категория");
     default:
       return [];
   }
 };
 
-const getAppleModelChoices = (value) => {
-  console.log("---");
+const getAppleModelOptions = (value) => {
   switch (value) {
     case "iphone":
-      return modelIphoneOptions;
+      return getOptionsForFiltering(iphoneModelOptions, "Модель");
+
     case "ipad":
-      return modelIpadOptions;
+      return getOptionsForFiltering(ipadModelOptions, "Модель");
+
     case "airpods":
-      return modelAirPodsOptions;
+      return getOptionsForFiltering(airPodsModelOptions, "Модель");
+
+    case "macbook":
+      return getOptionsForFiltering(macbookModelOptions, "Модель");
     default:
       return [];
   }
 };
 
-const getAppleColorChoices = (value) => {
+const getAppleColorOptions = (value) => {
   if (!value.includes("-")) {
     switch (value) {
       case "iphone":
-        return colorIphoneOptions;
+        return getOptionsForFiltering(colorIphoneOptions, "Цвет");
       case "ipad":
-        return colorIpadOptions;
+        return getOptionsForFiltering(colorIpadOptions, "Цвет");
+
+      case "macbook":
+        return getOptionsForFiltering(colorMacbookOptions, "Цвет");
+
       default:
         return [];
     }
   } else {
     switch (true) {
       case value.includes("iphone"):
-        return getModelOptions(value, "Цвет", getIphoneColorChoices);
+        return getExtendedOptions(
+          value,
+          "Цвет",
+          getIphoneColorgetIphoneColorOptions
+        );
 
       case value.includes("ipad"):
-        return getModelOptions(value, "Цвет", getIpadColorChoices);
+        return getExtendedOptions(value, "Цвет", getIpadColorOptions);
 
       case value.includes("macbook"):
-        return getModelOptions(value, "Цвет", getMacbookColorChoices);
+        return getExtendedOptions(value, "Цвет", getMacbookColorOptions);
 
       default:
         return [];
@@ -206,40 +232,31 @@ const getAppleColorChoices = (value) => {
   }
 };
 
-const getAppleCapacityChoices = (value) => {
+const getAppleCapacityOptions = (value) => {
   if (!value.includes("-")) {
     switch (value) {
       case "iphone":
-        return [
-          capacityOptions["64"],
-          capacityOptions["128"],
-          capacityOptions["256"],
-          capacityOptions["512"],
-          capacityOptions["1"],
-        ];
+        return getOptionsForFiltering(capacityIphoneOptions, "Память");
 
       case "ipad":
-        return [
-          capacityOptions["64"],
-          capacityOptions["128"],
-          capacityOptions["256"],
-          capacityOptions["512"],
-          capacityOptions["1"],
-          capacityOptions["2"],
-        ];
+        return getOptionsForFiltering(capacityIpadOptions, "Память");
+
+      case "macbook":
+        return getOptionsForFiltering(capacityMacbookOptions, "Память");
+
       default:
         return [];
     }
   } else {
     switch (true) {
       case value.includes("iphone"):
-        return getModelOptions(value, "Память", getIphoneCapacityChoices);
+        return getExtendedOptions(value, "Память", getIphoneCapacityOptions);
 
       case value.includes("ipad"):
-        return getModelOptions(value, "Память", getIpadCapacityChoices);
+        return getExtendedOptions(value, "Память", getIpadCapacityOptions);
 
       case value.includes("macbook"):
-        return getModelOptions(value, "Память", getMacbookCapacityChoices);
+        return getExtendedOptions(value, "Память", getMacbookCapacityOptions);
 
       default:
         return [];
@@ -247,7 +264,91 @@ const getAppleCapacityChoices = (value) => {
   }
 };
 
-const getModelOptions = (model, name, getOptionsFunc) => {
+const getAppleDiagonalOptions = (value) => {
+  if (!value.includes("-")) {
+    switch (value) {
+      case "ipad":
+        return getOptionsForFiltering(diagonalIpadOptions, "Диагональ");
+
+      case "macbook":
+        return getOptionsForFiltering(diagonalMacbookOptions, "Диагональ");
+
+      default:
+        return [];
+    }
+  } else {
+    switch (true) {
+      case value.includes("ipad"):
+        return getExtendedOptions(value, "Диагональ", getIpadDiagonalOptions);
+
+      case value.includes("macbook"):
+        return getExtendedOptions(
+          value,
+          "Диагональ",
+          getMacbookDiagonalOptions
+        );
+
+      default:
+        return [];
+    }
+  }
+};
+
+const getAppleWifiOptions = (value) => {
+  if (!value.includes("-")) {
+    switch (value) {
+      case "ipad":
+        return getOptionsForFiltering(wifiIpadOptions, "Wi-Fi");
+
+      default:
+        return [];
+    }
+  } else {
+    switch (true) {
+      case value.includes("ipad"):
+        return getOptionsForFiltering(wifiIpadOptions, "Wi-Fi");
+
+      default:
+        return [];
+    }
+  }
+};
+
+const getAppleMemoryOptions = (value) => {
+  if (!value.includes("-")) {
+    switch (value) {
+      case "macbook":
+        return getOptionsForFiltering(
+          memoryMacbookOptions,
+          "Оперативная память"
+        );
+
+      default:
+        return [];
+    }
+  } else {
+    switch (true) {
+      case value.includes("macbook"):
+        return getExtendedOptions(
+          value,
+          "Оперативная память",
+          getMacbookMemoryOptions
+        );
+
+      default:
+        return [];
+    }
+  }
+};
+
+const getOptionsForFiltering = (optionsArr, filterName) => {
+  return optionsArr.map((option) => ({
+    filterName,
+    text: option?.name,
+  }));
+};
+
+const getExtendedOptions = (model, name, getOptionsFunc) => {
   const routeModel = model.split("-").join(" ");
 
   const adminOptions = getOptionsFunc(routeModel);
@@ -258,63 +359,6 @@ const getModelOptions = (model, name, getOptionsFunc) => {
   }));
 };
 
-const getAppleDiagonalChoices = (value) => {
-  if (!value.includes("-")) {
-    switch (value) {
-      case "ipad":
-        return [
-          diagonalChoices[8.3],
-          diagonalChoices[10.2],
-          diagonalChoices[10.9],
-          diagonalChoices[11],
-          diagonalChoices[12.9],
-        ];
-
-      case "macbook":
-        return [
-          diagonalChoices[13.3],
-          diagonalChoices[13.6],
-          diagonalChoices[14],
-          diagonalChoices[16],
-        ];
-
-      default:
-        return [];
-    }
-  } else {
-    switch (true) {
-      case value.includes("ipad"):
-        return getModelOptions(value, "Диагональ", getIpadDiagonalChoices);
-
-      case value.includes("macbook"):
-        return getModelOptions(value, "Диагональ", getMacbookDiagonalChoices);
-
-      default:
-        return [];
-    }
-  }
-};
-
-const getAppleWifiChoices = (value) => {
-  if (!value.includes("-")) {
-    switch (value) {
-      case "ipad":
-        return [wifiChoices["wifi"], wifiChoices["wifi+cellular"]];
-
-      default:
-        return [];
-    }
-  } else {
-    switch (true) {
-      case value.includes("ipad"):
-        return [wifiChoices["wifi"], wifiChoices["wifi+cellular"]];
-
-      default:
-        return [];
-    }
-  }
-};
-
 export const getSimilarCategoryName = (name) => {
   for (let product in routesNames) {
     if (routesNames[product].toLowerCase().includes(name)) {
@@ -323,272 +367,80 @@ export const getSimilarCategoryName = (name) => {
   }
 };
 
-const appleCategoryOptions = [
-  {
-    filterName: "Категория",
-    text: "iPhone",
-  },
-  {
-    filterName: "Категория",
-    text: "iPad",
-  },
-  {
-    filterName: "Категория",
-    text: "AirPods",
-  },
-  {
-    filterName: "Категория",
-    text: "Macbook",
-  },
-  {
-    filterName: "Категория",
-    text: "Apple Watch",
-  },
-];
-
-const modelIphoneOptions = [
-  {
-    filterName: "Модель",
-    text: "iPhone 13",
-  },
-  {
-    filterName: "Модель",
-    text: "iPhone 13 Mini",
-  },
-  {
-    filterName: "Модель",
-    text: "iPhone 13 Pro",
-  },
-  {
-    filterName: "Модель",
-    text: "iPhone 13 Pro Max",
-  },
-  {
-    filterName: "Модель",
-    text: "iPhone 12",
-  },
-  {
-    filterName: "Модель",
-    text: "iPhone 12 Mini",
-  },
-  {
-    filterName: "Модель",
-    text: "iPhone 12 Pro",
-  },
-  {
-    filterName: "Модель",
-    text: "iPhone 12 Pro Max",
-  },
-  {
-    filterName: "Модель",
-    text: "iPhone 11",
-  },
-  {
-    filterName: "Модель",
-    text: "iPhone SE 2022",
-  },
-  {
-    filterName: "Модель",
-    text: "iPhone SE 2020",
-  },
-];
-
-const modelIpadOptions = [
-  {
-    filterName: "Модель",
-    text: "iPad Air 2022",
-  },
-  {
-    filterName: "Модель",
-    text: "iPad 2021",
-  },
-  {
-    filterName: "Модель",
-    text: "iPad Pro 2021",
-  },
-  {
-    filterName: "Модель",
-    text: "iPad mini 6",
-  },
-];
-
-const modelAirPodsOptions = [
-  {
-    filterName: "Модель",
-    text: "AirPods 2",
-  },
-  {
-    filterName: "Модель",
-    text: "AirPods Pro",
-  },
-  {
-    filterName: "Модель",
-    text: "AirPods 3",
-  },
-];
-
 const colorIphoneOptions = [
-  {
-    filterName: "Цвет",
-    text: "Black",
-  },
-  {
-    filterName: "Цвет",
-    text: "(Product) Red",
-  },
-  {
-    filterName: "Цвет",
-    text: "Yellow",
-  },
-  {
-    filterName: "Цвет",
-    text: "White",
-  },
-  {
-    filterName: "Цвет",
-    text: "Mind",
-  },
-  {
-    filterName: "Цвет",
-    text: "Purple",
-  },
-  {
-    filterName: "Цвет",
-    text: "Blue",
-  },
-  {
-    filterName: "Цвет",
-    text: "Silver",
-  },
-  {
-    filterName: "Цвет",
-    text: "Gold",
-  },
-  {
-    filterName: "Цвет",
-    text: "Pacific Blue",
-  },
-  {
-    filterName: "Цвет",
-    text: "Graphite",
-  },
-  {
-    filterName: "Цвет",
-    text: "Pink",
-  },
-  {
-    filterName: "Цвет",
-    text: "Midnight",
-  },
-  {
-    filterName: "Цвет",
-    text: "Starlight",
-  },
-  {
-    filterName: "Цвет",
-    text: "Green",
-  },
-  {
-    filterName: "Цвет",
-    text: "Alpine Green",
-  },
-  {
-    filterName: "Цвет",
-    text: "Sierra Blue",
-  },
+  colorOptions["black"],
+  colorOptions["product red"],
+  colorOptions["yellow"],
+  colorOptions["white"],
+  colorOptions["mind"],
+  colorOptions["purple"],
+  colorOptions["blue"],
+  colorOptions["silver"],
+  colorOptions["gold"],
+  colorOptions["graphite"],
+  colorOptions["pink"],
+  colorOptions["midnight"],
+  colorOptions["starlight"],
+  colorOptions["alpine green"],
+  colorOptions["sierra blue"],
 ];
 
 const colorIpadOptions = [
-  {
-    filterName: "Цвет",
-    text: "Space Gray",
-  },
-  {
-    filterName: "Цвет",
-    text: "Starlight",
-  },
-  {
-    filterName: "Цвет",
-    text: "Silver",
-  },
-  {
-    filterName: "Цвет",
-    text: "Pink",
-  },
-  {
-    filterName: "Цвет",
-    text: "Purple",
-  },
-  {
-    filterName: "Цвет",
-    text: "Blue",
-  },
+  colorOptions["space gray"],
+  colorOptions["purple"],
+  colorOptions["blue"],
+  colorOptions["silver"],
+  colorOptions["pink"],
+  colorOptions["starlight"],
 ];
 
-const capacityOptions = {
-  64: {
-    filterName: "Память",
-    text: "64Gb",
-  },
-  128: {
-    filterName: "Память",
-    text: "128Gb",
-  },
-  256: {
-    filterName: "Память",
-    text: "256Gb",
-  },
-  512: {
-    filterName: "Память",
-    text: "512Gb",
-  },
-  1: {
-    filterName: "Память",
-    text: "1Tb",
-  },
-  2: {
-    filterName: "Память",
-    text: "2Tb",
-  },
-  4: {
-    filterName: "Память",
-    text: "4Tb",
-  },
-};
+const colorMacbookOptions = [
+  colorOptions["space gray"],
+  colorOptions["silver"],
+  colorOptions["starlight"],
+  colorOptions["midnight"],
+  colorOptions["gold"],
+];
 
-const diagonalChoices = {
-  8.3: {
-    filterName: "Диагональ",
-    text: '8.3"',
-  },
-  10.2: {
-    filterName: "Диагональ",
-    text: '10.2"',
-  },
-  10.9: {
-    filterName: "Диагональ",
-    text: '10.9"',
-  },
-  11: {
-    filterName: "Диагональ",
-    text: '11"',
-  },
-  12.9: {
-    filterName: "Диагональ",
-    text: '12.9"',
-  },
-};
+const capacityIphoneOptions = [
+  capacityOptions["64"],
+  capacityOptions["128"],
+  capacityOptions["256"],
+  capacityOptions["512"],
+  capacityOptions["1"],
+];
 
-const wifiChoices = {
-  wifi: {
-    filterName: "Wi-Fi",
-    text: "Wi-Fi",
-  },
-  "wifi+cellular": {
-    filterName: "Wi-Fi",
-    text: "Wi-Fi + Cellular",
-  },
-};
+const capacityIpadOptions = [...capacityIphoneOptions, capacityOptions["2"]];
+
+const capacityMacbookOptions = [
+  capacityOptions["256"],
+  capacityOptions["512"],
+  capacityOptions["1"],
+];
+
+const diagonalIpadOptions = [
+  diagonalOptions[8.3],
+  diagonalOptions[10.2],
+  diagonalOptions[10.9],
+  diagonalOptions[11],
+  diagonalOptions[12.9],
+];
+
+const diagonalMacbookOptions = [
+  diagonalOptions[13.3],
+  diagonalOptions[13.6],
+  diagonalOptions[14],
+  diagonalOptions[16],
+];
+
+const memoryMacbookOptions = [
+  memoryOptions[8],
+  memoryOptions[16],
+  memoryOptions[32],
+  memoryOptions[64],
+];
+
+const wifiIpadOptions = [wifiOptions["wi-fi"], wifiOptions["wi-fi+cellular"]];
 
 export const initialProductCrumbs = [
   {
@@ -652,8 +504,8 @@ export const headerCatalogCategories = [
         link: "/category/iphone-12",
       },
       {
-        name: "iPhone 12 Pro",
-        link: "/category/iphone-12-pro",
+        name: "iPhone 12 Mini",
+        link: "/category/iphone-12-mini",
       },
     ],
   },

@@ -64,7 +64,7 @@
         "category": "iPhone",
         "model": "iPhone SE 2022",
         "capacity": "64Gb",
-        "color": "(Product) Red"
+        "color": "Product Red"
       }
     },
     {
@@ -130,7 +130,7 @@
         "category": "iPhone",
         "model": "iPhone SE 2022",
         "capacity": "128Gb",
-        "color": "(Product) Red"
+        "color": "Product Red"
       }
     },
     {
@@ -196,7 +196,7 @@
         "category": "iPhone",
         "model": "iPhone SE 2022",
         "capacity": "256Gb",
-        "color": "(Product) Red"
+        "color": "Product Red"
       }
     },
     {
@@ -987,7 +987,7 @@
         "category": "iPhone",
         "model": "iPhone 13",
         "capacity": "128Gb",
-        "color": "(Product) Red"
+        "color": "Product Red"
       },
       "id": 53,
       "price": 27540
@@ -1095,7 +1095,7 @@
         "category": "iPhone",
         "model": "iPhone 13",
         "capacity": "256Gb",
-        "color": "(Product) Red"
+        "color": "Product Red"
       },
       "id": 59,
       "price": 30260
@@ -1203,7 +1203,7 @@
         "category": "iPhone",
         "model": "iPhone 13",
         "capacity": "512Gb",
-        "color": "(Product) Red"
+        "color": "Product Red"
       },
       "id": 65,
       "price": 31960
@@ -1311,7 +1311,7 @@
         "category": "iPhone",
         "model": "iPhone 13 Mini",
         "capacity": "128Gb",
-        "color": "(Product) Red"
+        "color": "Product Red"
       },
       "id": 71,
       "price": 25840
@@ -1419,7 +1419,7 @@
         "category": "iPhone",
         "model": "iPhone 13 Mini",
         "capacity": "256Gb",
-        "color": "(Product) Red"
+        "color": "Product Red"
       },
       "id": 77,
       "price": 27880
@@ -1527,7 +1527,7 @@
         "category": "iPhone",
         "model": "iPhone 13 Mini",
         "capacity": "512Gb",
-        "color": "(Product) Red"
+        "color": "Product Red"
       },
       "id": 83,
       "price": 32130
@@ -1619,7 +1619,7 @@
         "category": "iPhone",
         "model": "iPhone 12",
         "capacity": "64Gb",
-        "color": "(Product) Red"
+        "color": "Product Red"
       }
     },
     {
@@ -1727,7 +1727,7 @@
         "category": "iPhone",
         "model": "iPhone 12",
         "capacity": "128Gb",
-        "color": "(Product) Red"
+        "color": "Product Red"
       }
     },
     {
@@ -1835,7 +1835,7 @@
         "category": "iPhone",
         "model": "iPhone 12",
         "capacity": "256Gb",
-        "color": "(Product) Red"
+        "color": "Product Red"
       }
     },
     {
@@ -1943,7 +1943,7 @@
         "category": "iPhone",
         "model": "iPhone 12 Mini",
         "capacity": "64Gb",
-        "color": "(Product) Red"
+        "color": "Product Red"
       }
     },
     {
@@ -2051,7 +2051,7 @@
         "category": "iPhone",
         "model": "iPhone 12 Mini",
         "capacity": "128Gb",
-        "color": "(Product) Red"
+        "color": "Product Red"
       }
     },
     {
@@ -2159,7 +2159,7 @@
         "category": "iPhone",
         "model": "iPhone 12 Mini",
         "capacity": "256Gb",
-        "color": "(Product) Red"
+        "color": "Product Red"
       }
     },
     {
@@ -2249,7 +2249,7 @@
         "category": "iPhone",
         "model": "iPhone 11",
         "capacity": "64Gb",
-        "color": "(Product) Red"
+        "color": "Product Red"
       },
       "id": 123
     },
@@ -2357,7 +2357,7 @@
         "category": "iPhone",
         "model": "iPhone 11",
         "capacity": "128Gb",
-        "color": "(Product) Red"
+        "color": "Product Red"
       },
       "id": 129
     },
@@ -2503,6 +2503,7 @@
         "capacity": "64Gb",
         "color": "Pink"
       },
+      "label": "Хит продаж",
       "id": 136
     },
     {
@@ -3835,7 +3836,7 @@
     },
     {
       "fullName": "iPad Pro 2021 11\" Wi-Fi + Cellular 128Gb Space Gray (MHW53/MHMT3)",
-      "price": 28390,
+      "price": 36040,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656283864/mac-mac-images/f1jb90nck5uuh781hha9.png",
@@ -3863,7 +3864,7 @@
     },
     {
       "fullName": "iPad Pro 2021 11\" Wi-Fi + Cellular 128Gb Silver (MHW63/MHMU3)",
-      "price": 28390,
+      "price": 36720,
       "pictures": [
         {
           "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1656283911/mac-mac-images/lka3mb9lgaw7dvsn5okm.png",
@@ -4672,6 +4673,166 @@
         "color": "Silver"
       },
       "id": 217
+    },
+    {
+      "id": 218,
+      "fullName": "MacBook Air M2 13.6\" 256Gb Space Gray (MLXW3)",
+      "price": 56100,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1662941487/mac-mac-images/kolztjed825uzwjkveab.png",
+          "id": "7dc13fdb850706117c281a440bfc400a"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Air M2",
+        "diagonal": "13.6\"",
+        "capacity": "256Gb",
+        "memory": "8Gb",
+        "color": "Space Gray"
+      }
+    },
+    {
+      "id": 219,
+      "fullName": "MacBook Air M2 13.6\" 256Gb Silver (MLXY3)",
+      "price": 57800,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1662941544/mac-mac-images/wsboop2pzvjhk0rxtnmc.png",
+          "id": "cc079c41016f2a3d78c73e95868e827e"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Air M2",
+        "diagonal": "13.6\"",
+        "capacity": "256Gb",
+        "memory": "8Gb",
+        "color": "Silver"
+      }
+    },
+    {
+      "id": 220,
+      "fullName": "MacBook Air M2 13.6\" 256Gb Starlight (MLY13)",
+      "price": 56100,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1662941529/mac-mac-images/l4kqogxiwesmxrkdwsv2.png",
+          "id": "a1faec4558d229e62a838516981a6aff"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Air M2",
+        "diagonal": "13.6\"",
+        "capacity": "256Gb",
+        "memory": "8Gb",
+        "color": "Starlight"
+      }
+    },
+    {
+      "id": 221,
+      "fullName": "MacBook Air M2 13.6\" 256Gb Midnight (MLY33)",
+      "price": 58820,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1662941518/mac-mac-images/jn1zegcpbwityvwcjoaf.png",
+          "id": "352c22a982b5bd6f65d661ab5c35a9a0"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Air M2",
+        "diagonal": "13.6\"",
+        "capacity": "256Gb",
+        "memory": "8Gb",
+        "color": "Midnight"
+      }
+    },
+    {
+      "id": 222,
+      "fullName": "MacBook Air M2 13.6\" 512Gb Space Gray (MLXX3)",
+      "price": 71400,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1662941487/mac-mac-images/kolztjed825uzwjkveab.png",
+          "id": "7dc13fdb850706117c281a440bfc400a"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Air M2",
+        "diagonal": "13.6\"",
+        "capacity": "256Gb",
+        "memory": "8Gb",
+        "color": "Space Gray"
+      }
+    },
+    {
+      "id": 223,
+      "fullName": "MacBook Air M2 13.6\" 512Gb Silver (MLY03)",
+      "price": 71400,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1662941544/mac-mac-images/wsboop2pzvjhk0rxtnmc.png",
+          "id": "cc079c41016f2a3d78c73e95868e827e"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Air M2",
+        "diagonal": "13.6\"",
+        "capacity": "256Gb",
+        "memory": "8Gb",
+        "color": "Silver"
+      }
+    },
+    {
+      "id": 224,
+      "fullName": "MacBook Air M2 13.6\" 512Gb Starlight (MLY23)",
+      "price": 71400,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1662941529/mac-mac-images/l4kqogxiwesmxrkdwsv2.png",
+          "id": "a1faec4558d229e62a838516981a6aff"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Air M2",
+        "diagonal": "13.6\"",
+        "capacity": "512Gb",
+        "memory": "8Gb",
+        "color": "Starlight"
+      }
+    },
+    {
+      "id": 225,
+      "fullName": "MacBook Air M2 13.6\" 512Gb Midnight (MLY43)",
+      "price": 71400,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1662941518/mac-mac-images/jn1zegcpbwityvwcjoaf.png",
+          "id": "352c22a982b5bd6f65d661ab5c35a9a0"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Air M2",
+        "diagonal": "13.6\"",
+        "capacity": "512Gb",
+        "memory": "8Gb",
+        "color": "Midnight"
+      }
     }
   ],
   "orders": [],
@@ -4687,15 +4848,14 @@
       "macbook pro 13.3\" 2020 m1 256gb/8gb silver (myda2)": 44200,
       "macbook pro 13.3\" 2020 m1 512gb/8gb space gray (myd92)": 47430,
       "macbook pro 13.3\" 2020 m1 512gb/8gb silver (mydc2)": 47600,
-      "macbook pro 16\" 512gb space 2019 (mvvj2)": 75480,
-      "macbook pro 16\" 512gb silver 2019 (mvvl2)": 75480,
-      "macbook pro 16\" 1tb space 2019 (mvvk2)": 78880,
-      "macbook pro 16\" 1tb silver 2019 (mvvm2)": 78880,
-      "macbook air m2 13,6\" 256gb/8gb/8gpu space gray 2022 (mlxw3)": 56100,
-      "macbook air m2 13,6\" 256gb/8gb/8gpu silver 2022 (mlxy3)": 57800,
-      "macbook air m2 13,6\" 256gb/8gb/8gpu starlight 2022 (mly13)": 56100,
-      "macbook air m2 13,6\" 256gb/8gb/8gpu midnight 2022 (mly33)": 58820,
-      "macbook air m2 13,6\" 512gb/8gb/10gpu space gray 2022 (mlxx3)": 71400,
+      "macbook air m2 13.6\" 256gb space gray (mlxw3)": 56100,
+      "macbook air m2 13.6\" 256gb silver (mlxy3)": 57800,
+      "macbook air m2 13.6\" 256gb starlight (mly13)": 56100,
+      "macbook air m2 13.6\" 256gb midnight (mly33)": 58820,
+      "macbook air m2 13.6\" 512gb space gray (mlxx3)": 71400,
+      "macbook air m2 13.6\" 512gb silver (mly03)": 71400,
+      "macbook air m2 13.6\" 512gb starlight (mly23)": 71400,
+      "macbook air m2 13.6\" 512gb midnight (mly43)": 71400,
       "macbook pro 13\" m2 8-cpu/10-gpu/8gb/256gb space gray 2022 (mneh3)": 48960,
       "macbook pro 13\" m2 8-cpu/10-gpu/8gb/256gb silver 2022 (mnep3)": 48960,
       "macbook pro 13\" m2 8-cpu/10-gpu/8gb/512gb silver 2022 (mneq3)": 56100,
@@ -4718,6 +4878,7 @@
       "macbook pro 16\" m1 max 10cpu/24gpu/1tb/32gb space gray (z14w00106/z14v0001s)": 139400,
       "macbook pro 16\" m1 max 10cpu/24gpu/1tb/32gb silver (z14z00106)": 146200,
       "macbook pro 16\" m1 max 10cpu/24gpu/2tb/32gb space gray (z14w0010c)": 168640,
+      "macbook pro 16\" m1 max 10cpu/24gpu/1tb/64gb space gray (z14w00106)": 170000,
       "macbook pro 16\" m1 max 10cpu/24gpu/1tb/64gb space gray (z14w0010b)": 163200,
       "macbook pro 16\" m1 max 10cpu/24gpu/2tb/64gb space gray (z14w0010d)": 175100,
       "macbook pro 16\" m1 max 10cpu/32gpu/2tb/32gb space gray (z14x000h6)": 170000,
@@ -4728,6 +4889,7 @@
       "macbook pro 16'' m1 max 10cpu/32gpu/2tb/64gb space gray (z14x000hq)": 181900,
       "macbook pro 16'' m1 max 10cpu/32gpu/2tb/64gb silver (z150000hq)": 191080,
       "macbook pro 16'' m1 max 10cpu/32gpu/4tb/64gb space gray (mk233/z14x000hr)": 207060,
+      "macbook pro 16\" m1 max 10cpu/32gpu/4tb/64gb silver (mmqw3/z150000hr )": 207060,
       "ipad 2021 10.2\" wi-fi 64gb silver (mk2l3)": 12750,
       "ipad 2021 10.2\" wi-fi 64gb space gray (mk2k3)": 12750,
       "ipad 2021 10.2\" wi-fi 256gb space gray (mk2n3)": 16320,

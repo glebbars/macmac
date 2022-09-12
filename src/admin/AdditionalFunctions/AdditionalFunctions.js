@@ -106,7 +106,7 @@ const uploadImage = async (compressedImgs) => {
   );
 };
 
-export const brandChoices = [
+export const brandOptions = [
   { id: "Apple", name: "Apple" },
   { id: "Sumsung", name: "Sumsung" },
   { id: "GoPro", name: "GoPro" },
@@ -114,10 +114,10 @@ export const brandChoices = [
   { id: "Accessories", name: "Accessories" },
 ];
 
-export const getCategoryChoices = (value) => {
+export const getCategoryOptions = (value) => {
   switch (value) {
     case "Apple":
-      return appleCategoryChoices;
+      return appleCategoryOptions;
     case "Sumsung":
       return [];
     case "GoPro":
@@ -129,59 +129,56 @@ export const getCategoryChoices = (value) => {
   }
 };
 
-export const appleCategoryChoices = [
+export const appleCategoryOptions = [
   { id: "iPhone", name: "iPhone" },
   { id: "iPad", name: "iPad" },
-  { id: "Macbook", name: "Macbook" },
+  { id: "MacBook", name: "MacBook" },
   { id: "Apple Watch", name: "Apple Watch" },
   { id: "AirPods", name: "AirPods" },
 ];
 
-export const getModelChoices = (value) => {
+export const getModelOptions = (value) => {
   switch (value) {
     case "iPhone":
-      return iphoneModelChoices;
+      return iphoneModelOptions;
     case "iPad":
-      return ipadModelChoices;
+      return ipadModelOptions;
     case "AirPods":
-      return airPodsModelChoices;
-    case "Macbook":
-      return macbookModelChoices;
+      return airPodsModelOptions;
+    case "MacBook":
+      return macbookModelOptions;
     case "Watch":
-      return watchModelChoices;
+      return watchModelOptions;
     default:
       return [];
   }
 };
 
-const iphoneModelChoices = [
-  { id: "iPhone SE 2020", name: "iPhone SE 2020" },
+export const iphoneModelOptions = [
   { id: "iPhone SE 2022", name: "iPhone SE 2022" },
   { id: "iPhone 11", name: "iPhone 11" },
   { id: "iPhone 12", name: "iPhone 12" },
   { id: "iPhone 12 Mini", name: "iPhone 12 Mini" },
-  { id: "iPhone 12 Pro", name: "iPhone 12 Pro" },
-  { id: "iPhone 12 Pro Max", name: "iPhone 12 Pro Max" },
   { id: "iPhone 13", name: "iPhone 13" },
   { id: "iPhone 13 Mini", name: "iPhone 13 Mini" },
   { id: "iPhone 13 Pro", name: "iPhone 13 Pro" },
   { id: "iPhone 13 Pro Max", name: "iPhone 13 Pro Max" },
 ];
 
-const airPodsModelChoices = [
+export const airPodsModelOptions = [
   { id: "2", name: "2" },
   { id: "Pro", name: "Pro" },
   { id: "3", name: "3" },
 ];
 
-const ipadModelChoices = [
+export const ipadModelOptions = [
   { id: "iPad Air 2022", name: "iPad Air 2022" },
   { id: "iPad 2021", name: "iPad 2021" },
   { id: "iPad mini 6", name: "iPad mini 6" },
   { id: "iPad Pro 2021", name: "iPad Pro 2021" },
 ];
 
-const macbookModelChoices = [
+export const macbookModelOptions = [
   { id: "MacBook Air M2", name: "MacBook Air M2" },
   { id: "MacBook Air M1", name: "MacBook Air M1" },
   { id: "MacBook Pro M2", name: "MacBook Pro M2" },
@@ -190,62 +187,60 @@ const macbookModelChoices = [
   { id: "MacBook Pro M1 Max", name: "MacBook Pro M1 Max" },
 ];
 
-const watchModelChoices = [
+const watchModelOptions = [
   { id: "6", name: "6" },
   { id: "7", name: "7" },
 ];
 
-export const getDiagonalChoices = (category, model) => {
+export const getDiagonalOptions = (category, model) => {
   switch (category) {
     case "iPad":
-      return getIpadDiagonalChoices(model);
-    case "Macbook":
-      return getMacbookDiagonalChoices(model);
+      return getIpadDiagonalOptions(model);
+    case "MacBook":
+      return getMacbookDiagonalOptions(model);
     default:
       return [];
   }
 };
 
-export const getIpadDiagonalChoices = (model) => {
+export const getIpadDiagonalOptions = (model) => {
   switch (model) {
     case "ipad air 2022":
-      return [diagonalChoices["10.9"]];
+      return [diagonalOptions["10.9"]];
     case "ipad 2021":
-      return [diagonalChoices["10.2"]];
+      return [diagonalOptions["10.2"]];
     case "ipad mini 6":
-      return [diagonalChoices["8.3"]];
+      return [diagonalOptions["8.3"]];
     case "ipad pro 2021":
-      return [diagonalChoices["11"], diagonalChoices["12.9"]];
+      return [diagonalOptions["11"], diagonalOptions["12.9"]];
 
     default:
       return [];
   }
 };
 
-export const getMacbookDiagonalChoices = (model) => {
-  console.log(model);
-
+export const getMacbookDiagonalOptions = (model) => {
   switch (model) {
     case "macbook air m2":
     case "macbook pro m2":
-      return [diagonalChoices["13.6"]];
+      return [diagonalOptions["13.6"]];
 
     case "macbook air m1":
     case "macbook pro m1":
-      return [diagonalChoices["13.3"]];
+      return [diagonalOptions["13.3"]];
 
     case "macbook pro m1 pro":
-      return [diagonalChoices["14"], diagonalChoices["16"]];
+      return [diagonalOptions["14"], diagonalOptions["16"]];
 
     case "macbook pro m1 max":
-      return [diagonalChoices["16"]];
+      return [diagonalOptions["16"]];
 
     default:
       return [];
   }
 };
 
-const diagonalChoices = {
+export const diagonalOptions = {
   8.3: { id: '8.3"', name: '8.3"' },
   10.2: { id: '10.2"', name: '10.2"' },
   10.9: { id: '10.9"', name: '10.9"' },
@@ -258,38 +253,35 @@ const diagonalChoices = {
   16: { id: '16"', name: '16"' },
 };
 
-export const getWiFiChoices = (category) => {
+export const getWiFiOptions = (category) => {
   switch (category) {
     case "iPad":
-      return WiFiChoices;
+      return [wifiOptions["wi-fi"], wifiOptions["wi-fi+cellular"]];
     default:
       return [];
   }
 };
 
-const WiFiChoices = [
-  { id: "Wi-Fi", name: "Wi-Fi" },
-  { id: "Wi-Fi + Cellular", name: "Wi-Fi + Cellular" },
-];
+export const wifiOptions = {
+  "wi-fi": { id: "Wi-Fi", name: "Wi-Fi" },
+  "wi-fi+cellular": { id: "Wi-Fi + Cellular", name: "Wi-Fi + Cellular" },
+};
 
-export const getCapacityChoices = (category, model) => {
+export const getCapacityOptions = (category, model) => {
   switch (category) {
     case "iPhone":
-      return getIphoneCapacityChoices(model);
+      return getIphoneCapacityOptions(model);
     case "iPad":
-      return getIpadCapacityChoices(model);
-    case "Macbook":
-      return getMacbookCapacityChoices(model);
+      return getIpadCapacityOptions(model);
+    case "MacBook":
+      return getMacbookCapacityOptions(model);
     default:
       return [];
   }
 };
 
-export const getIphoneCapacityChoices = (model) => {
+export const getIphoneCapacityOptions = (model) => {
   switch (model) {
-    case "iphone se 2020":
-      return [capacityOptions["64"], capacityOptions["128"]];
-
     case "iphone se 2022":
     case "iphone 11":
       return [
@@ -306,10 +298,6 @@ export const getIphoneCapacityChoices = (model) => {
         capacityOptions["256"],
         capacityOptions["512"],
       ];
-
-    case "iphone 12 pro":
-    case "iphone 12 pro max":
-      return [capacityOptions["128"], capacityOptions["256"]];
 
     case "iphone 13":
     case "iphone 13 mini":
@@ -333,7 +321,7 @@ export const getIphoneCapacityChoices = (model) => {
   }
 };
 
-export const getIpadCapacityChoices = (model) => {
+export const getIpadCapacityOptions = (model) => {
   switch (model) {
     case "ipad air 2022":
     case "ipad 2021":
@@ -352,7 +340,7 @@ export const getIpadCapacityChoices = (model) => {
   }
 };
 
-export const getMacbookCapacityChoices = (model) => {
+export const getMacbookCapacityOptions = (model) => {
   switch (model) {
     case "macbook air m2":
     case "macbook pro m2":
@@ -369,31 +357,58 @@ export const getMacbookCapacityChoices = (model) => {
   }
 };
 
-const capacityOptions = {
+export const capacityOptions = {
   64: { id: "64Gb", name: "64Gb" },
   128: { id: "128Gb", name: "128Gb" },
   256: { id: "256Gb", name: "256Gb" },
   512: { id: "512Gb", name: "512Gb" },
   1: { id: "1Tb", name: "1Tb" },
   2: { id: "2Tb", name: "2Tb" },
+  4: { id: "4Tb", name: "4Tb" },
 };
 
-export const getColorChoices = (category, model) => {
+export const getMemoryOptions = (category, model) => {
   switch (category) {
-    case "iPhone":
-      return getIphoneColorChoices(model);
-    case "iPad":
-      return getIpadColorChoices(model);
-    case "Macbook":
-      return getMacbookColorChoices(model);
-    case "Watch":
-      return getWatchColorChoices(model);
+    case "MacBook":
+      return getMacbookMemoryOptions(model);
     default:
       return [];
   }
 };
 
-export const getIphoneColorChoices = (model) => {
+export const getMacbookMemoryOptions = (model) => {
+  switch (model) {
+    case "macbook air m2":
+      return [memoryOptions["8"]];
+
+    default:
+      return [];
+  }
+};
+
+export const memoryOptions = {
+  8: { id: "8Gb", name: "8Gb" },
+  16: { id: "16Gb", name: "16Gb" },
+  32: { id: "32Gb", name: "32Gb" },
+  64: { id: "64Gb", name: "64Gb" },
+};
+
+export const getColorOptions = (category, model) => {
+  switch (category) {
+    case "iPhone":
+      return getIphoneColorgetIphoneColorOptions(model);
+    case "iPad":
+      return getIpadColorOptions(model);
+    case "MacBook":
+      return getMacbookColorOptions(model);
+    case "Watch":
+      return getWatchColorOptions(model);
+    default:
+      return [];
+  }
+};
+
+export const getIphoneColorgetIphoneColorOptions = (model) => {
   switch (model) {
     case "iphone se 2020":
       return [
@@ -430,15 +445,6 @@ export const getIphoneColorChoices = (model) => {
         colorOptions["purple"],
       ];
 
-    case "iphone 12 pro":
-    case "iphone 12 pro max":
-      return [
-        colorOptions["pacific blue"],
-        colorOptions["graphite"],
-        colorOptions["gold"],
-        colorOptions["silver"],
-      ];
-
     case "iphone 13 mini":
     case "iphone 13":
       return [
@@ -465,7 +471,7 @@ export const getIphoneColorChoices = (model) => {
   }
 };
 
-export const getIpadColorChoices = (model) => {
+export const getIpadColorOptions = (model) => {
   switch (model) {
     case "ipad air 2022":
       return [
@@ -490,7 +496,7 @@ export const getIpadColorChoices = (model) => {
   }
 };
 
-export const getMacbookColorChoices = (model) => {
+export const getMacbookColorOptions = (model) => {
   switch (model) {
     case "macbook air m2":
       return [
@@ -518,7 +524,7 @@ export const getMacbookColorChoices = (model) => {
   }
 };
 
-const getWatchColorChoices = (model) => {
+const getWatchColorOptions = (model) => {
   switch (model) {
     case "6":
     case "7":
@@ -536,9 +542,9 @@ const getWatchColorChoices = (model) => {
   }
 };
 
-const colorOptions = {
+export const colorOptions = {
   black: { id: "Black", name: "Black" },
-  "product red": { id: "(Product) Red", name: "(Product) Red" },
+  "product red": { id: "Product Red", name: "Product Red" },
   yellow: { id: "Yellow", name: "Yellow" },
   white: { id: "White", name: "White" },
   mind: { id: "Mind", name: "Mind" },
@@ -546,7 +552,6 @@ const colorOptions = {
   blue: { id: "Blue", name: "Blue" },
   silver: { id: "Silver", name: "Silver" },
   gold: { id: "Gold", name: "Gold" },
-  "pacific blue": { id: "Pacific Blue", name: "Pacific Blue" },
   graphite: { id: "Graphite", name: "Graphite" },
   pink: { id: "Pink", name: "Pink" },
   midnight: { id: "Midnight", name: "Midnight" },
@@ -565,7 +570,7 @@ export const getColorForToggle = (category, color) => {
     case "iPad":
       return ipadColorsForToggle[color];
 
-    case "Macbook":
+    case "MacBook":
       return macBookColorsForToggle[color];
 
     default:
@@ -583,7 +588,6 @@ const iphoneColorsForToggle = {
   Blue: "rgb(80, 119, 142)",
   Silver: "rgb(242, 243, 239)",
   Gold: "rgb(247, 234, 214)",
-  "Pacific Blue": "rgb(81, 95, 115)",
   Graphite: "rgb(60, 59, 52)",
   Pink: "rgb(247, 227, 222)",
   Midnight: "rgb(67, 71, 76)",
@@ -610,7 +614,8 @@ const macBookColorsForToggle = {
   Starlight: "",
 };
 
-export const productsWithCapacity = ["iPhone", "iPad", "Macbook"];
-export const productsWithColors = ["iPhone", "iPad", "Macbook", "Watch"];
-export const productsWithDiagonal = ["iPad", "Macbook", "Watch"];
+export const productsWithCapacity = ["iPhone", "iPad", "MacBook"];
+export const productsWithColors = ["iPhone", "iPad", "MacBook", "Watch"];
+export const productsWithDiagonal = ["iPad", "MacBook", "Watch"];
 export const productsWithWiFi = ["iPad"];
+export const productsWithMemory = ["MacBook"];
