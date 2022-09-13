@@ -2711,13 +2711,13 @@ input[type="number"] {
       }
 
       &__value {
-        margin-left: 15px;
+        margin-left: 10px;
         position: relative;
         font-weight: 500;
         cursor: pointer;
 
         @media (max-width: 480px) {
-          margin-left: 10px;
+          margin-left: 8px;
         }
 
         @media (max-width: 400px) {

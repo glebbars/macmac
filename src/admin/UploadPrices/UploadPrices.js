@@ -44,6 +44,7 @@ const UploadPrices = () => {
         const newPrice = await getPriceOfProductFromDB(product, priceListDB);
 
         if (product.price !== newPrice) {
+          console.log(product.id);
           return {
             id: product.id,
             price: newPrice,

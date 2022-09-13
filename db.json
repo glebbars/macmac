@@ -4833,21 +4833,381 @@
         "memory": "8Gb",
         "color": "Midnight"
       }
+    },
+    {
+      "id": 226,
+      "fullName": "MacBook Air 13.3\" M1 256Gb Space Gray (MGN63)",
+      "price": 35530,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1663023525/mac-mac-images/rto1idr0vu34zsfvuafo.png",
+          "id": "e3568455b87e07dbedc6c01b57611826"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Air M1",
+        "diagonal": "13.3\"",
+        "capacity": "256Gb",
+        "memory": "8Gb",
+        "color": "Space Gray"
+      }
+    },
+    {
+      "fullName": "MacBook Air 13.3\" M1 256Gb Silver (MGN93)",
+      "price": 36380,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1663023592/mac-mac-images/oo7pvgkpzj4im3u1qplb.png",
+          "id": "bc61e6abd3156c405c2f0374595b0631"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Air M1",
+        "diagonal": "13.3\"",
+        "capacity": "256Gb",
+        "memory": "8Gb",
+        "color": "Silver"
+      },
+      "id": 227
+    },
+    {
+      "fullName": "MacBook Air 13.3\" M1 256Gb Gold (MGND3)",
+      "price": 34850,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1663023650/mac-mac-images/tupslqjrbxi8xuzhntx7.png",
+          "id": "b4a8c0c22f4e059162df6e2ae225f952"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Air M1",
+        "diagonal": "13.3\"",
+        "capacity": "256Gb",
+        "memory": "8Gb",
+        "color": "Gold"
+      },
+      "id": 228
+    },
+    {
+      "id": 229,
+      "fullName": "MacBook Air 13.3\" M1 512Gb Space Gray (MGN73)",
+      "price": 43860,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1663023525/mac-mac-images/rto1idr0vu34zsfvuafo.png",
+          "id": "e3568455b87e07dbedc6c01b57611826"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Air M1",
+        "diagonal": "13.3\"",
+        "capacity": "512Gb",
+        "memory": "8Gb",
+        "color": "Space Gray"
+      }
+    },
+    {
+      "fullName": "MacBook Air 13.3\" M1 512Gb Silver (MGNA3)",
+      "price": 43860,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1663023592/mac-mac-images/oo7pvgkpzj4im3u1qplb.png",
+          "id": "bc61e6abd3156c405c2f0374595b0631"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Air M1",
+        "diagonal": "13.3\"",
+        "capacity": "512Gb",
+        "memory": "8Gb",
+        "color": "Silver"
+      },
+      "id": 230
+    },
+    {
+      "fullName": "MacBook Air 13.3\" M1 512Gb Gold (MGNE3)",
+      "price": 43520,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1663023650/mac-mac-images/tupslqjrbxi8xuzhntx7.png",
+          "id": "b4a8c0c22f4e059162df6e2ae225f952"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Air M1",
+        "diagonal": "13.3\"",
+        "capacity": "512Gb",
+        "memory": "8Gb",
+        "color": "Gold"
+      },
+      "id": 231
+    },
+    {
+      "id": 232,
+      "fullName": "MacBook Pro 13.6\" M2 256Gb Space Gray (MNEH3)",
+      "price": 48960,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1663025068/mac-mac-images/xyah3ve1kyfu1s0otj8r.png",
+          "id": "7b8c96cc7d83f8a0df288d662b30ef42"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Pro M2",
+        "diagonal": "13.6\"",
+        "capacity": "256Gb",
+        "memory": "8Gb",
+        "color": "Space Gray"
+      }
+    },
+    {
+      "id": 233,
+      "fullName": "MacBook Pro 13.6\" M2 256Gb Silver (MNEP3)",
+      "price": 48960,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1663024944/mac-mac-images/fwe9kvs2nsh4pf2hrqfb.png",
+          "id": "5b63319403b77a5c62687258aabd3269"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Pro M2",
+        "diagonal": "13.6\"",
+        "capacity": "256Gb",
+        "memory": "8Gb",
+        "color": "Silver"
+      }
+    },
+    {
+      "id": 234,
+      "fullName": "MacBook Pro 13.6\" M2 512Gb Space Gray (MNEJ3)",
+      "price": 55760,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1663025068/mac-mac-images/xyah3ve1kyfu1s0otj8r.png",
+          "id": "7b8c96cc7d83f8a0df288d662b30ef42"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Pro M2",
+        "diagonal": "13.6\"",
+        "capacity": "512Gb",
+        "memory": "8Gb",
+        "color": "Space Gray"
+      }
+    },
+    {
+      "id": 235,
+      "fullName": "MacBook Pro 13.6\" M2 512Gb Silver (MNEQ3)",
+      "price": 56100,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1663024944/mac-mac-images/fwe9kvs2nsh4pf2hrqfb.png",
+          "id": "5b63319403b77a5c62687258aabd3269"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Pro M2",
+        "diagonal": "13.6\"",
+        "capacity": "512Gb",
+        "memory": "8Gb",
+        "color": "Silver"
+      }
+    },
+    {
+      "id": 236,
+      "fullName": "MacBook Pro 13.3\" M1 256Gb Space Gray (MYD82)",
+      "price": 43520,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1663025068/mac-mac-images/xyah3ve1kyfu1s0otj8r.png",
+          "id": "7b8c96cc7d83f8a0df288d662b30ef42"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Pro M1",
+        "diagonal": "13.3\"",
+        "capacity": "256Gb",
+        "memory": "8Gb",
+        "color": "Space Gray"
+      }
+    },
+    {
+      "id": 237,
+      "fullName": "MacBook Pro 13.3\" M1 256Gb Silver (MYDA2)",
+      "price": 44200,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1663024944/mac-mac-images/fwe9kvs2nsh4pf2hrqfb.png",
+          "id": "5b63319403b77a5c62687258aabd3269"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Pro M1",
+        "diagonal": "13.3\"",
+        "capacity": "256Gb",
+        "memory": "8Gb",
+        "color": "Silver"
+      }
+    },
+    {
+      "id": 238,
+      "fullName": "MacBook Pro 13.3\" M1 512Gb Space Gray (MYD92)",
+      "price": 47430,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1663025068/mac-mac-images/xyah3ve1kyfu1s0otj8r.png",
+          "id": "7b8c96cc7d83f8a0df288d662b30ef42"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Pro M1",
+        "diagonal": "13.3\"",
+        "capacity": "512Gb",
+        "memory": "8Gb",
+        "color": "Space Gray"
+      }
+    },
+    {
+      "id": 239,
+      "fullName": "MacBook Pro 13.3\" M1 512Gb Silver (MYDC2)",
+      "price": 47600,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1663024944/mac-mac-images/fwe9kvs2nsh4pf2hrqfb.png",
+          "id": "5b63319403b77a5c62687258aabd3269"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Pro M1",
+        "diagonal": "13.3\"",
+        "capacity": "512Gb",
+        "memory": "8Gb",
+        "color": "Silver"
+      }
+    },
+    {
+      "fullName": "MacBook Pro 14\" M1 Pro 512Gb Space Gray (MKGP3)",
+      "price": 73100,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1663027186/mac-mac-images/liwgykd8uz0fzfrabmsq.png",
+          "id": "1d8a17bb181e032741f8a1780fef27ef"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Pro M1 Pro",
+        "diagonal": "14\"",
+        "capacity": "512Gb",
+        "memory": "16Gb",
+        "color": "Space Gray"
+      },
+      "id": 240
+    },
+    {
+      "fullName": "MacBook Pro 14\" M1 Pro 512Gb Silver (MKGR3)",
+      "price": 73100,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1663027238/mac-mac-images/ptim7xjqjz4a5hfxxdwf.png",
+          "id": "106503447c16d7dc407496062a2e3057"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Pro M1 Pro",
+        "diagonal": "14\"",
+        "capacity": "512Gb",
+        "memory": "16Gb",
+        "color": "Silver"
+      },
+      "id": 241
+    },
+    {
+      "id": 242,
+      "fullName": "MacBook Pro 14\" M1 Pro 1Tb Space Gray (MKGQ3)",
+      "price": 79220,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1663027186/mac-mac-images/liwgykd8uz0fzfrabmsq.png",
+          "id": "1d8a17bb181e032741f8a1780fef27ef"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Pro M1 Pro",
+        "diagonal": "14\"",
+        "capacity": "1Tb",
+        "memory": "16Gb",
+        "color": "Space Gray"
+      }
+    },
+    {
+      "id": 243,
+      "fullName": "MacBook Pro 14\" M1 Pro 1Tb Silver (MKGT3)",
+      "price": 78540,
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1663027238/mac-mac-images/ptim7xjqjz4a5hfxxdwf.png",
+          "id": "106503447c16d7dc407496062a2e3057"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Pro M1 Pro",
+        "diagonal": "14\"",
+        "capacity": "1Tb",
+        "memory": "16Gb",
+        "color": "Silver"
+      }
     }
   ],
   "orders": [],
   "prices": [
     {
-      "macbook air 13\" 2020 m1 256gb gold (mgnd3)": 34850,
-      "macbook air 13\" 2020 m1 256gb space gray (mgn63)": 35530,
-      "macbook air 13\" 2020 m1 256gb silver (mgn93)": 36380,
-      "macbook air 13\" 2020 m1 512gb gold (mgne3)": 43520,
-      "macbook air 13\" 2020 m1 512gb silver (mgna3)": 43860,
-      "macbook air 13\" 2020 m1 512gb space gray (mgn73)": 43860,
-      "macbook pro 13.3\" 2020 m1 256gb/8gb space gray (myd82)": 43520,
-      "macbook pro 13.3\" 2020 m1 256gb/8gb silver (myda2)": 44200,
-      "macbook pro 13.3\" 2020 m1 512gb/8gb space gray (myd92)": 47430,
-      "macbook pro 13.3\" 2020 m1 512gb/8gb silver (mydc2)": 47600,
+      "macbook air 13.3\" m1 256gb gold (mgnd3)": 34850,
+      "macbook air 13.3\" m1 256gb space gray (mgn63)": 35530,
+      "macbook air 13.3\" m1 256gb silver (mgn93)": 36380,
+      "macbook air 13.3\" m1 512gb gold (mgne3)": 43520,
+      "macbook air 13.3\" m1 512gb silver (mgna3)": 43860,
+      "macbook air 13.3\" m1 512gb space gray (mgn73)": 43860,
+      "macbook pro 13.3\" m1 256gb space gray (myd82)": 43520,
+      "macbook pro 13.3\" m1 256gb silver (myda2)": 44200,
+      "macbook pro 13.3\" m1 512gb space gray (myd92)": 47430,
+      "macbook pro 13.3\" m1 512gb silver (mydc2)": 47600,
       "macbook air m2 13.6\" 256gb space gray (mlxw3)": 56100,
       "macbook air m2 13.6\" 256gb silver (mlxy3)": 57800,
       "macbook air m2 13.6\" 256gb starlight (mly13)": 56100,
@@ -4856,14 +5216,14 @@
       "macbook air m2 13.6\" 512gb silver (mly03)": 71400,
       "macbook air m2 13.6\" 512gb starlight (mly23)": 71400,
       "macbook air m2 13.6\" 512gb midnight (mly43)": 71400,
-      "macbook pro 13\" m2 8-cpu/10-gpu/8gb/256gb space gray 2022 (mneh3)": 48960,
-      "macbook pro 13\" m2 8-cpu/10-gpu/8gb/256gb silver 2022 (mnep3)": 48960,
-      "macbook pro 13\" m2 8-cpu/10-gpu/8gb/512gb silver 2022 (mneq3)": 56100,
-      "macbook pro 13\" m2 8-cpu/10-gpu/8gb/512gb space gray 2022 (mnej3)": 55760,
-      "macbook pro 14\" m1 pro 8cpu/14gpu/16gb/512gb space gray (mkgp3)": 73100,
-      "macbook pro 14\" m1 pro 8cpu/14gpu/16gb/512gb silver (mkgr3)": 73100,
-      "macbook pro 14'' m1 pro 10cpu/16gpu/16gb/1tb space gray (mkgq3)": 79220,
-      "macbook pro 14'' m1 pro 10cpu/16gpu/16gb/1tb silver (mkgt3)": 78540,
+      "macbook pro 13.6\" m2 256gb space gray (mneh3)": 48960,
+      "macbook pro 13.6\" m2 256gb silver (mnep3)": 48960,
+      "macbook pro 13.6\" m2 512gb silver (mneq3)": 56100,
+      "macbook pro 13.6\" m2 512gb space gray (mnej3)": 55760,
+      "macbook pro 14\" m1 pro 512gb space gray (mkgp3)": 73100,
+      "macbook pro 14\" m1 pro 512gb silver (mkgr3)": 73100,
+      "macbook pro 14\" m1 pro 1tb space gray (mkgq3)": 79220,
+      "macbook pro 14\" m1 pro 1tb silver (mkgt3)": 78540,
       "macbook pro 16” m1 pro 512gb/16gb space gray (mk183)": 83980,
       "macbook pro 16” m1 pro 512gb/16gb silver (mk1e3)": 84320,
       "macbook pro 16” m1 pro 1tb/16gb silver (mk1f3)": 91120,
@@ -4886,9 +5246,9 @@
       "macbook pro 16\" m1 max 10cpu/32gpu/4tb/32gb silver (z150000h6/z14y0008w)": 205360,
       "macbook pro 16\" m1 max 10cpu/32gpu/1tb/64gb space gray (z14v001xn / z14x000gd )": 173400,
       "macbook pro 16\" m1 max 10cpu/32gpu/1tb/64gb silver (z14y001jd/z150000hp )": 179860,
-      "macbook pro 16'' m1 max 10cpu/32gpu/2tb/64gb space gray (z14x000hq)": 181900,
-      "macbook pro 16'' m1 max 10cpu/32gpu/2tb/64gb silver (z150000hq)": 191080,
-      "macbook pro 16'' m1 max 10cpu/32gpu/4tb/64gb space gray (mk233/z14x000hr)": 207060,
+      "macbook pro 16\" m1 max 10cpu/32gpu/2tb/64gb space gray (z14x000hq)": 181900,
+      "macbook pro 16\" m1 max 10cpu/32gpu/2tb/64gb silver (z150000hq)": 191080,
+      "macbook pro 16\" m1 max 10cpu/32gpu/4tb/64gb space gray (mk233/z14x000hr)": 207060,
       "macbook pro 16\" m1 max 10cpu/32gpu/4tb/64gb silver (mmqw3/z150000hr )": 207060,
       "ipad 2021 10.2\" wi-fi 64gb silver (mk2l3)": 12750,
       "ipad 2021 10.2\" wi-fi 64gb space gray (mk2k3)": 12750,

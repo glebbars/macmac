@@ -27,9 +27,9 @@ export const getFilteredProducts = (
   const diagonalFilters = productsListFilters
     .filter((filter) => filter.filterName === "Диагональ")
     .map((filter) => filter.value);
-  const memoryFilters = productsListFilters.filter(
-    (filter) => filter.filterName === "Оперативная память"
-  );
+  const memoryFilters = productsListFilters
+    .filter((filter) => filter.filterName === "Оперативная память")
+    .map((filter) => filter.value);
 
   console.log(memoryFilters);
   const wifiFilters = productsListFilters

@@ -379,7 +379,13 @@ export const getMemoryOptions = (category, model) => {
 export const getMacbookMemoryOptions = (model) => {
   switch (model) {
     case "macbook air m2":
+    case "macbook air m1":
+    case "macbook pro m2":
+    case "macbook pro m1":
       return [memoryOptions["8"]];
+
+    case "macbook pro m1 pro":
+      return [memoryOptions["16"]];
 
     default:
       return [];
