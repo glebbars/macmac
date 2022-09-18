@@ -5193,6 +5193,166 @@
         "memory": "16Gb",
         "color": "Silver"
       }
+    },
+    {
+      "fullName": "MacBook Pro 16\" M1 Pro 512Gb Space Gray (MK183)",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1663523604/mac-mac-images/dra23fslrm1obkl2tmta.png",
+          "id": "c3747178a6b366a5c6a3ea4da8483576"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Pro M1 Pro",
+        "diagonal": "16\"",
+        "capacity": "512Gb",
+        "memory": "16Gb",
+        "color": "Space Gray"
+      },
+      "id": 244,
+      "price": 83980
+    },
+    {
+      "fullName": "MacBook Pro 16\" M1 Pro 512Gb Silver (MK1E3)",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1663523698/mac-mac-images/e6wsqs6rxnjc93ssolih.png",
+          "id": "fbadba2183ad4eb8a06351c86edb9a6d"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Pro M1 Pro",
+        "diagonal": "16\"",
+        "capacity": "512Gb",
+        "memory": "16Gb",
+        "color": "Silver"
+      },
+      "id": 245,
+      "price": 84320
+    },
+    {
+      "fullName": "MacBook Pro 16\" M1 Pro 1Tb Space Gray (MK193)",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1663523604/mac-mac-images/dra23fslrm1obkl2tmta.png",
+          "id": "c3747178a6b366a5c6a3ea4da8483576"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Pro M1 Pro",
+        "diagonal": "16\"",
+        "capacity": "1Tb",
+        "memory": "16Gb",
+        "color": "Space Gray"
+      },
+      "id": 246,
+      "price": 91120
+    },
+    {
+      "fullName": "MacBook Pro 16\" M1 Pro 1Tb Silver (MK1F3)",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1663523698/mac-mac-images/e6wsqs6rxnjc93ssolih.png",
+          "id": "fbadba2183ad4eb8a06351c86edb9a6d"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Pro M1 Pro",
+        "diagonal": "16\"",
+        "capacity": "1Tb",
+        "memory": "16Gb",
+        "color": "Silver"
+      },
+      "id": 247,
+      "price": 91120
+    },
+    {
+      "fullName": "MacBook Pro 16\" M1 Pro 512Gb Space Gray (Z14V0016E/Z14V000RA)",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1663523604/mac-mac-images/dra23fslrm1obkl2tmta.png",
+          "id": "c3747178a6b366a5c6a3ea4da8483576"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Pro M1 Pro",
+        "diagonal": "16\"",
+        "capacity": "512Gb",
+        "memory": "32Gb",
+        "color": "Space Gray"
+      },
+      "id": 248,
+      "price": 117300
+    },
+    {
+      "fullName": "MacBook Pro 16\" M1 Pro 512Gb Silver (Z14Y0001K/Z14Y0016C)",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1663523698/mac-mac-images/e6wsqs6rxnjc93ssolih.png",
+          "id": "fbadba2183ad4eb8a06351c86edb9a6d"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Pro M1 Pro",
+        "diagonal": "16\"",
+        "capacity": "512Gb",
+        "memory": "32Gb",
+        "color": "Silver"
+      },
+      "id": 249,
+      "price": 119000
+    },
+    {
+      "fullName": "MacBook Pro 16\" M1 Pro 1Tb Space Gray (Z14W00105/Z14V0016H)",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1663523604/mac-mac-images/dra23fslrm1obkl2tmta.png",
+          "id": "c3747178a6b366a5c6a3ea4da8483576"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Pro M1 Pro",
+        "diagonal": "16\"",
+        "capacity": "1Tb",
+        "memory": "32Gb",
+        "color": "Space Gray"
+      },
+      "id": 250,
+      "price": 134640
+    },
+    {
+      "fullName": "MacBook Pro 16\" M1 Pro 2Tb Silver (Z14Y0026Q/Z14Z00108)",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1663523698/mac-mac-images/e6wsqs6rxnjc93ssolih.png",
+          "id": "fbadba2183ad4eb8a06351c86edb9a6d"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Pro M1 Pro",
+        "diagonal": "16\"",
+        "capacity": "2Tb",
+        "memory": "32Gb",
+        "color": "Silver"
+      },
+      "id": 251,
+      "price": 153000
     }
   ],
   "orders": [],
@@ -5224,14 +5384,14 @@
       "macbook pro 14\" m1 pro 512gb silver (mkgr3)": 73100,
       "macbook pro 14\" m1 pro 1tb space gray (mkgq3)": 79220,
       "macbook pro 14\" m1 pro 1tb silver (mkgt3)": 78540,
-      "macbook pro 16” m1 pro 512gb/16gb space gray (mk183)": 83980,
-      "macbook pro 16” m1 pro 512gb/16gb silver (mk1e3)": 84320,
-      "macbook pro 16” m1 pro 1tb/16gb silver (mk1f3)": 91120,
-      "macbook pro 16” m1 pro 1tb/16gb space gray (mk193)": 91120,
-      "macbook pro 16\" м1 pro 10cpu/16gpu/32gb/512gb space gray (z14v0016e/z14v000ra)": 117300,
-      "macbook pro 16\" м1 pro 10cpu/16gpu/32gb/512gb silver (z14y0001k/z14y0016c)": 119000,
-      "macbook pro 16\" м1 pro 10cpu/16gpu/32gb/1tb space gray (z14w00105/z14v0016h)": 134640,
-      "macbook pro 16\" м1 pro 10cpu/16gpu/32gb/2tb silver (z14y0026q/z14z00108)": 153000,
+      "macbook pro 16\" m1 pro 512gb space gray (mk183)": 83980,
+      "macbook pro 16\" m1 pro 512gb silver (mk1e3)": 84320,
+      "macbook pro 16\" m1 pro 1tb silver (mk1f3)": 91120,
+      "macbook pro 16\" m1 pro 1tb space gray (mk193)": 91120,
+      "macbook pro 16\" m1 pro 512gb space gray (z14v0016e/z14v000ra)": 117300,
+      "macbook pro 16\" m1 pro 512gb silver (z14y0001k/z14y0016c)": 119000,
+      "macbook pro 16\" m1 pro 1tb space gray (z14w00105/z14v0016h)": 134640,
+      "macbook pro 16\" m1 pro 2tb silver (z14y0026q/z14z00108)": 153000,
       "macbook pro 16\" m1 max 10cpu/32gpu/1tb/32gb space gray (mk1a3)": 142800,
       "macbook pro 16\" m1 max 10cpu/32gpu/1tb/32gb silver (mk1h3)": 141100,
       "macbook pro 16\" m1 max 10cpu/24gpu/512gb/32gb space gray (z14v0016f)": 137700,
