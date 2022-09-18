@@ -3501,6 +3501,13 @@ input[type="number"] {
           margin-right: 12px;
           margin-bottom: 12px;
         }
+
+        &_disabled {
+          color: #ADB5BD;
+          background: #F4F5F7;
+          filter: blur(0.5px);
+          cursor: not-allowed;
+        }
       }
     }
 
@@ -3541,6 +3548,13 @@ input[type="number"] {
           box-sizing: border-box;
           border-radius: 5px;
           // margin: 1px;
+        }
+
+        &_disabled {
+          color: #ADB5BD;
+          background: #F4F5F7;
+          filter: blur(1px);
+          cursor: not-allowed;
         }
       }
     }

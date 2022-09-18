@@ -627,11 +627,11 @@ const ipadColorsForToggle = {
 };
 
 const macBookColorsForToggle = {
-  "Space Gray": "",
-  Silver: "",
-  Gold: "",
-  Midnight: "",
-  Starlight: "",
+  "Space Gray": "rgb(148, 152, 155)",
+  Silver: "rgb(223, 225, 228)",
+  Gold: "rgb(237, 225, 213)",
+  Midnight: "rgb(48, 54, 64)",
+  Starlight: "rgb(238, 229, 212)",
 };
 
 export const productsWithCapacity = ["iPhone", "iPad", "MacBook"];
