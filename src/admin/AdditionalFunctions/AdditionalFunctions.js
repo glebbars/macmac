@@ -349,8 +349,19 @@ export const getMacbookCapacityOptions = (model) => {
       return [capacityOptions["256"], capacityOptions["512"]];
 
     case "macbook pro m1 pro":
+      return [
+        capacityOptions["512"],
+        capacityOptions["1"],
+        capacityOptions["2"],
+      ];
+
     case "macbook pro m1 max":
-      return [capacityOptions["512"], capacityOptions["1"]];
+      return [
+        capacityOptions["512"],
+        capacityOptions["1"],
+        capacityOptions["2"],
+        capacityOptions["4"],
+      ];
 
     default:
       return [];
@@ -385,7 +396,10 @@ export const getMacbookMemoryOptions = (model) => {
       return [memoryOptions["8"]];
 
     case "macbook pro m1 pro":
-      return [memoryOptions["16"]];
+      return [memoryOptions["16"], memoryOptions["32"]];
+
+    case "macbook pro m1 max":
+      return [memoryOptions["32"], memoryOptions["64"]];
 
     default:
       return [];

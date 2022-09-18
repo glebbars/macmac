@@ -416,6 +416,8 @@ const capacityMacbookOptions = [
   capacityOptions["256"],
   capacityOptions["512"],
   capacityOptions["1"],
+  capacityOptions["2"],
+  capacityOptions["4"],
 ];
 
 const diagonalIpadOptions = [

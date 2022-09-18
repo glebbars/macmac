@@ -5353,6 +5353,366 @@
       },
       "id": 251,
       "price": 153000
+    },
+    {
+      "fullName": "MacBook Pro 16\" M1 Max 512Gb Space Gray (Z14V0016F)",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1663523604/mac-mac-images/dra23fslrm1obkl2tmta.png",
+          "id": "c3747178a6b366a5c6a3ea4da8483576"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Pro M1 Max",
+        "diagonal": "16\"",
+        "capacity": "512Gb",
+        "memory": "32Gb",
+        "color": "Space Gray"
+      },
+      "id": 252,
+      "price": 137700
+    },
+    {
+      "fullName": "MacBook Pro 16\" M1 Max 1Tb Space Gray (MK1A3)",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1663523604/mac-mac-images/dra23fslrm1obkl2tmta.png",
+          "id": "c3747178a6b366a5c6a3ea4da8483576"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Pro M1 Max",
+        "diagonal": "16\"",
+        "capacity": "1Tb",
+        "memory": "32Gb",
+        "color": "Space Gray"
+      },
+      "id": 253,
+      "price": 142800
+    },
+    {
+      "fullName": "MacBook Pro 16\" M1 Max 1Tb Silver (MK1H3)",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1663523698/mac-mac-images/e6wsqs6rxnjc93ssolih.png",
+          "id": "fbadba2183ad4eb8a06351c86edb9a6d"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Pro M1 Max",
+        "diagonal": "16\"",
+        "capacity": "1Tb",
+        "memory": "32Gb",
+        "color": "Silver"
+      },
+      "id": 254,
+      "price": 141100
+    },
+    {
+      "fullName": "MacBook Pro 16\" M1 Max 1Tb Space Gray (Z14W00106/Z14V0001S)",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1663523604/mac-mac-images/dra23fslrm1obkl2tmta.png",
+          "id": "c3747178a6b366a5c6a3ea4da8483576"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Pro M1 Max",
+        "diagonal": "16\"",
+        "capacity": "1Tb",
+        "memory": "32Gb",
+        "color": "Space Gray"
+      },
+      "id": 255,
+      "price": 139400
+    },
+    {
+      "fullName": "MacBook Pro 16\" M1 Max 1Tb Silver (Z14Z00106)",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1663523698/mac-mac-images/e6wsqs6rxnjc93ssolih.png",
+          "id": "fbadba2183ad4eb8a06351c86edb9a6d"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Pro M1 Max",
+        "diagonal": "16\"",
+        "capacity": "1Tb",
+        "memory": "32Gb",
+        "color": "Silver"
+      },
+      "id": 256,
+      "price": 146200
+    },
+    {
+      "fullName": "MacBook Pro 16\" M1 Max 1Tb Space Gray (Z14W00106)",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1663523604/mac-mac-images/dra23fslrm1obkl2tmta.png",
+          "id": "c3747178a6b366a5c6a3ea4da8483576"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Pro M1 Max",
+        "diagonal": "16\"",
+        "capacity": "1Tb",
+        "memory": "64Gb",
+        "color": "Space Gray"
+      },
+      "id": 257,
+      "price": 170000
+    },
+    {
+      "fullName": "MacBook Pro 16\" M1 Max 1Tb Space Gray (Z14W0010B)",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1663523604/mac-mac-images/dra23fslrm1obkl2tmta.png",
+          "id": "c3747178a6b366a5c6a3ea4da8483576"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Pro M1 Max",
+        "diagonal": "16\"",
+        "capacity": "1Tb",
+        "memory": "64Gb",
+        "color": "Space Gray"
+      },
+      "id": 258,
+      "price": 163200
+    },
+    {
+      "fullName": "MacBook Pro 16\" M1 Max 1Tb Space Gray (Z14V001XN/Z14X000GD)",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1663523604/mac-mac-images/dra23fslrm1obkl2tmta.png",
+          "id": "c3747178a6b366a5c6a3ea4da8483576"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Pro M1 Max",
+        "diagonal": "16\"",
+        "capacity": "1Tb",
+        "memory": "64Gb",
+        "color": "Space Gray"
+      },
+      "id": 259,
+      "price": 173400
+    },
+    {
+      "fullName": "MacBook Pro 16\" M1 Max 1Tb Silver (Z14Y001JD/Z150000HP)",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1663523698/mac-mac-images/e6wsqs6rxnjc93ssolih.png",
+          "id": "fbadba2183ad4eb8a06351c86edb9a6d"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Pro M1 Max",
+        "diagonal": "16\"",
+        "capacity": "1Tb",
+        "memory": "64Gb",
+        "color": "Silver"
+      },
+      "id": 260,
+      "price": 179860
+    },
+    {
+      "fullName": "MacBook Pro 16\" M1 Max 2Tb Space Gray (Z14W0010C)",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1663523604/mac-mac-images/dra23fslrm1obkl2tmta.png",
+          "id": "c3747178a6b366a5c6a3ea4da8483576"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Pro M1 Max",
+        "diagonal": "16\"",
+        "capacity": "2Tb",
+        "memory": "32Gb",
+        "color": "Space Gray"
+      },
+      "id": 261,
+      "price": 168640
+    },
+    {
+      "fullName": "MacBook Pro 16\" M1 Max 2Tb Space Gray (Z14W0010D)",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1663523604/mac-mac-images/dra23fslrm1obkl2tmta.png",
+          "id": "c3747178a6b366a5c6a3ea4da8483576"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Pro M1 Max",
+        "diagonal": "16\"",
+        "capacity": "2Tb",
+        "memory": "64Gb",
+        "color": "Space Gray"
+      },
+      "id": 262,
+      "price": 175100
+    },
+    {
+      "fullName": "MacBook Pro 16\" M1 Max 2Tb Space Gray (Z14X000H6)",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1663523604/mac-mac-images/dra23fslrm1obkl2tmta.png",
+          "id": "c3747178a6b366a5c6a3ea4da8483576"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Pro M1 Max",
+        "diagonal": "16\"",
+        "capacity": "2Tb",
+        "memory": "32Gb",
+        "color": "Space Gray"
+      },
+      "id": 263,
+      "price": 170000
+    },
+    {
+      "fullName": "MacBook Pro 16\" M1 Max 2Tb Space Gray (Z14X000HQ)",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1663523604/mac-mac-images/dra23fslrm1obkl2tmta.png",
+          "id": "c3747178a6b366a5c6a3ea4da8483576"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Pro M1 Max",
+        "diagonal": "16\"",
+        "capacity": "2Tb",
+        "memory": "64Gb",
+        "color": "Space Gray"
+      },
+      "id": 264,
+      "price": 181900
+    },
+    {
+      "fullName": "MacBook Pro 16\" M1 Max 2Tb Silver (Z150000HQ)",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1663523698/mac-mac-images/e6wsqs6rxnjc93ssolih.png",
+          "id": "fbadba2183ad4eb8a06351c86edb9a6d"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Pro M1 Max",
+        "diagonal": "16\"",
+        "capacity": "2Tb",
+        "memory": "64Gb",
+        "color": "Silver"
+      },
+      "id": 265,
+      "price": 191080
+    },
+    {
+      "fullName": "MacBook Pro 16\" M1 Max 4Tb Space Gray (Z14X000H7/Z14V0008X)",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1663523604/mac-mac-images/dra23fslrm1obkl2tmta.png",
+          "id": "c3747178a6b366a5c6a3ea4da8483576"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Pro M1 Max",
+        "diagonal": "16\"",
+        "capacity": "4Tb",
+        "memory": "32Gb",
+        "color": "Space Gray"
+      },
+      "id": 266,
+      "price": 200600
+    },
+    {
+      "fullName": "MacBook Pro 16\" M1 Max 4Tb Silver (Z150000H6/Z14Y0008W)",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1663523698/mac-mac-images/e6wsqs6rxnjc93ssolih.png",
+          "id": "fbadba2183ad4eb8a06351c86edb9a6d"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Pro M1 Max",
+        "diagonal": "16\"",
+        "capacity": "4Tb",
+        "memory": "32Gb",
+        "color": "Silver"
+      },
+      "id": 267,
+      "price": 205360
+    },
+    {
+      "fullName": "MacBook Pro 16\" M1 Max 4Tb Space Gray (MK233/Z14X000HR)",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1663523604/mac-mac-images/dra23fslrm1obkl2tmta.png",
+          "id": "c3747178a6b366a5c6a3ea4da8483576"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Pro M1 Max",
+        "diagonal": "16\"",
+        "capacity": "4Tb",
+        "memory": "64Gb",
+        "color": "Space Gray"
+      },
+      "id": 268,
+      "price": 207060
+    },
+    {
+      "fullName": "MacBook Pro 16\" M1 Max 4Tb Silver (MMQW3/Z150000HR)",
+      "pictures": [
+        {
+          "url": "https://res.cloudinary.com/dhoracanm/image/upload/v1663523698/mac-mac-images/e6wsqs6rxnjc93ssolih.png",
+          "id": "fbadba2183ad4eb8a06351c86edb9a6d"
+        }
+      ],
+      "description": {
+        "brand": "Apple",
+        "category": "MacBook",
+        "model": "MacBook Pro M1 Max",
+        "diagonal": "16\"",
+        "capacity": "4Tb",
+        "memory": "64Gb",
+        "color": "Silver"
+      },
+      "id": 269,
+      "price": 207060
     }
   ],
   "orders": [],
@@ -5392,24 +5752,24 @@
       "macbook pro 16\" m1 pro 512gb silver (z14y0001k/z14y0016c)": 119000,
       "macbook pro 16\" m1 pro 1tb space gray (z14w00105/z14v0016h)": 134640,
       "macbook pro 16\" m1 pro 2tb silver (z14y0026q/z14z00108)": 153000,
-      "macbook pro 16\" m1 max 10cpu/32gpu/1tb/32gb space gray (mk1a3)": 142800,
-      "macbook pro 16\" m1 max 10cpu/32gpu/1tb/32gb silver (mk1h3)": 141100,
-      "macbook pro 16\" m1 max 10cpu/24gpu/512gb/32gb space gray (z14v0016f)": 137700,
-      "macbook pro 16\" m1 max 10cpu/24gpu/1tb/32gb space gray (z14w00106/z14v0001s)": 139400,
-      "macbook pro 16\" m1 max 10cpu/24gpu/1tb/32gb silver (z14z00106)": 146200,
-      "macbook pro 16\" m1 max 10cpu/24gpu/2tb/32gb space gray (z14w0010c)": 168640,
-      "macbook pro 16\" m1 max 10cpu/24gpu/1tb/64gb space gray (z14w00106)": 170000,
-      "macbook pro 16\" m1 max 10cpu/24gpu/1tb/64gb space gray (z14w0010b)": 163200,
-      "macbook pro 16\" m1 max 10cpu/24gpu/2tb/64gb space gray (z14w0010d)": 175100,
-      "macbook pro 16\" m1 max 10cpu/32gpu/2tb/32gb space gray (z14x000h6)": 170000,
-      "macbook pro 16\" m1 max 10cpu/32gpu/4tb/32gb space gray (z14x000h7/ z14v0008x)": 200600,
-      "macbook pro 16\" m1 max 10cpu/32gpu/4tb/32gb silver (z150000h6/z14y0008w)": 205360,
-      "macbook pro 16\" m1 max 10cpu/32gpu/1tb/64gb space gray (z14v001xn / z14x000gd )": 173400,
-      "macbook pro 16\" m1 max 10cpu/32gpu/1tb/64gb silver (z14y001jd/z150000hp )": 179860,
-      "macbook pro 16\" m1 max 10cpu/32gpu/2tb/64gb space gray (z14x000hq)": 181900,
-      "macbook pro 16\" m1 max 10cpu/32gpu/2tb/64gb silver (z150000hq)": 191080,
-      "macbook pro 16\" m1 max 10cpu/32gpu/4tb/64gb space gray (mk233/z14x000hr)": 207060,
-      "macbook pro 16\" m1 max 10cpu/32gpu/4tb/64gb silver (mmqw3/z150000hr )": 207060,
+      "macbook pro 16\" m1 max 1tb space gray (mk1a3)": 142800,
+      "macbook pro 16\" m1 max 1tb silver (mk1h3)": 141100,
+      "macbook pro 16\" m1 max 512gb space gray (z14v0016f)": 137700,
+      "macbook pro 16\" m1 max 1tb space gray (z14w00106/z14v0001s)": 139400,
+      "macbook pro 16\" m1 max 1tb silver (z14z00106)": 146200,
+      "macbook pro 16\" m1 max 2tb space gray (z14w0010c)": 168640,
+      "macbook pro 16\" m1 max 1tb space gray (z14w00106)": 170000,
+      "macbook pro 16\" m1 max 1tb space gray (z14w0010b)": 163200,
+      "macbook pro 16\" m1 max 2tb space gray (z14w0010d)": 175100,
+      "macbook pro 16\" m1 max 2tb space gray (z14x000h6)": 170000,
+      "macbook pro 16\" m1 max 4tb space gray (z14x000h7/z14v0008x)": 200600,
+      "macbook pro 16\" m1 max 4tb silver (z150000h6/z14y0008w)": 205360,
+      "macbook pro 16\" m1 max 1tb space gray (z14v001xn/z14x000gd)": 173400,
+      "macbook pro 16\" m1 max 1tb silver (z14y001jd/z150000hp)": 179860,
+      "macbook pro 16\" m1 max 2tb space gray (z14x000hq)": 181900,
+      "macbook pro 16\" m1 max 2tb silver (z150000hq)": 191080,
+      "macbook pro 16\" m1 max 4tb space gray (mk233/z14x000hr)": 207060,
+      "macbook pro 16\" m1 max 4tb silver (mmqw3/z150000hr)": 207060,
       "ipad 2021 10.2\" wi-fi 64gb silver (mk2l3)": 12750,
       "ipad 2021 10.2\" wi-fi 64gb space gray (mk2k3)": 12750,
       "ipad 2021 10.2\" wi-fi 256gb space gray (mk2n3)": 16320,
