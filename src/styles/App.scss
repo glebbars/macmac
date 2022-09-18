@@ -360,7 +360,6 @@ input[type="number"] {
           @media (max-width: 1300px) {
             display: inline-block;
             width: fit-content;
-            margin-left: 0;
             font-size: 18px;
             margin: 40px 0 0;
             font-weight: 700;
@@ -517,7 +516,6 @@ input[type="number"] {
         background: #fa530d;
         color: white;
         border-radius: 50%;
-        font-size: 14px;
         font-weight: 700;
         font-size: 9px;
         text-align: center;
@@ -591,7 +589,6 @@ input[type="number"] {
     &_touched {
       position: absolute;
       margin: 0 auto;
-      padding: 0;
       max-width: 67.5%;
       border-radius: 12px;
       left: 0;
@@ -647,7 +644,6 @@ input[type="number"] {
     // order: 3;
     height: 40px;
     // width: 360px;
-    border-radius: 8px;
     padding: 0 15px;
     display: flex;
     align-items: center;
@@ -945,7 +941,7 @@ input[type="number"] {
     width: 100%;
     max-width: 1120px;
     background: #ffffff;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.01);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.01);
     border-radius: 8px;
     padding: 30px 80px 25px 30px;
     box-sizing: border-box;
@@ -1495,7 +1491,7 @@ input[type="number"] {
       line-height: 26px;
       letter-spacing: 0.005em;
       color: #e9ecef;
-      margin: 20px 0px 35px;
+      margin: 20px 0 35px;
       max-width: 320px;
     }
 
@@ -1665,7 +1661,6 @@ input[type="number"] {
       height: 6px;
       border-top: 3px solid #adb5bd;
       border-left: 3px solid #adb5bd;
-      border-radius: 1px;
       top: 9px;
       right: 155px;
       transform: rotate(315deg);
@@ -2262,7 +2257,7 @@ input[type="number"] {
             display: inline-block;
             position: absolute;
             top: 10px;
-            right: 0px;
+            right: 0;
             border-radius: 1.5px;
           }
 
@@ -2484,7 +2479,6 @@ input[type="number"] {
         color: #343a40;
         width: 118px;
         overflow: hidden;
-        overflow: hidden;
         white-space: nowrap;
       }
 
@@ -2551,7 +2545,7 @@ input[type="number"] {
       right: 0;
       top: 35px;
       background: #ffffff;
-      box-shadow: 0px 0px 16px rgba(57, 59, 101, 0.12);
+      box-shadow: 0 0 16px rgba(57, 59, 101, 0.12);
       border-radius: 8px;
       padding: 5px;
       width: 180px;
@@ -2695,6 +2689,7 @@ input[type="number"] {
       color: #343a40;
       margin: 0 50px 5px 0;
       display: inline-block;
+      user-select: none;
 
       @media (max-width: 480px) {
         font-size: 13px;
@@ -2874,7 +2869,7 @@ input[type="number"] {
 
     &:hover {
       background: #ffffff;
-      box-shadow: 0px 0px 16px rgba(57, 59, 101, 0.12);
+      box-shadow: 0 0 16px rgba(57, 59, 101, 0.12);
     }
 
     @media (max-width: 1024px) {
@@ -3339,7 +3334,7 @@ input[type="number"] {
       }
 
       &__label {
-        padding: 7.5px 0px;
+        padding: 7.5px 0;
         background: #fa3838;
         border-radius: 4px;
         width: 112px;
@@ -3354,7 +3349,7 @@ input[type="number"] {
         letter-spacing: 0.004em;
 
         @media (max-width: 1024px) {
-          padding: 6.5px 0px;
+          padding: 6.5px 0;
           width: 95px;
           height: 24px;
           font-size: 10px;
@@ -3963,7 +3958,6 @@ input[type="number"] {
 
     &__content {
       max-width: 1120px;
-      margin: 0 auto;
       position: relative;
       padding: 150px 25px 20px;
       height: 270px;
@@ -4903,7 +4897,7 @@ input[type="number"] {
 .pop-up {
   &__one-click,
   &__success {
-    box-shadow: 0px 0px 16px rgba(57, 59, 101, 0.12) !important;
+    box-shadow: 0 0 16px rgba(57, 59, 101, 0.12) !important;
     border-radius: 8px !important;
 
     &__form,
@@ -5125,7 +5119,7 @@ input[type="number"] {
       width: 640px;
       background-color: white;
       z-index: 4;
-      box-shadow: 0px 0px 16px rgba(57, 59, 101, 0.12);
+      box-shadow: 0 0 16px rgba(57, 59, 101, 0.12);
       border-radius: 8px;
       box-sizing: border-box;
       max-width: calc(100% - 20px);
@@ -5625,7 +5619,7 @@ input[type="number"] {
       border-radius: 50%;
       border: 2px solid #fa530d;
       background-color: #f8f9fa;
-      box-shadow: 0px 2px 6px #aaa;
+      box-shadow: 0 2px 6px #aaa;
       outline: none;
 
       &:hover {
