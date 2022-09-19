@@ -5,8 +5,11 @@ import { ADD_PRODUCTS_LIST_FILTER } from "../../redux/actions/types";
 import { useEffect } from "react";
 import ProductsEditComplition from "../ProductsEditComplition/ProductsEditComplition";
 import { Range, getTrackBackground } from "react-range";
-import { useParams } from "react-router-dom";
-import { getFilteredProducts } from "../ProductsList/ProductsList";
+
+import {
+  useFilteredProductsArrByRoute,
+  getFilteredProducts,
+} from "../../hooks/useFilteredProductsArrByRoute";
 
 export const CustomDropDownLinks = ({
   header,
@@ -269,34 +272,18 @@ export const PriceRange = ({ handlePriceChange, productsListFilters }) => {
   const [priceLimits, setPriceLimits] = useState([1, 100000]);
   const [values, setValues] = useState([1, 100000]);
   const [inputValues, setInputValues] = useState([1, 100000]);
-  const { categoryName, searchResult } = useParams();
-  const productsArr = useSelector((store) => store.app.productsArr);
 
-  const filteredByCategoryArr = productsArr.filter((product) => {
-    if (categoryName) {
-      if (categoryName !== "all-products") {
-        return product?.description?.category.toLowerCase() === categoryName;
-      } else {
-        return product;
-      }
-    } else if (searchResult) {
-      const fullProductName = product?.fullName.toLowerCase();
-      return fullProductName.includes(searchResult);
-    }
-    return product;
-  });
+  const initiallyFilteredArr = useFilteredProductsArrByRoute();
 
   const filteredProductsArr = getFilteredProducts(
     productsListFilters,
-    filteredByCategoryArr,
+    initiallyFilteredArr,
     false
   );
 
   const productPrices = filteredProductsArr
     .map((product) => product.price)
     .sort((a, b) => b - a);
-
-  const maxPriceFromFilters = productPrices[0];
 
   useEffect(() => {
     if (!productsListFilters.find((filter) => filter.filterName === "Цена")) {
@@ -306,12 +293,18 @@ export const PriceRange = ({ handlePriceChange, productsListFilters }) => {
   }, [priceLimits, productsListFilters]);
 
   useEffect(() => {
-    if (maxPriceFromFilters && maxPriceFromFilters !== priceLimits[1]) {
-      setPriceLimits([1, maxPriceFromFilters]);
-      setValues([1, maxPriceFromFilters]);
-      setInputValues([1, maxPriceFromFilters]);
+    const maxPriceFromFilters = productPrices[0];
+    const minPriceFromFilters = productPrices[productPrices.length - 1];
+
+    if (
+      (maxPriceFromFilters && maxPriceFromFilters !== priceLimits[1]) ||
+      (minPriceFromFilters && minPriceFromFilters !== priceLimits[0])
+    ) {
+      setPriceLimits([minPriceFromFilters, maxPriceFromFilters]);
+      setValues([minPriceFromFilters, maxPriceFromFilters]);
+      setInputValues([minPriceFromFilters, maxPriceFromFilters]);
     }
-  }, [maxPriceFromFilters, priceLimits]);
+  }, [priceLimits, productPrices]);
 
   const handleSubmit = (finalValues) =>
     handlePriceChange("Цена", `${finalValues[0]}-${finalValues[1]}`);

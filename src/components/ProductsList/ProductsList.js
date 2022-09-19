@@ -2,87 +2,20 @@ import React, { useState, useMemo, useEffect, useCallback } from "react";
 import ProductsPagination from "../ProductsPagination/ProductsPagination";
 import List from "../List/List";
 import { useSelector, useDispatch } from "react-redux";
-import { useParams } from "react-router-dom";
 
-export const getFilteredProducts = (
-  productsListFilters,
-  initiallyFilteredArr,
-  includePrice
-) => {
-  const categoryFilters = productsListFilters
-    .filter((filter) => filter.filterName === "Категория")
-    .map((filter) => filter.value);
-  const modelFilters = productsListFilters
-    .filter((filter) => filter.filterName === "Модель")
-    .map((filter) => filter.value);
-  const colorFilters = productsListFilters
-    .filter((filter) => filter.filterName === "Цвет")
-    .map((filter) => filter.value);
-  const capacityFilters = productsListFilters
-    .filter((filter) => filter.filterName === "Память")
-    .map((filter) => filter.value);
-  const priceFilter = productsListFilters
-    .filter((filter) => filter.filterName === "Цена")
-    .map((filter) => filter.value);
-  const diagonalFilters = productsListFilters
-    .filter((filter) => filter.filterName === "Диагональ")
-    .map((filter) => filter.value);
-  const memoryFilters = productsListFilters
-    .filter((filter) => filter.filterName === "Оперативная память")
-    .map((filter) => filter.value);
-
-  console.log(memoryFilters);
-  const wifiFilters = productsListFilters
-    .filter((filter) => filter.filterName === "Wi-Fi")
-    .map((filter) => filter.value);
-
-  const priceLimits =
-    priceFilter.length > 0 ? priceFilter[0].split("-") : ["0", "1000000"];
-
-  return initiallyFilteredArr.filter((product) => {
-    // if (productsListFilters.length > 0) {
-    return (
-      (categoryFilters.length > 0
-        ? categoryFilters.includes(product.description.category)
-        : product) &&
-      (modelFilters.length > 0
-        ? modelFilters.includes(product.description.model)
-        : product) &&
-      (colorFilters.length > 0
-        ? colorFilters.includes(product.description.color)
-        : product) &&
-      (capacityFilters.length > 0
-        ? capacityFilters.includes(product.description.capacity)
-        : product) &&
-      (diagonalFilters.length > 0
-        ? diagonalFilters.includes(product.description.diagonal)
-        : product) &&
-      (wifiFilters.length > 0
-        ? wifiFilters.includes(product.description.wifi)
-        : product) &&
-      (memoryFilters.length > 0
-        ? memoryFilters.includes(product.description.memory)
-        : product) &&
-      (includePrice
-        ? product.price >= +priceLimits[0] && product.price <= +priceLimits[1]
-        : product)
-    );
-    // } else {
-    //   return product;
-    // }
-  });
-};
+import {
+  useFilteredProductsArrByRoute,
+  getFilteredProducts,
+} from "../../hooks/useFilteredProductsArrByRoute";
 
 const ProductsList = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const productsArr = useSelector((store) => store.app.productsArr);
   const productsListFilters = useSelector(
     (store) => store.app.productsListFilters
   );
   const sortType = useSelector((store) => store.app.sortType);
   const pageSize = useSelector((store) => store.app.pageSize);
   const dispatch = useDispatch();
-  const { categoryName, searchResult } = useParams();
 
   const onPageChange = useCallback(
     (page) => {
@@ -103,25 +36,7 @@ const ProductsList = () => {
     // window.scrollTo(0, 0)
   }, [productsListFilters, pageSize, sortType]);
 
-  const initiallyFilteredArr = productsArr.filter((product) => {
-    if (categoryName) {
-      if (categoryName !== "all-products") {
-        if (categoryName.includes("-")) {
-          const routeModel = categoryName.split("-").join(" ");
-          return product?.description?.model.toLowerCase() === routeModel;
-        } else {
-          return product?.description?.category.toLowerCase() === categoryName;
-        }
-      } else {
-        return product;
-      }
-    } else if (searchResult) {
-      const fullProductName = product?.fullName.toLowerCase();
-      return fullProductName.includes(searchResult);
-    }
-
-    return product;
-  });
+  const initiallyFilteredArr = useFilteredProductsArrByRoute();
 
   const filteredProductsArr = getFilteredProducts(
     productsListFilters,
