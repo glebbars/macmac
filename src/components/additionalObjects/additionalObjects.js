@@ -5,7 +5,6 @@ import iphoneCatalog from "../../img/catalog-iphone.png";
 import ipadCatalog from "../../img/catalog-ipad.png";
 import imacCatalog from "../../img/catalog-imac.png";
 import airpodsCatalog from "../../img/catalog-airpods.png";
-import applewatchCatalog from "../../img/catalog-apple-watch.png";
 import {
   getIpadCapacityOptions,
   getIpadColorOptions,
@@ -537,6 +536,39 @@ export const headerCatalogCategories = [
     ],
   },
   {
+    header: "Macbook",
+    bg: {
+      img: imacCatalog,
+      color: "#DBECCE",
+    },
+    options: [
+      {
+        name: "Macbook Air M2",
+        link: "/category/macbook-air-m2",
+      },
+      {
+        name: "Macbook Air M1",
+        link: "/category/macbook-air-m1",
+      },
+      {
+        name: "MacBook Pro M2",
+        link: "/category/macbook-pro-m2",
+      },
+      {
+        name: "MacBook Pro M1",
+        link: "/category/macbook-pro-m1",
+      },
+      {
+        name: "MacBook Pro M1 Pro",
+        link: "/category/macbook-pro-m1-pro",
+      },
+      {
+        name: "MacBook Pro M1 Max",
+        link: "/category/macbook-pro-m1-max",
+      },
+    ],
+  },
+  {
     header: "AirPods",
     bg: {
       img: airpodsCatalog,
@@ -557,62 +589,45 @@ export const headerCatalogCategories = [
       },
     ],
   },
-  {
-    header: "Macbook",
-    bg: {
-      img: imacCatalog,
-      color: "#DBECCE",
-    },
-    options: [
-      {
-        name: "Macbook Air",
-        link: "/category/macbook-air",
-      },
-      {
-        name: "Macbook Pro",
-        link: "/category/macbook-pro",
-      },
-      {
-        name: "iMac",
-        link: "/category/imac",
-      },
-    ],
-  },
-  {
-    header: "Watch",
-    bg: {
-      img: applewatchCatalog,
-      color: "#FFD965",
-    },
-    options: [
-      {
-        name: 'iMac 21"',
-        link: "/category/imac-21",
-      },
-      {
-        name: 'iMac 27"',
-        link: "/category/imac-27",
-      },
-      {
-        name: 'iMac 21.5"',
-        link: "/category/imac-21-5",
-      },
-      {
-        name: 'iMac 27.0"',
-        link: "/category/imac-27-0",
-      },
-      {
-        name: 'iMac Mini"',
-        link: "/category/imac-mini",
-      },
-    ],
-  },
+  // {
+  //   header: "Watch",
+  //   bg: {
+  //     img: applewatchCatalog,
+  //     color: "#FFD965",
+  //   },
+  //   options: [
+  //     {
+  //       name: 'iMac 21"',
+  //       link: "/category/imac-21",
+  //     },
+  //     {
+  //       name: 'iMac 27"',
+  //       link: "/category/imac-27",
+  //     },
+  //     {
+  //       name: 'iMac 21.5"',
+  //       link: "/category/imac-21-5",
+  //     },
+  //     {
+  //       name: 'iMac 27.0"',
+  //       link: "/category/imac-27-0",
+  //     },
+  //     {
+  //       name: 'iMac Mini"',
+  //       link: "/category/imac-mini",
+  //     },
+  //   ],
+  // },
 ];
 
 export const headerCatalogOther = [
+  // {
+  //   link: "/category/apple-tv",
+  //   text: "TV",
+  // },
   {
-    link: "/category/apple-tv",
-    text: "TV",
+    link: "/category/watch",
+    text: "Watch",
   },
   {
     link: "/category/accessories",
